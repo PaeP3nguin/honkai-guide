@@ -82,7 +82,7 @@ const app = new Vue({
     modifiers: modifiers,
   },
   computed: {
-    biliLinks: function () {
+    biliLinks: function() {
       const baseUrl = 'https://search.bilibili.com/all?keyword=';
       let searchParams = '';
       for (const v of this.selectedValks) {
