@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Honkai bilibili search helper</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css"
+    rel="stylesheet">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<div id="app">
+  <v-app>
+    <v-content>
+      <v-container grid-list-md text-xs-center>
+        <v-layout>
+          <v-flex xs8 offset-xs2>
+            <h1>Bilibili search generator</h1>
+            <p>
+              Chinese translations courtsey of
+              <a href="https://www.youtube.com/channel/UCbXY6vNP0JzAkCdrWgjwvag">
+                The Keebster
+              </a>
+              and their excellent
+              <a href="https://docs.google.com/document/d/1PPZJ4s91tmEBh0Q6J26wbnFapCMioxShS0JhXPtZ4ec/edit">
+                Chinese Memorial Glossary
+              </a>.
+            </p>
+            <p>
+              Want to know how this works? Not getting the results you want? Check out The Keebster's video:
+              <a href="https://youtu.be/0RR5VR99fvk">
+                How to browse Bilibili top scores without knowing Chinese!
+              </a>
+              for more information.
+            </p>
+            <v-form>
+              <v-autocomplete
+                v-model="selectedBoss"
+                autofocus
+                auto-select-first
+                clearable
+                :items="bosses"
+                :label="'Boss'">
+              </v-autocomplete>
+              <v-autocomplete
+                v-model="selectedValks"
+                multiple
+                auto-select-first
+                persistent-hint
+                @change="valkInput = ''"
+                :hint="'Choose lead valk first.'"
+                :search-input.sync="valkInput"
+                :items="valks"
+                :label="'Valkyries'">
+              </v-autocomplete>
+              <v-checkbox
+                v-for="modifier in modifiers"
+                v-bind:key="modifier.name"
+                v-model="modifier.value"
+                :label="`${modifier.name}`"></v-checkbox>
+              <v-text-field
+                v-model="score"
+                type="number"
+                label="Score"></v-text-field>
+            </v-form>
+            <h2>Links</h2>
+            <p>Some bosses go by multiple names, so try all generated links!</p>
+            <p v-for="link in biliLinks">
+              <a target="_blank" :href="`${link}`">{{ link }}</a>
+            </p>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-content>
+  </v-app>
+</div>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.js"></script>
+<script type="module"
+  src="index.js"></script>
+
+</html>

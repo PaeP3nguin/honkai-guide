@@ -1,0 +1,28 @@
+{
+  "name": "honkai-guide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaeP3nguin/honkai-guide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaeP3nguin/honkai-guide/issues"
+  },
+  "homepage": "https://github.com/PaeP3nguin/honkai-guide#readme",
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vuetify": "^1.5.14"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.13.0",
+    "eslint-plugin-vue": "^5.2.2"
+  }
+}
