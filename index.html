@@ -7,6 +7,7 @@
     rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css"
     rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
   <meta name="viewport"
     content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -15,7 +16,7 @@
 <div id="app">
   <v-app>
     <v-content>
-      <v-container grid-list-md text-xs-center>
+      <v-container grid-list-md text-xs-start>
         <v-layout>
           <v-flex xs8 offset-xs2>
             <h1>Bilibili search generator</h1>
@@ -34,40 +35,67 @@
               for more information.
             </p>
             <p>Made by PaeP3nguin (Discord: paep3nguin#9170).</p>
+
+            <v-layout align-center>
+              <img class="valk-gif" src="aij2.gif">
+              <span>Ai-chan says, "Only fill out as much as you need!"</span>
+            </v-layout>
+
             <v-form>
+              <h3 class="section-head">Boss</h3>
               <v-autocomplete
                 v-model="selectedBoss"
+                hint="Start typing to autocomplete."
                 autofocus
                 auto-select-first
                 clearable
-                :items="bosses"
-                :label="'Boss'">
+                persistent-hint
+                :items="bosses">
               </v-autocomplete>
+
+              <h3 class="section-head">Valkyries</h3>
+              <p>Order matters! Choose the lead valk first.</p>
               <v-autocomplete
                 v-model="selectedValks"
+                hint="Start typing to autocomplete."
                 multiple
                 auto-select-first
+                clearable
                 persistent-hint
                 @change="valkInput = ''"
-                :hint="'Choose lead valk first.'"
                 :search-input.sync="valkInput"
-                :items="valks"
-                :label="'Valkyries'">
+                :items="valks">
               </v-autocomplete>
-              <v-checkbox
-                v-for="modifier in modifiers"
-                v-bind:key="modifier.name"
-                v-model="modifier.value"
-                :label="`${modifier.name}`"></v-checkbox>
-              <v-text-field
+
+              <h3 class="section-head">Modifiers</h3>
+              <v-layout>
+                <v-checkbox
+                  v-for="modifier in modifiers"
+                  v-bind:key="modifier.name"
+                  v-model="modifier.value"
+                  :label="`${modifier.name}`"></v-checkbox>
+              </v-layout>
+
+              <h3 class="section-head">Score</h3>
+              <v-combobox
                 v-model="score"
-                type="number"
-                label="Score"></v-text-field>
+                hint="All input accepted, or choose from the list."
+                auto-select-first
+                clearable
+                persistent-hint
+                :items="scores">
+              </v-combobox>
             </v-form>
-            <h2>Links</h2>
-            <p>Some bosses go by multiple names, so try all generated links!</p>
+
+            <h2 class="section-head">Generated links</h2>
+            <v-layout align-center>
+              <img class="valk-gif" src="brn.gif">
+              <span>Bronya works hard to instantly generate links as you type.</span>
+            </v-layout>
+
+            <p>Some bosses go by multiple names, so try all links!</p>
             <p v-for="link in biliLinks">
-              <a target="_blank" :href="`${link}`">{{ link }}</a>
+              <a target="_blank" class="bili-link" :href="`${link}`">{{ link }}</a>
             </p>
           </v-flex>
         </v-layout>

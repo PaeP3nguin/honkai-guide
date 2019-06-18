@@ -70,6 +70,12 @@ const modifiers = Object
   .keys(modifiersToChinese)
   .map((m) => ({name: m, value: false}));
 
+const pointsPerSecond = 53 + 1 / 3;
+const scores = [];
+for (let i = 1; i <= 35; i++) {
+  scores.push(Math.floor(32000 - pointsPerSecond * i));
+}
+
 const app = new Vue({
   el: '#app',
   data: {
@@ -79,6 +85,7 @@ const app = new Vue({
     score: null,
     bosses: Object.keys(bossToChinese),
     valks: Object.keys(valkToChinese),
+    scores: scores,
     modifiers: modifiers,
   },
   computed: {
