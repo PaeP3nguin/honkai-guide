@@ -16,6 +16,8 @@ const bossToChinese = {
   'Parvati': ['冰猪', '帕凡提'],
   'RPC': ['飞机', 'RPC - 6626'],
   'Shadow Knight ': ['月轮'],
+  // Does this guy even exist?
+  // 'Son of Darkness (Dirac only)': ['黑夜之子'],
 };
 
 const valkToChinese = {
@@ -65,6 +67,9 @@ const modifiersToChinese = {
   '2 - 3 pieces of gacha gear': '低配',
   'No JST': '无叶',
   'No newton': '无牛',
+  'Dirac': '狄拉克',
+  'Red Lotus': '红莲',
+  'Myriad': '无限',
 };
 
 const modifiers = Object

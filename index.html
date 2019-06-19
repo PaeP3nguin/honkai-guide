@@ -18,7 +18,7 @@
     <v-content>
       <v-container grid-list-md text-xs-start>
         <v-layout>
-          <v-flex xs8 offset-xs2>
+          <v-flex xs10 offset-xs1 md8 offset-md2>
             <h1>Bilibili search generator</h1>
             <p>
               Chinese translations courtsey of
@@ -68,12 +68,13 @@
               </v-autocomplete>
 
               <h3 class="section-head">Modifiers</h3>
-              <v-layout>
-                <v-checkbox
-                  v-for="modifier in modifiers"
-                  v-bind:key="modifier.name"
-                  v-model="modifier.value"
-                  :label="`${modifier.name}`"></v-checkbox>
+              <v-layout wrap>
+                <v-flex grow xs4 md3 v-for="modifier in modifiers">
+                  <v-checkbox
+                    v-bind:key="modifier.name"
+                    v-model="modifier.value"
+                    :label="`${modifier.name}`"></v-checkbox>
+                </v-flex>
               </v-layout>
 
               <h3 class="section-head">Score</h3>
