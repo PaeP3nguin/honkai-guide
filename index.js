@@ -17,7 +17,7 @@ const bossToChinese = {
   'RPC': ['飞机', 'RPC - 6626'],
   'Shadow Knight ': ['月轮'],
   // Does this guy even exist?
-  // 'Son of Darkness (Dirac only)': ['黑夜之子'],
+  'Son of Darkness (Dirac only)': ['黑夜之子'],
 };
 
 const valkToChinese = {
