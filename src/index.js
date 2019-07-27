@@ -31,7 +31,7 @@ const valkToChinese = {
   'Dimension Break (DB)': ['次'],
   'Divine Prayer (DP)': ['圣'],
   'Flame Sakitama (FS)': ['炎'],
-  'God Kiana (GK, HoV)': ['律'],
+  'Herrscher of the Void (God Kiana, GK, HoV)': ['律'],
   'Imayoh (IR)': ['今'],
   'Knight Moonbeam (KMB)': ['月'],
   'Lightning Empress (LE)': ['鬼'],
