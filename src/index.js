@@ -54,6 +54,7 @@ const valkToChinese = {
   'Triumph (VT)': ['凯'],
   'Umbral Rose (UR)': ['黯'],
   'Vermillion Knight (VK)': ['真'],
+  'Void Drifter (VD)': ['游'], // 苍穹游侠
   'Violet Executor (VE)': ['紫'],
   'White Comet (WC)': ['白'],
   'Wolf Dawn (WD)': ['银'],
@@ -66,6 +67,7 @@ const modifiersToChinese = {
   'No JST': '无叶',
   'No newton': '无牛',
   'Dirac': '狄拉克',
+  'Q-Singularis': '量子奇点',
   'Red Lotus': '红莲',
   'Myriad': '无限',
 };
