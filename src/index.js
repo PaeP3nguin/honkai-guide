@@ -1,5 +1,6 @@
 const bossToChinese = {
   'Assaka': ['阿湿波', 'asb'],
+  'Argent Knight: Artemis (AKA)': ['月魂'],
   'Benares': ['贝纳勒斯', '龙'],
   'Cursed Soul': ['姬子', '被诅咒的英魂'],
   'Dark Jixuanyuan (DXY, DJXY)': ['皮皮马', '马', '姬麟·黑'],
