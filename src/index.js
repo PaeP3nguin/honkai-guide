@@ -11,6 +11,7 @@ const bossToChinese = {
   'HOMU King': ['吼姆'],
   'Jizo Mitama': ['地藏', '地藏御魂'],
   'Kallen': ['卡莲'],
+  'MHT-3 Pax (tank)': ['和平使者', 'MHT', '坦克'],
   'Padrino': ['教父'],
   'Parvati': ['冰猪', '帕凡提'],
   'RPC': ['飞机', 'RPC - 6626'],
