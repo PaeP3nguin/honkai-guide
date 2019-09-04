@@ -42,7 +42,7 @@ const valkToChinese = {
   'Luna Kindred (LK)': ['月', '[初'],
   'Memento (Meme)': ['勿'],
   'Miko': ['逆'],
-  'Molotov Cherry (Roza, MC)': ['粉'],
+  'Molotov Cherry (Roza, MC)': ['粉', '孤儿队'],
   'Night Squire (NS)': ['白'],
   'Phantom Iron (PI)': ['狗'],
   'Phoenix (PX)': ['炽'],
