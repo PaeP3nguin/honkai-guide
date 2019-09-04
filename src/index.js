@@ -16,7 +16,7 @@ const bossToChinese = {
   'Padrino': ['教父'],
   'Parvati': ['冰猪', '帕凡提'],
   'RPC': ['飞机', 'RPC - 6626'],
-  'Shadow Knight ': ['月轮'],
+  'Shadow Knight (SK)': ['月轮'],
   'Son of Darkness (Dirac only)': ['黑夜之子'],
 };
 
