@@ -82,9 +82,17 @@ const modifiers = Object
   .map((m) => ({name: m, value: false}));
 
 const pointsPerSecond = 53 + 1 / 3;
-const scores = [];
-for (let i = 1; i <= 35; i++) {
-  scores.push(Math.floor(32000 - pointsPerSecond * i));
+// Use list of objects instead of dictionary to ensure greatest to least ordering with v-for.
+const scoresByTime = [{
+  'score': 31946,
+  'time': '5:00'
+}];
+for (let i = 2; i <= 40; i++) {
+  scoresByTime.push(
+    {
+      'score': Math.floor(32000 - pointsPerSecond * i),
+      'time': '4:' + (60 - i + 1)
+    });
 }
 
 Vue.use(Vuetify);
@@ -98,7 +106,8 @@ const app = new Vue({
     score: null,
     bosses: Object.keys(bossToChinese),
     valks: Object.keys(valkToChinese),
-    scores: scores,
+    scores: scoresByTime.map((s) => s.score),
+    scoresByTime: scoresByTime,
     modifiers: modifiers,
   },
   computed: {
