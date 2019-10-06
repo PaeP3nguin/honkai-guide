@@ -23,6 +23,7 @@ const bossToChinese = {
 const valkToChinese = {
   'Accipiter (VA)': ['迅'],
   'Arctic Kreigmesser (KMS)': ['极'],
+  'Argent Knight: Artemis (AKA)': ['月魂'],
   'Black Nucleus (BN)': ['黑'],
   'Battlestorm (BS)': ['疾'],
   'Bladestrike (VB)': ['强'],
