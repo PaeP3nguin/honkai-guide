@@ -60,7 +60,7 @@ const valkToChinese = {
   'Umbral Rose (UR)': ['黯'],
   'Vermillion Knight (VK)': ['真'],
   'Void Drifter (VD)': ['游'], // 苍穹游侠
-  'Violet Executor (VE)': ['紫'],
+  'Violet Executor/Twilight Paladin (VE/TP)': ['紫'],
   'White Comet (WC)': ['白'],
   'Wolf Dawn (WD)': ['银'],
   'Yamabuki Armor/Drive Kometa (YA)(DK)': ['山'],
