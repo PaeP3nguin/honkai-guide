@@ -85,16 +85,17 @@ const modifiers = Object
 const pointsPerSecond = 53 + 1 / 3;
 // Use list of objects instead of dictionary to ensure greatest to least ordering with v-for.
 const scoresByTime = [];
-for (let i = 1; i <= 40; i++) {
-  const rawScore = 32000 - pointsPerSecond * i;
+const five = moment.duration(5, 'm');
+for (let i = 0; i <= 120; i += 5) {
+  const rawScore = 32000 - pointsPerSecond * (i + 1);
   const score = Math.floor(rawScore);
   const up = Math.round(rawScore * 1.2);
-  scoresByTime.push(
-    {
-      'score': score,
-      'up': up,
-      'time': i == 1 ? '5:00' : '4:' + (60 - i + 1)
-    });
+  const time = five.clone().subtract(i, 's');
+  scoresByTime.push({
+    'score': score,
+    'up': up,
+    'time': time.format('m:ss'),
+  });
 }
 
 Vue.use(Vuetify);
