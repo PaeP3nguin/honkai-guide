@@ -90,7 +90,7 @@ const pointsPerSecond = 53 + 1 / 3;
 // Use list of objects instead of dictionary to ensure greatest to least ordering with v-for.
 const scoresByTime = [];
 const five = moment.duration(5, 'm');
-for (let i = 0; i <= 120; i += 5) {
+for (let i = 0; i <= 45; i += 1) {
   const rawScore = 32000 - pointsPerSecond * (i + 1);
   const score = Math.floor(rawScore);
   const up = Math.round(rawScore * 1.2);
