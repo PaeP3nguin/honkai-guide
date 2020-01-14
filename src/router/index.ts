@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import GearCalc from '../views/GearCalc.vue'
+import GearCalcPage from '../views/GearCalcPage.vue'
 import Search from '../views/Search.vue'
 
 Vue.use(VueRouter)
@@ -14,7 +14,7 @@ const routes = [
   {
     path: '/calc',
     name: 'calc',
-    component: GearCalc
+    component: GearCalcPage
   }
 ]
 
