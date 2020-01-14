@@ -224,8 +224,12 @@ export default Vue.extend({
     removeSelectedMultipliers() {
       this.selectedMultipliers.forEach(m => {
         const i = this.multipliers.indexOf(m);
+        if (i === -1) {
+          return;
+        }
         this.multipliers.splice(i, 1);
       });
+      this.selectedMultipliers = [];
     }
   }
 });
