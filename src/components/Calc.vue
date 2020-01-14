@@ -122,7 +122,11 @@
           <h3>Saved gear:</h3>
         </v-card-text>
 
-        <v-list-item v-for="(multipliers, name) in this.savedMultipliers" v-bind:key="name" class="mx-3">
+        <v-list-item
+          v-for="(multipliers, name) in this.savedMultipliers"
+          v-bind:key="name"
+          class="mx-3"
+        >
           <v-list-item-content>
             <v-list-item-title>{{ name }}</v-list-item-title>
           </v-list-item-content>
@@ -192,7 +196,13 @@ class Multiplier {
   }
 
   static fromObject(object: any): Multiplier {
-    return new Multiplier(object.active, object.id, object.name, object.type, object.value);
+    return new Multiplier(
+      object.active,
+      object.id,
+      object.name,
+      object.type,
+      object.value
+    );
   }
 
   /**
@@ -355,7 +365,9 @@ export default Vue.extend({
     },
     loadMultipliers(name) {
       this.multipliers = [];
-      this.savedMultipliers[name].forEach(m => this.multipliers.push(Multiplier.fromObject(m)));
+      this.savedMultipliers[name].forEach(m =>
+        this.multipliers.push(Multiplier.fromObject(m))
+      );
     },
     deleteSavedMultipliers(name) {
       Vue.delete(this.savedMultipliers, name);

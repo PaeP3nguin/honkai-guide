@@ -61,10 +61,7 @@
           <h3 class="section-head">Modifiers</h3>
           <v-layout wrap>
             <v-flex grow xs4 md3 v-for="modifier in modifiers" v-bind:key="modifier.name">
-              <v-checkbox
-                v-model="modifier.value"
-                :label="`${modifier.name}`"
-              ></v-checkbox>
+              <v-checkbox v-model="modifier.value" :label="`${modifier.name}`"></v-checkbox>
             </v-flex>
           </v-layout>
 
@@ -118,7 +115,10 @@
         </h2>
         <h2 class="section-head">Scores by time</h2>
         <ul>
-          <li v-for="s in scoresByTime" v-bind:key="s.score">{{ s.score }} ({{ s.up }}) = {{ s.time }}</li>
+          <li
+            v-for="s in scoresByTime"
+            v-bind:key="s.score"
+          >{{ s.score }} ({{ s.up }}) = {{ s.time }}</li>
         </ul>
       </v-flex>
     </v-layout>
@@ -145,7 +145,7 @@
 
 <script>
 import * as moment from "moment/moment";
-import 'moment-duration-format';
+import "moment-duration-format";
 
 const bossToChinese = {
   Assaka: ["阿湿波", "asb"],
