@@ -364,10 +364,7 @@ export default Vue.extend({
       this.$refs.saveForm.reset();
     },
     loadMultipliers(name) {
-      this.multipliers = [];
-      this.savedMultipliers[name].forEach(m =>
-        this.multipliers.push(Multiplier.fromObject(m))
-      );
+      this.multipliers = this.savedMultipliers[name].map(m => Multiplier.fromObject(m));
     },
     deleteSavedMultipliers(name) {
       Vue.delete(this.savedMultipliers, name);
