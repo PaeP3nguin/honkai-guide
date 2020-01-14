@@ -13,11 +13,11 @@
         </p>
 
         <v-row class="d-flex mb-6">
-          <v-col class="mr-8">
+          <v-col class="pa-md-0 mr-8">
             <Calc v-model="leftMultipliers" />
           </v-col>
 
-          <v-col class="pa-0 hidden-sm-and-down" v-if="compare">
+          <v-col class="pa-md-0 hidden-sm-and-down" v-if="compare">
             <Calc v-model="rightMultipliers" />
           </v-col>
         </v-row>
