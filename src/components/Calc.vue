@@ -61,26 +61,25 @@
     </v-form>
 
     <v-data-table
-      v-model="selectedMultipliers"
       :headers="multiplierTableHeaders"
       :items="multipliers"
       item-key="id"
       hide-default-footer
-      show-select
     >
-      <template v-slot:item.value="{item}">
-        <td>{{ item.value }}%</td>
+      <template v-slot:item.active="{item}">
+        <v-checkbox v-model="item.active" color="primary"></v-checkbox>
+      </template>
+
+      <template v-slot:item.value="{item}">{{ item.value }}%</template>
+
+      <template v-slot:item.delete="{item}">
+        <v-btn icon @click="removeMultiplier(item)">
+          <v-icon>mdi-close</v-icon>
+        </v-btn>
       </template>
 
       <template slot="no-data">Add some multipliers!</template>
     </v-data-table>
-
-    <v-btn
-      class="mt-8"
-      color="error"
-      :disabled="selectedMultipliers.length == 0"
-      @click="removeSelectedMultipliers"
-    >Remove selected</v-btn>
   </div>
 </template>
 
@@ -108,8 +107,15 @@ class Multiplier {
   name: string;
   type: Type;
   value: number;
+  active: boolean;
 
-  constructor(id?: number, name?: string, type?: Type, value?: number) {
+  constructor(
+    active: boolean,
+    id?: number,
+    name?: string,
+    type?: Type,
+    value?: number
+  ) {
     this.id = id || Math.random();
     if (name) {
       this.name = name;
@@ -120,11 +126,16 @@ class Multiplier {
     if (value) {
       this.value = value;
     }
+    this.active = active;
   }
 
-  // Converts this multiplier to a decimal percentage value if it matches the desired type, else returns 0.
+  /**
+   * Converts this multiplier to a decimal percentage value if it matches the desired type, else returns 0.
+   *
+   * If the multiplier is not active, also returns 0.
+   */
   toPercent(type: Type): number {
-    if (this.type != type) {
+    if (this.type != type || !this.active) {
       return 0;
     }
 
@@ -132,15 +143,26 @@ class Multiplier {
   }
 
   clone(): Multiplier {
-    return new Multiplier(this.id, this.name, this.type, this.value);
+    return new Multiplier(
+      this.active,
+      this.id,
+      this.name,
+      this.type,
+      this.value
+    );
   }
 }
 
 const tableHeaders = [
   {
+    text: "Active",
+    value: "active",
+    width: "10%"
+  },
+  {
     text: "Name",
     value: "name",
-    width: "50%"
+    width: "30%"
   },
   {
     text: "Type",
@@ -151,6 +173,11 @@ const tableHeaders = [
     text: "Value",
     value: "value",
     width: "20%"
+  },
+  {
+    text: "Delete",
+    value: "delete",
+    width: "10%"
   }
 ];
 
@@ -170,9 +197,8 @@ export default Vue.extend({
       // Stuff that actually changes.
       multiplierTableHeaders: tableHeaders,
       multiplierTypes: Object.values(Type),
-      multiplier: new Multiplier(),
+      multiplier: new Multiplier(true),
       multipliers: this.value,
-      selectedMultipliers: [],
       critRate: 25,
 
       // Validation rules.
@@ -216,20 +242,17 @@ export default Vue.extend({
         this.multiplier.value *= 100;
       }
       this.multipliers.push(this.multiplier);
-      this.multiplier = new Multiplier();
+      this.multiplier = new Multiplier(true);
       this.$refs.multiplierForm.reset();
 
       this.$refs.nameField.focus();
     },
-    removeSelectedMultipliers() {
-      this.selectedMultipliers.forEach(m => {
-        const i = this.multipliers.indexOf(m);
-        if (i === -1) {
-          return;
-        }
-        this.multipliers.splice(i, 1);
-      });
-      this.selectedMultipliers = [];
+    removeMultiplier(multiplier) {
+      const i = this.multipliers.indexOf(multiplier);
+      if (i === -1) {
+        return;
+      }
+      this.multipliers.splice(i, 1);
     }
   }
 });
