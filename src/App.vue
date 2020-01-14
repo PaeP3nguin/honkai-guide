@@ -39,7 +39,7 @@ export default Vue.extend({
   name: "app",
   data: function() {
     return {
-      drawer: true
+      drawer: null
     };
   }
 });
