@@ -81,7 +81,7 @@
       <template slot="no-data">Add some multipliers!</template>
     </v-data-table>
 
-    <v-dialog v-model="saveDialog" max-width="600px" @click:outside="closeSaveDialog">
+    <v-dialog v-model="saveDialog" max-width="800px" @click:outside="closeSaveDialog">
       <template v-slot:activator="{ on }">
         <v-btn class="mt-8" color="primary" v-on="on">
           <v-icon left>mdi-content-save</v-icon>Save/Load
@@ -122,6 +122,8 @@
           <h3>Saved gear:</h3>
         </v-card-text>
 
+        <v-divider></v-divider>
+
         <v-list-item
           v-for="(multipliers, name) in this.savedMultipliers"
           v-bind:key="name"
@@ -139,6 +141,8 @@
             <v-btn color="primary" @click="deleteSavedMultipliers(name)">delete</v-btn>
           </v-list-item-action>
         </v-list-item>
+
+        <v-divider></v-divider>
 
         <v-card-actions>
           <v-spacer></v-spacer>
