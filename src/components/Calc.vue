@@ -20,7 +20,7 @@
     <h3 class="mt-8">Enter new multiplier:</h3>
 
     <v-form ref="multiplierForm" @submit.prevent="submitMultiplier">
-      <v-container>
+      <v-container class="pa-0">
         <v-row dense>
           <v-col>
             <v-text-field
@@ -53,7 +53,7 @@
             ></v-text-field>
           </v-col>
 
-          <v-col cols="1">
+          <v-col class="col-auto">
             <v-btn block color="primary" type="submit">Add</v-btn>
           </v-col>
         </v-row>
@@ -80,6 +80,68 @@
 
       <template slot="no-data">Add some multipliers!</template>
     </v-data-table>
+
+    <v-dialog v-model="saveDialog" max-width="600px" @click:outside="closeSaveDialog">
+      <template v-slot:activator="{ on }">
+        <v-btn class="mt-8" color="primary" v-on="on">
+          <v-icon left>mdi-content-save</v-icon>Save/Load
+        </v-btn>
+      </template>
+
+      <v-card>
+        <v-card-title>
+          <span class="headline">Save/Load</span>
+        </v-card-title>
+
+        <v-card-text>
+          <v-container>
+            <v-row class="align-center">
+              <v-col class="pa-0 mr-4">
+                <v-form ref="saveForm" @submit.prevent="saveMultipliers">
+                  <v-text-field
+                    label="Name"
+                    v-model="saveName"
+                    :rules="nameRules"
+                    :error-messages="saveNameErrors"
+                    autofocus
+                    required
+                  ></v-text-field>
+                </v-form>
+              </v-col>
+
+              <v-col class="pa-0 col-auto">
+                <v-btn color="primary" @click="saveMultipliers">
+                  <v-icon left>mdi-content-save</v-icon>Save/Load
+                </v-btn>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-card-text>
+
+        <v-card-text>
+          <h3>Saved gear:</h3>
+        </v-card-text>
+
+        <v-list-item v-for="(multipliers, name) in this.savedMultipliers" v-bind:key="name" class="mx-3">
+          <v-list-item-content>
+            <v-list-item-title>{{ name }}</v-list-item-title>
+          </v-list-item-content>
+
+          <v-list-item-action>
+            <v-btn color="primary" @click="loadMultipliers(name)">Load</v-btn>
+          </v-list-item-action>
+
+          <v-list-item-action>
+            <v-btn color="primary" @click="deleteSavedMultipliers(name)">delete</v-btn>
+          </v-list-item-action>
+        </v-list-item>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn text color="primary" @click="closeSaveDialog">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </div>
 </template>
 
@@ -127,6 +189,10 @@ class Multiplier {
       this.value = value;
     }
     this.active = active;
+  }
+
+  static fromObject(object: any): Multiplier {
+    return new Multiplier(object.active, object.id, object.name, object.type, object.value);
   }
 
   /**
@@ -194,6 +260,12 @@ export default Vue.extend({
       Type: Type,
       FinalStats: FinalStats,
 
+      // Save/load
+      saveDialog: false,
+      saveName: "",
+      saveNameErrors: [],
+      savedMultipliers: {},
+
       // Stuff that actually changes.
       multiplierTableHeaders: tableHeaders,
       multiplierTypes: Object.values(Type),
@@ -203,6 +275,7 @@ export default Vue.extend({
 
       // Validation rules.
       nameRules: [(v: any) => !!v || "Name is required"],
+      saveNameRules: [(v: any) => !!v || "Name is required"],
       multiplierTypeRules: [(v: any) => !!v || "Type is required"],
       valueRules: [(v: any) => !!v || "Percentage is required"]
     };
@@ -231,6 +304,16 @@ export default Vue.extend({
       return result;
     }
   },
+  watch: {
+    saveDialog: function(value) {
+      if (!value) {
+        // Dialog is closing.
+        return;
+      }
+
+      this.savedMultipliers = JSON.parse(localStorage.savedMultipliers || {});
+    }
+  },
   methods: {
     submitMultiplier() {
       if (!this.$refs.multiplierForm.validate()) {
@@ -246,6 +329,41 @@ export default Vue.extend({
       this.$refs.multiplierForm.reset();
 
       this.$refs.nameField.focus();
+    },
+    saveMultipliers() {
+      if (!this.$refs.saveForm.validate()) {
+        return;
+      }
+
+      if (this.savedMultipliers.hasOwnProperty(this.saveName)) {
+        this.saveNameErrors.push("Name already used");
+        return;
+      }
+
+      if (this.multipliers.length == 0) {
+        this.saveNameErrors.push("No gear entered");
+        return;
+      }
+
+      this.savedMultipliers[this.saveName] = this.multipliers.map(m =>
+        m.clone()
+      );
+
+      localStorage.savedMultipliers = JSON.stringify(this.savedMultipliers);
+
+      this.$refs.saveForm.reset();
+    },
+    loadMultipliers(name) {
+      this.multipliers = [];
+      this.savedMultipliers[name].forEach(m => this.multipliers.push(Multiplier.fromObject(m)));
+    },
+    deleteSavedMultipliers(name) {
+      Vue.delete(this.savedMultipliers, name);
+      localStorage.savedMultipliers = JSON.stringify(this.savedMultipliers);
+    },
+    closeSaveDialog() {
+      this.$refs.saveForm.reset();
+      this.saveDialog = false;
     },
     removeMultiplier(multiplier) {
       const i = this.multipliers.indexOf(multiplier);
