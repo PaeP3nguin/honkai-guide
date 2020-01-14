@@ -98,9 +98,9 @@ enum Type {
 }
 
 enum FinalStats {
-  TotalEle = "Total elemental",
-  TotalPhysNoCrits = "Total physical (no crits)",
-  TotalPhys = "Total physical (with crits)"
+  OverallEle = "Overall elemental",
+  OverallPhysNoCrits = "Overall physical (no crits)",
+  OverallPhys = "Overall physical (with crits)"
 }
 
 class Multiplier {
@@ -199,9 +199,9 @@ export default Vue.extend({
       const physOnly =
         physOnlyNoCrits * critRate * (result[Type.CritDmg] + 1) +
         physOnlyNoCrits * (1 - critRate);
-      result[FinalStats.TotalEle] = tdmOnly * eleOnly;
-      result[FinalStats.TotalPhys] = tdmOnly * physOnly;
-      result[FinalStats.TotalPhysNoCrits] = tdmOnly * physOnlyNoCrits;
+      result[FinalStats.OverallEle] = tdmOnly * eleOnly;
+      result[FinalStats.OverallPhys] = tdmOnly * physOnly;
+      result[FinalStats.OverallPhysNoCrits] = tdmOnly * physOnlyNoCrits;
       return result;
     }
   },
