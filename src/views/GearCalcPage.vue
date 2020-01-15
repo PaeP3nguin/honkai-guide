@@ -12,6 +12,8 @@
           >official global discord.</a>
         </p>
 
+        <p>Bonus tip: click on the name or percentage of a multiplier you already entered to edit it directly!</p>
+
         <v-row class="d-flex mb-6">
           <v-col class="mr-8">
             <Calc v-model="leftMultipliers" />
