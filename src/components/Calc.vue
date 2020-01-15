@@ -60,6 +60,58 @@
       </v-container>
     </v-form>
 
+    <v-dialog v-model="editDialog" max-width="800px" @click:outside="closeEditDialog">
+      <v-card>
+        <v-card-title>
+          <span class="headline">Edit multiplier</span>
+        </v-card-title>
+
+        <v-card-text>
+          <v-form ref="editMultiplierForm" @submit.prevent="saveEditedMultiplier">
+            <v-container class="pa-0">
+              <v-row dense>
+                <v-col>
+                  <v-text-field
+                    label="Name"
+                    v-model="editedMultiplier.name"
+                    :rules="nameRules"
+                    autofocus
+                    required
+                  ></v-text-field>
+                </v-col>
+
+                <v-col>
+                  <v-select
+                    label="Type"
+                    v-model="editedMultiplier.type"
+                    :items="multiplierTypes"
+                    :rules="multiplierTypeRules"
+                    required
+                  ></v-select>
+                </v-col>
+
+                <v-col>
+                  <v-text-field
+                    type="number"
+                    v-model.number="editedMultiplier.value"
+                    label="Percentage"
+                    :rules="valueRules"
+                    required
+                  ></v-text-field>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-form>
+        </v-card-text>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn text color="primary" @click="closeEditDialog">Close</v-btn>
+          <v-btn text color="primary" @click="saveEditedMultiplier">Save</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
     <v-data-table
       :headers="multiplierTableHeaders"
       :items="multipliers"
@@ -70,9 +122,33 @@
         <v-checkbox v-model="item.active" color="primary"></v-checkbox>
       </template>
 
-      <template v-slot:item.value="{item}">{{ item.value }}%</template>
+      <template v-slot:item.name="props">
+        <v-edit-dialog :return-value.sync="props.item.name">
+          {{ props.item.name }}
+          <template v-slot:input>
+            <v-text-field v-model="props.item.name" :rules="nameRules" label="Edit" single-line></v-text-field>
+          </template>
+        </v-edit-dialog>
+      </template>
 
-      <template v-slot:item.delete="{item}">
+      <template v-slot:item.value="props">
+        <v-edit-dialog :return-value.sync="props.item.value">
+          {{ props.item.value }}%
+          <template v-slot:input>
+            <v-text-field
+              v-model="editedMultiplier.value"
+              :rules="valueRules"
+              label="Edit"
+              single-line
+            ></v-text-field>
+          </template>
+        </v-edit-dialog>
+      </template>
+
+      <template v-slot:item.actions="{item}">
+        <v-btn icon @click.stop="startEditMultiplier(item)">
+          <v-icon>mdi-pencil</v-icon>
+        </v-btn>
         <v-btn icon @click="removeMultiplier(item)">
           <v-icon>mdi-close</v-icon>
         </v-btn>
@@ -242,7 +318,7 @@ const tableHeaders = [
   {
     text: "Name",
     value: "name",
-    width: "30%"
+    width: "25%"
   },
   {
     text: "Type",
@@ -255,9 +331,9 @@ const tableHeaders = [
     width: "20%"
   },
   {
-    text: "Delete",
-    value: "delete",
-    width: "10%"
+    text: "Actions",
+    value: "actions",
+    width: "15%"
   }
 ];
 
@@ -279,6 +355,10 @@ export default Vue.extend({
       saveName: "",
       saveNameErrors: [],
       savedMultipliers: {},
+
+      // Edit
+      editDialog: false,
+      editedMultiplier: new Multiplier(true),
 
       // Stuff that actually changes.
       multiplierTableHeaders: tableHeaders,
@@ -368,7 +448,9 @@ export default Vue.extend({
       this.$refs.saveForm.reset();
     },
     loadMultipliers(name) {
-      this.multipliers = this.savedMultipliers[name].map(m => Multiplier.fromObject(m));
+      this.multipliers = this.savedMultipliers[name].map(m =>
+        Multiplier.fromObject(m)
+      );
     },
     deleteSavedMultipliers(name) {
       Vue.delete(this.savedMultipliers, name);
@@ -377,6 +459,29 @@ export default Vue.extend({
     closeSaveDialog() {
       this.$refs.saveForm.reset();
       this.saveDialog = false;
+    },
+    startEditMultiplier(multiplier) {
+      this.editedMultiplier = multiplier.clone();
+      this.editDialog = true;
+    },
+    closeEditDialog() {
+      this.$refs.editMultiplierForm.reset();
+      this.editDialog = false;
+    },
+    saveEditedMultiplier() {
+      if (!this.$refs.editMultiplierForm.validate()) {
+        return;
+      }
+
+      for (let i = 0; i < this.multipliers.length; i++) {
+        const multiplier = this.multipliers[i];
+        if (multiplier.id === this.editedMultiplier.id) {
+          Vue.set(this.multipliers, i, this.editedMultiplier);
+          break;
+        }
+      }
+      this.editedMultiplier = new Multiplier(true);
+      this.editDialog = false;
     },
     removeMultiplier(multiplier) {
       const i = this.multipliers.indexOf(multiplier);
