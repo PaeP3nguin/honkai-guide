@@ -113,6 +113,9 @@
         <h2 class="section-head">
           <a :href="require('@/assets/boss_pool.png')">Current (3.6) boss pool</a>
         </h2>
+        <h2 class="section-head">
+          <a :href="require('@/assets/boss_pool_37.png')">Upcoming (3.7) boss pool</a>
+        </h2>
         <h2 class="section-head">Scores by time</h2>
         <ul>
           <li
