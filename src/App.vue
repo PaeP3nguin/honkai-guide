@@ -3,6 +3,12 @@
     <v-app-bar app color="indigo" clipped-left dark>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>Honkai helper</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+      <v-btn icon target="_blank" href="https://github.com/PaeP3nguin/honkai-guide">
+        <v-icon>mdi-github-circle</v-icon>
+      </v-btn>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" clipped app>
