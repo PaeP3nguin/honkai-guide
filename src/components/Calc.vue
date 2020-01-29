@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="mt-6 mb-3">Calculated multipliers</h2>
+    <h2 class="mt-3 mb-3">Calculated multipliers</h2>
 
     <div v-for="f in FinalStats" v-bind:key="f">
       <span class="font-weight-bold">{{ f }}:&nbsp;</span>
