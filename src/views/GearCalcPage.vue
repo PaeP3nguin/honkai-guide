@@ -110,7 +110,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import Calc, { Type, Multiplier } from "@/components/Calc.vue";
+import Calc from "@/components/Calc.vue";
 
 export default Vue.extend({
   components: {
