@@ -89,6 +89,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/02/01 - Add Azure Empyrea</li>
           <li>2020/01/07 - Increase granularity of scores by time</li>
           <li>2020/01/06 - Added HF</li>
           <li>2019/12/15 - Actually we following CN bosses</li>
@@ -177,6 +178,7 @@ const valkToChinese = {
   "Accipiter (VA)": ["迅"],
   "Arctic Kreigmesser (KMS)": ["极"],
   "Argent Knight: Artemis (AKA)": ["月魂"],
+  "Azure Empyrea": ["云墨丹心"],
   "Black Nucleus (BN)": ["黑"],
   "Battlestorm (BS)": ["疾"],
   "Bladestrike (VB)": ["强"],
