@@ -118,7 +118,7 @@
       item-key="id"
       hide-default-footer
     >
-      <template v-slot:item.active="{item}">
+      <template v-slot:item.active="{ item }">
         <v-checkbox v-model="item.active" color="primary"></v-checkbox>
       </template>
 
@@ -145,7 +145,7 @@
         </v-edit-dialog>
       </template>
 
-      <template v-slot:item.actions="{item}">
+      <template v-slot:item.actions="{ item }">
         <v-btn icon @click.stop="startEditMultiplier(item)">
           <v-icon>mdi-pencil</v-icon>
         </v-btn>
@@ -231,82 +231,13 @@
 
 <script lang="ts">
 import Vue from "vue";
-
-enum Type {
-  TdmDealt = "Total DMG dealt",
-  TdmTaken = "Total DMG taken",
-  EleDealt = "Elemental DMG dealt",
-  EleTaken = "Elemental DMG taken",
-  PhysDealt = "Physical DMG dealt",
-  PhysTaken = "Physical DMG taken",
-  CritDmg = "Critical DMG"
-}
+import { Type, Multiplier } from "@/models/multiplier";
+import ValkMultipliers from "@/data/valk_multipliers";
 
 enum FinalStats {
   OverallEle = "Overall elemental",
   OverallPhysNoCrits = "Overall physical (no crits)",
   OverallPhys = "Overall physical (with crits)"
-}
-
-class Multiplier {
-  id: number;
-  name: string;
-  type: Type;
-  value: number;
-  active: boolean;
-
-  constructor(
-    active: boolean,
-    id?: number,
-    name?: string,
-    type?: Type,
-    value?: number
-  ) {
-    this.id = id || Math.random();
-    if (name) {
-      this.name = name;
-    }
-    if (type) {
-      this.type = type;
-    }
-    if (value) {
-      this.value = value;
-    }
-    this.active = active;
-  }
-
-  static fromObject(object: any): Multiplier {
-    return new Multiplier(
-      object.active,
-      object.id,
-      object.name,
-      object.type,
-      object.value
-    );
-  }
-
-  /**
-   * Converts this multiplier to a decimal percentage value if it matches the desired type, else returns 0.
-   *
-   * If the multiplier is not active, also returns 0.
-   */
-  toPercent(type: Type): number {
-    if (this.type != type || !this.active) {
-      return 0;
-    }
-
-    return this.value / 100;
-  }
-
-  clone(): Multiplier {
-    return new Multiplier(
-      this.active,
-      this.id,
-      this.name,
-      this.type,
-      this.value
-    );
-  }
 }
 
 const tableHeaders = [
@@ -337,8 +268,6 @@ const tableHeaders = [
   }
 ];
 
-export { Type, Multiplier };
-
 export default Vue.extend({
   name: "gear-calc",
   props: {
@@ -349,6 +278,7 @@ export default Vue.extend({
       // Constants.
       Type: Type,
       FinalStats: FinalStats,
+      ValkMultipliers: ValkMultipliers,
 
       // Save/load
       saveDialog: false,
@@ -358,12 +288,12 @@ export default Vue.extend({
 
       // Edit
       editDialog: false,
-      editedMultiplier: new Multiplier(true),
+      editedMultiplier: Multiplier.empty(),
 
       // Stuff that actually changes.
       multiplierTableHeaders: tableHeaders,
       multiplierTypes: Object.values(Type),
-      multiplier: new Multiplier(true),
+      multiplier: Multiplier.empty(),
       multipliers: this.value,
       critRate: 25,
 
@@ -419,7 +349,7 @@ export default Vue.extend({
         this.multiplier.value *= 100;
       }
       this.multipliers.push(this.multiplier);
-      this.multiplier = new Multiplier(true);
+      this.multiplier = Multiplier.empty();
       this.$refs.multiplierForm.reset();
 
       this.$refs.nameField.focus();
@@ -480,7 +410,7 @@ export default Vue.extend({
           break;
         }
       }
-      this.editedMultiplier = new Multiplier(true);
+      this.editedMultiplier = Multiplier.empty();
       this.editDialog = false;
     },
     removeMultiplier(multiplier) {
