@@ -43,7 +43,6 @@ class Multiplier {
 
     static fromObject(object: any): Multiplier {
         return new Multiplier({
-            // id: object.id,
             name: object.name,
             type: object.type,
             value: object.value,
@@ -68,8 +67,16 @@ class Multiplier {
     return this.value / 100;
     }
 
-    clone(): Multiplier {
+    /**
+     * Clones this multiplier into a new object.
+     *
+     * @param {boolean} [id] if true, will also clone the id of this multiplier
+     * @returns {Multiplier}
+     * @memberof Multiplier
+     */
+    clone(id?: boolean): Multiplier {
         return new Multiplier({
+            id: id ? this.id : null,
             name: this.name,
             type: this.type,
             value: this.value,

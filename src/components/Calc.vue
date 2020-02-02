@@ -117,6 +117,7 @@
       :items="multipliers"
       item-key="id"
       hide-default-footer
+      disable-pagination
     >
       <template v-slot:item.active="{ item }">
         <v-checkbox v-model="item.active" color="primary"></v-checkbox>
@@ -226,6 +227,47 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
+
+    <v-dialog v-model="fillValksDialog" max-width="800px">
+      <template v-slot:activator="{ on }">
+        <v-btn class="mt-8 ml-6" color="primary" v-on="on">
+          <v-img class="mr-3" left max-width="25" :src="require('@/assets/valkyrie_icon.png')"></v-img>Add valks
+        </v-btn>
+      </template>
+
+      <v-card>
+        <v-card-title>
+          <span class="headline">Add valk built-in multipliers</span>
+        </v-card-title>
+
+        <v-card-text>
+          <span>
+            Click on any battlesuit to add their built-in multipliers to the calculator.
+            All multipliers are for max-level valks. Base S ranks are S rank, A ranks are SSS unless otherwise indicated.
+            Work in progress! I have to enter each valk manually :/
+          </span>
+        </v-card-text>
+
+        <v-card-text v-for="(suits, valk) in this.ValkMultipliers" v-bind:key="valk">
+          <h3 class="mb-4">{{ valk }}</h3>
+          <v-btn
+            color="primary"
+            v-for="(multipliers, suit) in suits"
+            v-bind:key="suit"
+            @click="addValkMultipliers(multipliers)"
+          >{{ suit }}</v-btn>
+        </v-card-text>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn text color="primary" @click="fillValksDialog = false">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
+    <v-btn class="mt-8 ml-6" color="error" @click="clearMultipliers">
+      <v-icon left>mdi-trash-can-outline</v-icon>Clear
+    </v-btn>
   </div>
 </template>
 
@@ -285,6 +327,9 @@ export default Vue.extend({
       saveName: "",
       saveNameErrors: [],
       savedMultipliers: {},
+
+      // Fill
+      fillValksDialog: false,
 
       // Edit
       editDialog: false,
@@ -354,6 +399,16 @@ export default Vue.extend({
 
       this.$refs.nameField.focus();
     },
+    addValkMultipliers(multipliers: Multiplier[]) {
+      this.addMultipliers(multipliers);
+      this.fillValksDialog = false;
+    },
+    addMultipliers(multipliers: Multiplier[]) {
+      multipliers.forEach(m => this.multipliers.push(m.clone()));
+    },
+    clearMultipliers() {
+      this.multipliers = [];
+    },
     saveMultipliers() {
       if (!this.$refs.saveForm.validate()) {
         return;
@@ -391,7 +446,7 @@ export default Vue.extend({
       this.saveDialog = false;
     },
     startEditMultiplier(multiplier) {
-      this.editedMultiplier = multiplier.clone();
+      this.editedMultiplier = multiplier.clone(true);
       this.editDialog = true;
     },
     closeEditDialog() {
