@@ -35,6 +35,15 @@
     <v-content>
       <router-view />
     </v-content>
+
+    <v-footer class="hidden-sm-and-down" color="indigo" app>
+      <span>
+        By paep3nguin#9170. Bugs? Suggestions? Find me on the
+        <a class="white--text"
+          href="https://discord.gg/hi3"
+        >official global discord.</a>
+      </span>
+    </v-footer>
   </v-app>
 </template>
 

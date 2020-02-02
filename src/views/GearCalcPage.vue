@@ -4,14 +4,6 @@
       <v-col xs10>
         <h1>Honkai gear calculator</h1>
 
-        <p>
-          Made by PaeP3nguin (Discord: paep3nguin#9170). Bugs? Suggestions? Find
-          me on the
-          <a
-            href="https://discord.gg/hi3"
-          >official global discord.</a>
-        </p>
-
         <p>Bonus tip: click on the name or percentage of a multiplier you already entered to edit it directly!</p>
 
         <v-row class="d-flex mb-6">

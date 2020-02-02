@@ -20,12 +20,6 @@
           >Fix 3rd guide</a>
           link to your bookmark bar and click it when you're on the site!
         </p>
-        <p>
-          Made by PaeP3nguin (Discord: paep3nguin#9170). Bugs? Suggestions? Find me on the
-          <a
-            href="https://discord.gg/hi3"
-          >official global discord.</a>
-        </p>
 
         <v-layout align-center>
           <img class="valk-gif mr-2" :src="require('@/assets/aij2.gif')" />
