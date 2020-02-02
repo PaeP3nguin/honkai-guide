@@ -338,7 +338,7 @@ export default Vue.extend({
       // Stuff that actually changes.
       multiplierTableHeaders: tableHeaders,
       multiplierTypes: Object.values(Type),
-      multiplier: Multiplier.empty(),
+      multiplier: new Multiplier({active: true}),
       multipliers: this.value,
       critRate: 25,
 
@@ -394,7 +394,7 @@ export default Vue.extend({
         this.multiplier.value *= 100;
       }
       this.multipliers.push(this.multiplier);
-      this.multiplier = Multiplier.empty();
+      this.multiplier = new Multiplier({active: true});
       this.$refs.multiplierForm.reset();
 
       this.$refs.nameField.focus();
