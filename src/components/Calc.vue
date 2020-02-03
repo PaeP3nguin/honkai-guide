@@ -4,18 +4,44 @@
 
     <div v-for="f in FinalStats" v-bind:key="f">
       <span class="font-weight-bold">{{ f }}:&nbsp;</span>
-      <span>{{ calculationResults[f].toFixed(2) }}</span>
+      <span>{{ calculationResults[f].toFixed(2) * 100 }}%</span>
     </div>
 
-    <v-slider
-      label="Crit rate"
-      class="mt-6"
-      v-model="critRate"
-      thumb-label="always"
-      :thumb-size="24"
-      min="0"
-      max="100"
-    ></v-slider>
+    <div v-if="developerMode">
+      <p>{{ this.value }}</p>
+      <br />
+      <p>{{ this.calculationResults }}</p>
+    </div>
+
+    <h3 class="mt-8">Enter valk info (only needed for physical valks):</h3>
+
+    <v-container class="pa-0">
+      <v-row dense>
+        <v-col cols="2">
+          <v-text-field
+            type="number"
+            label="Valkyrie level"
+            v-model.number="valkLvl"
+            :rules="valkLvlRules"
+          ></v-text-field>
+        </v-col>
+
+        <v-col cols="2" class="ml-2">
+          <v-text-field
+            type="number"
+            label="Valkyrie CRT"
+            v-model.number="valkCrt"
+            :rules="valueRules"
+          ></v-text-field>
+        </v-col>
+
+        <v-col class="ml-2">
+          <a :href="require('@/assets/valk_crt.png')" target="_blank">Where to find CRT?</a>
+          <br />
+          <span>(Be sure to subtract CRT from stigs or take them off!)</span>
+        </v-col>
+      </v-row>
+    </v-container>
 
     <h3 class="mt-8">Enter new multiplier:</h3>
 
@@ -47,7 +73,7 @@
             <v-text-field
               type="number"
               v-model.number="multiplier.value"
-              label="Percentage"
+              label="Value"
               :rules="valueRules"
               required
             ></v-text-field>
@@ -114,7 +140,7 @@
 
     <v-data-table
       :headers="multiplierTableHeaders"
-      :items="multipliers"
+      :items="value"
       item-key="id"
       hide-default-footer
       disable-pagination
@@ -134,7 +160,8 @@
 
       <template v-slot:item.value="props">
         <v-edit-dialog :return-value.sync="props.item.value">
-          {{ props.item.value }}%
+          {{ props.item.value }}
+          <span v-if="props.item.type != Type.Crt">%</span>
           <template v-slot:input>
             <v-text-field
               v-model="editedMultiplier.value"
@@ -336,17 +363,22 @@ export default Vue.extend({
       editedMultiplier: Multiplier.empty(),
 
       // Stuff that actually changes.
+      developerMode: false,
       multiplierTableHeaders: tableHeaders,
       multiplierTypes: Object.values(Type),
-      multiplier: new Multiplier({active: true}),
-      multipliers: this.value,
-      critRate: 25,
+      multiplier: new Multiplier({ active: true }),
+      valkCrt: 100,
+      valkLvl: 80,
 
       // Validation rules.
       nameRules: [(v: any) => !!v || "Name is required"],
       saveNameRules: [(v: any) => !!v || "Name is required"],
       multiplierTypeRules: [(v: any) => !!v || "Type is required"],
-      valueRules: [(v: any) => !!v || "Percentage is required"]
+      valueRules: [(v: any) => !!v || "Value is required"],
+      valkLvlRules: [
+        (v: any) => !!v || "Level is required",
+        (v: any) => v <= 80 || "Max is 80!"
+      ]
     };
   },
   computed: {
@@ -354,13 +386,27 @@ export default Vue.extend({
       let result = {};
       for (let key in Type) {
         const type = Type[key];
-        result[type] = this.multipliers.reduce(
-          (acc, m) => acc + m.toPercent(type),
-          1
-        );
+
+        if (type == Type.Crt) {
+          result[type] = this.value.reduce((acc, m) => {
+            return acc + m.toIntegerValue(type);
+          }, 0);
+        } else if (type == Type.CritRate) {
+          result[type] = this.value.reduce(
+            (acc, m) => acc + m.toPercent(type),
+            0
+          );
+        } else {
+          result[type] = this.value.reduce(
+            (acc, m) => acc + m.toPercent(type),
+            1
+          );
+        }
       }
 
-      const critRate = this.critRate / 100;
+      const critRate =
+        (this.valkCrt + result[Type.Crt]) / (this.valkLvl * 5 + 75) +
+        result[Type.CritRate];
       const tdmOnly = result[Type.TdmDealt] * result[Type.TdmTaken];
       const eleOnly = result[Type.EleDealt] * result[Type.EleTaken];
       const physOnlyNoCrits = result[Type.PhysDealt] * result[Type.PhysTaken];
@@ -385,6 +431,11 @@ export default Vue.extend({
   },
   methods: {
     submitMultiplier() {
+      if (this.multiplier.name == "yolol") {
+        this.developerMode = !this.developerMode;
+        return;
+      }
+
       if (!this.$refs.multiplierForm.validate()) {
         return;
       }
@@ -393,8 +444,8 @@ export default Vue.extend({
         // Convert to integer percentage if user typed decimal.
         this.multiplier.value *= 100;
       }
-      this.multipliers.push(this.multiplier);
-      this.multiplier = new Multiplier({active: true});
+      this.value.push(this.multiplier);
+      this.multiplier = new Multiplier({ active: true });
       this.$refs.multiplierForm.reset();
 
       this.$refs.nameField.focus();
@@ -404,10 +455,10 @@ export default Vue.extend({
       this.fillValksDialog = false;
     },
     addMultipliers(multipliers: Multiplier[]) {
-      multipliers.forEach(m => this.multipliers.push(m.clone()));
+      multipliers.forEach(m => this.value.push(m.clone()));
     },
     clearMultipliers() {
-      this.multipliers = [];
+      this.value = [];
     },
     saveMultipliers() {
       if (!this.$refs.saveForm.validate()) {
@@ -419,12 +470,12 @@ export default Vue.extend({
         return;
       }
 
-      if (this.multipliers.length == 0) {
+      if (this.value.length == 0) {
         this.saveNameErrors.push("No gear entered");
         return;
       }
 
-      this.savedMultipliers[this.saveName] = this.multipliers.map(m =>
+      this.savedMultipliers[this.saveName] = this.value.map(m =>
         m.clone()
       );
 
@@ -433,7 +484,7 @@ export default Vue.extend({
       this.$refs.saveForm.reset();
     },
     loadMultipliers(name) {
-      this.multipliers = this.savedMultipliers[name].map(m =>
+      this.value = this.savedMultipliers[name].map(m =>
         Multiplier.fromObject(m)
       );
     },
@@ -458,10 +509,10 @@ export default Vue.extend({
         return;
       }
 
-      for (let i = 0; i < this.multipliers.length; i++) {
-        const multiplier = this.multipliers[i];
+      for (let i = 0; i < this.value.length; i++) {
+        const multiplier = this.value[i];
         if (multiplier.id === this.editedMultiplier.id) {
-          Vue.set(this.multipliers, i, this.editedMultiplier);
+          Vue.set(this.value, i, this.editedMultiplier);
           break;
         }
       }
@@ -469,11 +520,11 @@ export default Vue.extend({
       this.editDialog = false;
     },
     removeMultiplier(multiplier) {
-      const i = this.multipliers.indexOf(multiplier);
+      const i = this.value.indexOf(multiplier);
       if (i === -1) {
         return;
       }
-      this.multipliers.splice(i, 1);
+      this.value.splice(i, 1);
     }
   }
 });

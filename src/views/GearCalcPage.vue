@@ -89,11 +89,16 @@
         <h3 class="mt-4">What about critical hits?</h3>
         <p>
           The combination of crit rate and crit damage can be thought of as
-          another multiplier, but only forphysical damage. Critical damage
+          another multiplier, but only for physical damage. Critical damage
           starts at 100% and this is already factored in, so only include
-          additional boosts. Be sure to convert from CRT to critical rate with
-          the formula: crit rate = CRT/(Valk Level * 5 + 75). At max level, 4.75
-          CRT is equal to 1% crit rate.
+          additional boosts. Most multipliers you see will be direct crit rate boosts,
+          like
+          <a href="https://honkaiimpact3.gamepedia.com/Dirac">Dirac T</a>, however some
+          stigs directly give CRT, like
+          <a href="https://honkaiimpact3.gamepedia.com/Ryunosuke_Akutagawa">Ryunosuke M</a>
+          , so use the "CRT" multiplier type directly. CRT converts to crit rate with the
+          following formula: crit rate = CRT/(Valk Level * 5 + 75). At max level, 4.75 CRT is
+          equal to 1% crit rate.
         </p>
       </v-col>
     </v-row>

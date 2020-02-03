@@ -5,7 +5,9 @@ enum Type {
     EleTaken = "Elemental DMG taken",
     PhysDealt = "Physical DMG dealt",
     PhysTaken = "Physical DMG taken",
-    CritDmg = "Critical DMG"
+    CritRate = "Critical rate %",
+    Crt = "CRT",
+    CritDmg = "Critical DMG",
 }
 
 class Multiplier {
@@ -20,7 +22,7 @@ class Multiplier {
         name,
         type,
         value,
-        active
+        active,
     }: {
         active?: boolean;
         id?: number;
@@ -46,7 +48,7 @@ class Multiplier {
             name: object.name,
             type: object.type,
             value: object.value,
-            active: object.active
+            active: object.active,
         });
     }
 
@@ -60,11 +62,24 @@ class Multiplier {
      * If the multiplier is not active, also returns 0.
      */
     toPercent(type: Type): number {
-    if (this.type != type || !this.active) {
-        return 0;
+        if (this.type != type || !this.active) {
+            return 0;
+        }
+
+        return this.value / 100;
     }
 
-    return this.value / 100;
+    /**
+     * Converts this multiplier to an integer value if it matches the desired type, else returns 0.
+     *
+     * If the multiplier is not active, also returns 0.
+     */
+    toIntegerValue(type: Type): number {
+        if (this.type != type || !this.active) {
+            return 0;
+        }
+
+        return this.value;
     }
 
     /**
@@ -80,7 +95,7 @@ class Multiplier {
             name: this.name,
             type: this.type,
             value: this.value,
-            active: this.active
+            active: this.active,
         });
     }
 }
