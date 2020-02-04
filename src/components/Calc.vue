@@ -475,9 +475,7 @@ export default Vue.extend({
         return;
       }
 
-      this.savedMultipliers[this.saveName] = this.value.map(m =>
-        m.clone()
-      );
+      this.savedMultipliers[this.saveName] = this.value.map(m => m.clone());
 
       localStorage.savedMultipliers = JSON.stringify(this.savedMultipliers);
 

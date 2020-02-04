@@ -56,7 +56,30 @@ export default Vue.extend({
     return {
       drawer: null
     };
-  }
+  },
+  created() {
+    window.addEventListener(
+      "keydown",
+      function(e) {
+        if (e.keyCode !== 8) {
+          // Only wanna prevent backspace.
+          return;
+        }
+
+        const target = e.target as Element;
+        window.console.log(target);
+        if (
+          target == document.body ||
+          target.hasAttribute("readonly") ||
+          ["submit", "checkbox", "button"].includes(target.getAttribute("type"))
+        ) {
+          e.preventDefault();
+          return false;
+        }
+      },
+      true
+    );
+  },
 });
 </script>
 
