@@ -150,7 +150,7 @@ const bossToChinese = {
   "Argent Knight: Artemis (AKA)": ["月魂"],
   "Benares": ["贝纳勒斯", "龙"],
   "Cursed Soul": ["姬子", "被诅咒的英魂"],
-  "Dark Jixuanyuan (DXY, DJXY)": ["皮皮马", "马", "姬麟·黑"],
+  "Dark Jixuanyuan (DXY, DJXY)": ["皮皮马", "马"],// "姬麟·黑"],
   "Doom": ["沉灵", "湮灭沉灵"],
   "Herrscher of the Void (HoV)": ["空之律者", "女王"],
   "Heimdall": ["海姆达尔", "海胖"],
@@ -208,7 +208,7 @@ const valkToChinese = {
   "Shadow Dash (SD)": ["影"],
   "Shadow Knight (SK)": ["轮"],
   "Sixth Serenade (6S)": ["六"],
-  "Stygian Nympn (SN)": ["黑希", "彼岸双生"],
+  "Stygian Nymph (SN)": ["黑希", "彼岸双生"],
   "Swallowtail Phantasm (SP)": ["幻海梦蝶"],
   "Triumph (VT)": ["凯"],
   "Umbral Rose (UR)": ["黯"],
@@ -291,7 +291,7 @@ export default {
       let baseParams = [];
       this.bossNames.forEach(name => {
         this.valkCombos.forEach(combo => {
-          const combined = name + combo;
+          const combined = name + " " + combo;
           if (combined) {
             baseParams.push(combined);
           }
@@ -305,11 +305,11 @@ export default {
       let modifierParams = "";
       for (const m of this.modifiers) {
         if (m.value) {
-          modifierParams += modifiersToChinese[m.name];
+          modifierParams += " " + modifiersToChinese[m.name];
         }
       }
       if (this.score) {
-        modifierParams += this.score;
+        modifierParams += " " + this.score;
       }
 
       return baseParams.map(base => `${baseUrl}${base}${modifierParams}`);
