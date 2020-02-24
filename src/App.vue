@@ -29,6 +29,14 @@
             <v-list-item-title>Gear calculator</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <v-list-item link to="/scores">
+          <v-list-item-action>
+            <v-icon>mdi-timer</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>MA score to time</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
