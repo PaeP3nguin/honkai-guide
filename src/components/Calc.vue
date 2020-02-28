@@ -458,7 +458,9 @@ export default Vue.extend({
       multipliers.forEach(m => this.value.push(m.clone()));
     },
     clearMultipliers() {
-      this.value = [];
+      while(this.value.length) {
+        Vue.delete(this.value, 0);
+      }
     },
     saveMultipliers() {
       if (!this.$refs.saveForm.validate()) {
@@ -482,8 +484,9 @@ export default Vue.extend({
       this.$refs.saveForm.reset();
     },
     loadMultipliers(name) {
-      this.value = this.savedMultipliers[name].map(m =>
-        Multiplier.fromObject(m)
+      this.clearMultipliers();
+      this.savedMultipliers[name].forEach(m =>
+        this.value.push(Multiplier.fromObject(m))
       );
     },
     deleteSavedMultipliers(name) {
