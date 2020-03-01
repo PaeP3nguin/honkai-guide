@@ -5,7 +5,8 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
         T: [
             new Multiplier({
                 active: true,
-                name: "Jin Shengtan T: Allies in Blue Phoenix Field (2-set effect).",
+                name:
+                    "Jin Shengtan T: Allies in Blue Phoenix Field (2-set effect).",
                 type: Type.EleDealt,
                 value: 15,
             }),
@@ -138,6 +139,62 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
                 name: "Ryunosuke 3 set: Melee attacks.",
                 type: Type.TdmDealt,
                 value: 20,
+            }),
+        ],
+    },
+    "Welt Yang": {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Welt T",
+                type: Type.TdmDealt,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name: "Welt T: Herrscher form (ult and charged attacks).",
+                type: Type.EleDealt,
+                value: 50,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Welt M",
+                type: Type.EleDealt,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "Welt M: Hits on enemies. 1% ice taken per stack. Max 10 stacks.",
+                type: Type.EleTaken,
+                value: 10,
+            }),
+        ],
+        B: [
+            new Multiplier({
+                active: true,
+                name: "Welt B",
+                type: Type.TdmDealt,
+                value: 15,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name:
+                    "Welt 2 set: Charged attacks for 5 seconds following the first hit.",
+                type: Type.TdmDealt,
+                value: 60,
+            }),
+        ],
+        "3 set": [
+            new Multiplier({
+                active: true,
+                name: "Welt 3 set",
+                type: Type.EleDealt,
+                value: 40,
             }),
         ],
     },
