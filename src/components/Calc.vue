@@ -139,6 +139,7 @@
     </v-dialog>
 
     <v-data-table
+      dense
       :headers="multiplierTableHeaders"
       :items="value"
       item-key="id"
@@ -269,25 +270,68 @@
 
         <v-card-text>
           <span>
-            Click on any battlesuit to add their built-in multipliers to the calculator.
-            All multipliers are for max-level valks. Base S ranks are S rank, A ranks are SSS unless otherwise indicated.
-            Work in progress! I have to enter each valk manually :/
+            Work in progress! Click on any battlesuit to add their built-in multipliers to the calculator.
+            All multipliers are for max-level valks. Base S ranks are S rank and A ranks are SSS unless otherwise indicated.
           </span>
         </v-card-text>
 
         <v-card-text v-for="(suits, valk) in this.ValkMultipliers" v-bind:key="valk">
           <h3 class="mb-4">{{ valk }}</h3>
           <v-btn
+            class="mr-4"
             color="primary"
             v-for="(multipliers, suit) in suits"
             v-bind:key="suit"
-            @click="addValkMultipliers(multipliers)"
+            @click="addMultipliers(multipliers); fillValksDialog = false;"
           >{{ suit }}</v-btn>
         </v-card-text>
 
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn text color="primary" @click="fillValksDialog = false">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
+    <v-dialog v-model="fillStigsDialog" max-width="500px">
+      <template v-slot:activator="{ on }">
+        <v-btn class="mt-8 ml-6" color="primary" v-on="on">
+          <v-img class="mr-3" left max-width="15" :src="require('@/assets/stigamata_icon.png')"></v-img>Add stigs
+        </v-btn>
+      </template>
+
+      <v-card>
+        <v-card-title>
+          <span class="headline">Add stigmata multipliers</span>
+        </v-card-title>
+
+        <v-card-text>
+          <v-text-field label="Filter" v-model="stigsDialogFilter" autofocus></v-text-field>
+        </v-card-text>
+
+        <v-tabs>
+          <template v-for="(stigs, type) in filteredDialogStigs">
+            <v-tab v-bind:key="type">{{ type }}</v-tab>
+
+            <v-tab-item class="px-4" v-bind:key="type">
+              <div v-for="(pieces, name) in stigs" v-bind:key="name">
+                <h3 class="my-4">{{ name }}</h3>
+
+                <v-btn
+                  color="primary"
+                  class="mr-4"
+                  v-for="(multipliers, piece) in pieces"
+                  v-bind:key="piece"
+                  @click="addMultipliers(multipliers);"
+                >{{ piece }}</v-btn>
+              </div>
+            </v-tab-item>
+          </template>
+        </v-tabs>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn text color="primary" @click="fillStigsDialog = false">Close</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -302,6 +346,10 @@
 import Vue from "vue";
 import { Type, Multiplier } from "@/models/multiplier";
 import ValkMultipliers from "@/data/valk_multipliers";
+import {
+  DPS_STIG_MULTIPLIERS,
+  SUPPORT_STIG_MULTIPLIERS
+} from "@/data/stig_multipliers";
 
 enum FinalStats {
   OverallEle = "Overall elemental",
@@ -348,6 +396,8 @@ export default Vue.extend({
       Type: Type,
       FinalStats: FinalStats,
       ValkMultipliers: ValkMultipliers,
+      DpsStigMultipliers: DPS_STIG_MULTIPLIERS,
+      SupportStigMultipliers: SUPPORT_STIG_MULTIPLIERS,
 
       // Save/load
       saveDialog: false,
@@ -357,6 +407,8 @@ export default Vue.extend({
 
       // Fill
       fillValksDialog: false,
+      fillStigsDialog: false,
+      stigsDialogFilter: "",
 
       // Edit
       editDialog: false,
@@ -417,6 +469,24 @@ export default Vue.extend({
       result[FinalStats.OverallPhys] = tdmOnly * physOnly;
       result[FinalStats.OverallPhysNoCrits] = tdmOnly * physOnlyNoCrits;
       return result;
+    },
+    filteredDialogStigs: function() {
+      function filterByKeyName(map, filterString: string) {
+        return Object.keys(map)
+          .filter(key => key.toLowerCase().includes(filterString.toLowerCase()))
+          .reduce((obj, key) => {
+            obj[key] = map[key];
+            return obj;
+          }, {});
+      }
+
+      return {
+        DPS: filterByKeyName(DPS_STIG_MULTIPLIERS, this.stigsDialogFilter),
+        Support: filterByKeyName(
+          SUPPORT_STIG_MULTIPLIERS,
+          this.stigsDialogFilter
+        )
+      };
     }
   },
   watch: {
@@ -450,15 +520,11 @@ export default Vue.extend({
 
       this.$refs.nameField.focus();
     },
-    addValkMultipliers(multipliers: Multiplier[]) {
-      this.addMultipliers(multipliers);
-      this.fillValksDialog = false;
-    },
     addMultipliers(multipliers: Multiplier[]) {
       multipliers.forEach(m => this.value.push(m.clone()));
     },
     clearMultipliers() {
-      while(this.value.length) {
+      while (this.value.length) {
         Vue.delete(this.value, 0);
       }
     },
