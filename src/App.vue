@@ -46,10 +46,16 @@
 
     <v-footer class="hidden-sm-and-down" color="indigo" app>
       <span>
-        By paep3nguin#9170. Bugs? Suggestions? Find me on the
-        <a class="white--text"
+        By paep3nguin#9170, with contributions from Aeru. Bugs? Suggestions? Find me on the
+        <a
+          class="white--text"
           href="https://discord.gg/hi3"
-        >official global discord.</a>
+        >official global discord</a>
+        or the
+        <a
+          class="white--text"
+          href="https://discord.gg/cswCHHC"
+        >CafeQuanta armada discord</a>.
       </span>
     </v-footer>
   </v-app>
@@ -87,7 +93,7 @@ export default Vue.extend({
       },
       true
     );
-  },
+  }
 });
 </script>
 
