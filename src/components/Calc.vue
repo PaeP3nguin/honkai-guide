@@ -275,8 +275,11 @@
           </span>
         </v-card-text>
 
-        <v-card-text v-for="(suits, valk) in this.ValkMultipliers" v-bind:key="valk">
+        <v-card-text v-for="(suits, valk, i) in this.ValkMultipliers" v-bind:key="valk">
+          <v-divider v-if="i != 0" class="mb-4"></v-divider>
+
           <h3 class="mb-4">{{ valk }}</h3>
+
           <v-btn
             class="mr-4"
             color="primary"
@@ -305,8 +308,8 @@
           <span class="headline">Add stigmata multipliers</span>
         </v-card-title>
 
-        <v-card-text>
-          <v-text-field label="Filter" v-model="stigsDialogFilter" autofocus></v-text-field>
+        <v-card-text class="pb-0">
+          <v-text-field label="Search" v-model="stigsDialogFilter" autofocus></v-text-field>
         </v-card-text>
 
         <v-tabs>
@@ -314,8 +317,10 @@
             <v-tab v-bind:key="type">{{ type }}</v-tab>
 
             <v-tab-item class="px-4" v-bind:key="type">
-              <div v-for="(pieces, name) in stigs" v-bind:key="name">
-                <h3 class="my-4">{{ name }}</h3>
+              <div v-for="(pieces, name, i) in stigs" v-bind:key="name">
+                <v-divider v-if="i != 0" class="mt-4"></v-divider>
+
+                <h4 class="my-4">{{ name }}</h4>
 
                 <v-btn
                   color="primary"
