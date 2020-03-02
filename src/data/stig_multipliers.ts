@@ -153,6 +153,59 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
+    Dirac: {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Dirac T",
+                type: Type.CritRate,
+                value: 10,
+            }),
+            new Multiplier({
+                active: true,
+                name: "Dirac T: After entry or weapon skill, gain crit rate.",
+                type: Type.CritRate,
+                value: 10,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Dirac M: Ultimate attacks gain TDM.",
+                type: Type.TdmDealt,
+                value: 26,
+            }),
+            new Multiplier({
+                active: true,
+                name: "Dirac M: During burst mode, gain TDM.",
+                type: Type.TdmDealt,
+                value: 26,
+            }),
+            new Multiplier({
+                active: false,
+                name:
+                    "Dirac M: During burst mode, gain 1.5% TDM every second. Max 9 stacks",
+                type: Type.TdmDealt,
+                value: 13.5,
+            }),
+        ],
+        B: [
+            new Multiplier({
+                active: true,
+                name: "Dirac B",
+                type: Type.PhysDealt,
+                value: 20,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name: "Dirac 2 set: If any 2 Dirac stig effects are active, gain physical DMG.",
+                type: Type.PhysDealt,
+                value: 35,
+            }),
+        ],
+    },
     "Elizabeth Bathory": {
         T: [
             new Multiplier({
@@ -252,8 +305,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         "2 set": [
             new Multiplier({
                 active: true,
-                name:
-                    "Kafka 2 set: When charged attack used, gain TDM.",
+                name: "Kafka 2 set: When charged attack used, gain TDM.",
                 type: Type.TdmDealt,
                 value: 45,
             }),
