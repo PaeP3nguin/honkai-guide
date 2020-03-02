@@ -1,6 +1,35 @@
 import { Type, Multiplier } from "@/models/multiplier";
 
 const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
+    "Fu Hua - Margrave": {
+        T: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Margrave T: When 2-set effect is active, team gains elemental DMG.",
+                type: Type.EleDealt,
+                value: 20,
+            }),
+        ],
+        B: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Margrave B: When 2-set is active, nearby enemies take more TDM.",
+                type: Type.TdmTaken,
+                value: 14,
+            }),
+        ],
+        "3 set": [
+            new Multiplier({
+                active: false,
+                name:
+                    "Margrave 3 set: When 2-set is active, B piece effect increased to 17/20%, for spending 60/120 SP.",
+                type: Type.TdmTaken,
+                value: 20,
+            }),
+        ],
+    },
     "Fu Hua Musician": {
         M: [
             new Multiplier({
@@ -70,35 +99,6 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
                 name: "Jin Shengtan 2 set: Enemies in Blue Phoenix Field.",
                 type: Type.EleTaken,
                 value: 10,
-            }),
-        ],
-    },
-    "Fu Hua - Margrave": {
-        T: [
-            new Multiplier({
-                active: true,
-                name:
-                    "Margrave T: When 2-set effect is active, team gains elemental DMG.",
-                type: Type.EleDealt,
-                value: 20,
-            }),
-        ],
-        B: [
-            new Multiplier({
-                active: true,
-                name:
-                    "Margrave B: When 2-set is active, nearby enemies take more TDM.",
-                type: Type.TdmTaken,
-                value: 14,
-            }),
-        ],
-        "3 set": [
-            new Multiplier({
-                active: false,
-                name:
-                    "Margrave 3 set: When 2-set is active, B piece effect increased to 17/20%, for spending 60/120 SP.",
-                type: Type.TdmTaken,
-                value: 20,
             }),
         ],
     },
