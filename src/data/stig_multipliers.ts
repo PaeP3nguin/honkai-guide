@@ -34,6 +34,26 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
+    "Gustav Klimt": {
+        M: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Gustav M: When using weapon active, team gains physical DMG.",
+                type: Type.PhysDealt,
+                value: 20,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name:
+                    "Gustav 2 set: When using weapon active, enemies take more physical DMG.",
+                type: Type.PhysTaken,
+                value: 10,
+            }),
+        ],
+    },
 });
 
 const DPS_STIG_MULTIPLIERS = Object.freeze({
