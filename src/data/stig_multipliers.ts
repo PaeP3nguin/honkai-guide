@@ -1,6 +1,45 @@
 import { Type, Multiplier } from "@/models/multiplier";
 
 const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
+    "Fu Hua Musician": {
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Musician M: When undeployed, team gains fire DMG.",
+                type: Type.EleDealt,
+                value: 10,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name:
+                    "Musician 2 set: After exit, team gains TDM for 10 seconds.",
+                type: Type.TdmDealt,
+                value: 10,
+            }),
+        ],
+    },
+    "Gustav Klimt": {
+        M: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Gustav M: When using weapon active, team gains physical DMG.",
+                type: Type.PhysDealt,
+                value: 20,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name:
+                    "Gustav 2 set: When using weapon active, enemies take more physical DMG.",
+                type: Type.PhysTaken,
+                value: 10,
+            }),
+        ],
+    },
     "Jin Shengtan": {
         T: [
             new Multiplier({
@@ -34,29 +73,86 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
-    "Gustav Klimt": {
-        M: [
+    "Fu Hua - Margrave": {
+        T: [
             new Multiplier({
                 active: true,
                 name:
-                    "Gustav M: When using weapon active, team gains physical DMG.",
-                type: Type.PhysDealt,
+                    "Margrave T: When 2-set effect is active, team gains elemental DMG.",
+                type: Type.EleDealt,
                 value: 20,
             }),
         ],
-        "2 set": [
+        B: [
             new Multiplier({
                 active: true,
                 name:
-                    "Gustav 2 set: When using weapon active, enemies take more physical DMG.",
-                type: Type.PhysTaken,
-                value: 10,
+                    "Margrave B: When 2-set is active, nearby enemies take more TDM.",
+                type: Type.TdmTaken,
+                value: 14,
+            }),
+        ],
+        "3 set": [
+            new Multiplier({
+                active: false,
+                name:
+                    "Margrave 3 set: When 2-set is active, B piece effect increased to 17/20%, for spending 60/120 SP.",
+                type: Type.TdmTaken,
+                value: 20,
+            }),
+        ],
+    },
+    Newton: {
+        B: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Newton B: When hitting enemy, they take more TDM for 5 seconds.",
+                type: Type.TdmTaken,
+                value: 31,
+            }),
+        ],
+    },
+    Ogier: {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Ogier T: When undeployed, team gains elemental DMG.",
+                type: Type.EleDealt,
+                value: 7,
+            }),
+        ],
+        B: [
+            new Multiplier({
+                active: true,
+                name: "Ogier B: When undeployed, team gains physical DMG.",
+                type: Type.PhysDealt,
+                value: 5,
             }),
         ],
     },
 });
 
 const DPS_STIG_MULTIPLIERS = Object.freeze({
+    "Dark Jixuanyuan": {
+        M: [
+            new Multiplier({
+                active: true,
+                name: "DXY M: When time fracture is active, gain crit rate.",
+                type: Type.CritRate,
+                value: 30,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name:
+                    "DXY 2 set: When time fracture is active, gain physical DMG.",
+                type: Type.PhysDealt,
+                value: 40,
+            }),
+        ],
+    },
     "Elizabeth Bathory": {
         T: [
             new Multiplier({
@@ -86,6 +182,90 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
                 name: "Bathory 2 set",
                 type: Type.PhysDealt,
                 value: 20,
+            }),
+        ],
+    },
+    Ekaterina: {
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Ekaterina M: When over 40 combo, gain physical DMG.",
+                type: Type.PhysDealt,
+                value: 41,
+            }),
+        ],
+    },
+    Jingwei: {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Jingwei T: Gain TDM when only 1 enemy.",
+                type: Type.TdmDealt,
+                value: 31,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Jingwei M: After a charged or combo attack hits, gain fire DMG for 5 seconds.",
+                type: Type.EleDealt,
+                value: 40,
+            }),
+        ],
+    },
+    Kafka: {
+        T: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Kafka T: Gain TDM for each critical hit. 2.5% per stack. Max 8 stacks",
+                type: Type.TdmDealt,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "Kafka T: Gain Crit DM for each critical hit. 2.5% per stack. Max 8 stacks",
+                type: Type.CritDmg,
+                value: 20,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Kafka M: Gain physical DMG for each critical hit. 5% per stack. Max 8 stacks.",
+                type: Type.PhysDealt,
+                value: 40,
+            }),
+        ],
+        B: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Kafka B: Gain crit rate for each critical hit. 2.5% per stack. Max 8 stacks.",
+                type: Type.CritRate,
+                value: 20,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name:
+                    "Kafka 2 set: When charged attack used, gain TDM.",
+                type: Type.TdmDealt,
+                value: 45,
+            }),
+        ],
+    },
+    Lier: {
+        B: [
+            new Multiplier({
+                active: true,
+                name: "Lier B: At 100% HP, gain physical DMG.",
+                type: Type.PhysDealt,
+                value: 46,
             }),
         ],
     },
