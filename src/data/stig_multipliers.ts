@@ -200,7 +200,8 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         "2 set": [
             new Multiplier({
                 active: true,
-                name: "Dirac 2 set: If any 2 Dirac stig effects are active, gain physical DMG.",
+                name:
+                    "Dirac 2 set: If any 2 Dirac stig effects are active, gain physical DMG.",
                 type: Type.PhysDealt,
                 value: 35,
             }),
@@ -359,6 +360,62 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
+    Poe: {
+        T: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Poe T: Crit rate boost. For every enemy past the first, decreases by 2%. Max 5 stacks.",
+                type: Type.CritRate,
+                value: 18,
+            }),
+            new Multiplier({
+                active: false,
+                name:
+                    "Poe T: physical DMG boost. For every enemy past the first, increases by 4%. Max 5 stacks.",
+                type: Type.PhysDealt,
+                value: 20,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Poe M: Spend 3/33/63 SP to increase Crit DMG of basic attacks by 50/60/70%",
+                type: Type.CritDmg,
+                value: 70,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name: "Poe 2 set",
+                type: Type.TdmDealt,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "Poe 2 set: TDM increased by 40% for 1s when doing charged ATK. 2s CD.",
+                type: Type.TdmDealt,
+                value: 40,
+            }),
+            new Multiplier({
+                active: true,
+                name: "Poe 2 set: TDM boost when equipped on Seele.",
+                type: Type.TdmDealt,
+                value: 40,
+            }),
+        ],
+        "3 set": [
+            new Multiplier({
+                active: true,
+                name: "Poe 3 set: Seele equip bonus",
+                type: Type.TdmDealt,
+                value: 25,
+            }),
+        ],
+    },
     "Ryunosuke Akutagawa": {
         T: [
             new Multiplier({
@@ -393,6 +450,39 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
                 value: 20,
             }),
         ],
+    },
+    Thales: {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Thales T",
+                type: Type.TdmDealt,
+                value: 25,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "Thales T: Gain 1.5% fire DMG per combo count. Max 10 stacks.",
+                type: Type.EleDealt,
+                value: 15,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Thales M",
+                type: Type.TdmDealt,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "Thales M: Enemy takes 2% more fire DMG per hit. Max 10 stacks.",
+                type: Type.EleTaken,
+                value: 20,
+            }),
+        ],
+        "2 set": [],
     },
     "Welt Yang": {
         T: [
