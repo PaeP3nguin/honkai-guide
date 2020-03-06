@@ -477,8 +477,8 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             new Multiplier({
                 active: true,
                 name:
-                    "Thales M: Enemy takes 2% more fire DMG per hit. Max 10 stacks.",
-                type: Type.EleTaken,
+                    "Thales M: Hits on enemies cause them to take more fire DMG from the host. 2% per hit. Max 10 stacks.",
+                type: Type.EleTakenHost,
                 value: 20,
             }),
         ],
@@ -509,8 +509,8 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             new Multiplier({
                 active: true,
                 name:
-                    "Welt M: Hits on enemies. 1% ice taken per stack. Max 10 stacks.",
-                type: Type.EleTaken,
+                    "Welt M: Hits on enemies cause them to take more ice DMG from the host. 1% per stack. Max 10 stacks.",
+                type: Type.EleTakenHost,
                 value: 10,
             }),
         ],

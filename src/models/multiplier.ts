@@ -1,8 +1,10 @@
 enum Type {
     TdmDealt = "Total DMG dealt",
     TdmTaken = "Total DMG taken",
+    TdmTakenHost = "Total DMG taken (from host)",
     EleDealt = "Elemental DMG dealt",
     EleTaken = "Elemental DMG taken",
+    EleTakenHost = "Elemental DMG taken (from host)",
     PhysDealt = "Physical DMG dealt",
     PhysTaken = "Physical DMG taken",
     CritRate = "Critical rate %",
