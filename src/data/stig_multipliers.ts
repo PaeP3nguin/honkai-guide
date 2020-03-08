@@ -360,8 +360,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         "2 set": [
             new Multiplier({
                 active: true,
-                name:
-                    "Leeuwenhoek 2 set",
+                name: "Leeuwenhoek 2 set",
                 type: Type.TdmDealt,
                 value: 20,
             }),
@@ -570,7 +569,20 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
                 value: 20,
             }),
         ],
-        "2 set": [],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name: "Thales 2 set: Once every 10 seconds, next charged ATK gains TDM and enter Blazer Mode.",
+                type: Type.TdmDealt,
+                value: 50,
+            }),
+            new Multiplier({
+                active: true,
+                name: "Thales 2 set: During Blazer Mode, ult attacks gain TDM.",
+                type: Type.TdmDealt,
+                value: 30,
+            }),
+        ],
     },
     "Welt Yang": {
         T: [
