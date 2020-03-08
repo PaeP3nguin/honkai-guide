@@ -599,12 +599,12 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             new Multiplier({
                 active: true,
                 name:
-                    "Thales 2 set: Once every 10 seconds, next charged ATK gains TDM and enter Blazer Mode.",
+                    "Thales 2 set: Once every 10 seconds, next charged ATK gains TDM and enter Blazer Mode for 10s.",
                 type: Type.TdmDealt,
                 value: 50,
             }),
             new Multiplier({
-                active: true,
+                active: false,
                 name: "Thales 2 set: During Blazer Mode, ult attacks gain TDM.",
                 type: Type.TdmDealt,
                 value: 30,
