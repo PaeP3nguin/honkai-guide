@@ -249,6 +249,32 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
+    Fuxi: {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Fuxi T: Attacks against frozen enemies.",
+                type: Type.EleDealt,
+                value: 92,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Fuxi T: Attacks against paralyzed enemies.",
+                type: Type.EleDealt,
+                value: 92,
+            }),
+        ],
+        B: [
+            new Multiplier({
+                active: true,
+                name: "Fuxi T: Attacks against ignited enemies.",
+                type: Type.EleDealt,
+                value: 51,
+            }),
+        ],
+    },
     Jingwei: {
         T: [
             new Multiplier({
@@ -572,7 +598,8 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         "2 set": [
             new Multiplier({
                 active: true,
-                name: "Thales 2 set: Once every 10 seconds, next charged ATK gains TDM and enter Blazer Mode.",
+                name:
+                    "Thales 2 set: Once every 10 seconds, next charged ATK gains TDM and enter Blazer Mode.",
                 type: Type.TdmDealt,
                 value: 50,
             }),
