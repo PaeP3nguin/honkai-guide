@@ -312,6 +312,68 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
+    Leeuwenhoek: {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Leeuwenhoek T: Fire boost.",
+                type: Type.EleDealt,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "Leeuwenhoek T: Gain TDM for every 10% HP lost. 4% per stack. Max 4 stacks. Gain max stacks on activating 2 set or when use lance skill.",
+                type: Type.TdmDealt,
+                value: 16,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Leeuwenhoek M",
+                type: Type.TdmDealt,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name: "Leeuwenhoek M: Gain fire DMG after ultimate evasion.",
+                type: Type.EleDealt,
+                value: 20,
+            }),
+        ],
+        B: [
+            new Multiplier({
+                active: true,
+                name: "Leeuwenhoek B: Fire boost.",
+                type: Type.EleDealt,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "Leeuwenhoek M: Gain TDM for 10s on entry or attacking ignited enemy.",
+                type: Type.TdmDealt,
+                value: 25,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name:
+                    "Leeuwenhoek 2 set",
+                type: Type.TdmDealt,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "Leeuwenhoek 2 set: Enemies take more fire DMG for 10s after using ult. (activate all single stig conditional effects)",
+                type: Type.EleTaken,
+                value: 20,
+            }),
+        ],
+    },
     Lier: {
         B: [
             new Multiplier({
@@ -451,6 +513,32 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
+    Shakespeare: {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Shakespeare T: Lightning boost.",
+                type: Type.EleDealt,
+                value: 51,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Shakespeare M: Fire boost.",
+                type: Type.EleDealt,
+                value: 51,
+            }),
+        ],
+        B: [
+            new Multiplier({
+                active: true,
+                name: "Shakespeare B: Ice boost.",
+                type: Type.EleDealt,
+                value: 51,
+            }),
+        ],
+    },
     Thales: {
         T: [
             new Multiplier({
@@ -502,7 +590,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         M: [
             new Multiplier({
                 active: true,
-                name: "Welt M",
+                name: "Welt M: Ice boost",
                 type: Type.EleDealt,
                 value: 20,
             }),
@@ -534,7 +622,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         "3 set": [
             new Multiplier({
                 active: true,
-                name: "Welt 3 set",
+                name: "Welt 3 set: Ice boost",
                 type: Type.EleDealt,
                 value: 40,
             }),
