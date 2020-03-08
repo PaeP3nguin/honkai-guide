@@ -352,7 +352,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             new Multiplier({
                 active: true,
                 name:
-                    "Leeuwenhoek M: Gain TDM for 10s on entry or attacking ignited enemy.",
+                    "Leeuwenhoek B: Gain TDM for 10s on entry or attacking ignited enemy.",
                 type: Type.TdmDealt,
                 value: 25,
             }),
