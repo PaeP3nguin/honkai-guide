@@ -190,8 +190,8 @@ const VALK_MULTIPLIERS = Object.freeze({
             new Multiplier({
                 active: false,
                 name:
-                    "[HF] Basic ATK: Flux Wyrm: Bonus for Six-sided Shock when doing Basic ATK during Flux Wyrm. 14% per stack. Max 5 stacks.",
-                type: Type.EleDealt,
+                    "[HF] Basic ATK: Flux Wyrm: Bonus for Six-sided Shock when doing basic attacks during Flux Wyrm. 14% per stack. Max 5 stacks.",
+                type: Type.TdmDealt,
                 value: 70,
             }),
             new Multiplier({

@@ -4,7 +4,7 @@
 
     <div v-for="f in FinalStats" v-bind:key="f">
       <span class="font-weight-bold">{{ f }}:&nbsp;</span>
-      <span>{{ calculationResults[f].toFixed(2) * 100 }}%</span>
+      <span>{{ (calculationResults[f] * 100).toFixed(2) }}%</span>
     </div>
 
     <div v-if="developerMode">
@@ -464,8 +464,8 @@ export default Vue.extend({
       const critRate =
         (this.valkCrt + result[Type.Crt]) / (this.valkLvl * 5 + 75) +
         result[Type.CritRate];
-      const tdmOnly = result[Type.TdmDealt] * result[Type.TdmTaken];
-      const eleOnly = result[Type.EleDealt] * result[Type.EleTaken];
+      const tdmOnly = result[Type.TdmDealt] * result[Type.TdmTaken] * result[Type.TdmTakenHost];
+      const eleOnly = result[Type.EleDealt] * result[Type.EleTaken] * result[Type.EleTakenHost];
       const physOnlyNoCrits = result[Type.PhysDealt] * result[Type.PhysTaken];
       const physOnly =
         physOnlyNoCrits * critRate * (result[Type.CritDmg] + 1) +

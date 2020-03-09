@@ -92,6 +92,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/03/07 - Delet 3.6 boss pool</li>
           <li>2020/03/04 - Upgraded Fix 3rd guide bookmarklet</li>
           <li>2020/02/01 - Add Azure Empyrea</li>
           <li>2020/01/07 - Increase granularity of scores by time</li>
@@ -117,9 +118,6 @@
       <v-flex hidden-sm-and-down offset-xs1 md-flex md2>
         <h2 class="section-head">
           <a :href="require('@/assets/boss_pool_37.png')" target="_blank">CN 3.7 boss pool</a>
-        </h2>
-        <h2 class="section-head">
-          <a :href="require('@/assets/boss_pool_36.png')" target="_blank">CN 3.6 boss pool</a>
         </h2>
         <h2 class="section-head">Scores by time</h2>
         <ul>

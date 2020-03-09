@@ -58,11 +58,15 @@
           <li>
             Elemental Damage Taken -
             <a
-              href="https://honkaiimpact3.gamepedia.com/Thales"
-            >Thales M (stacks only)</a>,
-            <a
               href="https://honkaiimpact3.gamepedia.com/Phoenix#Special"
             >Phoenix SS rank ability "Oriole"</a>
+          </li>
+          <li>
+            Elemental Damage Taken from Host (rare) -
+            <a
+              href="https://honkaiimpact3.gamepedia.com/Thales"
+            >Thales M (stacks only)</a>,
+            <a href="https://honkaiimpact3.gamepedia.com/Welt Yang">Welt M (stacks only)</a>
           </li>
           <li>
             Total Damage Dealt -
@@ -72,9 +76,24 @@
             Total Damage Taken -
             <a href="https://honkaiimpact3.gamepedia.com/Isaac_Newton">Newton B</a>
           </li>
+          <li>
+            Total Damage Taken from Host (rare) -
+            <a
+              href="https://honkaiimpact3.gamepedia.com/Swallowtail_Phantasm#Special"
+            >Swallowtail Vibration debuff "Particle Vibration"</a>,
+            <a
+              href="https://honkaiimpact3.gamepedia.com/Herrscher_of_the_Void#Passive"
+            >HoV mark debuff "Honkai Mark"</a>
+          </li>
           <li>Typing Bonus - BIO > MECH > PSY, QUA > QUA</li>
           <li>Dirac Weather Typing Bonus / QS Evadion Boost</li>
         </ul>
+
+        <p class="mt-4">
+          What is this "from host" thing? Well apparently people were comparing the new Leeuwenhook stig set to Thales
+          and Thales was overperforming. After some testing, it was discovered that Thales M, Welt M, Swallowtail
+          charge debuff, and GK snap debuff are yet another separate multiplier. Yikes!
+        </p>
 
         <p class="mt-4">
           Note that bonuses that only apply to specific types of attacks, like
@@ -93,9 +112,13 @@
           starts at 100% and this is already factored in, so only include
           additional boosts. Most multipliers you see will be direct crit rate boosts,
           like
-          <a href="https://honkaiimpact3.gamepedia.com/Dirac">Dirac T</a>, however some
+          <a
+            href="https://honkaiimpact3.gamepedia.com/Dirac"
+          >Dirac T</a>, however some
           stigs directly give CRT, like
-          <a href="https://honkaiimpact3.gamepedia.com/Ryunosuke_Akutagawa">Ryunosuke M</a>
+          <a
+            href="https://honkaiimpact3.gamepedia.com/Ryunosuke_Akutagawa"
+          >Ryunosuke M</a>
           , so use the "CRT" multiplier type directly. CRT converts to crit rate with the
           following formula: crit rate = CRT/(Valk Level * 5 + 75). At max level, 4.75 CRT is
           equal to 1% crit rate.

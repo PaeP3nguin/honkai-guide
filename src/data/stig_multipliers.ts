@@ -249,6 +249,32 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
+    Fuxi: {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Fuxi T: Attacks against frozen enemies.",
+                type: Type.EleDealt,
+                value: 92,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Fuxi T: Attacks against paralyzed enemies.",
+                type: Type.EleDealt,
+                value: 92,
+            }),
+        ],
+        B: [
+            new Multiplier({
+                active: true,
+                name: "Fuxi T: Attacks against ignited enemies.",
+                type: Type.EleDealt,
+                value: 51,
+            }),
+        ],
+    },
     Jingwei: {
         T: [
             new Multiplier({
@@ -309,6 +335,67 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
                 name: "Kafka 2 set: When charged attack used, gain TDM.",
                 type: Type.TdmDealt,
                 value: 45,
+            }),
+        ],
+    },
+    Leeuwenhoek: {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Leeuwenhoek T: Fire boost.",
+                type: Type.EleDealt,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "Leeuwenhoek T: Gain TDM for every 10% HP lost. 4% per stack. Max 4 stacks. Gain max stacks on activating 2 set or when use lance skill.",
+                type: Type.TdmDealt,
+                value: 16,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Leeuwenhoek M",
+                type: Type.TdmDealt,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name: "Leeuwenhoek M: Gain fire DMG after ultimate evasion.",
+                type: Type.EleDealt,
+                value: 20,
+            }),
+        ],
+        B: [
+            new Multiplier({
+                active: true,
+                name: "Leeuwenhoek B: Fire boost.",
+                type: Type.EleDealt,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "Leeuwenhoek B: Gain TDM for 10s on entry or attacking ignited enemy.",
+                type: Type.TdmDealt,
+                value: 25,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name: "Leeuwenhoek 2 set",
+                type: Type.TdmDealt,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "Leeuwenhoek 2 set: Enemies take more fire DMG for 10s after using ult. (activate all single stig conditional effects)",
+                type: Type.EleTaken,
+                value: 20,
             }),
         ],
     },
@@ -451,6 +538,32 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
+    Shakespeare: {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Shakespeare T: Lightning boost.",
+                type: Type.EleDealt,
+                value: 51,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Shakespeare M: Fire boost.",
+                type: Type.EleDealt,
+                value: 51,
+            }),
+        ],
+        B: [
+            new Multiplier({
+                active: true,
+                name: "Shakespeare B: Ice boost.",
+                type: Type.EleDealt,
+                value: 51,
+            }),
+        ],
+    },
     Thales: {
         T: [
             new Multiplier({
@@ -477,12 +590,26 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             new Multiplier({
                 active: true,
                 name:
-                    "Thales M: Enemy takes 2% more fire DMG per hit. Max 10 stacks.",
-                type: Type.EleTaken,
+                    "Thales M: Hits on enemies cause them to take more fire DMG from the host. 2% per hit. Max 10 stacks.",
+                type: Type.EleTakenHost,
                 value: 20,
             }),
         ],
-        "2 set": [],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name:
+                    "Thales 2 set: Once every 10 seconds, next charged ATK gains TDM and enter Blazer Mode for 10s.",
+                type: Type.TdmDealt,
+                value: 50,
+            }),
+            new Multiplier({
+                active: false,
+                name: "Thales 2 set: During Blazer Mode, ult attacks gain TDM.",
+                type: Type.TdmDealt,
+                value: 30,
+            }),
+        ],
     },
     "Welt Yang": {
         T: [
@@ -502,15 +629,15 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         M: [
             new Multiplier({
                 active: true,
-                name: "Welt M",
+                name: "Welt M: Ice boost",
                 type: Type.EleDealt,
                 value: 20,
             }),
             new Multiplier({
                 active: true,
                 name:
-                    "Welt M: Hits on enemies. 1% ice taken per stack. Max 10 stacks.",
-                type: Type.EleTaken,
+                    "Welt M: Hits on enemies cause them to take more ice DMG from the host. 1% per stack. Max 10 stacks.",
+                type: Type.EleTakenHost,
                 value: 10,
             }),
         ],
@@ -534,7 +661,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         "3 set": [
             new Multiplier({
                 active: true,
-                name: "Welt 3 set",
+                name: "Welt 3 set: Ice boost",
                 type: Type.EleDealt,
                 value: 40,
             }),
