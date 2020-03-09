@@ -119,6 +119,9 @@
         <h2 class="section-head">
           <a :href="require('@/assets/boss_pool_37.png')" target="_blank">CN 3.7 boss pool</a>
         </h2>
+        <h2 class="section-head">
+          <a :href="require('@/assets/boss_pool_38.png')" target="_blank">CN 3.8 boss pool</a>
+        </h2>
         <h2 class="section-head">Scores by time</h2>
         <ul>
           <li
