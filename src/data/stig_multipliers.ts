@@ -447,6 +447,39 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
+    Monet: {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Monet T: Lightning boost.",
+                type: Type.EleDealt,
+                value: 30,
+            }),
+            new Multiplier({
+                active: true,
+                name: "Monet T: 1% total DMG per combo count. Max 15 stacks.",
+                type: Type.TdmDealt,
+                value: 15,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Monet M: 2% lightning DMG per combo count. Max 15 stacks.",
+                type: Type.EleDealt,
+                value: 30,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name: "Monet 2 set: Gain shield that gives lightning boost when active.",
+                type: Type.EleDealt,
+                value: 30,
+            }),
+        ],
+    },
     Poe: {
         T: [
             new Multiplier({
