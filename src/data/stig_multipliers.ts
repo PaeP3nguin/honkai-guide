@@ -1,6 +1,25 @@
 import { Type, Multiplier } from "@/models/multiplier";
 
 const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
+    Beethoven: {
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Beet M: Team gains melee physical boost.",
+                type: Type.PhysDealt,
+                value: 15,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name:
+                    "Beet 2 set: After ult, next valk to switch in gains melee physical boost.",
+                type: Type.PhysDealt,
+                value: 40,
+            }),
+        ],
+    },
     "Fu Hua - Margrave": {
         T: [
             new Multiplier({
@@ -474,7 +493,8 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         "2 set": [
             new Multiplier({
                 active: true,
-                name: "Monet 2 set: Gain shield that gives lightning boost when active.",
+                name:
+                    "Monet 2 set: Gain shield that gives lightning boost when active.",
                 type: Type.EleDealt,
                 value: 30,
             }),
