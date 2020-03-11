@@ -1,6 +1,6 @@
 import { Type, Multiplier } from "@/models/multiplier";
 
-const VALK_MULTIPLIERS = Object.freeze({
+const DPS_VALK_MULTIPLIERS = Object.freeze({
     // Kiana
     // Mei
     Bronya: {
@@ -309,4 +309,62 @@ const VALK_MULTIPLIERS = Object.freeze({
     },
 });
 
-export default VALK_MULTIPLIERS;
+const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
+    // Kiana
+    // Mei
+    // Bronya
+    // Himeko
+    // Yae
+    // Theresa
+    "Fu Hua": {
+        "Azure Empyrea (AE) [S]": [
+            new Multiplier({
+                active: true,
+                name: "[AE] Leader: Hex of Exposure: 15s bonus after entry.",
+                type: Type.TdmDealt,
+                value: 16,
+            }),
+            new Multiplier({
+                active: false,
+                name:
+                    "[AE] Leader: Hex of Exposure: Bonus for teams consisting of 3 different battlesuit types.",
+                type: Type.TdmDealt,
+                value: 23,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "[AE] Combo ATK: Yin-Yang Tempo (Yang Combo): Team bonus for 15s.",
+                type: Type.EleDealt,
+                value: 30,
+            }),
+            new Multiplier({
+                active: false,
+                name:
+                    "[AE] Combo ATK/Ult: Hex of Crucibles: 15s Fire DMG bonus on Combo ATK hit.",
+                type: Type.EleDealt,
+                value: 35,
+            }),
+            new Multiplier({
+                active: false,
+                name:
+                    "[AE] Combo ATK/Ult: Hex of Drowning: 15s Ice DMG bonus on Combo ATK hit.",
+                type: Type.EleDealt,
+                value: 30,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "[AE] Ult: Hex of Enervation: 15s Lightning bonus on Ult hit.",
+                type: Type.EleDealt,
+                value: 30,
+            }),
+        ],
+    },
+    // Kallen
+    // Rita
+    // Olenyevas
+    // Seele
+});
+
+export { DPS_VALK_MULTIPLIERS, SUPPORT_VALK_MULTIPLIERS };

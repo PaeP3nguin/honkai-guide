@@ -261,50 +261,27 @@
         </v-col>
 
         <v-col class="flex-grow-0">
-          <v-dialog v-model="fillValksDialog" max-width="800px">
-            <template v-slot:activator="{ on }">
-              <v-btn color="primary" v-on="on">
-                <v-img
-                  class="mr-3"
-                  left
-                  max-width="25"
-                  :src="require('@/assets/valkyrie_icon.png')"
-                ></v-img>Add valks
-              </v-btn>
+          <MultiplierDialog
+            title="Add valk built-in multipliers"
+            :dps="this.DpsValkMultipliers"
+            :support="this.SupportValkMultipliers"
+          >
+            <template v-slot:button>
+              <v-img class="mr-3" left max-width="25" :src="require('@/assets/valkyrie_icon.png')"></v-img>Add valks
             </template>
 
-            <v-card>
-              <v-card-title>
-                <span class="headline">Add valk built-in multipliers</span>
-              </v-card-title>
+            <template v-slot:group="{ group }">
+              <h4 class="my-4">{{ group.name }}</h4>
 
-              <v-card-text>
-                <span>
-                  Work in progress! Click on any battlesuit to add their built-in multipliers to the calculator.
-                  All multipliers are for max-level valks. Base S ranks are S rank and A ranks are SSS unless otherwise indicated.
-                </span>
-              </v-card-text>
-
-              <v-card-text v-for="(suits, valk, i) in this.ValkMultipliers" v-bind:key="valk">
-                <v-divider v-if="i != 0" class="mb-4"></v-divider>
-
-                <h3 class="mb-4">{{ valk }}</h3>
-
-                <v-btn
-                  class="mr-4"
-                  color="primary"
-                  v-for="(multipliers, suit) in suits"
-                  v-bind:key="suit"
-                  @click="addMultipliers(multipliers); fillValksDialog = false;"
-                >{{ suit }}</v-btn>
-              </v-card-text>
-
-              <v-card-actions>
-                <v-spacer></v-spacer>
-                <v-btn text color="primary" @click="fillValksDialog = false">Close</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-dialog>
+              <v-btn
+                color="primary"
+                class="mr-4"
+                v-for="(multipliers, suit) in group.pieces"
+                v-bind:key="suit"
+                @click="addMultipliers(multipliers)"
+              >{{ suit }}</v-btn>
+            </template>
+          </MultiplierDialog>
         </v-col>
 
         <v-col class="flex-grow-0">
@@ -345,7 +322,10 @@
 import Vue from "vue";
 import MultiplierDialog from "@/components/MultiplierDialog.vue";
 import { Type, Multiplier } from "@/models/multiplier";
-import ValkMultipliers from "@/data/valk_multipliers";
+import {
+  DPS_VALK_MULTIPLIERS,
+  SUPPORT_VALK_MULTIPLIERS
+} from "@/data/valk_multipliers";
 import {
   DPS_STIG_MULTIPLIERS,
   SUPPORT_STIG_MULTIPLIERS
@@ -396,7 +376,8 @@ export default Vue.extend({
       // Constants.
       Type: Type,
       FinalStats: FinalStats,
-      ValkMultipliers: ValkMultipliers,
+      DpsValkMultipliers: DPS_VALK_MULTIPLIERS,
+      SupportValkMultipliers: SUPPORT_VALK_MULTIPLIERS,
       DpsStigMultipliers: DPS_STIG_MULTIPLIERS,
       SupportStigMultipliers: SUPPORT_STIG_MULTIPLIERS,
 
