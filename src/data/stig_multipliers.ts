@@ -280,7 +280,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         M: [
             new Multiplier({
                 active: true,
-                name: "Fuxi T: Attacks against paralyzed enemies.",
+                name: "Fuxi M: Attacks against paralyzed enemies.",
                 type: Type.EleDealt,
                 value: 92,
             }),
@@ -288,9 +288,51 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         B: [
             new Multiplier({
                 active: true,
-                name: "Fuxi T: Attacks against ignited enemies.",
+                name: "Fuxi B: Attacks against ignited enemies.",
                 type: Type.EleDealt,
                 value: 51,
+            }),
+        ],
+    },
+    Goemon: {
+        T: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Goemon T: Melee attacks give 7% lightning DMG. 12% under Kenbu mode (2-set). Max 3 stacks.",
+                type: Type.EleDealt,
+                value: 36,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Goemon M",
+                type: Type.TdmDealt,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "Goemon M: After using ult, gain 15% lightning DMG for 6s. 25% under Kenbu mode (2-set).",
+                type: Type.EleDealt,
+                value: 25,
+            }),
+        ],
+        B: [
+            new Multiplier({
+                active: true,
+                name: "Goemon B: Lightning boost.",
+                type: Type.EleDealt,
+                value: 35,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name: "Goemon 2 set: Enter Kenbu mode when combo ATK hits.",
+                type: Type.TdmDealt,
+                value: 30,
             }),
         ],
     },
