@@ -263,6 +263,7 @@
         <v-col class="flex-grow-0">
           <MultiplierDialog
             title="Add valk built-in multipliers"
+            no-divider-padding
             :dps="this.DpsValkMultipliers"
             :support="this.SupportValkMultipliers"
           >
@@ -275,7 +276,7 @@
 
               <v-btn
                 color="primary"
-                class="mr-4"
+                class="mr-4 mb-4"
                 v-for="(multipliers, suit) in group.pieces"
                 v-bind:key="suit"
                 @click="addMultipliers(multipliers)"
