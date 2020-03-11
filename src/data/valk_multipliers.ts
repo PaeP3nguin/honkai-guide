@@ -296,6 +296,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
+    // Durandal
 });
 
 const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
@@ -443,6 +444,7 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
     // Rita
     // Olenyevas
     // Seele
+    // Durandal
 });
 
 export { DPS_VALK_MULTIPLIERS, SUPPORT_VALK_MULTIPLIERS };

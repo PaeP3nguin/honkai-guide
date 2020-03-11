@@ -264,11 +264,12 @@
           <MultiplierDialog
             title="Add valk built-in multipliers"
             no-divider-padding
+            filter-by-items
             :dps="this.DpsValkMultipliers"
             :support="this.SupportValkMultipliers"
           >
             <template v-slot:button>
-              <v-img class="mr-3" left max-width="25" :src="require('@/assets/valkyrie_icon.png')"></v-img>Add valks
+              <v-img class="mr-3" left max-width="35" :src="require('@/assets/valkyrie_icon.png')"></v-img>Add valks
             </template>
 
             <template v-slot:group="{ group }">
@@ -281,6 +282,31 @@
                 v-bind:key="suit"
                 @click="addMultipliers(multipliers)"
               >{{ suit }}</v-btn>
+            </template>
+          </MultiplierDialog>
+        </v-col>
+
+        <v-col class="flex-grow-0">
+          <MultiplierDialog
+            title="Add weapon multipliers"
+            filter-by-items
+            :dps="this.DpsWeaponMultipliers"
+            :support="this.SupportWeaponMultipliers"
+          >
+            <template v-slot:button>
+              <v-img class="mr-3" left :src="require('@/assets/weapon_icon.png')"></v-img>Add weapons
+            </template>
+
+            <template v-slot:group="{ group }">
+              <h4 class="my-4">{{ group.name }}</h4>
+
+              <v-btn
+                color="primary"
+                class="mr-4"
+                v-for="(multipliers, piece) in group.pieces"
+                v-bind:key="piece"
+                @click="addMultipliers(multipliers)"
+              >{{ piece }}</v-btn>
             </template>
           </MultiplierDialog>
         </v-col>
@@ -327,6 +353,10 @@ import {
   DPS_VALK_MULTIPLIERS,
   SUPPORT_VALK_MULTIPLIERS
 } from "@/data/valk_multipliers";
+import {
+  DPS_WEAPON_MULTIPLIERS,
+  SUPPORT_WEAPON_MULTIPLIERS
+} from "@/data/weapon_multipliers";
 import {
   DPS_STIG_MULTIPLIERS,
   SUPPORT_STIG_MULTIPLIERS
@@ -379,6 +409,8 @@ export default Vue.extend({
       FinalStats: FinalStats,
       DpsValkMultipliers: DPS_VALK_MULTIPLIERS,
       SupportValkMultipliers: SUPPORT_VALK_MULTIPLIERS,
+      DpsWeaponMultipliers: DPS_WEAPON_MULTIPLIERS,
+      SupportWeaponMultipliers: SUPPORT_WEAPON_MULTIPLIERS,
       DpsStigMultipliers: DPS_STIG_MULTIPLIERS,
       SupportStigMultipliers: SUPPORT_STIG_MULTIPLIERS,
 

@@ -47,9 +47,11 @@ export default Vue.extend({
   name: "MultiplierDialog",
   props: {
     title: String,
-    noDividerPadding: Boolean,
     dps: Object,
-    support: Object
+    support: Object,
+    noDividerPadding: Boolean,
+    // True if filter should act on items instead of groups.
+    filterByItems: Boolean
   },
   data: function() {
     return { dialogVisible: false, dialogFilter: "", activeTab: null };
@@ -63,6 +65,23 @@ export default Vue.extend({
             obj[key] = map[key];
             return obj;
           }, {});
+      }
+
+      function filterByValueName(map, filterString: string) {
+        return Object.keys(map).reduce((obj, key) => {
+          const filtered = filterByKeyName(map[key], filterString);
+          if (Object.keys(filtered).length > 0) {
+            obj[key] = filtered;
+          }
+          return obj;
+        }, {});
+      }
+
+      if (this.filterByItems) {
+        return {
+          DPS: filterByValueName(this.dps, this.dialogFilter),
+          Support: filterByValueName(this.support, this.dialogFilter)
+        };
       }
 
       return {
