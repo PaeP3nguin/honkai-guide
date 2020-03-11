@@ -298,6 +298,13 @@ const VALK_MULTIPLIERS = Object.freeze({
                 type: Type.PhysDealt,
                 value: 25,
             }),
+            new Multiplier({
+                active: false,
+                name:
+                    "[SN] Ult: when ult goes from red to white, boost ult by 0.5% TDM per SP consumed. Max 75%.",
+                type: Type.TdmDealt,
+                value: 75,
+            }),
         ],
     },
 });
