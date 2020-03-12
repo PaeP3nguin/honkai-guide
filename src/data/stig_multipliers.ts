@@ -88,12 +88,12 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
-    "Jin Shengtan": {
+    "Jin Shengtan (JST)": {
         T: [
             new Multiplier({
                 active: true,
                 name:
-                    "Jin Shengtan T: Allies in Blue Phoenix Field (2-set effect).",
+                    "JST T: Allies in Blue Phoenix Field (2-set effect).",
                 type: Type.EleDealt,
                 value: 15,
             }),
@@ -101,7 +101,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
         M: [
             new Multiplier({
                 active: false,
-                name: "Jin Shengtan M: When undeployed, team gains Ice DMG.",
+                name: "JST M: When undeployed, team gains Ice DMG.",
                 type: Type.EleDealt,
                 value: 15,
             }),
@@ -109,13 +109,13 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
         "2 set": [
             new Multiplier({
                 active: true,
-                name: "Jin Shengtan 2 set: Allies in Blue Phoenix Field.",
+                name: "JST 2 set: Allies in Blue Phoenix Field.",
                 type: Type.EleDealt,
                 value: 30,
             }),
             new Multiplier({
                 active: true,
-                name: "Jin Shengtan 2 set: Enemies in Blue Phoenix Field.",
+                name: "JST 2 set: Enemies in Blue Phoenix Field.",
                 type: Type.EleTaken,
                 value: 10,
             }),
