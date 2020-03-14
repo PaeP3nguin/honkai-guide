@@ -92,6 +92,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/03/14 - Update fix 3rd guide bookmarklet and add VG</li>
           <li>2020/03/07 - Delet 3.6 boss pool</li>
           <li>2020/03/04 - Upgraded Fix 3rd guide bookmarklet</li>
           <li>2020/02/01 - Add Azure Empyrea</li>
@@ -196,6 +197,7 @@ const valkToChinese = {
   "Dimension Break (DB)": ["次"],
   "Divine Prayer (DP)": ["圣"],
   "Flame Sakitama (FS)": ["炎"],
+  "Gloria (VG)": ["女武神·荣光"],
   "Hawk of the Fog (HF)": ["雾都迅羽", "迅雷", "迅"],
   "Herrscher of the Void (God Kiana, GK, HoV)": ["律"],
   "Imayoh (IR)": ["今"],
