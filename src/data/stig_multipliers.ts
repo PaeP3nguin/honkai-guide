@@ -92,8 +92,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
         T: [
             new Multiplier({
                 active: true,
-                name:
-                    "JST T: Allies in Blue Phoenix Field (2-set effect).",
+                name: "JST T: Allies in Blue Phoenix Field (2-set effect).",
                 type: Type.EleDealt,
                 value: 15,
             }),
@@ -147,6 +146,24 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
                 name: "Ogier B: When undeployed, team gains physical DMG.",
                 type: Type.PhysDealt,
                 value: 5,
+            }),
+        ],
+    },
+    "Tesla Band": {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Tesla Band T: When undeployed, team gains physical DMG.",
+                type: Type.PhysDealt,
+                value: 10,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Tesla Band M: When undeployed, team gains lightning DMG.",
+                type: Type.EleDealt,
+                value: 15,
             }),
         ],
     },
