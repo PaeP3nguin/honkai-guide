@@ -295,6 +295,62 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
                 value: 75,
             }),
         ],
+        "Swallowtail Phantasm (SP) [SSS]": [
+            new Multiplier({
+                active: true,
+                name: "[SP] Leader: Crit rate boost in burst mode.",
+                type: Type.CritRate,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[SP] Leader: TDM boost if Bronya is on the team.",
+                type: Type.TdmDealt,
+                value: 16,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "[SP] Passive: Fragile Fight: TDM boost against impaired enemies.",
+                type: Type.TdmDealt,
+                value: 40,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "[SP] Passive: Unending Fantasy: When combo count exceeds 10/30/50, gain 20/40/60% crit DMG.",
+                type: Type.CritDmg,
+                value: 60,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "[SP] Evade: Traceless Shift: Physical DMG boost during plane warp (after ultimate evasion or charge during ult).",
+                type: Type.PhysDealt,
+                value: 25,
+            }),
+            new Multiplier({
+                active: false,
+                name:
+                    "[SP] Charged: Particle Vibration: Charged attacks cause enemies to take more TDM from Seele.",
+                type: Type.TdmTakenHost,
+                value: 30,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "[SP] Ult: Scarlet Chain: Final hit of ult and shuttle attacks cause enemies to take more TDM from Seele (replaces Particle Vibration).",
+                type: Type.TdmTakenHost,
+                value: 40,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "[SP] Ult: Oneiric Shade: Physical DMG boost during ult.",
+                type: Type.PhysDealt,
+                value: 35,
+            }),
+        ],
     },
     // Durandal
 });
