@@ -1,9 +1,42 @@
 import { Type, Multiplier } from "@/models/multiplier";
 
 const DPS_VALK_MULTIPLIERS = Object.freeze({
-    // Kiana
+    "Kiana Kaslana": {
+        "Void Drifter (VD) [SSS, Core 6*]": [
+            new Multiplier({
+                active: true,
+                name: "[VD] Passive: Tenacity",
+                type: Type.CritRate,
+                value: 10,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[VD] Passive: Tenacity",
+                type: Type.CritDmg,
+                value: 15,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[VD] Combo ATK: Rift Drifter: 10s bonus for consecutive Combo ATKs. 10% per stack. Max 5 stacks.",
+                type: Type.TdmDealt,
+                value: 50,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[VD] Ult: Void Sync: 7.0s bonus during Ult.",
+                type: Type.CritRate,
+                value: 20,
+            }),
+            new Multiplier({
+                active: false,
+                name: "[VD] Ult: Valkyrie Frenzy: Bonus for Ult only.",
+                type: Type.CritDmg,
+                value: 20,
+            }),
+        ],
+    },
     // Mei
-    Bronya: {
+    "Bronya Zaychik": {
         "Herrscher of Reason (HoR) [S]": [
             new Multiplier({
                 active: true,
@@ -53,7 +86,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
-    Himeko: {
+    "Himeko Murata": {
         "Vermilion Knight: Eclipse (VK) [S]": [
             new Multiplier({
                 active: true,
@@ -84,15 +117,59 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             }),
             new Multiplier({
                 active: false,
-                name:
-                    "[VK] Charged ATK: Incomplete Combustion: Fire DMG bonus while in Overdrive State.",
+                name: "[VK] Charged ATK: Incomplete Combustion: Fire DMG bonus while in Overdrive State.",
                 type: Type.EleDealt,
                 value: 25,
             }),
         ],
     },
-    // Yae
-    Theresa: {
+    "Yae Sakura": {
+        "Darkbolt Jounin (DJ) [SSS]": [
+            new Multiplier({
+                active: true,
+                name: "[DJ] Leader: Bonus Lightning DMG",
+                type: Type.EleDealt,
+                value: 30,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[DJ] Leader",
+                type: Type.TdmDealt,
+                value: 15,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[DJ] Passive: Branded for Hate: Bonus against targets with Darkbolt Mark.",
+                type: Type.TdmDealt,
+                value: 30,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[DJ] Combo ATK: Yaksha Rush: 2s bonus for consecutive use of Naraka Finisher (Combo ATK). 12.0% per stack. Max 6 stacks. Stack durations are independent.",
+                type: Type.TdmDealt,
+                value: 72,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[DJ] Combo ATK: Raksha AMP: Bonus Lightning DMG to enemies below 30% HP",
+                type: Type.EleDealt,
+                value: 15,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[DJ] Ult: Tiryag's Impulse: Conductive Debuff",
+                type: Type.EleTaken,
+                value: 40,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[DJ] SP: Biting Ember: 30s bonus after unleashing Darkbolt Pursuit (follow-up ATK)",
+                type: Type.TdmDealt,
+                value: 20,
+            }),
+        ],
+    },
+    "Theresa Apocalypse": {
         "Twilight Paladin (TP) [SS, Core 5*]": [
             new Multiplier({
                 active: true,
@@ -102,8 +179,13 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             }),
             new Multiplier({
                 active: true,
-                name:
-                    "[TP] Passive: Fated Judgment: Bonus for hitting the same target. 2% per stack. Max 30 stacks.",
+                name: "[DJ] Leader: Bonus Lightning DMG",
+                type: Type.EleDealt,
+                value: 30,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[TP] Passive: Fated Judgment: Bonus for hitting the same target. 2% per stack. Max 30 stacks.",
                 type: Type.CritDmg,
                 value: 60,
             }),
@@ -236,8 +318,43 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
     },
     // Kallen
     // Rita
-    // Olenyevas
-    Seele: {
+    "Liliya Olenyeva":  {
+        "Blueberry Blitz (BB) [SSS]": [
+            new Multiplier({
+                active: true,
+                name: "[BB] Passive: Bonus against enemies affected by Weaken or Time Slow.",
+                type: Type.TdmDealt,
+                value: 40,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[BB] Charged ATK: Bonus against shielded enemies.",
+                type: Type.PhysDealt,
+                value: 50,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[BB] Ult: Weakness Scan: 30s bonus after Ult.",
+                type: Type.PhysDealt,
+                value: 50,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[BB] Ult: Lethal Strike",
+                type: Type.CritRate,
+                value: 40,
+            }),
+            
+            new Multiplier({
+                active: true,
+                name: "[BB] Ult: Lethal Strike",
+                type: Type.CritDmg,
+                value: 60,
+            }),
+        ],
+    },
+    // Roza
+    "Seele Vollerei": {
         "Stygian Nymph (SN) [S]": [
             new Multiplier({
                 active: true,
@@ -356,8 +473,23 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
 });
 
 const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
-    // Kiana
-    Mei: {
+    "Kiana Kaslana":    {
+        "Knight Moonbeam (KMB) [SSS]": [
+            new Multiplier({
+                active: true,
+                name: "[KMB] Leader",
+                type: Type.CritDmg,
+                value: 40,
+            }),
+            new Multiplier({
+                active: false,
+                name: "[KMB] Leader: Teams with 3 BIO-type battlesuits.",
+                type: Type.TdmDealt,
+                value: 26,
+            }),
+        ],
+    },
+    "Mei Raiden": {
         "Lightning Empress (LE) [SS]": [
             new Multiplier({
                 active: true,
@@ -373,7 +505,7 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
-    Bronya: {
+    "Bronya Zaychik": {
         "Drive Kometa (DK) [SSS, Core 6*]": [
             new Multiplier({
                 active: true,
@@ -403,7 +535,7 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
     },
     // Himeko
     // Yae
-    Theresa: {
+    "Theresa Apocalypse": {
         "Celestial Hymn (CH) [S]": [
             new Multiplier({
                 active: false,
@@ -498,7 +630,22 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
     },
     // Kallen
     // Rita
-    // Olenyevas
+    "Liliya Olenyeva":  {
+        "Blueberry Blitz (BB) [SSS]": [
+            new Multiplier({
+                active: true,
+                name: "[BB] Passive: Equipment Enhancement: Upon exit, bonus for the character switching in.",
+                type: Type.PhysDealt,
+                value: 15,
+            }),
+            new Multiplier({
+                active: false,
+                name: "[BB] Ult: Weakness Scan: 30s bonus for Molotov Cherry after Ult.",
+                type: Type.PhysDealt,
+                value: 25,
+            }),
+        ],
+    },
     // Seele
     // Durandal
 });
