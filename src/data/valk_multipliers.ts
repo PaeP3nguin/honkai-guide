@@ -240,7 +240,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
                 value: 30,
             }),
             new Multiplier({
-                active: true,
+                active: false,
                 name:
                     "[HF] Passive: Shattering Mantra: Against shielded enemies.",
                 type: Type.TdmDealt,
