@@ -464,6 +464,16 @@ export default Vue.extend({
             (acc, m) => acc + m.toPercent(type),
             0
           );
+        } else if (type == Type.TdmTakenHost) {
+          result[type] = this.value.reduce(
+            (acc, m) => acc * (1 + m.toPercent(type)),
+            1
+          );
+        } else if (type == Type.EleTakenHost) {
+          result[type] = this.value.reduce(
+            (acc, m) => acc * (1 + m.toPercent(type)),
+            1
+          );
         } else {
           result[type] = this.value.reduce(
             (acc, m) => acc + m.toPercent(type),
