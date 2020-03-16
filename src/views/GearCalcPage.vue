@@ -6,16 +6,6 @@
 
         <p>Bonus tip: click on the name or percentage of a multiplier you already entered to edit it directly!</p>
 
-        <v-row class="d-flex mb-6">
-          <v-col class="mr-8">
-            <Calc v-model="leftMultipliers" />
-          </v-col>
-
-          <v-col class="hidden-sm-and-down" v-if="compare">
-            <Calc v-model="rightMultipliers" />
-          </v-col>
-        </v-row>
-
         <v-row class="mx-0 hidden-sm-and-down">
           <v-btn color="success" @click="compare = !compare">
             <v-icon left>mdi-compare</v-icon>Toggle compare
@@ -30,7 +20,17 @@
           </v-btn>
         </v-row>
 
-        <h2 class="mt-12 mb-3">How do gear bonuses work?</h2>
+        <v-row class="d-flex">
+          <v-col class="mr-8">
+            <Calc v-model="leftMultipliers" />
+          </v-col>
+
+          <v-col class="hidden-sm-and-down" v-if="compare">
+            <Calc v-model="rightMultipliers" />
+          </v-col>
+        </v-row>
+
+        <h2 class="mt-6 mb-3">How do gear bonuses work?</h2>
         <p>
           In Honkai, your overall damage boost is calculated by adding all the
           bonuses of the same type and multiplying by all the different types.
@@ -92,7 +92,9 @@
         <p class="mt-4">
           What is this "from host" thing? Well apparently people were comparing the new Leeuwenhook stig set to Thales
           and Thales was overperforming. After some testing, it was discovered that Thales M, Welt M, Swallowtail
-          charge debuff, and GK snap debuff are yet another separate multiplier. Yikes!
+          charge debuff, and GK snap debuff are a special class of multiplier that don't seem to dilute or stack with anthing else.
+          For example, even each Thales M 2% fire DMG stack is separate from each other, so the total effect is (1+0.02) ^ 10 = ~22%, not 0.02*10 = 20%.
+          Yikes!
         </p>
 
         <p class="mt-4">

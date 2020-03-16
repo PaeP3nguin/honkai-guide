@@ -48,7 +48,7 @@
     <v-form ref="multiplierForm" @submit.prevent="submitMultiplier">
       <v-container class="pa-0">
         <v-row dense>
-          <v-col>
+          <v-col class="py-0">
             <v-text-field
               ref="nameField"
               label="Name"
@@ -59,7 +59,7 @@
             ></v-text-field>
           </v-col>
 
-          <v-col>
+          <v-col class="py-0">
             <v-select
               label="Type"
               v-model="multiplier.type"
@@ -69,7 +69,7 @@
             ></v-select>
           </v-col>
 
-          <v-col>
+          <v-col class="py-0">
             <v-text-field
               type="number"
               v-model.number="multiplier.value"
@@ -79,114 +79,14 @@
             ></v-text-field>
           </v-col>
 
-          <v-col class="col-auto">
+          <v-col class="py-0 col-auto">
             <v-btn block color="primary" type="submit">Add</v-btn>
           </v-col>
         </v-row>
       </v-container>
     </v-form>
 
-    <v-dialog v-model="editDialog" max-width="800px" @click:outside="closeEditDialog">
-      <v-card>
-        <v-card-title>
-          <span class="headline">Edit multiplier</span>
-        </v-card-title>
-
-        <v-card-text>
-          <v-form ref="editMultiplierForm" @submit.prevent="saveEditedMultiplier">
-            <v-container class="pa-0">
-              <v-row dense>
-                <v-col>
-                  <v-text-field
-                    label="Name"
-                    v-model="editedMultiplier.name"
-                    :rules="nameRules"
-                    autofocus
-                    required
-                  ></v-text-field>
-                </v-col>
-
-                <v-col>
-                  <v-select
-                    label="Type"
-                    v-model="editedMultiplier.type"
-                    :items="multiplierTypes"
-                    :rules="multiplierTypeRules"
-                    required
-                  ></v-select>
-                </v-col>
-
-                <v-col>
-                  <v-text-field
-                    type="number"
-                    v-model.number="editedMultiplier.value"
-                    label="Percentage"
-                    :rules="valueRules"
-                    required
-                  ></v-text-field>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-form>
-        </v-card-text>
-
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn text color="primary" @click="closeEditDialog">Close</v-btn>
-          <v-btn text color="primary" @click="saveEditedMultiplier">Save</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
-
-    <v-data-table
-      dense
-      :headers="multiplierTableHeaders"
-      :items="value"
-      item-key="id"
-      hide-default-footer
-      disable-pagination
-    >
-      <template v-slot:item.active="{ item }">
-        <v-checkbox v-model="item.active" color="primary"></v-checkbox>
-      </template>
-
-      <template v-slot:item.name="props">
-        <v-edit-dialog :return-value.sync="props.item.name">
-          {{ props.item.name }}
-          <template v-slot:input>
-            <v-text-field v-model="props.item.name" :rules="nameRules" label="Edit" single-line></v-text-field>
-          </template>
-        </v-edit-dialog>
-      </template>
-
-      <template v-slot:item.value="props">
-        <v-edit-dialog :return-value.sync="props.item.value">
-          {{ props.item.value }}
-          <span v-if="props.item.type != Type.Crt">%</span>
-          <template v-slot:input>
-            <v-text-field
-              v-model="editedMultiplier.value"
-              :rules="valueRules"
-              label="Edit"
-              single-line
-            ></v-text-field>
-          </template>
-        </v-edit-dialog>
-      </template>
-
-      <template v-slot:item.actions="{ item }">
-        <v-btn icon @click.stop="startEditMultiplier(item)">
-          <v-icon>mdi-pencil</v-icon>
-        </v-btn>
-        <v-btn icon @click="removeMultiplier(item)">
-          <v-icon>mdi-close</v-icon>
-        </v-btn>
-      </template>
-
-      <template slot="no-data">Add some multipliers!</template>
-    </v-data-table>
-
-    <v-container class="pa-0">
+    <v-container class="pa-0 mb-2">
       <v-row justify="start">
         <v-col class="flex-grow-0">
           <v-dialog v-model="saveDialog" max-width="800px" @click:outside="closeSaveDialog">
@@ -343,6 +243,106 @@
         </v-col>
       </v-row>
     </v-container>
+
+    <v-dialog v-model="editDialog" max-width="800px" @click:outside="closeEditDialog">
+      <v-card>
+        <v-card-title>
+          <span class="headline">Edit multiplier</span>
+        </v-card-title>
+
+        <v-card-text>
+          <v-form ref="editMultiplierForm" @submit.prevent="saveEditedMultiplier">
+            <v-container class="pa-0">
+              <v-row dense>
+                <v-col>
+                  <v-text-field
+                    label="Name"
+                    v-model="editedMultiplier.name"
+                    :rules="nameRules"
+                    autofocus
+                    required
+                  ></v-text-field>
+                </v-col>
+
+                <v-col>
+                  <v-select
+                    label="Type"
+                    v-model="editedMultiplier.type"
+                    :items="multiplierTypes"
+                    :rules="multiplierTypeRules"
+                    required
+                  ></v-select>
+                </v-col>
+
+                <v-col>
+                  <v-text-field
+                    type="number"
+                    v-model.number="editedMultiplier.value"
+                    label="Percentage"
+                    :rules="valueRules"
+                    required
+                  ></v-text-field>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-form>
+        </v-card-text>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn text color="primary" @click="closeEditDialog">Close</v-btn>
+          <v-btn text color="primary" @click="saveEditedMultiplier">Save</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
+    <v-data-table
+      dense
+      :headers="multiplierTableHeaders"
+      :items="value"
+      item-key="id"
+      hide-default-footer
+      disable-pagination
+    >
+      <template v-slot:item.active="{ item }">
+        <v-checkbox v-model="item.active" color="primary"></v-checkbox>
+      </template>
+
+      <template v-slot:item.name="props">
+        <v-edit-dialog :return-value.sync="props.item.name">
+          {{ props.item.name }}
+          <template v-slot:input>
+            <v-text-field v-model="props.item.name" :rules="nameRules" label="Edit" single-line></v-text-field>
+          </template>
+        </v-edit-dialog>
+      </template>
+
+      <template v-slot:item.value="props">
+        <v-edit-dialog :return-value.sync="props.item.value">
+          {{ props.item.value }}
+          <span v-if="props.item.type != Type.Crt">%</span>
+          <template v-slot:input>
+            <v-text-field
+              v-model="editedMultiplier.value"
+              :rules="valueRules"
+              label="Edit"
+              single-line
+            ></v-text-field>
+          </template>
+        </v-edit-dialog>
+      </template>
+
+      <template v-slot:item.actions="{ item }">
+        <v-btn icon @click.stop="startEditMultiplier(item)">
+          <v-icon>mdi-pencil</v-icon>
+        </v-btn>
+        <v-btn icon @click="removeMultiplier(item)">
+          <v-icon>mdi-close</v-icon>
+        </v-btn>
+      </template>
+
+      <template slot="no-data">Add some multipliers!</template>
+    </v-data-table>
   </div>
 </template>
 
