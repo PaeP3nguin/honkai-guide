@@ -466,14 +466,14 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
                 active: true,
                 name: "Leeuwenhoek 2 set",
                 type: Type.TdmDealt,
-                value: 20,
+                value: 15,
             }),
             new Multiplier({
                 active: true,
                 name:
-                    "Leeuwenhoek 2 set: Enemies take more fire DMG for 10s after using ult. (activate all single stig conditional effects)",
-                type: Type.EleTaken,
-                value: 20,
+                    "Leeuwenhoek 2 set: Enemies take more fire DMG from host for 10s after using ult. (activate all single stig conditional effects)",
+                type: Type.EleTakenHost,
+                value: 15,
             }),
         ],
     },
@@ -702,9 +702,9 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             new Multiplier({
                 active: true,
                 name:
-                    "Thales M: Hits on enemies cause them to take more fire DMG from the host. 2% per hit. Max 10 stacks.",
+                    "Thales M: Hits on enemies cause them to take more fire DMG from the host. 2% per hit (each stack is separate multiplier). Max 10 stacks.",
                 type: Type.EleTakenHost,
-                value: 20,
+                value: 22,
             }),
         ],
         "2 set": [
