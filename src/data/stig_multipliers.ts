@@ -1,6 +1,25 @@
 import { Type, Multiplier } from "@/models/multiplier";
 
 const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
+    Beethoven: {
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Beet M: Team gains melee physical boost.",
+                type: Type.PhysDealt,
+                value: 15,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name:
+                    "Beet 2 set: After ult, next valk to switch in gains melee physical boost.",
+                type: Type.PhysDealt,
+                value: 40,
+            }),
+        ],
+    },
     "Fu Hua - Margrave": {
         T: [
             new Multiplier({
@@ -69,12 +88,11 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
-    "Jin Shengtan": {
+    "Jin Shengtan (JST)": {
         T: [
             new Multiplier({
                 active: true,
-                name:
-                    "Jin Shengtan T: Allies in Blue Phoenix Field (2-set effect).",
+                name: "JST T: Allies in Blue Phoenix Field (2-set effect).",
                 type: Type.EleDealt,
                 value: 15,
             }),
@@ -82,7 +100,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
         M: [
             new Multiplier({
                 active: false,
-                name: "Jin Shengtan M: When undeployed, team gains Ice DMG.",
+                name: "JST M: When undeployed, team gains Ice DMG.",
                 type: Type.EleDealt,
                 value: 15,
             }),
@@ -90,13 +108,13 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
         "2 set": [
             new Multiplier({
                 active: true,
-                name: "Jin Shengtan 2 set: Allies in Blue Phoenix Field.",
+                name: "JST 2 set: Allies in Blue Phoenix Field.",
                 type: Type.EleDealt,
                 value: 30,
             }),
             new Multiplier({
                 active: true,
-                name: "Jin Shengtan 2 set: Enemies in Blue Phoenix Field.",
+                name: "JST 2 set: Enemies in Blue Phoenix Field.",
                 type: Type.EleTaken,
                 value: 10,
             }),
@@ -128,6 +146,24 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
                 name: "Ogier B: When undeployed, team gains physical DMG.",
                 type: Type.PhysDealt,
                 value: 5,
+            }),
+        ],
+    },
+    "Tesla Band": {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Tesla Band T: When undeployed, team gains physical DMG.",
+                type: Type.PhysDealt,
+                value: 10,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Tesla Band M: When undeployed, team gains lightning DMG.",
+                type: Type.EleDealt,
+                value: 15,
             }),
         ],
     },
@@ -261,7 +297,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         M: [
             new Multiplier({
                 active: true,
-                name: "Fuxi T: Attacks against paralyzed enemies.",
+                name: "Fuxi M: Attacks against paralyzed enemies.",
                 type: Type.EleDealt,
                 value: 92,
             }),
@@ -269,9 +305,51 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         B: [
             new Multiplier({
                 active: true,
-                name: "Fuxi T: Attacks against ignited enemies.",
+                name: "Fuxi B: Attacks against ignited enemies.",
                 type: Type.EleDealt,
                 value: 51,
+            }),
+        ],
+    },
+    Goemon: {
+        T: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Goemon T: Melee attacks give 7% lightning DMG. 12% under Kenbu mode (2-set). Max 3 stacks.",
+                type: Type.EleDealt,
+                value: 36,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Goemon M",
+                type: Type.TdmDealt,
+                value: 20,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "Goemon M: After using ult, gain 15% lightning DMG for 6s. 25% under Kenbu mode (2-set).",
+                type: Type.EleDealt,
+                value: 25,
+            }),
+        ],
+        B: [
+            new Multiplier({
+                active: true,
+                name: "Goemon B: Lightning boost.",
+                type: Type.EleDealt,
+                value: 35,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name: "Goemon 2 set: Enter Kenbu mode when combo ATK hits.",
+                type: Type.TdmDealt,
+                value: 30,
             }),
         ],
     },
@@ -444,6 +522,40 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
                 name: "Polo B",
                 type: Type.CritRate,
                 value: 11,
+            }),
+        ],
+    },
+    Monet: {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Monet T: Lightning boost.",
+                type: Type.EleDealt,
+                value: 30,
+            }),
+            new Multiplier({
+                active: true,
+                name: "Monet T: 1% total DMG per combo count. Max 15 stacks.",
+                type: Type.TdmDealt,
+                value: 15,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Monet M: 2% lightning DMG per combo count. Max 15 stacks.",
+                type: Type.EleDealt,
+                value: 30,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name:
+                    "Monet 2 set: Gain shield that gives lightning boost when active.",
+                type: Type.EleDealt,
+                value: 30,
             }),
         ],
     },

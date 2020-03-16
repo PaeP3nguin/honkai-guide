@@ -186,171 +186,178 @@
       <template slot="no-data">Add some multipliers!</template>
     </v-data-table>
 
-    <v-dialog v-model="saveDialog" max-width="800px" @click:outside="closeSaveDialog">
-      <template v-slot:activator="{ on }">
-        <v-btn class="mt-8" color="primary" v-on="on">
-          <v-icon left>mdi-content-save</v-icon>Save/Load
-        </v-btn>
-      </template>
+    <v-container class="pa-0">
+      <v-row justify="start">
+        <v-col class="flex-grow-0">
+          <v-dialog v-model="saveDialog" max-width="800px" @click:outside="closeSaveDialog">
+            <template v-slot:activator="{ on }">
+              <v-btn color="primary" v-on="on">
+                <v-icon left>mdi-content-save</v-icon>Save/Load
+              </v-btn>
+            </template>
 
-      <v-card>
-        <v-card-title>
-          <span class="headline">Save/Load</span>
-        </v-card-title>
+            <v-card>
+              <v-card-title>
+                <span class="headline">Save/Load</span>
+              </v-card-title>
 
-        <v-card-text>
-          <v-container>
-            <v-row class="align-center">
-              <v-col class="pa-0 mr-4">
-                <v-form ref="saveForm" @submit.prevent="saveMultipliers">
-                  <v-text-field
-                    label="Name"
-                    v-model="saveName"
-                    :rules="nameRules"
-                    :error-messages="saveNameErrors"
-                    autofocus
-                    required
-                  ></v-text-field>
-                </v-form>
-              </v-col>
+              <v-card-text>
+                <v-container>
+                  <v-row class="align-center">
+                    <v-col class="pa-0 mr-4">
+                      <v-form ref="saveForm" @submit.prevent="saveMultipliers">
+                        <v-text-field
+                          label="Name"
+                          v-model="saveName"
+                          :rules="nameRules"
+                          :error-messages="saveNameErrors"
+                          autofocus
+                          required
+                        ></v-text-field>
+                      </v-form>
+                    </v-col>
 
-              <v-col class="pa-0 col-auto">
-                <v-btn color="primary" @click="saveMultipliers">
-                  <v-icon left>mdi-content-save</v-icon>Save/Load
-                </v-btn>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card-text>
+                    <v-col class="pa-0 col-auto">
+                      <v-btn color="primary" @click="saveMultipliers">
+                        <v-icon left>mdi-content-save</v-icon>Save/Load
+                      </v-btn>
+                    </v-col>
+                  </v-row>
+                </v-container>
+              </v-card-text>
 
-        <v-card-text>
-          <h3>Saved gear:</h3>
-        </v-card-text>
+              <v-card-text>
+                <h3>Saved gear:</h3>
+              </v-card-text>
 
-        <v-divider></v-divider>
+              <v-divider></v-divider>
 
-        <v-list-item
-          v-for="(multipliers, name) in this.savedMultipliers"
-          v-bind:key="name"
-          class="mx-3"
-        >
-          <v-list-item-content>
-            <v-list-item-title>{{ name }}</v-list-item-title>
-          </v-list-item-content>
+              <v-list-item
+                v-for="(multipliers, name) in this.savedMultipliers"
+                v-bind:key="name"
+                class="mx-3"
+              >
+                <v-list-item-content>
+                  <v-list-item-title>{{ name }}</v-list-item-title>
+                </v-list-item-content>
 
-          <v-list-item-action>
-            <v-btn color="primary" @click="loadMultipliers(name)">Load</v-btn>
-          </v-list-item-action>
+                <v-list-item-action>
+                  <v-btn color="primary" @click="loadMultipliers(name)">Load</v-btn>
+                </v-list-item-action>
 
-          <v-list-item-action>
-            <v-btn color="primary" @click="deleteSavedMultipliers(name)">delete</v-btn>
-          </v-list-item-action>
-        </v-list-item>
+                <v-list-item-action>
+                  <v-btn color="primary" @click="deleteSavedMultipliers(name)">delete</v-btn>
+                </v-list-item-action>
+              </v-list-item>
 
-        <v-divider></v-divider>
+              <v-divider></v-divider>
 
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn text color="primary" @click="closeSaveDialog">Close</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn text color="primary" @click="closeSaveDialog">Close</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
+        </v-col>
 
-    <v-dialog v-model="fillValksDialog" max-width="800px">
-      <template v-slot:activator="{ on }">
-        <v-btn class="mt-8 ml-6" color="primary" v-on="on">
-          <v-img class="mr-3" left max-width="25" :src="require('@/assets/valkyrie_icon.png')"></v-img>Add valks
-        </v-btn>
-      </template>
+        <v-col class="flex-grow-0">
+          <MultiplierDialog
+            title="Add valk built-in multipliers"
+            no-divider-padding
+            filter-by-items
+            :dps="this.DpsValkMultipliers"
+            :support="this.SupportValkMultipliers"
+          >
+            <template v-slot:button>
+              <v-img class="mr-3" left max-width="35" :src="require('@/assets/valkyrie_icon.png')"></v-img>Add valks
+            </template>
 
-      <v-card>
-        <v-card-title>
-          <span class="headline">Add valk built-in multipliers</span>
-        </v-card-title>
+            <template v-slot:group="{ group }">
+              <h4 class="my-4">{{ group.name }}</h4>
 
-        <v-card-text>
-          <span>
-            Work in progress! Click on any battlesuit to add their built-in multipliers to the calculator.
-            All multipliers are for max-level valks. Base S ranks are S rank and A ranks are SSS unless otherwise indicated.
-          </span>
-        </v-card-text>
+              <v-btn
+                color="primary"
+                class="mr-4 mb-4"
+                v-for="(multipliers, suit) in group.pieces"
+                v-bind:key="suit"
+                @click="addMultipliers(multipliers)"
+              >{{ suit }}</v-btn>
+            </template>
+          </MultiplierDialog>
+        </v-col>
 
-        <v-card-text v-for="(suits, valk, i) in this.ValkMultipliers" v-bind:key="valk">
-          <v-divider v-if="i != 0" class="mb-4"></v-divider>
+        <v-col class="flex-grow-0">
+          <MultiplierDialog
+            title="Add weapon multipliers"
+            no-divider-padding
+            filter-by-items
+            :dps="this.DpsWeaponMultipliers"
+            :support="this.SupportWeaponMultipliers"
+          >
+            <template v-slot:button>
+              <v-img class="mr-3" left :src="require('@/assets/weapon_icon.png')"></v-img>Add weapons
+            </template>
 
-          <h3 class="mb-4">{{ valk }}</h3>
+            <template v-slot:group="{ group }">
+              <h4 class="my-4">{{ group.name }}</h4>
 
-          <v-btn
-            class="mr-4"
-            color="primary"
-            v-for="(multipliers, suit) in suits"
-            v-bind:key="suit"
-            @click="addMultipliers(multipliers); fillValksDialog = false;"
-          >{{ suit }}</v-btn>
-        </v-card-text>
+              <v-btn
+                color="primary"
+                class="mr-4 mb-4"
+                v-for="(multipliers, piece) in group.pieces"
+                v-bind:key="piece"
+                @click="addMultipliers(multipliers)"
+              >{{ piece }}</v-btn>
+            </template>
+          </MultiplierDialog>
+        </v-col>
 
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn text color="primary" @click="fillValksDialog = false">Close</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
+        <v-col class="flex-grow-0">
+          <MultiplierDialog
+            title="Add stigmata multipliers"
+            :dps="this.DpsStigMultipliers"
+            :support="this.SupportStigMultipliers"
+          >
+            <template v-slot:button>
+              <v-img class="mr-3" left max-width="15" :src="require('@/assets/stigamata_icon.png')"></v-img>Add stigs
+            </template>
 
-    <v-dialog v-model="fillStigsDialog" max-width="500px">
-      <template v-slot:activator="{ on }">
-        <v-btn class="mt-8 ml-6" color="primary" v-on="on">
-          <v-img class="mr-3" left max-width="15" :src="require('@/assets/stigamata_icon.png')"></v-img>Add stigs
-        </v-btn>
-      </template>
+            <template v-slot:group="{ group }">
+              <h4 class="my-4">{{ group.name }}</h4>
 
-      <v-card>
-        <v-card-title>
-          <span class="headline">Add stigmata multipliers</span>
-        </v-card-title>
+              <v-btn
+                color="primary"
+                class="mr-4"
+                v-for="(multipliers, piece) in group.pieces"
+                v-bind:key="piece"
+                @click="addMultipliers(multipliers)"
+              >{{ piece }}</v-btn>
+            </template>
+          </MultiplierDialog>
+        </v-col>
 
-        <v-card-text class="pb-0">
-          <v-text-field label="Search" v-model="stigsDialogFilter" autofocus></v-text-field>
-        </v-card-text>
-
-        <v-tabs>
-          <template v-for="(stigs, type) in filteredDialogStigs">
-            <v-tab v-bind:key="type">{{ type }}</v-tab>
-
-            <v-tab-item class="px-4" v-bind:key="type">
-              <div v-for="(pieces, name, i) in stigs" v-bind:key="name">
-                <v-divider v-if="i != 0" class="mt-4"></v-divider>
-
-                <h4 class="my-4">{{ name }}</h4>
-
-                <v-btn
-                  color="primary"
-                  class="mr-4"
-                  v-for="(multipliers, piece) in pieces"
-                  v-bind:key="piece"
-                  @click="addMultipliers(multipliers);"
-                >{{ piece }}</v-btn>
-              </div>
-            </v-tab-item>
-          </template>
-        </v-tabs>
-
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn text color="primary" @click="fillStigsDialog = false">Close</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
-
-    <v-btn class="mt-8 ml-6" color="error" @click="clearMultipliers">
-      <v-icon left>mdi-trash-can-outline</v-icon>Clear
-    </v-btn>
+        <v-col class="flex-grow-0">
+          <v-btn color="error" @click="clearMultipliers">
+            <v-icon left>mdi-trash-can-outline</v-icon>Clear
+          </v-btn>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import MultiplierDialog from "@/components/MultiplierDialog.vue";
 import { Type, Multiplier } from "@/models/multiplier";
-import ValkMultipliers from "@/data/valk_multipliers";
+import {
+  DPS_VALK_MULTIPLIERS,
+  SUPPORT_VALK_MULTIPLIERS
+} from "@/data/valk_multipliers";
+import {
+  DPS_WEAPON_MULTIPLIERS,
+  SUPPORT_WEAPON_MULTIPLIERS
+} from "@/data/weapon_multipliers";
 import {
   DPS_STIG_MULTIPLIERS,
   SUPPORT_STIG_MULTIPLIERS
@@ -395,12 +402,16 @@ export default Vue.extend({
   props: {
     value: Array
   },
+  components: { MultiplierDialog },
   data: function() {
     return {
       // Constants.
       Type: Type,
       FinalStats: FinalStats,
-      ValkMultipliers: ValkMultipliers,
+      DpsValkMultipliers: DPS_VALK_MULTIPLIERS,
+      SupportValkMultipliers: SUPPORT_VALK_MULTIPLIERS,
+      DpsWeaponMultipliers: DPS_WEAPON_MULTIPLIERS,
+      SupportWeaponMultipliers: SUPPORT_WEAPON_MULTIPLIERS,
       DpsStigMultipliers: DPS_STIG_MULTIPLIERS,
       SupportStigMultipliers: SUPPORT_STIG_MULTIPLIERS,
 
@@ -464,8 +475,14 @@ export default Vue.extend({
       const critRate =
         (this.valkCrt + result[Type.Crt]) / (this.valkLvl * 5 + 75) +
         result[Type.CritRate];
-      const tdmOnly = result[Type.TdmDealt] * result[Type.TdmTaken] * result[Type.TdmTakenHost];
-      const eleOnly = result[Type.EleDealt] * result[Type.EleTaken] * result[Type.EleTakenHost];
+      const tdmOnly =
+        result[Type.TdmDealt] *
+        result[Type.TdmTaken] *
+        result[Type.TdmTakenHost];
+      const eleOnly =
+        result[Type.EleDealt] *
+        result[Type.EleTaken] *
+        result[Type.EleTakenHost];
       const physOnlyNoCrits = result[Type.PhysDealt] * result[Type.PhysTaken];
       const physOnly =
         physOnlyNoCrits * critRate * (result[Type.CritDmg] + 1) +

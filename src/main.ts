@@ -6,8 +6,6 @@ import VueGtag from "vue-gtag";
 
 Vue.config.productionTip = false;
 
-Vue.use(require("moment"));
-
 Vue.use(VueGtag, {
   config: { id: "UA-57689110-5" }
 }, router);
