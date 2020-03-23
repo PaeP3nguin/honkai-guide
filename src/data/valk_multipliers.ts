@@ -35,7 +35,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
                 value: 20,
             }),
         ],
-        "Herrscher of the Void (HoV) [S] +(SS KMB)": [
+        "Herrscher of the Void (HoV) [S] + (SS KMB)": [
             new Multiplier({
                 active: true,
                 name: "[HoV] Leader",
