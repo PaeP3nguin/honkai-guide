@@ -34,6 +34,62 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
                 value: 20,
             }),
         ],
+        "Herrscher of the Void (HoV) [S] +(SS KMB)": [
+            new Multiplier({
+                active: true,
+                name: "[HoV] Leader",
+                type: Type.CritDmg,
+                value: 35,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[HoV] Leader",
+                type: Type.CritRate,
+                value: 15,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[HoV] Passive: Honkai Mark: Bonus against enemies marked by Charged ATK.",
+                type: Type.TdmDealt,
+                value: 5,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[HoV] Evasion: Gegenstrom: Bonus for every enemy affected by Time Slow. 10% per stack. Max 3 stacks.",
+                type: Type.PhysDealt,
+                value: 30,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[HoV] Basic ATK: Weltraum Richter: Herrscher Form bonus.",
+                type: Type.TdmDealt,
+                value: 30,
+            }),
+            new Multiplier({
+                active: false,
+                name: "[HoV] Basic ATK: Weltraum Richter: Herrscher Form bonus against MECH-type enemies.",
+                type: Type.TdmDealt,
+                value: 30,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[HoV] Charged ATK: Distortion: Bonus against unshielded enemies.",
+                type: Type.TdmDealt,
+                value: 60,
+            }),
+            new Multiplier({
+                active: false,
+                name: "[HoV] Ult: Judgment: Ult bonus against enemies above 50% HP.",
+                type: Type.CritRate,
+                value: 30,
+            }),
+            new Multiplier({
+                active: false,
+                name: "[HoV] Ult: Judgment: Ult bonus against enemies below 50% HP.",
+                type: Type.TdmDealt,
+                value: 50,
+            }),
+        ],
     },
     // Mei
     "Bronya Zaychik": {
@@ -488,6 +544,36 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
                 value: 26,
             }),
         ],
+        "Divine Prayer (DP) [SS]": [
+            new Multiplier({
+                active: true,
+                name: "[DP] Leader",
+                type: Type.EleDealt,
+                value: 28,
+            }),
+        ],
+        "Void Drifter (VD) [SSS, Core 6*]": [
+            new Multiplier({
+                active: true,
+                name: "[VD] Passive: Volatile Energy: Bonus when VD enters Inner Turmoil.",
+                type: Type.TdmDealt,
+                value: 20,
+            }),
+        ],
+        "Herrscher of the Void (HoV) [S] +(SS KMB)": [
+            new Multiplier({
+                active: true,
+                name: "[HoV] Leader",
+                type: Type.CritDmg,
+                value: 35,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[HoV] Leader",
+                type: Type.CritRate,
+                value: 13,
+            }),
+        ],
     },
     "Mei Raiden": {
         "Lightning Empress (LE) [SS]": [
@@ -530,6 +616,48 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
                 name: "[DK] Ult: Space Warp: Melee crit rate boost.",
                 type: Type.CritRate,
                 value: 10,
+            }),
+        ],
+        "Wolf's Dawn (WD) [SS]": [
+            new Multiplier({
+                active: false,
+                name: "[WD] Leader: Team bonus when Combo Hit Count exceeds 30",
+                type: Type.CritRate,
+                value: 26,
+            }),
+            new Multiplier({
+                active: false,
+                name: "[WD] Leader: Bonus for PSY-type battlesuits",
+                type: Type.CritDmg,
+                value: 29,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[WD] Passive: Prismatic Refraction (SS Rank): Bonus when Barrier is active.",
+                type: Type.EleDealt,
+                value: 30,
+            }),
+        ],
+        "Snowy Sniper (SS) [SS]": [
+            new Multiplier({
+                active: false,
+                name: "[SS] Passive: 40% chance debuff on enemy when attacked.",
+                type: Type.PhysTaken,
+                value: 30,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[SS] Ult: Sniper's Mark: Bonus against enemies affected by Ult.",
+                type: Type.PhysTaken,
+                value: 35,
+            }),            
+        ],
+        "Dimensional Breaker (DB) [S]": [
+            new Multiplier({
+                active: true,
+                name: "[DB] Leader: Bonus for teams consisting of 3 MECH-type battlesuits.",
+                type: Type.TdmDealt,
+                value: 23,
             }),
         ],
     },
