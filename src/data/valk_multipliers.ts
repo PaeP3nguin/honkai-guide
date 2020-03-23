@@ -17,7 +17,8 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             }),
             new Multiplier({
                 active: true,
-                name: "[VD] Combo ATK: Rift Drifter: 10s bonus for consecutive Combo ATKs. 10% per stack. Max 5 stacks.",
+                name:
+                    "[VD] Combo ATK: Rift Drifter: 10s bonus for consecutive Combo ATKs. 10% per stack. Max 5 stacks.",
                 type: Type.TdmDealt,
                 value: 50,
             }),
@@ -49,43 +50,50 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             }),
             new Multiplier({
                 active: true,
-                name: "[HoV] Passive: Honkai Mark: Bonus against enemies marked by Charged ATK.",
-                type: Type.TdmDealt,
-                value: 5,
+                name:
+                    "[HoV] Passive: Honkai Mark: Bonus against enemies marked by Charged ATK.",
+                type: Type.TdmTakenHost,
+                value: 15,
             }),
             new Multiplier({
                 active: true,
-                name: "[HoV] Evasion: Gegenstrom: Bonus for every enemy affected by Time Slow. 10% per stack. Max 3 stacks.",
+                name:
+                    "[HoV] Evasion: Gegenstrom: Bonus for every enemy affected by Time Slow. 10% per stack. Max 3 stacks.",
                 type: Type.PhysDealt,
                 value: 30,
             }),
             new Multiplier({
                 active: true,
-                name: "[HoV] Basic ATK: Weltraum Richter: Herrscher Form bonus.",
+                name:
+                    "[HoV] Basic ATK: Weltraum Richter: Herrscher Form bonus.",
                 type: Type.TdmDealt,
                 value: 30,
             }),
             new Multiplier({
                 active: false,
-                name: "[HoV] Basic ATK: Weltraum Richter: Herrscher Form bonus against MECH-type enemies.",
+                name:
+                    "[HoV] Basic ATK: Weltraum Richter: Herrscher Form bonus against MECH-type enemies.",
                 type: Type.TdmDealt,
                 value: 30,
             }),
             new Multiplier({
                 active: true,
-                name: "[HoV] Charged ATK: Distortion: Bonus against unshielded enemies.",
+                name:
+                    "[HoV] Charged ATK: Distortion: Bonus against unshielded enemies.",
                 type: Type.TdmDealt,
                 value: 60,
             }),
             new Multiplier({
                 active: false,
-                name: "[HoV] Ult: Judgment: Ult bonus against enemies above 50% HP.",
+                name:
+                    "[HoV] Ult: Judgment: Ult bonus against enemies above 50% HP.",
                 type: Type.CritRate,
                 value: 30,
             }),
             new Multiplier({
                 active: false,
-                name: "[HoV] Ult: Judgment: Ult bonus against enemies below 50% HP.",
+                name:
+                    "[HoV] Ult: Judgment: Ult bonus against enemies below 50% HP.",
                 type: Type.TdmDealt,
                 value: 50,
             }),
@@ -173,7 +181,8 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             }),
             new Multiplier({
                 active: false,
-                name: "[VK] Charged ATK: Incomplete Combustion: Fire DMG bonus while in Overdrive State.",
+                name:
+                    "[VK] Charged ATK: Incomplete Combustion: Fire DMG bonus while in Overdrive State.",
                 type: Type.EleDealt,
                 value: 25,
             }),
@@ -195,19 +204,22 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             }),
             new Multiplier({
                 active: true,
-                name: "[DJ] Passive: Branded for Hate: Bonus against targets with Darkbolt Mark.",
+                name:
+                    "[DJ] Passive: Branded for Hate: Bonus against targets with Darkbolt Mark.",
                 type: Type.TdmDealt,
                 value: 30,
             }),
             new Multiplier({
                 active: true,
-                name: "[DJ] Combo ATK: Yaksha Rush: 2s bonus for consecutive use of Naraka Finisher (Combo ATK). 12.0% per stack. Max 6 stacks. Stack durations are independent.",
+                name:
+                    "[DJ] Combo ATK: Yaksha Rush: 2s bonus for consecutive use of Naraka Finisher (Combo ATK). 12.0% per stack. Max 6 stacks. Stack durations are independent.",
                 type: Type.TdmDealt,
                 value: 72,
             }),
             new Multiplier({
                 active: true,
-                name: "[DJ] Combo ATK: Raksha AMP: Bonus Lightning DMG to enemies below 30% HP",
+                name:
+                    "[DJ] Combo ATK: Raksha AMP: Bonus Lightning DMG to enemies below 30% HP",
                 type: Type.EleDealt,
                 value: 15,
             }),
@@ -219,7 +231,8 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             }),
             new Multiplier({
                 active: true,
-                name: "[DJ] SP: Biting Ember: 30s bonus after unleashing Darkbolt Pursuit (follow-up ATK)",
+                name:
+                    "[DJ] SP: Biting Ember: 30s bonus after unleashing Darkbolt Pursuit (follow-up ATK)",
                 type: Type.TdmDealt,
                 value: 20,
             }),
@@ -241,7 +254,8 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             }),
             new Multiplier({
                 active: true,
-                name: "[TP] Passive: Fated Judgment: Bonus for hitting the same target. 2% per stack. Max 30 stacks.",
+                name:
+                    "[TP] Passive: Fated Judgment: Bonus for hitting the same target. 2% per stack. Max 30 stacks.",
                 type: Type.CritDmg,
                 value: 60,
             }),
@@ -374,11 +388,12 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
     },
     // Kallen
     // Rita
-    "Liliya Olenyeva":  {
+    "Liliya Olenyeva": {
         "Blueberry Blitz (BB) [SSS]": [
             new Multiplier({
                 active: true,
-                name: "[BB] Passive: Bonus against enemies affected by Weaken or Time Slow.",
+                name:
+                    "[BB] Passive: Bonus against enemies affected by Weaken or Time Slow.",
                 type: Type.TdmDealt,
                 value: 40,
             }),
@@ -400,7 +415,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
                 type: Type.CritRate,
                 value: 40,
             }),
-            
+
             new Multiplier({
                 active: true,
                 name: "[BB] Ult: Lethal Strike",
@@ -518,8 +533,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             }),
             new Multiplier({
                 active: true,
-                name:
-                    "[SP] Ult: Oneiric Shade: Physical DMG boost during ult.",
+                name: "[SP] Ult: Oneiric Shade: Physical DMG boost during ult.",
                 type: Type.PhysDealt,
                 value: 35,
             }),
@@ -529,7 +543,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
 });
 
 const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
-    "Kiana Kaslana":    {
+    "Kiana Kaslana": {
         "Knight Moonbeam (KMB) [SSS]": [
             new Multiplier({
                 active: true,
@@ -555,12 +569,13 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
         "Void Drifter (VD) [SSS, Core 6*]": [
             new Multiplier({
                 active: true,
-                name: "[VD] Passive: Volatile Energy: Bonus when VD enters Inner Turmoil.",
+                name:
+                    "[VD] Passive: Volatile Energy: Bonus when VD enters Inner Turmoil.",
                 type: Type.TdmDealt,
                 value: 20,
             }),
         ],
-        "Herrscher of the Void (HoV) [S] +(SS KMB)": [
+        "Herrscher of the Void (HoV) [S] + (SS KMB)": [
             new Multiplier({
                 active: true,
                 name: "[HoV] Leader",
@@ -633,7 +648,8 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
             }),
             new Multiplier({
                 active: true,
-                name: "[WD] Passive: Prismatic Refraction (SS Rank): Bonus when Barrier is active.",
+                name:
+                    "[WD] Passive: Prismatic Refraction (SS Rank): Bonus when Barrier is active.",
                 type: Type.EleDealt,
                 value: 30,
             }),
@@ -647,15 +663,17 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
             }),
             new Multiplier({
                 active: true,
-                name: "[SS] Ult: Sniper's Mark: Bonus against enemies affected by Ult.",
+                name:
+                    "[SS] Ult: Sniper's Mark: Bonus against enemies affected by Ult.",
                 type: Type.PhysTaken,
                 value: 35,
-            }),            
+            }),
         ],
         "Dimensional Breaker (DB) [S]": [
             new Multiplier({
                 active: true,
-                name: "[DB] Leader: Bonus for teams consisting of 3 MECH-type battlesuits.",
+                name:
+                    "[DB] Leader: Bonus for teams consisting of 3 MECH-type battlesuits.",
                 type: Type.TdmDealt,
                 value: 23,
             }),
@@ -758,17 +776,19 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
     },
     // Kallen
     // Rita
-    "Liliya Olenyeva":  {
+    "Liliya Olenyeva": {
         "Blueberry Blitz (BB) [SSS]": [
             new Multiplier({
                 active: true,
-                name: "[BB] Passive: Equipment Enhancement: Upon exit, bonus for the character switching in.",
+                name:
+                    "[BB] Passive: Equipment Enhancement: Upon exit, bonus for the character switching in.",
                 type: Type.PhysDealt,
                 value: 15,
             }),
             new Multiplier({
                 active: false,
-                name: "[BB] Ult: Weakness Scan: 30s bonus for Molotov Cherry after Ult.",
+                name:
+                    "[BB] Ult: Weakness Scan: 30s bonus for Molotov Cherry after Ult.",
                 type: Type.PhysDealt,
                 value: 25,
             }),
