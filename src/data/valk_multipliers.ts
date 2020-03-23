@@ -2,39 +2,6 @@ import { Type, Multiplier } from "@/models/multiplier";
 
 const DPS_VALK_MULTIPLIERS = Object.freeze({
     "Kiana Kaslana": {
-        "Void Drifter (VD) [SSS, Core 6*]": [
-            new Multiplier({
-                active: true,
-                name: "[VD] Passive: Tenacity",
-                type: Type.CritRate,
-                value: 10,
-            }),
-            new Multiplier({
-                active: true,
-                name: "[VD] Passive: Tenacity",
-                type: Type.CritDmg,
-                value: 15,
-            }),
-            new Multiplier({
-                active: true,
-                name:
-                    "[VD] Combo ATK: Rift Drifter: 10s bonus for consecutive Combo ATKs. 10% per stack. Max 5 stacks.",
-                type: Type.TdmDealt,
-                value: 50,
-            }),
-            new Multiplier({
-                active: true,
-                name: "[VD] Ult: Void Sync: 7.0s bonus during Ult.",
-                type: Type.CritRate,
-                value: 20,
-            }),
-            new Multiplier({
-                active: false,
-                name: "[VD] Ult: Valkyrie Frenzy: Bonus for Ult only.",
-                type: Type.CritDmg,
-                value: 20,
-            }),
-        ],
         "Herrscher of the Void (HoV) [S] + (SS KMB)": [
             new Multiplier({
                 active: true,
@@ -96,6 +63,39 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
                     "[HoV] Ult: Judgment: Ult bonus against enemies below 50% HP.",
                 type: Type.TdmDealt,
                 value: 50,
+            }),
+        ],
+        "Void Drifter (VD) [SSS, Core 6*]": [
+            new Multiplier({
+                active: true,
+                name: "[VD] Passive: Tenacity",
+                type: Type.CritRate,
+                value: 10,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[VD] Passive: Tenacity",
+                type: Type.CritDmg,
+                value: 15,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "[VD] Combo ATK: Rift Drifter: 10s bonus for consecutive Combo ATKs. 10% per stack. Max 5 stacks.",
+                type: Type.TdmDealt,
+                value: 50,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[VD] Ult: Void Sync: 7.0s bonus during Ult.",
+                type: Type.CritRate,
+                value: 20,
+            }),
+            new Multiplier({
+                active: false,
+                name: "[VD] Ult: Valkyrie Frenzy: Bonus for Ult only.",
+                type: Type.CritDmg,
+                value: 20,
             }),
         ],
     },
@@ -544,6 +544,14 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
 
 const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
     "Kiana Kaslana": {
+        "Divine Prayer (DP) [SS]": [
+            new Multiplier({
+                active: true,
+                name: "[DP] Leader",
+                type: Type.EleDealt,
+                value: 28,
+            }),
+        ],
         "Knight Moonbeam (KMB) [SSS]": [
             new Multiplier({
                 active: true,
@@ -558,23 +566,6 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
                 value: 26,
             }),
         ],
-        "Divine Prayer (DP) [SS]": [
-            new Multiplier({
-                active: true,
-                name: "[DP] Leader",
-                type: Type.EleDealt,
-                value: 28,
-            }),
-        ],
-        "Void Drifter (VD) [SSS, Core 6*]": [
-            new Multiplier({
-                active: true,
-                name:
-                    "[VD] Passive: Volatile Energy: Bonus when VD enters Inner Turmoil.",
-                type: Type.TdmDealt,
-                value: 20,
-            }),
-        ],
         "Herrscher of the Void (HoV) [S] + (SS KMB)": [
             new Multiplier({
                 active: true,
@@ -587,6 +578,15 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
                 name: "[HoV] Leader",
                 type: Type.CritRate,
                 value: 13,
+            }),
+        ],
+        "Void Drifter (VD) [SSS, Core 6*]": [
+            new Multiplier({
+                active: true,
+                name:
+                    "[VD] Passive: Volatile Energy: Bonus when VD enters Inner Turmoil.",
+                type: Type.TdmDealt,
+                value: 20,
             }),
         ],
     },
@@ -607,6 +607,15 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
         ],
     },
     "Bronya Zaychik": {
+        "Dimensional Breaker (DB) [S]": [
+            new Multiplier({
+                active: true,
+                name:
+                    "[DB] Leader: Bonus for teams consisting of 3 MECH-type battlesuits.",
+                type: Type.TdmDealt,
+                value: 23,
+            }),
+        ],
         "Drive Kometa (DK) [SSS, Core 6*]": [
             new Multiplier({
                 active: true,
@@ -633,6 +642,21 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
                 value: 10,
             }),
         ],
+        "Snowy Sniper (SS) [SS]": [
+            new Multiplier({
+                active: false,
+                name: "[SS] Passive: 40% chance debuff on enemy when attacked.",
+                type: Type.PhysTaken,
+                value: 30,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "[SS] Ult: Sniper's Mark: Bonus against enemies affected by Ult.",
+                type: Type.PhysTaken,
+                value: 35,
+            }),
+        ],
         "Wolf's Dawn (WD) [SS]": [
             new Multiplier({
                 active: false,
@@ -652,30 +676,6 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
                     "[WD] Passive: Prismatic Refraction (SS Rank): Bonus when Barrier is active.",
                 type: Type.EleDealt,
                 value: 30,
-            }),
-        ],
-        "Snowy Sniper (SS) [SS]": [
-            new Multiplier({
-                active: false,
-                name: "[SS] Passive: 40% chance debuff on enemy when attacked.",
-                type: Type.PhysTaken,
-                value: 30,
-            }),
-            new Multiplier({
-                active: true,
-                name:
-                    "[SS] Ult: Sniper's Mark: Bonus against enemies affected by Ult.",
-                type: Type.PhysTaken,
-                value: 35,
-            }),
-        ],
-        "Dimensional Breaker (DB) [S]": [
-            new Multiplier({
-                active: true,
-                name:
-                    "[DB] Leader: Bonus for teams consisting of 3 MECH-type battlesuits.",
-                type: Type.TdmDealt,
-                value: 23,
             }),
         ],
     },
