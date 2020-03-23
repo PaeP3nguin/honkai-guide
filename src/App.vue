@@ -7,7 +7,7 @@
       <v-spacer></v-spacer>
 
       <v-btn icon target="_blank" href="https://github.com/PaeP3nguin/honkai-guide">
-        <v-icon>mdi-github-circle</v-icon>
+        <v-icon>mdi-github</v-icon>
       </v-btn>
     </v-app-bar>
 
