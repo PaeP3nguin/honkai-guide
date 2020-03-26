@@ -149,6 +149,17 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
+    "Pool Party Mei (PPM)": {
+        M: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Mei M: When hitting enemy, they take more TDM for 5 seconds.",
+                type: Type.TdmTaken,
+                value: 15,
+            }),
+        ],
+    },
     "Tesla Band": {
         T: [
             new Multiplier({
@@ -161,7 +172,8 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
         M: [
             new Multiplier({
                 active: true,
-                name: "Tesla Band M: When undeployed, team gains lightning DMG.",
+                name:
+                    "Tesla Band M: When undeployed, team gains lightning DMG.",
                 type: Type.EleDealt,
                 value: 15,
             }),
@@ -615,6 +627,23 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
+    "Pool Party Mei (PPM)": {
+        M: [
+            new Multiplier({
+                active: true,
+                name: "Mei M",
+                type: Type.TdmDealt,
+                value: 18,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "Mei M: When hitting enemy, they take more TDM for 5 seconds.",
+                type: Type.TdmTaken,
+                value: 15,
+            }),
+        ],
+    },
     "Ryunosuke Akutagawa": {
         T: [
             new Multiplier({
@@ -647,6 +676,22 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
                 name: "Ryunosuke 3 set: Melee attacks.",
                 type: Type.TdmDealt,
                 value: 20,
+            }),
+        ],
+    },
+    Schrodinger: {
+        T: [
+            new Multiplier({
+                active: true,
+                name: "Schro T: High roll.",
+                type: Type.TdmDealt,
+                value: 205,
+            }),
+            new Multiplier({
+                active: false,
+                name: "Schro T: Low roll.",
+                type: Type.TdmDealt,
+                value: 52,
             }),
         ],
     },

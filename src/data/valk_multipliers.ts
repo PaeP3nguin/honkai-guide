@@ -237,6 +237,40 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
                 value: 20,
             }),
         ],
+        "Goushinnso Memento (Meme) [SS]": [
+            new Multiplier({
+                active: true,
+                name: "[Meme] Leader: Crit rate boost above 80% HP.",
+                type: Type.CritRate,
+                value: 19,
+            }),
+            new Multiplier({
+                active: true,
+                name: "[Meme] Leader: Elemental boost for MECH valks.",
+                type: Type.EleDealt,
+                value: 33,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "[Meme] Passive: Onimusha: Gain elemental damage against enemies marked by 5th basic ATK, ultimate evasion, or ultimate that are also stunned/paralyzed/frozen/time slowed.",
+                type: Type.EleDealt,
+                value: 40,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "[Meme] Basic: Ice Spirit: 5th basic attack boosts TDM for 8s.",
+                type: Type.TdmDealt,
+                value: 30,
+            }),
+            new Multiplier({
+                active: false,
+                name: "[Meme] Ultimate: Transcendence: TDM boost for 12s after ult.",
+                type: Type.TdmDealt,
+                value: 30,
+            }),
+        ],
     },
     "Theresa Apocalypse": {
         "Twilight Paladin (TP) [SS, Core 5*]": [
