@@ -194,6 +194,7 @@ const valkToChinese = {
   "Chariot (VC)": ["战"],
   "Crimson Impulse (CI)": ["绯"],
   "Herrscher of Reason (HoR, Tronya)": ["理", "律鸭"],
+  "Darkbolt Jonin (DJ)": ["夜隐重霞"],
   "Dimension Break (DB)": ["次"],
   "Divine Prayer (DP)": ["圣"],
   "Flame Sakitama (FS)": ["炎"],
