@@ -156,14 +156,14 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
                 active: true,
                 name: "[VK] Leader: Bonus for Switch ATKs and Ults.",
                 type: Type.TdmDealt,
-                value: 23,
+                value: 21,
             }),
             new Multiplier({
                 active: false,
                 name:
                     "[VK] Leader: Fire DMG bonus for teams consisting of 3 different battlesuit types.",
-                type: Type.TdmDealt,
-                value: 31.5,
+                type: Type.EleDealt,
+                value: 30,
             }),
             new Multiplier({
                 active: false,
