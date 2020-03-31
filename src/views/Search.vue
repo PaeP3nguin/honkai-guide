@@ -216,7 +216,7 @@ const valkToChinese = {
   "Pledge (VP)": ["誓"],
   "Ranger (VR)": ["游"],
   Rondo: ["樱"],
-  "S Durandal": ["S幽兰"],
+  "S Durandal": ["辉骑士月", "S幽兰"],
   "Scarlet Fusion (SF)": ["深"],
   "Sin Hunter (Sundenjaegar / SJ)": ["原罪"],
   "Snowy Sniper (SS)": ["雪"],
