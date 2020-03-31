@@ -537,6 +537,49 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             }),
         ],
     },
+    Michelangelo: {
+        T: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Mich T: Gain 7.2% physical DMG per basic attack. Max 5 stacks.",
+                type: Type.PhysDealt,
+                value: 36,
+            }),
+        ],
+        M: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Mich M: Gain 3% crit rate per basic attack. Max 5 stacks.",
+                type: Type.CritRate,
+                value: 15,
+            }),
+        ],
+        B: [
+            new Multiplier({
+                active: true,
+                name:
+                    "Mich T: Gain 14% crit DMG per basic attack. Max 5 stacks.",
+                type: Type.CritDmg,
+                value: 70,
+            }),
+        ],
+        "2 set": [
+            new Multiplier({
+                active: true,
+                name: "Mich 2 set: TDM boost.",
+                type: Type.TdmDealt,
+                value: 15,
+            }),
+            new Multiplier({
+                active: true,
+                name: "Mich 2 set: TDM boost for 15s upon switching in.",
+                type: Type.TdmDealt,
+                value: 15,
+            }),
+        ],
+    },
     Monet: {
         T: [
             new Multiplier({
