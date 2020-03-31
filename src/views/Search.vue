@@ -92,6 +92,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/03/31 - Added "S Durandal"</li>
           <li>2020/03/14 - Update fix 3rd guide bookmarklet and add VG</li>
           <li>2020/03/07 - Delet 3.6 boss pool</li>
           <li>2020/03/04 - Upgraded Fix 3rd guide bookmarklet</li>
@@ -215,6 +216,7 @@ const valkToChinese = {
   "Pledge (VP)": ["誓"],
   "Ranger (VR)": ["游"],
   Rondo: ["樱"],
+  "S Durandal": ["S幽兰"],
   "Scarlet Fusion (SF)": ["深"],
   "Sin Hunter (Sundenjaegar / SJ)": ["原罪"],
   "Snowy Sniper (SS)": ["雪"],
