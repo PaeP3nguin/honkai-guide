@@ -483,8 +483,8 @@ export default Vue.extend({
       }
 
       const critRate =
-        (this.valkCrt + result[Type.Crt]) / (this.valkLvl * 5 + 75) +
-        result[Type.CritRate];
+        Math.min((this.valkCrt + result[Type.Crt]) / (this.valkLvl * 5 + 75) +
+        result[Type.CritRate], 1);
       const tdmOnly =
         result[Type.TdmDealt] *
         result[Type.TdmTaken] *
