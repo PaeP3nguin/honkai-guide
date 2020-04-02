@@ -119,7 +119,7 @@
 
                     <v-col class="pa-0 col-auto">
                       <v-btn color="primary" @click="saveMultipliers">
-                        <v-icon left>mdi-content-save</v-icon>Save/Load
+                        <v-icon left>mdi-content-save</v-icon>Save
                       </v-btn>
                     </v-col>
                   </v-row>
