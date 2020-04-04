@@ -92,6 +92,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/04/04 - Added double wendy abyss boss</li>
           <li>2020/04/01 - Added emperor abyss boss</li>
           <li>2020/03/31 - Added "S Durandal"</li>
           <li>2020/03/14 - Update fix 3rd guide bookmarklet and add VG</li>
@@ -165,6 +166,7 @@ const bossToChinese = {
   "Cursed Soul": ["姬子", "被诅咒的英魂"],
   "Dark Jixuanyuan (DXY, DJXY)": ["皮皮马", "马"], // "姬麟·黑"],
   Doom: ["沉灵", "湮灭沉灵"],
+  "Double Wendy (all the way) (Abyss only)": ["双温蒂"],
   "Emperor (Abyss only)": ["帝王"],
   "Herrscher of the Void (HoV)": ["空之律者", "女王"],
   Heimdall: ["海姆达尔", "海胖"],
