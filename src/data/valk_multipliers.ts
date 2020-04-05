@@ -414,7 +414,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             }),
             new Multiplier({
                 active: true,
-                name: "[NS] Ult: Authority: Enemies around NS take more physical DMG from hots.",
+                name: "[NS] Ult: Authority: Enemies around NS take more physical DMG from host.",
                 type: Type.PhysTakenHost,
                 value: 40,
             }),
