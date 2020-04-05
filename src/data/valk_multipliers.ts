@@ -414,8 +414,8 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             }),
             new Multiplier({
                 active: true,
-                name: "[NS] Ult: Authority: Small AOE around NS.",
-                type: Type.PhysTaken,
+                name: "[NS] Ult: Authority: Enemies around NS take more physical DMG from hots.",
+                type: Type.PhysTakenHost,
                 value: 40,
             }),
         ],
@@ -484,8 +484,8 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             new Multiplier({
                 active: true,
                 name:
-                    "[SN] Charged ATK: Mark of Judgment: Bonus on Marked enemies.",
-                type: Type.PhysDealt,
+                    "[SN] Charged ATK: Mark of Judgment: Marked enemies take more physical from SN's basic (and charged) attacks.",
+                type: Type.PhysTakenHost,
                 value: 25,
             }),
             new Multiplier({
