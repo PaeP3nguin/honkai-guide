@@ -92,6 +92,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/04/06 - Another nickname for Hephaestus</li>
           <li>2020/04/04 - Added double wendy abyss boss</li>
           <li>2020/04/01 - Added emperor abyss boss</li>
           <li>2020/03/31 - Added "S Durandal"</li>
@@ -176,7 +177,7 @@ const bossToChinese = {
   Kallen: ["卡莲"],
   "Mexicatl: Umbreist (quantum ball)": ["球", "量子军团"],
   "MHT-3 Pax (tank)": ["和平使者", "MHT", "坦克"],
-  "MR-06X Hephaestus": ["赫菲斯托斯"],
+  "MR-06X Hephaestus": ["赫菲斯托斯", "灭火器"],
   Padrino: ["教父"],
   Parvati: ["冰猪", "帕凡提"],
   RPC: ["飞机", "RPC - 6626"],
