@@ -681,7 +681,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
             new Multiplier({
                 active: true,
                 name:
-                    "Mei M: When hitting enemy, they take more TDM for 5 seconds.",
+                    "Mei M: When hitting enemy, they take more TDM for 4 seconds.",
                 type: Type.TdmTaken,
                 value: 15,
             }),
