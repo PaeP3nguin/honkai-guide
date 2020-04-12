@@ -809,7 +809,31 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
         ],
     },
     // Kallen
-    // Rita
+    "Rita Rossweisse": {
+        "Phantom Iron (PI) (SSS)": [
+            new Multiplier({
+                active: false,
+                name:
+                    "[PI] Leader: Bonus for Basic ATKs (including Charged ATKs and Combo ATKs) of MECH battlesuits",
+                type: Type.TdmDealt,
+                value: 21,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "[PI] Passive: Team bonus for attacking enemies with active shields",
+                type: Type.EleDealt,
+                value: 15,
+            }),
+            new Multiplier({
+                active: true,
+                name:
+                    "[PI] Ult: Team bonus during Carbon Stalker",
+                type: Type.EleDealt,
+                value: 30,
+            }),
+        ],    
+    },
     "Liliya Olenyeva": {
         "Blueberry Blitz (BB) [SSS]": [
             new Multiplier({
