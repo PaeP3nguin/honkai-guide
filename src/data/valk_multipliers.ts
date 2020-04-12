@@ -130,7 +130,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             new Multiplier({
                 active: true,
                 name:
-                    "[HoR] Special Attack: Speed Decypher: Ult and Charged ATK.",
+                    "[HoR] Special Attack: Speed Decypher: Charged attacks and attacks during ult.",
                 type: Type.TdmDealt,
                 value: 30,
             }),
