@@ -7,8 +7,8 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
                 active: true,
                 name: "Shamash: Active: Enemies hit take more total DMG.",
                 type: Type.TdmTaken,
-                value: 15,
-            }),
+                value: 15
+            })
         ],
         "Positron Blasters": [
             new Multiplier({
@@ -16,8 +16,8 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
                 name:
                     "Positron: Active: Enemies hit take more physical DMG (15.3% at lvl 50).",
                 type: Type.PhysTaken,
-                value: 20,
-            }),
+                value: 20
+            })
         ],
         "Thunder Kikaku": [
             new Multiplier({
@@ -25,9 +25,9 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
                 name:
                     "Kikaku: Passive: Enemies hit during burst mode take more lightning DMG.",
                 type: Type.EleTaken,
-                value: 60,
-            }),
-        ],
+                value: 60
+            })
+        ]
     },
     Cannons: {
         "Star Shatterer - Vikrant": [
@@ -36,9 +36,9 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
                 name:
                     "Vikrant: Passive: Team TDM boost against weakened enemies",
                 type: Type.TdmDealt,
-                value: 15,
-            }),
-        ],
+                value: 15
+            })
+        ]
     },
     Katanas: {
         "MAG-Typhoon": [
@@ -47,8 +47,8 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
                 name:
                     "Typhoon: Active: Enemies hit take more lightning DMG (13.2% at level 50).",
                 type: Type.EleTaken,
-                value: 25,
-            }),
+                value: 25
+            })
         ],
         "Ruinous Sakura": [
             new Multiplier({
@@ -56,19 +56,35 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
                 name:
                     "Ruinous: Active: Enemies hit take more fire DMG (28.6% at level 50).",
                 type: Type.EleTaken,
-                value: 42,
-            }),
-        ],
+                value: 42
+            })
+        ]
     },
+    "MAG-Typhoon": [
+        new Multiplier({
+            active: true,
+            name:
+                "Typhoon: Passive: Lightning boost.",
+            type: Type.EleDealt,
+            value: 50
+        }),
+        new Multiplier({
+            active: true,
+            name:
+                "Typhoon: Active: Enemies hit take more lightning DMG (13.2% at level 50).",
+            type: Type.EleTaken,
+            value: 25
+        })
+    ],
     Greatswords: {
         "Blood Dance (BD)": [
             new Multiplier({
                 active: true,
                 name: "Blood Dance: Active",
                 type: Type.EleTaken,
-                value: 60,
-            }),
-        ],
+                value: 60
+            })
+        ]
     },
     Crosses: {
         "11th Sacred Relic": [
@@ -77,8 +93,8 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
                 name:
                     "11th: Active: Teammates in the range of cross gain crit rate.",
                 type: Type.CritRate,
-                value: 10,
-            }),
+                value: 10
+            })
         ],
         "11th Leitourgia": [
             new Multiplier({
@@ -86,8 +102,8 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
                 name:
                     "11th PRI: Active: Teammates in the range of cross gain crit rate.",
                 type: Type.CritRate,
-                value: 20,
-            }),
+                value: 20
+            })
         ],
         "Super-☆ Sonata": [
             new Multiplier({
@@ -95,9 +111,9 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
                 name:
                     "Sonata: Active: Teammates in the range of cross gain elemental DMG.",
                 type: Type.EleDealt,
-                value: 15,
-            }),
-        ],
+                value: 15
+            })
+        ]
     },
     Gauntlets: {
         "Nebulous Duality": [
@@ -106,10 +122,10 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
                 name:
                     "Duality: Passive: Fu Hua bonus: hitting enemy with last hit of combo boosts team TDM by 4% once switched out. Max 3 stacks.",
                 type: Type.TdmDealt,
-                value: 12,
-            }),
-        ],
-    },
+                value: 12
+            })
+        ]
+    }
     // Scythes
     // Lances
 });

@@ -217,7 +217,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
                 value: 72,
             }),
             new Multiplier({
-                active: true,
+                active: false,
                 name:
                     "[DJ] Combo ATK: Raksha AMP: Bonus Lightning DMG to enemies below 30% HP",
                 type: Type.EleDealt,
