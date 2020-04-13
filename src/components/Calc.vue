@@ -36,7 +36,9 @@
         </v-col>
 
         <v-col class="ml-2">
-          <a :href="require('@/assets/valk_crt.png')" target="_blank">Where to find CRT?</a>
+          <a :href="require('@/assets/valk_crt.png')" target="_blank">
+            Where to find CRT?
+          </a>
           <br />
           <span>(Be sure to subtract CRT from stigs or take them off!)</span>
         </v-col>
@@ -92,7 +94,8 @@
           <v-dialog v-model="saveDialog" max-width="800px" @click:outside="closeSaveDialog">
             <template v-slot:activator="{ on }">
               <v-btn color="primary" v-on="on">
-                <v-icon left>mdi-content-save</v-icon>Save/Load
+                <v-icon left>mdi-content-save</v-icon>
+                Save/Load
               </v-btn>
             </template>
 
@@ -119,7 +122,8 @@
 
                     <v-col class="pa-0 col-auto">
                       <v-btn color="primary" @click="saveMultipliers">
-                        <v-icon left>mdi-content-save</v-icon>Save
+                        <v-icon left>mdi-content-save</v-icon>
+                        Save
                       </v-btn>
                     </v-col>
                   </v-row>
@@ -142,11 +146,15 @@
                 </v-list-item-content>
 
                 <v-list-item-action>
-                  <v-btn color="primary" @click="loadMultipliers(name)">Load</v-btn>
+                  <v-btn color="primary" @click="loadMultipliers(name)">
+                    Load
+                  </v-btn>
                 </v-list-item-action>
 
                 <v-list-item-action>
-                  <v-btn color="primary" @click="deleteSavedMultipliers(name)">delete</v-btn>
+                  <v-btn color="primary" @click="deleteSavedMultipliers(name)">
+                    delete
+                  </v-btn>
                 </v-list-item-action>
               </v-list-item>
 
@@ -154,7 +162,9 @@
 
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn text color="primary" @click="closeSaveDialog">Close</v-btn>
+                <v-btn text color="primary" @click="closeSaveDialog">
+                  Close
+                </v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
@@ -169,7 +179,13 @@
             :support="this.SupportValkMultipliers"
           >
             <template v-slot:button>
-              <v-img class="mr-3" left max-width="35" :src="require('@/assets/valkyrie_icon.png')"></v-img>Add valks
+              <v-img
+                class="mr-3"
+                left
+                max-width="35"
+                :src="require('@/assets/valkyrie_icon.png')"
+              ></v-img>
+              Add valks
             </template>
 
             <template v-slot:group="{ group }">
@@ -181,7 +197,9 @@
                 v-for="(multipliers, suit) in group.pieces"
                 v-bind:key="suit"
                 @click="addMultipliers(multipliers)"
-              >{{ suit }}</v-btn>
+              >
+                {{ suit }}
+              </v-btn>
             </template>
           </MultiplierDialog>
         </v-col>
@@ -195,7 +213,8 @@
             :support="this.SupportWeaponMultipliers"
           >
             <template v-slot:button>
-              <v-img class="mr-3" left :src="require('@/assets/weapon_icon.png')"></v-img>Add weapons
+              <v-img class="mr-3" left :src="require('@/assets/weapon_icon.png')"></v-img>
+              Add weapons
             </template>
 
             <template v-slot:group="{ group }">
@@ -207,7 +226,9 @@
                 v-for="(multipliers, piece) in group.pieces"
                 v-bind:key="piece"
                 @click="addMultipliers(multipliers)"
-              >{{ piece }}</v-btn>
+              >
+                {{ piece }}
+              </v-btn>
             </template>
           </MultiplierDialog>
         </v-col>
@@ -219,7 +240,13 @@
             :support="this.SupportStigMultipliers"
           >
             <template v-slot:button>
-              <v-img class="mr-3" left max-width="15" :src="require('@/assets/stigamata_icon.png')"></v-img>Add stigs
+              <v-img
+                class="mr-3"
+                left
+                max-width="15"
+                :src="require('@/assets/stigamata_icon.png')"
+              ></v-img>
+              Add stigs
             </template>
 
             <template v-slot:group="{ group }">
@@ -231,14 +258,17 @@
                 v-for="(multipliers, piece) in group.pieces"
                 v-bind:key="piece"
                 @click="addMultipliers(multipliers)"
-              >{{ piece }}</v-btn>
+              >
+                {{ piece }}
+              </v-btn>
             </template>
           </MultiplierDialog>
         </v-col>
 
         <v-col class="flex-grow-0">
           <v-btn color="error" @click="clearMultipliers">
-            <v-icon left>mdi-trash-can-outline</v-icon>Clear
+            <v-icon left>mdi-trash-can-outline</v-icon>
+            Clear
           </v-btn>
         </v-col>
       </v-row>
@@ -312,7 +342,12 @@
         <v-edit-dialog :return-value.sync="props.item.name">
           {{ props.item.name }}
           <template v-slot:input>
-            <v-text-field v-model="props.item.name" :rules="nameRules" label="Edit" single-line></v-text-field>
+            <v-text-field
+              v-model="props.item.name"
+              :rules="nameRules"
+              label="Edit"
+              single-line
+            ></v-text-field>
           </template>
         </v-edit-dialog>
       </template>
@@ -350,18 +385,9 @@
 import Vue from "vue";
 import MultiplierDialog from "@/components/MultiplierDialog.vue";
 import { Type, Multiplier } from "@/models/multiplier";
-import {
-  DPS_VALK_MULTIPLIERS,
-  SUPPORT_VALK_MULTIPLIERS
-} from "@/data/valk_multipliers";
-import {
-  DPS_WEAPON_MULTIPLIERS,
-  SUPPORT_WEAPON_MULTIPLIERS
-} from "@/data/weapon_multipliers";
-import {
-  DPS_STIG_MULTIPLIERS,
-  SUPPORT_STIG_MULTIPLIERS
-} from "@/data/stig_multipliers";
+import { DPS_VALK_MULTIPLIERS, SUPPORT_VALK_MULTIPLIERS } from "@/data/valk_multipliers";
+import { DPS_WEAPON_MULTIPLIERS, SUPPORT_WEAPON_MULTIPLIERS } from "@/data/weapon_multipliers";
+import { DPS_STIG_MULTIPLIERS, SUPPORT_STIG_MULTIPLIERS } from "@/data/stig_multipliers";
 
 enum FinalStats {
   OverallEle = "Overall elemental",
@@ -443,16 +469,13 @@ export default Vue.extend({
       saveNameRules: [(v: any) => !!v || "Name is required"],
       multiplierTypeRules: [(v: any) => !!v || "Type is required"],
       valueRules: [(v: any) => !!v || "Value is required"],
-      valkLvlRules: [
-        (v: any) => !!v || "Level is required",
-        (v: any) => v <= 80 || "Max is 80!"
-      ]
+      valkLvlRules: [(v: any) => !!v || "Level is required", (v: any) => v <= 80 || "Max is 80!"]
     };
   },
   computed: {
     calculationResults: function() {
-      let result = {};
-      for (let key in Type) {
+      const result = {};
+      for (const key in Type) {
         const type = Type[key];
 
         if (type == Type.Crt) {
@@ -460,48 +483,27 @@ export default Vue.extend({
             return acc + m.toIntegerValue(type);
           }, 0);
         } else if (type == Type.CritRate) {
-          result[type] = this.value.reduce(
-            (acc, m) => acc + m.toPercent(type),
-            0
-          );
+          result[type] = this.value.reduce((acc, m) => acc + m.toPercent(type), 0);
         } else if (type == Type.TdmTakenHost) {
-          result[type] = this.value.reduce(
-            (acc, m) => acc * (1 + m.toPercent(type)),
-            1
-          );
+          result[type] = this.value.reduce((acc, m) => acc * (1 + m.toPercent(type)), 1);
         } else if (type == Type.EleTakenHost) {
-          result[type] = this.value.reduce(
-            (acc, m) => acc * (1 + m.toPercent(type)),
-            1
-          );
+          result[type] = this.value.reduce((acc, m) => acc * (1 + m.toPercent(type)), 1);
         } else if (type == Type.PhysTakenHost) {
-          result[type] = this.value.reduce(
-            (acc, m) => acc * (1 + m.toPercent(type)),
-            1
-          );
+          result[type] = this.value.reduce((acc, m) => acc * (1 + m.toPercent(type)), 1);
         } else {
-          result[type] = this.value.reduce(
-            (acc, m) => acc + m.toPercent(type),
-            1
-          );
+          result[type] = this.value.reduce((acc, m) => acc + m.toPercent(type), 1);
         }
       }
 
-      const critRate =
-        Math.min((this.valkCrt + result[Type.Crt]) / (this.valkLvl * 5 + 75) +
-        result[Type.CritRate], 1);
-      const tdmOnly =
-        result[Type.TdmDealt] *
-        result[Type.TdmTaken] *
-        result[Type.TdmTakenHost];
-      const eleOnly =
-        result[Type.EleDealt] *
-        result[Type.EleTaken] *
-        result[Type.EleTakenHost];
+      const critRate = Math.min(
+        (this.valkCrt + result[Type.Crt]) / (this.valkLvl * 5 + 75) + result[Type.CritRate],
+        1
+      );
+      const tdmOnly = result[Type.TdmDealt] * result[Type.TdmTaken] * result[Type.TdmTakenHost];
+      const eleOnly = result[Type.EleDealt] * result[Type.EleTaken] * result[Type.EleTakenHost];
       const physOnlyNoCrits = result[Type.PhysDealt] * result[Type.PhysTaken];
       const physOnly =
-        physOnlyNoCrits * critRate * (result[Type.CritDmg] + 1) +
-        physOnlyNoCrits * (1 - critRate);
+        physOnlyNoCrits * critRate * (result[Type.CritDmg] + 1) + physOnlyNoCrits * (1 - critRate);
       result[FinalStats.OverallEle] = tdmOnly * eleOnly;
       result[FinalStats.OverallPhys] = tdmOnly * physOnly;
       result[FinalStats.OverallPhysNoCrits] = tdmOnly * physOnlyNoCrits;
@@ -519,10 +521,7 @@ export default Vue.extend({
 
       return {
         DPS: filterByKeyName(DPS_STIG_MULTIPLIERS, this.stigsDialogFilter),
-        Support: filterByKeyName(
-          SUPPORT_STIG_MULTIPLIERS,
-          this.stigsDialogFilter
-        )
+        Support: filterByKeyName(SUPPORT_STIG_MULTIPLIERS, this.stigsDialogFilter)
       };
     }
   },
@@ -570,7 +569,7 @@ export default Vue.extend({
         return;
       }
 
-      if (this.savedMultipliers.hasOwnProperty(this.saveName)) {
+      if (Object.prototype.hasOwnProperty.call(this.savedMultipliers, this.saveName)) {
         this.saveNameErrors.push("Name already used");
         return;
       }
@@ -588,9 +587,7 @@ export default Vue.extend({
     },
     loadMultipliers(name) {
       this.clearMultipliers();
-      this.savedMultipliers[name].forEach(m =>
-        this.value.push(Multiplier.fromObject(m))
-      );
+      this.savedMultipliers[name].forEach(m => this.value.push(Multiplier.fromObject(m)));
     },
     deleteSavedMultipliers(name) {
       Vue.delete(this.savedMultipliers, name);

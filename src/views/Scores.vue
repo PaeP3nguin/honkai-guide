@@ -51,7 +51,9 @@
           item-key="score"
           dense
         >
-          <template v-slot:item.elapsedSec="{ item }">{{ item.elapsedSec | countdownSeconds }}</template>
+          <template v-slot:item.elapsedSec="{ item }">
+            {{ item.elapsedSec | countdownSeconds }}
+          </template>
         </v-data-table>
       </v-col>
     </v-row>
@@ -111,27 +113,17 @@ export default Vue.extend({
   },
   methods: {
     computeByScore: function() {
-      const computedScore = scoresByTime.find(
-        s => s.score == this.selectedScore
-      );
+      const computedScore = scoresByTime.find(s => s.score == this.selectedScore);
       this.selectedUpScore = computedScore.up;
-      this.selectedTime = elapsedSecToAutocompleteItem(
-        computedScore.elapsedSec
-      );
+      this.selectedTime = elapsedSecToAutocompleteItem(computedScore.elapsedSec);
     },
     computeByUpScore: function() {
-      const computedScore = scoresByTime.find(
-        s => s.up == this.selectedUpScore
-      );
+      const computedScore = scoresByTime.find(s => s.up == this.selectedUpScore);
       this.selectedScore = computedScore.score;
-      this.selectedTime = elapsedSecToAutocompleteItem(
-        computedScore.elapsedSec
-      );
+      this.selectedTime = elapsedSecToAutocompleteItem(computedScore.elapsedSec);
     },
     computeByTime: function() {
-      const computedScore = scoresByTime.find(
-        s => s.elapsedSec == this.selectedTime
-      );
+      const computedScore = scoresByTime.find(s => s.elapsedSec == this.selectedTime);
       this.selectedScore = computedScore.score;
       this.selectedUpScore = computedScore.up;
     }

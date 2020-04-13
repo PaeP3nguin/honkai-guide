@@ -1,0 +1,5 @@
+{
+    "htmlWhitespaceSensitivity": "ignore",
+    "jsxBracketSameLine": true,
+    "printWidth": 100
+}

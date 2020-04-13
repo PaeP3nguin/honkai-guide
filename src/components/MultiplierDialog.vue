@@ -24,9 +24,9 @@
           <template v-for="(groups, type) in filteredDialogItems">
             <v-tab-item class="px-4" v-bind:key="type">
               <div v-for="(pieces, name, i) in groups" v-bind:key="name">
-                <v-divider v-if="i != 0" :class="[ noDividerPadding ? 'mt-0' : 'mt-4']"></v-divider>
+                <v-divider v-if="i != 0" :class="[noDividerPadding ? 'mt-0' : 'mt-4']"></v-divider>
 
-                <slot name="group" v-bind:group="{pieces: pieces, name: name}"></slot>
+                <slot name="group" v-bind:group="{ pieces: pieces, name: name }"></slot>
               </div>
             </v-tab-item>
           </template>
