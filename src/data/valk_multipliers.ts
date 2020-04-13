@@ -266,7 +266,8 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             }),
             new Multiplier({
                 active: false,
-                name: "[Meme] Ultimate: Transcendence: TDM boost for 12s after ult.",
+                name:
+                    "[Meme] Ultimate: Transcendence: TDM boost for 12s after ult.",
                 type: Type.TdmDealt,
                 value: 30,
             }),
@@ -414,7 +415,8 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
             }),
             new Multiplier({
                 active: true,
-                name: "[NS] Ult: Authority: Enemies around NS take more physical DMG from host.",
+                name:
+                    "[NS] Ult: Authority: Enemies around NS take more physical DMG from host.",
                 type: Type.PhysTakenHost,
                 value: 40,
             }),
@@ -814,25 +816,30 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
             new Multiplier({
                 active: false,
                 name:
-                    "[PI] Leader: Bonus for Basic ATKs (including Charged ATKs and Combo ATKs) of MECH battlesuits",
+                    "[PI] Leader: Bonus for Basic ATKs (including Charged ATKs and Combo ATKs) of MECH battlesuits.",
                 type: Type.TdmDealt,
                 value: 21,
             }),
             new Multiplier({
                 active: true,
                 name:
-                    "[PI] Passive: Team bonus for attacking enemies with active shields",
+                    "[PI] Passive: Team bonus for attacking enemies with active shields.",
                 type: Type.EleDealt,
                 value: 15,
             }),
             new Multiplier({
                 active: true,
-                name:
-                    "[PI] Ult: Team bonus during Carbon Stalker",
+                name: "[PI] Ult: Team bonus during Carbon Stalker.",
                 type: Type.EleDealt,
                 value: 30,
             }),
-        ],    
+            new Multiplier({
+                active: true,
+                name: "[PI] Ult: Enemies take more TDM.",
+                type: Type.TdmTaken,
+                value: 10,
+            }),
+        ],
     },
     "Liliya Olenyeva": {
         "Blueberry Blitz (BB) [SSS]": [
