@@ -173,6 +173,80 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
 });
 
 const DPS_STIG_MULTIPLIERS = Object.freeze({
+  "Dante (beta)": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Dante T",
+        type: Type.CritRate,
+        value: 15
+      }),
+      new Multiplier({
+        active: false,
+        name: "Dante T: When hit, gain physical DMG.",
+        type: Type.PhysDealt,
+        value: 10
+      }),
+      new Multiplier({
+        active: true,
+        name:
+          "Dante T: After ultimate evasion or perfect defence, gain physical DMG (overwrites on-hit effect).",
+        type: Type.PhysDealt,
+        value: 16
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Dante M",
+        type: Type.PhysDealt,
+        value: 30
+      }),
+      new Multiplier({
+        active: false,
+        name: "Dante M: When hit, gain crit DMG.",
+        type: Type.CritDmg,
+        value: 15
+      }),
+      new Multiplier({
+        active: true,
+        name:
+          "Dante M: After ultimate evasion or perfect defence, gain crit DMG (overwrites on-hit effect).",
+        type: Type.CritDmg,
+        value: 30
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: false,
+        name: "Dante B: When hit, gain total DMG.",
+        type: Type.TdmDealt,
+        value: 13
+      }),
+      new Multiplier({
+        active: true,
+        name:
+          "Dante B: After ultimate evasion or perfect defence, gain total DMG (overwrites on-hit effect).",
+        type: Type.CritDmg,
+        value: 20
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: false,
+        name: "Dante 2 set",
+        type: Type.CritDmg,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name:
+          "Dante 2 set: When performing charge attack in burst mode, charge attacks gain physical DMG.",
+        type: Type.PhysDealt,
+        value: 30
+      })
+    ]
+  },
   "Dark Jixuanyuan": {
     M: [
       new Multiplier({
@@ -835,6 +909,44 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Welt 3 set: Ice boost",
         type: Type.EleDealt,
         value: 40
+      })
+    ]
+  },
+  Zorro: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Zorro T",
+        type: Type.TdmDealt,
+        value: 20
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Zorro M",
+        type: Type.CritDmg,
+        value: 40
+      }),
+      new Multiplier({
+        active: true,
+        name: "Zorro M: After ultimate evasion, gain crit rate for 5s.",
+        type: Type.CritRate,
+        value: 15
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Zorro B",
+        type: Type.PhysDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name: "Zorro B: After ultimate evasion, gain physical DMG for 5s.",
+        type: Type.PhysDealt,
+        value: 20
       })
     ]
   }
