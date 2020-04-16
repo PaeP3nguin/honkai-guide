@@ -729,19 +729,19 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
       new Multiplier({
         active: false,
         name: "[AE] Combo ATK/Ult: Hex of Crucibles: 15s Fire DMG bonus on Combo ATK hit.",
-        type: Type.EleDealt,
+        type: Type.EleTaken,
         value: 35
       }),
       new Multiplier({
         active: false,
         name: "[AE] Combo ATK/Ult: Hex of Drowning: 15s Ice DMG bonus on Combo ATK hit.",
-        type: Type.EleDealt,
+        type: Type.EleTaken,
         value: 30
       }),
       new Multiplier({
         active: false,
         name: "[AE] Ult: Hex of Enervation: 15s Lightning bonus on Ult hit.",
-        type: Type.EleDealt,
+        type: Type.EleTaken,
         value: 30
       })
     ],
