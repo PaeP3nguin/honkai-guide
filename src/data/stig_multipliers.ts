@@ -735,6 +735,44 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  Rasputin: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Rasputin T",
+        type: Type.TdmDealt,
+        value: 12
+      }),
+      new Multiplier({
+        active: false,
+        name: "Rasputin T: Attacks against frozen or move slowed enemies gain TDM.",
+        type: Type.TdmDealt,
+        value: 12
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Rasputin M: Gain 20/35% ice DMG when above 10/30 combo respectively.",
+        type: Type.EleDealt,
+        value: 35
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Rasputin B: Ice DMG boost.",
+        type: Type.EleDealt,
+        value: 25
+      }),
+      new Multiplier({
+        active: true,
+        name: "Rasputin B: Gain ice DMG for 10s after entry.",
+        type: Type.EleDealt,
+        value: 15
+      })
+    ]
+  },
   "Ryunosuke Akutagawa": {
     T: [
       new Multiplier({
@@ -766,6 +804,52 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Ryunosuke 3 set: Melee attacks.",
         type: Type.TdmDealt,
         value: 20
+      })
+    ]
+  },
+  Scott: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Scott T: Ice DMG boost.",
+        type: Type.EleDealt,
+        value: 12
+      }),
+      new Multiplier({
+        active: true,
+        name: "Scott T: Gain 0.5% TDM for each combo hit. Max 20 stacks.",
+        type: Type.TdmDealt,
+        value: 10
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Scott M: Ice DMG boost.",
+        type: Type.EleDealt,
+        value: 15
+      }),
+      new Multiplier({
+        active: true,
+        name: "Scott M: Charge or combo attacks gain ice DMG.",
+        type: Type.EleDealt,
+        value: 20
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Scott 2 set",
+        type: Type.TdmDealt,
+        value: 12
+      })
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Scott 3 set: Gain ice DMG for 6s after using combo or charge attack.",
+        type: Type.EleDealt,
+        value: 18
       })
     ]
   },
