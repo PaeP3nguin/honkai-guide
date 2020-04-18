@@ -266,6 +266,10 @@ const modifiers = Object.keys(modifiersToChinese).map(m => ({
 
 const scoresByTime = generateScores(45);
 
+function isMobile() {
+  return window.navigator.userAgent.toLowerCase().includes("mobi");
+}
+
 export default {
   data: function() {
     return {
@@ -298,7 +302,7 @@ export default {
       return combos;
     },
     biliLinks: function() {
-      const baseUrl = "https://search.bilibili.com/all?keyword=";
+      const baseUrl = isMobile() ? "https://m.bilibili.com/search?keyword=" : "https://search.bilibili.com/all?keyword=";
 
       // Build combos of boss name + valk team.
       const baseParams = [];
