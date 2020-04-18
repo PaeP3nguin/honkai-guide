@@ -164,7 +164,8 @@
 }
 </style>
 
-<script>
+<script lang="ts">
+import Vue from "vue";
 import { generateScores, countdownSecondsFilter } from "@/util/score_util";
 
 const bossToChinese = {
@@ -266,11 +267,11 @@ const modifiers = Object.keys(modifiersToChinese).map(m => ({
 
 const scoresByTime = generateScores(45);
 
-function isMobile() {
+function isMobile(): boolean {
   return window.navigator.userAgent.toLowerCase().includes("mobi");
 }
 
-export default {
+export default Vue.extend({
   data: function() {
     return {
       selectedBoss: null,
@@ -302,7 +303,9 @@ export default {
       return combos;
     },
     biliLinks: function() {
-      const baseUrl = isMobile() ? "https://m.bilibili.com/search?keyword=" : "https://search.bilibili.com/all?keyword=";
+      const baseUrl = isMobile()
+        ? "https://m.bilibili.com/search?keyword="
+        : "https://search.bilibili.com/all?keyword=";
 
       // Build combos of boss name + valk team.
       const baseParams = [];
@@ -335,5 +338,5 @@ export default {
   filters: {
     countdownSeconds: countdownSecondsFilter
   }
-};
+});
 </script>
