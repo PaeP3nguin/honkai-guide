@@ -135,6 +135,11 @@
             CN 3.8 boss pool
           </a>
         </h2>
+        <h2 class="section-head">
+          <a :href="require('@/assets/boss_pool_39.png')" target="_blank">
+            CN 3.9 boss pool
+          </a>
+        </h2>
         <h2 class="section-head">Scores by time</h2>
         <ul>
           <li v-for="s in scoresByTime" v-bind:key="s.score">
