@@ -145,8 +145,9 @@
 
         <h2 class="mt-6">Projected boss lineups</h2>
         <p>
-          Our boss schedule seems to match CN's, offset by patch schedule. Ex. week 1 CN 3.8 was
-          AKA, Hephaestus, Hellmaru. SEA/NA had the same on week 1 of patch 3.8.
+          Our boss schedule seems to match CN's, offset by patch schedule. For example, week 1 of
+          patch 3.8, CN had AKA, Hephaestus, Hellmaru. SEA/NA then had the same bosses on week 1 of
+          patch 3.8.
         </p>
         <!-- For weekly lineups: https://space.bilibili.com/20678696 -->
         <p class="mb-1">4/20 - Tonatiuh (up), SK, HoV</p>
