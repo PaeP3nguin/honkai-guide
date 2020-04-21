@@ -262,7 +262,8 @@ const modifiersToChinese = {
   Dirac: "狄拉克",
   "Q-Singularis": "量子奇点",
   "Red Lotus": "红莲",
-  Myriad: "无限"
+  Myriad: "无限",
+  "Honkai Impact 3": "崩坏3",
 };
 
 const modifiers = Object.keys(modifiersToChinese).map(m => ({
