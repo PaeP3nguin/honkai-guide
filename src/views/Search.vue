@@ -154,6 +154,7 @@
         <p class="mb-1">4/27 - AKA (up), Jizo, Kallen</p>
         <p class="mb-1">5/4 - Tonatiuh (up), HoV, Hellmaru</p>
         <p class="mb-1">5/11 - DXY (up), Hephaestus, Jizo</p>
+        <p class="mb-1">==== Patch 3.9 ====</p>
         <p class="mb-1">5/18 - Jizo (up), DXY, Assaka</p>
 
         <h2 class="mt-6">Scores by time</h2>
