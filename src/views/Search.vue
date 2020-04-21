@@ -99,6 +99,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/04/20 - Add projected boss schedule</li>
           <li>2020/04/06 - Another nickname for Hephaestus</li>
           <li>2020/04/04 - Added double wendy abyss boss</li>
           <li>2020/04/01 - Added emperor abyss boss</li>
@@ -130,17 +131,31 @@
       </v-flex>
 
       <v-flex hidden-sm-and-down offset-xs1 md-flex md2>
-        <h2 class="section-head">
+        <h2 class="mt-6">
           <a :href="require('@/assets/boss_pool_38.png')" target="_blank">
             CN 3.8 boss pool
           </a>
         </h2>
-        <h2 class="section-head">
+
+        <h2 class="mt-6">
           <a :href="require('@/assets/boss_pool_39.png')" target="_blank">
             CN 3.9 boss pool
           </a>
         </h2>
-        <h2 class="section-head">Scores by time</h2>
+
+        <h2 class="mt-6">Projected boss lineups</h2>
+        <p>
+          Our boss schedule seems to match CN's, offset by patch schedule. Ex. week 1 CN 3.8 was
+          AKA, Hephaestus, Hellmaru. SEA/NA had the same on week 1 of patch 3.8.
+        </p>
+        <!-- For weekly lineups: https://space.bilibili.com/20678696 -->
+        <p class="mb-1">4/20 - Tonatiuh (up), SK, HoV</p>
+        <p class="mb-1">4/27 - AKA (up), Jizo, Kallen</p>
+        <p class="mb-1">5/4 - Tonatiuh (up), HoV, Hellmaru</p>
+        <p class="mb-1">5/11 - DXY (up), Hephaestus, Jizo</p>
+        <p class="mb-1">5/18 - Jizo (up), DXY, Assaka</p>
+
+        <h2 class="mt-6">Scores by time</h2>
         <ul>
           <li v-for="s in scoresByTime" v-bind:key="s.score">
             {{ s.score }} ({{ s.up }}) = {{ s.elapsedSec | countdownSeconds }}
@@ -263,7 +278,7 @@ const modifiersToChinese = {
   "Q-Singularis": "量子奇点",
   "Red Lotus": "红莲",
   Myriad: "无限",
-  "Honkai Impact 3": "崩坏3",
+  "Honkai Impact 3": "崩坏3"
 };
 
 const modifiers = Object.keys(modifiersToChinese).map(m => ({
