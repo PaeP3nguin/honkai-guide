@@ -455,7 +455,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: true,
-        name: "Kafka T: Gain Crit DM for each critical hit. 2.5% per stack. Max 8 stacks",
+        name: "Kafka T: Gain Crit DMG for each critical hit. 2.5% per stack. Max 8 stacks",
         type: Type.CritDmg,
         value: 20
       })
