@@ -392,7 +392,8 @@ import { DPS_STIG_MULTIPLIERS, SUPPORT_STIG_MULTIPLIERS } from "@/data/stig_mult
 enum FinalStats {
   OverallEle = "Overall elemental",
   OverallPhysNoCrits = "Overall physical (no crits)",
-  OverallPhys = "Overall physical (with crits)"
+  OverallPhysAvgCrits = "Overall physical (average crits)",
+  OverallPhysAllCrits = "Overall physical (100% crits)"
 }
 
 const tableHeaders = [
@@ -502,11 +503,13 @@ export default Vue.extend({
       const tdmOnly = result[Type.TdmDealt] * result[Type.TdmTaken] * result[Type.TdmTakenHost];
       const eleOnly = result[Type.EleDealt] * result[Type.EleTaken] * result[Type.EleTakenHost];
       const physOnlyNoCrits = result[Type.PhysDealt] * result[Type.PhysTaken];
-      const physOnly =
+      const physOnlyAvgCrits =
         physOnlyNoCrits * critRate * (result[Type.CritDmg] + 1) + physOnlyNoCrits * (1 - critRate);
+      const physOnlyAllCrits = physOnlyNoCrits * (result[Type.CritDmg] + 1);
       result[FinalStats.OverallEle] = tdmOnly * eleOnly;
-      result[FinalStats.OverallPhys] = tdmOnly * physOnly;
       result[FinalStats.OverallPhysNoCrits] = tdmOnly * physOnlyNoCrits;
+      result[FinalStats.OverallPhysAvgCrits] = tdmOnly * physOnlyAvgCrits;
+      result[FinalStats.OverallPhysAllCrits] = tdmOnly * physOnlyAllCrits;
       return result;
     },
     filteredDialogStigs: function() {
