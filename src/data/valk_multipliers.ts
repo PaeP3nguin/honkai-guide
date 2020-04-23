@@ -417,7 +417,8 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: false,
-        name: "[SK] Ult: Umbra: Gain 5% lightning DMG for each second in ult lightning field. Max 10 stacks.",
+        name:
+          "[SK] Ult: Umbra: Gain 5% lightning DMG for each second in ult lightning field. Max 10 stacks.",
         type: Type.EleDealt,
         value: 50
       })
@@ -460,7 +461,53 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
       })
     ]
   },
-  // Roza
+  "Rozaliya Olenyeva": {
+    "Molotov Cherry (MC) [SS]": [
+      new Multiplier({
+        active: false,
+        name: "[MC] Leader: Melee physical boost.",
+        type: Type.PhysDealt,
+        value: 40
+      }),
+      new Multiplier({
+        active: true,
+        name: "[MC] Passive: HIT THAT THING!: When combo exceeds 10/30, gain 20/50% TDM.",
+        type: Type.TdmDealt,
+        value: 50
+      }),
+      new Multiplier({
+        active: true,
+        name: "[MC] Passive: HIT THAT THING!: Boost against weakened or time slowed enemies.",
+        type: Type.TdmDealt,
+        value: 40
+      }),
+      new Multiplier({
+        active: false,
+        name: "[MC] Evasion: I GOT SHIELZ!: Crit rate boost after evasion.",
+        type: Type.CritRate,
+        value: 25
+      }),
+      new Multiplier({
+        active: false,
+        name: "[MC] Basic: BOOM BOOM!: Boost against BIO enemies when BB is on the team.",
+        type: Type.TdmDealt,
+        value: 25
+      }),
+      new Multiplier({
+        active: false,
+        name: "[MC] Basic: KATYUSHA HAMMA!: QTE boosts TDM when BB is on the team.",
+        type: Type.TdmDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: false,
+        name:
+          "[MC] Special: I KAN'T STOP: Charge deals 9.8% more physical DMG per second. Max 7 stacks.",
+        type: Type.PhysDealt,
+        value: 68.6
+      })
+    ]
+  },
   "Seele Vollerei": {
     "Stygian Nymph (SN) [S]": [
       new Multiplier({
