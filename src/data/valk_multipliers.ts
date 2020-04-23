@@ -395,6 +395,32 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
         type: Type.PhysTakenHost,
         value: 40
       })
+    ],
+    "Shadow Knight (SK) [S}": [
+      new Multiplier({
+        active: false,
+        name: "[SK] Leader",
+        type: Type.EleDealt,
+        value: 24
+      }),
+      new Multiplier({
+        active: false,
+        name: "[SK] Passive: Empty Heart: Bonus against move slowed or bleeding enemies.",
+        type: Type.TdmDealt,
+        value: 50
+      }),
+      new Multiplier({
+        active: false,
+        name: "[SK] Ult: Lightning DMG boost.",
+        type: Type.EleDealt,
+        value: 40
+      }),
+      new Multiplier({
+        active: false,
+        name: "[SK] Ult: Umbra: Gain 5% lightning DMG for each second in ult lightning field. Max 10 stacks.",
+        type: Type.EleDealt,
+        value: 50
+      })
     ]
   },
   // Kallen
