@@ -494,13 +494,13 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
         value: 25
       }),
       new Multiplier({
-        active: false,
+        active: true,
         name: "[MC] Basic: KATYUSHA HAMMA!: QTE boosts TDM when BB is on the team.",
         type: Type.TdmDealt,
         value: 20
       }),
       new Multiplier({
-        active: false,
+        active: true,
         name:
           "[MC] Special: I KAN'T STOP: Charge deals 9.8% more physical DMG per second. Max 7 stacks.",
         type: Type.PhysDealt,
