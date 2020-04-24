@@ -99,6 +99,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/04/24 - Add real name of S Durandal</li>
           <li>2020/04/20 - Add projected boss schedule</li>
           <li>2020/04/06 - Another nickname for Hephaestus</li>
           <li>2020/04/04 - Added double wendy abyss boss</li>
@@ -110,7 +111,7 @@
           <li>2020/02/01 - Add Azure Empyrea</li>
           <li>2020/01/07 - Increase granularity of scores by time</li>
           <li>2020/01/06 - Added HF</li>
-          <li>2019/12/15 - Actually we following CN bosses</li>
+          <!-- <li>2019/12/15 - Actually we following CN bosses</li>
           <li>2019/12/01 - Added 3.6 boss pool to sidebar</li>
           <li>2019/10/22 - Added quantum ball name</li>
           <li>2019/10/22 - Added quantum ball and both Seeles</li>
@@ -126,7 +127,7 @@
           <li>2019/09/02 - Added MR-06X Hephaestus</li>
           <li>2019/08/19 - Added MHT-3 Pax</li>
           <li>2019/08/11 - Added AKA boss</li>
-          <li>2019/08/10 - Added Void Drifter valk, Q-Singularis modifier</li>
+          <li>2019/08/10 - Added Void Drifter valk, Q-Singularis modifier</li> -->
         </ul>
       </v-flex>
 
@@ -250,8 +251,8 @@ const valkToChinese = {
   "Phoenix (PX)": ["炽"],
   "Pledge (VP)": ["誓"],
   "Ranger (VR)": ["游"],
-  Rondo: ["樱"],
-  "S Durandal": ["辉骑士月", "S幽兰"],
+  "Rondo (SR)": ["樱"],
+  "Bright Knight: Excelsis (BK)": ["辉骑士月", "S幽兰"],
   "Scarlet Fusion (SF)": ["深"],
   "Sin Hunter (Sundenjaegar / SJ)": ["原罪"],
   "Snowy Sniper (SS)": ["雪"],
