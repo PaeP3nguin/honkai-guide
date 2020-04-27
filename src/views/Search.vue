@@ -157,6 +157,7 @@
         <p class="mb-1">5/11 - DXY (up), Hephaestus, Jizo</p>
         <p class="mb-1">==== Patch 3.9 ====</p>
         <p class="mb-1">5/18 - Jizo (up), DXY, Assaka</p>
+        <p class="mb-1">5/25 - SK (up), HoV, Doom</p>
 
         <h2 class="mt-6">Scores by time</h2>
         <ul>
