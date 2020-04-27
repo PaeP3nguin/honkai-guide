@@ -282,6 +282,7 @@ const modifiersToChinese = {
   "Q-Singularis": "量子奇点",
   "Red Lotus": "红莲",
   Myriad: "无限",
+  "Sim battle": "模拟作战室",
   "Honkai Impact 3": "崩坏3"
 };
 
