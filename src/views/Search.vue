@@ -243,7 +243,7 @@ const valkToChinese = {
   "Knight Moonbeam (KMB)": ["月"],
   "Lightning Empress (LE)": ["鬼"],
   "Liliya (Blueberry Blitz / BB)": ["蓝"],
-  "Luna Kindred (LK)": ["月", "[初"],
+  "Luna Kindred (LK)": ["月", "初"],
   "Memento (Meme)": ["勿"],
   Miko: ["逆"],
   "Molotov Cherry (Roza, MC)": ["粉", "孤儿队"],
