@@ -99,6 +99,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/05/02 - Add soul link abyss boss</li>
           <li>2020/04/24 - Add real name of S Durandal</li>
           <li>2020/04/20 - Add projected boss schedule</li>
           <li>2020/04/06 - Another nickname for Hephaestus</li>
@@ -215,6 +216,7 @@ const bossToChinese = {
   RPC: ["飞机", "RPC - 6626"],
   "Shadow Knight (SK)": ["月轮"],
   "Son of Darkness (Abyss only)": ["黑夜之子"],
+  "Soul link mobs (Abyss only)": ["关底", "双灵魂链接", "红莲泰坦"],
   Tonatiuh: ["托纳提乌", "龙虾"],
   "Wendy + Ganesha (Abyss only)": ["猪温"]
 };
