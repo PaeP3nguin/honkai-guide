@@ -130,6 +130,20 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
     ]
   },
   Cannons: {
+    "Briaereus EX": [
+      new Multiplier({
+        active: false,
+        name: "Bri EX: Passive: MECH valks gain TDM.",
+        type: Type.TdmDealt,
+        value: 16
+      }),
+      new Multiplier({
+        active: false,
+        name: "Bri EX: Passive: BIO valks gain physical DMG.",
+        type: Type.PhysDealt,
+        value: 20
+      })
+    ],
     "Key of Reason": [
       new Multiplier({
         active: true,
@@ -328,8 +342,30 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 15
       })
     ]
+  },
+  Lances: {
+    "Hler's Serenity": [
+      new Multiplier({
+        active: true,
+        name: "Hler: Passive: Crit rate boost.",
+        type: Type.CritRate,
+        value: 15
+      }),
+      new Multiplier({
+        active: true,
+        name: "Hler: Passive: Retaliation grants crit rate for 3s.",
+        type: Type.CritRate,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name:
+          "Hler: Passive: Charged ATKs and Throws mark enemies, deal more crit DMG against mark enemies.",
+        type: Type.CritDmg,
+        value: 20
+      })
+    ]
   }
-  // Lances
 });
 
 export { SUPPORT_WEAPON_MULTIPLIERS, DPS_WEAPON_MULTIPLIERS };
