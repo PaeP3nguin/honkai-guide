@@ -173,7 +173,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
 });
 
 const DPS_STIG_MULTIPLIERS = Object.freeze({
-  "Dante (beta)": {
+  Dante: {
     T: [
       new Multiplier({
         active: true,
@@ -185,12 +185,12 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         active: false,
         name: "Dante T: When hit, gain physical DMG.",
         type: Type.PhysDealt,
-        value: 10
+        value: 8
       }),
       new Multiplier({
         active: true,
         name:
-          "Dante T: After ultimate evasion or perfect defence, gain physical DMG (overwrites on-hit effect).",
+          "Dante T: After ultimate evasion or retaliation, gain physical DMG (overwrites on-hit effect).",
         type: Type.PhysDealt,
         value: 16
       })
@@ -211,7 +211,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       new Multiplier({
         active: true,
         name:
-          "Dante M: After ultimate evasion or perfect defence, gain crit DMG (overwrites on-hit effect).",
+          "Dante M: After ultimate evasion or retaliation, gain crit DMG (overwrites on-hit effect).",
         type: Type.CritDmg,
         value: 30
       })
@@ -221,12 +221,12 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         active: false,
         name: "Dante B: When hit, gain total DMG.",
         type: Type.TdmDealt,
-        value: 13
+        value: 10
       }),
       new Multiplier({
         active: true,
         name:
-          "Dante B: After ultimate evasion or perfect defence, gain total DMG (overwrites on-hit effect).",
+          "Dante B: After ultimate evasion or retaliation, gain total DMG (overwrites on-hit effect).",
         type: Type.CritDmg,
         value: 20
       })
