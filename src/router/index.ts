@@ -1,8 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import GearCalcPage from "../views/GearCalcPage.vue";
-import Search from "../views/Search.vue";
-import ScorePage from "../views/Scores.vue";
+const GearCalc = () => import("../pages/GearCalc.vue");
+const Search = () => import("../pages/Search.vue");
+const ScorePage = () => import("../pages/Scores.vue");
 
 Vue.use(VueRouter);
 
@@ -15,7 +15,7 @@ const routes = [
   {
     path: "/calc",
     name: "calc",
-    component: GearCalcPage
+    component: GearCalc
   },
   {
     path: "/scores",
