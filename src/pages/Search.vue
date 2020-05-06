@@ -153,7 +153,7 @@
         </p>
         <!-- For weekly lineups: https://space.bilibili.com/20678696 -->
         <p class="mb-1" v-for="lineup in lineups" v-bind:key="lineup.date">
-          {{ lineup.date | dateFormat("M/D") }} -
+          {{ lineup.date | dateFormat("M/DD") }} -
           <template v-if="lineup.bosses">{{ lineup.bosses | lineupFormat }}</template>
           <template v-if="lineup.event">{{ lineup.event }}</template>
         </p>
