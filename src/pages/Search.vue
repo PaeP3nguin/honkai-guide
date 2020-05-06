@@ -152,14 +152,11 @@
           patch 3.8.
         </p>
         <!-- For weekly lineups: https://space.bilibili.com/20678696 -->
-        <p class="mb-1">4/20 - Tonatiuh (up), SK, HoV</p>
-        <p class="mb-1">4/27 - AKA (up), Jizo, Kallen</p>
-        <p class="mb-1">5/4 - Tonatiuh (up), HoV, Hellmaru</p>
-        <p class="mb-1">5/11 - DXY (up), Hephaestus, Jizo</p>
-        <p class="mb-1">==== Patch 3.9 ====</p>
-        <p class="mb-1">5/18 - Jizo (up), DXY, Assaka</p>
-        <p class="mb-1">5/25 - SK (up), HoV, Doom</p>
-        <p class="mb-1">6/1 - Benares (up), DXY, Parvati</p>
+        <p class="mb-1" v-for="lineup in lineups" v-bind:key="lineup.date">
+          {{ lineup.date | dateFormat("M/D") }} -
+          <template v-if="lineup.bosses">{{ lineup.bosses | lineupFormat }}</template>
+          <template v-if="lineup.event">{{ lineup.event }}</template>
+        </p>
 
         <h2 class="mt-6">Scores by time</h2>
         <ul>
@@ -193,6 +190,8 @@
 <script lang="ts">
 import Vue from "vue";
 import { generateScores, countdownSecondsFilter } from "@/util/score_util";
+import { RECENT_LINEUPS } from "@/data/boss_lineups";
+import { Boss } from "@/models/boss";
 
 const bossToChinese = {
   Assaka: ["阿湿波", "asb"],
@@ -311,7 +310,8 @@ export default Vue.extend({
       valks: Object.keys(valkToChinese),
       scores: scoresByTime.map(s => s.score),
       scoresByTime: scoresByTime,
-      modifiers: modifiers
+      modifiers: modifiers,
+      lineups: RECENT_LINEUPS
     };
   },
   computed: {
@@ -365,7 +365,10 @@ export default Vue.extend({
     }
   },
   filters: {
-    countdownSeconds: countdownSecondsFilter
+    countdownSeconds: countdownSecondsFilter,
+    lineupFormat: function(bosses: Boss[]) {
+      return bosses.map((boss, index) => boss.shortName + (index == 0 ? " (up)" : "")).join(", ");
+    }
   }
 });
 </script>

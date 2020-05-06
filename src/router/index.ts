@@ -2,7 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 const GearCalc = () => import("../pages/GearCalc.vue");
 const Search = () => import("../pages/Search.vue");
-const ScorePage = () => import("../pages/Scores.vue");
+const Scores = () => import("../pages/Scores.vue");
+const MemorialLineups = () => import("../pages/MemorialLineups.vue");
 
 Vue.use(VueRouter);
 
@@ -20,7 +21,12 @@ const routes = [
   {
     path: "/scores",
     name: "scores",
-    component: ScorePage
+    component: Scores
+  },
+  {
+    path: "/memorial_lineups",
+    name: "memorial_lineups",
+    component: MemorialLineups
   }
 ];
 
