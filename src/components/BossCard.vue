@@ -1,21 +1,33 @@
 <template>
-  <div class="boss-card">
-    <a :href="boss.wikiLink" target="_blank">
-      <div class="boss-card__name">{{ boss.name }}</div>
-      <div v-if="uprate" class="boss-card__uprate">Score +20%</div>
-      <img class="boss-card__pic" :src="require('@/assets/bosses/' + boss.image)" />
-    </a>
-  </div>
+  <a class="boss-card" :href="boss.wikiLink" target="_blank">
+    <div
+      class="boss-card__background"
+      v-bind:style="{ 'background-image': 'url(' + require('@/assets/bosses/' + boss.image) + ')' }"
+    >
+      <div class="boss-card__name hidden-xs-only">{{ boss.name }}</div>
+      <div v-if="uprate" class="boss-card__uprate hidden-xs-only">Score +20%</div>
+
+      <div class="boss-card__name hidden-sm-and-up">{{ boss.shortName }}</div>
+      <div v-if="uprate" class="boss-card__uprate hidden-sm-and-up">+20%</div>
+    </div>
+  </a>
 </template>
 
 <style>
 .boss-card {
-  width: 256px;
+  max-width: 256px;
+  width: 100%;
   height: 100px;
   position: relative;
   border: 2px solid #45c6c2;
   border-radius: 4px;
   box-sizing: content-box;
+}
+.boss-card__background {
+  height: 100%;
+  box-sizing: content-box;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .boss-card__name {
   z-index: 2;

@@ -26,7 +26,7 @@ const BOSS_LINEUPS = Object.freeze([
   }),
   new BossLineup({
     date: new Date("2020-05-14T00:00:00"),
-    event: "==== Patch 3.9 ===="
+    event: "Patch 3.9"
   }),
   new BossLineup({
     date: new Date("2020-05-18T00:00:00"),

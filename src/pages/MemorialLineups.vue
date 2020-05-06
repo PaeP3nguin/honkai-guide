@@ -32,7 +32,7 @@
 
           <v-divider class="mr-6" vertical fill-height></v-divider>
 
-          <div class="d-flex flex-wrap">
+          <div class="d-flex flex-wrap flex-grow-1">
             <template v-if="lineup.bosses">
               <BossCard
                 class="mx-2 my-2"
