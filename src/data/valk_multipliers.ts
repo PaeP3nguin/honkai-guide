@@ -41,7 +41,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
         value: 30
       }),
       new Multiplier({
-        active: true,
+        active: false,
         name: "[HoV] Charged ATK: Distortion: Bonus against unshielded enemies.",
         type: Type.TdmDealt,
         value: 60

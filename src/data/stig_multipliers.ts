@@ -905,6 +905,60 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  "Sirin Ascendant": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Sirin Asc T",
+        type: Type.PhysDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name: "Sirin Asc T: Herrscher form.",
+        type: Type.PhysDealt,
+        value: 30
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Sirin Asc M",
+        type: Type.CritDmg,
+        value: 30
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Sirin Asc B: Shield Active.",
+        type: Type.PhysDealt,
+        value: 15
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Sirin Asc 2 set: For each summoned space core, gain 12% TDM. Max 2 stacks.",
+        type: Type.TdmDealt,
+        value: 36
+      })
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Sirin Asc 3 set",
+        type: Type.CritDmg,
+        value: 50
+      }),
+      new Multiplier({
+        active: true,
+        name: "Sirin Asc 3 set: Herrscher form.",
+        type: Type.CritRate,
+        value: 15
+      })
+    ]
+  },
   Thales: {
     T: [
       new Multiplier({

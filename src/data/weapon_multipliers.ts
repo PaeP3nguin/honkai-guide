@@ -127,6 +127,20 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         type: Type.TdmDealt,
         value: 50
       })
+    ],
+    "Keys of the Void PRI (beta v1)": [
+      new Multiplier({
+        active: true,
+        name: "KoV Pri",
+        type: Type.PhysDealt,
+        value: 25
+      }),
+      new Multiplier({
+        active: true,
+        name: "KoV Pri",
+        type: Type.CritDmg,
+        value: 35
+      }),
     ]
   },
   Cannons: {
