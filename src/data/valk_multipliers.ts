@@ -80,7 +80,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
         value: 50
       }),
       new Multiplier({
-        active: true,
+        active: false,
         name: "[VD] Ult: Void Sync: 7.0s bonus during Ult.",
         type: Type.CritRate,
         value: 20

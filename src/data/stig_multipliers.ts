@@ -247,7 +247,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
-  "Dark Jixuanyuan": {
+  "Dark Jixuanyuan (DXY)": {
     M: [
       new Multiplier({
         active: true,
