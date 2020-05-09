@@ -502,7 +502,7 @@ export default Vue.extend({
       );
       const tdmOnly = result[Type.TdmDealt] * result[Type.TdmTaken] * result[Type.TdmTakenHost];
       const eleOnly = result[Type.EleDealt] * result[Type.EleTaken] * result[Type.EleTakenHost];
-      const physOnlyNoCrits = result[Type.PhysDealt] * result[Type.PhysTaken];
+      const physOnlyNoCrits = result[Type.PhysDealt] * result[Type.PhysTaken] * result[Type.PhysTakenHost];
       const physOnlyAvgCrits =
         physOnlyNoCrits * critRate * (result[Type.CritDmg] + 1) + physOnlyNoCrits * (1 - critRate);
       const physOnlyAllCrits = physOnlyNoCrits * (result[Type.CritDmg] + 1);
