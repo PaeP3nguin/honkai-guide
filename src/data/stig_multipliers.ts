@@ -665,6 +665,16 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  Planck: {
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Planck M: Physical boost for basic attacks.",
+        type: Type.PhysDealt,
+        value: 51
+      })
+    ]
+  },
   Poe: {
     T: [
       new Multiplier({
