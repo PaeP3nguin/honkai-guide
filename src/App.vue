@@ -68,6 +68,8 @@
 
 <script lang="ts">
 import Vue from "vue";
+import * as firebase from "firebase/app";
+import "firebase/auth";
 
 export default Vue.extend({
   name: "app",
@@ -76,7 +78,7 @@ export default Vue.extend({
       drawer: null
     };
   },
-  created() {
+  async created() {
     window.addEventListener(
       "keydown",
       function(e) {
@@ -98,6 +100,8 @@ export default Vue.extend({
       },
       true
     );
+
+    await firebase.auth().signInAnonymously();
   }
 });
 </script>

@@ -9,18 +9,51 @@
           directly!
         </p>
 
-        <v-row class="mx-0 hidden-sm-and-down">
-          <v-btn color="success" @click="compare = !compare">
+        <v-row class="mx-0">
+          <v-dialog v-model="shareDialog" width="unset" @click:outside="shareDialog = false">
+            <template v-slot:activator="{ on }">
+              <v-btn color="success" v-on="on" :disabled="emptyMultipliers">
+                <v-icon left>mdi-share-variant</v-icon>
+                Share
+              </v-btn>
+            </template>
+
+            <v-card>
+              <v-card-title>
+                <span class="headline">Share</span>
+              </v-card-title>
+
+              <v-card-text>
+                <h3>Sharing link:</h3>
+                <p>
+                  <a :href="shareLink">{{ shareLink }}</a>
+                </p>
+
+                <v-tooltip top v-model="shareCopiedTooltip" :open-on-hover="false">
+                  <template v-slot:activator="{}">
+                    <v-btn color="success" @click="copyShareLink()" retain-focus-on-click>
+                      <v-icon left>mdi-content-copy</v-icon>
+                      Copy link
+                    </v-btn>
+                  </template>
+
+                  <span>Link copied!</span>
+                </v-tooltip>
+              </v-card-text>
+            </v-card>
+          </v-dialog>
+
+          <v-btn class="ml-6 hidden-sm-and-down" color="success" @click="compare = !compare">
             <v-icon left>mdi-compare</v-icon>
             Toggle compare
           </v-btn>
 
-          <v-btn v-if="compare" class="ml-6" color="success" @click="copyRight">
+          <v-btn v-if="compare" class="ml-6 hidden-sm-and-down" color="success" @click="copyRight">
             <v-icon left>mdi-arrow-right</v-icon>
             Copy left to right
           </v-btn>
 
-          <v-btn v-if="compare" class="ml-6" color="success" @click="copyLeft">
+          <v-btn v-if="compare" class="ml-6 hidden-sm-and-down" color="success" @click="copyLeft">
             <v-icon left>mdi-arrow-left</v-icon>
             Copy right to left
           </v-btn>
@@ -142,6 +175,34 @@
 <script lang="ts">
 import Vue from "vue";
 import Calc from "@/components/Calc.vue";
+import * as firebase from "firebase/app";
+import "firebase/auth";
+import "firebase/firestore";
+import { Multiplier } from "@/models/multiplier";
+
+const firestore = firebase.firestore();
+let shareCopiedTooltipTimeout = null;
+let userId = "anonymous";
+
+firebase.auth().onAuthStateChanged(user => {
+  if (user) {
+    userId = user.uid;
+  }
+});
+
+function buildShareLink(userId: string, comparisonId: string): string {
+  const base = window.location.href.split("?")[0];
+  return `${base}?userId=${userId}&comparisonId=${comparisonId}`;
+}
+
+function getUserRef(
+  userId: string
+): firebase.firestore.CollectionReference<firebase.firestore.DocumentData> {
+  return firestore
+    .collection("comparison")
+    .doc(userId)
+    .collection("comparison");
+}
 
 export default Vue.extend({
   components: {
@@ -151,8 +212,55 @@ export default Vue.extend({
     return {
       leftMultipliers: [],
       rightMultipliers: [],
-      compare: true
+      compare: true,
+
+      // Share
+      shareDialog: false,
+      shareData: null,
+      shareLink: null,
+      shareCopiedTooltip: false
     };
+  },
+  async mounted() {
+    const queryParams = this.$route.query;
+    if (queryParams.comparisonId) {
+      const docRef = await getUserRef(queryParams.userId)
+        .doc(queryParams.comparisonId)
+        .get();
+      if (docRef.exists) {
+        this.shareData = docRef.data();
+        this.shareData.left.forEach(d => this.leftMultipliers.push(Multiplier.fromObject(d)));
+        this.shareData.right.forEach(d => this.rightMultipliers.push(Multiplier.fromObject(d)));
+        this.shareLink = buildShareLink(queryParams.userId, queryParams.comparisonId);
+      }
+    }
+
+    this.shareData = this.exportData;
+  },
+  computed: {
+    exportData: function() {
+      return JSON.parse(
+        JSON.stringify({ left: this.leftMultipliers, right: this.rightMultipliers })
+      );
+    },
+    emptyMultipliers: function() {
+      return this.leftMultipliers.length + this.rightMultipliers.length === 0;
+    }
+  },
+  watch: {
+    shareDialog: async function(open) {
+      if (!open) {
+        return;
+      }
+
+      if (this.shareData === this.exportData) {
+        return;
+      }
+
+      const ref = await getUserRef(userId).add(this.exportData);
+      this.shareLink = buildShareLink(userId, ref.id);
+      this.shareData = this.exportData;
+    }
   },
   methods: {
     copyRight() {
@@ -166,6 +274,12 @@ export default Vue.extend({
       this.rightMultipliers.forEach(m => {
         this.leftMultipliers.push(m.clone());
       });
+    },
+    async copyShareLink() {
+      await navigator.clipboard.writeText(this.shareLink);
+      clearTimeout(shareCopiedTooltipTimeout);
+      this.shareCopiedTooltip = true;
+      shareCopiedTooltipTimeout = setTimeout(() => (this.shareCopiedTooltip = false), 2000);
     }
   }
 });
