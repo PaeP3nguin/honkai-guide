@@ -39,8 +39,6 @@
           <a :href="require('@/assets/valk_crt.png')" target="_blank">
             Where to find CRT?
           </a>
-          <br />
-          <span>(Be sure to subtract CRT from stigs or take them off!)</span>
         </v-col>
       </v-row>
     </v-container>
@@ -91,7 +89,7 @@
     <v-container class="pa-0 mb-2">
       <v-row justify="start">
         <v-col class="flex-grow-0">
-          <v-dialog v-model="saveDialog" max-width="800px" @click:outside="closeSaveDialog">
+          <v-dialog v-model="saveDialog" max-width="600px" @click:outside="closeSaveDialog">
             <template v-slot:activator="{ on }">
               <v-btn color="primary" v-on="on">
                 <v-icon left>mdi-content-save</v-icon>
@@ -274,7 +272,7 @@
       </v-row>
     </v-container>
 
-    <v-dialog v-model="editDialog" max-width="800px" @click:outside="closeEditDialog">
+    <v-dialog v-model="editDialog" width="unset" @click:outside="closeEditDialog">
       <v-card>
         <v-card-title>
           <span class="headline">Edit multiplier</span>
