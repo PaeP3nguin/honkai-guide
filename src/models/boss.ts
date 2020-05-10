@@ -23,11 +23,13 @@ class Boss {
 }
 
 class BossLineup {
+  id: number;
   date: Date;
   bosses: Boss[];
   event: string;
 
   constructor({ date, bosses, event }: { date: Date; bosses?: Boss[]; event?: string }) {
+    this.id = Math.random();
     this.date = date;
     if (bosses) {
       this.bosses = bosses;

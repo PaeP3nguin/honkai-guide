@@ -27,7 +27,7 @@
 
     <v-row>
       <v-col>
-        <div class="d-flex mb-6" v-for="lineup in lineups" v-bind:key="lineup.date">
+        <div class="d-flex mb-6" v-for="lineup in lineups" v-bind:key="lineup.id">
           <h2 class="boss-date align-self-start">{{ lineup.date | dateFormat("MMM DD") }}</h2>
 
           <v-divider class="mr-6" vertical fill-height></v-divider>
