@@ -199,6 +199,7 @@ const bossToChinese = {
   Benares: ["贝纳勒斯", "龙"],
   "Cursed Soul": ["姬子", "被诅咒的英魂"],
   "Dark Jixuanyuan (DXY, DJXY)": ["皮皮马", "马"], // "姬麟·黑"],
+  "Death Web + Gigant (Abyss only)": ["蜘蛛泰坦"],
   Doom: ["沉灵", "湮灭沉灵"],
   "Double Wendy (all the way) (Abyss only)": ["双温蒂"],
   "Emperor (Abyss only)": ["帝王"],
