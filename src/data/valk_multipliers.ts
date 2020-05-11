@@ -260,16 +260,16 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
   "Theresa Apocalypse": {
     "Twilight Paladin (TP) [SS, Core 5*]": [
       new Multiplier({
-        active: true,
-        name: "[TP] Leader",
+        active: false,
+        name: "[TP] Leader: Physical DMG boost for burst/ultimate.",
         type: Type.PhysDealt,
-        value: 50
+        value: 16
       }),
       new Multiplier({
-        active: true,
-        name: "[DJ] Leader: Bonus Lightning DMG",
-        type: Type.EleDealt,
-        value: 30
+        active: false,
+        name: "[TP] Leader: Total DMG boost for team with 3 different types.",
+        type: Type.TdmDealt,
+        value: 10
       }),
       new Multiplier({
         active: true,
