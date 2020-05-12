@@ -13,6 +13,17 @@
       <p>{{ this.calculationResults }}</p>
     </div>
 
+    <div>
+      <a @click="showDetailedStats = !showDetailedStats">Toggle detailed stats</a>
+    </div>
+
+    <template v-if="showDetailedStats">
+      <div v-for="(value, stat) in detailedStats" v-bind:key="stat">
+        <span class="font-weight-bold">{{ stat }}:&nbsp;</span>
+        <span>{{ (value * 100).toFixed(2) }}%</span>
+      </div>
+    </template>
+
     <h3 class="mt-8">Enter valk info (only needed for physical valks):</h3>
 
     <v-container class="pa-0">
@@ -457,6 +468,7 @@ export default Vue.extend({
 
       // Stuff that actually changes.
       developerMode: false,
+      showDetailedStats: false,
       multiplierTableHeaders: tableHeaders,
       multiplierTypes: Object.values(Type),
       multiplier: new Multiplier({ active: true }),
@@ -500,7 +512,8 @@ export default Vue.extend({
       );
       const tdmOnly = result[Type.TdmDealt] * result[Type.TdmTaken] * result[Type.TdmTakenHost];
       const eleOnly = result[Type.EleDealt] * result[Type.EleTaken] * result[Type.EleTakenHost];
-      const physOnlyNoCrits = result[Type.PhysDealt] * result[Type.PhysTaken] * result[Type.PhysTakenHost];
+      const physOnlyNoCrits =
+        result[Type.PhysDealt] * result[Type.PhysTaken] * result[Type.PhysTakenHost];
       const physOnlyAvgCrits =
         physOnlyNoCrits * critRate * (result[Type.CritDmg] + 1) + physOnlyNoCrits * (1 - critRate);
       const physOnlyAllCrits = physOnlyNoCrits * (result[Type.CritDmg] + 1);
@@ -509,6 +522,23 @@ export default Vue.extend({
       result[FinalStats.OverallPhysAvgCrits] = tdmOnly * physOnlyAvgCrits;
       result[FinalStats.OverallPhysAllCrits] = tdmOnly * physOnlyAllCrits;
       return result;
+    },
+    detailedStats: function() {
+      const stats = Object.assign({}, this.calculationResults);
+
+      // Replace crit rate with total crit rate.
+      stats[Type.CritRate] = Math.min(
+        (this.valkCrt + stats[Type.Crt]) / (this.valkLvl * 5 + 75) + stats[Type.CritRate],
+        1
+      );
+
+      // We don't care about CRT only total crit rate.
+      delete stats[Type.Crt];
+
+      // Remove final stats too.
+      Object.values(FinalStats).map(k => delete stats[k]);
+
+      return stats;
     },
     filteredDialogStigs: function() {
       function filterByKeyName(map, filterString: string) {
