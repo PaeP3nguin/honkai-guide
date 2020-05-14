@@ -7,6 +7,8 @@ function daysDifference(d0: Date, d1: Date) {
   return Math.round(diff / 8.64e7);
 }
 
+
+// For weekly lineups: https://space.bilibili.com/20678696
 const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2020-04-20T00:00:00"),
@@ -39,6 +41,10 @@ const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2020-06-01T00:00:00"),
     bosses: [Bosses.Benares, Bosses.DXY, Bosses.Parvati]
+  }),
+  new BossLineup({
+    date: new Date("2020-06-08T00:00:00"),
+    bosses: [Bosses.Jizo, Bosses.Tonatiuh, Bosses.HoV]
   })
 ]);
 
