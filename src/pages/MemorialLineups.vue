@@ -11,11 +11,6 @@
           what bosses we'll have ahead of time! In addition, CN server publishes its boss pools of
           all possible bosses in a patch, linked below.
         </p>
-        <h2 class="mt-6">
-          <a :href="require('@/assets/boss_pool_38.png')" target="_blank">
-            CN 3.8 boss pool
-          </a>
-        </h2>
 
         <h2 class="mt-6">
           <a :href="require('@/assets/boss_pool_39.png')" target="_blank">

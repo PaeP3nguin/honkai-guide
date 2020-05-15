@@ -135,12 +135,6 @@
 
       <v-flex hidden-sm-and-down offset-xs1 md-flex md2>
         <h2 class="mt-6">
-          <a :href="require('@/assets/boss_pool_38.png')" target="_blank">
-            CN 3.8 boss pool
-          </a>
-        </h2>
-
-        <h2 class="mt-6">
           <a :href="require('@/assets/boss_pool_39.png')" target="_blank">
             CN 3.9 boss pool
           </a>
