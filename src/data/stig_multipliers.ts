@@ -114,6 +114,16 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  "New Year (Fireworks)": {
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "New Year B: Fireworks boost physical DMG for team members in AoE.",
+        type: Type.PhysDealt,
+        value: 20
+      })
+    ]
+  },
   Newton: {
     B: [
       new Multiplier({
