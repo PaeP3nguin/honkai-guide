@@ -162,6 +162,16 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  "Summer Day (balloon)": {
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Balloon M: When balloon explodes, allies in AoE gain elemental DMG boost.",
+        type: Type.EleDealt,
+        value: 30
+      })
+    ]
+  },
   "Tesla Band": {
     T: [
       new Multiplier({
@@ -672,6 +682,16 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Monet 2 set: Gain shield that gives lightning boost when active.",
         type: Type.EleDealt,
         value: 30
+      })
+    ]
+  },
+  Newton: {
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Newton B: When hitting enemy, they take more TDM for 5 seconds.",
+        type: Type.TdmTaken,
+        value: 31
       })
     ]
   },
