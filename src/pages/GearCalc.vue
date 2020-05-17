@@ -13,8 +13,8 @@
           <v-dialog v-model="shareDialog" width="unset" @click:outside="shareDialog = false">
             <template v-slot:activator="{ on }">
               <v-btn color="success" v-on="on" :disabled="emptyMultipliers">
-                <v-icon left>mdi-share-variant</v-icon>
-                Share
+                <v-icon left>mdi-link</v-icon>
+                Get shareable link
               </v-btn>
             </template>
 
@@ -24,7 +24,12 @@
               </v-card-title>
 
               <v-card-text>
-                <h3>Sharing link:</h3>
+                <p>
+                  Send this link to anyone for them to see the multipliers you entered!
+                </p>
+                <p>
+                  If you make changes to the multipliers, click the button again to get a new link.
+                </p>
                 <p>
                   <a :href="shareLink">{{ shareLink }}</a>
                 </p>
