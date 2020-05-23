@@ -247,13 +247,13 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         active: true,
         name:
           "Dante B: After ultimate evasion or retaliation, gain total DMG (overwrites on-hit effect).",
-        type: Type.CritDmg,
+        type: Type.TdmDealt,
         value: 20
       })
     ],
     "2 set": [
       new Multiplier({
-        active: false,
+        active: true,
         name: "Dante 2 set",
         type: Type.CritDmg,
         value: 20
