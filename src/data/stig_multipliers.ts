@@ -162,6 +162,38 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  "Sima Hui (4.0 stig)": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Sima T: Team gains physical boost.",
+        type: Type.PhysDealt,
+        value: 8
+      }),
+      new Multiplier({
+        active: true,
+        name: "Sima T: When QTE hits a target, team gains physical boost.",
+        type: Type.PhysDealt,
+        value: 8
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Sima B: When QTE hits a target, target takes more TDM.",
+        type: Type.TdmTaken,
+        value: 16
+      })
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Sima 3 set: When using ult, team gains total DMG boost.",
+        type: Type.TdmDealt,
+        value: 20
+      })
+    ]
+  },
   "Summer Day (balloon)": {
     M: [
       new Multiplier({
@@ -932,6 +964,60 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Shakespeare B: Ice boost.",
         type: Type.EleDealt,
         value: 51
+      })
+    ]
+  },
+  "Sima Hui (4.0 stig)": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Sima T",
+        type: Type.PhysDealt,
+        value: 8
+      }),
+      new Multiplier({
+        active: true,
+        name: "Sima T: When QTE hits a target, gains physical boost.",
+        type: Type.PhysDealt,
+        value: 8
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Sima M",
+        type: Type.PhysDealt,
+        value: 30
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Sima B: When QTE hits a target, target takes more TDM.",
+        type: Type.TdmTaken,
+        value: 16
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Sima 2 set",
+        type: Type.TdmDealt,
+        value: 30
+      })
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Sima 3 set: When using ult, team gains total DMG boost.",
+        type: Type.TdmDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: false,
+        name: "Sima 3 set: When using ult, Zhuge gains crit DMG boost.",
+        type: Type.CritDmg,
+        value: 40
       })
     ]
   },
