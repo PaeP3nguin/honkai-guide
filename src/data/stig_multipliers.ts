@@ -993,8 +993,8 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     B: [
       new Multiplier({
         active: true,
-        name: "Sima B: When QTE hits a target, target takes more TDM.",
-        type: Type.TdmTaken,
+        name: "Sima B: When QTE hits a target, target takes more physical DMG.",
+        type: Type.PhysTaken,
         value: 16
       })
     ],
