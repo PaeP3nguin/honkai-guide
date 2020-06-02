@@ -53,7 +53,11 @@ const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2020-06-22T00:00:00"),
     bosses: [Bosses.SK, Bosses.AKA, Bosses.Hephaestus]
-  })
+  }),
+  new BossLineup({
+    date: new Date("2020-06-25T00:00:00"),
+    event: "Patch 4.0"
+  }),
 ]);
 
 const RECENT_LINEUPS = Object.freeze(

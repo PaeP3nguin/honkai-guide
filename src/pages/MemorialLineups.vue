@@ -12,11 +12,7 @@
           all possible bosses in a patch, linked below.
         </p>
 
-        <h2 class="mt-6">
-          <a :href="require('@/assets/boss_pool_39.png')" target="_blank">
-            CN 3.9 boss pool
-          </a>
-        </h2>
+        <BossLineupList></BossLineupList>
       </v-col>
     </v-row>
 
@@ -58,11 +54,12 @@
 
 <script lang="ts">
 import Vue from "vue";
-import BossCard from "@/components/BossCard.vue";
 import { RECENT_LINEUPS } from "@/data/boss_lineups";
+import BossCard from "@/components/BossCard.vue";
+import BossLineupList from "@/components/BossLineupList.vue";
 
 export default Vue.extend({
-  components: { BossCard },
+  components: { BossCard, BossLineupList },
   data: function() {
     return {
       lineups: RECENT_LINEUPS

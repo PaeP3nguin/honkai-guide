@@ -135,11 +135,7 @@
       </v-flex>
 
       <v-flex hidden-sm-and-down offset-xs1 md-flex md2>
-        <h2 class="mt-6">
-          <a :href="require('@/assets/boss_pool_39.png')" target="_blank">
-            CN 3.9 boss pool
-          </a>
-        </h2>
+        <BossLineupList></BossLineupList>
 
         <h2 class="mt-6">Projected boss lineups</h2>
         <p>
@@ -188,6 +184,7 @@ import Vue from "vue";
 import { generateScores, countdownSecondsFilter } from "@/util/score_util";
 import { RECENT_LINEUPS } from "@/data/boss_lineups";
 import { Boss } from "@/models/boss";
+import BossLineupList from "@/components/BossLineupList.vue";
 
 const bossToChinese = {
   Assaka: ["阿湿波", "asb"],
@@ -311,6 +308,7 @@ export default Vue.extend({
       lineups: RECENT_LINEUPS
     };
   },
+  components: { BossLineupList },
   computed: {
     bossNames: function() {
       return this.selectedBoss ? bossToChinese[this.selectedBoss] : [""];
