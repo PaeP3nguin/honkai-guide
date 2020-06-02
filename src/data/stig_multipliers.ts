@@ -1176,6 +1176,17 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  Zhangheng: {
+    B: [
+      new Multiplier({
+        active: true,
+        name:
+          "Zhang B: gain lightning DMG for 2s after an ultimate evade when combo count is below 20.",
+        type: Type.EleDealt,
+        value: 120
+      })
+    ]
+  },
   Zorro: {
     T: [
       new Multiplier({
