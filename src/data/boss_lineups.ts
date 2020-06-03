@@ -8,6 +8,7 @@ function daysDifference(d0: Date, d1: Date) {
 }
 
 // For weekly lineups: https://space.bilibili.com/20678696
+// Can also search: 崩坏3 记忆战场一档
 const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2020-04-20T00:00:00"),
