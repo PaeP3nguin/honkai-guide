@@ -727,6 +727,44 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  Peary: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Peary T",
+        type: Type.TdmDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name: "Peary T: When combo is above 20, gain ice DMG.",
+        type: Type.EleDealt,
+        value: 20
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Peary M: Goin 0.4% TDM for each combo count. Max 60 stacks.",
+        type: Type.TdmDealt,
+        value: 24
+      }),
+      new Multiplier({
+        active: true,
+        name: "Peary M: Goin 0.5% ice DMG for each combo count. Max 60 stacks.",
+        type: Type.EleDealt,
+        value: 30
+      })
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Peary 3 set",
+        type: Type.TdmDealt,
+        value: 25
+      })
+    ]
+  },
   Planck: {
     M: [
       new Multiplier({
