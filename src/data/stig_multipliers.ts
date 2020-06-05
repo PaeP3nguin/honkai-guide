@@ -745,13 +745,13 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     M: [
       new Multiplier({
         active: true,
-        name: "Peary M: Goin 0.4% TDM for each combo count. Max 60 stacks.",
+        name: "Peary M: Gain 0.4% TDM for each combo count. Max 60 stacks.",
         type: Type.TdmDealt,
         value: 24
       }),
       new Multiplier({
         active: true,
-        name: "Peary M: Goin 0.5% ice DMG for each combo count. Max 60 stacks.",
+        name: "Peary M: Gain 0.5% ice DMG for each combo count. Max 60 stacks.",
         type: Type.EleDealt,
         value: 30
       })
