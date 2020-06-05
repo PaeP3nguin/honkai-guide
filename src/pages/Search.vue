@@ -277,6 +277,7 @@ const modifiersToChinese = {
   "No newton": "无牛",
   "EX MA": "终极区",
   Dirac: "狄拉克",
+  "Dirac (alternate translation)": "迪拉克",
   "Q-Singularis": "量子奇点",
   "Red Lotus": "红莲",
   Myriad: "无限",
