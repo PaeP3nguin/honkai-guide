@@ -220,7 +220,7 @@ const valkToChinese = {
   "Accipiter (VA)": ["迅"],
   "Arctic Kreigmesser (KMS)": ["极"],
   "Argent Knight: Artemis (AKA)": ["月魂"],
-  "Azure Empyrea (AE)": ["云墨丹心"],
+  "Azure Empyrea (AE)": ["云墨丹心", "云"],
   "Black Nucleus (BN)": ["黑"],
   "Battlestorm (BS)": ["疾"],
   "Bladestrike (VB)": ["强"],
