@@ -617,8 +617,59 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
         value: 35
       })
     ]
+  },
+  Durandal: {
+    "Bright Knight - Exelcsis (BK) [S]": [
+      new Multiplier({
+        active: true,
+        name: "[BK] Leader",
+        type: Type.PhysDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name: "[BK] Leader",
+        type: Type.CritDmg,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name: "[BK] Passive: Queen's Promotion: Each paragon stack grants 4% TDM. Max 10 stacks.",
+        type: Type.TdmDealt,
+        value: 40
+      }),
+      new Multiplier({
+        active: true,
+        name: "[BK] Passive: Checkmate: At 10 paragon stacks, gain TDM.",
+        type: Type.TdmDealt,
+        value: 12.8
+      }),
+      new Multiplier({
+        active: true,
+        name: "[BK] Evasion: Giuoco's Serenity: Retaliation grants physical DMG boost.",
+        type: Type.PhysDealt,
+        value: 50
+      }),
+      new Multiplier({
+        active: false,
+        name: "[BK] Evasion: Evan's Assault (SS): Enemies hit by retaliation take 10% more physical DMG.",
+        type: Type.PhysTaken,
+        value: 10
+      }),
+      new Multiplier({
+        active: true,
+        name: "[BK] Ult: Benoni's Breaker: Deal more physical DMG against shieldless enemies.",
+        type: Type.PhysDealt,
+        value: 30
+      }),
+      new Multiplier({
+        active: true,
+        name: "[BK] Ult: Knight's Tour: Total DMG boost during burst.",
+        type: Type.TdmDealt,
+        value: 50
+      })
+    ]
   }
-  // Durandal
 });
 
 const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
