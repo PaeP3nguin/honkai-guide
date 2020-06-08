@@ -271,18 +271,17 @@ const valkToChinese = {
 };
 
 const modifiersToChinese = {
-  "F2P / No gacha Gear": "零蛋",
-  "2 - 3 pieces of gacha gear": "低配",
-  "No JST": "无叶",
-  "No newton": "无牛",
-  "EX MA": "终极区",
-  Dirac: "狄拉克",
-  "Dirac (alternate translation)": "迪拉克",
-  "Q-Singularis": "量子奇点",
-  "Red Lotus": "红莲",
-  Myriad: "无限",
-  "Sim battle": "模拟作战室",
-  "Honkai Impact 3": "崩坏3"
+  "F2P / No gacha Gear": ["零蛋"],
+  "2 - 3 pieces of gacha gear": ["低配"],
+  "No JST": ["无叶"],
+  "No newton": ["无牛"],
+  "EX MA": ["终极区"],
+  Dirac: ["狄拉克", "迪拉克"],
+  "Q-Singularis": ["量子奇点"],
+  "Red Lotus": ["红莲"],
+  Myriad: ["无限"],
+  "Sim battle": ["模拟作战室"],
+  "Honkai Impact 3": ["崩坏3"]
 };
 
 const modifiers = Object.keys(modifiersToChinese).map(m => ({
@@ -294,6 +293,12 @@ const scoresByTime = generateScores(45);
 
 function isMobile(): boolean {
   return window.navigator.userAgent.toLowerCase().includes("mobi");
+}
+
+function* combine(arrOfArr: string[][]) {
+  const [head, ...tail] = arrOfArr;
+  const remainder = tail.length ? combine(tail) : [[]];
+  for (const r of remainder) for (const h of head) yield [h, ...r];
 }
 
 export default Vue.extend({
@@ -349,17 +354,17 @@ export default Vue.extend({
       }
 
       // Static modifiers that go at the end.
-      let modifierParams = "";
-      for (const m of this.modifiers) {
-        if (m.value) {
-          modifierParams += " " + modifiersToChinese[m.name];
-        }
-      }
+      const modifierParams = this.modifiers.filter((m) => m.value).reduce((l, m) => l.concat(modifiersToChinese[m.name]), []);
       if (this.score) {
-        modifierParams += " " + this.score;
+        modifierParams.append(this.score);
       }
 
-      return baseParams.map(base => `${baseUrl}${base}${modifierParams}`);
+      let combinations = Array.from(
+        combine([this.bossNames, this.valkCombos, modifierParams])
+      );
+      combinations = combinations.length ? combinations : [[""]];
+
+      return combinations.map((c: string[]) => `${baseUrl}${c.join(" ").trim()}`);
     }
   },
   filters: {
