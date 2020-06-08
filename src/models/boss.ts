@@ -59,6 +59,12 @@ const Bosses = {
     image: "benares.png",
     wikiLink: "https://honkaiimpact3.gamepedia.com/Benares_(Memorial_Arena)"
   }),
+  BKE: new Boss({
+    name: "Bright Knight - Exelcsis",
+    shortName: "BKE",
+    image: "boss_empty.png",
+    wikiLink: "https://honkaiimpact3.gamepedia.com"
+  }),
   CursedSoul: new Boss({
     name: "Cursed Soul",
     shortName: "Cursed Soul",
