@@ -192,7 +192,7 @@ const bossToChinese = {
   Assaka: ["阿湿波", "asb"],
   "Argent Knight: Artemis (AKA)": ["月魂"],
   Benares: ["贝纳勒斯", "龙"],
-  "Bright Knight - Excelsis (BKE)": ["月魄"],
+  "Bright Knight - Excelsis (BKE)": ["月魄", "幽兰戴尔"],
   "Cursed Soul": ["姬子", "被诅咒的英魂"],
   "Dark Jixuanyuan (DXY, DJXY)": ["皮皮马", "马"], // "姬麟·黑"],
   "Death Web + Gigant (Abyss only)": ["蜘蛛泰坦"],
