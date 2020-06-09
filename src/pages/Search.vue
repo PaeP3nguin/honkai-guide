@@ -99,9 +99,10 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/06/08 - Add BKE, made some URL generation improvements.</li>
           <li>2020/06/02 - Add Starlit Astrologos (Zhuge) to valks</li>
           <li>2020/05/25 - Update fix 3rd guide bookmarklet</li>
-          <li>2020/05/1 - Add death web + gigant abyss boss</li>
+          <li>2020/05/01 - Add death web + gigant abyss boss</li>
           <li>2020/05/02 - Add soul link abyss boss</li>
           <li>2020/04/24 - Add real name of S Durandal</li>
           <li>2020/04/20 - Add projected boss schedule</li>
@@ -191,6 +192,7 @@ const bossToChinese = {
   Assaka: ["阿湿波", "asb"],
   "Argent Knight: Artemis (AKA)": ["月魂"],
   Benares: ["贝纳勒斯", "龙"],
+  "Bright Knight - Excelsis (BKE)": ["月魄"],
   "Cursed Soul": ["姬子", "被诅咒的英魂"],
   "Dark Jixuanyuan (DXY, DJXY)": ["皮皮马", "马"], // "姬麟·黑"],
   "Death Web + Gigant (Abyss only)": ["蜘蛛泰坦"],
@@ -225,7 +227,7 @@ const valkToChinese = {
   "Battlestorm (BS)": ["疾"],
   "Bladestrike (VB)": ["强"],
   "Blood Rose (BR)": ["玫"],
-  "Bright Knight: Excelsis (BK)": ["月魄", "辉骑士月"],
+  "Bright Knight: Excelsis (BKE)": ["月魄", "辉骑士月"],
   "Celestial Hymn (CH)": ["神"],
   "Chariot (VC)": ["战"],
   "Crimson Impulse (CI)": ["绯"],
@@ -339,32 +341,20 @@ export default Vue.extend({
         ? "https://m.bilibili.com/search?keyword="
         : "https://search.bilibili.com/all?keyword=";
 
-      // Build combos of boss name + valk team.
-      const baseParams = [];
-      this.bossNames.forEach(name => {
-        this.valkCombos.forEach(combo => {
-          const combined = name + " " + combo;
-          if (combined) {
-            baseParams.push(combined);
-          }
-        });
-      });
-      if (!baseParams.length) {
-        baseParams.push("");
-      }
-
       // Static modifiers that go at the end.
-      const modifierParams = this.modifiers.filter((m) => m.value).reduce((l, m) => l.concat(modifiersToChinese[m.name]), []);
+      let modifierParams = this.modifiers.filter((m) => m.value).map((m) => modifiersToChinese[m.name]);
       if (this.score) {
-        modifierParams.append(this.score);
+        modifierParams.push([this.score]);
       }
+      // Must have at least one element in each array passed to combine to generate anything.
+      modifierParams = modifierParams.length ? modifierParams : [[""]];
+      const modifierCombos = Array.from(combine(modifierParams)).map((c: string[]) => c.join(" ").trim());
 
-      let combinations = Array.from(
-        combine([this.bossNames, this.valkCombos, modifierParams])
+      const combinations = Array.from(
+        combine([this.bossNames, this.valkCombos, modifierCombos])
       );
-      combinations = combinations.length ? combinations : [[""]];
 
-      return combinations.map((c: string[]) => `${baseUrl}${c.join(" ").trim()}`);
+      return combinations.map((c: string[]) => `${baseUrl}${c.join(" ").trim()}`).sort();
     }
   },
   filters: {
