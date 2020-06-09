@@ -62,7 +62,7 @@ const Bosses = {
   BKE: new Boss({
     name: "Bright Knight - Exelcsis",
     shortName: "BKE",
-    image: "boss_empty.png",
+    image: "bke.png",
     wikiLink: "https://honkaiimpact3.gamepedia.com"
   }),
   CursedSoul: new Boss({
