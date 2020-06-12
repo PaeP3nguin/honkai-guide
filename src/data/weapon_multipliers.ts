@@ -128,18 +128,18 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 50
       })
     ],
-    "Keys of the Void PRI (beta v1)": [
+    "Endless Voiders (Keys of the Void PRI)": [
       new Multiplier({
         active: true,
         name: "KoV Pri",
         type: Type.PhysDealt,
-        value: 25
+        value: 20
       }),
       new Multiplier({
         active: true,
         name: "KoV Pri",
         type: Type.CritDmg,
-        value: 35
+        value: 20
       }),
     ]
   },

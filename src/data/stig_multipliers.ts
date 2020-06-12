@@ -162,17 +162,17 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
-  "Sima Hui (4.0 stig)": {
+  "Shuijing (Sima)": {
     T: [
       new Multiplier({
         active: true,
-        name: "Sima T: Team gains physical boost.",
+        name: "Shuijing T: Team gains physical boost.",
         type: Type.PhysDealt,
         value: 8
       }),
       new Multiplier({
         active: true,
-        name: "Sima T: When QTE hits a target, team gains physical boost.",
+        name: "Shuijing T: When QTE hits a target, team gains physical boost.",
         type: Type.PhysDealt,
         value: 8
       })
@@ -180,7 +180,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
     B: [
       new Multiplier({
         active: true,
-        name: "Sima B: When QTE hits a target, target takes more physical DMG.",
+        name: "Shuijing B: When QTE hits a target, target takes more physical DMG.",
         type: Type.PhysTaken,
         value: 16
       })
@@ -188,7 +188,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
     "3 set": [
       new Multiplier({
         active: true,
-        name: "Sima 3 set: When using ult, team gains total DMG boost.",
+        name: "Shuijing 3 set: When using ult, team gains total DMG boost.",
         type: Type.TdmDealt,
         value: 20
       })
@@ -1005,17 +1005,17 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
-  "Sima Hui (4.0 stig)": {
+  "Shuijing (Sima)": {
     T: [
       new Multiplier({
         active: true,
-        name: "Sima T",
+        name: "Shuijing T",
         type: Type.PhysDealt,
         value: 8
       }),
       new Multiplier({
         active: true,
-        name: "Sima T: When QTE hits a target, gains physical boost.",
+        name: "Shuijing T: When QTE hits a target, gains physical boost.",
         type: Type.PhysDealt,
         value: 8
       })
@@ -1023,7 +1023,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     M: [
       new Multiplier({
         active: true,
-        name: "Sima M",
+        name: "Shuijing M",
         type: Type.PhysDealt,
         value: 30
       })
@@ -1031,7 +1031,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     B: [
       new Multiplier({
         active: true,
-        name: "Sima B: When QTE hits a target, target takes more physical DMG.",
+        name: "Shuijing B: When QTE hits a target, target takes more physical DMG.",
         type: Type.PhysTaken,
         value: 16
       })
@@ -1039,7 +1039,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     "2 set": [
       new Multiplier({
         active: true,
-        name: "Sima 2 set",
+        name: "Shuijing 2 set",
         type: Type.TdmDealt,
         value: 30
       })
@@ -1047,13 +1047,13 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     "3 set": [
       new Multiplier({
         active: true,
-        name: "Sima 3 set: When using ult, team gains total DMG boost.",
+        name: "Shuijing 3 set: When using ult, team gains total DMG boost.",
         type: Type.TdmDealt,
         value: 20
       }),
       new Multiplier({
         active: false,
-        name: "Sima 3 set: When using ult, Zhuge gains crit DMG boost.",
+        name: "Shuijing 3 set: When using ult, Zhuge gains crit DMG boost.",
         type: Type.CritDmg,
         value: 40
       })
