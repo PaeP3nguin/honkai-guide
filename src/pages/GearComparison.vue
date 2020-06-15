@@ -66,11 +66,11 @@
 
         <v-row class="d-flex">
           <v-col class="mr-8">
-            <Calc v-model="leftMultipliers" />
+            <GearCalc v-model="leftMultipliers" />
           </v-col>
 
           <v-col class="hidden-sm-and-down" v-if="compare">
-            <Calc v-model="rightMultipliers" />
+            <GearCalc v-model="rightMultipliers" />
           </v-col>
         </v-row>
 
@@ -93,6 +93,12 @@
             Physical Damage Taken -
             <a href="https://honkaiimpact3.gamepedia.com/Gustav_Klimt">
               Gustav Klimt 2-set
+            </a>
+          </li>
+          <li>
+            Physical Damage Taken from Host (rare) -
+            <a href="https://honkaiimpact3.gamepedia.com/Night_Squire">
+              Night Squire SSS rank ability "Authority"
             </a>
           </li>
           <li>
@@ -179,7 +185,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import Calc from "@/components/Calc.vue";
+import GearCalc from "@/components/GearCalc.vue";
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
@@ -211,7 +217,7 @@ function getUserRef(
 
 export default Vue.extend({
   components: {
-    Calc
+    GearCalc
   },
   data: function() {
     return {

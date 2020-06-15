@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-const GearCalc = () => import("../pages/GearCalc.vue");
+const GearComparison = () => import("../pages/GearComparison.vue");
 const Search = () => import("../pages/Search.vue");
 const Scores = () => import("../pages/Scores.vue");
 const AffixComparison = () => import("../pages/AffixComparison.vue");
@@ -17,17 +17,17 @@ const routes = [
   {
     path: "/calc",
     name: "calc",
-    component: GearCalc
-  },
-  {
-    path: "/scores",
-    name: "scores",
-    component: Scores
+    component: GearComparison
   },
   {
     path: "/affix_compare",
     name: "affix_compare",
     component: AffixComparison
+  },
+  {
+    path: "/scores",
+    name: "scores",
+    component: Scores
   },
   {
     path: "/memorial_lineups",
