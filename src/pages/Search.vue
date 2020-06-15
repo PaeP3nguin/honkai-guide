@@ -1,5 +1,5 @@
 <template>
-  <v-container grid-list-md text-xs-start>
+  <v-container>
     <v-layout>
       <v-flex xs12 md10>
         <h1>Bilibili search generator</h1>

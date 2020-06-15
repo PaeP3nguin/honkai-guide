@@ -1,7 +1,7 @@
 <template>
-  <v-container grid-list-md text-xs-start>
+  <v-container>
     <v-row>
-      <v-col xs10>
+      <v-col>
         <h1>Future Memorial Arena lineups</h1>
 
         <p>
