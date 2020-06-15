@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 const GearCalc = () => import("../pages/GearCalc.vue");
 const Search = () => import("../pages/Search.vue");
 const Scores = () => import("../pages/Scores.vue");
+const AffixComparison = () => import("../pages/AffixComparison.vue");
 const MemorialLineups = () => import("../pages/MemorialLineups.vue");
 
 Vue.use(VueRouter);
@@ -22,6 +23,11 @@ const routes = [
     path: "/scores",
     name: "scores",
     component: Scores
+  },
+  {
+    path: "/affix_compare",
+    name: "affix_compare",
+    component: AffixComparison
   },
   {
     path: "/memorial_lineups",

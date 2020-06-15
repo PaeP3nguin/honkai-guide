@@ -21,6 +21,7 @@
             <v-list-item-title>Bilibili search</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
         <v-list-item link to="/calc">
           <v-list-item-action>
             <v-icon>mdi-math-compass</v-icon>
@@ -29,6 +30,16 @@
             <v-list-item-title>Gear calculator</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
+        <v-list-item link to="/affix_compare">
+          <v-list-item-action>
+            <v-img max-width="24" left :src="require('@/assets/icon_stig.png')"></v-img>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Affix calculator</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
         <v-list-item link to="/scores">
           <v-list-item-action>
             <v-icon>mdi-timer</v-icon>
@@ -37,6 +48,7 @@
             <v-list-item-title>MA score to time</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
         <v-list-item link to="/memorial_lineups">
           <v-list-item-action>
             <v-img max-width="24" left :src="require('@/assets/icon_enemy.png')"></v-img>
