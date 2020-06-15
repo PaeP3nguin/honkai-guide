@@ -4,7 +4,7 @@
 
     <div v-for="f in FinalStats" v-bind:key="f">
       <span class="font-weight-bold">{{ f }}:&nbsp;</span>
-      <span>{{ (calculationResults[f] * 100).toFixed(2) }}%</span>
+      <span>{{ calculationResults[f] | toPercent }}</span>
     </div>
 
     <div v-if="developerMode">
@@ -20,7 +20,7 @@
     <template v-if="showDetailedStats">
       <div v-for="(value, stat) in detailedStats" v-bind:key="stat">
         <span class="font-weight-bold">{{ stat }}:&nbsp;</span>
-        <span>{{ (value * 100).toFixed(2) }}%</span>
+        <span>{{ value | toPercent }}</span>
       </div>
     </template>
 
@@ -393,6 +393,7 @@
 <script lang="ts">
 import Vue from "vue";
 import MultiplierDialog from "@/components/MultiplierDialog.vue";
+import { toPercent } from "@/util/filters";
 import { Type, Multiplier } from "@/models/multiplier";
 import { DPS_VALK_MULTIPLIERS, SUPPORT_VALK_MULTIPLIERS } from "@/data/valk_multipliers";
 import { DPS_WEAPON_MULTIPLIERS, SUPPORT_WEAPON_MULTIPLIERS } from "@/data/weapon_multipliers";
@@ -439,6 +440,7 @@ export default Vue.extend({
     value: Array
   },
   components: { MultiplierDialog },
+  filters: { toPercent },
   data: function() {
     return {
       // Constants.
