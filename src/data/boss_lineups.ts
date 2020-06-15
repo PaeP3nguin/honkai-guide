@@ -8,6 +8,7 @@ function daysDifference(d0: Date, d1: Date) {
 }
 
 // For weekly lineups: https://space.bilibili.com/20678696
+// https://bbs.mihoyo.com/bh3/topicDetail/20
 // Can also search: 崩坏3 记忆战场一档
 const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
@@ -67,9 +68,13 @@ const BOSS_LINEUPS = Object.freeze([
     bosses: [Bosses.BKE, Bosses.Hephaestus, Bosses.AKA]
   }),
   new BossLineup({
+    date: new Date("2020-07-13T00:00:00"),
+    bosses: [Bosses.HoV, Bosses.DXY, Bosses.Jizo]
+  }),
+  new BossLineup({
     date: new Date("2020-08-06T00:00:00"),
     event: "Patch 4.1 (projected)"
-  }),
+  })
 ]);
 
 const RECENT_LINEUPS = Object.freeze(
