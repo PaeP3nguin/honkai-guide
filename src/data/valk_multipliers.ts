@@ -291,7 +291,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
         value: 50
       }),
       new Multiplier({
-        active: true,
+        active: false,
         name: "[TP] Special Attack: Feverish Barrage: Bonus on last sequence of Charged ATK.",
         type: Type.TdmDealt,
         value: 120
