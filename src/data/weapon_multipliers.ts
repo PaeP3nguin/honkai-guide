@@ -89,6 +89,20 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
         type: Type.EleDealt,
         value: 15
       })
+    ],
+    "Zither's Lament": [
+      new Multiplier({
+        active: true,
+        name: "Zither: Passive: Team's ultimate and burst gain physical DMG.",
+        type: Type.PhysDealt,
+        value: 15
+      }),
+      new Multiplier({
+        active: true,
+        name: "Zither: Active: Valks in range gain 15% physical DMG.",
+        type: Type.PhysDealt,
+        value: 15
+      })
     ]
   },
   Gauntlets: {
