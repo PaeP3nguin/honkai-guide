@@ -152,6 +152,16 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  Picasso: {
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Picasso 2 set: When orange paint mixes, enemy takes more physical DMG.",
+        type: Type.PhysTaken,
+        value: 25
+      })
+    ]
+  },
   "Pool Party Mei (PPM)": {
     M: [
       new Multiplier({
@@ -1033,7 +1043,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         active: true,
         name: "Shuijing B: When QTE hits a target, target takes more physical DMG.",
         type: Type.PhysTaken,
-        value: 16
+        value: 18
       })
     ],
     "2 set": [
