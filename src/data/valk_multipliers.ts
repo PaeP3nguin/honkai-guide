@@ -828,6 +828,32 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
         type: Type.PhysDealt,
         value: 25
       })
+    ],
+    "Starlit Astrologos (SA) [SSS]": [
+      new Multiplier({
+        active: true,
+        name: "[SA] Leader: When a teammate lands a charged attack, gain crit rate.",
+        type: Type.CritRate,
+        value: 15
+      }),
+      new Multiplier({
+        active: true,
+        name: "[SA] Leader: Teams of 3 different types gain TDM.",
+        type: Type.TdmDealt,
+        value: 30
+      }),
+      new Multiplier({
+        active: true,
+        name: "[SA] QTE: Battle Summit: Team gains crit rate when SA QTEs.",
+        type: Type.CritRate,
+        value: 15
+      }),
+      new Multiplier({
+        active: true,
+        name: "[SA] Ult: Empyrean Calamity: Ult boosts team physical DMG.",
+        type: Type.PhysDealt,
+        value: 25
+      })
     ]
   },
   "Fu Hua": {
