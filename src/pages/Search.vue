@@ -238,7 +238,7 @@ const valkToChinese = {
   "Flame Sakitama (FS)": ["炎"],
   "Hawk of the Fog (HF)": ["迅", "迅雷", "雾都迅羽"],
   "Herrscher of the Void (God Kiana, GK, HoV)": ["律"],
-  "Herrscher of Thunder (HoT)": ["雷之律者"],
+  "Herrscher of Thunder (HoT)": ["雷之律者", "雷律"],
   "Imayoh (IR)": ["今"],
   "Knight Moonbeam (KMB)": ["月"],
   "Lightning Empress (LE)": ["鬼"],
