@@ -142,7 +142,7 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 50
       })
     ],
-    "Endless Voiders (Keys of the Void PRI)": [
+    "Domain of the Void": [
       new Multiplier({
         active: true,
         name: "KoV Pri",
