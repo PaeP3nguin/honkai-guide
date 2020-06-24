@@ -379,6 +379,46 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  Edison: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Edison T: Lightning DMG boost.",
+        type: Type.EleDealt,
+        value: 15
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Edison M: Lightning DMG boost.",
+        type: Type.EleDealt,
+        value: 10
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: false,
+        name: "Edison 2 set: Gain a charge every 12s. Next basic attack gains TDM boost.",
+        type: Type.TdmDealt,
+        value: 50
+      }),
+      new Multiplier({
+        active: false,
+        name: "Edison 2 set: Gain a charge every 12s. Gain TDM boost for 6s.",
+        type: Type.TdmDealt,
+        value: 15
+      })
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Edison 3 set: Lightning DMG boost.",
+        type: Type.EleDealt,
+        value: 25
+      })
+    ]
+  },
   "Elizabeth Bathory": {
     T: [
       new Multiplier({
@@ -890,6 +930,38 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Rasputin B: Gain ice DMG for 10s after entry.",
         type: Type.EleDealt,
         value: 15
+      })
+    ]
+  },
+  "Rebel Blades": {
+    "Kiana T": [
+      new Multiplier({
+        active: true,
+        name: "Kiana T: Lightning DMG boost.",
+        type: Type.EleDealt,
+        value: 10
+      }),
+      new Multiplier({
+        active: true,
+        name: "Kiana T: Gain 5% lightning DMG boost per hit. Max 5 stacks.",
+        type: Type.EleDealt,
+        value: 25
+      })
+    ],
+    "Mei M": [
+      new Multiplier({
+        active: true,
+        name: "Mei M: Lightning DMG boost.",
+        type: Type.EleDealt,
+        value: 10
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Rebel Blades 2 set: TDM boost when combo is above 25.",
+        type: Type.TdmDealt,
+        value: 25
       })
     ]
   },
