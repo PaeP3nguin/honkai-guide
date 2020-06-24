@@ -956,6 +956,20 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         value: 10
       })
     ],
+    "Bronya B": [
+      new Multiplier({
+        active: true,
+        name: "Bronya B: Lightning DMG boost.",
+        type: Type.EleDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: false,
+        name: "Bronya B: Lightning DMG boost for 10s after ultimate evasion.",
+        type: Type.EleDealt,
+        value: 10
+      })
+    ],
     "2 set": [
       new Multiplier({
         active: true,
