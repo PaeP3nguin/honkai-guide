@@ -141,26 +141,23 @@
               HoV mark debuff "Honkai Mark"
             </a>
           </li>
-          <li>Typing Bonus - BIO > MECH > PSY, QUA > QUA</li>
-          <li>Dirac Weather Typing Bonus / QS Evadion Boost</li>
+          <li>Type advantage bonus - BIO > MECH > PSY, QUA > QUA</li>
+          <li>Dirac type-counter weather bonus / QS evadion boost</li>
         </ul>
 
         <p class="mt-4">
           What is this "from host" thing? Well apparently people were comparing the new Leeuwenhook
           stig set to Thales and Thales was overperforming. After some testing, it was discovered
-          that Thales M, Welt M, Swallowtail charge debuff, and GK snap debuff are a special class
-          of multiplier that don't seem to dilute or stack with anthing else. For example, even each
-          Thales M 2% fire DMG stack is separate from each other, so the total effect is (1+0.02) ^
-          10 = ~22%, not 0.02*10 = 20%. Yikes!
+          that some effects are unique multpliers, as in they multiply with other multipliers and
+          don't diluted. Some examples of this so far are Thales M, Welt M, Swallowtail charge
+          debuff, and GK snap debuff. For example, even each Thales M 2% fire DMG stack is separate
+          from each other, so the total effect is (1+0.02) ^ 10 = ~22%, not 0.02*10 = 20%. Yikes!
         </p>
 
         <p class="mt-4">
           Note that bonuses that only apply to specific types of attacks, like
-          <a href="https://honkaiimpact3.gamepedia.com/Sakamoto_Ryoma">
-            Sakamoto Ryoma
-          </a>
-          or bonuses that only apply to one element type are not separate multipliers. Since the
-          last two are unrelated to this gear, this calculator does not attempt to calculate those.
+          <a href="https://honkaiimpact3.gamepedia.com/Sakamoto_Ryoma">Sakamoto Ryoma</a>
+          or bonuses that only apply to one element type are not separate multipliers.
         </p>
 
         <h3 class="mt-4">What about critical hits?</h3>
@@ -174,9 +171,9 @@
           <a href="https://honkaiimpact3.gamepedia.com/Ryunosuke_Akutagawa">
             Ryunosuke M
           </a>
-          , so use the "CRT" multiplier type directly. CRT converts to crit rate with the following
-          formula: crit rate = CRT/(Valk Level * 5 + 75). At max level, 4.75 CRT is equal to 1% crit
-          rate.
+          , so you can also use the "CRT" multiplier type directly. CRT converts to crit rate with
+          the following formula: crit rate = CRT/(Valk Level * 5 + 75). At max level, 4.75 CRT is
+          equal to 1% crit rate.
         </p>
       </v-col>
     </v-row>
