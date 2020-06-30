@@ -619,7 +619,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
     ]
   },
   Durandal: {
-    "Bright Knight - Exelcsis (BK) [S]": [
+    "Bright Knight - Excelsis (BK) [S]": [
       new Multiplier({
         active: true,
         name: "[BK] Leader",

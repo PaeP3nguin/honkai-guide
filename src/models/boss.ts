@@ -60,7 +60,7 @@ const Bosses = {
     wikiLink: "https://honkaiimpact3.gamepedia.com/Benares_(Memorial_Arena)"
   }),
   BKE: new Boss({
-    name: "Bright Knight - Exelcsis",
+    name: "Bright Knight - Excelsis",
     shortName: "BKE",
     image: "bke.png",
     wikiLink: "https://honkaiimpact3.gamepedia.com"
