@@ -235,6 +235,24 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
 });
 
 const DPS_STIG_MULTIPLIERS = Object.freeze({
+  Cleopatra: {
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Cleo M: Attacks against stunned enemies.",
+        type: Type.TdmDealt,
+        value: 82
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Cleo B: Attacks against paralyzed enemies.",
+        type: Type.TdmDealt,
+        value: 82
+      })
+    ]
+  },
   Dante: {
     T: [
       new Multiplier({
@@ -1206,6 +1224,32 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Sirin Asc 3 set: Herrscher form.",
         type: Type.CritRate,
         value: 15
+      })
+    ]
+  },
+  Tesla: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Tesla T: Attacks against paralyzed enemies.",
+        type: Type.TdmDealt,
+        value: 51
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Tesla M: Attacks against frozen enemies.",
+        type: Type.TdmDealt,
+        value: 51
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Tesla B: Attacks against stunned enemies.",
+        type: Type.TdmDealt,
+        value: 51
       })
     ]
   },
