@@ -222,7 +222,7 @@ const valkToChinese = {
   "Accipiter (VA)": ["迅"],
   "Arctic Kreigmesser (KMS)": ["极"],
   "Argent Knight: Artemis (AKA)": ["月魂"],
-  "Azure Empyrea (AE)": ["云", "云墨丹心"],
+  "Azure Empyrea (AE)": ["云", "墨", "云墨丹心"],
   "Black Nucleus (BN)": ["黑"],
   "Battlestorm (BS)": ["疾"],
   "Bladestrike (VB)": ["强"],
@@ -259,7 +259,7 @@ const valkToChinese = {
   "Shadow Dash (SD)": ["影"],
   "Shadow Knight (SK)": ["轮"],
   "Sixth Serenade (6S)": ["六"],
-  "Starlit Astrologos (SA, Zhuge):": ["朔夜观星"],
+  "Starlit Astrologos (SA, Zhuge):": ["朔夜观星", "观"],
   "Stygian Nymph (SN)": ["黑希", "S希"], // 彼岸双生
   "Swallowtail Phantasm (SP)": ["幻海梦蝶"],
   "Triumph (VT)": ["凯"],
