@@ -141,7 +141,7 @@
               HoV mark debuff "Honkai Mark"
             </a>
           </li>
-          <li>Type advantage bonus - BIO > MECH > PSY, QUA > QUA</li>
+          <li>Type advantage bonus - BIO > PSY > MECH, QUA > QUA</li>
           <li>Dirac type-counter weather bonus / QS evadion boost</li>
         </ul>
 
