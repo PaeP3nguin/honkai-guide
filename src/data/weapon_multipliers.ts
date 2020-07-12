@@ -218,7 +218,7 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
     ],
     "'Domain of Thunder' (4.1 HoT PRI)": [
       new Multiplier({
-        active: true,
+        active: false,
         name: "DoT: Active: Using weapon active boosts dragon laser.",
         type: Type.EleDealt,
         value: 40
