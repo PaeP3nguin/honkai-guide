@@ -235,6 +235,66 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
 });
 
 const DPS_STIG_MULTIPLIERS = Object.freeze({
+  "Bella/Benares (4.1)": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Bella T",
+        type: Type.TdmDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name: "Bella T: Lightning boost in herrscher form.",
+        type: Type.EleDealt,
+        value: 50
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Bella M: Lightning boost.",
+        type: Type.EleDealt,
+        value: 25
+      }),
+      new Multiplier({
+        active: true,
+        name: "Bella M: Gain TDM for 9s after switch in or using weapon active.",
+        type: Type.TdmDealt,
+        value: 15
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Bella B: Lightning boost.",
+        type: Type.EleDealt,
+        value: 30
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Bella 2 set",
+        type: Type.TdmDealt,
+        value: 20
+      })
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Bella 3 set: Lightning boost".,
+        type: Type.EleDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name: "Bella 3 set: Enemies hit by combo attacks take more lightning DMG.",
+        type: Type.EleTaken,
+        value: 15
+      })
+    ]
+  },
   Cleopatra: {
     M: [
       new Multiplier({

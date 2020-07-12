@@ -652,7 +652,8 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: false,
-        name: "[BK] Evasion: Evan's Assault (SS): Enemies hit by retaliation take 10% more physical DMG.",
+        name:
+          "[BK] Evasion: Evan's Assault (SS): Enemies hit by retaliation take 10% more physical DMG.",
         type: Type.PhysTaken,
         value: 10
       }),

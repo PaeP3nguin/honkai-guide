@@ -154,7 +154,7 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         name: "KoV Pri",
         type: Type.CritDmg,
         value: 20
-      }),
+      })
     ]
   },
   Cannons: {
@@ -214,6 +214,32 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         name: "Typhoon: Active: Enemies hit take more lightning DMG (13.2% at level 50).",
         type: Type.EleTaken,
         value: 25
+      })
+    ],
+    "'Domain of Thunder' (4.1 HoT PRI)": [
+      new Multiplier({
+        active: true,
+        name: "DoT: Active: Using weapon active boosts dragon laser.",
+        type: Type.EleDealt,
+        value: 40
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoT: Passive: Using weapon active boosts TDM.",
+        type: Type.TdmDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoT: Passive: Lightning boost.",
+        type: Type.EleDealt,
+        value: 45
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoT: Passive: Lightning boost when attacking enemies hit by weapon active.",
+        type: Type.EleDealt,
+        value: 20
       })
     ]
   },
