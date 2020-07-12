@@ -283,7 +283,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     "3 set": [
       new Multiplier({
         active: true,
-        name: "Bella 3 set: Lightning boost".,
+        name: "Bella 3 set: Lightning boost",
         type: Type.EleDealt,
         value: 20
       }),
