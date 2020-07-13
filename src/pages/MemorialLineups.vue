@@ -4,6 +4,14 @@
       <v-col>
         <h1>Future Memorial Arena lineups</h1>
 
+        <h3>
+          <b>
+            Danger danger! As of July 13 (coincidentally just after CN received patch 4.1),
+            SEA/Global/KR diverged from CN's schedule again. No idea if we'll continue to be synced.
+            Take July 13th and onwards with a grain of salt.
+          </b>
+        </h3>
+
         <p>
           Since patch 3.8, the memorial arena boss schedule seems to be following CN's schedule. For
           example, week 1 of patch 3.8, CN has AKA, Hephaestus, Hellmaru. SEA and global also had
