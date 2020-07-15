@@ -70,6 +70,7 @@ const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2020-07-13T00:00:00"),
     bosses: [Bosses.HoV, Bosses.DXY, Bosses.Jizo]
+    // Was actually DXY/Tona/AKA NO UPRATE: https://cdn.discordapp.com/attachments/590279568556818455/732327806943625305/unknown.png
   }),
   new BossLineup({
     date: new Date("2020-07-20T00:00:00"),
@@ -90,7 +91,7 @@ const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2020-08-10T00:00:00"),
     bosses: [Bosses.BKE, Bosses.Tonatiuh, Bosses.DXY]
-  }),
+  })
 ]);
 
 const RECENT_LINEUPS = Object.freeze(
