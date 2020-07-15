@@ -11,7 +11,7 @@
 
         <p>
           For reference, the max value of a general ATK affix is 19 or 23 for a specific
-          type/weapon. The max value of a critical damage affix is 5.5%.
+          type/weapon. The max value of a critical damage affix is 5.6%.
         </p>
 
         <h3 class="mt-6">Valk info:</h3>
