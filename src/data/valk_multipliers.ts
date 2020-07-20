@@ -894,6 +894,12 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
         name: "[AE] Ult: Hex of Enervation: 15s Lightning bonus on Ult hit.",
         type: Type.EleTaken,
         value: 30
+      }),
+      new Multiplier({
+        active: false,
+        name: "[AE] Ult: Hex of Breaching: 16% elemental breach after Ult. Value calculated for a typical MA boss with 31% elemental resistance.",
+        type: Type.EleTakenHost,
+        value: 23
       })
     ],
     "Phoenix (PX) [SS]": [
