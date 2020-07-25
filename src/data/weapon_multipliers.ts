@@ -216,28 +216,36 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 25
       })
     ],
-    "'Domain of Thunder' (4.1 HoT PRI)": [
+    "Key of Castigation": [
+      new Multiplier({
+        active: true,
+        name: "KoC: Passive: Lightning boost.",
+        type: Type.EleDealt,
+        value: 35
+      })
+    ],
+    "Domain of Sanction": [
       new Multiplier({
         active: false,
-        name: "DoT: Active: Using weapon active boosts dragon laser.",
+        name: "DoS: Active: Using weapon active boosts dragon laser.",
         type: Type.EleDealt,
         value: 40
       }),
       new Multiplier({
         active: true,
-        name: "DoT: Passive: Using weapon active boosts TDM.",
+        name: "DoS: Passive: Using weapon active boosts TDM.",
         type: Type.TdmDealt,
         value: 20
       }),
       new Multiplier({
         active: true,
-        name: "DoT: Passive: Lightning boost.",
+        name: "DoS: Passive: Lightning boost.",
         type: Type.EleDealt,
         value: 45
       }),
       new Multiplier({
         active: true,
-        name: "DoT: Passive: Lightning boost when attacking enemies hit by weapon active.",
+        name: "DoS: Passive: Lightning boost when attacking enemies hit by weapon active.",
         type: Type.EleDealt,
         value: 20
       })

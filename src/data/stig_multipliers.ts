@@ -235,17 +235,17 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
 });
 
 const DPS_STIG_MULTIPLIERS = Object.freeze({
-  "Bella/Benares (4.1)": {
+  "Benares: Awakening": {
     T: [
       new Multiplier({
         active: true,
-        name: "Bella T",
+        name: "Benares T",
         type: Type.TdmDealt,
         value: 20
       }),
       new Multiplier({
         active: true,
-        name: "Bella T: Lightning boost in herrscher form.",
+        name: "Benares T: Lightning boost in herrscher form.",
         type: Type.EleDealt,
         value: 50
       })
@@ -253,13 +253,13 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     M: [
       new Multiplier({
         active: true,
-        name: "Bella M: Lightning boost.",
+        name: "Benares M: Lightning boost.",
         type: Type.EleDealt,
         value: 25
       }),
       new Multiplier({
         active: true,
-        name: "Bella M: Gain TDM for 9s after switch in or using weapon active.",
+        name: "Benares M: Gain TDM for 9s after switch in or using weapon active.",
         type: Type.TdmDealt,
         value: 15
       })
@@ -267,7 +267,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     B: [
       new Multiplier({
         active: true,
-        name: "Bella B: Lightning boost.",
+        name: "Benares B: Lightning boost.",
         type: Type.EleDealt,
         value: 30
       })
@@ -275,7 +275,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     "2 set": [
       new Multiplier({
         active: true,
-        name: "Bella 2 set",
+        name: "Benares 2 set",
         type: Type.TdmDealt,
         value: 20
       })
@@ -283,13 +283,13 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     "3 set": [
       new Multiplier({
         active: true,
-        name: "Bella 3 set: Lightning boost",
+        name: "Benares 3 set: Lightning boost",
         type: Type.EleDealt,
         value: 20
       }),
       new Multiplier({
         active: true,
-        name: "Bella 3 set: Enemies hit by combo attacks take more lightning DMG.",
+        name: "Benares 3 set: Enemies hit by combo attacks take more lightning DMG.",
         type: Type.EleTaken,
         value: 15
       })

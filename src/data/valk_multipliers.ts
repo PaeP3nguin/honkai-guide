@@ -93,7 +93,40 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
       })
     ]
   },
-  // Mei
+  "Raiden Mei": {
+    "Herrscher of Thunder (HoR) [S] + SSS LE": [
+      new Multiplier({
+        active: true,
+        name: "[HoT] Leader",
+        type: Type.TdmDealt,
+        value: 28
+      }),
+      new Multiplier({
+        active: true,
+        name: "[HoT] Passive: Ruin of Arajishi: Lightning boost.",
+        type: Type.EleDealt,
+        value: 12
+      }),
+      new Multiplier({
+        active: true,
+        name: "[HoT] Passive: Gale of Acala: TDM boost against mech enemies.",
+        type: Type.TdmDealt,
+        value: 30
+      }),
+      new Multiplier({
+        active: true,
+        name: "[HoT] Basic: Curse of Mikazuki: marked enemies take more damage from host.",
+        type: Type.EleTakenHost,
+        value: 40
+      }),
+      new Multiplier({
+        active: false,
+        name: "[HoT] Ult: Futsuno Mitama: Ultimate attacks gain TDM boost.",
+        type: Type.TdmDealt,
+        value: 25
+      })
+    ]
+  },
   "Bronya Zaychik": {
     "Herrscher of Reason (HoR) [S]": [
       new Multiplier({
@@ -104,7 +137,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: true,
-        name: "[HoR] Leader",
+        name: "[HoR] Leader: Bonus for Bronya, Seele, or Olenyevas.",
         type: Type.TdmDealt,
         value: 21
       }),
