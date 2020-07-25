@@ -269,7 +269,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         active: true,
         name: "Benares B: Lightning boost.",
         type: Type.EleDealt,
-        value: 30
+        value: 25
       })
     ],
     "2 set": [
@@ -289,7 +289,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: true,
-        name: "Benares 3 set: Enemies hit by combo attacks take more lightning DMG.",
+        name: "Benares 3 set: Enemies hit by Herrscher mode attacks take more lightning DMG.",
         type: Type.EleTaken,
         value: 15
       })
