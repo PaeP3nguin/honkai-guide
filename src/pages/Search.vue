@@ -263,7 +263,7 @@ const valkToChinese = {
   "Sixth Serenade (6S)": ["六"],
   "Starlit Astrologos (SA, Zhuge):": ["朔夜观星", "观"],
   "Stygian Nymph (SN)": ["黑希", "S希"], // 彼岸双生
-  "Swallowtail Phantasm (SP)": ["幻海梦蝶"],
+  "Swallowtail Phantasm (SP)": ["幻海梦蝶", "A希"],
   "Triumph (VT)": ["凯"],
   "Umbral Rose (UR)": ["黯"],
   "Valkyrie Gloria (VG)": ["荣光", "女武神·荣光"],
