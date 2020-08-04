@@ -99,6 +99,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/08/04 - Add new nickname for DJ, thanks Toast</li>
           <li>2020/07/28 - Update Fix 3rd guide bookmarklet with SA and HoT</li>
           <li>2020/06/08 - Add BKE, made some URL generation improvements.</li>
           <li>2020/06/02 - Add Starlit Astrologos (Zhuge) to valks</li>
@@ -114,7 +115,7 @@
           <li>2020/03/14 - Update fix 3rd guide bookmarklet and add VG</li>
           <li>2020/03/07 - Delet 3.6 boss pool</li>
           <li>2020/03/04 - Upgraded Fix 3rd guide bookmarklet</li>
-          <li>2020/02/01 - Add Azure Empyrea</li>
+          <!-- <li>2020/02/01 - Add Azure Empyrea</li> -->
           <!-- <li>2020/01/07 - Increase granularity of scores by time</li> -->
           <!-- <li>2020/01/06 - Added HF</li> -->
           <!-- <li>2019/12/15 - Actually we following CN bosses</li>
@@ -233,7 +234,7 @@ const valkToChinese = {
   "Chariot (VC)": ["战"],
   "Crimson Impulse (CI)": ["绯"],
   "Herrscher of Reason (HoR, Tronya)": ["理", "律鸭"],
-  "Darkbolt Jonin (DJ)": ["夜隐重霞"],
+  "Darkbolt Jonin (DJ)": ["夜隐重霞", "雷八"],
   "Dimension Break (DB)": ["次"],
   "Divine Prayer (DP)": ["圣"],
   "Flame Sakitama (FS)": ["炎"],
