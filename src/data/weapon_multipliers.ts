@@ -245,7 +245,7 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: true,
-        name: "DoS: Passive: Lightning boost when attacking enemies hit by weapon active.",
+        name: "DoS: Passive: HoT gains lightning boost when attacking enemies with Narukami's Mark.",
         type: Type.EleDealt,
         value: 20
       })
