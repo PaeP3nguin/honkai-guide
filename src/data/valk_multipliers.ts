@@ -94,7 +94,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
     ]
   },
   "Raiden Mei": {
-    "Herrscher of Thunder (HoR) [S] + SSS LE": [
+    "Herrscher of Thunder (HoT) [S] + SSS LE": [
       new Multiplier({
         active: true,
         name: "[HoT] Leader",
