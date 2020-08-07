@@ -1053,7 +1053,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         active: true,
         name: "Rebel Blades 2 set: TDM boost when combo is above 25.",
         type: Type.TdmDealt,
-        value: 25
+        value: 30
       })
     ]
   },
