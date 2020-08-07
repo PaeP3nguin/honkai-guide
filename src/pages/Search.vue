@@ -99,6 +99,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/08/06 - Add Masters MA to options</li>
           <li>2020/08/04 - Add new nickname for DJ, thanks Toast</li>
           <li>2020/07/28 - Update Fix 3rd guide bookmarklet with SA and HoT</li>
           <li>2020/06/08 - Add BKE, made some URL generation improvements.</li>
@@ -109,16 +110,16 @@
           <li>2020/04/24 - Add real name of S Durandal</li>
           <li>2020/04/20 - Add projected boss schedule</li>
           <li>2020/04/06 - Another nickname for Hephaestus</li>
-          <li>2020/04/04 - Added double wendy abyss boss</li>
+          <!-- <li>2020/04/04 - Added double wendy abyss boss</li>
           <li>2020/04/01 - Added emperor abyss boss</li>
           <li>2020/03/31 - Added "S Durandal"</li>
           <li>2020/03/14 - Update fix 3rd guide bookmarklet and add VG</li>
           <li>2020/03/07 - Delet 3.6 boss pool</li>
           <li>2020/03/04 - Upgraded Fix 3rd guide bookmarklet</li>
-          <!-- <li>2020/02/01 - Add Azure Empyrea</li> -->
-          <!-- <li>2020/01/07 - Increase granularity of scores by time</li> -->
-          <!-- <li>2020/01/06 - Added HF</li> -->
-          <!-- <li>2019/12/15 - Actually we following CN bosses</li>
+          <li>2020/02/01 - Add Azure Empyrea</li>
+          <li>2020/01/07 - Increase granularity of scores by time</li>
+          <li>2020/01/06 - Added HF</li>
+          <li>2019/12/15 - Actually we following CN bosses</li>
           <li>2019/12/01 - Added 3.6 boss pool to sidebar</li>
           <li>2019/10/22 - Added quantum ball name</li>
           <li>2019/10/22 - Added quantum ball and both Seeles</li>
@@ -280,7 +281,8 @@ const modifiersToChinese = {
   "2 - 3 pieces of gacha gear": ["低配"],
   "No JST": ["无叶"],
   "No newton": ["无牛"],
-  "EX MA": ["终极区"],
+  "Exalted MA": ["终极区"],
+  "Masters MA": ["高级区"],
   Dirac: ["狄拉克", "迪拉克"],
   "Q-Singularis": ["量子奇点"],
   "Red Lotus": ["红莲"],
