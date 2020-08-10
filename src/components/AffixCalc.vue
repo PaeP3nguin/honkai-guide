@@ -90,8 +90,11 @@ export default Vue.extend({
 
       const results = {};
       results[FinalStats.AtkBoost] = overallAffixAtk / this.valkAtk;
-      results[FinalStats.CritDmgBoost] =
-        ((overallAffixCritDmg / this.critDmg) * this.critRate) / 100;
+      const critRateDecimal = this.critRate / 100;
+      const nonCritRate = 1 - critRateDecimal;
+      const boostCrits = 100 * nonCritRate + (this.critDmg + overallAffixCritDmg) * critRateDecimal;
+      const boostNonCrits = 100 * nonCritRate + this.critDmg * critRateDecimal;
+      results[FinalStats.CritDmgBoost] = boostCrits / boostNonCrits - 1;
       results[FinalStats.TotalBoost] =
         (1 + results[FinalStats.AtkBoost]) * (1 + results[FinalStats.CritDmgBoost]) - 1;
 
