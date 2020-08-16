@@ -227,13 +227,13 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
     "Domain of Sanction": [
       new Multiplier({
         active: false,
-        name: "DoS: Active: Using weapon active boosts dragon laser.",
+        name: "DoS: Active: dragon laser boost (is passive even though in active description).",
         type: Type.EleDealt,
         value: 40
       }),
       new Multiplier({
         active: true,
-        name: "DoS: Passive: Using weapon active boosts TDM.",
+        name: "DoS: Passive: Using weapon active or HoT ult boosts TDM.",
         type: Type.TdmDealt,
         value: 20
       }),

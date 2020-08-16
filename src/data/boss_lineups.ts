@@ -91,6 +91,7 @@ const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2020-08-10T00:00:00"),
     bosses: [Bosses.BKE, Bosses.Tonatiuh, Bosses.DXY]
+    // Was actually Heimdall/DXY/Hellmaru
   }),
   new BossLineup({
     date: new Date("2020-08-17T00:00:00"),
