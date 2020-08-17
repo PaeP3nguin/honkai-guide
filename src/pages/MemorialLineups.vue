@@ -6,9 +6,8 @@
 
         <h3>
           <b>
-            Danger danger! As of July 13 (coincidentally just after CN received patch 4.1),
-            SEA/Global/KR diverged from CN's schedule again. No idea if we'll continue to be synced.
-            Take July 13th and onwards with a grain of salt.
+            Danger danger! Since SEA/Global/KR/JP entered patch 4.1, our bosses have been synced in
+            real-time with CN. These preditions may no longer be useful.
           </b>
         </h3>
 
