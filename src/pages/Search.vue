@@ -99,7 +99,8 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
-          <li>2020/08/06 - Add no Shuijing search modifier, thanks Younggeddes</li>
+          <li>2020/08/19 - Add SS LE as modifier</li>
+          <li>2020/08/19 - Add no Shuijing search modifier, thanks Younggeddes</li>
           <li>2020/08/06 - Add Masters MA to options</li>
           <li>2020/08/04 - Add new nickname for DJ, thanks Toast</li>
           <li>2020/07/28 - Update Fix 3rd guide bookmarklet with SA and HoT</li>
@@ -109,9 +110,9 @@
           <li>2020/05/01 - Add death web + gigant abyss boss</li>
           <li>2020/05/02 - Add soul link abyss boss</li>
           <li>2020/04/24 - Add real name of S Durandal</li>
-          <li>2020/04/20 - Add projected boss schedule</li>
-          <!-- <li>2020/04/06 - Another nickname for Hephaestus</li> -->
-          <!-- <li>2020/04/04 - Added double wendy abyss boss</li>
+          <!-- <li>2020/04/20 - Add projected boss schedule</li>
+          <li>2020/04/06 - Another nickname for Hephaestus</li>
+          <li>2020/04/04 - Added double wendy abyss boss</li>
           <li>2020/04/01 - Added emperor abyss boss</li>
           <li>2020/03/31 - Added "S Durandal"</li>
           <li>2020/03/14 - Update fix 3rd guide bookmarklet and add VG</li>
@@ -283,6 +284,7 @@ const modifiersToChinese = {
   "No JST": ["无叶"],
   "No Newton": ["无牛"],
   "No Shuijing": ["无水"],
+  "SS LE": ["SS鬼", "2S鬼"],
   "Exalted MA": ["终极区"],
   "Masters MA": ["高级区"],
   Dirac: ["狄拉克", "迪拉克"],
@@ -349,19 +351,24 @@ export default Vue.extend({
         : "https://search.bilibili.com/all?keyword=";
 
       // Static modifiers that go at the end.
-      let modifierParams = this.modifiers.filter((m) => m.value).map((m) => modifiersToChinese[m.name]);
+      let modifierParams = this.modifiers.filter(m => m.value).map(m => modifiersToChinese[m.name]);
       if (this.score) {
         modifierParams.push([this.score]);
       }
       // Must have at least one element in each array passed to combine to generate anything.
       modifierParams = modifierParams.length ? modifierParams : [[""]];
-      const modifierCombos = Array.from(combine(modifierParams)).map((c: string[]) => c.join(" ").trim());
-
-      const combinations = Array.from(
-        combine([this.bossNames, this.valkCombos, modifierCombos])
+      const modifierCombos = Array.from(combine(modifierParams)).map((c: string[]) =>
+        c.join(" ").trim()
       );
 
-      return combinations.map((c: string[]) => `${baseUrl}${c.join(" ").trim()}`).sort();
+      const combinations = Array.from(combine([this.bossNames, this.valkCombos, modifierCombos]));
+
+      // Sort by length and then alphabetical.
+      return combinations
+        .map((c: string[]) => `${baseUrl}${c.join(" ").trim()}`)
+        .sort(function(a, b) {
+          return a.length - b.length || a.localeCompare(b);
+        });
     }
   },
   filters: {
