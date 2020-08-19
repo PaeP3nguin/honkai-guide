@@ -99,6 +99,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/08/06 - Add no Shuijing search modifier, thanks Younggeddes</li>
           <li>2020/08/06 - Add Masters MA to options</li>
           <li>2020/08/04 - Add new nickname for DJ, thanks Toast</li>
           <li>2020/07/28 - Update Fix 3rd guide bookmarklet with SA and HoT</li>
@@ -109,7 +110,7 @@
           <li>2020/05/02 - Add soul link abyss boss</li>
           <li>2020/04/24 - Add real name of S Durandal</li>
           <li>2020/04/20 - Add projected boss schedule</li>
-          <li>2020/04/06 - Another nickname for Hephaestus</li>
+          <!-- <li>2020/04/06 - Another nickname for Hephaestus</li> -->
           <!-- <li>2020/04/04 - Added double wendy abyss boss</li>
           <li>2020/04/01 - Added emperor abyss boss</li>
           <li>2020/03/31 - Added "S Durandal"</li>
@@ -280,7 +281,8 @@ const modifiersToChinese = {
   "F2P / No gacha Gear": ["零蛋"],
   "2 - 3 pieces of gacha gear": ["低配"],
   "No JST": ["无叶"],
-  "No newton": ["无牛"],
+  "No Newton": ["无牛"],
+  "No Shuijing": ["无水"],
   "Exalted MA": ["终极区"],
   "Masters MA": ["高级区"],
   Dirac: ["狄拉克", "迪拉克"],
