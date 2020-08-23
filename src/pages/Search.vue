@@ -99,6 +99,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/08/19 - Add SS lead skill as modifier, thanks Toast</li>
           <li>2020/08/19 - Add SS LE as modifier</li>
           <li>2020/08/19 - Add no Shuijing search modifier, thanks Younggeddes</li>
           <li>2020/08/06 - Add Masters MA to options</li>
@@ -109,8 +110,8 @@
           <li>2020/05/25 - Update fix 3rd guide bookmarklet</li>
           <li>2020/05/01 - Add death web + gigant abyss boss</li>
           <li>2020/05/02 - Add soul link abyss boss</li>
-          <li>2020/04/24 - Add real name of S Durandal</li>
-          <!-- <li>2020/04/20 - Add projected boss schedule</li>
+          <!-- <li>2020/04/24 - Add real name of S Durandal</li>
+          <li>2020/04/20 - Add projected boss schedule</li>
           <li>2020/04/06 - Another nickname for Hephaestus</li>
           <li>2020/04/04 - Added double wendy abyss boss</li>
           <li>2020/04/01 - Added emperor abyss boss</li>
@@ -285,6 +286,7 @@ const modifiersToChinese = {
   "No Newton": ["无牛"],
   "No Shuijing": ["无水"],
   "SS LE": ["SS鬼", "2S鬼"],
+  "SS lead skill": ["SS队长技", "2S队长技"],
   "Exalted MA": ["终极区"],
   "Masters MA": ["高级区"],
   Dirac: ["狄拉克", "迪拉克"],
