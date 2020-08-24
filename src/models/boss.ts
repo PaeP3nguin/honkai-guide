@@ -107,6 +107,12 @@ const Bosses = {
     image: "homu.png",
     wikiLink: "https://honkaiimpact3.gamepedia.com/HOMU_Emperor_(Memorial_Arena)"
   }),
+  HuoDou: new Boss({
+    name: "HuoDou",
+    shortName: "HuoDou",
+    image: "homu.png",
+    wikiLink: "https://honkaiimpact3.gamepedia.com/"
+  }),
   Jizo: new Boss({
     name: "Jizo Mitama",
     shortName: "Jizo",

@@ -101,6 +101,7 @@ const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2020-08-24T00:00:00"),
     bosses: [Bosses.Jizo, Bosses.Hephaestus, Bosses.AKA]
+    // Was actually Heimdall/AKA/Kallen
   }),
   new BossLineup({
     date: new Date("2020-08-31T00:00:00"),
@@ -113,6 +114,10 @@ const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2020-09-14T00:00:00"),
     bosses: [Bosses.Jizo, Bosses.Hellmaru, Bosses.Benares]
+  }),
+  new BossLineup({
+    date: new Date("2020-09-2100:00:00"),
+    bosses: [Bosses.HuoDou, Bosses.Heimdall, Bosses.SK]
   })
 ]);
 
