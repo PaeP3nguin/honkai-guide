@@ -99,6 +99,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/08/24 - Add Huodou boss</li>
           <li>2020/08/19 - Add SS lead skill as modifier, thanks Toast</li>
           <li>2020/08/19 - Add SS LE as modifier</li>
           <li>2020/08/19 - Add no Shuijing search modifier, thanks Younggeddes</li>
@@ -109,8 +110,8 @@
           <li>2020/06/02 - Add Starlit Astrologos (Zhuge) to valks</li>
           <li>2020/05/25 - Update fix 3rd guide bookmarklet</li>
           <li>2020/05/01 - Add death web + gigant abyss boss</li>
-          <li>2020/05/02 - Add soul link abyss boss</li>
-          <!-- <li>2020/04/24 - Add real name of S Durandal</li>
+          <!-- <li>2020/05/02 - Add soul link abyss boss</li>
+          <li>2020/04/24 - Add real name of S Durandal</li>
           <li>2020/04/20 - Add projected boss schedule</li>
           <li>2020/04/06 - Another nickname for Hephaestus</li>
           <li>2020/04/04 - Added double wendy abyss boss</li>
@@ -209,6 +210,7 @@ const bossToChinese = {
   Heimdall: ["海姆达尔", "海胖"],
   Hellmaru: ["狐狸", "绯狱丸"],
   "HOMU King": ["吼姆"],
+  "Huodou": ["祸斗"],
   "Jizo Mitama": ["地藏", "地藏御魂"],
   Kallen: ["卡莲"],
   "Mexicatl: Umbreist (quantum ball)": ["球", "量子军团"],
