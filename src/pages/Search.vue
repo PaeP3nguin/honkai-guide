@@ -267,7 +267,7 @@ const valkToChinese = {
   "Shadow Dash (SD)": ["影"],
   "Shadow Knight (SK)": ["轮"],
   "Sixth Serenade (6S)": ["六"],
-  "Starlit Astrologos (SA, Zhuge):": ["朔夜观星", "观"],
+  "Starlit Astrologos (SA, Zhuge)": ["朔夜观星", "观"],
   "Stygian Nymph (SN)": ["黑希", "S希"], // 彼岸双生
   "Swallowtail Phantasm (SP)": ["幻海梦蝶", "A希"],
   "Triumph (VT)": ["凯"],
