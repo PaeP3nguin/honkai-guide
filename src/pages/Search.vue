@@ -99,6 +99,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/08/30 - Add exalted abyss modifier</li>
           <li>2020/08/30 - Update Fix 3rd guide bookmarklet with HuoDou and FR, add FR to valks</li>
           <li>2020/08/24 - Add Huodou boss</li>
           <li>2020/08/19 - Add SS lead skill as modifier, thanks Toast</li>
@@ -109,8 +110,8 @@
           <li>2020/07/28 - Update Fix 3rd guide bookmarklet with SA and HoT</li>
           <li>2020/06/08 - Add BKE, made some URL generation improvements.</li>
           <li>2020/06/02 - Add Starlit Astrologos (Zhuge) to valks</li>
-          <li>2020/05/25 - Update fix 3rd guide bookmarklet</li>
-          <!-- <li>2020/05/01 - Add death web + gigant abyss boss</li>
+          <!-- <li>2020/05/25 - Update fix 3rd guide bookmarklet</li>
+          <li>2020/05/01 - Add death web + gigant abyss boss</li>
           <li>2020/05/02 - Add soul link abyss boss</li>
           <li>2020/04/24 - Add real name of S Durandal</li>
           <li>2020/04/20 - Add projected boss schedule</li>
@@ -128,9 +129,7 @@
           <li>2019/12/01 - Added 3.6 boss pool to sidebar</li>
           <li>2019/10/22 - Added quantum ball name</li>
           <li>2019/10/22 - Added quantum ball and both Seeles</li>
-          <li>
-            2019/10/17 - Change scores by time to every 5 seconds due to EX MA...
-          </li>
+          <li>2019/10/17 - Change scores by time to every 5 seconds due to EX MA...</li>
           <li>2019/10/12 - Make TP also autocomplete to VE</li>
           <li>2019/10/10 - Added Fix 3rd guide bookmarklet!</li>
           <li>2019/10/05 - Added AKA to valk list</li>
@@ -295,6 +294,7 @@ const modifiersToChinese = {
   "Masters MA": ["高级区"],
   Dirac: ["狄拉克", "迪拉克"],
   "Q-Singularis": ["量子奇点"],
+  "Exalted Abyss": ["超弦空间"],
   "Red Lotus": ["红莲"],
   Myriad: ["无限"],
   "Sim battle": ["模拟作战室"],
