@@ -110,7 +110,7 @@ const Bosses = {
   HuoDou: new Boss({
     name: "HuoDou",
     shortName: "HuoDou",
-    image: "homu.png",
+    image: "huodou.png",
     wikiLink: "https://honkaiimpact3.gamepedia.com/"
   }),
   Jizo: new Boss({
