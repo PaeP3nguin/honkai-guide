@@ -99,6 +99,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/08/30 - Update Fix 3rd guide bookmarklet with HuoDou and FR, add FR to valks</li>
           <li>2020/08/24 - Add Huodou boss</li>
           <li>2020/08/19 - Add SS lead skill as modifier, thanks Toast</li>
           <li>2020/08/19 - Add SS LE as modifier</li>
@@ -109,8 +110,8 @@
           <li>2020/06/08 - Add BKE, made some URL generation improvements.</li>
           <li>2020/06/02 - Add Starlit Astrologos (Zhuge) to valks</li>
           <li>2020/05/25 - Update fix 3rd guide bookmarklet</li>
-          <li>2020/05/01 - Add death web + gigant abyss boss</li>
-          <!-- <li>2020/05/02 - Add soul link abyss boss</li>
+          <!-- <li>2020/05/01 - Add death web + gigant abyss boss</li>
+          <li>2020/05/02 - Add soul link abyss boss</li>
           <li>2020/04/24 - Add real name of S Durandal</li>
           <li>2020/04/20 - Add projected boss schedule</li>
           <li>2020/04/06 - Another nickname for Hephaestus</li>
@@ -210,7 +211,7 @@ const bossToChinese = {
   Heimdall: ["海姆达尔", "海胖"],
   Hellmaru: ["狐狸", "绯狱丸"],
   "HOMU King": ["吼姆"],
-  "Huodou": ["祸斗"],
+  Huodou: ["祸斗"],
   "Jizo Mitama": ["地藏", "地藏御魂"],
   Kallen: ["卡莲"],
   "Mexicatl: Umbreist (quantum ball)": ["球", "量子军团"],
@@ -243,6 +244,7 @@ const valkToChinese = {
   "Darkbolt Jonin (DJ)": ["夜隐重霞", "雷八"],
   "Dimension Break (DB)": ["次"],
   "Divine Prayer (DP)": ["圣"],
+  "Fallen Rosemary": ["失落迷迭"],
   "Flame Sakitama (FS)": ["炎"],
   "Hawk of the Fog (HF)": ["迅", "迅雷", "雾都迅羽"],
   "Herrscher of the Void (God Kiana, GK, HoV)": ["律"],
