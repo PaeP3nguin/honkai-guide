@@ -231,6 +231,22 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
         value: 15
       })
     ]
+  },
+  "Theresa - Gluttony": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Gluttony T: Team gains 16% TDM when picking up candy.",
+        type: Type.TdmDealt,
+        value: 16
+      }),
+      new Multiplier({
+        active: false,
+        name: "Gluttony T: Team gains 24% TDM when picking up two candies.",
+        type: Type.TdmDealt,
+        value: 24
+      })
+    ]
   }
 });
 
