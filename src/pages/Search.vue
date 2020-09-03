@@ -243,7 +243,7 @@ const valkToChinese = {
   "Darkbolt Jonin (DJ)": ["夜隐重霞", "雷八"],
   "Dimension Break (DB)": ["次"],
   "Divine Prayer (DP)": ["圣"],
-  "Fallen Rosemary": ["失落迷迭"],
+  "Fallen Rosemary (FR)": ["失落迷迭"],
   "Flame Sakitama (FS)": ["炎"],
   "Hawk of the Fog (HF)": ["迅", "迅雷", "雾都迅羽"],
   "Herrscher of the Void (God Kiana, GK, HoV)": ["律"],
