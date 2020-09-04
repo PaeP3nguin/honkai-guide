@@ -959,7 +959,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: true,
-        name: "Poe 2 set: TDM boost when equipped on Seele.",
+        name: "Poe 2 set: Extra charge attack TDM boost when equipped on Seele.",
         type: Type.TdmDealt,
         value: 40
       })
