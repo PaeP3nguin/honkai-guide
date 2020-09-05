@@ -115,8 +115,17 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
         value: 12
       })
     ]
+  },
+  Scythes: {
+    "Iris of the Dreams": [
+      new Multiplier({
+        active: true,
+        name: "Iris: Passive: Team deals 15% more TDM to enemies marked by FR charge.",
+        type: Type.TdmDealt,
+        value: 15
+      })
+    ]
   }
-  // Scythes
   // Lances
 });
 
@@ -245,7 +254,8 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: true,
-        name: "DoS: Passive: HoT gains lightning boost when attacking enemies with Narukami's Mark.",
+        name:
+          "DoS: Passive: HoT gains lightning boost when attacking enemies with Narukami's Mark.",
         type: Type.EleDealt,
         value: 20
       })
@@ -269,7 +279,7 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
     "Might of An-Utu": [
       new Multiplier({
         active: true,
-        name: "An-Utu: Active: Enemies take 20% more fire on hit.",
+        name: "An-Utu: Active: Enemies take more fire DMG on hit.",
         type: Type.EleDealt,
         value: 20
       }),
@@ -292,6 +302,40 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         name: "Sleeping Beauty: Active: Gain crit DMG.",
         type: Type.CritDmg,
         value: 50
+      })
+    ],
+    "Shuhadaku of Uriel (Utu PRI)": [
+      new Multiplier({
+        active: true,
+        name: "Utu PRI: Passive",
+        type: Type.TdmDealt,
+        value: 35
+      }),
+      new Multiplier({
+        active: true,
+        name: "Utu PRI: Active: Enemies take more fire DMG on hit.",
+        type: Type.EleTaken,
+        value: 23
+      })
+    ],
+    "Surtr Muspellsverd": [
+      new Multiplier({
+        active: false,
+        name: "Surtr PRI: Active: VK charge and ult gain 30% fire boost.",
+        type: Type.EleDealt,
+        value: 30
+      }),
+      new Multiplier({
+        active: true,
+        name: "Surtr PRI: Passive",
+        type: Type.TdmDealt,
+        value: 30
+      }),
+      new Multiplier({
+        active: true,
+        name: "Surtr PRI: Passive: When ult or burst ATKs hit, gain 12% fire DMG. Max 4 stacks.",
+        type: Type.EleDealt,
+        value: 48
       })
     ]
   },
@@ -368,6 +412,20 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         name: "Aphrodite: Passive",
         type: Type.PhysDealt,
         value: 20
+      })
+    ],
+    "Iris of the Dreams": [
+      new Multiplier({
+        active: true,
+        name: "Iris: Passive: Charge attack increases TDM by 15%.",
+        type: Type.TdmDealt,
+        value: 15
+      }),
+      new Multiplier({
+        active: true,
+        name: "Iris: Passive: Team deals 15% more TDM to enemies marked by FR charge.",
+        type: Type.TdmDealt,
+        value: 15
       })
     ],
     "Path to Acheron": [

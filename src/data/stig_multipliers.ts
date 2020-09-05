@@ -82,6 +82,40 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  "Irene Adler": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Adler T: When undeployed, team gains elemental DMG.",
+        type: Type.EleDealt,
+        value: 12
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Adler B: charge attack and ult make enemies take more elemental DMG.",
+        type: Type.EleTaken,
+        value: 15
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Adler 2 set: team gain elemental DMG against enemies hit by charge attack and ult.",
+        type: Type.EleDealt,
+        value: 18
+      })
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Adler 3 set: charge attack and ult boost team lightning DMG.",
+        type: Type.EleDealt,
+        value: 10
+      })
+    ]
+  },
   "Jin Shengtan (JST)": {
     T: [
       new Multiplier({
@@ -251,6 +285,62 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
 });
 
 const DPS_STIG_MULTIPLIERS = Object.freeze({
+  "Ana Schariac": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Ana T: ice DMG boost.",
+        type: Type.EleDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name:
+          "Ana T: total DMG boost against enemies within 5 meters. Drops by 2% per meter past 5, down to 10% minimum.",
+        type: Type.TdmDealt,
+        value: 20
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Ana M: ice DMG boost.",
+        type: Type.EleDealt,
+        value: 25
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name:
+          "Ana B: ice DMG boost against enemies within 5 meters. Drops by 3% per meter past 5, down to 15% minimum.",
+        type: Type.EleDealt,
+        value: 30
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Ana 2 set: ice DMG boost.",
+        type: Type.EleDealt,
+        value: 25
+      })
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Ana 3 set: combo and charged attacks gain TDM boost.",
+        type: Type.TdmDealt,
+        value: 50
+      }),
+      new Multiplier({
+        active: true,
+        name: "Ana 3 set: enemies within 5 meters take extra ice DMG from host.",
+        type: Type.EleTakenHost,
+        value: 10
+      })
+    ]
+  },
   "Benares: Awakening": {
     T: [
       new Multiplier({
