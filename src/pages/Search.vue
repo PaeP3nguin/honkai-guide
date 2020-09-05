@@ -99,6 +99,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/09/04 - Add DS valk</li>
           <li>2020/08/30 - Add exalted abyss modifier</li>
           <li>2020/08/30 - Update Fix 3rd guide bookmarklet with HuoDou and FR, add FR to valks</li>
           <li>2020/08/24 - Add Huodou boss</li>
@@ -109,8 +110,8 @@
           <li>2020/08/04 - Add new nickname for DJ, thanks Toast</li>
           <li>2020/07/28 - Update Fix 3rd guide bookmarklet with SA and HoT</li>
           <li>2020/06/08 - Add BKE, made some URL generation improvements.</li>
-          <li>2020/06/02 - Add Starlit Astrologos (Zhuge) to valks</li>
-          <!-- <li>2020/05/25 - Update fix 3rd guide bookmarklet</li>
+          <!-- <li>2020/06/02 - Add Starlit Astrologos (Zhuge) to valks</li>
+          <li>2020/05/25 - Update fix 3rd guide bookmarklet</li>
           <li>2020/05/01 - Add death web + gigant abyss boss</li>
           <li>2020/05/02 - Add soul link abyss boss</li>
           <li>2020/04/24 - Add real name of S Durandal</li>
@@ -239,6 +240,7 @@ const valkToChinese = {
   "Celestial Hymn (CH)": ["神"],
   "Chariot (VC)": ["战"],
   "Crimson Impulse (CI)": ["绯"],
+  "Danzai Spectramancer (DS)": ["断罪影舞"],
   "Herrscher of Reason (HoR, Tronya)": ["理", "律鸭"],
   "Darkbolt Jonin (DJ)": ["夜隐重霞", "雷八"],
   "Dimension Break (DB)": ["次"],
