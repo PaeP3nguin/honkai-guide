@@ -19,6 +19,8 @@
           all possible bosses in a patch, linked below.
         </p>
 
+        <p>The small "CN" date is the date that the CN server had these lineups.</p>
+
         <BossLineupList></BossLineupList>
       </v-col>
     </v-row>
@@ -26,7 +28,10 @@
     <v-row>
       <v-col>
         <div class="d-flex mb-6" v-for="lineup in lineups" v-bind:key="lineup.id">
-          <h2 class="boss-date align-self-start">{{ lineup.date | dateFormat("MMM DD") }}</h2>
+          <div class="align-self-start">
+            <h2 class="boss-date">{{ lineup.date | dateFormat("MMM DD") }}</h2>
+            <p>CN: {{ lineup.cnDate | dateFormat("MMM DD") }}</p>
+          </div>
 
           <v-divider class="mr-6" vertical fill-height></v-divider>
 

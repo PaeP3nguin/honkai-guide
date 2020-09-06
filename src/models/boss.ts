@@ -25,12 +25,33 @@ class Boss {
 class BossLineup {
   id: number;
   date: Date;
+
+  // Date the lineup appeared in CN, defaults to 4 weeks back.
+  cnDate: Date;
   bosses: Boss[];
+
+  // Optional event name, bosses will be ignored.
   event: string;
 
-  constructor({ date, bosses, event }: { date: Date; bosses?: Boss[]; event?: string }) {
+  constructor({
+    date,
+    cnDate,
+    bosses,
+    event
+  }: {
+    date: Date;
+    cnDate?: Date;
+    bosses?: Boss[];
+    event?: string;
+  }) {
     this.id = Math.random();
     this.date = date;
+    if (cnDate) {
+      this.cnDate = cnDate;
+    } else {
+      this.cnDate = new Date(date);
+      this.cnDate.setDate(this.cnDate.getDate() - 4 * 7);
+    }
     if (bosses) {
       this.bosses = bosses;
     }
