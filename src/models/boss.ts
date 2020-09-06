@@ -22,46 +22,7 @@ class Boss {
   }
 }
 
-class BossLineup {
-  id: number;
-  date: Date;
-
-  // Date the lineup appeared in CN, defaults to 4 weeks back.
-  cnDate: Date;
-  bosses: Boss[];
-
-  // Optional event name, bosses will be ignored.
-  event: string;
-
-  constructor({
-    date,
-    cnDate,
-    bosses,
-    event
-  }: {
-    date: Date;
-    cnDate?: Date;
-    bosses?: Boss[];
-    event?: string;
-  }) {
-    this.id = Math.random();
-    this.date = date;
-    if (cnDate) {
-      this.cnDate = cnDate;
-    } else {
-      this.cnDate = new Date(date);
-      this.cnDate.setDate(this.cnDate.getDate() - 4 * 7);
-    }
-    if (bosses) {
-      this.bosses = bosses;
-    }
-    if (event) {
-      this.event = event;
-    }
-  }
-}
-
-const Bosses = {
+const Bosses = Object.freeze({
   Assaka: new Boss({
     name: "Assaka",
     shortName: "Assaka",
@@ -128,11 +89,11 @@ const Bosses = {
     image: "homu.png",
     wikiLink: "https://honkaiimpact3.gamepedia.com/HOMU_Emperor_(Memorial_Arena)"
   }),
-  HuoDou: new Boss({
-    name: "HuoDou",
-    shortName: "HuoDou",
+  Huodou: new Boss({
+    name: "Beast of Yang - Huodou",
+    shortName: "Huodou",
     image: "huodou.png",
-    wikiLink: "https://honkaiimpact3.gamepedia.com/"
+    wikiLink: ""
   }),
   Jizo: new Boss({
     name: "Jizo Mitama",
@@ -151,6 +112,12 @@ const Bosses = {
     shortName: "Mexicatl",
     image: "mexicatl.png",
     wikiLink: "https://honkaiimpact3.gamepedia.com/Mexicatl_-_Umbreist_(Memorial_Arena)"
+  }),
+  Nihilus: new Boss({
+    name: "Nihilus Husk",
+    shortName: "Nihilus",
+    image: "nihilus.png",
+    wikiLink: "",
   }),
   Pax: new Boss({
     name: "MHT-3 Pax",
@@ -194,6 +161,6 @@ const Bosses = {
     image: "tonatiuh.png",
     wikiLink: "https://honkaiimpact3.gamepedia.com/Tonatiuh_(Memorial_Arena)"
   })
-};
+});
 
-export { Boss, BossLineup, Bosses };
+export { Boss, Bosses };

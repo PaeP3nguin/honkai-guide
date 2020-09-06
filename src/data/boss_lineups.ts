@@ -1,12 +1,44 @@
-import { Bosses, BossLineup } from "@/models/boss";
+import { Boss, Bosses } from "@/models/boss";
+import { daysDifference } from "@/util/dates";
 
-const today = new Date();
+class BossLineup {
+  id: number;
+  date: Date;
 
-function daysDifference(d0: Date, d1: Date) {
-  const diff = new Date(+d1).setHours(12) - new Date(+d0).setHours(12);
-  return Math.round(diff / 8.64e7);
+  // Date the lineup appeared in CN, defaults to 4 weeks back.
+  cnDate: Date;
+  bosses: Boss[];
+
+  // Optional event name, bosses will be ignored.
+  event: string;
+
+  constructor({
+    date,
+    cnDate,
+    bosses,
+    event
+  }: {
+    date: Date;
+    cnDate?: Date;
+    bosses?: Boss[];
+    event?: string;
+  }) {
+    this.id = Math.random();
+    this.date = date;
+    if (cnDate) {
+      this.cnDate = cnDate;
+    } else {
+      this.cnDate = new Date(date);
+      this.cnDate.setDate(this.cnDate.getDate() - 4 * 7);
+    }
+    if (bosses) {
+      this.bosses = bosses;
+    }
+    if (event) {
+      this.event = event;
+    }
+  }
 }
-
 // For weekly lineups: https://space.bilibili.com/20678696
 // https://bbs.mihoyo.com/bh3/topicDetail/20
 // Can also search: 崩坏3 记忆战场一档
@@ -116,17 +148,27 @@ const BOSS_LINEUPS = Object.freeze([
     bosses: [Bosses.Jizo, Bosses.Hellmaru, Bosses.Benares]
   }),
   new BossLineup({
+    date: new Date("2020-09-17T00:00:00"),
+    event: "Patch 4.2 (predicted)"
+  }),
+  new BossLineup({
     date: new Date("2020-09-21T00:00:00"),
-    bosses: [Bosses.HuoDou, Bosses.Heimdall, Bosses.SK]
+    bosses: [Bosses.Huodou, Bosses.Heimdall, Bosses.SK]
   }),
   new BossLineup({
     date: new Date("2020-09-28T00:00:00"),
     bosses: [Bosses.HoV, Bosses.BKE, Bosses.AKA]
+  }),
+  new BossLineup({
+    date: new Date("2020-10-29T00:00:00"),
+    event: "Patch 4.3 (predicted)"
   })
 ]);
+
+const today = new Date();
 
 const RECENT_LINEUPS = Object.freeze(
   BOSS_LINEUPS.filter(lineup => daysDifference(today, lineup.date) >= -6)
 );
 
-export { BOSS_LINEUPS, RECENT_LINEUPS };
+export { RECENT_LINEUPS };
