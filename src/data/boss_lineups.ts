@@ -160,6 +160,10 @@ const BOSS_LINEUPS = Object.freeze([
     bosses: [Bosses.HoV, Bosses.BKE, Bosses.AKA]
   }),
   new BossLineup({
+    date: new Date("2020-10-05T00:00:00"),
+    bosses: [Bosses.Hephaestus, Bosses.DXY, Bosses.AKA]
+  }),
+  new BossLineup({
     date: new Date("2020-10-29T00:00:00"),
     event: "Patch 4.3 (predicted)"
   })
