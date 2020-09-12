@@ -148,8 +148,8 @@ const BOSS_LINEUPS = Object.freeze([
     bosses: [Bosses.Jizo, Bosses.Hellmaru, Bosses.Benares]
   }),
   new BossLineup({
-    date: new Date("2020-09-17T00:00:00"),
-    event: "Patch 4.2 (predicted)"
+    date: new Date("2020-09-15T00:00:00"),
+    event: "Patch 4.2"
   }),
   new BossLineup({
     date: new Date("2020-09-21T00:00:00"),

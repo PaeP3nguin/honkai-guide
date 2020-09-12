@@ -46,8 +46,8 @@ class AbyssLineup {
 
 const ABYSS_LINEUPS = Object.freeze([
   new AbyssLineup({
-    date: new Date("2020-09-17T00:00:00"),
-    event: "Patch 4.2 (predicted)"
+    date: new Date("2020-09-15T00:00:00"),
+    event: "Patch 4.2"
   }),
   new AbyssLineup({
     date: new Date("2020-09-17T00:00:01"),
