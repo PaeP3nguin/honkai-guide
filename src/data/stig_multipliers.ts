@@ -38,11 +38,11 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
     ],
     "3 set": [
       new Multiplier({
-        active: false,
+        active: true,
         name:
-          "Margrave 3 set: When 2-set is active, B piece effect increased to 17/20%, for spending 60/120 SP.",
+          "Margrave 3 set: When spending 60/120 SP, increase 2-set effect to 17/20%.",
         type: Type.TdmTaken,
-        value: 20
+        value: 6
       })
     ]
   },
