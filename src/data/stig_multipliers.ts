@@ -226,7 +226,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
         active: true,
         name: "Shuijing B: When QTE hits a target, target takes more physical DMG.",
         type: Type.PhysTaken,
-        value: 16
+        value: 18
       })
     ],
     "3 set": [
