@@ -300,6 +300,7 @@ const modifiersToChinese = {
   "Exalted Abyss": ["超弦空间"],
   "Red Lotus": ["红莲"],
   Myriad: ["无限"],
+  Nirvana: ["寂灭"],
   "Sim battle": ["模拟作战室"],
   "Honkai Impact 3": ["崩坏3"]
 };
