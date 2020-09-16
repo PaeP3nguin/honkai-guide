@@ -99,6 +99,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/09/15 - Add Nirvana to modifiers</li>
           <li>2020/09/12 - Add DS to 3rd guide bookmarklet</li>
           <li>2020/09/04 - Add DS valk</li>
           <li>2020/08/30 - Add exalted abyss modifier</li>
@@ -109,8 +110,8 @@
           <li>2020/08/19 - Add no Shuijing search modifier, thanks Younggeddes</li>
           <li>2020/08/06 - Add Masters MA to options</li>
           <li>2020/08/04 - Add new nickname for DJ, thanks Toast</li>
-          <li>2020/07/28 - Update Fix 3rd guide bookmarklet with SA and HoT</li>
-          <!-- <li>2020/06/08 - Add BKE, made some URL generation improvements.</li>
+          <!-- <li>2020/07/28 - Update Fix 3rd guide bookmarklet with SA and HoT</li>
+          <li>2020/06/08 - Add BKE, made some URL generation improvements.</li>
           <li>2020/06/02 - Add Starlit Astrologos (Zhuge) to valks</li>
           <li>2020/05/25 - Update fix 3rd guide bookmarklet</li>
           <li>2020/05/01 - Add death web + gigant abyss boss</li>
