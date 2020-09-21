@@ -51,6 +51,7 @@ const ABYSS_LINEUPS = Object.freeze([
     event: "Patch 4.2"
   }),
   // 9/15 was BKE
+  // 9/17 was BKE
   new AbyssLineup({
     date: new Date("2020-09-17T00:00:01"),
     cnDate: new Date("2020-08-20T00:00:00"),
@@ -84,6 +85,12 @@ const ABYSS_LINEUPS = Object.freeze([
   new AbyssLineup({
     date: new Date("2020-10-05T00:00:00"),
     cnDate: new Date("2020-09-14T00:00:00"),
+    boss: Bosses.Benares,
+    weather: EXALTED_WEATHER.Ice
+  }),
+  new AbyssLineup({
+    date: new Date("2020-10-08T00:00:00"),
+    cnDate: new Date("2020-09-17T00:00:00"),
     boss: Bosses.Benares,
     weather: EXALTED_WEATHER.Ice
   }),
