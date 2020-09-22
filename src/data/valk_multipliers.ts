@@ -429,7 +429,7 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
         value: 40
       })
     ],
-    "Shadow Knight (SK) [S}": [
+    "Shadow Knight (SK) [S]": [
       new Multiplier({
         active: false,
         name: "[SK] Leader",
@@ -458,7 +458,60 @@ const DPS_VALK_MULTIPLIERS = Object.freeze({
     ]
   },
   // Kallen
-  // Rita
+  Rita: {
+    "Argent Knight: Artemis (AKA) [S]": [
+      new Multiplier({
+        active: false,
+        name: "[AKA] Leader: Boost to combo and charge attacks.",
+        type: Type.TdmDealt,
+        value: 10
+      }),
+      new Multiplier({
+        active: false,
+        name: "[AKA] Leader: Bonus for teams of 3 different types.",
+        type: Type.EleDealt,
+        value: 12
+      }),
+      new Multiplier({
+        active: false,
+        name: "[AKA] Passive: Diamond Dust: Ice damage boost against enemies with hypothermia.",
+        type: Type.EleDealt,
+        value: 50
+      }),
+      new Multiplier({
+        active: true,
+        name: "[AKA] Passive: Diamond Dust: Ice damage boost against enemies in ice cell.",
+        type: Type.EleDealt,
+        value: 80
+      }),
+      new Multiplier({
+        active: true,
+        name:
+          "[AKA] Passive: Robust Frigidity: Bonus when above 66% HP, drops to 15% if above 33% HP.",
+        type: Type.TdmDealt,
+        value: 30
+      }),
+      new Multiplier({
+        active: true,
+        name:
+          "[AKA] Passive: Frost Prison: Enemies trapped in ice cell takes more damage from host.",
+        type: Type.TdmTakenHost,
+        value: 8
+      }),
+      new Multiplier({
+        active: false,
+        name: "[AKA] Ult: Winter Harvest: Basic attacks gain ice damage boost during burst.",
+        type: Type.EleDealt,
+        value: 60
+      }),
+      new Multiplier({
+        active: true,
+        name: "[AKA] Ult: Winter Harvest: Charged attacks gain ice damage boost during burst.",
+        type: Type.EleDealt,
+        value: 80
+      })
+    ]
+  },
   "Liliya Olenyeva": {
     "Blueberry Blitz (BB) [SSS]": [
       new Multiplier({
@@ -930,7 +983,8 @@ const SUPPORT_VALK_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: false,
-        name: "[AE] Ult: Hex of Breaching: 16% elemental breach after Ult. Value calculated for a typical MA boss with 31% elemental resistance.",
+        name:
+          "[AE] Ult: Hex of Breaching: 16% elemental breach after Ult. Value calculated for a typical MA boss with 31% elemental resistance.",
         type: Type.EleTakenHost,
         value: 23
       })
