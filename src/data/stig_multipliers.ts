@@ -713,6 +713,66 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  "Irene Adler": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Adler T: Lightning damage boost.",
+        type: Type.EleDealt,
+        value: 20
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Adler M: Lightning damage boost.",
+        type: Type.EleDealt,
+        value: 20
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Adler B",
+        type: Type.TdmDealt,
+        value: 15
+      }),
+      new Multiplier({
+        active: true,
+        name: "Adler B: charge attack and ult make enemies take more elemental DMG.",
+        type: Type.EleTaken,
+        value: 15
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Adler 2 set",
+        type: Type.TdmDealt,
+        value: 15
+      }),
+      new Multiplier({
+        active: true,
+        name: "Adler 2 set: team gain elemental DMG against enemies hit by charge attack and ult.",
+        type: Type.EleDealt,
+        value: 18
+      })
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Adler 3 set: charge attack and ult boost team lightning DMG.",
+        type: Type.EleDealt,
+        value: 10
+      }),
+      new Multiplier({
+        active: false,
+        name: "Adler 3 set: Boost if equipped on Rita.",
+        type: Type.TdmDealt,
+        value: 25
+      })
+    ]
+  },
   Jingwei: {
     T: [
       new Multiplier({
