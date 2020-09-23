@@ -99,6 +99,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/09/22 - Add Fervent Tempo Delta valk</li>
           <li>2020/09/16 - Add Nihilus Husk boss</li>
           <li>2020/09/15 - Add Nirvana to modifiers</li>
           <li>2020/09/12 - Add DS to 3rd guide bookmarklet</li>
@@ -109,8 +110,8 @@
           <li>2020/08/19 - Add SS lead skill as modifier, thanks Toast</li>
           <li>2020/08/19 - Add SS LE as modifier</li>
           <li>2020/08/19 - Add no Shuijing search modifier, thanks Younggeddes</li>
-          <li>2020/08/06 - Add Masters MA to options</li>
-          <!-- <li>2020/08/04 - Add new nickname for DJ, thanks Toast</li>
+          <!-- <li>2020/08/06 - Add Masters MA to options</li>
+          <li>2020/08/04 - Add new nickname for DJ, thanks Toast</li>
           <li>2020/07/28 - Update Fix 3rd guide bookmarklet with SA and HoT</li>
           <li>2020/06/08 - Add BKE, made some URL generation improvements.</li>
           <li>2020/06/02 - Add Starlit Astrologos (Zhuge) to valks</li>
@@ -250,6 +251,7 @@ const valkToChinese = {
   "Dimension Break (DB)": ["次"],
   "Divine Prayer (DP)": ["圣"],
   "Fallen Rosemary (FR)": ["迭", "失落迷迭"],
+  "Fervent Tempo Delta (FTD)": ["狂热蓝调"],
   "Flame Sakitama (FS)": ["炎"],
   "Hawk of the Fog (HF)": ["迅", "迅雷", "雾都迅羽"],
   "Herrscher of the Void (God Kiana, GK, HoV)": ["律"],
