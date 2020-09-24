@@ -85,13 +85,19 @@ const ABYSS_LINEUPS = Object.freeze([
   new AbyssLineup({
     date: new Date("2020-10-05T00:00:00"),
     cnDate: new Date("2020-09-14T00:00:00"),
-    boss: Bosses.Benares,
+    boss: Bosses.Huodou,
     weather: EXALTED_WEATHER.Ice
   }),
   new AbyssLineup({
     date: new Date("2020-10-08T00:00:00"),
     cnDate: new Date("2020-09-17T00:00:00"),
-    boss: Bosses.Benares,
+    boss: Bosses.BKE,
+    weather: EXALTED_WEATHER.Ice
+  }),
+  new AbyssLineup({
+    date: new Date("2020-10-12T00:00:00"),
+    cnDate: new Date("2020-09-21T00:00:00"),
+    boss: Bosses.Jizo,
     weather: EXALTED_WEATHER.Ice
   }),
   new AbyssLineup({
