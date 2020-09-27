@@ -959,7 +959,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     B: [
       new Multiplier({
         active: true,
-        name: "Mich T: Gain 14% crit DMG per basic attack. Max 5 stacks.",
+        name: "Mich B: Gain 14% crit DMG per basic attack. Max 5 stacks.",
         type: Type.CritDmg,
         value: 70
       })
