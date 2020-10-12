@@ -58,14 +58,14 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item link to="/abyss_lineups">
+        <!-- <v-list-item link to="/abyss_lineups">
           <v-list-item-action>
             <v-img max-width="24" left :src="require('@/assets/icon_abyss.png')"></v-img>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>Future Abyss lineups</v-list-item-title>
           </v-list-item-content>
-        </v-list-item>
+        </v-list-item> -->
       </v-list>
     </v-navigation-drawer>
 
