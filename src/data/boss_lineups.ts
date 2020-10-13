@@ -39,7 +39,6 @@ class BossLineup {
     }
   }
 }
-// For weekly lineups: https://space.bilibili.com/20678696
 // https://bbs.mihoyo.com/bh3/topicDetail/20
 // Can also search: 崩坏3 记忆战场一档
 const BOSS_LINEUPS = Object.freeze([
@@ -185,6 +184,10 @@ const BOSS_LINEUPS = Object.freeze([
     date: new Date("2020-11-02T00:00:00"),
     bosses: [Bosses.SK, Bosses.Jizo, Bosses.Hellmaru]
   }),
+  new BossLineup({
+    date: new Date("2020-11-09T00:00:00"),
+    bosses: [Bosses.BKE, Bosses.Hephaestus, Bosses.Kallen]
+  })
 ]);
 
 const today = new Date();
