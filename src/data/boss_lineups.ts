@@ -167,6 +167,7 @@ const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2020-10-12T00:00:00"),
     bosses: [Bosses.HoV, Bosses.DXY, Bosses.Jizo]
+    // Was actually SK/Jizo/Tona
   }),
   new BossLineup({
     date: new Date("2020-10-19T00:00:00"),
@@ -187,7 +188,31 @@ const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2020-11-09T00:00:00"),
     bosses: [Bosses.BKE, Bosses.Hephaestus, Bosses.Kallen]
-  })
+  }),
+  new BossLineup({
+    date: new Date("2020-11-16T00:00:00"),
+    bosses: [Bosses.SK, Bosses.HOMU, Bosses.Tonatiuh]
+  }),
+  new BossLineup({
+    date: new Date("2020-11-23T00:00:00"),
+    bosses: [Bosses.Huodou, Bosses.Heimdall, Bosses.Hephaestus]
+  }),
+  new BossLineup({
+    date: new Date("2020-11-30T00:00:00"),
+    bosses: [Bosses.BKE, Bosses.AKA, Bosses.HOMU]
+  }),
+  new BossLineup({
+    date: new Date("2020-12-20T00:00:00"),
+    event: "Patch 4.4 (predicted)"
+  }),
+  new BossLineup({
+    date: new Date("2021-01-21T00:00:00"),
+    event: "Patch 4.5 (predicted)"
+  }),
+  new BossLineup({
+    date: new Date("2021-03-04T00:00:00"),
+    event: "Patch 4.6 (predicted)"
+  }),
 ]);
 
 const today = new Date();
