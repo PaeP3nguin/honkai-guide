@@ -143,6 +143,12 @@ const Bosses = Object.freeze({
     image: "parvati.png",
     wikiLink: "https://honkaiimpact3.gamepedia.com/Parvati_(Memorial_Arena)"
   }),
+  Rimestar: new Boss({
+    name: "Rimestar",
+    shortName: "Rimestar",
+    image: "rimestar.png",
+    wikiLink: ""
+  }),
   RPC: new Boss({
     name: "RPC",
     shortName: "RPC",
