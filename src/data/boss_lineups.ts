@@ -39,8 +39,7 @@ class BossLineup {
     }
   }
 }
-// https://bbs.mihoyo.com/bh3/topicDetail/20
-// Can also search: 崩坏3 记忆战场一档
+
 const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2020-04-20T00:00:00"),
@@ -230,6 +229,9 @@ const BOSS_LINEUPS = Object.freeze([
     event: "Patch 4.6 (predicted)"
   })
 ]);
+// Lineup sources:
+// https://bbs.mihoyo.com/bh3/topicDetail/20
+// Can also search: 崩坏3 记忆战场一档
 
 const today = new Date();
 
