@@ -10,6 +10,7 @@ class Weather {
   }
 }
 
+// QTEndless
 const EXALTED_WEATHER = Object.freeze({
   Lightning: new Weather({
     name: "Lightning",
@@ -31,6 +32,11 @@ const EXALTED_WEATHER = Object.freeze({
     effect: "Enemies takes 50% bonus Fire DMG and 50% less Ice DMG.",
     icon: "fire.png"
   }),
+  TypeCounter: new Weather({
+    name: "Counter",
+    effect: "Type countering effects are 20% stronger.",
+    icon: "physical.png"
+  })
 });
 
 export { Weather, EXALTED_WEATHER };

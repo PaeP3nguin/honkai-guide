@@ -100,11 +100,69 @@ const ABYSS_LINEUPS = Object.freeze([
     boss: Bosses.Jizo,
     weather: EXALTED_WEATHER.Ice
   }),
+  // Started actually matching in 4.3
   new AbyssLineup({
     date: new Date("2020-10-29T00:00:00"),
     event: "Patch 4.3 (predicted)"
+  }),
+  new AbyssLineup({
+    date: new Date("2020-12-03T00:00:00"),
+    cnDate: new Date("2020-11-09T00:00:00"),
+    boss: Bosses.SK,
+    weather: EXALTED_WEATHER.Physical
+  }),
+  new AbyssLineup({
+    date: new Date("2020-12-07T00:00:00"),
+    cnDate: new Date("2020-11-12T00:00:00"),
+    boss: Bosses.Heimdall,
+    weather: EXALTED_WEATHER.Fire
+  }),
+  new AbyssLineup({
+    date: new Date("2020-12-10T00:00:00"),
+    event: "Patch 4.4 (predicted)"
+  }),
+  new AbyssLineup({
+    date: new Date("2020-12-11T00:00:00"),
+    cnDate: new Date("2020-11-16T00:00:00"),
+    boss: Bosses.Huodou,
+    weather: EXALTED_WEATHER.Ice
+  }),
+  new AbyssLineup({
+    date: new Date("2020-12-14T00:00:00"),
+    cnDate: new Date("2020-11-19T00:00:00"),
+    boss: Bosses.Nihilus,
+    weather: EXALTED_WEATHER.Lightning
+  }),
+  new AbyssLineup({
+    date: new Date("2020-12-18T00:00:00"),
+    cnDate: new Date("2020-11-23T00:00:00"),
+    boss: Bosses.Rimestar,
+    weather: EXALTED_WEATHER.Fire
+  }),
+  new AbyssLineup({
+    date: new Date("2020-12-21T00:00:00"),
+    cnDate: new Date("2020-11-26T00:00:00"),
+    boss: Bosses.Jizo,
+    weather: EXALTED_WEATHER.Physical
+  }),
+  new AbyssLineup({
+    date: new Date("2020-12-25T00:00:00"),
+    cnDate: new Date("2020-11-30T00:00:00"),
+    boss: Bosses.Rimestar,
+    weather: EXALTED_WEATHER.Fire
+  }),
+  new AbyssLineup({
+    date: new Date("2021-01-21T00:00:00"),
+    event: "Patch 4.5 (predicted)"
+  }),
+  new AbyssLineup({
+    date: new Date("2021-03-04T00:00:00"),
+    event: "Patch 4.6 (predicted)"
   })
 ]);
+// Lineup sources:
+// https://space.bilibili.com/39263563
+// https://search.bilibili.com/all?keyword=%E8%B6%85%E5%BC%A6%E7%A9%BA%E9%97%B4&order=pubdate&duration=0&tids_1=0
 
 const today = new Date();
 
