@@ -23,7 +23,7 @@ const EXALTED_WEATHER = Object.freeze({
     icon: "physical.png"
   }),
   Ice: new Weather({
-    name: "Ice",
+    name: "Frost",
     effect: "Enemies takes 50% bonus Ice DMG and 50% less Fire DMG.",
     icon: "ice.png"
   }),
