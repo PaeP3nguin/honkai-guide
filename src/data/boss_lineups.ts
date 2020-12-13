@@ -221,7 +221,7 @@ const BOSS_LINEUPS = Object.freeze([
     bosses: [Bosses.Rimestar, Bosses.DXY, Bosses.BKE]
   }),
   new BossLineup({
-    date: new Date("2020-12-28T00:00:00"),
+    date: new Date("2020-01-04T00:00:00"),
     bosses: [Bosses.HoV, Bosses.Jizo, Bosses.Huodou]
   }),
   new BossLineup({
