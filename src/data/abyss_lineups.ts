@@ -125,7 +125,7 @@ const ABYSS_LINEUPS = Object.freeze([
     date: new Date("2020-12-11T00:00:00"),
     cnDate: new Date("2020-11-16T00:00:00"),
     boss: Bosses.Huodou,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.TypeCounter
   }),
   new AbyssLineup({
     date: new Date("2020-12-14T00:00:00"),
@@ -150,6 +150,12 @@ const ABYSS_LINEUPS = Object.freeze([
     cnDate: new Date("2020-11-30T00:00:00"),
     boss: Bosses.Rimestar,
     weather: EXALTED_WEATHER.Fire
+  }),
+  new AbyssLineup({
+    date: new Date("2020-12-28T00:00:00"),
+    cnDate: new Date("2020-12-03T00:00:00"),
+    boss: Bosses.SK,
+    weather: EXALTED_WEATHER.TypeCounter
   }),
   new AbyssLineup({
     date: new Date("2021-01-21T00:00:00"),
