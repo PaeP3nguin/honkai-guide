@@ -52,16 +52,16 @@ export default Vue.extend({
     support: Object,
     noDividerPadding: Boolean,
     // True if filter should act on items instead of groups.
-    filterByItems: Boolean
+    filterByItems: Boolean,
   },
-  data: function() {
+  data: function () {
     return { dialogVisible: false, dialogFilter: "", activeTab: null };
   },
   computed: {
-    filteredDialogItems: function() {
+    filteredDialogItems: function () {
       function filterByKeyName(map, filterString: string) {
         return Object.keys(map)
-          .filter(key => key.toLowerCase().includes(filterString.toLowerCase()))
+          .filter((key) => key.toLowerCase().includes(filterString.toLowerCase()))
           .reduce((obj, key) => {
             obj[key] = map[key];
             return obj;
@@ -81,15 +81,15 @@ export default Vue.extend({
       if (this.filterByItems) {
         return {
           DPS: filterByValueName(this.dps, this.dialogFilter),
-          Support: filterByValueName(this.support, this.dialogFilter)
+          Support: filterByValueName(this.support, this.dialogFilter),
         };
       }
 
       return {
         DPS: filterByKeyName(this.dps, this.dialogFilter),
-        Support: filterByKeyName(this.support, this.dialogFilter)
+        Support: filterByKeyName(this.support, this.dialogFilter),
       };
-    }
-  }
+    },
+  },
 });
 </script>

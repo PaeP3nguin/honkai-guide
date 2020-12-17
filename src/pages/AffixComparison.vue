@@ -88,15 +88,15 @@ import AffixCalc from "@/components/AffixCalc.vue";
 
 export default Vue.extend({
   components: { AffixCalc },
-  data: function() {
+  data: function () {
     return {
       valkAtk: 1200,
       critDmg: 200,
       critRate: 100,
 
       valueRules: [(v: number) => (!!v && v >= 0) || "Invalid value"],
-      critRateRules: [(v: number) => (v <= 100 && v >= 0) || "Invalid crit rate"]
+      critRateRules: [(v: number) => (v <= 100 && v >= 0) || "Invalid crit rate"],
     };
-  }
+  },
 });
 </script>

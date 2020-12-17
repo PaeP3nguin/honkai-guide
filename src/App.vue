@@ -94,15 +94,15 @@ import "firebase/auth";
 
 export default Vue.extend({
   name: "app",
-  data: function() {
+  data: function () {
     return {
-      drawer: null
+      drawer: null,
     };
   },
   async created() {
     window.addEventListener(
       "keydown",
-      function(e) {
+      function (e) {
         if (e.keyCode !== 8) {
           // Only wanna prevent backspace.
           return;
@@ -123,7 +123,7 @@ export default Vue.extend({
     );
 
     await firebase.auth().signInAnonymously();
-  }
+  },
 });
 </script>
 

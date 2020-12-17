@@ -73,10 +73,10 @@ import BossCard from "@/components/BossCard.vue";
 
 export default Vue.extend({
   components: { BossCard },
-  data: function() {
+  data: function () {
     return {
-      lineups: RECENT_LINEUPS
+      lineups: RECENT_LINEUPS,
     };
-  }
+  },
 });
 </script>

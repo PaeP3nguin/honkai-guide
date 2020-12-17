@@ -68,18 +68,18 @@ const tableHeaders = [
   {
     text: "Score",
     value: "score",
-    width: "35%"
+    width: "35%",
   },
   {
     text: "Score (20% bonus)",
     value: "up",
-    width: "35%"
+    width: "35%",
   },
   {
     text: "Time",
     value: "elapsedSec",
-    width: "35%"
-  }
+    width: "35%",
+  },
 ];
 
 const scoresByTime = generateScores(300);
@@ -87,19 +87,19 @@ const scoresByTime = generateScores(300);
 function elapsedSecToAutocompleteItem(elapsedSec: number) {
   return {
     text: countdownSecondsFilter(elapsedSec.toString()),
-    value: elapsedSec
+    value: elapsedSec,
   };
 }
 
 export default Vue.extend({
-  data: function() {
+  data: function () {
     return {
       scoresByTime: scoresByTime,
 
       // Converter stuff
-      scores: scoresByTime.map(s => s.score),
-      upScores: scoresByTime.map(s => s.up),
-      times: scoresByTime.map(s => elapsedSecToAutocompleteItem(s.elapsedSec)),
+      scores: scoresByTime.map((s) => s.score),
+      upScores: scoresByTime.map((s) => s.up),
+      times: scoresByTime.map((s) => elapsedSecToAutocompleteItem(s.elapsedSec)),
       selectedScore: null,
       selectedUpScore: null,
       selectedTime: null,
@@ -107,29 +107,29 @@ export default Vue.extend({
       // Table stuff
       tableHeaders: tableHeaders,
       tableFooterProps: {
-        "items-per-page-options": [10, 20, 30, 40, 50, 75, 100]
-      }
+        "items-per-page-options": [10, 20, 30, 40, 50, 75, 100],
+      },
     };
   },
   methods: {
-    computeByScore: function() {
-      const computedScore = scoresByTime.find(s => s.score == this.selectedScore);
+    computeByScore: function () {
+      const computedScore = scoresByTime.find((s) => s.score == this.selectedScore);
       this.selectedUpScore = computedScore.up;
       this.selectedTime = elapsedSecToAutocompleteItem(computedScore.elapsedSec);
     },
-    computeByUpScore: function() {
-      const computedScore = scoresByTime.find(s => s.up == this.selectedUpScore);
+    computeByUpScore: function () {
+      const computedScore = scoresByTime.find((s) => s.up == this.selectedUpScore);
       this.selectedScore = computedScore.score;
       this.selectedTime = elapsedSecToAutocompleteItem(computedScore.elapsedSec);
     },
-    computeByTime: function() {
-      const computedScore = scoresByTime.find(s => s.elapsedSec == this.selectedTime);
+    computeByTime: function () {
+      const computedScore = scoresByTime.find((s) => s.elapsedSec == this.selectedTime);
       this.selectedScore = computedScore.score;
       this.selectedUpScore = computedScore.up;
-    }
+    },
   },
   filters: {
-    countdownSeconds: countdownSecondsFilter
-  }
+    countdownSeconds: countdownSecondsFilter,
+  },
 });
 </script>

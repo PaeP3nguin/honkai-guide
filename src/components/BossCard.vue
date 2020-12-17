@@ -67,7 +67,7 @@ export default Vue.extend({
   name: "BossCard",
   props: {
     boss: Object,
-    uprate: Boolean
-  }
+    uprate: Boolean,
+  },
 });
 </script>

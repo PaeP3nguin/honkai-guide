@@ -72,10 +72,10 @@ import BossLineupList from "@/components/BossLineupList.vue";
 
 export default Vue.extend({
   components: { BossCard, BossLineupList },
-  data: function() {
+  data: function () {
     return {
-      lineups: RECENT_LINEUPS
+      lineups: RECENT_LINEUPS,
     };
-  }
+  },
 });
 </script>

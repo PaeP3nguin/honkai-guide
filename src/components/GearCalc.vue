@@ -47,9 +47,7 @@
         </v-col>
 
         <v-col class="ml-2">
-          <a :href="require('@/assets/valk_crt.png')" target="_blank">
-            Where to find CRT?
-          </a>
+          <a :href="require('@/assets/valk_crt.png')" target="_blank">Where to find CRT?</a>
         </v-col>
       </v-row>
     </v-container>
@@ -155,15 +153,11 @@
                 </v-list-item-content>
 
                 <v-list-item-action>
-                  <v-btn color="primary" @click="loadMultipliers(name)">
-                    Load
-                  </v-btn>
+                  <v-btn color="primary" @click="loadMultipliers(name)">Load</v-btn>
                 </v-list-item-action>
 
                 <v-list-item-action>
-                  <v-btn color="primary" @click="deleteSavedMultipliers(name)">
-                    delete
-                  </v-btn>
+                  <v-btn color="primary" @click="deleteSavedMultipliers(name)">delete</v-btn>
                 </v-list-item-action>
               </v-list-item>
 
@@ -171,9 +165,7 @@
 
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn text color="primary" @click="closeSaveDialog">
-                  Close
-                </v-btn>
+                <v-btn text color="primary" @click="closeSaveDialog">Close</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
@@ -403,45 +395,45 @@ enum FinalStats {
   OverallEle = "Overall elemental",
   OverallPhysNoCrits = "Overall physical (no crits)",
   OverallPhysAvgCrits = "Overall physical (average crits)",
-  OverallPhysAllCrits = "Overall physical (100% crits)"
+  OverallPhysAllCrits = "Overall physical (100% crits)",
 }
 
 const tableHeaders = [
   {
     text: "Active",
     value: "active",
-    width: "10%"
+    width: "10%",
   },
   {
     text: "Name",
     value: "name",
-    width: "25%"
+    width: "25%",
   },
   {
     text: "Type",
     value: "type",
-    width: "30%"
+    width: "30%",
   },
   {
     text: "Value",
     value: "value",
-    width: "20%"
+    width: "20%",
   },
   {
     text: "Actions",
     value: "actions",
-    width: "15%"
-  }
+    width: "15%",
+  },
 ];
 
 export default Vue.extend({
   name: "gear-calc",
   props: {
-    value: Array
+    value: Array,
   },
   components: { MultiplierDialog },
   filters: { toPercent },
-  data: function() {
+  data: function () {
     return {
       // Constants.
       Type: Type,
@@ -482,11 +474,11 @@ export default Vue.extend({
       saveNameRules: [(v: any) => !!v || "Name is required"],
       multiplierTypeRules: [(v: any) => !!v || "Type is required"],
       valueRules: [(v: any) => !!v || "Value is required"],
-      valkLvlRules: [(v: any) => !!v || "Level is required", (v: any) => v <= 80 || "Max is 80!"]
+      valkLvlRules: [(v: any) => !!v || "Level is required", (v: any) => v <= 80 || "Max is 80!"],
     };
   },
   computed: {
-    calculationResults: function() {
+    calculationResults: function () {
       const result = {};
       for (const key in Type) {
         const type = Type[key];
@@ -525,7 +517,7 @@ export default Vue.extend({
       result[FinalStats.OverallPhysAllCrits] = tdmOnly * physOnlyAllCrits;
       return result;
     },
-    detailedStats: function() {
+    detailedStats: function () {
       const stats = Object.assign({}, this.calculationResults);
 
       // Replace crit rate with total crit rate.
@@ -538,14 +530,14 @@ export default Vue.extend({
       delete stats[Type.Crt];
 
       // Remove final stats too.
-      Object.values(FinalStats).map(k => delete stats[k]);
+      Object.values(FinalStats).map((k) => delete stats[k]);
 
       return stats;
     },
-    filteredDialogStigs: function() {
+    filteredDialogStigs: function () {
       function filterByKeyName(map, filterString: string) {
         return Object.keys(map)
-          .filter(key => key.toLowerCase().includes(filterString.toLowerCase()))
+          .filter((key) => key.toLowerCase().includes(filterString.toLowerCase()))
           .reduce((obj, key) => {
             obj[key] = map[key];
             return obj;
@@ -554,19 +546,19 @@ export default Vue.extend({
 
       return {
         DPS: filterByKeyName(DPS_STIG_MULTIPLIERS, this.stigsDialogFilter),
-        Support: filterByKeyName(SUPPORT_STIG_MULTIPLIERS, this.stigsDialogFilter)
+        Support: filterByKeyName(SUPPORT_STIG_MULTIPLIERS, this.stigsDialogFilter),
       };
-    }
+    },
   },
   watch: {
-    saveDialog: function(value) {
+    saveDialog: function (value) {
       if (!value) {
         // Dialog is closing.
         return;
       }
 
       this.savedMultipliers = JSON.parse(localStorage.savedMultipliers || {});
-    }
+    },
   },
   methods: {
     submitMultiplier() {
@@ -590,7 +582,7 @@ export default Vue.extend({
       this.$refs.nameField.focus();
     },
     addMultipliers(multipliers: Multiplier[]) {
-      multipliers.forEach(m => this.value.push(m.clone()));
+      multipliers.forEach((m) => this.value.push(m.clone()));
     },
     clearMultipliers() {
       while (this.value.length) {
@@ -612,7 +604,7 @@ export default Vue.extend({
         return;
       }
 
-      this.savedMultipliers[this.saveName] = this.value.map(m => m.clone());
+      this.savedMultipliers[this.saveName] = this.value.map((m) => m.clone());
 
       localStorage.savedMultipliers = JSON.stringify(this.savedMultipliers);
 
@@ -620,7 +612,7 @@ export default Vue.extend({
     },
     loadMultipliers(name) {
       this.clearMultipliers();
-      this.savedMultipliers[name].forEach(m => this.value.push(Multiplier.fromObject(m)));
+      this.savedMultipliers[name].forEach((m) => this.value.push(Multiplier.fromObject(m)));
     },
     deleteSavedMultipliers(name) {
       Vue.delete(this.savedMultipliers, name);
@@ -659,7 +651,7 @@ export default Vue.extend({
         return;
       }
       this.value.splice(i, 1);
-    }
-  }
+    },
+  },
 });
 </script>

@@ -117,7 +117,7 @@ const Bosses = Object.freeze({
     name: "Nihilus Husk",
     shortName: "Nihilus",
     image: "nihilus.png",
-    wikiLink: "",
+    wikiLink: ""
   }),
   Pax: new Boss({
     name: "MHT-3 Pax",

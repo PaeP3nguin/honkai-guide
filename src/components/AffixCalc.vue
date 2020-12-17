@@ -48,13 +48,13 @@ import { toPercent } from "@/util/filters";
 
 enum AffixType {
   Attack = "ATK",
-  CritDmg = "Critical DMG %"
+  CritDmg = "Critical DMG %",
 }
 
 enum FinalStats {
   TotalBoost = "Total boost",
   AtkBoost = "Boost from attack",
-  CritDmgBoost = "Boost from critical DMG"
+  CritDmgBoost = "Boost from critical DMG",
 }
 
 export default Vue.extend({
@@ -62,9 +62,9 @@ export default Vue.extend({
   props: {
     valkAtk: Number,
     critDmg: Number,
-    critRate: Number
+    critRate: Number,
   },
-  data: function() {
+  data: function () {
     return {
       // Constants.
       FinalStats: FinalStats,
@@ -75,11 +75,11 @@ export default Vue.extend({
       affix1: 23,
       affix1Type: AffixType.Attack,
       affix2: 5.5,
-      affix2Type: AffixType.CritDmg
+      affix2Type: AffixType.CritDmg,
     };
   },
   computed: {
-    calculationResults: function() {
+    calculationResults: function () {
       const affix1Atk = this.affix1Type === AffixType.Attack ? this.affix1 : 0;
       const affix2Atk = this.affix2Type === AffixType.Attack ? this.affix2 : 0;
       const overallAffixAtk = affix1Atk + affix2Atk;
@@ -99,10 +99,10 @@ export default Vue.extend({
         (1 + results[FinalStats.AtkBoost]) * (1 + results[FinalStats.CritDmgBoost]) - 1;
 
       return results;
-    }
+    },
   },
   filters: {
-    toPercent: toPercent
-  }
+    toPercent: toPercent,
+  },
 });
 </script>

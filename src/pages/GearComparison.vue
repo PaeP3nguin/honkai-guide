@@ -24,9 +24,7 @@
               </v-card-title>
 
               <v-card-text>
-                <p>
-                  Send this link to anyone for them to see the multipliers you entered!
-                </p>
+                <p>Send this link to anyone for them to see the multipliers you entered!</p>
                 <p>
                   If you make changes to the multipliers, click the button again to get a new link.
                 </p>
@@ -85,15 +83,11 @@
         <ul>
           <li>
             Physical Damage Dealt -
-            <a href="https://honkaiimpact3.gamepedia.com/Marco_Polo">
-              Marco Polo T
-            </a>
+            <a href="https://honkaiimpact3.gamepedia.com/Marco_Polo">Marco Polo T</a>
           </li>
           <li>
             Physical Damage Taken -
-            <a href="https://honkaiimpact3.gamepedia.com/Gustav_Klimt">
-              Gustav Klimt 2-set
-            </a>
+            <a href="https://honkaiimpact3.gamepedia.com/Gustav_Klimt">Gustav Klimt 2-set</a>
           </li>
           <li>
             Physical Damage Taken from Host (rare) -
@@ -113,13 +107,9 @@
           </li>
           <li>
             Elemental Damage Taken from Host (rare) -
-            <a href="https://honkaiimpact3.gamepedia.com/Thales">
-              Thales M (stacks only)
-            </a>
+            <a href="https://honkaiimpact3.gamepedia.com/Thales">Thales M (stacks only)</a>
             ,
-            <a href="https://honkaiimpact3.gamepedia.com/Welt Yang">
-              Welt M (stacks only)
-            </a>
+            <a href="https://honkaiimpact3.gamepedia.com/Welt Yang">Welt M (stacks only)</a>
           </li>
           <li>
             Total Damage Dealt -
@@ -127,9 +117,7 @@
           </li>
           <li>
             Total Damage Taken -
-            <a href="https://honkaiimpact3.gamepedia.com/Isaac_Newton">
-              Newton B
-            </a>
+            <a href="https://honkaiimpact3.gamepedia.com/Isaac_Newton">Newton B</a>
           </li>
           <li>
             Total Damage Taken from Host (rare) -
@@ -168,9 +156,7 @@
           boosts, like
           <a href="https://honkaiimpact3.gamepedia.com/Dirac">Dirac T</a>
           , however some stigs directly give CRT, like
-          <a href="https://honkaiimpact3.gamepedia.com/Ryunosuke_Akutagawa">
-            Ryunosuke M
-          </a>
+          <a href="https://honkaiimpact3.gamepedia.com/Ryunosuke_Akutagawa">Ryunosuke M</a>
           , so you can also use the "CRT" multiplier type directly. CRT converts to crit rate with
           the following formula: crit rate = CRT/(Valk Level * 5 + 75). At max level, 4.75 CRT is
           equal to 1% crit rate.
@@ -192,7 +178,7 @@ const firestore = firebase.firestore();
 let shareCopiedTooltipTimeout = null;
 let userId = "anonymous";
 
-firebase.auth().onAuthStateChanged(user => {
+firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     userId = user.uid;
   }
@@ -206,17 +192,14 @@ function buildShareLink(userId: string, comparisonId: string): string {
 function getUserRef(
   userId: string
 ): firebase.firestore.CollectionReference<firebase.firestore.DocumentData> {
-  return firestore
-    .collection("comparison")
-    .doc(userId)
-    .collection("comparison");
+  return firestore.collection("comparison").doc(userId).collection("comparison");
 }
 
 export default Vue.extend({
   components: {
-    GearCalc
+    GearCalc,
   },
-  data: function() {
+  data: function () {
     return {
       leftMultipliers: [],
       rightMultipliers: [],
@@ -226,19 +209,17 @@ export default Vue.extend({
       shareDialog: false,
       shareData: null,
       shareLink: null,
-      shareCopiedTooltip: false
+      shareCopiedTooltip: false,
     };
   },
   async mounted() {
     const queryParams = this.$route.query;
     if (queryParams.comparisonId) {
-      const docRef = await getUserRef(queryParams.userId)
-        .doc(queryParams.comparisonId)
-        .get();
+      const docRef = await getUserRef(queryParams.userId).doc(queryParams.comparisonId).get();
       if (docRef.exists) {
         this.shareData = docRef.data();
-        this.shareData.left.forEach(d => this.leftMultipliers.push(Multiplier.fromObject(d)));
-        this.shareData.right.forEach(d => this.rightMultipliers.push(Multiplier.fromObject(d)));
+        this.shareData.left.forEach((d) => this.leftMultipliers.push(Multiplier.fromObject(d)));
+        this.shareData.right.forEach((d) => this.rightMultipliers.push(Multiplier.fromObject(d)));
         this.shareLink = buildShareLink(queryParams.userId, queryParams.comparisonId);
       }
     }
@@ -246,17 +227,17 @@ export default Vue.extend({
     this.shareData = this.exportData;
   },
   computed: {
-    exportData: function() {
+    exportData: function () {
       return JSON.parse(
         JSON.stringify({ left: this.leftMultipliers, right: this.rightMultipliers })
       );
     },
-    emptyMultipliers: function() {
+    emptyMultipliers: function () {
       return this.leftMultipliers.length + this.rightMultipliers.length === 0;
-    }
+    },
   },
   watch: {
-    shareDialog: async function(open) {
+    shareDialog: async function (open) {
       if (!open) {
         return;
       }
@@ -268,18 +249,18 @@ export default Vue.extend({
       const ref = await getUserRef(userId).add(this.exportData);
       this.shareLink = buildShareLink(userId, ref.id);
       this.shareData = this.exportData;
-    }
+    },
   },
   methods: {
     copyRight() {
       this.rightMultipliers.splice(0, this.rightMultipliers.length);
-      this.leftMultipliers.forEach(m => {
+      this.leftMultipliers.forEach((m) => {
         this.rightMultipliers.push(m.clone());
       });
     },
     copyLeft() {
       this.leftMultipliers.splice(0, this.leftMultipliers.length);
-      this.rightMultipliers.forEach(m => {
+      this.rightMultipliers.forEach((m) => {
         this.leftMultipliers.push(m.clone());
       });
     },
@@ -288,7 +269,7 @@ export default Vue.extend({
       clearTimeout(shareCopiedTooltipTimeout);
       this.shareCopiedTooltip = true;
       shareCopiedTooltipTimeout = setTimeout(() => (this.shareCopiedTooltip = false), 2000);
-    }
-  }
+    },
+  },
 });
 </script>
