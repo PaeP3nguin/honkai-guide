@@ -29,9 +29,7 @@
           translates all the bosses and valks (turn off Chrome auto-translation first). Many thanks
           for zkwp of Lumina for the script. For the latest version or if you use TamperMonkey, find
           the script on
-          <a href="https://github.com/zklm/userscripts/raw/master/3rdguide.user.js">
-            Github
-          </a>
+          <a href="https://github.com/zklm/userscripts/raw/master/3rdguide.user.js">Github</a>
           .
         </p>
 
@@ -87,9 +85,7 @@
         <h2 class="section-head">Generated links</h2>
         <v-layout align-center>
           <img class="valk-gif mr-2" :src="require('@/assets/brn.gif')" />
-          <span>
-            Bronya works hard to instantly generate links as you type.
-          </span>
+          <span>Bronya works hard to instantly generate links as you type.</span>
         </v-layout>
 
         <p>Some bosses/valks go by multiple names, so try all links!</p>
@@ -99,6 +95,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/12/16 - Add Rimestar boss, adjust Seele suit names, thanks Echidona</li>
           <li>2020/11/07 - Add FTD to fix 3rd guide script</li>
           <li>2020/11/07 - Add alternate name for FTD</li>
           <li>2020/09/22 - Add Fervent Tempo Delta valk</li>
@@ -109,8 +106,8 @@
           <li>2020/08/30 - Add exalted abyss modifier</li>
           <li>2020/08/30 - Update Fix 3rd guide bookmarklet with Huodou and FR, add FR to valks</li>
           <li>2020/08/24 - Add Huodou boss</li>
-          <li>2020/08/19 - Add SS lead skill as modifier, thanks Toast</li>
-          <!-- <li>2020/08/19 - Add SS LE as modifier</li>
+          <!-- <li>2020/08/19 - Add SS lead skill as modifier, thanks Toast</li>
+          <li>2020/08/19 - Add SS LE as modifier</li>
           <li>2020/08/19 - Add no Shuijing search modifier, thanks Younggeddes</li>
           <li>2020/08/06 - Add Masters MA to options</li>
           <li>2020/08/04 - Add new nickname for DJ, thanks Toast</li>
@@ -223,15 +220,16 @@ const bossToChinese = {
   "Mexicatl: Umbreist (quantum ball)": ["球", "量子军团"],
   "MHT-3 Pax (tank)": ["和平使者", "MHT", "坦克"],
   "MR-06X Hephaestus": ["赫菲斯托斯", "灭火器"],
-  "Nihilus Husk (clock)": ['虚树神骸'],
+  "Nihilus Husk (clock)": ["虚树神骸"],
   Padrino: ["教父"],
   Parvati: ["冰猪", "帕凡提"],
+  Rimestar: ["冰律"],
   RPC: ["飞机", "RPC - 6626"],
   "Shadow Knight (SK)": ["月轮"],
   "Son of Darkness (Abyss only)": ["黑夜之子"],
   "Titan + Hierophant (soul link mobs) (Abyss only)": ["关底", "双灵魂链接", "红莲泰坦"],
   Tonatiuh: ["托纳提乌", "龙虾"],
-  "Wendy + Ganesha (Abyss only)": ["猪温"]
+  "Wendy + Ganesha (Abyss only)": ["猪温"],
 };
 
 const valkToChinese = {
@@ -279,7 +277,7 @@ const valkToChinese = {
   "Shadow Knight (SK)": ["轮"],
   "Sixth Serenade (6S)": ["六"],
   "Starlit Astrologos (SA, Zhuge)": ["朔夜观星", "观"],
-  "Stygian Nymph (SN)": ["黑希", "S希"], // 彼岸双生
+  "Stygian Nymph (SN)": ["黑希", "希"], // 彼岸双生
   "Swallowtail Phantasm (SP)": ["幻海梦蝶", "A希"],
   "Triumph (VT)": ["凯"],
   "Umbral Rose (UR)": ["黯"],
@@ -289,7 +287,7 @@ const valkToChinese = {
   "Violet Executor/Twilight Paladin (VE/TP)": ["紫"],
   "White Comet (WC)": ["白"],
   "Wolf Dawn (WD)": ["银"],
-  "Yamabuki Armor/Drive Kometa (YA)(DK)": ["山"]
+  "Yamabuki Armor/Drive Kometa (YA)(DK)": ["山"],
 };
 
 const modifiersToChinese = {
@@ -309,12 +307,12 @@ const modifiersToChinese = {
   Myriad: ["无限"],
   Nirvana: ["寂灭"],
   "Sim battle": ["模拟作战室"],
-  "Honkai Impact 3": ["崩坏3"]
+  "Honkai Impact 3": ["崩坏3"],
 };
 
-const modifiers = Object.keys(modifiersToChinese).map(m => ({
+const modifiers = Object.keys(modifiersToChinese).map((m) => ({
   name: m,
-  value: false
+  value: false,
 }));
 
 const scoresByTime = generateScores(45);
@@ -330,7 +328,7 @@ function* combine(arrOfArr: string[][]) {
 }
 
 export default Vue.extend({
-  data: function() {
+  data: function () {
     return {
       selectedBoss: null,
       selectedValks: [],
@@ -338,37 +336,39 @@ export default Vue.extend({
       score: null,
       bosses: Object.keys(bossToChinese),
       valks: Object.keys(valkToChinese),
-      scores: scoresByTime.map(s => s.score),
+      scores: scoresByTime.map((s) => s.score),
       scoresByTime: scoresByTime,
       modifiers: modifiers,
-      lineups: RECENT_LINEUPS
+      lineups: RECENT_LINEUPS,
     };
   },
   components: { BossLineupList },
   computed: {
-    bossNames: function() {
+    bossNames: function () {
       return this.selectedBoss ? bossToChinese[this.selectedBoss] : [""];
     },
     // Some valks have multiple names, make all combos of valk team.
-    valkCombos: function() {
+    valkCombos: function () {
       let combos = [""];
       this.selectedValks
-        .map(v => valkToChinese[v])
-        .forEach(names => {
+        .map((v) => valkToChinese[v])
+        .forEach((names) => {
           combos = combos.reduce((acc, curr) => {
-            names.forEach(n => acc.push(curr + n));
+            names.forEach((n) => acc.push(curr + n));
             return acc;
           }, []);
         });
       return combos;
     },
-    biliLinks: function() {
+    biliLinks: function () {
       const baseUrl = isMobile()
         ? "https://m.bilibili.com/search?keyword="
         : "https://search.bilibili.com/all?keyword=";
 
       // Static modifiers that go at the end.
-      let modifierParams = this.modifiers.filter(m => m.value).map(m => modifiersToChinese[m.name]);
+      let modifierParams = this.modifiers
+        .filter((m) => m.value)
+        .map((m) => modifiersToChinese[m.name]);
       if (this.score) {
         modifierParams.push([this.score]);
       }
@@ -383,16 +383,16 @@ export default Vue.extend({
       // Sort by length and then alphabetical.
       return combinations
         .map((c: string[]) => `${baseUrl}${c.join(" ").trim()}`)
-        .sort(function(a, b) {
+        .sort(function (a, b) {
           return a.length - b.length || a.localeCompare(b);
         });
-    }
+    },
   },
   filters: {
     countdownSeconds: countdownSecondsFilter,
-    lineupFormat: function(bosses: Boss[]) {
+    lineupFormat: function (bosses: Boss[]) {
       return bosses.map((boss, index) => boss.shortName + (index == 0 ? " (up)" : "")).join(", ");
-    }
-  }
+    },
+  },
 });
 </script>
