@@ -21,7 +21,7 @@
           ? Want to open team comps in a new tab? Drag this (
           <!-- Minified with https://jscompress.com/ -->
           <a
-            href="javascript:(function(){'use strict';$('#ct_det tbody').off().on('click','tr',function(){const a=$(this).find('.tgcol0').data('url');a!=null&&window.open(a,'_blank')});const a={'战区:':'Bracket',终极战区:'Exalted',高级战区:'Masters','强敌:':'Bosses','女武神:':'Valkyries','托纳提乌·噬日之影':'Tonatiuh','祸斗':'Huodou',吼姆王:'Homo King',绯狱丸:'Hellmaru',海姆达尔:'Heimdall',湮灭沉灵:'Doom',教父军团:'Padrino Legion',特里波卡:'Mexicatl',贝纳勒斯:'Benares','姬麟·黑':'DXY','MHT-3和平使者':'MHT-3 Pax','MHT-3 和平使者':'MHT-3 Pax',阿湿波:'Assaka',地藏御魂:'Jizo Mitama',赫菲斯托斯:'Hephaestus ',帕凡提:'Parvati',被诅咒的英魂:'Cursed Soul',符华:'Fu Hua',云墨丹心:'Azure Empyrea',雾都迅羽:'Hawk of the Fog',白夜执事:'Night Squire',炽翎:'Phoenix','影骑士·月轮':'Shadow Knight','女武神·迅羽':'Valkyrie Accipiter',八重樱:'Yae',夜隐重霞:'Darkbolt Jonin',真炎幸魂:'Flame Sakitama',逆神巫女:'Gyakushinn Miko','御神装·勿忘':'Goushinnso Memento','希儿·芙乐艾':'Seele',彼岸双生:'Stygian Nymph',幻海梦蝶:'Swallowtail Phantasm',幽兰黛尔:'Durandal','女武神·荣光':'Valkyrie Gloria','辉骑士·月魄':'Bright Knight: Excelsis',德丽莎:'Theresa','暮光骑士·月煌':'Twilight Paladin',月下初拥:'Luna Kindred',神恩颂歌:'Celestial Hymn','处刑装·紫苑':'Violet Executer',樱火轮舞:'Sakura Rondo','女武神·誓约':'Valkyrie Pledge',朔夜观星:'Starlit Astrologos',琪亚娜:'Kiana',天穹游侠:'Void Ranger',空之律者:'Herrscher of the Void',圣女祈祷:'Divine Prayer','女武神·游侠':'Valkyrie Ranger','白骑士·月光':'Knight Moonbeam','领域装·白练':'White Comet',布洛妮娅:'Bronya',理之律者:'Herrscher of Reason',彗星驱动:'Drive Kometa',异度黑核侵蚀:'Black Nucleus',银狼的黎明:'Wolf\'s Dawn',次元边界突破:'Dimension Breaker','女武神·战车':'Valkyrie Chariot','驱动装·山吹':'Yamabuki Armor',雪地狙击:'Snowy Sniper',阿琳姐妹:'Twins',狂热蓝调Δ:'Fervent Tempo Delta',樱桃炸弹:'Molotov Cherry',蓝莓特攻:'Blueberry Blitz',芽衣:'Mei',断罪影舞:'Danzai Spectramancer',雷之律者:'Herrscher of Thunder',破晓强袭:'Striker Fulminata',雷电女王的鬼铠:'Lightning Empress','脉冲装·绯红':'Crimson Impulse','女武神·强袭':'Valkyrie Bladestrike',影舞冲击:'Shadow Dash',丽塔:'Rita','失落迷迭':'Fallen Rosemary','苍骑士·月魂':'Argent Knight: Artemis','猎袭装·影铁':'Phantom Iron',黯蔷薇:'Umbral Rose',姬子:'Himeko','真红骑士·月蚀':'Vermilion Knight: Eclipse',极地战刃:'Arctic Kriegsmesser','融核装·深红':'Scarlet Fusion',战场疾风:'Battle Storm','女武神·凯旋':'Valkyrie Triumph',血色玫瑰:'Blood Rose',卡莲:'Kallen',原罪猎人:'S\xFCndenj\xE4ger',第六夜想曲:'Sixth Serenade','圣仪装·今样':'Imayoh Ritual'},b=function(a,b){b&&a[b.innerText]&&(b.innerHTML=b.innerHTML.replace(b.innerText,a[b.innerText]))},c=function(){$('.table-search span, .table-search .label').each(function(){b(a,this)})};$('#_js_table_s_c_1').on('click','li',c),c()})();"
+            href="javascript:(function(){'use strict';$('#ct_det tbody').off().on('click','tr',function(){const a=$(this).find('.tgcol0').data('url');a!=null&&window.open(a,'_blank')});const a={'战区:':'Bracket',终极战区:'Exalted',高级战区:'Masters','强敌:':'Bosses','女武神:':'Valkyries','托纳提乌·噬日之影':'Tonatiuh','祸斗':'Huodou',吼姆王:'Homo King',绯狱丸:'Hellmaru',海姆达尔:'Heimdall',湮灭沉灵:'Doom',教父军团:'Padrino Legion',特里波卡:'Mexicatl',贝纳勒斯:'Benares','姬麟·黑':'DXY','MHT-3和平使者':'MHT-3 Pax','MHT-3 和平使者':'MHT-3 Pax',阿湿波:'Assaka',地藏御魂:'Jizo Mitama',赫菲斯托斯:'Hephaestus ',帕凡提:'Parvati',被诅咒的英魂:'Cursed Soul',陨冰之律者:'Rimestar',符华:'Fu Hua',云墨丹心:'Azure Empyrea',雾都迅羽:'Hawk of the Fog',白夜执事:'Night Squire',炽翎:'Phoenix','影骑士·月轮':'Shadow Knight','女武神·迅羽':'Valkyrie Accipiter',八重樱:'Yae',夜隐重霞:'Darkbolt Jonin',真炎幸魂:'Flame Sakitama',逆神巫女:'Gyakushinn Miko','御神装·勿忘':'Goushinnso Memento','希儿·芙乐艾':'Seele',彼岸双生:'Stygian Nymph',幻海梦蝶:'Swallowtail Phantasm',幽兰黛尔:'Durandal','女武神·荣光':'Valkyrie Gloria','辉骑士·月魄':'Bright Knight: Excelsis',不灭星锚:'Dea Anchora',德丽莎:'Theresa','暮光骑士·月煌':'Twilight Paladin',月下初拥:'Luna Kindred',神恩颂歌:'Celestial Hymn','处刑装·紫苑':'Violet Executer',樱火轮舞:'Sakura Rondo','女武神·誓约':'Valkyrie Pledge',朔夜观星:'Starlit Astrologos',琪亚娜:'Kiana',天穹游侠:'Void Ranger',空之律者:'Herrscher of the Void',圣女祈祷:'Divine Prayer','女武神·游侠':'Valkyrie Ranger','白骑士·月光':'Knight Moonbeam','领域装·白练':'White Comet',布洛妮娅:'Bronya',理之律者:'Herrscher of Reason',彗星驱动:'Drive Kometa',异度黑核侵蚀:'Black Nucleus',银狼的黎明:'Wolf\'s Dawn',次元边界突破:'Dimension Breaker','女武神·战车':'Valkyrie Chariot','驱动装·山吹':'Yamabuki Armor',雪地狙击:'Snowy Sniper',阿琳姐妹:'Twins',狂热蓝调Δ:'Fervent Tempo Delta',樱桃炸弹:'Molotov Cherry',蓝莓特攻:'Blueberry Blitz',芽衣:'Mei',断罪影舞:'Danzai Spectramancer',雷之律者:'Herrscher of Thunder',破晓强袭:'Striker Fulminata',雷电女王的鬼铠:'Lightning Empress','脉冲装·绯红':'Crimson Impulse','女武神·强袭':'Valkyrie Bladestrike',影舞冲击:'Shadow Dash',丽塔:'Rita','失落迷迭':'Fallen Rosemary','苍骑士·月魂':'Argent Knight: Artemis','猎袭装·影铁':'Phantom Iron',黯蔷薇:'Umbral Rose',姬子:'Himeko','真红骑士·月蚀':'Vermilion Knight: Eclipse',极地战刃:'Arctic Kriegsmesser','融核装·深红':'Scarlet Fusion',战场疾风:'Battle Storm','女武神·凯旋':'Valkyrie Triumph',血色玫瑰:'Blood Rose',卡莲:'Kallen',原罪猎人:'S\xFCndenj\xE4ger',第六夜想曲:'Sixth Serenade','圣仪装·今样':'Imayoh Ritual'},b=function(a,b){b&&a[b.innerText]&&(b.innerHTML=b.innerHTML.replace(b.innerText,a[b.innerText]))},c=function(){$('.table-search span, .table-search .label').each(function(){b(a,this)})};$('#_js_table_s_c_1').on('click','li',c),c()})();"
           >
             Fix 3rd guide
           </a>
@@ -95,6 +95,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2020/12/16 - Add DA (thanks Echidna), update 3rd guide script, nicknames for HoV</li>
           <li>2020/12/16 - Add Rimestar boss, adjust Seele suit names, thanks Echidona</li>
           <li>2020/11/07 - Add FTD to fix 3rd guide script</li>
           <li>2020/11/07 - Add alternate name for FTD</li>
@@ -105,8 +106,8 @@
           <li>2020/09/04 - Add DS valk</li>
           <li>2020/08/30 - Add exalted abyss modifier</li>
           <li>2020/08/30 - Update Fix 3rd guide bookmarklet with Huodou and FR, add FR to valks</li>
-          <li>2020/08/24 - Add Huodou boss</li>
-          <!-- <li>2020/08/19 - Add SS lead skill as modifier, thanks Toast</li>
+          <!-- <li>2020/08/24 - Add Huodou boss</li>
+          <li>2020/08/19 - Add SS lead skill as modifier, thanks Toast</li>
           <li>2020/08/19 - Add SS LE as modifier</li>
           <li>2020/08/19 - Add no Shuijing search modifier, thanks Younggeddes</li>
           <li>2020/08/06 - Add Masters MA to options</li>
@@ -210,7 +211,7 @@ const bossToChinese = {
   Doom: ["沉灵", "湮灭沉灵"],
   "Double Wendy (all the way) (Abyss only)": ["双温蒂"],
   "Emperor (Abyss only)": ["帝王"],
-  "Herrscher of the Void (HoV)": ["空之律者", "女王"],
+  "Herrscher of the Void (God Kiana, GK, HoV)": ["空之律者", "女王"],
   Heimdall: ["海姆达尔", "海胖"],
   Hellmaru: ["狐狸", "绯狱丸"],
   "HOMU King": ["吼姆"],
@@ -223,7 +224,7 @@ const bossToChinese = {
   "Nihilus Husk (clock)": ["虚树神骸"],
   Padrino: ["教父"],
   Parvati: ["冰猪", "帕凡提"],
-  Rimestar: ["冰律"],
+  Rimestar: ["冰律", "陨冰之律者"],
   RPC: ["飞机", "RPC - 6626"],
   "Shadow Knight (SK)": ["月轮"],
   "Son of Darkness (Abyss only)": ["黑夜之子"],
@@ -248,6 +249,7 @@ const valkToChinese = {
   "Danzai Spectramancer (DS)": ["影", "断罪影舞"],
   "Herrscher of Reason (HoR, Tronya)": ["理", "律鸭"],
   "Darkbolt Jonin (DJ)": ["夜隐重霞", "雷八"],
+  "Dea Anchora (DA)": ["不灭星锚", "星", "锚"],
   "Dimension Break (DB)": ["次"],
   "Divine Prayer (DP)": ["圣"],
   "Fallen Rosemary (FR)": ["迭", "失落迷迭"],
