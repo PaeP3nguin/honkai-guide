@@ -5,10 +5,8 @@
         <h1>Future Exalted Abyss lineups</h1>
 
         <p>
-          In recent times, abyss lineups for the non-CN servers have tended to follow CN's schedule,
-          just a month late. Exalted abyss came in 4.2 for CN so I'm tracking their abyss bosses to
-          see if we follow the same trend. Since CN had some hiccups and closed exalted abyss for a
-          week after the first cycle, this is pure speculation right now!
+          In 4.3, abyss lineups for Global/SEA seemed to match CN's schedule for 4.3, just a month
+          later. Schedules weren't synced at the start for a while so no guarantees!
         </p>
 
         <p>The small "CN" date is the date that the CN server had these lineups.</p>

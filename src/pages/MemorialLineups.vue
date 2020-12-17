@@ -6,8 +6,8 @@
 
         <h3>
           <b>
-            Danger danger! Since SEA/Global/KR/JP entered patch 4.1, our bosses have been synced in
-            real-time with CN. These preditions may no longer be useful.
+            Danger danger! SEA/Global/KR/JP tend to desync from CN sometimes, especially shortly
+            after patches. Use predications at your own risk!
           </b>
         </h3>
 
