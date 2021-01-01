@@ -95,6 +95,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2021/01/01 - Happy new year! Add Couatl boss, thanks Charlie</li>
           <li>2020/12/16 - Add DA (thanks Echidna), update 3rd guide script, nicknames for HoV</li>
           <li>2020/12/16 - Add Rimestar boss, adjust Seele suit names, thanks Echidona</li>
           <li>2020/11/07 - Add FTD to fix 3rd guide script</li>
@@ -105,8 +106,8 @@
           <li>2020/09/12 - Add DS to 3rd guide bookmarklet</li>
           <li>2020/09/04 - Add DS valk</li>
           <li>2020/08/30 - Add exalted abyss modifier</li>
-          <li>2020/08/30 - Update Fix 3rd guide bookmarklet with Huodou and FR, add FR to valks</li>
-          <!-- <li>2020/08/24 - Add Huodou boss</li>
+          <!-- <li>2020/08/30 - Update Fix 3rd guide bookmarklet with Huodou and FR, add FR to valks</li>
+          <li>2020/08/24 - Add Huodou boss</li>
           <li>2020/08/19 - Add SS lead skill as modifier, thanks Toast</li>
           <li>2020/08/19 - Add SS LE as modifier</li>
           <li>2020/08/19 - Add no Shuijing search modifier, thanks Younggeddes</li>
@@ -205,6 +206,7 @@ const bossToChinese = {
   "Argent Knight: Artemis (AKA)": ["月魂"],
   Benares: ["贝纳勒斯", "龙"],
   "Bright Knight - Excelsis (BKE)": ["月魄", "幽兰戴尔"],
+  "Couatl: Revenant": ["量子帝王"],
   "Cursed Soul": ["姬子", "被诅咒的英魂"],
   "Dark Jixuanyuan (DXY, DJXY)": ["皮皮马", "马"], // "姬麟·黑"],
   "Death Web + Gigant (Abyss only)": ["蜘蛛泰坦"],
