@@ -50,7 +50,7 @@ const Bosses = Object.freeze({
   Couatl: new Boss({
     name: "Couatl - Revenant",
     shortName: "Couatl",
-    image: "",
+    image: "couatl.png",
     wikiLink: "https://honkaiimpact3.gamepedia.com"
   }),
   CursedSoul: new Boss({

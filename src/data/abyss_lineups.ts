@@ -158,8 +158,50 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.TypeCounter
   }),
   new AbyssLineup({
+    date: new Date("2020-12-31T00:00:00"),
+    cnDate: new Date("2020-12-07T00:00:00"),
+    boss: Bosses.Couatl,
+    weather: EXALTED_WEATHER.Quantum
+  }),
+  new AbyssLineup({
+    date: new Date("2021-01-04T00:00:00"),
+    cnDate: new Date("2020-12-10T00:00:00"),
+    boss: Bosses.BKE,
+    weather: EXALTED_WEATHER.Lightning
+  }),
+  new AbyssLineup({
+    date: new Date("2021-01-07T00:00:00"),
+    cnDate: new Date("2020-12-14T00:00:00"),
+    boss: Bosses.Benares,
+    weather: EXALTED_WEATHER.Ice
+  }),
+  new AbyssLineup({
+    date: new Date("2021-01-11T00:00:00"),
+    cnDate: new Date("2020-12-17T00:00:00"),
+    boss: Bosses.Parvati,
+    weather: EXALTED_WEATHER.Ignite
+  }),
+  new AbyssLineup({
+    date: new Date("2021-01-14T00:00:00"),
+    cnDate: new Date("2020-12-21T00:00:00"),
+    boss: Bosses.Huodou,
+    weather: EXALTED_WEATHER.Ice
+  }),
+  new AbyssLineup({
+    date: new Date("2021-01-18T00:00:00"),
+    cnDate: new Date("2020-12-24T00:00:00"),
+    boss: Bosses.Jizo,
+    weather: EXALTED_WEATHER.Physical
+  }),
+  new AbyssLineup({
     date: new Date("2021-01-21T00:00:00"),
     event: "Patch 4.5 (predicted)"
+  }),
+  new AbyssLineup({
+    date: new Date("2021-01-21T00:00:00"),
+    cnDate: new Date("2020-12-28T00:00:00"),
+    boss: Bosses.Assaka,
+    weather: EXALTED_WEATHER.Physical
   }),
   new AbyssLineup({
     date: new Date("2021-03-04T00:00:00"),

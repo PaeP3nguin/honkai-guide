@@ -32,10 +32,20 @@ const EXALTED_WEATHER = Object.freeze({
     effect: "Enemies takes 50% bonus Fire DMG and 50% less Ice DMG.",
     icon: "fire.png"
   }),
+  Ignite: new Weather({
+    name: "Ignite",
+    effect: "Enemies take 40% bonus damage when ignited and within 4s after the Ignite ends",
+    icon: "ignite.png"
+  }),
   TypeCounter: new Weather({
     name: "Counter",
     effect: "Type countering effects are 20% stronger.",
-    icon: "physical.png"
+    icon: "type_counter.png"
+  }),
+  Quantum: new Weather({
+    name: "Quantum",
+    effect: "Enemies are mostly QUA type.",
+    icon: "quantum.png"
   })
 });
 
