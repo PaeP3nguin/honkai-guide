@@ -229,8 +229,16 @@ const BOSS_LINEUPS = Object.freeze([
     bosses: [Bosses.HoV, Bosses.Hephaestus, Bosses.BKE]
   }),
   new BossLineup({
+    date: new Date("2021-01-18T00:00:00"),
+    bosses: [Bosses.Rimestar, Bosses.Assaka, Bosses.Doom]
+  }),
+  new BossLineup({
     date: new Date("2021-01-21T00:00:00"),
     event: "Patch 4.5 (predicted)"
+  }),
+  new BossLineup({
+    date: new Date("2021-01-25T00:00:00"),
+    bosses: [Bosses.Tonatiuh, Bosses.Jizo, Bosses.BKE]
   }),
   new BossLineup({
     date: new Date("2021-03-04T00:00:00"),
