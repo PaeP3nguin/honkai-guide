@@ -204,6 +204,12 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.Physical
   }),
   new AbyssLineup({
+    date: new Date("2021-01-25T00:00:00"),
+    cnDate: new Date("2020-12-31T00:00:00"),
+    boss: Bosses.Huodou,
+    weather: EXALTED_WEATHER.Ice
+  }),
+  new AbyssLineup({
     date: new Date("2021-03-04T00:00:00"),
     event: "Patch 4.6 (predicted)"
   })
