@@ -236,13 +236,30 @@ const BOSS_LINEUPS = Object.freeze([
     date: new Date("2021-01-21T00:00:00"),
     event: "Patch 4.5 (predicted)"
   }),
+  // Didn't run, skipped a week?
+  // new BossLineup({
+  //   date: new Date("2021-01-25T00:00:00"),
+  //   bosses: [Bosses.Tonatiuh, Bosses.Jizo, Bosses.BKE]
+  // }),
   new BossLineup({
+    cnDate: new Date("2021-01-04T00:00:00"),
     date: new Date("2021-01-25T00:00:00"),
-    bosses: [Bosses.Tonatiuh, Bosses.Jizo, Bosses.BKE]
+    bosses: [Bosses.AKA, Bosses.HoV, Bosses.DXY]
   }),
   new BossLineup({
+    cnDate: new Date("2021-01-11T00:00:00"),
     date: new Date("2021-02-01T00:00:00"),
-    bosses: [Bosses.AKA, Bosses.HoV, Bosses.DXY]
+    bosses: [Bosses.Huodou, Bosses.Parvati, Bosses.Hellmaru]
+  }),
+  new BossLineup({
+    cnDate: new Date("2021-01-18T00:00:00"),
+    date: new Date("2021-02-08T00:00:00"),
+    bosses: [Bosses.AKA, Bosses.DXY, Bosses.Rimestar]
+  }),
+  new BossLineup({
+    cnDate: new Date("2021-01-25T00:00:00"),
+    date: new Date("2021-02-15T00:00:00"),
+    bosses: [Bosses.Tonatiuh, Bosses.HoV, Bosses.Heimdall]
   }),
   new BossLineup({
     date: new Date("2021-03-04T00:00:00"),
