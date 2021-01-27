@@ -200,8 +200,8 @@ const ABYSS_LINEUPS = Object.freeze([
   new AbyssLineup({
     date: new Date("2021-01-21T00:00:00"),
     cnDate: new Date("2020-12-28T00:00:00"),
-    boss: Bosses.Assaka,
-    weather: EXALTED_WEATHER.Physical
+    boss: Bosses.Benares,
+    weather: EXALTED_WEATHER.Ice
   }),
   new AbyssLineup({
     date: new Date("2021-01-25T00:00:00"),
@@ -210,12 +210,43 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.Ice
   }),
   new AbyssLineup({
+    date: new Date("2021-01-28T00:00:00"),
+    cnDate: new Date("2021-01-04T00:00:00"),
+    boss: Bosses.Assaka,
+    weather: EXALTED_WEATHER.Physical
+  }),
+  new AbyssLineup({
+    date: new Date("2021-02-01T00:00:00"),
+    cnDate: new Date("2021-01-07T00:00:00"),
+    boss: Bosses.Couatl,
+    weather: EXALTED_WEATHER.Quantum
+  }),
+  new AbyssLineup({
+    date: new Date("2021-02-04T00:00:00"),
+    cnDate: new Date("2021-01-11T00:00:00"),
+    boss: Bosses.DXY,
+    weather: EXALTED_WEATHER.TypeCounter
+  }),
+  new AbyssLineup({
+    date: new Date("2021-02-08T00:00:00"),
+    cnDate: new Date("2021-01-14T00:00:00"),
+    boss: Bosses.Huodou,
+    weather: EXALTED_WEATHER.Ice
+  }),
+  new AbyssLineup({
+    date: new Date("2021-02-11T00:00:00"),
+    cnDate: new Date("2021-01-18T00:00:00"),
+    boss: Bosses.Rimestar,
+    weather: EXALTED_WEATHER.Fire
+  }),
+  new AbyssLineup({
     date: new Date("2021-03-04T00:00:00"),
     event: "Patch 4.6 (predicted)"
   })
 ]);
 // Lineup sources:
 // https://space.bilibili.com/39263563
+// Source with weathers in video: https://space.bilibili.com/60622135/video
 // https://search.bilibili.com/all?keyword=%E8%B6%85%E5%BC%A6%E7%A9%BA%E9%97%B4&order=pubdate&duration=0&tids_1=0
 
 const today = new Date();
