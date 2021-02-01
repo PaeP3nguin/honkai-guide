@@ -212,7 +212,7 @@ const ABYSS_LINEUPS = Object.freeze([
   new AbyssLineup({
     date: new Date("2021-01-28T00:00:00"),
     cnDate: new Date("2021-01-04T00:00:00"),
-    boss: Bosses.Assaka,
+    boss: Bosses.SahaAssaka,
     weather: EXALTED_WEATHER.Physical
   }),
   new AbyssLineup({

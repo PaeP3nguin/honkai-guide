@@ -29,6 +29,12 @@ const Bosses = Object.freeze({
     image: "assaka.png",
     wikiLink: "https://honkaiimpact3.gamepedia.com/Assaka_(Memorial_Arena)"
   }),
+  SahaAssaka: new Boss({
+    name: "Saha: Assaka",
+    shortName: "Assaka",
+    image: "saha_assaka.png",
+    wikiLink: ""
+  }),
   AKA: new Boss({
     name: "Argent Knight: Artemis",
     shortName: "AKA",
