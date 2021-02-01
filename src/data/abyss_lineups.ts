@@ -240,12 +240,31 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.Fire
   }),
   new AbyssLineup({
+    date: new Date("2021-02-15T00:00:00"),
+    cnDate: new Date("2021-01-21T00:00:00"),
+    boss: Bosses.Jizo,
+    weather: EXALTED_WEATHER.Physical
+  }),
+  new AbyssLineup({
+    date: new Date("2021-02-18T00:00:00"),
+    cnDate: new Date("2021-01-25T00:00:00"),
+    boss: Bosses.DXY,
+    weather: EXALTED_WEATHER.TypeCounter
+  }),
+  new AbyssLineup({
+    date: new Date("2021-02-22T00:00:00"),
+    cnDate: new Date("2021-01-28T00:00:00"),
+    boss: Bosses.Tonatiuh,
+    weather: EXALTED_WEATHER.Lightning
+  }),
+  new AbyssLineup({
     date: new Date("2021-03-04T00:00:00"),
     event: "Patch 4.6 (predicted)"
   })
 ]);
 // Lineup sources:
 // https://space.bilibili.com/39263563
+// Source with weathers in video: https://space.bilibili.com/23175073/video
 // Source with weathers in video: https://space.bilibili.com/60622135/video
 // https://search.bilibili.com/all?keyword=%E8%B6%85%E5%BC%A6%E7%A9%BA%E9%97%B4&order=pubdate&duration=0&tids_1=0
 
