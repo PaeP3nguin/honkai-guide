@@ -249,7 +249,9 @@ const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     cnDate: new Date("2021-01-11T00:00:00"),
     date: new Date("2021-02-01T00:00:00"),
-    bosses: [Bosses.Huodou, Bosses.Parvati, Bosses.Hellmaru]
+    // Whelp, we off again...
+    // bosses: [Bosses.Huodou, Bosses.Parvati, Bosses.Hellmaru]
+    bosses: [Bosses.Huodou, Bosses.Jizo, Bosses.Kallen]
   }),
   new BossLineup({
     cnDate: new Date("2021-01-18T00:00:00"),
