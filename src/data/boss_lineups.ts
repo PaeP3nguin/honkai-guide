@@ -253,16 +253,16 @@ const BOSS_LINEUPS = Object.freeze([
     // bosses: [Bosses.Huodou, Bosses.Parvati, Bosses.Hellmaru]
     bosses: [Bosses.Huodou, Bosses.Jizo, Bosses.Kallen]
   }),
-  new BossLineup({
-    cnDate: new Date("2021-01-18T00:00:00"),
-    date: new Date("2021-02-08T00:00:00"),
-    bosses: [Bosses.AKA, Bosses.DXY, Bosses.Rimestar]
-  }),
-  new BossLineup({
-    cnDate: new Date("2021-01-25T00:00:00"),
-    date: new Date("2021-02-15T00:00:00"),
-    bosses: [Bosses.Tonatiuh, Bosses.HoV, Bosses.Heimdall]
-  }),
+  // new BossLineup({
+  //   cnDate: new Date("2021-01-18T00:00:00"),
+  //   date: new Date("2021-02-08T00:00:00"),
+  //   bosses: [Bosses.AKA, Bosses.DXY, Bosses.Rimestar]
+  // }),
+  // new BossLineup({
+  //   cnDate: new Date("2021-01-25T00:00:00"),
+  //   date: new Date("2021-02-15T00:00:00"),
+  //   bosses: [Bosses.Tonatiuh, Bosses.HoV, Bosses.Heimdall]
+  // }),
   new BossLineup({
     date: new Date("2021-03-04T00:00:00"),
     event: "Patch 4.6 (predicted)"
