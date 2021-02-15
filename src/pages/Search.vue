@@ -95,6 +95,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2021/02/15 - Add HoS, thanks Idol Party discord!</li>
           <li>2021/01/01 - Happy new year! Add Couatl boss, thanks Charlie</li>
           <li>2020/12/16 - Add DA (thanks Echidna), update 3rd guide script, nicknames for HoV</li>
           <li>2020/12/16 - Add Rimestar boss, adjust Seele suit names, thanks Echidona</li>
@@ -105,8 +106,8 @@
           <li>2020/09/15 - Add Nirvana to modifiers</li>
           <li>2020/09/12 - Add DS to 3rd guide bookmarklet</li>
           <li>2020/09/04 - Add DS valk</li>
-          <li>2020/08/30 - Add exalted abyss modifier</li>
-          <!-- <li>2020/08/30 - Update Fix 3rd guide bookmarklet with Huodou and FR, add FR to valks</li>
+          <!-- <li>2020/08/30 - Add exalted abyss modifier</li>
+          <li>2020/08/30 - Update Fix 3rd guide bookmarklet with Huodou and FR, add FR to valks</li>
           <li>2020/08/24 - Add Huodou boss</li>
           <li>2020/08/19 - Add SS lead skill as modifier, thanks Toast</li>
           <li>2020/08/19 - Add SS LE as modifier</li>
@@ -259,6 +260,7 @@ const valkToChinese = {
   "Flame Sakitama (FS)": ["炎"],
   "Hawk of the Fog (HF)": ["迅", "迅雷", "雾都迅羽"],
   "Herrscher of the Void (God Kiana, GK, HoV)": ["律"],
+  "Herrscher of Sentience (HoS)": ["识之侓者", "识侓", "识"],
   "Herrscher of Thunder (HoT, HT)": ["雷之律者", "雷律", "雷"],
   "Imayoh (IR)": ["今"],
   "Knight Moonbeam (KMB)": ["月"],
