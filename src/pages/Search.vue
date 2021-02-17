@@ -95,6 +95,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2021/02/16 - Add Blazing Hope valk</li>
           <li>2021/02/15 - Add HoS, thanks Idol Party discord!</li>
           <li>2021/01/01 - Happy new year! Add Couatl boss, thanks Charlie</li>
           <li>2020/12/16 - Add DA (thanks Echidna), update 3rd guide script, nicknames for HoV</li>
@@ -105,8 +106,8 @@
           <li>2020/09/16 - Add Nihilus Husk boss</li>
           <li>2020/09/15 - Add Nirvana to modifiers</li>
           <li>2020/09/12 - Add DS to 3rd guide bookmarklet</li>
-          <li>2020/09/04 - Add DS valk</li>
-          <!-- <li>2020/08/30 - Add exalted abyss modifier</li>
+          <!-- <li>2020/09/04 - Add DS valk</li>
+          <li>2020/08/30 - Add exalted abyss modifier</li>
           <li>2020/08/30 - Update Fix 3rd guide bookmarklet with Huodou and FR, add FR to valks</li>
           <li>2020/08/24 - Add Huodou boss</li>
           <li>2020/08/19 - Add SS lead skill as modifier, thanks Toast</li>
@@ -244,6 +245,7 @@ const valkToChinese = {
   "Black Nucleus (BN)": ["黑"],
   "Battlestorm (BS)": ["疾"],
   "Bladestrike (VB)": ["强"],
+  "Blazing Hope (BH, Asuka)": ["明日香"],
   "Blood Rose (BR)": ["玫"],
   "Bright Knight: Excelsis (BKE)": ["月魄", "辉骑士月"],
   "Celestial Hymn (CH)": ["神"],
