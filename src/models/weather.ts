@@ -46,6 +46,11 @@ const EXALTED_WEATHER = Object.freeze({
     name: "Quantum",
     effect: "Enemies are mostly QUA type.",
     icon: "quantum.png"
+  }),
+  Bloodlust: new Weather({
+    name: "Bloodlust",
+    effect: "Gain 20% TDM for 15s after killing an enemy, stacks up to 8 times.",
+    icon: "bloodlust.png"
   })
 });
 
