@@ -265,7 +265,31 @@ const BOSS_LINEUPS = Object.freeze([
   // }),
   new BossLineup({
     date: new Date("2021-03-04T00:00:00"),
-    event: "Patch 4.6 (predicted)"
+    event: "Patch 4.6"
+  }),
+  new BossLineup({
+    date: new Date("2021-03-08T00:00:00"),
+    bosses: [Bosses.Parvati, Bosses.HOMU, Bosses.Assaka]
+  }),
+  new BossLineup({
+    date: new Date("2021-03-15T00:00:00"),
+    bosses: [Bosses.Doom, Bosses.Tonatiuh, Bosses.SK]
+  }),
+  new BossLineup({
+    date: new Date("2021-03-22T00:00:00"),
+    bosses: [Bosses.Couatl, Bosses.HOMU, Bosses.Benares]
+  }),
+  new BossLineup({
+    date: new Date("2021-03-29T00:00:00"),
+    bosses: [Bosses.Parvati, Bosses.Huodou, Bosses.Heimdall]
+  }),
+  new BossLineup({
+    date: new Date("2021-04-05T00:00:00"),
+    bosses: [Bosses.Couatl, Bosses.Benares, Bosses.Rimestar]
+  }),
+  new BossLineup({
+    date: new Date("2021-04-22T00:00:00"),
+    event: "Patch 4.7 (predicted)"
   })
 ]);
 // Lineup sources:
