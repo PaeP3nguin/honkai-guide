@@ -288,8 +288,24 @@ const BOSS_LINEUPS = Object.freeze([
     bosses: [Bosses.Couatl, Bosses.Benares, Bosses.Rimestar]
   }),
   new BossLineup({
+    date: new Date("2021-04-12T00:00:00"),
+    bosses: [Bosses.Parvati, Bosses.SK, Bosses.Tonatiuh]
+  }),
+  new BossLineup({
+    date: new Date("2021-04-19T00:00:00"),
+    bosses: [Bosses.Doom, Bosses.Rimestar, Bosses.Assaka]
+  }),
+  new BossLineup({
     date: new Date("2021-04-22T00:00:00"),
     event: "Patch 4.7 (predicted)"
+  }),
+  new BossLineup({
+    date: new Date("2021-04-26T00:00:00"),
+    bosses: [Bosses.Jizo, Bosses.Kallen, Bosses.Parvati]
+  }),
+  new BossLineup({
+    date: new Date("2021-05-03T00:00:00"),
+    bosses: [Bosses.Huodou, Bosses.Parvati, Bosses.Doom]
   })
 ]);
 // Lineup sources:
