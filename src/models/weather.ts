@@ -51,6 +51,11 @@ const EXALTED_WEATHER = Object.freeze({
     name: "Bloodlust",
     effect: "Gain 20% TDM for 15s after killing an enemy, stacks up to 8 times.",
     icon: "bloodlust.png"
+  }),
+  Ranged: new Weather({
+    name: "Ranged",
+    effect: "Enemies take 50% more ranged damage and 50% less melee damage.",
+    icon: "ignite.png"
   })
 });
 

@@ -317,8 +317,42 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.Ice
   }),
   new AbyssLineup({
+    date: new Date("2021-04-15T00:00:00"),
+    boss: Bosses.SK,
+    weather: EXALTED_WEATHER.TypeCounter
+  }),
+  new AbyssLineup({
+    date: new Date("2021-04-19T00:00:00"),
+    boss: Bosses.Nihilus,
+    weather: EXALTED_WEATHER.Lightning
+  }),
+  new AbyssLineup({
     date: new Date("2021-04-22T00:00:00"),
     event: "Patch 4.7 (predicted)"
+  }),
+  new AbyssLineup({
+    date: new Date("2021-04-22T00:00:00"),
+    boss: Bosses.Huodou,
+    weather: EXALTED_WEATHER.Ice
+  }),
+  new AbyssLineup({
+    date: new Date("2021-04-26T00:00:00"),
+    boss: Bosses.Benares,
+    weather: EXALTED_WEATHER.Ice
+  }),
+  new AbyssLineup({
+    date: new Date("2021-04-29T00:00:00"),
+    boss: Bosses.SahaAssaka,
+    weather: EXALTED_WEATHER.Ranged
+  }),
+  new AbyssLineup({
+    date: new Date("2021-05-03T00:00:00"),
+    boss: Bosses.Rimestar,
+    weather: EXALTED_WEATHER.Fire
+  }),
+  new AbyssLineup({
+    date: new Date("2021-05-27T00:00:00"),
+    event: "Patch 4.8 (predicted)"
   })
 ]);
 // Lineup sources:
