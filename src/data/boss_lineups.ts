@@ -312,6 +312,10 @@ const BOSS_LINEUPS = Object.freeze([
     bosses: [Bosses.Rimestar, Bosses.Assaka, Bosses.Benares]
   }),
   new BossLineup({
+    date: new Date("2021-05-17T00:00:00"),
+    bosses: [Bosses.Jizo, Bosses.Doom, Bosses.Kallen]
+  }),
+  new BossLineup({
     date: new Date("2021-05-27T00:00:00"),
     event: "Patch 4.8 (predicted)"
   })
