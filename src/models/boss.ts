@@ -51,7 +51,7 @@ const Bosses = Object.freeze({
     name: "Bright Knight - Excelsis",
     shortName: "BKE",
     image: "bke.png",
-    wikiLink: "https://honkaiimpact3.gamepedia.com"
+    wikiLink: "https://honkaiimpact3.fandom.com/wiki/Bright_Knight_-_Excelsis_(Memorial_Arena)"
   }),
   Couatl: new Boss({
     name: "Couatl - Revenant",
@@ -76,6 +76,12 @@ const Bosses = Object.freeze({
     shortName: "Doom",
     image: "doom.png",
     wikiLink: "https://honkaiimpact3.gamepedia.com/Deathly_Doom_(Memorial_Arena)"
+  }),
+  HoS: new Boss({
+    name: "Herrscher of Sentience",
+    shortName: "HoS",
+    image: "hos.png",
+    wikiLink: "https://honkaiimpact3.gamepedia.com"
   }),
   HoV: new Boss({
     name: "Herrscher of the Void",

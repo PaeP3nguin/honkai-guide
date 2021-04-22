@@ -10,7 +10,7 @@ class Weather {
   }
 }
 
-// QTEndless
+// QT
 const EXALTED_WEATHER = Object.freeze({
   Lightning: new Weather({
     name: "Lightning",
@@ -35,7 +35,7 @@ const EXALTED_WEATHER = Object.freeze({
   Ignite: new Weather({
     name: "Ignite",
     effect: "Enemies take 40% bonus damage when ignited and within 4s after the Ignite ends",
-    icon: "ignite.png"
+    icon: "endless_burn.png"
   }),
   TypeCounter: new Weather({
     name: "Counter",
