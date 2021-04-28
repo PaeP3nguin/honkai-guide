@@ -371,14 +371,29 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.TypeCounter
   }),
   new AbyssLineup({
+    date: new Date("2021-05-20T00:00:00"),
+    boss: Bosses.Parvati,
+    weather: EXALTED_WEATHER.Ignite
+  }),
+  new AbyssLineup({
+    date: new Date("2021-05-24T00:00:00"),
+    boss: Bosses.DXY,
+    weather: EXALTED_WEATHER.TypeCounter
+  }),
+  new AbyssLineup({
     date: new Date("2021-05-27T00:00:00"),
     event: "Patch 4.8 (predicted)"
   })
 ]);
 // Lineup sources:
 // https://space.bilibili.com/39263563
-// Source with weathers in video: https://space.bilibili.com/23175073/video
-// Source with weathers in video: https://space.bilibili.com/60622135/video
+//
+// Source with weathers in video:
+// https://space.bilibili.com/23175073/video
+// https://space.bilibili.com/60622135/video (stopped posting in march)
+// https://space.bilibili.com/189912239/video (just started)
+//
+// Search for all ex abyss vids, sorted by recency:
 // https://search.bilibili.com/all?keyword=%E8%B6%85%E5%BC%A6%E7%A9%BA%E9%97%B4&order=pubdate&duration=0&tids_1=0
 
 const today = new Date();
