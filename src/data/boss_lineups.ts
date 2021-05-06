@@ -322,7 +322,11 @@ const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2021-05-27T00:00:00"),
     event: "Patch 4.8 (predicted)"
-  })
+  }),
+  new BossLineup({
+    date: new Date("2021-05-31T00:00:00"),
+    bosses: [Bosses.Hellmaru, Bosses.Huodou, Bosses.BKE]
+  }),
 ]);
 // Lineup sources:
 // https://bbs.mihoyo.com/bh3/topicDetail/20
