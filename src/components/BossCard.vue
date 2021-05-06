@@ -29,7 +29,7 @@
   box-sizing: content-box;
 }
 .boss-card__background {
-  height: 100%;
+  height: 100px;
   box-sizing: content-box;
   background-position: center center;
   background-repeat: no-repeat;
