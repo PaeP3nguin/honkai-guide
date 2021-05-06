@@ -395,10 +395,8 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.Ice
   })
 ]);
-// Lineup sources:
-// https://space.bilibili.com/39263563
-//
-// Source with weathers in video:
+// Lineup sources with weathers in video:
+// https://space.bilibili.com/70973141
 // https://space.bilibili.com/23175073/video (stopped posting in April 21)
 // https://space.bilibili.com/60622135/video (stopped posting in March 21)
 // https://space.bilibili.com/189912239/video (just started)
