@@ -383,14 +383,24 @@ const ABYSS_LINEUPS = Object.freeze([
   new AbyssLineup({
     date: new Date("2021-05-27T00:00:00"),
     event: "Patch 4.8 (predicted)"
+  }),
+  new AbyssLineup({
+    date: new Date("2021-05-27T00:00:01"),
+    boss: Bosses.Couatl,
+    weather: EXALTED_WEATHER.Quantum
+  }),
+  new AbyssLineup({
+    date: new Date("2021-05-31T00:00:01"),
+    boss: Bosses.Benares,
+    weather: EXALTED_WEATHER.Ice
   })
 ]);
 // Lineup sources:
 // https://space.bilibili.com/39263563
 //
 // Source with weathers in video:
-// https://space.bilibili.com/23175073/video
-// https://space.bilibili.com/60622135/video (stopped posting in march)
+// https://space.bilibili.com/23175073/video (stopped posting in April 21)
+// https://space.bilibili.com/60622135/video (stopped posting in March 21)
 // https://space.bilibili.com/189912239/video (just started)
 //
 // Search for all ex abyss vids, sorted by recency:
