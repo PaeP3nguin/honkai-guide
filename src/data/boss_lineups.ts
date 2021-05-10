@@ -309,7 +309,7 @@ const BOSS_LINEUPS = Object.freeze([
   }),
   new BossLineup({
     date: new Date("2021-05-10T00:00:00"),
-    bosses: [Bosses.Rimestar, Bosses.Assaka, Bosses.Benares]
+    bosses: [Bosses.Rimestar, Bosses.Assaka, Bosses.BKE]
   }),
   new BossLineup({
     date: new Date("2021-05-17T00:00:00"),
