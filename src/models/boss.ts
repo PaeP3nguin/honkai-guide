@@ -125,6 +125,12 @@ const Bosses = Object.freeze({
     image: "kallen.png",
     wikiLink: "https://honkaiimpact3.gamepedia.com/Kallen_(Memorial_Arena)"
   }),
+  Kasumi: new Boss({
+    name: "Kasumi",
+    shortName: "Kasumi",
+    image: "kasumi.png",
+    wikiLink: "https://honkaiimpact3.gamepedia.com/"
+  }),
   Mexicatl: new Boss({
     name: "Mexicatl: Umbreist",
     shortName: "Mexicatl",
