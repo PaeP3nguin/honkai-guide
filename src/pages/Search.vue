@@ -95,7 +95,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
-          <li>2021/05/13 - Add Kasumi boss and Starchasm Nyx valk</li>
+          <li>2021/05/13 - Add Kasumi boss and Starchasm Nyx valk, udpate fix 3rdguide script</li>
           <li>2021/04/24 - Add Haxxor Bunny valk, HoS boss, update fix 3rdguide script</li>
           <li>2021/02/16 - Add Blazing Hope valk, update fix 3rdguide script</li>
           <li>2021/02/15 - Add HoS, thanks Idol Party discord!</li>
