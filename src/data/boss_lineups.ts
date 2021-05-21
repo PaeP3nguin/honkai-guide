@@ -330,6 +330,10 @@ const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2021-06-07T00:00:00"),
     bosses: [Bosses.Kasumi, Bosses.DXY, Bosses.Huodou]
+  }),
+  new BossLineup({
+    date: new Date("2021-06-14T00:00:00"),
+    bosses: [Bosses.Couatl, Bosses.SK, Bosses.Kallen]
   })
 ]);
 // Lineup sources:
