@@ -403,9 +403,20 @@ const ABYSS_LINEUPS = Object.freeze([
     date: new Date("2021-06-07T00:00:01"),
     boss: Bosses.Couatl,
     weather: EXALTED_WEATHER.Quantum
+  }),
+  new AbyssLineup({
+    date: new Date("2021-06-10T00:00:01"),
+    boss: Bosses.DXY,
+    weather: EXALTED_WEATHER.TypeCounter
+  }),
+  new AbyssLineup({
+    date: new Date("2021-06-13T00:00:01"),
+    boss: Bosses.Rimestar,
+    weather: EXALTED_WEATHER.Fire
   })
 ]);
 // Lineup sources with weathers in video:
+// https://space.bilibili.com/60622135/video
 // https://space.bilibili.com/70973141
 // https://space.bilibili.com/23175073/video (stopped posting in April 21)
 // https://space.bilibili.com/60622135/video (stopped posting in March 21)
