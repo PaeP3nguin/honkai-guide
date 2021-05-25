@@ -413,6 +413,16 @@ const ABYSS_LINEUPS = Object.freeze([
     date: new Date("2021-06-13T00:00:01"),
     boss: Bosses.Rimestar,
     weather: EXALTED_WEATHER.Fire
+  }),
+  new AbyssLineup({
+    date: new Date("2021-06-17T00:00:01"),
+    boss: Bosses.BKE,
+    weather: EXALTED_WEATHER.Lightning
+  }),
+  new AbyssLineup({
+    date: new Date("2021-06-20T00:00:01"),
+    boss: Bosses.Couatl,
+    weather: EXALTED_WEATHER.Quantum
   })
 ]);
 // Lineup sources with weathers in video:
