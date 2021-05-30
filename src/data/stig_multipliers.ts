@@ -731,6 +731,16 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  "Fu Hua: Pride": {
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Fu Hua Pride B: Gain melee physical DMG.",
+        type: Type.PhysDealt,
+        value: 30
+      })
+    ]
+  },
   Fuxi: {
     T: [
       new Multiplier({
