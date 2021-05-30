@@ -340,6 +340,47 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  "Avogadro": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Avogadro T: total DMG boost.",
+        type: Type.TdmDealt,
+        value: 20
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Avogadro M: team gains total DMG boost after host casts weapon active.",
+        type: Type.TdmDealt,
+        value: 10
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name:
+          "Avogadro B: host weapon active gains physical DMG boost after its activation.",
+        type: Type.PhysDealt,
+        value: 65
+      })
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Avogadro 3 set: host gains TDM boost.",
+        type: Type.TdmDealt,
+        value: 15
+      }),
+      new Multiplier({
+        active: true,
+        name: "Avogadro 3 set: host deals more TDM against marked enemies.",
+        type: Type.TdmDealt,
+        value: 15
+      })
+    ]
+  },
   "Benares: Awakening": {
     T: [
       new Multiplier({
