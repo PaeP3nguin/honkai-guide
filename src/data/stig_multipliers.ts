@@ -294,17 +294,17 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
   "Turgenev": {
     T: [
       new Multiplier({
-        active: false,
-        name: "Turgenev T: team summoned entities gain total DMG against Hunter Marked enemies.",
+        active: true,
+        name: "Turgenev T: team gains total DMG against Hunter Marked enemies.",
         type: Type.TdmDealt,
         value: 18
       })
     ],
     B: [
       new Multiplier({
-        active: false,
-        name: "Turgenev B: team summoned entities gain total DMG against Hunter Marked enemies.",
-        type: Type.TdmDealt,
+        active: true,
+        name: "Turgenev B: team gains all elemental DMG against Hunter Marked enemies.",
+        type: Type.EleDealt,
         value: 36
       })
     ],
