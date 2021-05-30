@@ -280,6 +280,40 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
         value: 24
       })
     ]
+  },
+  "Turgenev": {
+    T: [
+      new Multiplier({
+        active: false,
+        name: "Turgenev T: team summoned entities gain total DMG against Hunter Marked enemies.",
+        type: Type.TdmDealt,
+        value: 18
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: false,
+        name: "Turgenev B: team summoned entities gain total DMG against Hunter Marked enemies.",
+        type: Type.TdmDealt,
+        value: 36
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Turgenev 2 set: team gains all elemental DMG against Hunter Marked enemies.",
+        type: Type.EleTaken,
+        value: 21
+      })
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Turgenev 3 set: team gains ice elemental DMG against Hunter Marked enemies.",
+        type: Type.EleDealt,
+        value: 25
+      })
+    ]
   }
 });
 
