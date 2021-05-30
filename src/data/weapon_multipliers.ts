@@ -464,6 +464,20 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
     ]
   },
   Lances: {
+    "Abyss Flower": [
+      new Multiplier({
+        active: true,
+        name: "Abyss Flower: Passive: Crit rate boost.",
+        type: Type.CritRate,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name: "Abyss Flower: Passive: During burst, physical DMG is increased for 15s.",
+        type: Type.PhysDealt,
+        value: 35
+      })
+    ],
     "Hler's Serenity": [
       new Multiplier({
         active: true,
