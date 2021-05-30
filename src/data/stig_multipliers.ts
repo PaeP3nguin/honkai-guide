@@ -530,6 +530,110 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  Children: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Children T: host deals bonus physical DMG.",
+        type: Type.PhysDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name: "Children T: after landing a charged ATK, deal bonus Crit DMG for 4 sec (can stack).",
+        type: Type.CritDmg,
+        value: 30
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Children M: total DMG boost.",
+        type: Type.TdmDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name: "Children M: bonus crit DMG against single enemies.",
+        type: Type.CritDmg,
+        value: 20
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Children B: bonus crit rate.",
+        type: Type.CritRate,
+        value: 15
+      }),
+      new Multiplier({
+        active: true,
+        name: "Children B: attacks against same target gain phys DMG (15% max).",
+        type: Type.PhysDealt,
+        value: 15
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Children 2 set: when Charged ATKs hit single enemies, gain total DMG for 6 sec.",
+        type: Type.TdmDealt,
+        value: 45
+      })
+    ]
+  },
+  Columbus: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Columbus T: host deals bonus physical DMG.",
+        type: Type.PhysDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name: "Columbus T: after landing a charged ATK, deal bonus Crit DMG for 4 sec (can stack).",
+        type: Type.CritDmg,
+        value: 30
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Columbus M: total DMG boost.",
+        type: Type.TdmDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name: "Columbus M: bonus crit DMG against single enemies.",
+        type: Type.CritDmg,
+        value: 20
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Columbus B: bonus crit rate.",
+        type: Type.CritRate,
+        value: 15
+      }),
+      new Multiplier({
+        active: true,
+        name: "Columbus B: attacks against same target gain phys DMG (15% max).",
+        type: Type.PhysDealt,
+        value: 15
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Columbus 2 set: when Charged ATKs hit single enemies, gain total DMG for 6 sec.",
+        type: Type.TdmDealt,
+        value: 45
+      })
+    ]
+  },
   Dante: {
     T: [
       new Multiplier({
