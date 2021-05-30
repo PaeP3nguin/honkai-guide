@@ -512,6 +512,26 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         type: Type.CritDmg,
         value: 20
       })
+    ],
+    "Lance of Longinus": [
+      new Multiplier({
+        active: false,
+        name: "Asuka Equip Bonus: Passive: Charged ATK, \"Mind, Matching, Moment\", and Ultimate finisher deal bonus total DMG.",
+        type: Type.TdmDealt,
+        value: 15
+      }),
+      new Multiplier({
+        active: false,
+        name: "Asuka Equip Bonus: Passive: Charged ATK, \"Mind, Matching, Moment\", and Ultimate finisher gain crit rate.",
+        type: Type.CritRate,
+        value: 15
+      }),
+      new Multiplier({
+        active: true,
+        name: "Lance of Longinus: Passive: bonus physical DMG.",
+        type: Type.PhysDealt,
+        value: 30
+      })
     ]
   }
 });
