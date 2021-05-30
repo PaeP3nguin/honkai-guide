@@ -340,7 +340,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
-  "Avogadro": {
+  Avogadro: {
     T: [
       new Multiplier({
         active: true,
@@ -548,6 +548,52 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "DXY 2 set: When time fracture is active, gain physical DMG.",
         type: Type.PhysDealt,
         value: 40
+      })
+    ]
+  },
+  Dickens: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Dickens T",
+        type: Type.PhysDealt,
+        value: 30
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Dickens M",
+        type: Type.PhysDealt,
+        value: 30
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Dickens B",
+        type: Type.TdmDealt,
+        value: 25
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Dickens 2 set: basic, combo, charged atks deal bonus physical DMG.",
+        type: Type.PhysDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: false,
+        name: "Dickens 2 set: basic, combo, charged atks deal bonus physical DMG against MECH enemies.",
+        type: Type.PhysDealt,
+        value: 15
+      }),
+      new Multiplier({
+        active: true,
+        name: "Dickens 2 set: casting Ultimate boosts basic, combo, charged atks total DMG.",
+        type: Type.TdmDealt,
+        value: 20
       })
     ]
   },
