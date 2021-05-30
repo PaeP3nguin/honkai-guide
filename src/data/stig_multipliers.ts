@@ -340,6 +340,33 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  Attila: {
+    B: [
+      new Multiplier({
+        active: true,
+        name:
+          "Attila B: when Combo Hit Count exceeds 30, gain physical DMG.",
+        type: Type.PhysDealt,
+        value: 31
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Attila 2 set: gain Crit DMG.",
+        type: Type.CritDmg,
+        value: 30
+      })
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Attila 3 set: gain 40% CRT.",
+        type: Type.Crt,
+        value: 40
+      })
+    ]
+  },
   Avogadro: {
     T: [
       new Multiplier({
