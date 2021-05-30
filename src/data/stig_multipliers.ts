@@ -1,6 +1,16 @@
 import { Type, Multiplier } from "@/models/multiplier";
 
 const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
+  Avogadro: {
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Avogadro M: team gains total DMG boost after host casts weapon active.",
+        type: Type.TdmDealt,
+        value: 10
+      })
+    ]
+  },
   Beethoven: {
     M: [
       new Multiplier({
