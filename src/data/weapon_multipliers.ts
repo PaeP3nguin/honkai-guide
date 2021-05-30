@@ -28,6 +28,20 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
     ]
   },
   Cannons: {
+    "Crusher Bunny 19C": [
+      new Multiplier({
+        active: true,
+        name: "Crusher Bunny: Active: team ice DMG boost for 15 sec.",
+        type: Type.EleDealt,
+        value: 27
+      }),
+      new Multiplier({
+        active: true,
+        name: "Crusher Bunny: Passive: team all elemental DMG boost.",
+        type: Type.EleDealt,
+        value: 12
+      })
+    ],
     "Star Shatterer - Vikrant": [
       new Multiplier({
         active: true,
