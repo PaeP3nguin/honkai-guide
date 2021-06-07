@@ -295,7 +295,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
     T: [
       new Multiplier({
         active: true,
-        name: "Turgenev T: team gains total DMG against Hunter Marked enemies.",
+        name: "Turgenev T: team gains total DMG when Hunter Marked enemies exist.",
         type: Type.TdmDealt,
         value: 18
       })
@@ -303,7 +303,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
     B: [
       new Multiplier({
         active: true,
-        name: "Turgenev B: team gains all elemental DMG against Hunter Marked enemies.",
+        name: "Turgenev B: team gains elemental DMG against Hunter Marked enemies.",
         type: Type.EleDealt,
         value: 36
       })
@@ -311,15 +311,15 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
     "2 set": [
       new Multiplier({
         active: true,
-        name: "Turgenev 2 set: team gains all elemental DMG against Hunter Marked enemies.",
+        name: "Turgenev 2 set: team gains elemental DMG against Hunter Marked enemies.",
         type: Type.EleTaken,
         value: 21
       })
     ],
     "3 set": [
       new Multiplier({
-        active: true,
-        name: "Turgenev 3 set: team gains ice elemental DMG against Hunter Marked enemies.",
+        active: false,
+        name: "Turgenev 3 set: team gains ice DMG against Hunter Marked enemies.",
         type: Type.EleDealt,
         value: 25
       })
@@ -388,8 +388,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     B: [
       new Multiplier({
         active: true,
-        name:
-          "Attila B: when Combo Hit Count exceeds 30, gain physical DMG.",
+        name: "Attila B: when combo count exceeds 30, gain physical DMG.",
         type: Type.PhysDealt,
         value: 31
       })
@@ -397,7 +396,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     "2 set": [
       new Multiplier({
         active: true,
-        name: "Attila 2 set: gain Crit DMG.",
+        name: "Attila 2 set",
         type: Type.CritDmg,
         value: 30
       })
@@ -405,7 +404,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     "3 set": [
       new Multiplier({
         active: true,
-        name: "Attila 3 set: gain 40% CRT.",
+        name: "Attila 3 set",
         type: Type.Crt,
         value: 40
       })
@@ -415,7 +414,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     T: [
       new Multiplier({
         active: true,
-        name: "Avogadro T: total DMG boost.",
+        name: "Avogadro T",
         type: Type.TdmDealt,
         value: 20
       })
@@ -432,7 +431,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       new Multiplier({
         active: true,
         name:
-          "Avogadro B: host weapon active gains physical DMG boost after its activation.",
+          "Avogadro B: host weapon active gains physical DMG boost for 5s after its activation.",
         type: Type.PhysDealt,
         value: 65
       })
@@ -440,7 +439,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     "3 set": [
       new Multiplier({
         active: true,
-        name: "Avogadro 3 set: host gains TDM boost.",
+        name: "Avogadro 3 set",
         type: Type.TdmDealt,
         value: 15
       }),
@@ -512,6 +511,58 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       })
     ]
   },
+  "Children/Columbus": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Children T",
+        type: Type.PhysDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name: "Children T: bonus crit DMG for 4s after landing a charged (can stack).",
+        type: Type.CritDmg,
+        value: 30
+      })
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Children M",
+        type: Type.TdmDealt,
+        value: 20
+      }),
+      new Multiplier({
+        active: true,
+        name: "Children M: bonus against single enemies.",
+        type: Type.CritDmg,
+        value: 20
+      })
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Children B",
+        type: Type.CritRate,
+        value: 15
+      }),
+      new Multiplier({
+        active: true,
+        name: "Children B: attacks against same target gain physical DMG (15% max).",
+        type: Type.PhysDealt,
+        value: 15
+      })
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Children 2 set: gain totl DMG for 6s when Charged ATK hits single enemies.",
+        type: Type.TdmDealt,
+        value: 45
+      })
+    ]
+  },
   Cleopatra: {
     M: [
       new Multiplier({
@@ -527,110 +578,6 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Cleo B: Attacks against paralyzed enemies.",
         type: Type.TdmDealt,
         value: 82
-      })
-    ]
-  },
-  Children: {
-    T: [
-      new Multiplier({
-        active: true,
-        name: "Children T: host deals bonus physical DMG.",
-        type: Type.PhysDealt,
-        value: 20
-      }),
-      new Multiplier({
-        active: true,
-        name: "Children T: after landing a charged ATK, deal bonus Crit DMG for 4 sec (can stack).",
-        type: Type.CritDmg,
-        value: 30
-      })
-    ],
-    M: [
-      new Multiplier({
-        active: true,
-        name: "Children M: total DMG boost.",
-        type: Type.TdmDealt,
-        value: 20
-      }),
-      new Multiplier({
-        active: true,
-        name: "Children M: bonus crit DMG against single enemies.",
-        type: Type.CritDmg,
-        value: 20
-      })
-    ],
-    B: [
-      new Multiplier({
-        active: true,
-        name: "Children B: bonus crit rate.",
-        type: Type.CritRate,
-        value: 15
-      }),
-      new Multiplier({
-        active: true,
-        name: "Children B: attacks against same target gain phys DMG (15% max).",
-        type: Type.PhysDealt,
-        value: 15
-      })
-    ],
-    "2 set": [
-      new Multiplier({
-        active: true,
-        name: "Children 2 set: when Charged ATKs hit single enemies, gain total DMG for 6 sec.",
-        type: Type.TdmDealt,
-        value: 45
-      })
-    ]
-  },
-  Columbus: {
-    T: [
-      new Multiplier({
-        active: true,
-        name: "Columbus T: host deals bonus physical DMG.",
-        type: Type.PhysDealt,
-        value: 20
-      }),
-      new Multiplier({
-        active: true,
-        name: "Columbus T: after landing a charged ATK, deal bonus Crit DMG for 4 sec (can stack).",
-        type: Type.CritDmg,
-        value: 30
-      })
-    ],
-    M: [
-      new Multiplier({
-        active: true,
-        name: "Columbus M: total DMG boost.",
-        type: Type.TdmDealt,
-        value: 20
-      }),
-      new Multiplier({
-        active: true,
-        name: "Columbus M: bonus crit DMG against single enemies.",
-        type: Type.CritDmg,
-        value: 20
-      })
-    ],
-    B: [
-      new Multiplier({
-        active: true,
-        name: "Columbus B: bonus crit rate.",
-        type: Type.CritRate,
-        value: 15
-      }),
-      new Multiplier({
-        active: true,
-        name: "Columbus B: attacks against same target gain phys DMG (15% max).",
-        type: Type.PhysDealt,
-        value: 15
-      })
-    ],
-    "2 set": [
-      new Multiplier({
-        active: true,
-        name: "Columbus 2 set: when Charged ATKs hit single enemies, gain total DMG for 6 sec.",
-        type: Type.TdmDealt,
-        value: 45
       })
     ]
   },
@@ -760,7 +707,8 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: false,
-        name: "Dickens 2 set: basic, combo, charged atks deal bonus physical DMG against MECH enemies.",
+        name:
+          "Dickens 2 set: basic, combo, charged atks deal bonus physical DMG against MECH enemies.",
         type: Type.PhysDealt,
         value: 15
       }),

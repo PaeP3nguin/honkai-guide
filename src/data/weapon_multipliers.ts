@@ -37,7 +37,7 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: true,
-        name: "Crusher Bunny: Passive: team all elemental DMG boost.",
+        name: "Crusher Bunny: Passive: team elemental DMG boost.",
         type: Type.EleDealt,
         value: 12
       })
@@ -481,13 +481,13 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
     "Abyss Flower": [
       new Multiplier({
         active: true,
-        name: "Abyss Flower: Passive: Crit rate boost.",
+        name: "Abyss Flower: Passive",
         type: Type.CritRate,
         value: 20
       }),
       new Multiplier({
         active: true,
-        name: "Abyss Flower: Passive: During burst, physical DMG is increased for 15s.",
+        name: "Abyss Flower: Passive: Physical DMG is increased for 15s during burst.",
         type: Type.PhysDealt,
         value: 35
       })
@@ -528,7 +528,7 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: true,
-        name: "Lance of Longinus: Passive: bonus physical DMG.",
+        name: "Lance of Longinus: Passive",
         type: Type.PhysDealt,
         value: 30
       })
