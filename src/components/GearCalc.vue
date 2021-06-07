@@ -474,7 +474,10 @@ export default Vue.extend({
       saveNameRules: [(v: string) => !!v || "Name is required"],
       multiplierTypeRules: [(v: Type) => !!v || "Type is required"],
       valueRules: [(v: number) => !!v || "Value is required"],
-      valkLvlRules: [(v: number) => !!v || "Level is required", (v: number) => v <= 80 || "Max is 80!"],
+      valkLvlRules: [
+        (v: number) => !!v || "Level is required",
+        (v: number) => v <= 80 || "Max is 80!",
+      ],
     };
   },
   computed: {

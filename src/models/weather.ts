@@ -15,48 +15,48 @@ const EXALTED_WEATHER = Object.freeze({
   Lightning: new Weather({
     name: "Lightning",
     effect: "Enemies takes 50% bonus Lightning DMG and 50% less Physical DMG.",
-    icon: "lightning.png"
+    icon: "lightning.png",
   }),
   Physical: new Weather({
     name: "Physical",
     effect: "Enemies takes 50% bonus Physical DMG and 50% less Lightning DMG.",
-    icon: "physical.png"
+    icon: "physical.png",
   }),
   Ice: new Weather({
     name: "Frost",
     effect: "Enemies takes 50% bonus Ice DMG and 50% less Fire DMG.",
-    icon: "ice.png"
+    icon: "ice.png",
   }),
   Fire: new Weather({
     name: "Fire",
     effect: "Enemies takes 50% bonus Fire DMG and 50% less Ice DMG.",
-    icon: "fire.png"
+    icon: "fire.png",
   }),
   Ignite: new Weather({
     name: "Ignite",
     effect: "Enemies take 40% bonus damage when ignited and within 4s after the Ignite ends",
-    icon: "endless_burn.png"
+    icon: "endless_burn.png",
   }),
   TypeCounter: new Weather({
     name: "Counter",
     effect: "Type countering effects are 20% stronger.",
-    icon: "type_counter.png"
+    icon: "type_counter.png",
   }),
   Quantum: new Weather({
     name: "Quantum",
     effect: "Enemies are mostly QUA type.",
-    icon: "quantum.png"
+    icon: "quantum.png",
   }),
   Bloodlust: new Weather({
     name: "Bloodlust",
     effect: "Gain 20% TDM for 15s after killing an enemy, stacks up to 8 times.",
-    icon: "bloodlust.png"
+    icon: "bloodlust.png",
   }),
   Ranged: new Weather({
     name: "Ranged",
     effect: "Enemies take 50% more ranged damage and 50% less melee damage.",
-    icon: "ignite.png"
-  })
+    icon: "ignite.png",
+  }),
 });
 
 export { Weather, EXALTED_WEATHER };

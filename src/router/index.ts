@@ -13,37 +13,37 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: Search
+    component: Search,
   },
   {
     path: "/calc",
     name: "calc",
-    component: GearComparison
+    component: GearComparison,
   },
   {
     path: "/affix_compare",
     name: "affix_compare",
-    component: AffixComparison
+    component: AffixComparison,
   },
   {
     path: "/scores",
     name: "scores",
-    component: Scores
+    component: Scores,
   },
   {
     path: "/memorial_lineups",
     name: "memorial_lineups",
-    component: MemorialLineups
+    component: MemorialLineups,
   },
   {
     path: "/abyss_lineups",
     name: "abyss_lineups",
-    component: AbyssLineups
-  }
+    component: AbyssLineups,
+  },
 ];
 
 const router = new VueRouter({
-  routes
+  routes,
 });
 
 export default router;

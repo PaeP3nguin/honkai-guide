@@ -1,4 +1,4 @@
-  <template>
+<template>
   <v-container class="pa-0">
     <h3 class="mt-4">Affixes values:</h3>
 

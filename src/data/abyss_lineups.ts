@@ -19,7 +19,7 @@ class AbyssLineup {
     cnDate,
     boss,
     weather,
-    event
+    event,
   }: {
     date: Date;
     cnDate?: Date;
@@ -48,7 +48,7 @@ const ABYSS_LINEUPS = Object.freeze([
   new AbyssLineup({
     date: new Date("2020-09-15T00:00:00"),
     cnDate: new Date("2020-08-20T00:00:00"),
-    event: "Patch 4.2"
+    event: "Patch 4.2",
   }),
   // 9/15 was BKE
   // 9/17 was BKE
@@ -56,389 +56,389 @@ const ABYSS_LINEUPS = Object.freeze([
     date: new Date("2020-09-17T00:00:01"),
     cnDate: new Date("2020-08-20T00:00:00"),
     boss: Bosses.Nihilus,
-    weather: EXALTED_WEATHER.Lightning
+    weather: EXALTED_WEATHER.Lightning,
   }),
   new AbyssLineup({
     date: new Date("2020-09-21T00:00:00"),
     cnDate: new Date("2020-08-31T00:00:00"),
     boss: Bosses.Benares,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
     date: new Date("2020-09-24T00:00:00"),
     cnDate: new Date("2020-09-03T00:00:00"),
     boss: Bosses.Heimdall,
-    weather: EXALTED_WEATHER.Fire
+    weather: EXALTED_WEATHER.Fire,
   }),
   new AbyssLineup({
     date: new Date("2020-09-28T00:00:00"),
     cnDate: new Date("2020-09-07T00:00:00"),
     boss: Bosses.Nihilus,
-    weather: EXALTED_WEATHER.Lightning
+    weather: EXALTED_WEATHER.Lightning,
   }),
   new AbyssLineup({
     date: new Date("2020-10-01T00:00:00"),
     cnDate: new Date("2020-09-10T00:00:00"),
     boss: Bosses.BKE,
-    weather: EXALTED_WEATHER.Lightning
+    weather: EXALTED_WEATHER.Lightning,
   }),
   new AbyssLineup({
     date: new Date("2020-10-05T00:00:00"),
     cnDate: new Date("2020-09-14T00:00:00"),
     boss: Bosses.Huodou,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
     date: new Date("2020-10-08T00:00:00"),
     cnDate: new Date("2020-09-17T00:00:00"),
     boss: Bosses.BKE,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
     date: new Date("2020-10-12T00:00:00"),
     cnDate: new Date("2020-09-21T00:00:00"),
     boss: Bosses.Jizo,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   // Started actually matching in 4.3
   new AbyssLineup({
     date: new Date("2020-10-29T00:00:00"),
-    event: "Patch 4.3 (predicted)"
+    event: "Patch 4.3 (predicted)",
   }),
   new AbyssLineup({
     date: new Date("2020-12-03T00:00:00"),
     cnDate: new Date("2020-11-09T00:00:00"),
     boss: Bosses.SK,
-    weather: EXALTED_WEATHER.TypeCounter
+    weather: EXALTED_WEATHER.TypeCounter,
   }),
   new AbyssLineup({
     date: new Date("2020-12-07T00:00:00"),
     cnDate: new Date("2020-11-12T00:00:00"),
     boss: Bosses.Heimdall,
-    weather: EXALTED_WEATHER.Fire
+    weather: EXALTED_WEATHER.Fire,
   }),
   new AbyssLineup({
     date: new Date("2020-12-10T00:00:00"),
-    event: "Patch 4.4 (predicted)"
+    event: "Patch 4.4 (predicted)",
   }),
   new AbyssLineup({
     date: new Date("2020-12-11T00:00:00"),
     cnDate: new Date("2020-11-16T00:00:00"),
     boss: Bosses.Huodou,
-    weather: EXALTED_WEATHER.TypeCounter
+    weather: EXALTED_WEATHER.TypeCounter,
   }),
   new AbyssLineup({
     date: new Date("2020-12-14T00:00:00"),
     cnDate: new Date("2020-11-19T00:00:00"),
     boss: Bosses.Nihilus,
-    weather: EXALTED_WEATHER.Lightning
+    weather: EXALTED_WEATHER.Lightning,
   }),
   new AbyssLineup({
     date: new Date("2020-12-18T00:00:00"),
     cnDate: new Date("2020-11-23T00:00:00"),
     boss: Bosses.Rimestar,
-    weather: EXALTED_WEATHER.Fire
+    weather: EXALTED_WEATHER.Fire,
   }),
   new AbyssLineup({
     date: new Date("2020-12-21T00:00:00"),
     cnDate: new Date("2020-11-26T00:00:00"),
     boss: Bosses.Jizo,
-    weather: EXALTED_WEATHER.Physical
+    weather: EXALTED_WEATHER.Physical,
   }),
   new AbyssLineup({
     date: new Date("2020-12-25T00:00:00"),
     cnDate: new Date("2020-11-30T00:00:00"),
     boss: Bosses.Rimestar,
-    weather: EXALTED_WEATHER.Fire
+    weather: EXALTED_WEATHER.Fire,
   }),
   new AbyssLineup({
     date: new Date("2020-12-28T00:00:00"),
     cnDate: new Date("2020-12-03T00:00:00"),
     boss: Bosses.SK,
-    weather: EXALTED_WEATHER.TypeCounter
+    weather: EXALTED_WEATHER.TypeCounter,
   }),
   new AbyssLineup({
     date: new Date("2020-12-31T00:00:00"),
     cnDate: new Date("2020-12-07T00:00:00"),
     boss: Bosses.Couatl,
-    weather: EXALTED_WEATHER.Quantum
+    weather: EXALTED_WEATHER.Quantum,
   }),
   new AbyssLineup({
     date: new Date("2021-01-04T00:00:00"),
     cnDate: new Date("2020-12-10T00:00:00"),
     boss: Bosses.BKE,
-    weather: EXALTED_WEATHER.Lightning
+    weather: EXALTED_WEATHER.Lightning,
   }),
   new AbyssLineup({
     date: new Date("2021-01-07T00:00:00"),
     cnDate: new Date("2020-12-14T00:00:00"),
     boss: Bosses.Benares,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
     date: new Date("2021-01-11T00:00:00"),
     cnDate: new Date("2020-12-17T00:00:00"),
     boss: Bosses.Parvati,
-    weather: EXALTED_WEATHER.Ignite
+    weather: EXALTED_WEATHER.Ignite,
   }),
   new AbyssLineup({
     date: new Date("2021-01-14T00:00:00"),
     cnDate: new Date("2020-12-21T00:00:00"),
     boss: Bosses.Huodou,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
     date: new Date("2021-01-18T00:00:00"),
     cnDate: new Date("2020-12-24T00:00:00"),
     boss: Bosses.Jizo,
-    weather: EXALTED_WEATHER.Physical
+    weather: EXALTED_WEATHER.Physical,
   }),
   new AbyssLineup({
     date: new Date("2021-01-21T00:00:00"),
-    event: "Patch 4.5 (predicted)"
+    event: "Patch 4.5 (predicted)",
   }),
   new AbyssLineup({
     date: new Date("2021-01-21T00:00:00"),
     cnDate: new Date("2020-12-28T00:00:00"),
     boss: Bosses.Benares,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
     date: new Date("2021-01-25T00:00:00"),
     cnDate: new Date("2020-12-31T00:00:00"),
     boss: Bosses.Huodou,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
     date: new Date("2021-01-28T00:00:00"),
     cnDate: new Date("2021-01-04T00:00:00"),
     boss: Bosses.SahaAssaka,
-    weather: EXALTED_WEATHER.Physical
+    weather: EXALTED_WEATHER.Physical,
   }),
   new AbyssLineup({
     date: new Date("2021-02-01T00:00:00"),
     cnDate: new Date("2021-01-07T00:00:00"),
     boss: Bosses.Couatl,
-    weather: EXALTED_WEATHER.Quantum
+    weather: EXALTED_WEATHER.Quantum,
   }),
   new AbyssLineup({
     date: new Date("2021-02-04T00:00:00"),
     cnDate: new Date("2021-01-11T00:00:00"),
     boss: Bosses.DXY,
-    weather: EXALTED_WEATHER.TypeCounter
+    weather: EXALTED_WEATHER.TypeCounter,
   }),
   new AbyssLineup({
     date: new Date("2021-02-08T00:00:00"),
     cnDate: new Date("2021-01-14T00:00:00"),
     boss: Bosses.Huodou,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
     date: new Date("2021-02-11T00:00:00"),
     cnDate: new Date("2021-01-18T00:00:00"),
     boss: Bosses.Rimestar,
-    weather: EXALTED_WEATHER.Fire
+    weather: EXALTED_WEATHER.Fire,
   }),
   new AbyssLineup({
     date: new Date("2021-02-15T00:00:00"),
     cnDate: new Date("2021-01-21T00:00:00"),
     boss: Bosses.Jizo,
-    weather: EXALTED_WEATHER.Physical
+    weather: EXALTED_WEATHER.Physical,
   }),
   new AbyssLineup({
     date: new Date("2021-02-18T00:00:00"),
     cnDate: new Date("2021-01-25T00:00:00"),
     boss: Bosses.DXY,
-    weather: EXALTED_WEATHER.TypeCounter
+    weather: EXALTED_WEATHER.TypeCounter,
   }),
   new AbyssLineup({
     date: new Date("2021-02-22T00:00:00"),
     cnDate: new Date("2021-01-28T00:00:00"),
     boss: Bosses.Tonatiuh,
-    weather: EXALTED_WEATHER.Lightning
+    weather: EXALTED_WEATHER.Lightning,
   }),
   new AbyssLineup({
     date: new Date("2021-03-04T00:00:00"),
-    event: "Patch 4.6"
+    event: "Patch 4.6",
   }),
   new AbyssLineup({
     date: new Date("2021-03-08T00:00:00"),
     boss: Bosses.Benares,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
     date: new Date("2021-03-11T00:00:00"),
     boss: Bosses.HOMU,
-    weather: EXALTED_WEATHER.Bloodlust
+    weather: EXALTED_WEATHER.Bloodlust,
   }),
   new AbyssLineup({
     date: new Date("2021-03-15T00:00:00"),
     boss: Bosses.Heimdall,
-    weather: EXALTED_WEATHER.Fire
+    weather: EXALTED_WEATHER.Fire,
   }),
   new AbyssLineup({
     date: new Date("2021-03-18T00:00:00"),
     boss: Bosses.DXY,
-    weather: EXALTED_WEATHER.TypeCounter
+    weather: EXALTED_WEATHER.TypeCounter,
   }),
   new AbyssLineup({
     date: new Date("2021-03-22T00:00:00"),
     boss: Bosses.BKE,
-    weather: EXALTED_WEATHER.Lightning
+    weather: EXALTED_WEATHER.Lightning,
   }),
   new AbyssLineup({
     date: new Date("2021-03-25T00:00:00"),
     boss: Bosses.Jizo,
-    weather: EXALTED_WEATHER.Physical
+    weather: EXALTED_WEATHER.Physical,
   }),
   new AbyssLineup({
     date: new Date("2021-03-29T00:00:00"),
     boss: Bosses.Rimestar,
-    weather: EXALTED_WEATHER.Fire
+    weather: EXALTED_WEATHER.Fire,
   }),
   new AbyssLineup({
     date: new Date("2021-04-01T00:00:00"),
     boss: Bosses.Benares,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
     date: new Date("2021-04-05T00:00:00"),
     boss: Bosses.Tonatiuh,
-    weather: EXALTED_WEATHER.Lightning
+    weather: EXALTED_WEATHER.Lightning,
   }),
   new AbyssLineup({
     date: new Date("2021-04-08T00:00:00"),
     boss: Bosses.Couatl,
-    weather: EXALTED_WEATHER.Quantum
+    weather: EXALTED_WEATHER.Quantum,
   }),
   new AbyssLineup({
     date: new Date("2021-04-12T00:00:00"),
     boss: Bosses.Huodou,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
     date: new Date("2021-04-15T00:00:00"),
     boss: Bosses.SK,
-    weather: EXALTED_WEATHER.TypeCounter
+    weather: EXALTED_WEATHER.TypeCounter,
   }),
   new AbyssLineup({
     date: new Date("2021-04-19T00:00:00"),
     boss: Bosses.Nihilus,
-    weather: EXALTED_WEATHER.Lightning
+    weather: EXALTED_WEATHER.Lightning,
   }),
   new AbyssLineup({
     date: new Date("2021-04-22T00:00:00"),
-    event: "Patch 4.7 (predicted)"
+    event: "Patch 4.7 (predicted)",
   }),
   new AbyssLineup({
     date: new Date("2021-04-22T00:00:00"),
     boss: Bosses.Huodou,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
     date: new Date("2021-04-26T00:00:00"),
     boss: Bosses.Benares,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
     date: new Date("2021-04-29T00:00:00"),
     boss: Bosses.SahaAssaka,
-    weather: EXALTED_WEATHER.Ranged
+    weather: EXALTED_WEATHER.Ranged,
   }),
   new AbyssLineup({
     date: new Date("2021-05-03T00:00:00"),
     boss: Bosses.Rimestar,
-    weather: EXALTED_WEATHER.Fire
+    weather: EXALTED_WEATHER.Fire,
   }),
   new AbyssLineup({
     date: new Date("2021-05-06T00:00:00"),
     boss: Bosses.BKE,
-    weather: EXALTED_WEATHER.Lightning
+    weather: EXALTED_WEATHER.Lightning,
   }),
   new AbyssLineup({
     date: new Date("2021-05-10T00:00:00"),
     boss: Bosses.AKA,
-    weather: EXALTED_WEATHER.Ignite
+    weather: EXALTED_WEATHER.Ignite,
   }),
   new AbyssLineup({
     date: new Date("2021-05-13T00:00:00"),
     boss: Bosses.Huodou,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
     date: new Date("2021-05-17T00:00:00"),
     boss: Bosses.HoS,
-    weather: EXALTED_WEATHER.TypeCounter
+    weather: EXALTED_WEATHER.TypeCounter,
   }),
   new AbyssLineup({
     date: new Date("2021-05-20T00:00:00"),
     boss: Bosses.Parvati,
-    weather: EXALTED_WEATHER.Ignite
+    weather: EXALTED_WEATHER.Ignite,
   }),
   new AbyssLineup({
     date: new Date("2021-05-24T00:00:00"),
     boss: Bosses.DXY,
-    weather: EXALTED_WEATHER.TypeCounter
+    weather: EXALTED_WEATHER.TypeCounter,
   }),
   new AbyssLineup({
     date: new Date("2021-05-27T00:00:00"),
-    event: "Patch 4.8 (predicted)"
+    event: "Patch 4.8 (predicted)",
   }),
   new AbyssLineup({
     date: new Date("2021-05-27T00:00:01"),
     boss: Bosses.Couatl,
-    weather: EXALTED_WEATHER.Quantum
+    weather: EXALTED_WEATHER.Quantum,
   }),
   new AbyssLineup({
     date: new Date("2021-05-31T00:00:01"),
     boss: Bosses.Benares,
-    weather: EXALTED_WEATHER.Ice
+    weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
     date: new Date("2021-06-03T00:00:01"),
     boss: Bosses.HOMU,
-    weather: EXALTED_WEATHER.Bloodlust
+    weather: EXALTED_WEATHER.Bloodlust,
   }),
   new AbyssLineup({
     date: new Date("2021-06-07T00:00:01"),
     boss: Bosses.Couatl,
-    weather: EXALTED_WEATHER.Quantum
+    weather: EXALTED_WEATHER.Quantum,
   }),
   new AbyssLineup({
     date: new Date("2021-06-10T00:00:01"),
     boss: Bosses.DXY,
-    weather: EXALTED_WEATHER.TypeCounter
+    weather: EXALTED_WEATHER.TypeCounter,
   }),
   new AbyssLineup({
     date: new Date("2021-06-13T00:00:01"),
     boss: Bosses.Rimestar,
-    weather: EXALTED_WEATHER.Fire
+    weather: EXALTED_WEATHER.Fire,
   }),
   new AbyssLineup({
     date: new Date("2021-06-17T00:00:01"),
     boss: Bosses.BKE,
-    weather: EXALTED_WEATHER.Lightning
+    weather: EXALTED_WEATHER.Lightning,
   }),
   new AbyssLineup({
     date: new Date("2021-06-21T00:00:01"),
     boss: Bosses.Couatl,
-    weather: EXALTED_WEATHER.Quantum
+    weather: EXALTED_WEATHER.Quantum,
   }),
   new AbyssLineup({
     date: new Date("2021-06-24T00:00:01"),
     boss: Bosses.Heimdall,
-    weather: EXALTED_WEATHER.Fire
+    weather: EXALTED_WEATHER.Fire,
   }),
   new AbyssLineup({
     date: new Date("2021-06-28T00:00:01"),
     boss: Bosses.SahaAssaka,
-    weather: EXALTED_WEATHER.Ranged
+    weather: EXALTED_WEATHER.Ranged,
   }),
   new AbyssLineup({
     date: new Date("2021-07-01T00:00:01"),
     boss: Bosses.Rimestar,
-    weather: EXALTED_WEATHER.Fire
-  })
+    weather: EXALTED_WEATHER.Fire,
+  }),
 ]);
 // Lineup sources with weathers in video:
 // https://space.bilibili.com/60622135/video
@@ -453,7 +453,7 @@ const ABYSS_LINEUPS = Object.freeze([
 const today = new Date();
 
 const RECENT_LINEUPS = Object.freeze(
-  ABYSS_LINEUPS.filter(lineup => daysDifference(today, lineup.date) >= -6)
+  ABYSS_LINEUPS.filter((lineup) => daysDifference(today, lineup.date) >= -6)
 );
 
 export { RECENT_LINEUPS };

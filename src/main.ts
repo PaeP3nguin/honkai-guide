@@ -13,7 +13,7 @@ Vue.config.productionTip = false;
 Vue.use(
   VueGtag,
   {
-    config: { id: "UA-57689110-5" }
+    config: { id: "UA-57689110-5" },
   },
   router
 );
@@ -25,5 +25,5 @@ firebase.initializeApp(FIREBASE_CONFIG);
 new Vue({
   vuetify,
   router,
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");

@@ -9,7 +9,7 @@ function generateScores(seconds: number) {
     scoresByTime.push({
       score: score,
       up: up,
-      elapsedSec: i
+      elapsedSec: i,
     });
   }
   return scoresByTime;

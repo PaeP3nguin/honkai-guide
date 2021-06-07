@@ -10,7 +10,7 @@ enum Type {
   PhysTakenHost = "Physical DMG taken (from host)",
   CritRate = "Critical rate %",
   Crt = "CRT",
-  CritDmg = "Critical DMG"
+  CritDmg = "Critical DMG",
 }
 
 class Multiplier {
@@ -25,7 +25,7 @@ class Multiplier {
     name,
     type,
     value,
-    active
+    active,
   }: {
     active?: boolean;
     id?: number;
@@ -51,7 +51,7 @@ class Multiplier {
       name: object.name,
       type: object.type,
       value: object.value,
-      active: object.active
+      active: object.active,
     });
   }
 
@@ -98,7 +98,7 @@ class Multiplier {
       name: this.name,
       type: this.type,
       value: this.value,
-      active: this.active
+      active: this.active,
     });
   }
 }

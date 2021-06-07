@@ -89,7 +89,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import firebase from 'firebase/app';
+import firebase from "firebase/app";
 import "firebase/auth";
 
 export default Vue.extend({
@@ -127,5 +127,4 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

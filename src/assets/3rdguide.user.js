@@ -15,21 +15,19 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
-  'use strict';
+(function () {
+  "use strict";
   /* globals $ */
 
   // Allow new tab opening of team links
   // https://honkai-guide.web.app/calc/calc.html#/
   // Doesn't allow middle click on FF, mouseup to get around isn't possible because of popup detection,
   // alternative is to just replace div->a in each td but that messes up layout on 2nd col. Meh.
-  $('#ct_det tbody')
+  $("#ct_det tbody")
     .off()
-    .on('click', 'tr', function() {
-      const urlstr = $(this)
-        .find('.tgcol0')
-        .data('url');
-      if (urlstr != undefined) window.open(urlstr, '_blank');
+    .on("click", "tr", function () {
+      const urlstr = $(this).find(".tgcol0").data("url");
+      if (urlstr != undefined) window.open(urlstr, "_blank");
     });
 
   // Translations
@@ -164,22 +162,22 @@
     卡莲: "Kallen",
     原罪猎人: "S\xFCndenj\xE4ger",
     第六夜想曲: "Sixth Serenade",
-    "圣仪装·今样": "Imayoh Ritual"
+    "圣仪装·今样": "Imayoh Ritual",
   };
 
-  const translateElement = function(tls, el) {
+  const translateElement = function (tls, el) {
     if (el && tls[el.innerText]) {
       el.innerHTML = el.innerHTML.replace(el.innerText, tls[el.innerText]);
     }
   };
 
-  const translate = function() {
-    $('th, span, .table-search .label').each(function() {
+  const translate = function () {
+    $("th, span, .table-search .label").each(function () {
       translateElement(tls, this);
     });
   };
 
-  $('#_js_table_s_c_1').on('click', 'li', translate);
+  $("#_js_table_s_c_1").on("click", "li", translate);
 
   translate();
 })();
