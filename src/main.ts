@@ -5,7 +5,7 @@ import router from "./router";
 import VueGtag from "vue-gtag";
 import VueFilterDateFormat from "@vuejs-community/vue-filter-date-format";
 
-import * as firebase from "firebase/app";
+import firebase from "firebase/app";
 import FIREBASE_CONFIG from "./firebase_config";
 
 Vue.config.productionTip = false;

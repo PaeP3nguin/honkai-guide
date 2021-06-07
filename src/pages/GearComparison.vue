@@ -169,7 +169,7 @@
 <script lang="ts">
 import Vue from "vue";
 import GearCalc from "@/components/GearCalc.vue";
-import * as firebase from "firebase/app";
+import firebase from 'firebase/app';
 import "firebase/auth";
 import "firebase/firestore";
 import { Multiplier } from "@/models/multiplier";
