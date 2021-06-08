@@ -237,7 +237,7 @@ const bossToChinese = {
   "Shadow Knight (SK)": ["月轮"],
   "Son of Darkness (Abyss only)": ["黑夜之子"],
   "Titan + Hierophant (soul link mobs) (Abyss only)": ["关底", "双灵魂链接", "红莲泰坦"],
-  Tonatiuh: ["托纳提乌", "龙虾"],
+  "Tonatiuh (lobster)": ["托纳提乌", "龙虾"],
   "Wendy + Ganesha (Abyss only)": ["猪温"],
 };
 
