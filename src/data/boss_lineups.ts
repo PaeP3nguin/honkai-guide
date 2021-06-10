@@ -321,7 +321,7 @@ const BOSS_LINEUPS = Object.freeze([
   }),
   new BossLineup({
     date: new Date("2021-05-27T00:00:00"),
-    event: "Patch 4.8 (predicted)",
+    event: "Patch 4.8",
   }),
   new BossLineup({
     date: new Date("2021-05-31T00:00:00"),
@@ -346,6 +346,10 @@ const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2021-07-05T00:00:00"),
     bosses: [Bosses.Hellmaru, Bosses.Tonatiuh, Bosses.BKE],
+  }),
+  new BossLineup({
+    date: new Date("2021-06-10T00:00:00"),
+    event: "Patch 4.9 (predicted)",
   }),
 ]);
 // Lineup sources:
