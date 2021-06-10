@@ -52,6 +52,7 @@
     // Bosses
     "托纳提乌·噬日之影": "Tonatiuh",
     "托纳提乌-噬日之影": "Tonatiuh",
+    奔狼的领主: "Andrius",
     祸斗: "Huodou",
     吼姆王: "Homo King",
     // '卡莲': 'Kallen', // (use valkyrie TL)
@@ -163,6 +164,9 @@
     原罪猎人: "S\xFCndenj\xE4ger",
     第六夜想曲: "Sixth Serenade",
     "圣仪装·今样": "Imayoh Ritual",
+
+    菲谢尔: "Fischl",
+    "断罪皇女！！": "Prinzessin der Verurteilung",
   };
 
   const translateElement = function (tls, el) {
