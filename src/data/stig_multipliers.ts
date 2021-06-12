@@ -343,7 +343,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
     "2 set": [
       new Multiplier({
         active: true,
-        name: "Turgenev 2 set: team gains elemental DMG against Hunter Marked enemies.",
+        name: "Turgenev 2 set: Hunter Marked enemies take more elemental DMG.",
         type: Type.EleTaken,
         value: 21,
       }),

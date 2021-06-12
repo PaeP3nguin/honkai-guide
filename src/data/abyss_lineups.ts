@@ -382,7 +382,7 @@ const ABYSS_LINEUPS = Object.freeze([
   }),
   new AbyssLineup({
     date: new Date("2021-05-27T00:00:00"),
-    event: "Patch 4.8 (predicted)",
+    event: "Patch 4.8",
   }),
   new AbyssLineup({
     date: new Date("2021-05-27T00:00:01"),
@@ -438,6 +438,15 @@ const ABYSS_LINEUPS = Object.freeze([
     date: new Date("2021-07-01T00:00:01"),
     boss: Bosses.Rimestar,
     weather: EXALTED_WEATHER.Fire,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-07-05T00:00:01"),
+    boss: Bosses.Benares,
+    weather: EXALTED_WEATHER.Ice,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-06-10T00:00:00"),
+    event: "Patch 4.9 (predicted)",
   }),
 ]);
 // Lineup sources with weathers in video:
