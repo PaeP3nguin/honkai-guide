@@ -1460,6 +1460,52 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  "Rebel Blades (Physical)": {
+    "Mei T": [
+      new Multiplier({
+        active: true,
+        name: "Mei T",
+        type: Type.PhysDealt,
+        value: 13,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Mei T: Gain 4% phys DMG per hit. Max 5 stacks.",
+        type: Type.PhysDealt,
+        value: 20,
+      }),
+    ],
+    "Fu Hua M": [
+      new Multiplier({
+        active: true,
+        name: "Fu Hua M",
+        type: Type.CritDmg,
+        value: 15,
+      }),
+    ],
+    "Fu Hua B": [
+      new Multiplier({
+        active: true,
+        name: "Fu Hua B",
+        type: Type.CritRate,
+        value: 12,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Fu Hua B: when combo hits reach 30",
+        type: Type.CritDmg,
+        value: 25,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Rebel Blades 2 set: TDM boost when combo is above 25.",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+    ],
+  },
   "Ryunosuke Akutagawa": {
     T: [
       new Multiplier({
