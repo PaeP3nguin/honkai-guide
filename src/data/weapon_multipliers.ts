@@ -462,6 +462,40 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 30,
       }),
     ],
+    "Sanguine Gaze": [
+      new Multiplier({
+        active: true,
+        name: "Sanguine Gaze: Passive: Ice DMG",
+        type: Type.EleDealt,
+        value: 25,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Sanguine Gaze: Ultimate and Burst mode attacks deal bonus total DMG.",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+    ],
+    "Sanguine Gaze: Union": [
+      new Multiplier({
+        active: true,
+        name: "Sanguine Gaze Union: Passive: Ice DMG",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Sanguine Gaze Union: Ultimate and Burst mode attacks deal bonus total DMG.",
+        type: Type.TdmDealt,
+        value: 40,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Sanguine Gaze Union: charged attacks deal bonus total DMG.",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+    ],
     "Undine's Tale": [
       new Multiplier({
         active: true,
