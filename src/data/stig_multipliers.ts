@@ -215,6 +215,38 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  "Shattered Swords": {
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Empyrea Phoenix B: Combo atk boosts team Crit DMG for 15s",
+        type: Type.CritDmg,
+        value: 25,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Shattered Swords 2 set: in herrscher form, team gains crit DMG",
+        type: Type.CritDmg,
+        value: 30,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Shattered Swords 3 set: team gains crit rate on entry",
+        type: Type.CritRate,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Shattered Swords 3 set: in herrscher form, team gains total DMG",
+        type: Type.TdmDealt,
+        value: 35,
+      }),
+    ],
+  },
   "Shuijing (Sima)": {
     T: [
       new Multiplier({
@@ -1547,6 +1579,60 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Shakespeare B: Ice boost.",
         type: Type.EleDealt,
         value: 51,
+      }),
+    ],
+  },
+  "Shattered Swords": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Raksha T",
+        type: Type.PhysDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Raksha T: ultimate evasion boosts physical DMG for 15s",
+        type: Type.PhysDealt,
+        value: 20,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Sushang M",
+        type: Type.PhysDealt,
+        value: 30,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Empyrea Phoenix B: Combo atk boosts team Crit DMG for 15s",
+        type: Type.CritDmg,
+        value: 25,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Shattered Swords 2 set: in herrscher form, team gains crit DMG",
+        type: Type.CritDmg,
+        value: 30,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Shattered Swords 3 set: team gains crit rate on entry",
+        type: Type.CritRate,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Shattered Swords 3 set: in herrscher form, team gains total DMG",
+        type: Type.TdmDealt,
+        value: 35,
       }),
     ],
   },
