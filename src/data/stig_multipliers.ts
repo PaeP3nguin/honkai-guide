@@ -1860,6 +1860,66 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  Verne: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Verne T: ice DMG",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Verne T: charged attacks deal bonus total DMG",
+        type: Type.TdmDealt,
+        value: 40,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Verne M",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Verne M: charged attacks deal bonus ice DMG",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Verne B: basic & charged attacks deal bonus ice DMG",
+        type: Type.EleDealt,
+        value: 50,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: false,
+        name: "Verne 2 set: ultimate evasion in burst mode boosts total DMG",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Verne 2 set: charged attacks in burst mode boost ice DMG by 15%. 4 stacks max.",
+        type: Type.EleDealt,
+        value: 60,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: false,
+        name: "Verne 3 set: enemies take 20% bonus ice DMG when equipped by Seele",
+        type: Type.EleTaken,
+        value: 20,
+      }),
+    ],
+  },
   "Welt Yang": {
     T: [
       new Multiplier({
