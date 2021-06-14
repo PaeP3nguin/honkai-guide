@@ -6,7 +6,7 @@ import VueGtag from "vue-gtag";
 import VueFilterDateFormat from "@vuejs-community/vue-filter-date-format";
 
 import firebase from "firebase/app";
-import FIREBASE_CONFIG from "./firebase_config";
+import firebaseConfig from "./firebase_config";
 
 Vue.config.productionTip = false;
 
@@ -20,7 +20,7 @@ Vue.use(
 
 Vue.use(VueFilterDateFormat);
 
-firebase.initializeApp(FIREBASE_CONFIG);
+firebase.initializeApp(firebaseConfig);
 
 new Vue({
   vuetify,
