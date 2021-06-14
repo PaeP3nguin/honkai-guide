@@ -219,7 +219,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
     B: [
       new Multiplier({
         active: true,
-        name: "Empyrea Phoenix B: Combo atk boosts team Crit DMG for 15s",
+        name: "Shattered Swords B: Combo atk boosts team Crit DMG for 15s",
         type: Type.CritDmg,
         value: 25,
       }),
@@ -1491,7 +1491,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         value: 12,
       }),
       new Multiplier({
-        active: false,
+        active: true,
         name: "Fu Hua B: when combo hits reach 30",
         type: Type.CritDmg,
         value: 25,
@@ -1632,13 +1632,13 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     T: [
       new Multiplier({
         active: true,
-        name: "Raksha T",
+        name: "Shattered Swords T",
         type: Type.PhysDealt,
         value: 20,
       }),
       new Multiplier({
         active: true,
-        name: "Raksha T: ultimate evasion boosts physical DMG for 15s",
+        name: "Shattered Swords T: ultimate evasion boosts physical DMG for 15s",
         type: Type.PhysDealt,
         value: 20,
       }),
@@ -1646,7 +1646,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     M: [
       new Multiplier({
         active: true,
-        name: "Sushang M",
+        name: "Shattered Swords M",
         type: Type.PhysDealt,
         value: 30,
       }),
@@ -1654,7 +1654,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     B: [
       new Multiplier({
         active: true,
-        name: "Empyrea Phoenix B: Combo atk boosts team Crit DMG for 15s",
+        name: "Shattered Swords B: Combo atk boosts team Crit DMG for 15s",
         type: Type.CritDmg,
         value: 25,
       }),
@@ -1913,7 +1913,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     ],
     "3 set": [
       new Multiplier({
-        active: false,
+        active: true,
         name: "Verne 3 set: enemies take 20% bonus ice DMG when equipped by Seele",
         type: Type.EleTaken,
         value: 20,
