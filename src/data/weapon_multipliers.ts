@@ -180,7 +180,7 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
     ],
   },
   Cannons: {
-    "Briaereus EX": [
+    "Briareus EX": [
       new Multiplier({
         active: false,
         name: "Bri EX: Passive: MECH valks gain TDM.",
@@ -194,18 +194,38 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 20,
       }),
     ],
-    "Key of Reason": [
+    "Key of Reason (KoR)": [
       new Multiplier({
         active: true,
-        name: "Key of Reason: Passive: Ice DMG boost.",
+        name: "KoR: Passive: Ice DMG boost.",
         type: Type.EleDealt,
         value: 30,
       }),
       new Multiplier({
         active: true,
-        name: "Key of Reason: Active: After using active, gain TDM.",
+        name: "KoR: Active: After using active, gain TDM.",
         type: Type.TdmDealt,
         value: 35,
+      }),
+    ],
+    "Domain of Revelation (DoR)": [
+      new Multiplier({
+        active: true,
+        name: "DoR: Passive: Ice DMG boost.",
+        type: Type.EleDealt,
+        value: 40,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoR: Passive: total DMG boost for charged and ultimate ATKs.",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoR: Active: After using active, gain TDM.",
+        type: Type.TdmDealt,
+        value: 40,
       }),
     ],
   },
