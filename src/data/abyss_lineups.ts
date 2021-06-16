@@ -445,6 +445,16 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
+    date: new Date("2021-07-08T00:00:01"),
+    boss: Bosses.Nihilus,
+    weather: EXALTED_WEATHER.Lightning,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-07-12T00:00:01"),
+    boss: Bosses.Benares,
+    weather: EXALTED_WEATHER.Ice,
+  }),
+  new AbyssLineup({
     date: new Date("2021-07-10T00:00:00"),
     event: "Patch 4.9 (predicted)",
   }),
