@@ -357,6 +357,32 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  Zhenyi: {
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Zhenyi M: On exit, ends [Mitternachts] status to grant team lightning DMG for 18s",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Zhenyi B: target hit by weapon active takes more lightning DMG",
+        type: Type.EleTaken,
+        value: 20,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Zhenyi 3 set: when equipped by Fischl, using QTE during [Mitternachts] grants team total DMG for 20s.",
+        type: Type.TdmDealt,
+        value: 45,
+      }),
+    ],
+  },
 });
 
 const DPS_STIG_MULTIPLIERS = Object.freeze({
@@ -1981,6 +2007,72 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Zhang B: gain lightning DMG for 2s after an ultimate evade when combo count is below 20.",
         type: Type.EleDealt,
         value: 120,
+      }),
+    ],
+  },
+  Zhenyi: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Zhenyi T: lightning DMG",
+        type: Type.EleDealt,
+        value: 45,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Zhenyi M",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Zhenyi M: On exit, ends [Mitternachts] status to grant team lightning DMG for 18s",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Zhenyi B",
+        type: Type.EleDealt,
+        value: 25,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Zhenyi B: target hit by weapon active takes more lightning DMG",
+        type: Type.EleTaken,
+        value: 20,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Zhenyi 2 set",
+        type: Type.TdmDealt,
+        value: 25,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Zhenyi 2 set: for 15s upon switch in, gain lightning DMG",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Zhenyi 3 set: weapon active and ult gain lightning DMG",
+        type: Type.EleDealt,
+        value: 25,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Zhenyi 3 set: when equipped by Fischl, using QTE during [Mitternachts] grants team total DMG for 20s.",
+        type: Type.TdmDealt,
+        value: 45,
       }),
     ],
   },
