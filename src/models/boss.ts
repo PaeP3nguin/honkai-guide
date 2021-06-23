@@ -23,6 +23,12 @@ class Boss {
 }
 
 const Bosses = Object.freeze({
+  Andrius: new Boss({
+    name: "Andrius",
+    shortName: "Andrius",
+    image: "andrius.png",
+    wikiLink: "https://honkaiimpact3.gamepedia.com/",
+  }),
   Assaka: new Boss({
     name: "Assaka",
     shortName: "Assaka",
