@@ -83,49 +83,49 @@
         <ul>
           <li>
             Physical Damage Dealt -
-            <a href="https://honkaiimpact3.gamepedia.com/Marco_Polo">Marco Polo T</a>
+            <a href="https://honkaiimpact3.fandom.com/Marco_Polo">Marco Polo T</a>
           </li>
           <li>
             Physical Damage Taken -
-            <a href="https://honkaiimpact3.gamepedia.com/Gustav_Klimt">Gustav Klimt 2-set</a>
+            <a href="https://honkaiimpact3.fandom.com/Gustav_Klimt">Gustav Klimt 2-set</a>
           </li>
           <li>
             Physical Damage Taken from Host (rare) -
-            <a href="https://honkaiimpact3.gamepedia.com/Night_Squire">
+            <a href="https://honkaiimpact3.fandom.com/Night_Squire">
               Night Squire SSS rank ability "Authority"
             </a>
           </li>
           <li>
             Elemental Damage Dealt -
-            <a href="https://honkaiimpact3.gamepedia.com/Nuwa">Nuwa M</a>
+            <a href="https://honkaiimpact3.fandom.com/Nuwa">Nuwa M</a>
           </li>
           <li>
             Elemental Damage Taken -
-            <a href="https://honkaiimpact3.gamepedia.com/Phoenix#Special">
+            <a href="https://honkaiimpact3.fandom.com/Phoenix#Special">
               Phoenix SS rank ability "Oriole"
             </a>
           </li>
           <li>
             Elemental Damage Taken from Host (rare) -
-            <a href="https://honkaiimpact3.gamepedia.com/Thales">Thales M (stacks only)</a>
+            <a href="https://honkaiimpact3.fandom.com/Thales">Thales M (stacks only)</a>
             ,
-            <a href="https://honkaiimpact3.gamepedia.com/Welt Yang">Welt M (stacks only)</a>
+            <a href="https://honkaiimpact3.fandom.com/Welt Yang">Welt M (stacks only)</a>
           </li>
           <li>
             Total Damage Dealt -
-            <a href="https://honkaiimpact3.gamepedia.com/Jingwei">Jingwei T</a>
+            <a href="https://honkaiimpact3.fandom.com/Jingwei">Jingwei T</a>
           </li>
           <li>
             Total Damage Taken -
-            <a href="https://honkaiimpact3.gamepedia.com/Isaac_Newton">Newton B</a>
+            <a href="https://honkaiimpact3.fandom.com/Isaac_Newton">Newton B</a>
           </li>
           <li>
             Total Damage Taken from Host (rare) -
-            <a href="https://honkaiimpact3.gamepedia.com/Swallowtail_Phantasm#Special">
+            <a href="https://honkaiimpact3.fandom.com/Swallowtail_Phantasm#Special">
               Swallowtail Vibration debuff "Particle Vibration"
             </a>
             ,
-            <a href="https://honkaiimpact3.gamepedia.com/Herrscher_of_the_Void#Passive">
+            <a href="https://honkaiimpact3.fandom.com/Herrscher_of_the_Void#Passive">
               HoV mark debuff "Honkai Mark"
             </a>
           </li>
@@ -144,7 +144,7 @@
 
         <p class="mt-4">
           Note that bonuses that only apply to specific types of attacks, like
-          <a href="https://honkaiimpact3.gamepedia.com/Sakamoto_Ryoma">Sakamoto Ryoma</a>
+          <a href="https://honkaiimpact3.fandom.com/Sakamoto_Ryoma">Sakamoto Ryoma</a>
           or bonuses that only apply to one element type are not separate multipliers.
         </p>
 
@@ -154,9 +154,9 @@
           only for physical damage. Critical damage starts at 100% and this is already factored in,
           so only include additional boosts. Most multipliers you see will be direct crit rate
           boosts, like
-          <a href="https://honkaiimpact3.gamepedia.com/Dirac">Dirac T</a>
+          <a href="https://honkaiimpact3.fandom.com/Dirac">Dirac T</a>
           , however some stigs directly give CRT, like
-          <a href="https://honkaiimpact3.gamepedia.com/Ryunosuke_Akutagawa">Ryunosuke M</a>
+          <a href="https://honkaiimpact3.fandom.com/Ryunosuke_Akutagawa">Ryunosuke M</a>
           , so you can also use the "CRT" multiplier type directly. CRT converts to crit rate with
           the following formula: crit rate = CRT/(Valk Level * 5 + 75). At max level, 4.75 CRT is
           equal to 1% crit rate.
