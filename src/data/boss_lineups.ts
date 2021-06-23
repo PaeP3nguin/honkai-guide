@@ -355,6 +355,10 @@ const BOSS_LINEUPS = Object.freeze([
     date: new Date("2021-07-12T00:00:00"),
     bosses: [Bosses.Parvati, Bosses.Doom, Bosses.BKE],
   }),
+  new BossLineup({
+    date: new Date("2021-07-19T00:00:00"),
+    bosses: [Bosses.Andrius, Bosses.Hephaestus, Bosses.Hellmaru],
+  }),
 ]);
 // Lineup sources:
 // https://bbs.mihoyo.com/bh3/topicDetail/20
