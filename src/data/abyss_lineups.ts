@@ -468,6 +468,16 @@ const ABYSS_LINEUPS = Object.freeze([
     boss: Bosses.HOMU,
     weather: EXALTED_WEATHER.Bloodlust,
   }),
+  new AbyssLineup({
+    date: new Date("2021-07-22T00:00:01"),
+    boss: Bosses.DXY,
+    weather: EXALTED_WEATHER.TypeCounter,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-07-26T00:00:01"),
+    boss: Bosses.Nihilus,
+    weather: EXALTED_WEATHER.Lightning,
+  }),
 ]);
 // Lineup sources with weathers in video:
 // https://space.bilibili.com/60622135/video

@@ -359,6 +359,10 @@ const BOSS_LINEUPS = Object.freeze([
     date: new Date("2021-07-19T00:00:00"),
     bosses: [Bosses.Andrius, Bosses.Hephaestus, Bosses.Hellmaru],
   }),
+  new BossLineup({
+    date: new Date("2021-07-26T00:00:00"),
+    bosses: [Bosses.Tonatiuh, Bosses.Couatl, Bosses.Rimestar],
+  }),
 ]);
 // Lineup sources:
 // https://bbs.mihoyo.com/bh3/topicDetail/20
