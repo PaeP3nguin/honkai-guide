@@ -2056,7 +2056,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: true,
-        name: "Zhenyi 2 set: for 15s upon switch in, gain lightning DMG",
+        name: "Zhenyi 2 set: for 12s upon switch in, gain lightning DMG",
         type: Type.EleDealt,
         value: 30,
       }),
