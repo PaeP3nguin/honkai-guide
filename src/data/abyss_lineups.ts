@@ -479,6 +479,21 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.Lightning,
   }),
   new AbyssLineup({
+    date: new Date("2021-07-29T00:00:00"),
+    boss: Bosses.Couatl,
+    weather: EXALTED_WEATHER.Quantum,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-08-02T00:00:00"),
+    boss: Bosses.Nihilus,
+    weather: EXALTED_WEATHER.Lightning,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-08-05T00:00:00"),
+    boss: Bosses.HoS,
+    weather: EXALTED_WEATHER.TypeCounter,
+  }),
+  new AbyssLineup({
     date: new Date("2021-08-12T00:00:00"),
     event: "Patch 5.0 (predicted)",
   }),
