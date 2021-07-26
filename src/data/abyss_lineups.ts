@@ -500,6 +500,10 @@ const ABYSS_LINEUPS = Object.freeze([
   }),
   new AbyssLineup({
     date: new Date("2021-08-12T00:00:00"),
+    event: "Patch 5.0 (predicted)",
+  }),
+  new AbyssLineup({
+    date: new Date("2021-08-12T00:00:01"),
     boss: Bosses.Heimdall,
     weather: EXALTED_WEATHER.Fire,
   }),
@@ -507,10 +511,6 @@ const ABYSS_LINEUPS = Object.freeze([
     date: new Date("2021-08-16T00:00:00"),
     boss: Bosses.Hellmaru,
     weather: EXALTED_WEATHER.Ice,
-  }),
-  new AbyssLineup({
-    date: new Date("2021-08-12T00:00:00"),
-    event: "Patch 5.0 (predicted)",
   }),
 ]);
 // Lineup sources with weathers in video:
