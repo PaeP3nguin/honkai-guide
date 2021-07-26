@@ -494,6 +494,21 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.TypeCounter,
   }),
   new AbyssLineup({
+    date: new Date("2021-08-09T00:00:00"),
+    boss: Bosses.Rimestar,
+    weather: EXALTED_WEATHER.Fire,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-08-12T00:00:00"),
+    boss: Bosses.Heimdall,
+    weather: EXALTED_WEATHER.Fire,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-08-16T00:00:00"),
+    boss: Bosses.Hellmaru,
+    weather: EXALTED_WEATHER.Ice,
+  }),
+  new AbyssLineup({
     date: new Date("2021-08-12T00:00:00"),
     event: "Patch 5.0 (predicted)",
   }),
