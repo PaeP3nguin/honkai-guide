@@ -66,6 +66,7 @@
     // '空之律者': 'Herrscher of the Void', // (use valkyrie TL)
     "MHT-3和平使者": "MHT-3 Pax",
     "MHT-3 和平使者": "MHT-3 Pax",
+    "MHT-3B 天堂使者": "MHT-3B",
     阿湿波: "Assaka",
     地藏御魂: "Jizo Mitama",
     赫菲斯托斯: "Hephaestus ",
@@ -114,6 +115,7 @@
     朔夜观星: "Starlit Astrologos",
 
     琪亚娜: "Kiana",
+    薪炎之律者: "Herrscher of Flamescion",
     天穹游侠: "Void Ranger",
     空之律者: "Herrscher of the Void",
     圣女祈祷: "Divine Prayer",
