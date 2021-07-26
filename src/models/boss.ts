@@ -143,6 +143,12 @@ const Bosses = Object.freeze({
     image: "mexicatl.png",
     wikiLink: "https://honkaiimpact3.fandom.com/Mexicatl_-_Umbreist_(Memorial_Arena)",
   }),
+  MHT3B: new Boss({
+    name: "MHT-3B",
+    shortName: "MHT-3B",
+    image: "mht3b.png",
+    wikiLink: "https://honkaiimpact3.fandom.com/",
+  }),
   Nihilus: new Boss({
     name: "Nihilus Husk",
     shortName: "Nihilus",
