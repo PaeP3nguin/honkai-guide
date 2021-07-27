@@ -379,6 +379,10 @@ const BOSS_LINEUPS = Object.freeze([
     date: new Date("2021-08-16T00:00:00"),
     bosses: [Bosses.MHT3B, Bosses.Couatl, Bosses.DXY],
   }),
+  new BossLineup({
+    date: new Date("2021-08-23T00:00:00"),
+    bosses: [Bosses.Kasumi, Bosses.Hellmaru, Bosses.Huodou],
+  }),
 ]);
 // Lineup sources:
 // https://bbs.mihoyo.com/bh3/topicDetail/20

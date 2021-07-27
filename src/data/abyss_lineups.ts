@@ -512,13 +512,20 @@ const ABYSS_LINEUPS = Object.freeze([
     boss: Bosses.Hellmaru,
     weather: EXALTED_WEATHER.Ice,
   }),
+  new AbyssLineup({
+    date: new Date("2021-08-19T00:00:00"),
+    boss: Bosses.MHT3B,
+    weather: EXALTED_WEATHER.Fire,
+  }),
 ]);
 // Lineup sources with weathers in video:
 // https://space.bilibili.com/60622135/video
 // https://space.bilibili.com/70973141
-// https://space.bilibili.com/23175073/video (stopped posting in April 21)
-// https://space.bilibili.com/60622135/video (stopped posting in March 21)
-// https://space.bilibili.com/189912239/video (just started)
+// https://space.bilibili.com/70973141
+// https://space.bilibili.com/298574258
+// https://space.bilibili.com/23175073/video
+// https://space.bilibili.com/60622135/video
+// https://space.bilibili.com/189912239/video (stopped posting 2021-07-16)
 //
 // Search for all ex abyss vids, sorted by recency:
 // https://search.bilibili.com/all?keyword=%E8%B6%85%E5%BC%A6%E7%A9%BA%E9%97%B4&order=pubdate&duration=0&tids_1=0
