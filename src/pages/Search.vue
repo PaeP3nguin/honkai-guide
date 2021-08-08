@@ -95,6 +95,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2021/08/07 - Fix HoS translation, thanks Jun</li>
           <li>2021/07/25 - Add HoFS and MHT-3B (new tank), updated fix 3rdguide script</li>
           <li>2021/06/09 - Add Andrius boss and Fischl valk, update fix 3rdguide script</li>
           <li>2021/05/13 - Add Kasumi boss and Starchasm Nyx valk, update fix 3rdguide script</li>
@@ -105,8 +106,8 @@
           <li>2020/12/16 - Add DA (thanks Echidna), update 3rd guide script, nicknames for HoV</li>
           <li>2020/12/16 - Add Rimestar boss, adjust Seele suit names, thanks Echidona</li>
           <li>2020/11/07 - Add FTD to fix 3rd guide script</li>
-          <li>2020/11/07 - Add alternate name for FTD</li>
-          <!-- <li>2020/09/22 - Add Fervent Tempo Delta valk</li>
+          <!-- <li>2020/11/07 - Add alternate name for FTD</li>
+          <li>2020/09/22 - Add Fervent Tempo Delta valk</li>
           <li>2020/09/16 - Add Nihilus Husk boss</li>
           <li>2020/09/15 - Add Nirvana to modifiers</li>
           <li>2020/09/12 - Add DS to 3rd guide bookmarklet</li>
@@ -223,7 +224,7 @@ const bossToChinese = {
   "Herrscher of the Void (God Kiana, GK, HoV)": ["空之律者", "女王"],
   Heimdall: ["海姆达尔", "海胖"],
   Hellmaru: ["狐狸", "绯狱丸"],
-  "Herrscher of Sentience (HoS)": ["识之侓者"],
+  "Herrscher of Sentience (HoS)": ["识之律者"],
   "HOMU King": ["吼姆"],
   Huodou: ["祸斗"],
   "Jizo Mitama": ["地藏", "地藏御魂"],
@@ -273,7 +274,7 @@ const valkToChinese = {
   "Haxxor Bunny (HB)": ["骇兔", "迷城骇兔"],
   "Herrscher of Flamescion (HoFS)": ["薪炎之律者", "萤火虫"],
   "Herrscher of the Void (God Kiana, GK, HoV)": ["律"],
-  "Herrscher of Sentience (HoS)": ["识之侓者", "识侓", "识"],
+  "Herrscher of Sentience (HoS)": ["识之律者", "识律", "识"],
   "Herrscher of Thunder (HoT, HT)": ["雷之律者", "雷律", "雷"],
   "Imayoh (IR)": ["今"],
   "Knight Moonbeam (KMB)": ["月"],
