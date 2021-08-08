@@ -509,18 +509,37 @@ const ABYSS_LINEUPS = Object.freeze([
   }),
   new AbyssLineup({
     date: new Date("2021-08-16T00:00:00"),
+    boss: Bosses.Kasumi,
+    weather: EXALTED_WEATHER.TypeCounter,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-08-19T00:00:00"),
     boss: Bosses.Hellmaru,
     weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
-    date: new Date("2021-08-19T00:00:00"),
+    date: new Date("2021-08-23T00:00:00"),
     boss: Bosses.MHT3B,
     weather: EXALTED_WEATHER.Fire,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-08-26T00:00:00"),
+    boss: Bosses.Jizo,
+    weather: EXALTED_WEATHER.Physical,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-08-30T00:00:00"),
+    boss: Bosses.Rimestar,
+    weather: EXALTED_WEATHER.Fire,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-09-02T00:00:00"),
+    boss: Bosses.Couatl,
+    weather: EXALTED_WEATHER.Quantum,
   }),
 ]);
 // Lineup sources with weathers in video:
 // https://space.bilibili.com/60622135/video
-// https://space.bilibili.com/70973141
 // https://space.bilibili.com/70973141
 // https://space.bilibili.com/298574258
 // https://space.bilibili.com/23175073/video
