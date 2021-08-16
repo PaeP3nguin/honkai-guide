@@ -980,6 +980,66 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  Himeko: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Himeko T",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Himeko T: Boost fire DMG in Herrscher form",
+        type: Type.EleDealt,
+        value: 50,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Himeko M: Enemies take bonus Fire DMG from host when host loses HP",
+        type: Type.EleTakenHost,
+        value: 20,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Himeko B",
+        type: Type.TdmDealt,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Himeko B: Every 10% of HP lost, boost fire DMG per stack (4 max)",
+        type: Type.EleDealt,
+        value: 40,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Himeko 2 set: B-piece stacks give another 15% fire DMG",
+        type: Type.EleDealt,
+        value: 60,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Himeko 3 set",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Himeko 3 set: On HP loss, boost total DMG",
+        type: Type.TdmDealt,
+        value: 10,
+      }),
+    ],
+  },
   "Irene Adler": {
     T: [
       new Multiplier({
