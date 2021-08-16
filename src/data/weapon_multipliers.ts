@@ -144,6 +144,40 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
 
 const DPS_WEAPON_MULTIPLIERS = Object.freeze({
   Pistols: {
+    "Key of Radiance": [
+      new Multiplier({
+        active: true,
+        name: "Key of Radiance: boost fire DMG",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Key of Radiance: boost total DMG of combo ATK and ultimate",
+        type: Type.TdmDealt,
+        value: 25,
+      }),
+    ],
+    "Domain of Incandescence": [
+      new Multiplier({
+        active: true,
+        name: "DoI: boost fire DMG",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: false,
+        name: "DoI: boost total DMG of combo ATK and ultimate",
+        type: Type.TdmDealt,
+        value: 35,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoI: enemies hit by weapon active explosion take bonus fire DMG",
+        type: Type.EleTaken,
+        value: 15,
+      }),
+    ],
     "Tranquil Arias": [
       new Multiplier({
         active: true,
