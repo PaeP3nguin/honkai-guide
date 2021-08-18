@@ -36,6 +36,7 @@
     记忆战场: "Memorial Arena",
 
     "战区:": "Bracket",
+    SSS难度: "SSS difficulty",
     终极战区: "Exalted",
     高级战区: "Masters",
     "强敌:": "Bosses",
@@ -66,7 +67,7 @@
     // '空之律者': 'Herrscher of the Void', // (use valkyrie TL)
     "MHT-3和平使者": "MHT-3 Pax",
     "MHT-3 和平使者": "MHT-3 Pax",
-    "MHT-3B 天堂使者": "MHT-3B",
+    "MHT-3B 天堂使者": "MHT-3B Nirvana",
     阿湿波: "Assaka",
     地藏御魂: "Jizo Mitama",
     赫菲斯托斯: "Hephaestus ",
@@ -169,6 +170,9 @@
 
     菲谢尔: "Fischl",
     "断罪皇女！！": "Prinzessin der Verurteilung",
+
+    爱莉希雅: "Elysia",
+    "粉色妖精小姐♪": "ElysiaPog",
   };
 
   const translateElement = function (tls, el) {
@@ -181,9 +185,14 @@
     $("th, span, .table-search .label").each(function () {
       translateElement(tls, this);
     });
+
+    // Fix styling. Have to do this on click since it can get reset.
+    $(".table-team-box .table-search").height(600);
+    $(".table-search .goodwar .content").height(500);
   };
 
-  $("#_js_table_s_c_1").on("click", "li", translate);
+  // Translate on table click.
+  $(".table-search").on("click", ".select-item", () => setTimeout(translate, 200));
 
   translate();
 })();
