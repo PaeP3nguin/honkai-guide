@@ -55,7 +55,7 @@
     "托纳提乌-噬日之影": "Tonatiuh",
     奔狼的领主: "Andrius",
     祸斗: "Huodou",
-    吼姆王: "Homo King",
+    吼姆王: "Homu King",
     // '卡莲': 'Kallen', // (use valkyrie TL)
     绯狱丸: "Hellmaru",
     海姆达尔: "Heimdall",
