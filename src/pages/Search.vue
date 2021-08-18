@@ -97,6 +97,7 @@
         <ul>
           <li>2021/08/18 - Add HoFS weapon and stigs to gear calc, thanks Pootz</li>
           <li>2021/08/17 - Update fix 3rdguide script with new translations and UI fixes</li>
+          <li>2021/08/16 - Add HoFS abbreviation, thanks Jun</li>
           <li>2021/08/07 - Fix HoS translation, thanks Jun</li>
           <li>2021/07/25 - Add HoFS and MHT-3B (new tank), updated fix 3rdguide script</li>
           <li>2021/06/09 - Add Andrius boss and Fischl valk, update fix 3rdguide script</li>
@@ -274,7 +275,7 @@ const valkToChinese = {
   "Flame Sakitama (FS)": ["炎"],
   "Hawk of the Fog (HF)": ["迅", "迅雷", "雾都迅羽"],
   "Haxxor Bunny (HB)": ["骇兔", "迷城骇兔"],
-  "Herrscher of Flamescion (HoFS)": ["薪炎之律者", "萤火虫"],
+  "Herrscher of Flamescion (HoFS)": ["薪", "炎", "萤火虫", "薪炎之律者"],
   "Herrscher of the Void (God Kiana, GK, HoV)": ["律"],
   "Herrscher of Sentience (HoS)": ["识之律者", "识律", "识"],
   "Herrscher of Thunder (HoT, HT)": ["雷之律者", "雷律", "雷"],
