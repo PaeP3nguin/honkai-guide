@@ -386,6 +386,70 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
 });
 
 const DPS_STIG_MULTIPLIERS = Object.freeze({
+  "Allen Poe": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Allen Poe T",
+        type: Type.CritRate,
+        value: 18,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Allen Poe T: if 2 or more enemies, convert 2%*n of the bonus crit rate to 4%*n phys DMG (max 5)",
+        type: Type.PhysDealt,
+        value: 20,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Allen Poe M: After spending no less than 3/33/63 sp, boost crit DMG for basic ATKs (charged/combo included)",
+        type: Type.CritDmg,
+        value: 50,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Allen Poe M: After spending no less than 3/33/63 sp, boost crit DMG for basic ATKs (charged/combo included)",
+        type: Type.CritDmg,
+        value: 60,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Allen Poe M: After spending no less than 3/33/63 sp, boost crit DMG for basic ATKs (charged/combo included)",
+        type: Type.CritDmg,
+        value: 70,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Allen Poe 2 set",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Allen Poe 2 set: Charged ATKs and followups within 1sec deal more total DMG",
+        type: Type.TdmDealt,
+        value: 40,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Allen Poe 2 set: Seele gains additional total DMG for said ATKs",
+        type: Type.TdmDealt,
+        value: 40,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Allen Poe 2 set: Seele gains total DMG",
+        type: Type.TdmDealt,
+        value: 25,
+      }),
+    ],
+  },
   "Ana Schariac": {
     T: [
       new Multiplier({
