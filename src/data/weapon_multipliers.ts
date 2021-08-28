@@ -516,6 +516,38 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 30,
       }),
     ],
+    "Path to Acheron: Kindred": [
+      new Multiplier({
+        active: true,
+        name: "Kindred: Mark: Gain crit rate when using switch skill or ult.",
+        type: Type.CritRate,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Kindred: Mark: Gain crit DMG when using switch skill or ult.",
+        type: Type.CritDmg,
+        value: 36,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Kindred: Mark: Veliona gains additional crit DMG after switch/ult (70% total)",
+        type: Type.CritDmg,
+        value: 34,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Kindred: Nirvana",
+        type: Type.PhysDealt,
+        value: 26,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Kindred: Nirvana: Stygian Nymph marks gain 36% TDM boost.",
+        type: Type.TdmDealt,
+        value: 36,
+      }),
+    ],
     "Sanguine Gaze": [
       new Multiplier({
         active: true,
