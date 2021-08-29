@@ -543,7 +543,7 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: true,
-        name: "Kindred: Nirvana: Stygian Nymph marks gain 36% TDM boost.",
+        name: "Kindred: Nirvana: Stygian Nymph marks gain TDM boost.",
         type: Type.TdmDealt,
         value: 36,
       }),
