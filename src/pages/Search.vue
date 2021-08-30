@@ -95,7 +95,8 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
-          <li>20201/08/21 - Add Elysian Realm modifier, thanks Bento</li>
+          <li>2021/08/29 - Add Poe and Acheron to gear calc, thanks Pootz</li>
+          <li>2021/08/21 - Add Elysian Realm modifier, thanks Bento and Eku</li>
           <li>2021/08/18 - Add HoFS weapon and stigs to gear calc, thanks Pootz</li>
           <li>2021/08/17 - Update fix 3rdguide script with new translations and UI fixes</li>
           <li>2021/08/16 - Add HoFS abbreviation, thanks Jun</li>
@@ -332,7 +333,7 @@ const modifiersToChinese = {
   Myriad: ["无限"],
   Nirvana: ["寂灭"],
   "Sim battle": ["模拟作战室"],
-  "Elysian Realm": ["往事乐土"],
+  "Elysian Realm": ["往世乐土", "往事乐土"],
   "Honkai Impact 3": ["崩坏3"],
 };
 
