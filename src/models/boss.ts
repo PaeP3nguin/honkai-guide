@@ -144,7 +144,7 @@ const Bosses = Object.freeze({
     wikiLink: "https://honkaiimpact3.fandom.com/Mexicatl_-_Umbreist_(Memorial_Arena)",
   }),
   MHT3B: new Boss({
-    name: "MHT-3B",
+    name: "MHT-3B Nirvana",
     shortName: "MHT-3B",
     image: "mht3b.png",
     wikiLink: "https://honkaiimpact3.fandom.com/",

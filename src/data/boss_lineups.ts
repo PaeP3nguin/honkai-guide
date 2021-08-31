@@ -382,10 +382,27 @@ const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2021-08-23T00:00:00"),
     bosses: [Bosses.Kasumi, Bosses.Hellmaru, Bosses.Huodou],
+    // Was actually Jizo, Hellmaru, Huodou
   }),
   new BossLineup({
     date: new Date("2021-08-30T00:00:00"),
     bosses: [Bosses.Tonatiuh, Bosses.Heimdall, Bosses.Jizo],
+  }),
+  new BossLineup({
+    date: new Date("2021-09-06T00:00:00"),
+    bosses: [Bosses.Kasumi, Bosses.Parvati, Bosses.Rimestar],
+  }),
+  new BossLineup({
+    date: new Date("2021-09-13T00:00:00"),
+    bosses: [Bosses.MHT3B, Bosses.DXY, Bosses.Andrius],
+  }),
+  new BossLineup({
+    date: new Date("2021-09-20T00:00:00"),
+    bosses: [Bosses.MHT3B, Bosses.Benares, Bosses.Heimdall],
+  }),
+  new BossLineup({
+    date: new Date("2021-09-27T00:00:00"),
+    bosses: [Bosses.Jizo, Bosses.SK, Bosses.Tonatiuh],
   }),
 ]);
 // Lineup sources:
