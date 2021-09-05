@@ -95,6 +95,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2021/09/04 - Add Elysia valk, thanks Aria</li>
           <li>2021/08/29 - Add Poe and Acheron to gear calc, thanks Pootz</li>
           <li>2021/08/21 - Add Elysian Realm modifier, thanks Bento and Eku</li>
           <li>2021/08/18 - Add HoFS weapon and stigs to gear calc, thanks Pootz</li>
@@ -108,8 +109,8 @@
           <li>2021/02/16 - Add Blazing Hope valk, update fix 3rdguide script</li>
           <li>2021/02/15 - Add HoS, thanks Idol Party discord!</li>
           <li>2021/01/01 - Happy new year! Add Couatl boss, thanks Charlie</li>
-          <li>2020/12/16 - Add DA (thanks Echidna), update 3rd guide script, nicknames for HoV</li>
-          <!-- <li>2020/12/16 - Add Rimestar boss, adjust Seele suit names, thanks Echidona</li>
+          <!-- <li>2020/12/16 - Add DA (thanks Echidna), update 3rd guide script, nicknames for HoV</li>
+          <li>2020/12/16 - Add Rimestar boss, adjust Seele suit names, thanks Echidona</li>
           <li>2020/11/07 - Add FTD to fix 3rd guide script</li>
           <li>2020/11/07 - Add alternate name for FTD</li>
           <li>2020/09/22 - Add Fervent Tempo Delta valk</li>
@@ -271,6 +272,7 @@ const valkToChinese = {
   "Dea Anchora (DA)": ["不灭星锚", "星", "锚"],
   "Dimension Break (DB)": ["次"],
   "Divine Prayer (DP)": ["圣"],
+  "Elysia (Miss Pink Elf)": ["爱莉希雅", "爱莉", "爱"],
   "Fallen Rosemary (FR)": ["迭", "失落迷迭"],
   "Fervent Tempo Delta (FTD)": ["狂热蓝调", "粉"],
   Fischl: ["小艾咪", "皇女"],
