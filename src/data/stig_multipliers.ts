@@ -958,6 +958,66 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  Elysia: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Elysia T",
+        type: Type.PhysDealt,
+        value: 25,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Elysia T: Crit DMG increased for basic/combo/charged ATKs",
+        type: Type.CritDmg,
+        value: 20,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Elysia M",
+        type: Type.PhysDealt,
+        value: 30,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Elysia B",
+        type: Type.TdmDealt,
+        value: 25,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Elysia B",
+        type: Type.CritDmg,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Elysia B: Charged ATKs boost crit DMG",
+        type: Type.CritDmg,
+        value: 15,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Elysia 2 set",
+        type: Type.TdmDealt,
+        value: 25,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Elysia 3 set: Crit DMG for ranged attacks",
+        type: Type.CritDmg,
+        value: 30,
+      }),
+    ],
+  },
   Ekaterina: {
     M: [
       new Multiplier({
