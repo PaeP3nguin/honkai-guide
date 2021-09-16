@@ -667,6 +667,42 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  Bows: {
+    "Whisper of the Past": [
+      new Multiplier({
+        active: true,
+        name: "Whisper of the Past: Passive: Charged ATKs deal bonus phys DMG",
+        type: Type.PhysDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Whisper of the Past: Passive: Using weapon active or charged ATKs boost crit DMG",
+        type: Type.CritDmg,
+        value: 20,
+      }),
+    ],
+    "Whisper of the Past: Sonnet": [
+      new Multiplier({
+        active: true,
+        name: "Whisper of the Past PRI: Passive: Charged ATKs deal bonus phys DMG",
+        type: Type.PhysDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Whisper of the Past PRI: Passive: Using weapon active or charged ATKs boost crit DMG",
+        type: Type.CritDmg,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Whisper of the Past PRI: Passive: Wielder deals bonus total DMG",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+    ],
+  },
 });
 
 export { SUPPORT_WEAPON_MULTIPLIERS, DPS_WEAPON_MULTIPLIERS };
