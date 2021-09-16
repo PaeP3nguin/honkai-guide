@@ -606,6 +606,26 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 35,
       }),
     ],
+    "Abyss Flower: Liminal Spiral": [
+      new Multiplier({
+        active: true,
+        name: "Abyss Flower PRI: Passive",
+        type: Type.CritRate,
+        value: 25,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Abyss Flower PRI: Passive: Physical DMG is increased for 15s during burst.",
+        type: Type.PhysDealt,
+        value: 35,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Abyss Flower PRI: Passive: Crit DMG is increased for 15s during burst.",
+        type: Type.CritDmg,
+        value: 20,
+      }),
+    ],
     "Hler's Serenity": [
       new Multiplier({
         active: true,
