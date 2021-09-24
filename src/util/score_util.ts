@@ -1,13 +1,16 @@
 const pointsPerSecond = 53 + 1 / 3;
+const pointsPerSecondSSS = 16;
 
 function generateScores(seconds: number) {
   const scoresByTime = [];
   for (let i = 0; i < seconds; i += 1) {
     const rawScore = 32000 - pointsPerSecond * (i + 1);
+    const sssScore = 48000 - pointsPerSecondSSS * (i + 1);
     const score = Math.floor(rawScore);
     const up = Math.round(rawScore * 1.2);
     scoresByTime.push({
       score: score,
+      sssScore: sssScore,
       up: up,
       elapsedSec: i,
     });

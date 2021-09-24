@@ -6,6 +6,16 @@
         <v-row justify="center">
           <v-col>
             <v-autocomplete
+              v-model="selectedTime"
+              @change="computeByTime"
+              label="Time"
+              auto-select-first
+              :items="times"
+            ></v-autocomplete>
+          </v-col>
+
+          <v-col>
+            <v-autocomplete
               v-model="selectedScore"
               @change="computeByScore"
               label="Score"
@@ -27,11 +37,11 @@
 
           <v-col>
             <v-autocomplete
-              v-model="selectedTime"
-              @change="computeByTime"
-              label="Time"
+              v-model="selectedSssScore"
+              @change="computeBySssScore"
+              label="Score (SSS)"
               auto-select-first
-              :items="times"
+              :items="sssScores"
             ></v-autocomplete>
           </v-col>
         </v-row>
@@ -66,19 +76,24 @@ import { generateScores, countdownSecondsFilter } from "@/util/score_util";
 
 const tableHeaders = [
   {
+    text: "Time",
+    value: "elapsedSec",
+    width: "25%",
+  },
+  {
     text: "Score",
     value: "score",
-    width: "35%",
+    width: "25%",
   },
   {
     text: "Score (20% bonus)",
     value: "up",
-    width: "35%",
+    width: "25%",
   },
   {
-    text: "Time",
-    value: "elapsedSec",
-    width: "35%",
+    text: "Score (SSS)",
+    value: "sssScore",
+    width: "25%",
   },
 ];
 
@@ -99,10 +114,12 @@ export default Vue.extend({
       // Converter stuff
       scores: scoresByTime.map((s) => s.score),
       upScores: scoresByTime.map((s) => s.up),
+      sssScores: scoresByTime.map((s) => s.sssScore),
       times: scoresByTime.map((s) => elapsedSecToAutocompleteItem(s.elapsedSec)),
       selectedScore: null,
       selectedUpScore: null,
       selectedTime: null,
+      selectedSssScore: null,
 
       // Table stuff
       tableHeaders: tableHeaders,
@@ -114,18 +131,25 @@ export default Vue.extend({
   methods: {
     computeByScore: function () {
       const computedScore = scoresByTime.find((s) => s.score == this.selectedScore);
-      this.selectedUpScore = computedScore.up;
-      this.selectedTime = elapsedSecToAutocompleteItem(computedScore.elapsedSec);
+      this.fillSelectionsWithComputedScore(computedScore);
     },
     computeByUpScore: function () {
       const computedScore = scoresByTime.find((s) => s.up == this.selectedUpScore);
-      this.selectedScore = computedScore.score;
-      this.selectedTime = elapsedSecToAutocompleteItem(computedScore.elapsedSec);
+      this.fillSelectionsWithComputedScore(computedScore);
     },
     computeByTime: function () {
       const computedScore = scoresByTime.find((s) => s.elapsedSec == this.selectedTime);
+      this.fillSelectionsWithComputedScore(computedScore);
+    },
+    computeBySssScore: function () {
+      const computedScore = scoresByTime.find((s) => s.sssScore == this.selectedSssScore);
+      this.fillSelectionsWithComputedScore(computedScore);
+    },
+    fillSelectionsWithComputedScore: function (computedScore) {
       this.selectedScore = computedScore.score;
       this.selectedUpScore = computedScore.up;
+      this.selectedSssScore = computedScore.sssScore;
+      this.selectedTime = elapsedSecToAutocompleteItem(computedScore.elapsedSec);
     },
   },
   filters: {

@@ -95,6 +95,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2021/09/23 - Add SSS scores to scores page and search sidebar</li>
           <li>2021/09/20 - Add Elysia stigs, bow, and Abyss Flower PRI to calc, thanks Pootz</li>
           <li>2021/09/04 - Add Elysia valk, thanks Aria</li>
           <li>2021/08/29 - Add Poe and Acheron to gear calc, thanks Pootz</li>
@@ -108,8 +109,8 @@
           <li>2021/05/13 - Add Kasumi boss and Starchasm Nyx valk, update fix 3rdguide script</li>
           <li>2021/04/24 - Add Haxxor Bunny valk, HoS boss, update fix 3rdguide script</li>
           <li>2021/02/16 - Add Blazing Hope valk, update fix 3rdguide script</li>
-          <li>2021/02/15 - Add HoS, thanks Idol Party discord!</li>
-          <!-- <li>2021/01/01 - Happy new year! Add Couatl boss, thanks Charlie</li>
+          <!-- <li>2021/02/15 - Add HoS, thanks Idol Party discord!</li>
+          <li>2021/01/01 - Happy new year! Add Couatl boss, thanks Charlie</li>
           <li>2020/12/16 - Add DA (thanks Echidna), update 3rd guide script, nicknames for HoV</li>
           <li>2020/12/16 - Add Rimestar boss, adjust Seele suit names, thanks Echidona</li>
           <li>2020/11/07 - Add FTD to fix 3rd guide script</li>
@@ -181,8 +182,9 @@
 
         <h2 class="mt-6">Scores by time</h2>
         <ul>
+          <li>time = score / uprate score / SSS score</li>
           <li v-for="s in scoresByTime" v-bind:key="s.score">
-            {{ s.score }} ({{ s.up }}) = {{ s.elapsedSec | countdownSeconds }}
+            {{ s.elapsedSec | countdownSeconds }} = {{ s.score }} / {{ s.up }} / {{ s.sssScore }}
           </li>
         </ul>
       </v-flex>
@@ -280,7 +282,7 @@ const valkToChinese = {
   "Flame Sakitama (FS)": ["炎"],
   "Hawk of the Fog (HF)": ["迅", "迅雷", "雾都迅羽"],
   "Haxxor Bunny (HB)": ["骇兔", "迷城骇兔"],
-  "Herrscher of Flamescion (HoFS)": ["薪", "炎", "萤火虫", "薪炎之律者"],
+  "Herrscher of Flamescion (HoFS, KFC)": ["薪", "炎", "萤火虫", "薪炎之律者"],
   "Herrscher of the Void (God Kiana, GK, HoV)": ["律"],
   "Herrscher of Sentience (HoS)": ["识之律者", "识律", "识"],
   "Herrscher of Thunder (HoT, HT)": ["雷之律者", "雷律", "雷"],
@@ -304,7 +306,7 @@ const valkToChinese = {
   "Shadow Dash (SD)": ["影"],
   "Shadow Knight (SK)": ["轮"],
   "Sixth Serenade (6S)": ["六"],
-  "Starchasm Nyx (SN)": ["魇夜星渊", "冰希"],
+  "Starchasm Nyx": ["魇夜星渊", "冰希"],
   "Starlit Astrologos (SA, Zhuge)": ["朔夜观星", "观"],
   "Stygian Nymph (SN)": ["黑希", "希"], // 彼岸双生
   "Swallowtail Phantasm (SP)": ["幻海梦蝶", "A希"],
