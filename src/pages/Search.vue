@@ -182,7 +182,7 @@
 
         <h2 class="mt-6">Scores by time</h2>
         <ul>
-          <li>time = score / uprate score / SSS score</li>
+          <li>time = base / uprate / SSS</li>
           <li v-for="s in scoresByTime" v-bind:key="s.score">
             {{ s.elapsedSec | countdownSeconds }} = {{ s.score }} / {{ s.up }} / {{ s.sssScore }}
           </li>
