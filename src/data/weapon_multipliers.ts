@@ -228,6 +228,14 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 20,
       }),
     ],
+    "Dark Star": [
+      new Multiplier({
+        active: true,
+        name: "Dark Star: Passive: Team deals bonus physical DMG to bleeding enemies",
+        type: Type.PhysDealt,
+        value: 15,
+      }),
+    ],
     "Key of Reason (KoR)": [
       new Multiplier({
         active: true,
