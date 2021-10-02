@@ -666,6 +666,34 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 30,
       }),
     ],
+    "Sagittarius Astra": [
+      new Multiplier({
+        active: false,
+        name: 'Sagittarius Astra: Passive: Ultimate or Burst Mode attacks deal bonus Fire DMG',
+        type: Type.EleDealt,
+        value: 35,
+      }),
+      new Multiplier({
+        active: false,
+        name: 'Sagittarius Astra: Passive: Enemies hit by shattered Stardust take bonus Fire DMG',
+        type: Type.EleTaken,
+        value: 20,
+      }),
+    ],
+    "Starlance Prime": [
+      new Multiplier({
+        active: false,
+        name: 'Starlance: Passive: Ultimate or Burst Mode attacks deal bonus Fire DMG',
+        type: Type.EleDealt,
+        value: 25,
+      }),
+      new Multiplier({
+        active: false,
+        name: 'Starlance: Passive: Enemies hit by shattered Stardust take bonus Fire DMG',
+        type: Type.EleTaken,
+        value: 16,
+      }),
+    ],
   },
   Bows: {
     "Whisper of the Past": [

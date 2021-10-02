@@ -1838,6 +1838,66 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  "Shakespeare: Adrift": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "ShakesA T: Fire boost.",
+        type: Type.EleDealt,
+        value: 25,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "ShakesA M",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "ShakesA M: Raising Alignment boosts Ultimate fire dmg (max 4)",
+        type: Type.EleDealt,
+        value: 32,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "ShakesA B: Fire boost.",
+        type: Type.EleDealt,
+        value: 25,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "ShakesA 2 set: Fire boost.",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "ShakesA 2 set: Raising Alignment to 4 makes enemies take bonus fire DMG from host",
+        type: Type.EleTakenHost,
+        value: 20,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "ShakesA 3 set: Boost Ultimate total DMG.",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "ShakesA 3 set: Durandal bonus: boost Ultimate total DMG.",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+    ],
+  },
   "Shattered Swords": {
     T: [
       new Multiplier({
