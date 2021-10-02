@@ -91,6 +91,32 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  Holmes: {
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Holmes M: team QTEs deal bonus total DMG vs bleeding enemies",
+        type: Type.TdmDealt,
+        value: 18,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Holmes B: after host dmgs a bleeding enemy, team deals bonus physical DMG",
+        type: Type.PhysDealt,
+        value: 18,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Holmes 2 set: Host attacks inflict Sanguine Stain on bleeding targets, making them receive bonus physical DMG.",
+        type: Type.PhysTaken,
+        value: 20,
+      }),
+    ],
+  },
   "Irene Adler": {
     T: [
       new Multiplier({
