@@ -58,6 +58,7 @@
     吼姆王: "Homu King",
     // '卡莲': 'Kallen', // (use valkyrie TL)
     绯狱丸: "Hellmaru",
+
     海姆达尔: "Heimdall",
     湮灭沉灵: "Doom",
     教父军团: "Padrino Legion",
@@ -78,6 +79,7 @@
     八重霞: "Kasumi",
     陨冰之律者: "Rimestar",
     "虚树神骸-虚无主义": "Nihilus Husk",
+    "支配之律者-乌合之众": "Herrscher of Dominance",
 
     // Valkyries
     符华: "Fu Hua",
