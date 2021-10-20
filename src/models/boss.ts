@@ -107,6 +107,12 @@ const Bosses = Object.freeze({
     image: "hellmaru.png",
     wikiLink: "https://honkaiimpact3.fandom.com/Hellmaru_(Memorial_Arena)",
   }),
+  HoD: new Boss({
+    name: "Herrscher of Dominance",
+    shortName: "HoD",
+    image: "hod.png",
+    wikiLink: "",
+  }),
   HOMU: new Boss({
     name: "HOMU King",
     shortName: "HOMU",
