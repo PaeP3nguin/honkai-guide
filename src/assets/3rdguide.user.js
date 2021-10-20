@@ -81,7 +81,43 @@
     "虚树神骸-虚无主义": "Nihilus Husk",
     "支配之律者-乌合之众": "Herrscher of Dominance",
 
-    // Valkyries
+    // === Superstring abyss translations ===
+    // Abyss ranks
+    "段位:": "Rank",
+    原罪: "Sinful",
+    禁忌: "Forbidden",
+    苦痛: "Agony",
+    红莲: "Red lotus",
+    寂灭: "Nirvana",
+
+    // Abyss weather
+    "天气:": "Weather",
+    恐雷: "Lightning",
+    怯火: "Fire",
+    惧冰: "Ice",
+    量子: "Quantum",
+    畏血: "Physical",
+    狙击: "Ranged",
+    天敌: "Type counter",
+    燃素: "Ignite",
+    战意: "Bloodlust",
+    虚数: "Imaginary",
+
+    // Abyss stages
+    "区域:": "Stage",
+    边缘区: "Fringe (first)",
+    密集区: "Intensive (second)",
+    高危区: "Perilous (boss)",
+    特异区: "Singular (side)",
+
+    // Abyss bosses
+    吼姆魔术师: "Homu Magician",
+    "虚树神骸-虚无主义II": "Nihilus Husk (hit count)",
+    "神机-海姆达尔": "Heimdall",
+    "娑婆 阿湿波": "Saha Assaka",
+    群怪: "Mobs",
+
+    // === Valkyries ===
     符华: "Fu Hua",
     识之律者: "Herrscher of Sentience",
     云墨丹心: "Azure Empyrea",
@@ -174,7 +210,7 @@
     "断罪皇女！！": "Prinzessin der Verurteilung",
 
     爱莉希雅: "Elysia",
-    "粉色妖精小姐♪": "ElysiaPog",
+    "粉色妖精小姐♪": "Miss Pink Elf",
 
     "娜塔莎·希奥拉": "Raven",
     午夜苦艾: "Midnight Absinthe",
@@ -190,7 +226,10 @@
   };
 
   const translate = function () {
-    $("th, span, .table-search .label").each(function () {
+    const dropdownText = $(".filter-text > input").val();
+    $(".filter-text > input").val(dropdownText === "超弦空间" ? "Abyss" : "MA");
+
+    $("th, span, .table-search, .label, .title").each(function () {
       translateElement(tls, this);
     });
 
@@ -201,6 +240,7 @@
 
   // Translate on table click.
   $(".table-search").on("click", ".select-item", () => setTimeout(translate, 200));
+  $(".el-select-dropdown__item").on("click", () => setTimeout(translate, 200));
 
   translate();
 })();
