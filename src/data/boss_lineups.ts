@@ -373,7 +373,7 @@ const BOSS_LINEUPS = Object.freeze([
   }),
   new BossLineup({
     date: new Date("2021-08-12T00:00:00"),
-    event: "Patch 5.0 (predicted)",
+    event: "Patch 5.0",
   }),
   new BossLineup({
     date: new Date("2021-08-16T00:00:00"),
@@ -397,6 +397,10 @@ const BOSS_LINEUPS = Object.freeze([
     bosses: [Bosses.MHT3B, Bosses.DXY, Bosses.Andrius],
   }),
   new BossLineup({
+    date: new Date("2021-09-15T00:00:00"),
+    event: "Patch 5.1",
+  }),
+  new BossLineup({
     date: new Date("2021-09-20T00:00:00"),
     bosses: [Bosses.MHT3B, Bosses.Benares, Bosses.Heimdall],
   }),
@@ -415,6 +419,10 @@ const BOSS_LINEUPS = Object.freeze([
   new BossLineup({
     date: new Date("2021-10-18T00:00:00"),
     bosses: [Bosses.MHT3B, Bosses.BKE, Bosses.Andrius],
+  }),
+  new BossLineup({
+    date: new Date("2021-10-20T00:00:00"),
+    event: "Patch 5.2",
   }),
   new BossLineup({
     date: new Date("2021-10-25T00:00:00"),
