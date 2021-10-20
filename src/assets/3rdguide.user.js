@@ -173,6 +173,12 @@
 
     爱莉希雅: "Elysia",
     "粉色妖精小姐♪": "ElysiaPog",
+
+    "娜塔莎·希奥拉": "Raven",
+    午夜苦艾: "Midnight Absinthe",
+
+    梅比乌斯: "Mobisus",
+    "无限·噬界之蛇": "Infinite Ouroboros",
   };
 
   const translateElement = function (tls, el) {
