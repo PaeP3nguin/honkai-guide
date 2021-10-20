@@ -404,6 +404,34 @@ const BOSS_LINEUPS = Object.freeze([
     date: new Date("2021-09-27T00:00:00"),
     bosses: [Bosses.Jizo, Bosses.SK, Bosses.Tonatiuh],
   }),
+  new BossLineup({
+    date: new Date("2021-10-04T00:00:00"),
+    bosses: [Bosses.MHT3B, Bosses.AKA, Bosses.Kasumi],
+  }),
+  new BossLineup({
+    date: new Date("2021-10-11T00:00:00"),
+    bosses: [Bosses.Jizo, Bosses.Hellmaru, Bosses.Kallen],
+  }),
+  new BossLineup({
+    date: new Date("2021-10-18T00:00:00"),
+    bosses: [Bosses.MHT3B, Bosses.BKE, Bosses.Andrius],
+  }),
+  new BossLineup({
+    date: new Date("2021-10-25T00:00:00"),
+    bosses: [Bosses.Andrius, Bosses.Tonatiuh, Bosses.HoD],
+  }),
+  new BossLineup({
+    date: new Date("2021-11-01T00:00:00"),
+    bosses: [Bosses.MHT3B, Bosses.Hellmaru, Bosses.HOMU],
+  }),
+  new BossLineup({
+    date: new Date("2021-11-08T00:00:00"),
+    bosses: [Bosses.Jizo, Bosses.Kallen, Bosses.Rimestar],
+  }),
+  new BossLineup({
+    date: new Date("2021-11-15T00:00:00"),
+    bosses: [Bosses.Andrius, Bosses.Couatl, Bosses.BKE],
+  }),
 ]);
 // Lineup sources:
 // https://bbs.mihoyo.com/bh3/topicDetail/20
