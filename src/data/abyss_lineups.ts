@@ -553,6 +553,10 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.TypeCounter,
   }),
   new AbyssLineup({
+    date: new Date("2021-09-15T00:00:00"),
+    event: "Patch 5.1",
+  }),
+  new AbyssLineup({
     date: new Date("2021-09-16T00:00:00"),
     boss: Bosses.SK,
     weather: EXALTED_WEATHER.TypeCounter,
@@ -572,13 +576,90 @@ const ABYSS_LINEUPS = Object.freeze([
     boss: Bosses.HoS,
     weather: EXALTED_WEATHER.TypeCounter,
   }),
+  new AbyssLineup({
+    date: new Date("2021-09-30T00:00:00"),
+    boss: Bosses.Hellmaru,
+    weather: EXALTED_WEATHER.Ice,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-10-03T00:00:00"),
+    boss: Bosses.Huodou,
+    weather: EXALTED_WEATHER.TypeCounter,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-10-07T00:00:00"),
+    boss: Bosses.Jizo,
+    weather: EXALTED_WEATHER.Physical,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-10-10T00:00:00"),
+    boss: Bosses.SK,
+    weather: EXALTED_WEATHER.TypeCounter,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-10-14T00:00:00"),
+    boss: Bosses.AKA,
+    weather: EXALTED_WEATHER.Ignite,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-10-17T00:00:00"),
+    boss: Bosses.SahaAssaka,
+    weather: EXALTED_WEATHER.Ranged,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-10-20T00:00:00"),
+    event: "Patch 5.2",
+  }),
+  new AbyssLineup({
+    date: new Date("2021-10-21T00:00:00"),
+    boss: Bosses.Andrius,
+    weather: EXALTED_WEATHER.TypeCounter,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-10-24T00:00:00"),
+    boss: Bosses.AKA,
+    weather: EXALTED_WEATHER.TypeCounter,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-10-28T00:00:00"),
+    boss: Bosses.BioMechMobs,
+    weather: EXALTED_WEATHER.Bloodlust,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-10-31T00:00:00"),
+    boss: Bosses.Jizo,
+    weather: EXALTED_WEATHER.Physical,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-11-04T00:00:00"),
+    boss: Bosses.Andrius,
+    weather: EXALTED_WEATHER.Lightning,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-11-07T00:00:00"),
+    boss: Bosses.HoD,
+    weather: EXALTED_WEATHER.Quantum,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-11-11T00:00:00"),
+    boss: Bosses.HOMU,
+    weather: EXALTED_WEATHER.Bloodlust,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-11-14T00:00:00"),
+    boss: Bosses.BKE,
+    weather: EXALTED_WEATHER.Lightning,
+  }),
 ]);
 // Lineup sources with weathers in video:
+// https://space.bilibili.com/345878430/video
 // https://space.bilibili.com/60622135/video
+// https://space.bilibili.com/24486730/video
 // https://space.bilibili.com/70973141
 // https://space.bilibili.com/298574258
-// https://space.bilibili.com/23175073/video
+// https://space.bilibili.com/238272931/video
 // https://space.bilibili.com/60622135/video
+// https://space.bilibili.com/23175073/video (stopped postin 2021-08-19)
 // https://space.bilibili.com/189912239/video (stopped posting 2021-07-16)
 //
 // Search for all ex abyss vids, sorted by recency:
