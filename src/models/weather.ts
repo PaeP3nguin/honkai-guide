@@ -47,6 +47,11 @@ const EXALTED_WEATHER = Object.freeze({
     effect: "Enemies are mostly QUA type.",
     icon: "quantum.png",
   }),
+  Imaginary: new Weather({
+    name: "Quantum",
+    effect: "Increase damage done by IMG valkyries by 20%.",
+    icon: "quantum.png",
+  }),
   Bloodlust: new Weather({
     name: "Bloodlust",
     effect: "Gain 20% TDM for 15s after killing an enemy, stacks up to 8 times.",
