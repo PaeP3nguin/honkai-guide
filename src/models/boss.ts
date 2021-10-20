@@ -53,6 +53,12 @@ const Bosses = Object.freeze({
     image: "benares.png",
     wikiLink: "https://honkaiimpact3.fandom.com/Benares_(Memorial_Arena)",
   }),
+  BioMechMobs: new Boss({
+    name: "Bio/Mech mobs",
+    shortName: "Mobs",
+    image: "bio_mech_mobs.png",
+    wikiLink: "",
+  }),
   BKE: new Boss({
     name: "Bright Knight - Excelsis",
     shortName: "BKE",
