@@ -140,6 +140,16 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
     ],
   },
   // Lances
+  Bows: {
+    "Obscuring Whisper": [
+      new Multiplier({
+        active: true,
+        name: "Obscuring Whisper: Passive: Team deals bonus fire DMG.",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+    ],
+  }
 });
 
 const DPS_WEAPON_MULTIPLIERS = Object.freeze({
