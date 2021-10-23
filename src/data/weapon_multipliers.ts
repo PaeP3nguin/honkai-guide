@@ -720,6 +720,26 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
     ],
   },
   Bows: {
+    "Obscuring Whisper": [
+      new Multiplier({
+        active: true,
+        name: "Obscuring Whisper: Active: 3 attacks deal bonus fire DMG.",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Obscuring Whisper: Passive: Wielder deals bonus total DMG.",
+        type: Type.TdmDealt,
+        value: 25,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Obscuring Whisper: Passive: Team deals bonus fire DMG.",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+    ],
     "Whisper of the Past": [
       new Multiplier({
         active: true,
@@ -752,26 +772,6 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         name: "Whisper of the Past PRI: Passive: Wielder deals bonus total DMG",
         type: Type.TdmDealt,
         value: 15,
-      }),
-    ],
-    "Obscuring Whisper": [
-      new Multiplier({
-        active: true,
-        name: "Obscuring Whisper: Active: 3 attacks deal bonus fire DMG.",
-        type: Type.EleDealt,
-        value: 20,
-      }),
-      new Multiplier({
-        active: true,
-        name: "Obscuring Whisper: Passive: Wielder deals bonus total DMG.",
-        type: Type.TdmDealt,
-        value: 25,
-      }),
-      new Multiplier({
-        active: true,
-        name: "Obscuring Whisper: Passive: Team deals bonus fire DMG.",
-        type: Type.EleDealt,
-        value: 20,
       }),
     ],
   },
