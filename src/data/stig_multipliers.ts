@@ -524,6 +524,60 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  "Ana Schariac": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Ana T: ice DMG boost.",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Ana T: total DMG boost against enemies within 5 meters. Drops by 2% per meter past 5, down to 10% minimum.",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Ana M: ice DMG boost.",
+        type: Type.EleDealt,
+        value: 25,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Ana B: ice DMG boost against enemies within 5 meters. Drops by 3% per meter past 5, down to 15% minimum.",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Ana 2 set: ice DMG boost.",
+        type: Type.EleDealt,
+        value: 25,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Ana 3 set: combo and charged attacks gain TDM boost.",
+        type: Type.TdmDealt,
+        value: 50,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Ana 3 set: enemies within 5 meters take extra ice DMG from host.",
+        type: Type.EleTakenHost,
+        value: 10,
+      }),
+    ],
+  },
   Aslaug: {
     T: [
       new Multiplier({
@@ -593,60 +647,6 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Aslaug 3 set: Charged ATKs boost total DMG on hit",
         type: Type.TdmDealt,
         value: 20,
-      }),
-    ],
-  },
-  "Ana Schariac": {
-    T: [
-      new Multiplier({
-        active: true,
-        name: "Ana T: ice DMG boost.",
-        type: Type.EleDealt,
-        value: 20,
-      }),
-      new Multiplier({
-        active: true,
-        name: "Ana T: total DMG boost against enemies within 5 meters. Drops by 2% per meter past 5, down to 10% minimum.",
-        type: Type.TdmDealt,
-        value: 20,
-      }),
-    ],
-    M: [
-      new Multiplier({
-        active: true,
-        name: "Ana M: ice DMG boost.",
-        type: Type.EleDealt,
-        value: 25,
-      }),
-    ],
-    B: [
-      new Multiplier({
-        active: true,
-        name: "Ana B: ice DMG boost against enemies within 5 meters. Drops by 3% per meter past 5, down to 15% minimum.",
-        type: Type.EleDealt,
-        value: 30,
-      }),
-    ],
-    "2 set": [
-      new Multiplier({
-        active: true,
-        name: "Ana 2 set: ice DMG boost.",
-        type: Type.EleDealt,
-        value: 25,
-      }),
-    ],
-    "3 set": [
-      new Multiplier({
-        active: true,
-        name: "Ana 3 set: combo and charged attacks gain TDM boost.",
-        type: Type.TdmDealt,
-        value: 50,
-      }),
-      new Multiplier({
-        active: true,
-        name: "Ana 3 set: enemies within 5 meters take extra ice DMG from host.",
-        type: Type.EleTakenHost,
-        value: 10,
       }),
     ],
   },
