@@ -144,6 +144,12 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
     "Obscuring Whisper": [
       new Multiplier({
         active: true,
+        name: "Obscuring Whisper: Active: 3 attacks deal bonus fire DMG.",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
         name: "Obscuring Whisper: Passive: Team deals bonus fire DMG.",
         type: Type.EleDealt,
         value: 20,
