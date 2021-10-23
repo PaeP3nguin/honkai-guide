@@ -430,6 +430,40 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
     ],
   },
   Crosses: {
+    "Basilisk's Image": [
+      new Multiplier({
+        active: true,
+        name: "Basilisk: Passive: Lightning DMG increase",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Basilisk: Passive: Lightning DMG increase against enemies in Serpent Domain",
+        type: Type.EleDealt,
+        value: 10,
+      }),
+    ],
+    "Basilisk's Image: Deathshroud": [
+      new Multiplier({
+        active: true,
+        name: "Basilisk PRI: Passive: Lightning DMG increase",
+        type: Type.EleDealt,
+        value: 45,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Basilisk PRI: Passive: Lightning DMG increase against enemies in Serpent Domain",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Basilisk PRI: Passive: Ranged ATKs deal bonus total DMG",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+    ],
     "Hekate's Gloom": [
       new Multiplier({
         active: true,
