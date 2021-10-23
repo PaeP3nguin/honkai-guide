@@ -1,6 +1,54 @@
 import { Type, Multiplier } from "@/models/multiplier";
 
 const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
+  Aslaug: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Aslaug T: team fire DMG boost against Feathered enemies",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Aslaug M: team fire DMG boost with host on standby",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Aslaug B: Enemies hit by ultimate are inflicted with Feathered and take bonus ele DMG.",
+        type: Type.EleTaken,
+        value: 20,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Aslaug 2 set: Enemies in Feathered state take 30% bonus ele DMG instead.",
+        type: Type.EleTaken,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Aslaug 2 set: team deals bonus total DMG",
+        type: Type.TdmDealt,
+        value: 12,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Aslaug 3 set: team fire DMG boost with host on standby",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+  },
   Avogadro: {
     M: [
       new Multiplier({
