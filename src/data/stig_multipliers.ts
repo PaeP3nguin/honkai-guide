@@ -1496,6 +1496,66 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  Linnaeus: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Linnaeus T: host and her summons deal bonus total DMG",
+        type: Type.TdmDealt,
+        value: 24,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Linnaeus T: host and her summons deal bonus total DMG after combo ATK",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Linnaeus M: host and her summons deal bonus lightning DMG",
+        type: Type.EleDealt,
+        value: 45,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Linnaeus B: basic/combo/charged ATKs deal bonus lightning DMG",
+        type: Type.EleDealt,
+        value: 36,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Linnaeus 2 set: host and summon gains lightning DMG boost when summoning an entity",
+        type: Type.EleDealt,
+        value: 60,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Linnaeus 3 set: ranged atks deal bonus total DMG",
+        type: Type.TdmDealt,
+        value: 40,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Linnaeus 3 set: host, summons, ELFs, and support valks deal bonus total DMG for each entity present (5 max) [3 stacks]",
+        type: Type.TdmDealt,
+        value: 18,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Linnaeus 3 set: host, summons, ELFs, and support valks deal bonus total DMG for each entity present (5 max) [2 stacks]",
+        type: Type.TdmDealt,
+        value: 12,
+      }),
+    ],
+  },
   "Marco Polo": {
     T: [
       new Multiplier({
