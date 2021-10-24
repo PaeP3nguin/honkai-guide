@@ -80,7 +80,7 @@
         By paep3nguin#9170 with help from Aeru and Pootz#7456. Bugs? Suggestions? Find me on the
         <a class="white--text" href="https://discord.gg/hi3">official global discord</a>
         or the
-        <a class="white--text" href="https://discord.gg/cswCHHC">CafeQuanta armada</a>
+        <a class="white--text" href="https://discord.gg/cafequanta">CafeQuanta armada</a>
         .
       </span>
     </v-footer>
