@@ -618,7 +618,7 @@ const ABYSS_LINEUPS = Object.freeze([
   new AbyssLineup({
     date: new Date("2021-10-24T00:00:00"),
     boss: Bosses.AKA,
-    weather: EXALTED_WEATHER.TypeCounter,
+    weather: EXALTED_WEATHER.Ignite,
   }),
   new AbyssLineup({
     date: new Date("2021-10-28T00:00:00"),
@@ -658,7 +658,6 @@ const ABYSS_LINEUPS = Object.freeze([
 // https://space.bilibili.com/70973141
 // https://space.bilibili.com/298574258
 // https://space.bilibili.com/238272931/video
-// https://space.bilibili.com/60622135/video
 // https://space.bilibili.com/23175073/video (stopped postin 2021-08-19)
 // https://space.bilibili.com/189912239/video (stopped posting 2021-07-16)
 //
