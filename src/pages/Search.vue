@@ -95,6 +95,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2021/10/24 - Add mobisus and raven gear to calc, thanks Pootz</li>
           <li>2021/10/20 - Update 3rdguide bookmark with abyss translations</li>
           <li>2021/10/19 - Add Herrscher of Dominance boss</li>
           <li>2021/10/19 - Add Mobisus, Raven to searcher, 3rdguide bookmarklet</li>
@@ -108,8 +109,8 @@
           <li>2021/08/16 - Add HoFS abbreviation, thanks Jun</li>
           <li>2021/08/07 - Fix HoS translation, thanks Jun</li>
           <li>2021/07/25 - Add HoFS and MHT-3B (new tank), updated fix 3rdguide script</li>
-          <li>2021/06/09 - Add Andrius boss and Fischl valk, update fix 3rdguide script</li>
-          <!-- <li>2021/05/13 - Add Kasumi boss and Starchasm Nyx valk, update fix 3rdguide script</li>
+          <!-- <li>2021/06/09 - Add Andrius boss and Fischl valk, update fix 3rdguide script</li>
+          <li>2021/05/13 - Add Kasumi boss and Starchasm Nyx valk, update fix 3rdguide script</li>
           <li>2021/04/24 - Add Haxxor Bunny valk, HoS boss, update fix 3rdguide script</li>
           <li>2021/02/16 - Add Blazing Hope valk, update fix 3rdguide script</li>
           <li>2021/02/15 - Add HoS, thanks Idol Party discord!</li>
