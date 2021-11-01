@@ -440,6 +440,10 @@ const BOSS_LINEUPS = Object.freeze([
     date: new Date("2021-11-15T00:00:00"),
     bosses: [Bosses.Andrius, Bosses.Couatl, Bosses.BKE],
   }),
+  new BossLineup({
+    date: new Date("2021-11-22T00:00:00"),
+    bosses: [Bosses.MHT3B, Bosses.Doom, Bosses.HoD],
+  }),
 ]);
 // Lineup sources:
 // https://bbs.mihoyo.com/bh3/topicDetail/20
