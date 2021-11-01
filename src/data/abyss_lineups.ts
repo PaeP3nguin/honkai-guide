@@ -650,16 +650,32 @@ const ABYSS_LINEUPS = Object.freeze([
     boss: Bosses.BKE,
     weather: EXALTED_WEATHER.Lightning,
   }),
+  new AbyssLineup({
+    date: new Date("2021-11-18T00:00:00"),
+    boss: Bosses.SahaAssaka,
+    weather: EXALTED_WEATHER.Ranged,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-11-21T00:00:00"),
+    boss: Bosses.Huodou,
+    weather: EXALTED_WEATHER.TypeCounter,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-11-25T00:00:00"),
+    boss: Bosses.Parvati,
+    weather: EXALTED_WEATHER.Ignite,
+  }),
 ]);
 // Lineup sources with weathers in video:
 // https://space.bilibili.com/345878430/video
 // https://space.bilibili.com/60622135/video
 // https://space.bilibili.com/24486730/video
-// https://space.bilibili.com/70973141
 // https://space.bilibili.com/298574258
+// https://space.bilibili.com/189912239/video
 // https://space.bilibili.com/238272931/video
-// https://space.bilibili.com/23175073/video (stopped postin 2021-08-19)
-// https://space.bilibili.com/189912239/video (stopped posting 2021-07-16)
+// https://space.bilibili.com/64267902/video
+// https://space.bilibili.com/70973141 (stopped posting 2021-09-05)
+// https://space.bilibili.com/23175073/video (stopped posting 2021-08-19)
 //
 // Search for all ex abyss vids, sorted by recency:
 // https://search.bilibili.com/all?keyword=%E8%B6%85%E5%BC%A6%E7%A9%BA%E9%97%B4&order=pubdate&duration=0&tids_1=0
