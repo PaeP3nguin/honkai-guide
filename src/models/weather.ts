@@ -48,7 +48,7 @@ const EXALTED_WEATHER = Object.freeze({
     icon: "quantum.png",
   }),
   Imaginary: new Weather({
-    name: "Quantum",
+    name: "Imaginary",
     effect: "Increase damage done by IMG valkyries by 20%.",
     icon: "quantum.png",
   }),

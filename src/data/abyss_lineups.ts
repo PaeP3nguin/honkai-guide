@@ -638,7 +638,7 @@ const ABYSS_LINEUPS = Object.freeze([
   new AbyssLineup({
     date: new Date("2021-11-07T00:00:00"),
     boss: Bosses.HoD,
-    weather: EXALTED_WEATHER.Quantum,
+    weather: EXALTED_WEATHER.Imaginary,
   }),
   new AbyssLineup({
     date: new Date("2021-11-11T00:00:00"),
