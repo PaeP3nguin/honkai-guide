@@ -217,6 +217,9 @@
 
     梅比乌斯: "Mobisus",
     "无限·噬界之蛇": "Infinite Ouroboros",
+
+    "卡萝尔·佩珀": "Carole Pepper",
+    甜辣女孩: "Sweet n Spicy",
   };
 
   const translateElement = function (tls, el) {
