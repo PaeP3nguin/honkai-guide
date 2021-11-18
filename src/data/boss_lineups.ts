@@ -444,6 +444,18 @@ const BOSS_LINEUPS = Object.freeze([
     date: new Date("2021-11-22T00:00:00"),
     bosses: [Bosses.MHT3B, Bosses.Doom, Bosses.HoD],
   }),
+  new BossLineup({
+    date: new Date("2021-11-29T00:00:00"),
+    bosses: [Bosses.Jizo, Bosses.HoV, Bosses.Hephaestus],
+  }),
+  new BossLineup({
+    date: new Date("2021-12-06T00:00:00"),
+    bosses: [Bosses.Nihilus, Bosses.Parvati, Bosses.HoV],
+  }),
+  new BossLineup({
+    date: new Date("2021-12-13T00:00:00"),
+    bosses: [Bosses.Jizo, Bosses.Rimestar, Bosses.Hephaestus],
+  }),
 ]);
 // Lineup sources:
 // https://bbs.mihoyo.com/bh3/topicDetail/20
