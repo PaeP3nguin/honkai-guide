@@ -215,6 +215,12 @@ const Bosses = Object.freeze({
     image: "tonatiuh.png",
     wikiLink: "https://honkaiimpact3.fandom.com/Tonatiuh_(Memorial_Arena)",
   }),
+  NewBS: new Boss({
+    name: "Some new BS",
+    shortName: "BS",
+    image: "new_bs.png",
+    wikiLink: "",
+  }),
 });
 
 export { Boss, Bosses };

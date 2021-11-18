@@ -62,6 +62,11 @@ const EXALTED_WEATHER = Object.freeze({
     effect: "Enemies take 50% more ranged damage and 50% less melee damage.",
     icon: "ignite.png",
   }),
+  ShieldBreak: new Weather({
+    name: "Shield break (?)",
+    effect: "Enemies take 40% more damage when their shield is broken.",
+    icon: "idk.png",
+  }),
 });
 
 export { Weather, EXALTED_WEATHER };
