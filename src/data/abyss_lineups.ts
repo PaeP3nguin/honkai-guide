@@ -582,7 +582,7 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.Ice,
   }),
   new AbyssLineup({
-    date: new Date("2021-10-03T00:00:00"),
+    date: new Date("2021-10-04T00:00:00"),
     boss: Bosses.Huodou,
     weather: EXALTED_WEATHER.TypeCounter,
   }),
@@ -592,7 +592,7 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.Physical,
   }),
   new AbyssLineup({
-    date: new Date("2021-10-10T00:00:00"),
+    date: new Date("2021-10-11T00:00:00"),
     boss: Bosses.SK,
     weather: EXALTED_WEATHER.TypeCounter,
   }),
@@ -602,7 +602,7 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.Ignite,
   }),
   new AbyssLineup({
-    date: new Date("2021-10-17T00:00:00"),
+    date: new Date("2021-10-18T00:00:00"),
     boss: Bosses.SahaAssaka,
     weather: EXALTED_WEATHER.Ranged,
   }),
@@ -616,7 +616,7 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.TypeCounter,
   }),
   new AbyssLineup({
-    date: new Date("2021-10-24T00:00:00"),
+    date: new Date("2021-10-25T00:00:00"),
     boss: Bosses.AKA,
     weather: EXALTED_WEATHER.Ignite,
   }),
@@ -626,7 +626,7 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.Bloodlust,
   }),
   new AbyssLineup({
-    date: new Date("2021-10-31T00:00:00"),
+    date: new Date("2021-11-01T00:00:00"),
     boss: Bosses.Jizo,
     weather: EXALTED_WEATHER.Physical,
   }),
@@ -636,7 +636,7 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.Lightning,
   }),
   new AbyssLineup({
-    date: new Date("2021-11-07T00:00:00"),
+    date: new Date("2021-11-08T00:00:00"),
     boss: Bosses.HoD,
     weather: EXALTED_WEATHER.Imaginary,
   }),
@@ -646,7 +646,7 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.Bloodlust,
   }),
   new AbyssLineup({
-    date: new Date("2021-11-14T00:00:00"),
+    date: new Date("2021-11-15T00:00:00"),
     boss: Bosses.BKE,
     weather: EXALTED_WEATHER.Lightning,
   }),
@@ -656,7 +656,7 @@ const ABYSS_LINEUPS = Object.freeze([
     weather: EXALTED_WEATHER.Ranged,
   }),
   new AbyssLineup({
-    date: new Date("2021-11-21T00:00:00"),
+    date: new Date("2021-11-22T00:00:00"),
     boss: Bosses.Huodou,
     weather: EXALTED_WEATHER.TypeCounter,
   }),
@@ -665,15 +665,41 @@ const ABYSS_LINEUPS = Object.freeze([
     boss: Bosses.Parvati,
     weather: EXALTED_WEATHER.Ignite,
   }),
+  new AbyssLineup({
+    date: new Date("2021-11-29T00:00:00"),
+    boss: Bosses.Tonatiuh,
+    weather: EXALTED_WEATHER.Lightning,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-12-02T00:00:00"),
+    boss: Bosses.SahaAssaka,
+    weather: EXALTED_WEATHER.Physical,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-12-06T00:00:00"),
+    boss: Bosses.Rimestar,
+    weather: EXALTED_WEATHER.Fire,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-12-09T00:00:00"),
+    boss: Bosses.NewBS,
+    weather: EXALTED_WEATHER.ShieldBreak,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-12-13T00:00:00"),
+    boss: Bosses.MHT3B,
+    weather: EXALTED_WEATHER.Ranged,
+  }),
 ]);
 // Lineup sources with weathers in video:
-// https://space.bilibili.com/345878430/video
+// https://space.bilibili.com/25289147/video
 // https://space.bilibili.com/60622135/video
 // https://space.bilibili.com/24486730/video
-// https://space.bilibili.com/298574258
+// https://space.bilibili.com/345878430/video
 // https://space.bilibili.com/189912239/video
 // https://space.bilibili.com/238272931/video
 // https://space.bilibili.com/64267902/video
+// https://space.bilibili.com/298574258 (stopped posting 2021-10-12)
 // https://space.bilibili.com/70973141 (stopped posting 2021-09-05)
 // https://space.bilibili.com/23175073/video (stopped posting 2021-08-19)
 //
