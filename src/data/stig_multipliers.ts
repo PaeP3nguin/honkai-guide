@@ -269,6 +269,38 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  Paganini: {
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Paganini M: Dealing DMG boosts team phys DMG",
+        type: Type.PhysDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Paganini M: Dealing DMG boosts team shield DMG.",
+        type: Type.TdmDealt, // Shield dmg?
+        value: 50,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Paganini B: Charged ATK or Ultimate boosts team total DMG",
+        type: Type.TdmDealt,
+        value: 18,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Paganini 2 set: Charged ATK makes enemies take bonus phys DMG",
+        type: Type.PhysTaken,
+        value: 20,
+      }),
+    ],
+  },
   Picasso: {
     "2 set": [
       new Multiplier({
@@ -1673,6 +1705,66 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Newton B: When hitting enemy, they take more TDM for 5 seconds.",
         type: Type.TdmTaken,
         value: 31,
+      }),
+    ],
+  },
+  Paganini: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Paganini T",
+        type: Type.CritRate,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Paganini T: Every 5s, next charged ATK deals bonus phys DMG.",
+        type: Type.PhysDealt,
+        value: 40,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Paganini M: Dealing DMG boosts team phys DMG",
+        type: Type.PhysDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Paganini M: Dealing DMG boosts team shield DMG.",
+        type: Type.TdmDealt, // Shield dmg?
+        value: 50,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Paganini B: Charged ATK or Ultimate boosts team total DMG",
+        type: Type.TdmDealt,
+        value: 18,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: false,
+        name: "Paganini 2 set: Bonus shield DMG",
+        type: Type.TdmDealt, // Shield dmg?
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Paganini 2 set: Charged ATK makes enemies take bonus phys DMG",
+        type: Type.PhysTaken,
+        value: 20,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: false,
+        name: "Paganini 3 set: Charged ATK boosts total DMG by 18% of host's bonus shield DMG",
+        type: Type.TdmDealt, // Shield dmg?
+        value: 12.6,         // 70% shield dmg from set
       }),
     ],
   },
