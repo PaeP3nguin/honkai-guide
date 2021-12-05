@@ -120,6 +120,14 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
     ],
   },
   Gauntlets: {
+    "Miracle Kissy Pillow": [
+      new Multiplier({
+        active: true,
+        name: "Pillow: Passive: Ultimate boosts team phys DMG for 15s",
+        type: Type.PhysDealt,
+        value: 35,
+      }),
+    ],
     "Nebulous Duality": [
       new Multiplier({
         active: true,
@@ -486,6 +494,26 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         name: "Tai Xuan: Passive: When basic, combo, burst, or switch/QTE attacks hit, gain 8% TDM. Each attack type is separate stack.",
         type: Type.TdmDealt,
         value: 32,
+      }),
+    ],
+    "Miracle Kissy Pillow": [
+      new Multiplier({
+        active: true,
+        name: "Pillow: Passive: Ultimate boosts team phys DMG for 15s",
+        type: Type.PhysDealt,
+        value: 35,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Pillow: Passive: Charged ATK and Ultimate deal bonus shield DMG",
+        type: Type.TdmDealt, // Shield DMG
+        value: 40,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Pillow: Active: Carole: Charged ATK 3 or aerial Charged ATK 2 deals bonus phys DMG",
+        type: Type.PhysDealt,
+        value: 45,
       }),
     ],
     "Nebulous Duality": [
