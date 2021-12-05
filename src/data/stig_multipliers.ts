@@ -278,9 +278,9 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
         value: 15,
       }),
       new Multiplier({
-        active: false,
+        active: true,
         name: "Paganini M: Dealing DMG boosts team shield DMG.",
-        type: Type.TdmDealt, // Shield dmg?
+        type: Type.ShieldDmgDealt,
         value: 50,
       }),
     ],
@@ -1731,9 +1731,9 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         value: 15,
       }),
       new Multiplier({
-        active: false,
+        active: true,
         name: "Paganini M: Dealing DMG boosts team shield DMG.",
-        type: Type.TdmDealt, // Shield dmg?
+        type: Type.ShieldDmgDealt,
         value: 50,
       }),
     ],
@@ -1747,9 +1747,9 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     ],
     "2 set": [
       new Multiplier({
-        active: false,
+        active: true,
         name: "Paganini 2 set: Bonus shield DMG",
-        type: Type.TdmDealt, // Shield dmg?
+        type: Type.ShieldDmgDealt, 
         value: 20,
       }),
       new Multiplier({
@@ -1761,10 +1761,10 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
     ],
     "3 set": [
       new Multiplier({
-        active: false,
+        active: true,
         name: "Paganini 3 set: Charged ATK boosts total DMG by 18% of host's bonus shield DMG",
-        type: Type.TdmDealt, // Shield dmg?
-        value: 12.6,         // 70% shield dmg from set
+        type: Type.ShieldDmgDealt,
+        value: 19.8, // 70% shield dmg from set 40% from Kissy Pillow
       }),
     ],
   },

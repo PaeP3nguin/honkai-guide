@@ -504,9 +504,9 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 35,
       }),
       new Multiplier({
-        active: false,
+        active: true,
         name: "Pillow: Passive: Charged ATK and Ultimate deal bonus shield DMG",
-        type: Type.TdmDealt, // Shield DMG
+        type: Type.ShieldDmgDealt,
         value: 40,
       }),
       new Multiplier({
