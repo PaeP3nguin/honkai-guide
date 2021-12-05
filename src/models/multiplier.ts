@@ -11,6 +11,9 @@ enum Type {
   CritRate = "Critical rate %",
   Crt = "CRT",
   CritDmg = "Critical DMG",
+
+  // Percentage is calculated, but not factored into overall damage calculations.
+  ShieldDmgDealt = "Shield damage dealt",
 }
 
 class Multiplier {
