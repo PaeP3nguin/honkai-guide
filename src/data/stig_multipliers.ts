@@ -1763,7 +1763,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       new Multiplier({
         active: true,
         name: "Paganini 3 set: Charged ATK boosts total DMG by 18% of host's bonus shield DMG",
-        type: Type.ShieldDmgDealt,
+        type: Type.TdmDealt,
         value: 19.8, // 70% shield dmg from set 40% from Kissy Pillow
       }),
     ],
