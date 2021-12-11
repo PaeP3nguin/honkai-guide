@@ -102,6 +102,8 @@
     燃素: "Ignite",
     战意: "Bloodlust",
     虚数: "Imaginary",
+    坚阵: "Fortified",
+    雷劫: "Paralyze",
 
     // Abyss stages
     "区域:": "Stage",
@@ -116,6 +118,7 @@
     "神机-海姆达尔": "Heimdall",
     "娑婆 阿湿波": "Saha Assaka",
     群怪: "Mobs",
+    "逐火十三英桀 爱莉希雅": "Flame Chaser Elysia",
 
     // === Valkyries ===
     符华: "Fu Hua",
