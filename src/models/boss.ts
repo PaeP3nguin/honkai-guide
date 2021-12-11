@@ -89,6 +89,12 @@ const Bosses = Object.freeze({
     image: "doom.png",
     wikiLink: "https://honkaiimpact3.fandom.com/Deathly_Doom_(Memorial_Arena)",
   }),
+  Elysia: new Boss({
+    name: "ElysiaPog",
+    shortName: "Elysia",
+    image: "elysia.png",
+    wikiLink: "https://honkaiimpact3.fandom.com/Deathly_Doom_(Memorial_Arena)",
+  }),
   HoS: new Boss({
     name: "Herrscher of Sentience",
     shortName: "HoS",
@@ -216,9 +222,9 @@ const Bosses = Object.freeze({
     wikiLink: "https://honkaiimpact3.fandom.com/Tonatiuh_(Memorial_Arena)",
   }),
   NewBS: new Boss({
-    name: "Some new BS",
-    shortName: "BS",
-    image: "new_bs.png",
+    name: "Rotary wings & mobs",
+    shortName: "Rotary wings",
+    image: "rotary_wings.png",
     wikiLink: "",
   }),
 });

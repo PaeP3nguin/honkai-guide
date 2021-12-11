@@ -690,9 +690,39 @@ const ABYSS_LINEUPS = Object.freeze([
     boss: Bosses.MHT3B,
     weather: EXALTED_WEATHER.Ranged,
   }),
+  new AbyssLineup({
+    date: new Date("2021-12-16T00:00:00"),
+    boss: Bosses.Andrius,
+    weather: EXALTED_WEATHER.Lightning,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-12-20T00:00:00"),
+    boss: Bosses.Hellmaru,
+    weather: EXALTED_WEATHER.Ice,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-12-23T00:00:00"),
+    boss: Bosses.Parvati,
+    weather: EXALTED_WEATHER.Ignite,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-12-27T00:00:00"),
+    boss: Bosses.DXY,
+    weather: EXALTED_WEATHER.TypeCounter,
+  }),
+  new AbyssLineup({
+    date: new Date("2021-12-30T00:00:00"),
+    boss: Bosses.Elysia,
+    weather: EXALTED_WEATHER.Ice,
+  }),
+  new AbyssLineup({
+    date: new Date("2022-01-03T00:00:00"),
+    boss: Bosses.SK,
+    weather: EXALTED_WEATHER.TypeCounter,
+  }),
 ]);
 // Lineup sources with weathers in video:
-// https://space.bilibili.com/25289147/video
+// https://space.bilibili.com/25289147/video (3rdguide channel)
 // https://space.bilibili.com/60622135/video
 // https://space.bilibili.com/24486730/video
 // https://space.bilibili.com/345878430/video
