@@ -49,6 +49,7 @@
             persistent-hint
             :items="bosses"
           ></v-autocomplete>
+          <v-checkbox v-model="sssBoss" label="SSS Boss?"></v-checkbox>
 
           <h3 class="section-head">Valkyries</h3>
           <p>Order matters! Choose the lead valk first.</p>
@@ -95,6 +96,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2021/12/12 - Add toggle for SSS boss</li>
           <li>2021/12/10 - Update 3rdguide bookmark with more abyss translations</li>
           <li>2021/11/18 - Add Paganini stig to calc, thanks Pootz</li>
           <li>2021/11/18 - Add Carole to search and 3rdguide bookmark</li>
@@ -108,8 +110,8 @@
           <li>2021/08/29 - Add Poe and Acheron to gear calc, thanks Pootz</li>
           <li>2021/08/21 - Add Elysian Realm modifier, thanks Bento and Eku</li>
           <li>2021/08/18 - Add HoFS weapon and stigs to gear calc, thanks Pootz</li>
-          <li>2021/08/17 - Update fix 3rdguide script with new translations and UI fixes</li>
-          <!-- <li>2021/08/16 - Add HoFS abbreviation, thanks Jun</li>
+          <!-- <li>2021/08/17 - Update fix 3rdguide script with new translations and UI fixes</li>
+          <li>2021/08/16 - Add HoFS abbreviation, thanks Jun</li>
           <li>2021/08/07 - Fix HoS translation, thanks Jun</li>
           <li>2021/07/25 - Add HoFS and MHT-3B (new tank), updated fix 3rdguide script</li>
           <li>2021/06/09 - Add Andrius boss and Fischl valk, update fix 3rdguide script</li>
@@ -374,6 +376,7 @@ export default Vue.extend({
   data: function () {
     return {
       selectedBoss: null,
+      sssBoss: false,
       selectedValks: [],
       valkInput: null,
       score: null,
@@ -388,7 +391,15 @@ export default Vue.extend({
   components: { BossLineupList },
   computed: {
     bossNames: function () {
-      return this.selectedBoss ? bossToChinese[this.selectedBoss] : [""];
+      if (this.selectedBoss === null) {
+        return [""];
+      }
+
+      if (this.sssBoss) {
+        return bossToChinese[this.selectedBoss].map((bossName) => "SSS" + bossName);
+      } else {
+        return bossToChinese[this.selectedBoss];
+      }
     },
     // Some valks have multiple names, make all combos of valk team.
     valkCombos: function () {
