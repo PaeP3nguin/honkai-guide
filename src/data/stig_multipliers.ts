@@ -808,6 +808,54 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  "Bronya: N-EX": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "N-EX T",
+        type: Type.TdmDealt,
+        value: 25,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "N-EX M",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "N-EX B: Each stack of Falconwings increases Ice DMG (3 max)",
+        type: Type.EleDealt,
+        value: 75,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "N-EX 2 set: Max stacked Falconwings increases Total DMG",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "N-EX 2 set: If QTE used with 3 Falconwings stacks, increase Ice DMG for each stack granted by B-piece",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "N-EX 3 set: Basic ATKs (including Combo/Charged) deal additional Ice DMG",
+        type: Type.EleDealt,
+        value: 25,
+      }),
+    ],
+  },
   "Children/Columbus": {
     T: [
       new Multiplier({
