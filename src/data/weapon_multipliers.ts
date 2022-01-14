@@ -260,6 +260,46 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 15,
       }),
     ],
+    "Falcon Flare 0019": [
+      new Multiplier({
+        active: true,
+        name: "Falcon Flare: Passive",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Falcon Flare: Passive: Ice DMG increases when QTE deals dmg",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+    ],
+    "Falcon Flare: FINAL": [
+      new Multiplier({
+        active: true,
+        name: "Falcon Flare PRI: Passive",
+        type: Type.TdmDealt,
+        value: 40,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Falcon Flare PRI: Passive: Ice DMG increases when QTE deals dmg",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Falcon Flare PRI: Passive: Ice DMG increases when Weapon Skills or Ultimate are used",
+        type: Type.EleDealt,
+        value: 40,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Falcon Flare PRI: Passive: Silverwing: Increase Ice DMG dealt by energy balls passing through scatter barrier",
+        type: Type.EleDealt,
+        value: 40,
+      }),
+    ],
     "Key of Reason (KoR)": [
       new Multiplier({
         active: true,
