@@ -175,6 +175,7 @@
     "女武神·战车": "Valkyrie Chariot",
     "驱动装·山吹": "Yamabuki Armor",
     雪地狙击: "Snowy Sniper",
+    次生银翼: "Silverwing: N-EX",
 
     阿琳姐妹: "Twins",
     狂热蓝调Δ: "Fervent Tempo Delta",
