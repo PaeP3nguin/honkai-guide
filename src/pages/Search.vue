@@ -96,6 +96,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2022/01/19 - Add Silverwing equips to gear calc, thanks Pootz</li>
           <li>2022/01/19 - Add Silverwing to search and 3rdguide bookmarklet</li>
           <li>2021/12/12 - Add toggle for SSS boss</li>
           <li>2021/12/10 - Update 3rdguide bookmark with more abyss translations</li>
@@ -109,8 +110,8 @@
           <li>2021/09/20 - Add Elysia stigs, bow, and Abyss Flower PRI to calc, thanks Pootz</li>
           <li>2021/09/04 - Add Elysia valk, thanks Aria</li>
           <li>2021/08/29 - Add Poe and Acheron to gear calc, thanks Pootz</li>
-          <li>2021/08/21 - Add Elysian Realm modifier, thanks Bento and Eku</li>
-          <!-- <li>2021/08/18 - Add HoFS weapon and stigs to gear calc, thanks Pootz</li>
+          <!-- <li>2021/08/21 - Add Elysian Realm modifier, thanks Bento and Eku</li>
+          <li>2021/08/18 - Add HoFS weapon and stigs to gear calc, thanks Pootz</li>
           <li>2021/08/17 - Update fix 3rdguide script with new translations and UI fixes</li>
           <li>2021/08/16 - Add HoFS abbreviation, thanks Jun</li>
           <li>2021/08/07 - Fix HoS translation, thanks Jun</li>
@@ -319,7 +320,7 @@ const valkToChinese = {
   "Snowy Sniper (SS)": ["雪"],
   "Shadow Dash (SD)": ["影"],
   "Shadow Knight (SK)": ["轮"],
-  "Silverwing: N-EX": ["次生银翼", "次"],
+  "Silverwing: N-EX": ["翼", "大鸭鸭", "次生银翼"],
   "Sixth Serenade (6S)": ["六"],
   "Starchasm Nyx": ["魇夜星渊", "冰希"],
   "Starlit Astrologos (SA, Zhuge)": ["朔夜观星", "观"],
