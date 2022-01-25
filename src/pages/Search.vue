@@ -96,6 +96,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2022/01/24 - Add no Turg and no Zhenyi modifiers, thanks Pootz</li>
           <li>2022/01/19 - Add Silverwing equips to gear calc, thanks Pootz</li>
           <li>2022/01/19 - Add Silverwing to search and 3rdguide bookmarklet</li>
           <li>2021/12/12 - Add toggle for SSS boss</li>
@@ -109,8 +110,8 @@
           <li>2021/09/23 - Add SSS scores to scores page and search sidebar</li>
           <li>2021/09/20 - Add Elysia stigs, bow, and Abyss Flower PRI to calc, thanks Pootz</li>
           <li>2021/09/04 - Add Elysia valk, thanks Aria</li>
-          <li>2021/08/29 - Add Poe and Acheron to gear calc, thanks Pootz</li>
-          <!-- <li>2021/08/21 - Add Elysian Realm modifier, thanks Bento and Eku</li>
+          <!-- <li>2021/08/29 - Add Poe and Acheron to gear calc, thanks Pootz</li>
+          <li>2021/08/21 - Add Elysian Realm modifier, thanks Bento and Eku</li>
           <li>2021/08/18 - Add HoFS weapon and stigs to gear calc, thanks Pootz</li>
           <li>2021/08/17 - Update fix 3rdguide script with new translations and UI fixes</li>
           <li>2021/08/16 - Add HoFS abbreviation, thanks Jun</li>
