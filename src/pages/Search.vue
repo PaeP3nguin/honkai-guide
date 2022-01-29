@@ -311,6 +311,7 @@ const valkToChinese = {
   Miko: ["逆"],
   "Molotov Cherry (Roza, MC)": ["粉", "孤儿队"],
   "Night Squire (NS)": ["白"],
+  "Palatinus Equinox (PE, Juan)":["天元骑英", "天元"],
   "Phantom Iron (PI)": ["狗"],
   "Phoenix (PX)": ["炽"],
   "Pledge (VP)": ["誓"],
