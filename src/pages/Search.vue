@@ -96,6 +96,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2022/02/01 - Update HoD search translations, thanks Toast</li>
           <li>2022/02/01 - Add Palatinus Equinox to search and 3rdguide bookmark, thanks Pootz</li>
           <li>2022/01/24 - Add no Turg and no Zhenyi modifiers, thanks Pootz</li>
           <li>2022/01/19 - Add Silverwing equips to gear calc, thanks Pootz</li>
@@ -109,8 +110,8 @@
           <li>2021/10/19 - Add Herrscher of Dominance boss</li>
           <li>2021/10/19 - Add Mobisus, Raven to searcher, 3rdguide bookmarklet</li>
           <li>2021/09/23 - Add SSS scores to scores page and search sidebar</li>
-          <li>2021/09/20 - Add Elysia stigs, bow, and Abyss Flower PRI to calc, thanks Pootz</li>
-          <!-- <li>2021/09/04 - Add Elysia valk, thanks Aria</li>
+          <!-- <li>2021/09/20 - Add Elysia stigs, bow, and Abyss Flower PRI to calc, thanks Pootz</li>
+          <li>2021/09/04 - Add Elysia valk, thanks Aria</li>
           <li>2021/08/29 - Add Poe and Acheron to gear calc, thanks Pootz</li>
           <li>2021/08/21 - Add Elysian Realm modifier, thanks Bento and Eku</li>
           <li>2021/08/18 - Add HoFS weapon and stigs to gear calc, thanks Pootz</li>
@@ -246,7 +247,7 @@ const bossToChinese = {
   "Herrscher of the Void (God Kiana, GK, HoV)": ["空之律者", "女王"],
   Heimdall: ["海姆达尔", "海胖"],
   Hellmaru: ["狐狸", "绯狱丸"],
-  "Herrscher of Dominance (HoD)": ["支配之律者-乌合之众"],
+  "Herrscher of Dominance (HoD)": ["千律", "乌合之众"],
   "Herrscher of Sentience (HoS)": ["识之律者"],
   "HOMU King": ["吼姆"],
   Huodou: ["祸斗"],
