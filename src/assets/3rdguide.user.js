@@ -146,6 +146,7 @@
     "女武神·荣光": "Valkyrie Gloria",
     "辉骑士·月魄": "Bright Knight: Excelsis",
     不灭星锚: "Dea Anchora",
+    天元骑英: "Palatinus Equinox",
 
     德丽莎: "Theresa",
     "暮光骑士·月煌": "Twilight Paladin",
