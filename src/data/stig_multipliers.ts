@@ -5,7 +5,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
     T: [
       new Multiplier({
         active: true,
-        name: "Aslaug T: team fire DMG boost against Feathered enemies",
+        name: "Aslaug T: team ele DMG boost against Feathered enemies",
         type: Type.EleDealt,
         value: 20,
       }),
@@ -620,7 +620,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: true,
-        name: "Aslaug T: team fire DMG boost against Feathered enemies",
+        name: "Aslaug T: team ele DMG boost against Feathered enemies",
         type: Type.EleDealt,
         value: 20,
       }),
