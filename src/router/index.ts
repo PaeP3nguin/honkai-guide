@@ -6,6 +6,7 @@ const Scores = () => import("../pages/Scores.vue");
 const AffixComparison = () => import("../pages/AffixComparison.vue");
 const MemorialLineups = () => import("../pages/MemorialLineups.vue");
 const AbyssLineups = () => import("../pages/AbyssLineups.vue");
+const PGRSearch = () => import("../pages/PGRSearch.vue");
 
 Vue.use(VueRouter);
 
@@ -39,6 +40,11 @@ const routes = [
     path: "/abyss_lineups",
     name: "abyss_lineups",
     component: AbyssLineups,
+  },
+  {
+    path: "/pgr_search",
+    name: "pgr_search",
+    component: PGRSearch,
   },
 ];
 

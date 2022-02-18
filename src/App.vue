@@ -66,6 +66,15 @@
             <v-list-item-title>Future Abyss lineups</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
+        <v-list-item link to="/pgr_search">
+          <v-list-item-action>
+            <v-icon>mdi-magnify</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>PGR bili searcher</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
