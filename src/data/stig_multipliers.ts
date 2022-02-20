@@ -5,7 +5,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
     T: [
       new Multiplier({
         active: true,
-        name: "Aslaug T: team ele DMG boost against Feathered enemies",
+        name: "Aslaug T: team elemental DMG boost against Feathered enemies",
         type: Type.EleDealt,
         value: 20,
       }),
@@ -21,7 +21,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
     B: [
       new Multiplier({
         active: true,
-        name: "Aslaug B: Enemies hit by ultimate are inflicted with Feathered and take bonus ele DMG.",
+        name: "Aslaug B: Enemies hit by ultimate are inflicted with Feathered and take bonus elemental DMG.",
         type: Type.EleTaken,
         value: 20,
       }),
@@ -29,7 +29,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
     "2 set": [
       new Multiplier({
         active: true,
-        name: "Aslaug 2 set: Enemies in Feathered state take 30% bonus ele DMG instead.",
+        name: "Aslaug 2 set: Enemies in Feathered state take 30% bonus elemental DMG instead.",
         type: Type.EleTaken,
         value: 10,
       }),
@@ -620,7 +620,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: true,
-        name: "Aslaug T: team ele DMG boost against Feathered enemies",
+        name: "Aslaug T: team elemental DMG boost against Feathered enemies",
         type: Type.EleDealt,
         value: 20,
       }),
@@ -648,7 +648,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: true,
-        name: "Aslaug B: Enemies hit by ultimate are inflicted with Feathered and take bonus ele DMG.",
+        name: "Aslaug B: Enemies hit by ultimate are inflicted with Feathered and take bonus elemental DMG.",
         type: Type.EleTaken,
         value: 20,
       }),
@@ -662,7 +662,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
       new Multiplier({
         active: true,
-        name: "Aslaug 2 set: Enemies in Feathered state take 30% bonus ele DMG instead.",
+        name: "Aslaug 2 set: Enemies in Feathered state take 30% bonus elemental DMG instead.",
         type: Type.EleTaken,
         value: 10,
       }),
@@ -1797,7 +1797,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       new Multiplier({
         active: true,
         name: "Paganini 2 set: Bonus shield DMG",
-        type: Type.ShieldDmgDealt, 
+        type: Type.ShieldDmgDealt,
         value: 20,
       }),
       new Multiplier({
