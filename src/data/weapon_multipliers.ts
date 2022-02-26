@@ -792,6 +792,52 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 30,
       }),
     ],
+    "Midnight Ataegina": [
+      new Multiplier({
+        active: true,
+        name: "Midnight Ataegina: Passive",
+        type: Type.CritRate,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Midnight Ataegina: Passive",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Midnight Ataegina: Passive: Weapon skill deals bonus Total DMG",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Midnight Ataegina: Passive: Weapon skill deals bonus Physical DMG",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+    ],
+    "Midnight Eclipse": [
+      new Multiplier({
+        active: true,
+        name: "Midnight Eclipse: Passive",
+        type: Type.CritRate,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Midnight Eclipse: Passive: Weapon skill deals bonus Total DMG",
+        type: Type.TdmDealt,
+        value: 12,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Midnight Eclipse: Passive: Weapon skill deals bonus Physical DMG",
+        type: Type.TdmDealt,
+        value: 12,
+      }),
+    ],
     "Sagittarius Astra": [
       new Multiplier({
         active: true,
