@@ -808,6 +808,72 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  "Bianka: Theatre": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Bianka T",
+        type: Type.PhysDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Bianka T: Landing Charged ATK 10 times boost Crit DMG.",
+        type: Type.CritDmg,
+        value: 45,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Bianka M",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Bianka M: Ultimate Evasion or Retaliation Skill boosts Total DMG.",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Bianka B",
+        type: Type.CritRate,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Bianka B: Global Time Slow boosts Crit Rate",
+        type: Type.CritRate,
+        value: 5,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Bianka 2 set: World's a Stage",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Bianka 3 set",
+        type: Type.PhysDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Bianka 3 set: Triggering World's a Stage boosts Physical DMG dealt by Ultimate",
+        type: Type.PhysDealt,
+        value: 80,
+      }),
+    ],
+  },
   "Bronya: N-EX": {
     T: [
       new Multiplier({
