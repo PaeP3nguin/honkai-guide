@@ -96,6 +96,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2022/02/25 - Add PE gear to calc, thanks Pootz</li>
           <li>2022/02/25 - Add Spina Astera to search and 3rdguide bookmark, thanks Toast</li>
           <li>2022/02/01 - Update HoD search translations, thanks Toast</li>
           <li>2022/02/01 - Add Palatinus Equinox to search and 3rdguide bookmark, thanks Pootz</li>
@@ -109,8 +110,8 @@
           <li>2021/10/24 - Add mobisus and raven gear to calc, thanks Pootz</li>
           <li>2021/10/20 - Update 3rdguide bookmark with abyss translations</li>
           <li>2021/10/19 - Add Herrscher of Dominance boss</li>
-          <li>2021/10/19 - Add Mobisus, Raven to searcher, 3rdguide bookmarklet</li>
-          <!-- <li>2021/09/23 - Add SSS scores to scores page and search sidebar</li>
+          <!-- <li>2021/10/19 - Add Mobisus, Raven to searcher, 3rdguide bookmarklet</li>
+          <li>2021/09/23 - Add SSS scores to scores page and search sidebar</li>
           <li>2021/09/20 - Add Elysia stigs, bow, and Abyss Flower PRI to calc, thanks Pootz</li>
           <li>2021/09/04 - Add Elysia valk, thanks Aria</li>
           <li>2021/08/29 - Add Poe and Acheron to gear calc, thanks Pootz</li>
