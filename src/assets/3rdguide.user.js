@@ -197,6 +197,7 @@
     "苍骑士·月魂": "Argent Knight: Artemis",
     "猎袭装·影铁": "Phantom Iron",
     黯蔷薇: "Umbral Rose",
+    缭乱星棘: "Spina Astera",
 
     姬子: "Himeko",
     "真红骑士·月蚀": "Vermilion Knight: Eclipse",
