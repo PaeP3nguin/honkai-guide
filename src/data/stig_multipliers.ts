@@ -1998,6 +1998,72 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  Ragna: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Ragna T",
+        type: Type.TdmDealt,
+        value: 25,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Ragna T: Combo and Charged ATK boosts fire DMG.",
+        type: Type.EleDealt,
+        value: 40,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Ragna M: Landing Charged ATK 10 times makes all enemies take bonus fire DMG from host (independent effect).",
+        type: Type.EleTakenHost,
+        value: 20,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Ragna B",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Ragna B: On hit, Charged ATK boosts fire DMG.",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Ragna 2 set: On charged ATK boost fire DMG.",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Ragna 2 set: Rita equip bonus",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Ragna 3 set: Charged ATK deals bonus fire DMG.",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Ragna 2 set: Rita equip bonus: Charged ATK deals bonus fire DMG",
+        type: Type.EleDealt,
+        value: 50,
+      }),
+    ],
+  },
   Rasputin: {
     T: [
       new Multiplier({
