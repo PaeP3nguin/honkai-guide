@@ -602,6 +602,47 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 20,
       }),
     ],
+    "Astral Divide": [
+      new Multiplier({
+        active: true,
+        name: "Astral PRI: Active: Flared enemies take bonus fire DMG.",
+        type: Type.EleTaken,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Astral PRI: Passive: Basic, Charged, and Combo ATK deal bonus total DMG to flared enemies.",
+        type: Type.TdmDealt,
+        value: 25,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Astral PRI: Passive: Charged ATK deal bonus total DMG.",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Astral PRI: Passive: Spina Astera equip bonus: Charged ATK or Ultimate boosts fire DMG.",
+        type: Type.EleDealt,
+        value: 25,
+      }),
+    ],
+    "Astral Rend": [
+      new Multiplier({
+        active: true,
+        name: "Astral: Active: Flared enemies take bonus fire DMG.",
+        type: Type.EleTaken,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Astral: Passive: Basic, Charged, and Combo ATK deal bonus total DMG to flared enemies.",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      
+    ],
     "Iris of the Dreams": [
       new Multiplier({
         active: true,
