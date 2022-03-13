@@ -176,7 +176,7 @@ const modifiersToChinese = {
   // Other game modes
   "Babel Tower": ["巴别塔"],
   "Norman War": ["诺曼复兴战"],
-  "Punishing Gray Raven": ["战双帕弥什", "战双"],
+  "Punishing Gray Raven": ["战双"],
 };
 
 const modifiers = Object.keys(modifiersToChinese).map((m) => ({
