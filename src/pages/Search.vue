@@ -96,6 +96,8 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2022/03/13 - Add Otto to bosses and no Paganini modifier, thanks Pootz</li>
+          <li>2022/03/13 - Add Spina Astera gear to calc, thanks Pootz</li>
           <li>2022/02/25 - Add PE gear to calc, thanks Pootz</li>
           <li>2022/02/25 - Add Spina Astera to search and 3rdguide bookmark, thanks Toast</li>
           <li>2022/02/01 - Update HoD search translations, thanks Toast</li>
@@ -109,8 +111,8 @@
           <li>2021/11/18 - Add Carole to search and 3rdguide bookmark</li>
           <li>2021/10/24 - Add mobisus and raven gear to calc, thanks Pootz</li>
           <li>2021/10/20 - Update 3rdguide bookmark with abyss translations</li>
-          <li>2021/10/19 - Add Herrscher of Dominance boss</li>
-          <!-- <li>2021/10/19 - Add Mobisus, Raven to searcher, 3rdguide bookmarklet</li>
+          <!-- <li>2021/10/19 - Add Herrscher of Dominance boss</li>
+          <li>2021/10/19 - Add Mobisus, Raven to searcher, 3rdguide bookmarklet</li>
           <li>2021/09/23 - Add SSS scores to scores page and search sidebar</li>
           <li>2021/09/20 - Add Elysia stigs, bow, and Abyss Flower PRI to calc, thanks Pootz</li>
           <li>2021/09/04 - Add Elysia valk, thanks Aria</li>
