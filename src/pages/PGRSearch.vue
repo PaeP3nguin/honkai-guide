@@ -57,6 +57,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2022/03/23 - Updated translations for some modifiers and bosses</li>
           <li>2022/02/17 - Launched! Thanks Ushay for the translations</li>
         </ul>
       </v-flex>
@@ -89,7 +90,7 @@ import { RECENT_LINEUPS } from "@/data/boss_lineups";
 const bossToChinese = {
   Roland: ["罗兰"],
   Vassago: ["瓦沙克"],
-  Roseblade: ["蔷薇之剑"],
+  Roseblade: ["管家"],
   Camu: ["卡穆"],
   Musashi: ["武藏玖型"],
   "Iron Maiden": ["苦刑之女"],
@@ -167,15 +168,15 @@ const modifiersToChinese = {
 
   // War zone
   "War Zone": ["纷争战区"],
-  "Physical Map": ["机械工厂", "物理区"],
-  "Fire Map": ["火焰轮回", "火区"],
-  "Lightning Map": ["镭射合金", "雷区"],
-  "Dark Map": ["暗影深林", "暗区"],
-  "Ice Map": ["猩红冰原", "冰区"],
+  "Physical Map": ["物理区", "物理"],
+  "Fire Map": ["火区", "火"],
+  "Lightning Map": ["雷区", "雷"],
+  "Dark Map": ["暗区", "暗"],
+  "Ice Map": ["冰区", "冰"],
 
   // Other game modes
   "Babel Tower": ["巴别塔"],
-  "Norman War": ["诺曼复兴战"],
+  "Norman War": ["矿区", "矿"],
   "Punishing Gray Raven": ["战双"],
 };
 
