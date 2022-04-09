@@ -59,6 +59,24 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  Bastet: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Bastet T: Team deals bonus ice DMG to frozen enemies.",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Bastet 2 set: Freezing enemies boosts team total DMG",
+        type: Type.TdmDealt,
+        value: 50,
+      }),
+    ],
+  },
   Beethoven: {
     M: [
       new Multiplier({
@@ -745,6 +763,54 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Avogadro 3 set: host deals more TDM against marked enemies.",
         type: Type.TdmDealt,
         value: 15,
+      }),
+    ],
+  },
+  Bastet: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Bastet T: Team deals bonus ice DMG to frozen enemies.",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Bastet T: ice DMG",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Bastet M",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Bastet B",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Bastet 2 set: Freezing enemies boosts team total DMG",
+        type: Type.TdmDealt,
+        value: 50,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Bastet 3 set",
+        type: Type.TdmDealt,
+        value: 30,
       }),
     ],
   },
