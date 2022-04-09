@@ -51,6 +51,36 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  Chakram: {
+    "Purana Phantasma": [
+      new Multiplier({
+        active: true,
+        name: "Purana Phantasma: Active: team ice DMG boost for 10 sec.",
+        type: Type.EleDealt,
+        value: 12,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Purana Phantasma: Passive: team total DMG boost.",
+        type: Type.TdmDealt,
+        value: 8,
+      }),
+    ],
+    "Purana Phantasma: Nighteye": [
+      new Multiplier({
+        active: true,
+        name: "Purana Phantasma PRI: Active: team ice DMG boost for 10 sec.",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Purana Phantasma PRI: Passive: team total DMG boost.",
+        type: Type.TdmDealt,
+        value: 12,
+      }),
+    ],
+  },
   Katanas: {
     "MAG-Typhoon": [
       new Multiplier({
@@ -332,6 +362,54 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         name: "DoR: Active: After using active, gain TDM.",
         type: Type.TdmDealt,
         value: 40,
+      }),
+    ],
+  },
+  Chakram: {
+    "Purana Phantasma": [
+      new Multiplier({
+        active: true,
+        name: "Purana Phantasma: Active: team ice DMG boost for 10 sec.",
+        type: Type.EleDealt,
+        value: 12,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Purana Phantasma: Passive: total DMG boost.",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Purana Phantasma: Passive: team total DMG boost.",
+        type: Type.TdmDealt,
+        value: 8,
+      }),
+    ],
+    "Purana Phantasma: Nighteye": [
+      new Multiplier({
+        active: true,
+        name: "Purana Phantasma PRI: Active: team ice DMG boost for 10 sec.",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Purana Phantasma PRI: Passive: total DMG boost.",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Purana Phantasma PRI: Passive: ice DMG boost with icy crystal present.",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Purana Phantasma PRI: Passive: team total DMG boost.",
+        type: Type.TdmDealt,
+        value: 12,
       }),
     ],
   },
