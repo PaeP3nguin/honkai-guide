@@ -327,6 +327,7 @@ const valkToChinese = {
   "Phoenix (PX)": ["炽"],
   "Pledge (VP)": ["誓"],
   "Ranger (VR)": ["游"],
+  "Reverist Calico (RC, Cat, Neko)": ["猫"],
   "Rondo (SR)": ["樱"],
   "Scarlet Fusion (SF)": ["深"],
   "Sin Hunter (Sundenjaegar / SJ)": ["原罪"],
