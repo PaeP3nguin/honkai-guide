@@ -281,6 +281,7 @@ const bossToChinese = {
 
 const valkToChinese = {
   "Accipiter (VA)": ["迅"],
+  Aponia: ["阿", "阿波尼亚"],
   "Arctic Kreigmesser (KMS)": ["极"],
   "Argent Knight: Artemis (AKA)": ["月魂"],
   "Azure Empyrea (AE)": ["云", "墨", "云墨丹心"],
@@ -300,6 +301,7 @@ const valkToChinese = {
   "Dea Anchora (DA)": ["不灭星锚", "星", "锚"],
   "Dimension Break (DB)": ["次"],
   "Divine Prayer (DP)": ["圣"],
+  "Eden (GD)": ["伊", "伊甸"],
   "Elysia (Miss Pink Elf)": ["爱莉希雅", "爱莉", "爱"],
   "Fallen Rosemary (FR)": ["迷", "失落迷迭"],
   "Fervent Tempo Delta (FTD)": ["狂热蓝调", "粉"],
