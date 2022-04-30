@@ -305,7 +305,7 @@ const valkToChinese = {
   "Elysia (Miss Pink Elf)": ["爱莉希雅", "爱莉", "爱"],
   "Fallen Rosemary (FR)": ["迷", "失落迷迭"],
   "Fervent Tempo Delta (FTD)": ["狂热蓝调", "粉"],
-  Fischl: ["小艾咪", "皇女"],
+  "Fischl (PV)": ["皇", "小艾咪", "皇女"],
   "Flame Sakitama (FS)": ["炎"],
   "Hawk of the Fog (HF)": ["迅", "迅雷", "雾都迅羽"],
   "Haxxor Bunny (HB)": ["骇兔", "迷城骇兔"],
