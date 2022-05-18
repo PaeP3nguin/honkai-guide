@@ -96,6 +96,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2022/05/17 - Add Sushang and Husk search terms, thanks HauNguyenThe</li>
           <li>2022/04/30 - Add Aponia and Eden search terms, thanks HauNguyenThe</li>
           <li>2022/04/30 - Add Felis search term, thanks Pootz</li>
           <li>2022/04/12 - Add Felis gear, thanks Pootz</li>
