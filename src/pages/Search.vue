@@ -96,6 +96,8 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2022/04/30 - Add Aponia and Eden search terms, thanks HauNguyenThe</li>
+          <li>2022/04/30 - Add Felis search term, thanks Pootz</li>
           <li>2022/04/12 - Add Felis gear, thanks Pootz</li>
           <li>2022/04/04 - Add Q-Manifold modifier, thanks Reinbex</li>
           <li>2022/03/24 - Add Elysia to bosses</li>
@@ -110,8 +112,8 @@
           <li>2022/01/19 - Add Silverwing to search and 3rdguide bookmarklet</li>
           <li>2021/12/12 - Add toggle for SSS boss</li>
           <li>2021/12/10 - Update 3rdguide bookmark with more abyss translations</li>
-          <li>2021/11/18 - Add Paganini stig to calc, thanks Pootz</li>
-          <!-- <li>2021/11/18 - Add Carole to search and 3rdguide bookmark</li>
+          <!-- <li>2021/11/18 - Add Paganini stig to calc, thanks Pootz</li>
+          <li>2021/11/18 - Add Carole to search and 3rdguide bookmark</li>
           <li>2021/10/24 - Add mobisus and raven gear to calc, thanks Pootz</li>
           <li>2021/10/20 - Update 3rdguide bookmark with abyss translations</li>
           <li>2021/10/19 - Add Herrscher of Dominance boss</li>
