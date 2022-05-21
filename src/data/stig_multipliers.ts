@@ -2890,6 +2890,60 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  Zeno: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Zeno T: increase lightning DMG",
+        type: Type.EleDealt,
+        value: 45,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Zeno T: when dealing lightning DMG w/ Combo ATK increase total DMG",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Zeno M: increase lightning DMG",
+        type: Type.EleDealt,
+        value: 35,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Zeno B: ranged ATKs total DMG boost",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Zeno B: combo ATKs lightning DMG boost",
+        type: Type.EleDealt,
+        value: 40,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Zeno 2 set",
+        type: Type.TdmDealt,
+        value: 35,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Zeno 3 set: Triggering ultimate evasion skill increases lightning DMG against butterfly marked enemies",
+        type: Type.EleDealt,
+        value: 60,
+      }),
+    ],
+  },
   Zhangheng: {
     B: [
       new Multiplier({
