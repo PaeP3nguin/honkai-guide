@@ -157,6 +157,36 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  Handel: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Handel T: Landing QTE increases lightning DMG for fielded valks",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Handel 3 set: Teammates on field gain total DMG",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Handel 3 set: Upon spending 60 SP in one go, enemies take bonus lightning DMG",
+        type: Type.EleTaken,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Handel 3 set: Upon spending 120 SP in one go, enemies take bonus lightning DMG",
+        type: Type.EleTaken,
+        value: 35,
+      }),
+    ],
+  },
   Holmes: {
     M: [
       new Multiplier({
@@ -1459,6 +1489,78 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Goemon 2 set: Enter Kenbu mode when combo ATK hits.",
         type: Type.TdmDealt,
         value: 30,
+      }),
+    ],
+  },
+  Handel: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Handel T: Boost lightning DMG",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Handel T: Landing QTE increases lightning DMG for fielded valks",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Handel M",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Handel M: Landing weapon active increases lightning DMG",
+        type: Type.EleDealt,
+        value: 40,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Handel B: Boost lightning DMG",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Handel B: Landing combo/charged ATKs increase total DMG",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Handel 2 set: Lightning DMG",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Handel 3 set: Teammates on field gain total DMG",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Handel 3 set: Upon spending 60 SP in one go, enemies take bonus lightning DMG",
+        type: Type.EleTaken,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Handel 3 set: Upon spending 120 SP in one go, enemies take bonus lightning DMG",
+        type: Type.EleTaken,
+        value: 35,
       }),
     ],
   },
