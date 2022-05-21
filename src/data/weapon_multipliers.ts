@@ -10,6 +10,26 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
         value: 15,
       }),
     ],
+    "Echo of Paradise": [
+      new Multiplier({
+        active: true,
+        name: "EoP: Active: boost team lightning DMG",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "EoP: Passive: boost team total DMG",
+        type: Type.TdmDealt,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "EoP: Upon casting ultimate, fielded valks deal bonus total DMG",
+        type: Type.TdmDealt,
+        value: 12,
+      }),
+    ],
     "Positron Blasters": [
       new Multiplier({
         active: true,
@@ -230,6 +250,26 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         name: "DoI: enemies hit by weapon active explosion take bonus fire DMG",
         type: Type.EleTaken,
         value: 15,
+      }),
+    ],
+    "Echo of Paradise": [
+      new Multiplier({
+        active: true,
+        name: "EoP: Active: boost team lightning DMG",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "EoP: Passive: boost team total DMG",
+        type: Type.TdmDealt,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "EoP: Upon casting ultimate, fielded valks deal bonus total DMG",
+        type: Type.TdmDealt,
+        value: 12,
       }),
     ],
     "Tranquil Arias": [
