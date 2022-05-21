@@ -366,6 +366,46 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
     ],
   },
   Chakram: {
+    "Lost Conviction": [
+      new Multiplier({
+        active: true,
+        name: "Lost Conviction: Active: caster deals more lightning DMG against marked targets",
+        type: Type.EleDealt,
+        value: 12,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Lost Conviction: Active: caster deals more lightning DMG",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+    ],
+    "Lost Conviction: Damnation": [
+      new Multiplier({
+        active: true,
+        name: "Lost Conviction PRI: Active: caster deals more lightning DMG against marked targets",
+        type: Type.EleDealt,
+        value: 16,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Lost Conviction PRI: Active: caster deals more lightning DMG",
+        type: Type.EleDealt,
+        value: 25,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Lost Conviction PRI: Passive: lightning DMG",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Lost Conviction PRI: Passive: Disciplinary Perdition equip: ultimate gains total DMG",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+    ],
     "Purana Phantasma": [
       new Multiplier({
         active: true,
