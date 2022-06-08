@@ -88,8 +88,9 @@
           <img class="valk-gif mr-2" :src="require('@/assets/brn.gif')" />
           <span>Bronya works hard to instantly generate links as you type.</span>
         </v-layout>
-
         <p>Some bosses/valks go by multiple names, so try all links!</p>
+        <v-checkbox v-model="googleToggle" :label="`Swap to Google`"></v-checkbox>
+        <v-checkbox v-if="googleToggle" v-model="googleToggleBili" :label="`Bili² from Google`"></v-checkbox>
         <p v-for="link in biliLinks" v-bind:key="link">
           <a target="_blank" class="bili-link" :href="`${link}`">{{ link }}</a>
         </p>
@@ -417,6 +418,8 @@ export default Vue.extend({
       scoresByTime: scoresByTime,
       modifiers: modifiers,
       lineups: RECENT_LINEUPS,
+      googleToggle: false,
+      googleToggleBili: true,
     };
   },
   components: { BossLineupList },
@@ -445,11 +448,23 @@ export default Vue.extend({
         });
       return combos;
     },
+    //converts valk combinations to use the google OR search notation
+    valkCombosGoogle: function () {
+      let combos = [];
+      this.selectedValks
+        .map((v) => valkToChinese[v])
+        .forEach((names) => {
+          //console.log(names)
+          combos.push(`(${names.join("|")})`);
+        });
+      return combos;
+    },
     biliLinks: function () {
-      const baseUrl = isMobile()
+      const baseUrl = this.googleToggle
+        ? "https://www.google.com/search?q="
+        : isMobile()
         ? "https://m.bilibili.com/search?keyword="
         : "https://search.bilibili.com/all?keyword=";
-
       // Static modifiers that go at the end.
       let modifierParams = this.modifiers
         .filter((m) => m.value)
@@ -457,15 +472,22 @@ export default Vue.extend({
       if (this.score) {
         modifierParams.push([this.score]);
       }
+      if (this.googleToggleBili && this.googleToggle) {
+        modifierParams.push([`site:https://www.bilibili.com`]);
+      }
       // Must have at least one element in each array passed to combine to generate anything.
       modifierParams = modifierParams.length ? modifierParams : [[""]];
       const modifierCombos = Array.from(combine(modifierParams)).map((c: string[]) =>
         c.join(" ").trim()
       );
-
-      const combinations = Array.from(combine([this.bossNames, this.valkCombos, modifierCombos]));
-
-      // Sort by length and then alphabetical.
+      const combinations = ! this.googleToggle
+      ? Array.from(combine([this.bossNames, this.valkCombos, modifierCombos]))
+      //Ajusted the string parse to produce a single google search string.
+      : Array.from([[
+      `${this.bossNames!=''? [`(${this.bossNames.join("|")})`] : ''}`,
+      `${this.valkCombosGoogle!=['']? `${this.valkCombosGoogle.join(" ")}` : ''}`,
+      modifierParams.join(" ").toString().replaceAll(/(-\S+,|\S+)(?!^$)/g,"($1)").replaceAll(",","|")
+      ]]);
       return combinations
         .map((c: string[]) => `${baseUrl}${c.join(" ").trim()}`)
         .sort(function (a, b) {
