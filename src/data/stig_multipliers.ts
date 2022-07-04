@@ -95,6 +95,32 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  Cezanne: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Cezanne T: boost phys DMG of ultimate after any team's ultimate hits",
+        type: Type.PhysDealt,
+        value: 27,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Cezanne B: when combo atk hits, inflict Structure Outline, all enemies take more total DMG",
+        type: Type.TdmTaken,
+        value: 36,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Cezanne 3 set: after ultimate, team gains total DMG when attacking enemies with broken/no shield for each stack of Bleed (max 10%)",
+        type: Type.TdmDealt,
+        value: 10,
+      }),
+    ],
+  },
   "Fu Hua - Margrave": {
     T: [
       new Multiplier({
@@ -1015,6 +1041,38 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "N-EX 3 set: Basic ATKs (including Combo/Charged) deal additional Ice DMG",
         type: Type.EleDealt,
         value: 25,
+      }),
+    ],
+  },
+  Cezanne: {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Cezanne T",
+        type: Type.PhysDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Cezanne T: boost phys DMG of ultimate after any team's ultimate hits",
+        type: Type.PhysDealt,
+        value: 27,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Cezanne B: when combo atk hits, inflict Structure Outline, all enemies take more total DMG",
+        type: Type.TdmTaken,
+        value: 36,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Cezanne 3 set: after ultimate, team gains total DMG when attacking enemies with broken/no shield for each stack of Bleed (max 10%).",
+        type: Type.TdmDealt,
+        value: 10,
       }),
     ],
   },
