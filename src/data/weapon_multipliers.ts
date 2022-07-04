@@ -30,6 +30,28 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
         value: 12,
       }),
     ],
+    "Elysian Astra": [
+      new Multiplier({
+        active: true,
+        name: "Elysian Astra: Passive: increase team physical DMG",
+        type: Type.PhysDealt,
+        value: 15,
+      }),
+    ],
+    "Elysian Astra: Heart's Color": [
+      new Multiplier({
+        active: true,
+        name: "Elysian Astra: Passive: increase team physical DMG",
+        type: Type.PhysDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Elysian Astra: Passive: within 22s of weapon active, unshielded enemies take bonus physical DMG",
+        type: Type.PhysTaken,
+        value: 8,
+      }),
+    ],
     "Positron Blasters": [
       new Multiplier({
         active: true,
@@ -668,6 +690,40 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         name: "Basilisk PRI: Passive: Ranged ATKs deal bonus total DMG",
         type: Type.TdmDealt,
         value: 30,
+      }),
+    ],
+    "Elysian Astra": [
+      new Multiplier({
+        active: true,
+        name: "Elysian Astra: Passive: increase wielder's Combo ATKs and Ultimates total DMG",
+        type: Type.TdmDealt,
+        value: 25,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Elysian Astra: Passive: increase team physical DMG",
+        type: Type.PhysDealt,
+        value: 15,
+      }),
+    ],
+    "Elysian Astra: Heart's Color": [
+      new Multiplier({
+        active: true,
+        name: "Elysian Astra: Passive: increase wielder's Combo ATKs and Ultimates total DMG",
+        type: Type.TdmDealt,
+        value: 35,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Elysian Astra: Passive: increase team physical DMG",
+        type: Type.PhysDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Elysian Astra: Passive: within 22s of weapon active, unshielded enemies take bonus physical DMG",
+        type: Type.PhysTaken,
+        value: 8,
       }),
     ],
     "Hekate's Gloom": [
