@@ -101,6 +101,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2022/07/04 - Add Vill-V boss and Griseo valk 😭, thanks TencentDimepiece</li>
           <li>2022/06/29 - Add option to use Google to search bilibili, thanks TencentDimepiece</li>
           <li>
             2022/05/26 - Add Aponia weapons, Handel and Zeno stigs, Echo of Paradise, thanks Pootz
@@ -119,8 +120,8 @@
           <li>2022/02/01 - Add Palatinus Equinox to search and 3rdguide bookmark, thanks Pootz</li>
           <li>2022/01/24 - Add no Turg and no Zhenyi modifiers, thanks Pootz</li>
           <li>2022/01/19 - Add Silverwing equips to gear calc, thanks Pootz</li>
-          <li>2022/01/19 - Add Silverwing to search and 3rdguide bookmarklet</li>
-          <!-- <li>2021/12/12 - Add toggle for SSS boss</li>
+          <!-- <li>2022/01/19 - Add Silverwing to search and 3rdguide bookmarklet</li>
+          <li>2021/12/12 - Add toggle for SSS boss</li>
           <li>2021/12/10 - Update 3rdguide bookmark with more abyss translations</li>
           <li>2021/11/18 - Add Paganini stig to calc, thanks Pootz</li>
           <li>2021/11/18 - Add Carole to search and 3rdguide bookmark</li>
@@ -290,6 +291,7 @@ const bossToChinese = {
   "Titan + Hierophant (soul link mobs) (Abyss only)": ["关底", "双灵魂链接", "红莲泰坦"],
   "Tonatiuh (lobster)": ["托纳提乌", "龙虾"],
   "Wendy + Ganesha (Abyss only)": ["猪温"],
+  "Vill-V": ["维尔薇", "V2V"],
 };
 
 const valkToChinese = {
@@ -354,6 +356,7 @@ const valkToChinese = {
   "Spina Astera (SpA)": ["星", "星棘", "缭乱星棘"],
   "Starchasm Nyx": ["魇夜星渊", "冰希"],
   "Starlit Astrologos (SA, Zhuge)": ["朔夜观星", "观"],
+  "Starry Impression (SI, Griseo)": ["格", "格蕾修"],
   "Stygian Nymph (SN)": ["黑希", "希"], // 彼岸双生
   "Swallowtail Phantasm (SP)": ["幻海梦蝶", "A希"],
   "Triumph (VT)": ["凯"],
