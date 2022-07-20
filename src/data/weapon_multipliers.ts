@@ -140,6 +140,40 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
         value: 42,
       }),
     ],
+    "Seven Thunders of Retribution: Rumble (7T)": [
+      new Multiplier({
+        active: true,
+        name: "7T: Passive: deal bonus total DMG to enemies of weaker types.",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "7T: Passive: in co-op raids, total elemental DMG increases.",
+        type: Type.EleDealt,
+        value: 25,
+      }),
+    ],
+    "Seven Thunders of Retribution: Narukami (7T PRI)": [
+      new Multiplier({
+        active: true,
+        name: "7T PRI: Passive: deal bonus total DMG to enemies of weaker types.",
+        type: Type.TdmDealt,
+        value: 45,
+      }),
+      new Multiplier({
+        active: true,
+        name: "7T PRI: Passive: in non-burst mode, increase lightning DMG.",
+        type: Type.EleDealt,
+        value: 35,
+      }),
+      new Multiplier({
+        active: true,
+        name: "7T PRI: Passive: in co-op raids, total elemental DMG increases.",
+        type: Type.EleDealt,
+        value: 25,
+      }),
+    ],
   },
   Greatswords: {
     "Blood Dance (BD)": [
