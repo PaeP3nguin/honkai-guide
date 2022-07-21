@@ -101,6 +101,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2022/07/21 - Add Seven Thunders PRI to calc, thanks Pootz</li>
           <li>2022/07/04 - Add Vill-V boss and Griseo valk 😭, thanks TencentDimepiece</li>
           <li>2022/06/29 - Add option to use Google to search bilibili, thanks TencentDimepiece</li>
           <li>
@@ -119,8 +120,8 @@
           <li>2022/02/01 - Update HoD search translations, thanks Toast</li>
           <li>2022/02/01 - Add Palatinus Equinox to search and 3rdguide bookmark, thanks Pootz</li>
           <li>2022/01/24 - Add no Turg and no Zhenyi modifiers, thanks Pootz</li>
-          <li>2022/01/19 - Add Silverwing equips to gear calc, thanks Pootz</li>
-          <!-- <li>2022/01/19 - Add Silverwing to search and 3rdguide bookmarklet</li>
+          <!-- <li>2022/01/19 - Add Silverwing equips to gear calc, thanks Pootz</li>
+          <li>2022/01/19 - Add Silverwing to search and 3rdguide bookmarklet</li>
           <li>2021/12/12 - Add toggle for SSS boss</li>
           <li>2021/12/10 - Update 3rdguide bookmark with more abyss translations</li>
           <li>2021/11/18 - Add Paganini stig to calc, thanks Pootz</li>
