@@ -80,6 +80,7 @@
     陨冰之律者: "Rimestar",
     "虚树神骸-虚无主义": "Nihilus Husk",
     "支配之律者-乌合之众": "Herrscher of Dominance",
+    "伪神·奥托": "False God Otto",
 
     // === Superstring abyss translations ===
     // Abyss ranks
@@ -226,6 +227,20 @@
 
     "卡萝尔·佩珀": "Carole Pepper",
     甜辣女孩: "Sweet n Spicy",
+
+    帕朵菲莉丝: "Pardofelis",
+    "空梦·掠集之兽": "Reverist Calico",
+
+    阿波尼亚: "Aponia",
+    "戒律·深罪之槛": "Disciplinary Perdition",
+
+    伊甸: "Eden",
+    "黄金·璀耀之歌": "Golden Diva",
+
+    格蕾修: "Griseo",
+    "繁星·绘世之卷": "Starry Impression",
+
+    维尔薇: "Vill-V",
   };
 
   const translateElement = function (tls, el) {
