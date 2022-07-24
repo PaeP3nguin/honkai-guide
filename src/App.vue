@@ -98,8 +98,8 @@
 
 <script lang="ts">
 import Vue from "vue";
-import firebase from "firebase/app";
-import "firebase/auth";
+import { getAuth, onAuthStateChanged, signInAnonymously } from "firebase/auth";
+import { firebaseApp } from "@/main";
 
 export default Vue.extend({
   name: "app",
@@ -131,7 +131,9 @@ export default Vue.extend({
       true
     );
 
-    await firebase.auth().signInAnonymously();
+    const auth = getAuth(firebaseApp);
+
+    await signInAnonymously(auth);
   },
 });
 </script>

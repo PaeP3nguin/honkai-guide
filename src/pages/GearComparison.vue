@@ -169,30 +169,39 @@
 <script lang="ts">
 import Vue from "vue";
 import GearCalc from "@/components/GearCalc.vue";
-import firebase from "firebase/app";
-import "firebase/auth";
 import "firebase/firestore";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import {
+  getFirestore,
+  collection,
+  getDoc,
+  doc,
+  CollectionReference,
+  DocumentData,
+  addDoc,
+} from "firebase/firestore";
 import { Multiplier } from "@/models/multiplier";
+import { firebaseApp } from "@/main";
 
-const firestore = firebase.firestore();
 let shareCopiedTooltipTimeout = null;
 let userId = "anonymous";
 
-firebase.auth().onAuthStateChanged((user) => {
+const auth = getAuth(firebaseApp);
+onAuthStateChanged(auth, (user) => {
   if (user) {
     userId = user.uid;
   }
 });
+
+const firestore = getFirestore(firebaseApp);
 
 function buildShareLink(userId: string, comparisonId: string): string {
   const base = window.location.href.split("?")[0];
   return `${base}?userId=${userId}&comparisonId=${comparisonId}`;
 }
 
-function getUserRef(
-  userId: string
-): firebase.firestore.CollectionReference<firebase.firestore.DocumentData> {
-  return firestore.collection("comparison").doc(userId).collection("comparison");
+function getUserRef(userId: string): CollectionReference<DocumentData> {
+  return collection(firestore, "comparison", userId, "comparison");
 }
 
 export default Vue.extend({
@@ -215,7 +224,9 @@ export default Vue.extend({
   async mounted() {
     const queryParams = this.$route.query;
     if (queryParams.comparisonId) {
-      const docRef = await getUserRef(queryParams.userId).doc(queryParams.comparisonId).get();
+      const docRef = await getDoc(
+        doc(await getUserRef(queryParams.userId), queryParams.comparisonId)
+      );
       if (docRef.exists) {
         this.shareData = docRef.data();
         this.shareData.left.forEach((d) => this.leftMultipliers.push(Multiplier.fromObject(d)));
@@ -246,7 +257,7 @@ export default Vue.extend({
         return;
       }
 
-      const ref = await getUserRef(userId).add(this.exportData);
+      const ref = await addDoc(await getUserRef(userId), this.exportData);
       this.shareLink = buildShareLink(userId, ref.id);
       this.shareData = this.exportData;
     },
