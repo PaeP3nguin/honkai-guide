@@ -490,7 +490,7 @@ export default Vue.extend({
                 ? `(${modifierParams.map((params) => params.join("|")).join(" ")})`
                 : "",
               this.score,
-              this.googleToggleBili ? "(site:https://www.bilibili.com)" : "",
+              this.googleToggleBili ? "site:https://www.bilibili.com" : "",
             ]
               // Remove empty strings and nulls to avoid extra spaces and weirdness in the output.
               .filter((n) => n)
