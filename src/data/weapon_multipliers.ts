@@ -30,28 +30,6 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
         value: 12,
       }),
     ],
-    "Elysian Astra": [
-      new Multiplier({
-        active: true,
-        name: "Elysian Astra: Passive: increase team physical DMG",
-        type: Type.PhysDealt,
-        value: 15,
-      }),
-    ],
-    "Elysian Astra: Heart's Color": [
-      new Multiplier({
-        active: true,
-        name: "Elysian Astra: Passive: increase team physical DMG",
-        type: Type.PhysDealt,
-        value: 20,
-      }),
-      new Multiplier({
-        active: true,
-        name: "Elysian Astra: Passive: within 22s of weapon active, unshielded enemies take bonus physical DMG",
-        type: Type.PhysTaken,
-        value: 8,
-      }),
-    ],
     "Positron Blasters": [
       new Multiplier({
         active: true,
@@ -166,6 +144,28 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
         name: "11th PRI: Active: Teammates in the range of cross gain crit rate.",
         type: Type.CritRate,
         value: 20,
+      }),
+    ],
+    "Elysian Astra": [
+      new Multiplier({
+        active: true,
+        name: "Elysian Astra: Passive: increase team physical DMG",
+        type: Type.PhysDealt,
+        value: 15,
+      }),
+    ],
+    "Elysian Astra: Heart's Color": [
+      new Multiplier({
+        active: true,
+        name: "Elysian Astra PRI: Passive: increase team physical DMG",
+        type: Type.PhysDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Elysian Astra PRI: Passive: within 22s of weapon active, unshielded enemies take bonus physical DMG",
+        type: Type.PhysTaken,
+        value: 8,
       }),
     ],
     "Super-☆ Sonata": [
