@@ -743,19 +743,19 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
     "Elysian Astra: Heart's Color": [
       new Multiplier({
         active: true,
-        name: "Elysian Astra: Passive: increase wielder's Combo ATKs and Ultimates total DMG",
+        name: "Elysian Astra PRI: Passive: increase wielder's Combo ATKs and Ultimates total DMG",
         type: Type.TdmDealt,
         value: 35,
       }),
       new Multiplier({
         active: true,
-        name: "Elysian Astra: Passive: increase team physical DMG",
+        name: "Elysian Astra PRI: Passive: increase team physical DMG",
         type: Type.PhysDealt,
         value: 20,
       }),
       new Multiplier({
         active: true,
-        name: "Elysian Astra: Passive: within 22s of weapon active, unshielded enemies take bonus physical DMG",
+        name: "Elysian Astra PRI: Passive: within 22s of weapon active, unshielded enemies take bonus physical DMG",
         type: Type.PhysTaken,
         value: 8,
       }),
