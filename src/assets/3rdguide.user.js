@@ -58,7 +58,6 @@
     吼姆王: "Homu King",
     // '卡莲': 'Kallen', // (use valkyrie TL)
     绯狱丸: "Hellmaru",
-
     海姆达尔: "Heimdall",
     湮灭沉灵: "Doom",
     教父军团: "Padrino Legion",
@@ -81,6 +80,7 @@
     "虚树神骸-虚无主义": "Nihilus Husk",
     "支配之律者-乌合之众": "Herrscher of Dominance",
     "伪神·奥托": "False God Otto",
+    "逐火十三英桀·科斯魔": "Kosma",
 
     // === Superstring abyss translations ===
     // Abyss ranks

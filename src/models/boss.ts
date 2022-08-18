@@ -155,6 +155,12 @@ const Bosses = Object.freeze({
     image: "kasumi.png",
     wikiLink: "https://honkaiimpact3.fandom.com/",
   }),
+  Kosma: new Boss({
+    name: "Flame-Chaser - Kosma",
+    shortName: "Kosma",
+    image: "kosma.png",
+    wikiLink: "https://honkaiimpact3.fandom.com/",
+  }),
   Mexicatl: new Boss({
     name: "Mexicatl: Umbreist",
     shortName: "Mexicatl",
