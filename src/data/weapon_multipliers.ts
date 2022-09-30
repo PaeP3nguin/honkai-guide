@@ -426,6 +426,46 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 40,
       }),
     ],
+    "Tower of the Past (ToP)": [
+      new Multiplier({
+        active: true,
+        name: "ToP: Passive",
+        type: Type.TdmDealt,
+        value: 8,
+      }),
+      new Multiplier({
+        active: true,
+        name: "ToP: Passive: deal increased Fire DMG to Locked targets",
+        type: Type.EleDealt,
+        value: 8,
+      }),
+    ],
+    "Tower of the Past: Silk Ladder (ToP PRI)": [
+      new Multiplier({
+        active: true,
+        name: "ToP PRI: Passive",
+        type: Type.TdmDealt,
+        value: 12,
+      }),
+      new Multiplier({
+        active: true,
+        name: "ToP PRI: Passive: deal increased Fire DMG to Locked targets",
+        type: Type.EleDealt,
+        value: 12,
+      }),
+      new Multiplier({
+        active: true,
+        name: "ToP PRI: Passive: Ultimate and burst mode attacks deal bonus Fire DMG to Locked targets",
+        type: Type.EleDealt,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "ToP PRI: Passive: in burst mode increase Total DMG to Locked targets",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+    ],
   },
   Chakram: {
     "Lost Conviction": [
