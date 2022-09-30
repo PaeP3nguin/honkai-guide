@@ -1044,6 +1044,66 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  "Carlo Collodi": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Collodi T",
+        type: Type.TdmDealt,
+        value: 25,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Collodi T: Fire DMG dealt by ranged attacks",
+        type: Type.EleDealt,
+        value: 40,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Collodi M: when a summoned entity is spawned or defeated, all enemies take bonus Fire DMG from host",
+        type: Type.EleTakenHost,
+        value: 20,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Collodi B: Fire DMG",
+        type: Type.EleDealt,
+        value: 60,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Collodi 2 set",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Collodi 2 set: increase Fire DMG in burst mode",
+        type: Type.TdmDealt,
+        value: 40,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Collodi 3 set: attacks increase Fire DMG on hit (5 stacks)",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Collodi 3 set: gain Total DMG in burst mode",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+    ],
+  },
   Cezanne: {
     T: [
       new Multiplier({
