@@ -1464,6 +1464,84 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  "Elysia: Pristine": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Pristine T",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Pristine T: Weapon skills increase Ice DMG",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Pristine T: Ranged Ice DMG increase in Herrscher Form",
+        type: Type.EleDealt,
+        value: 35,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Pristine M: increase Ice DMG",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Pristine M: while in Herrscher Form weapon skill hits increase ranged Ice DMG",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Pristine B: increase Ice DMG",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Pristine B: ranged ATKs deal bonus Total DMG",
+        type: Type.CritDmg,
+        value: 20,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Pristine 2 set: total DMG increase while in Herrscher Form",
+        type: Type.TdmDealt,
+        value: 25,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Pristine 2 set: after 8 hits, ranged Ice DMG increases",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Pristine 3 set: Ranged Ice DMG increases",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Pristine 3 set: Ranged Total DMG increases",
+        type: Type.TdmDealt,
+        value: 35,
+      }),
+    ],
+  },
   Ekaterina: {
     M: [
       new Multiplier({
