@@ -1156,6 +1156,58 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
     ],
   },
   Bows: {
+    "Key of Ego": [
+      new Multiplier({
+        active: true,
+        name: "KoE: Passive: when wielded by HoHE, enemies that trigger Ego Blossom take more Ice DMG",
+        type: Type.EleTaken,
+        value: 12,
+      }),
+      new Multiplier({
+        active: true,
+        name: "KoE: Passive: when using weapon active increase Total DMG",
+        type: Type.TdmDealt,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "KoE: Passive: when wielded by HoHE, weapon skill total DMG increase",
+        type: Type.TdmDealt,
+        value: 10,
+      }),
+    ],
+    "Domain of Ego: Flawless Return": [
+      new Multiplier({
+        active: true,
+        name: "DoE: Passive: when wielded by HoHE, enemies that trigger Ego Blossom take more Ice DMG",
+        type: Type.EleTaken,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoE: Passive: when using weapon active increase Total DMG",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoE: Passive: when wielded by HoHE, weapon skill total DMG increase",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoE: Passive: increase Ice DMG",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoE: Passive: when wielded by HoHE, ult finisher total DMG increases when Origin Form Charged ATK hits enemies",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+    ],
     "Obscuring Whisper": [
       new Multiplier({
         active: true,
