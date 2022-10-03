@@ -105,6 +105,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2022/10/03 - Add Vill-V, HoH equips, thanks Pootz</li>
           <li>
             2022/08/17 - Add Kosma boss, thanks Neal/Gwent, include Vill-V in valkyries, updated
             3rdguide bookmarklet
@@ -125,8 +126,8 @@
           <li>2022/03/13 - Add Otto to bosses and no Paganini modifier, thanks Pootz</li>
           <li>2022/03/13 - Add Spina Astera gear to calc, thanks Pootz</li>
           <li>2022/02/25 - Add PE gear to calc, thanks Pootz</li>
-          <li>2022/02/25 - Add Spina Astera to search and 3rdguide bookmark, thanks Toast</li>
-          <!-- <li>2022/02/01 - Update HoD search translations, thanks Toast</li>
+          <!-- <li>2022/02/25 - Add Spina Astera to search and 3rdguide bookmark, thanks Toast</li>
+          <li>2022/02/01 - Update HoD search translations, thanks Toast</li>
           <li>2022/02/01 - Add Palatinus Equinox to search and 3rdguide bookmark, thanks Pootz</li>
           <li>2022/01/24 - Add no Turg and no Zhenyi modifiers, thanks Pootz</li>
           <li>2022/01/19 - Add Silverwing equips to gear calc, thanks Pootz</li>
@@ -336,7 +337,7 @@ const valkToChinese = {
   "Hawk of the Fog (HF)": ["迅", "迅雷", "雾都迅羽"],
   "Haxxor Bunny (HB)": ["骇兔", "迷城骇兔"],
   "Herrscher of Flamescion (HoFS, KFC)": ["薪", "炎", "萤火虫", "薪炎之律者"],
-  "Herrscher of Human Ego (HoH, HoHE, HoE)": ["爱猫兔","爱律"],
+  "Herrscher of Human Ego (HoH, HoHE, HoE)": ["爱猫兔", "爱律"],
   "Herrscher of the Void (God Kiana, GK, HoV)": ["律"],
   "Herrscher of Sentience (HoS)": ["识之律者", "识律", "识"],
   "Herrscher of Thunder (HoT, HT)": ["雷之律者", "雷律", "雷"],
