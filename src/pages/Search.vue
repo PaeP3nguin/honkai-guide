@@ -343,6 +343,7 @@ const valkToChinese = {
   "Herrscher of Thunder (HoT, HT)": ["雷之律者", "雷律", "雷"],
   "Imayoh (IR)": ["今"],
   "Infinite Ouroboros (IO, Mobius)": ["无限·噬界之蛇", "噬界", "蛇主"],
+  "Jade Knight (Li Sushang)": ["李", "李素裳", "玉骑士月痕"],
   "Knight Moonbeam (KMB)": ["月"],
   "Lightning Empress (LE)": ["鬼"],
   "Liliya (Blueberry Blitz / BB)": ["蓝"],
