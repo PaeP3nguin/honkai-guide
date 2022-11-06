@@ -3204,6 +3204,66 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  "Willows": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Willows T: increase Ice DMG",
+        type: Type.EleDealt,
+        value: 60,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Willows M",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Willows M: increase Ice DMG when weapon skill hits",
+        type: Type.EleDealt,
+        value: 35,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Willows B: when host is on field, enemies take more Ice DMG",
+        type: Type.EleTaken,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Willows B: hitting enemies with Charged ATKs increases Ice DMG taken",
+        type: Type.EleTaken,
+        value: 15,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Willows 2 set: spend 1 Looming Shadow stack to increase Ice DMG",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: false,
+        name: "Willows 3 set: enemies take more Ice DMG from the host",
+        type: Type.EleTakenHost,
+        value: 5,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Willows 3 set: spending over 100 SP at once increases effect to 15%",
+        type: Type.EleTakenHost,
+        value: 15,
+      }),
+    ],
+  },
   Zeno: {
     T: [
       new Multiplier({
