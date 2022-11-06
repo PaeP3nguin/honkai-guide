@@ -208,6 +208,28 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
         value: 12,
       }),
     ],
+    "Nocturnal Stealth": [
+      new Multiplier({
+        active: true,
+        name: "Nocturnal: Passive: after using weapon active, team deals more Ice DMG",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+    ],
+    "Nocturnal Stealth: Beam": [
+      new Multiplier({
+        active: true,
+        name: "Nocturnal PRI: Passive: after using weapon active, team deals more Ice DMG",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Nocturnal PRI: Passive: increase team total DMG dealt",
+        type: Type.TdmDealt,
+        value: 10,
+      }),
+    ],
   },
   Scythes: {
     "Iris of the Dreams": [
@@ -850,6 +872,34 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         name: "Duality: Passive: Fu Hua bonus: hitting enemy with last hit of combo boosts TDM by 6%. Max 3 stacks.",
         type: Type.TdmDealt,
         value: 18,
+      }),
+    ],
+    "Nocturnal Stealth": [
+      new Multiplier({
+        active: true,
+        name: "Nocturnal: Passive: after using weapon active, team deals more Ice DMG",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+    ],
+    "Nocturnal Stealth: Beam": [
+      new Multiplier({
+        active: true,
+        name: "Nocturnal PRI: Passive: after using weapon active, team deals more Ice DMG",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Nocturnal PRI: Passive: increase Ice DMG dealt by combo ATKs",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Nocturnal PRI: Passive: increase team total DMG dealt",
+        type: Type.TdmDealt,
+        value: 10,
       }),
     ],
     "Nuada's Revenge": [
