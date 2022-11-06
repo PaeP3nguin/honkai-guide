@@ -305,6 +305,58 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  "Li Sushang": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Li Sushang T: when dealing dmg with Combo ATK increase team Ice DMG",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: false,
+        name: "Li Sushang B: in Reinforcement state Ice DMG dealt by team increase (120 SP)",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Li Sushang B: in Reinforcement state Ice DMG dealt by team increase (150 SP)",
+        type: Type.EleDealt,
+        value: 55,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Li Sushang 2 set: Menacing Sword Ki stacks increases ice DMG taken (10 stacks max)",
+        type: Type.EleTaken,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Li Sushang 2 set: when equipped by JK, increase max Menacing Sword Ki by 12",
+        type: Type.EleTaken,
+        value: 12,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Li Sushang 3 set: increase max Menacing Sword Ki to 15",
+        type: Type.EleTaken,
+        value: 5,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Li Sushang 3 set: increase team shield DMG",
+        type: Type.ShieldDmgDealt,
+        value: 50,
+      }),
+    ],
+  },
   "New Year (Fireworks)": {
     "2 set": [
       new Multiplier({
@@ -1993,6 +2045,72 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Leeuwenhoek 2 set: Enemies take more fire DMG from host for 10s after using ult. (activate all single stig conditional effects)",
         type: Type.EleTakenHost,
         value: 15,
+      }),
+    ],
+  },
+  "Li Sushang": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Li Sushang T",
+        type: Type.TdmDealt,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Li Sushang T: when dealing dmg with Combo ATK increase team Ice DMG",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Li Sushang M: increase ice DMG dealt by Basic and Combo ATKs",
+        type: Type.EleDealt,
+        value: 50,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: false,
+        name: "Li Sushang B: in Reinforcement state Ice DMG dealt by team increase (120 SP)",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Li Sushang B: in Reinforcement state Ice DMG dealt by team increase (150 SP)",
+        type: Type.EleDealt,
+        value: 55,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Li Sushang 2 set: Menacing Sword Ki stacks increases ice DMG taken (10 stacks max)",
+        type: Type.EleTaken,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Li Sushang 2 set: when equipped by JK, increase max Menacing Sword Ki by 12",
+        type: Type.EleTaken,
+        value: 12,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Li Sushang 3 set: increase max Menacing Sword Ki to 15",
+        type: Type.EleTaken,
+        value: 5,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Li Sushang 3 set: increase team shield DMG",
+        type: Type.ShieldDmgDealt,
+        value: 50,
       }),
     ],
   },
