@@ -448,6 +448,64 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 40,
       }),
     ],
+    "Star of Eden: Anti-Entropy (SoE)": [
+      new Multiplier({
+        active: true,
+        name: "SoE: Passive: increase total DMG dealt to type-countered enemies",
+        type: Type.TdmDealt,
+        value: 35,
+      }),
+      new Multiplier({
+        active: true,
+        name: "SoE: Active: when casting weapon active outside of Bike mode increase shield DMG",
+        type: Type.ShieldDmgDealt,
+        value: 200,
+      }),
+      new Multiplier({
+        active: false,
+        name: "SoE: Passive: in co-op raids increase ice DMG dealt",
+        type: Type.EleDealt,
+        value: 25,
+      }),
+    ],
+    "Star of Eden: World (SoE)": [
+      new Multiplier({
+        active: true,
+        name: "SoE PRI: Passive: increase total DMG dealt to type-countered enemies",
+        type: Type.TdmDealt,
+        value: 45,
+      }),
+      new Multiplier({
+        active: true,
+        name: "SoE PRI: Passive: increase ice DMG dealt",
+        type: Type.EleDealt,
+        value: 45,
+      }),
+      new Multiplier({
+        active: true,
+        name: "SoE PRI: Passive: increase total DMG dealt by Charge ATKs",
+        type: Type.TdmDealt,
+        value: 25,
+      }),
+      new Multiplier({
+        active: true,
+        name: "SoE PRI: Passive: HoR bonus: increase ice DMG dealt by Hover Gun to analyzed enemies",
+        type: Type.EleDealt,
+        value: 50,
+      }),
+      new Multiplier({
+        active: true,
+        name: "SoE PRI: Active: when casting weapon active outside of Bike mode increase shield DMG",
+        type: Type.ShieldDmgDealt,
+        value: 200,
+      }),
+      new Multiplier({
+        active: false,
+        name: "SoE PRI: Passive: in co-op raids increase ice DMG dealt",
+        type: Type.EleDealt,
+        value: 25,
+      }),
+    ],
     "Tower of the Past (ToP)": [
       new Multiplier({
         active: true,
