@@ -105,6 +105,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2022/11/06 - Sus search term, gear, Willows stig, SoE key, thanks Pootz</li>
           <li>2022/10/03 - Add Vill-V, HoH equips, thanks Pootz</li>
           <li>
             2022/08/17 - Add Kosma boss, thanks Neal/Gwent, include Vill-V in valkyries, updated
@@ -125,8 +126,8 @@
           <li>2022/03/24 - Add Elysia to bosses</li>
           <li>2022/03/13 - Add Otto to bosses and no Paganini modifier, thanks Pootz</li>
           <li>2022/03/13 - Add Spina Astera gear to calc, thanks Pootz</li>
-          <li>2022/02/25 - Add PE gear to calc, thanks Pootz</li>
-          <!-- <li>2022/02/25 - Add Spina Astera to search and 3rdguide bookmark, thanks Toast</li>
+          <!-- <li>2022/02/25 - Add PE gear to calc, thanks Pootz</li>
+          <li>2022/02/25 - Add Spina Astera to search and 3rdguide bookmark, thanks Toast</li>
           <li>2022/02/01 - Update HoD search translations, thanks Toast</li>
           <li>2022/02/01 - Add Palatinus Equinox to search and 3rdguide bookmark, thanks Pootz</li>
           <li>2022/01/24 - Add no Turg and no Zhenyi modifiers, thanks Pootz</li>
