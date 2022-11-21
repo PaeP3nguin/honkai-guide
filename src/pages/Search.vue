@@ -305,6 +305,8 @@ const bossToChinese = {
   "Tonatiuh (lobster)": ["托纳提乌", "龙虾"],
   "Wendy + Ganesha (Abyss only)": ["猪温"],
   "Vill-V": ["维尔薇", "V2V"],
+  "Opaque Shadow (quantum whale)": ["蔽光之影"],
+  "Nocturnal Knight (blood thorn)": ["煌夜骑士"],
 };
 
 const valkToChinese = {
