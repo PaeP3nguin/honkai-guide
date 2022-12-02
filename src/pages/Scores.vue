@@ -16,32 +16,32 @@
 
           <v-col>
             <v-autocomplete
-              v-model="selectedScore"
-              @change="computeByScore"
-              label="Score"
+              v-model="selectedSsScore"
+              @change="computeBySsScore"
+              label="SS Score"
               autofocus
               auto-select-first
-              :items="scores"
+              :items="ssScore"
             ></v-autocomplete>
           </v-col>
 
           <v-col>
             <v-autocomplete
-              v-model="selectedUpScore"
-              @change="computeByUpScore"
-              label="Score (20% bonus)"
+              v-model="selectedBase"
+              @change="computeByBase"
+              label="SSS Score"
               auto-select-first
-              :items="upScores"
+              :items="base"
             ></v-autocomplete>
           </v-col>
 
           <v-col>
             <v-autocomplete
-              v-model="selectedSssScore"
-              @change="computeBySssScore"
-              label="Score (SSS)"
+              v-model="selectedUp"
+              @change="computeByUp"
+              label="SSS 20% Bonus"
               auto-select-first
-              :items="sssScores"
+              :items="up"
             ></v-autocomplete>
           </v-col>
         </v-row>
@@ -81,18 +81,18 @@ const tableHeaders = [
     width: "25%",
   },
   {
-    text: "Score",
-    value: "score",
+    text: "SS Score",
+    value: "ssScore",
     width: "25%",
   },
   {
-    text: "Score (20% bonus)",
+    text: "SSS Score",
+    value: "base",
+    width: "25%",
+  },
+  {
+    text: "SSS 20% Bonus",
     value: "up",
-    width: "25%",
-  },
-  {
-    text: "Score (SSS)",
-    value: "sssScore",
     width: "25%",
   },
 ];
@@ -112,14 +112,14 @@ export default Vue.extend({
       scoresByTime: scoresByTime,
 
       // Converter stuff
-      scores: scoresByTime.map((s) => s.score),
-      upScores: scoresByTime.map((s) => s.up),
-      sssScores: scoresByTime.map((s) => s.sssScore),
+      ssScore: scoresByTime.map((s) => s.ssScore),
+      base: scoresByTime.map((s) => s.base),
+      up: scoresByTime.map((s) => s.up),
       times: scoresByTime.map((s) => elapsedSecToAutocompleteItem(s.elapsedSec)),
-      selectedScore: null,
-      selectedUpScore: null,
+      selectedSsScore: null,
+      selectedBase: null,
+      selectedUp: null,
       selectedTime: null,
-      selectedSssScore: null,
 
       // Table stuff
       tableHeaders: tableHeaders,
@@ -129,26 +129,26 @@ export default Vue.extend({
     };
   },
   methods: {
-    computeByScore: function () {
-      const computedScore = scoresByTime.find((s) => s.score == this.selectedScore);
+    computeBySsScore: function () {
+      const computedScore = scoresByTime.find((s) => s.ssScore == this.selectedSsScore);
       this.fillSelectionsWithComputedScore(computedScore);
     },
-    computeByUpScore: function () {
-      const computedScore = scoresByTime.find((s) => s.up == this.selectedUpScore);
+    computeByBase: function () {
+      const computedScore = scoresByTime.find((s) => s.base == this.selectedBase);
+      this.fillSelectionsWithComputedScore(computedScore);
+    },
+    computeByUp: function () {
+      const computedScore = scoresByTime.find((s) => s.up == this.selectedUp);
       this.fillSelectionsWithComputedScore(computedScore);
     },
     computeByTime: function () {
       const computedScore = scoresByTime.find((s) => s.elapsedSec == this.selectedTime);
       this.fillSelectionsWithComputedScore(computedScore);
     },
-    computeBySssScore: function () {
-      const computedScore = scoresByTime.find((s) => s.sssScore == this.selectedSssScore);
-      this.fillSelectionsWithComputedScore(computedScore);
-    },
     fillSelectionsWithComputedScore: function (computedScore) {
-      this.selectedScore = computedScore.score;
-      this.selectedUpScore = computedScore.up;
-      this.selectedSssScore = computedScore.sssScore;
+      this.selectedSsScore = computedScore.ssScore;
+      this.selectedBase = computedScore.base;
+      this.selectedUp = computedScore.up;
       this.selectedTime = elapsedSecToAutocompleteItem(computedScore.elapsedSec);
     },
   },

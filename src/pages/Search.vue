@@ -229,9 +229,9 @@
 
         <h2 class="mt-6">Scores by time</h2>
         <ul>
-          <li>time = base / uprate / SSS</li>
+          <li>time = ss / sss / up</li>
           <li v-for="s in scoresByTime" v-bind:key="s.score">
-            {{ s.elapsedSec | countdownSeconds }} = {{ s.score }} / {{ s.up }} / {{ s.sssScore }}
+            {{ s.elapsedSec | countdownSeconds }} = {{ s.ssScore }} / {{ s.base }} / {{ s.up }}
           </li>
         </ul>
       </v-flex>
@@ -441,7 +441,7 @@ export default Vue.extend({
       score: null,
       bosses: Object.keys(bossToChinese),
       valks: Object.keys(valkToChinese),
-      scores: scoresByTime.map((s) => s.score),
+      scores: scoresByTime.map((s) => s.ssScore),
       scoresByTime: scoresByTime,
       modifiers: modifiers,
       lineups: RECENT_LINEUPS,
