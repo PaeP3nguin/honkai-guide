@@ -1,6 +1,46 @@
 import { Type, Multiplier } from "@/models/multiplier";
 
 const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
+  "Ai": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Ai T: when host Charged ATK or Ultimate hits, Fire DMG dealers deal more total DMG",
+        type: Type.TdmDealt,
+        value: 25,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Ai B: when weapon active or Ultimate hits, team deals more fire DMG",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Ai 2 set: at max Spotlight team deals more fire DMG to ignited enemies",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Ai 3 set: when ignited enemies are hit by team members, it receives more fire DMG",
+        type: Type.EleTaken,
+        value: 35,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Ai 3 set: Chrono Navi equip: igniting enemies make them receive more ignite DMG",
+        type: Type.EleTaken,
+        value: 20,
+      }),
+    ],
+  },
   Aslaug: {
     T: [
       new Multiplier({
@@ -618,6 +658,78 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
 });
 
 const DPS_STIG_MULTIPLIERS = Object.freeze({
+  "Ai": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Ai T: Increase fire DMG from weapon active and basic ATK",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Ai T: when host Charged ATK or Ultimate hits, Fire DMG dealers deal more total DMG",
+        type: Type.TdmDealt,
+        value: 25,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Ai M: increase fire DMG dealt",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Ai B",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Ai B: when weapon active or Ultimate hits, team deals more fire DMG",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Ai 2 set: weapon skill hits grant Spotlight (3 max) that increases fire DMG",
+        type: Type.EleDealt,
+        value: 24,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Ai 2 set: at max Spotlight team deals more fire DMG to ignited enemies",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Ai 3 set: weapon active deals more fire DMG",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Ai 3 set: when ignited enemies are hit by team members, it receives more fire DMG",
+        type: Type.EleTaken,
+        value: 35,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Ai 3 set: Chrono Navi equip: igniting enemies make them receive more ignite DMG",
+        type: Type.EleTaken,
+        value: 20,
+      }),
+    ],
+  },
   "Allen Poe": {
     T: [
       new Multiplier({
