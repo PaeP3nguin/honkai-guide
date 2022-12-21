@@ -100,6 +100,34 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
         value: 12,
       }),
     ],
+    "Rudder in Dream": [
+      new Multiplier({
+        active: true,
+        name: "Rudder: Passive: team total DMG boost.",
+        type: Type.TdmDealt,
+        value: 10,
+      }),
+    ],
+    "Rudder in Dream Λ-I": [
+      new Multiplier({
+        active: true,
+        name: "Rudder PRI: Passive: team total DMG boost.",
+        type: Type.TdmDealt,
+        value: 12,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Rudder PRI: Passive: enemies hit by pulse receive more fire DMG",
+        type: Type.EleTaken,
+        value: 8,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Rudder PRI: Passive: enemies hit by pulse receive more fire DMG (ignited)",
+        type: Type.EleTaken,
+        value: 15,
+      }),
+    ],
   },
   Katanas: {
     "MAG-Typhoon": [
@@ -632,6 +660,64 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         name: "Purana Phantasma PRI: Passive: team total DMG boost.",
         type: Type.TdmDealt,
         value: 12,
+      }),
+    ],
+    "Rudder in Dream": [
+      new Multiplier({
+        active: true,
+        name: "Rudder: Active: weapon enters Overclocked mode boosting user total DMG",
+        type: Type.TdmDealt,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Rudder: Passive: team total DMG boost.",
+        type: Type.TdmDealt,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Rudder: Passive: Chrono Navi equip: knocking back a chakram in Overclocked mode boosts fire DMG to ignited enemies",
+        type: Type.EleDealt,
+        value: 12,
+      }),
+    ],
+    "Rudder in Dream Λ-I": [
+      new Multiplier({
+        active: true,
+        name: "Rudder PRI: Active: weapon enters Overclocked mode boosting user total DMG",
+        type: Type.TdmDealt,
+        value: 12,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Rudder PRI: Passive: team total DMG boost.",
+        type: Type.TdmDealt,
+        value: 12,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Rudder PRI: Passive: Chrono Navi equip: knocking back a chakram in Overclocked mode boosts fire DMG to ignited enemies",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Rudder PRI: Passive: increase fire DMG",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Rudder PRI: Passive: enemies hit by pulse receive more fire DMG",
+        type: Type.EleTaken,
+        value: 8,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Rudder PRI: Passive: enemies hit by pulse receive more fire DMG (ignited)",
+        type: Type.EleTaken,
+        value: 15,
       }),
     ],
   },
