@@ -288,6 +288,7 @@ const bossToChinese = {
   Huodou: ["祸斗"],
   "Jizo Mitama": ["地藏", "地藏御魂"],
   Kallen: ["卡莲"],
+  Kalpas: ["千劫", "杰哥", "劫哥", "千师傅"],
   Kasumi: ["八重霞"],
   Kosma: ["科斯魔"],
   "Li Sushang": ["李素裳"],
