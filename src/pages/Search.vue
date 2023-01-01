@@ -348,6 +348,7 @@ const valkToChinese = {
   "Herrscher of the Void (God Kiana, GK, HoV)": ["律"],
   "Herrscher of Sentience (HoS)": ["识之律者", "识律", "识"],
   "Herrscher of Thunder (HoT, HT)": ["雷之律者", "雷律", "雷"],
+  "Herrscher of Truth (HoTr, HTR)": ["真理", "真"],
   "Imayoh (IR)": ["今"],
   "Infinite Ouroboros (IO, Mobius)": ["无限·噬界之蛇", "噬界", "蛇主"],
   "Jade Knight (Li Sushang)": ["李", "李素裳", "玉骑士月痕"],
