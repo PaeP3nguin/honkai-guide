@@ -327,6 +327,7 @@ const valkToChinese = {
   "Carole Pepper": ["卡萝尔", "甜辣女孩"],
   "Celestial Hymn (CH)": ["神"],
   "Chariot (VC)": ["战"],
+  "Chrono Navi (CN, Ai-chan)":["爱衣", "爱"],
   "Crimson Impulse (CI)": ["绯"],
   "Danzai Spectramancer (DS)": ["影", "断罪影舞"],
   "Herrscher of Reason (HoR, Tronya)": ["理", "律鸭"],
