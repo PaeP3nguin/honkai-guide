@@ -400,6 +400,7 @@ const modifiersToChinese = {
   "No Shuijing": ["无水"],
   "No Zhenyi": ["无贞仪"],
   "No Turgenev": ["无屠"],
+  "No ELFs": ["无人偶"],
   "SS LE": ["SS鬼", "2S鬼"],
   "SS lead skill": ["SS队长技", "2S队长技"],
   "Exalted MA": ["终极区"],
