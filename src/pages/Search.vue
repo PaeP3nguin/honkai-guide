@@ -105,6 +105,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2023/01/10 - Bunch of new search terms and equipment, thanks Pootz and eyee</li>
           <li>2022/12/11 - Updated scoring for SSS bosses, thanks HauNguyenThe</li>
           <li>2022/11/25 - Add Opaque Shadow and Nocturnal Knight, thanks Cyxo</li>
           <li>2022/11/06 - Sus search term, gear, Willows stig, SoE key, thanks Pootz</li>
@@ -125,8 +126,8 @@
           <li>2022/04/30 - Add Felis search term, thanks Pootz</li>
           <li>2022/04/12 - Add Felis gear, thanks Pootz</li>
           <li>2022/04/04 - Add Q-Manifold modifier, thanks Reinbex</li>
-          <li>2022/03/24 - Add Elysia to bosses</li>
-          <!-- <li>2022/03/13 - Add Otto to bosses and no Paganini modifier, thanks Pootz</li>
+          <!-- <li>2022/03/24 - Add Elysia to bosses</li>
+          <li>2022/03/13 - Add Otto to bosses and no Paganini modifier, thanks Pootz</li>
           <li>2022/03/13 - Add Spina Astera gear to calc, thanks Pootz</li>
           <li>2022/02/25 - Add PE gear to calc, thanks Pootz</li>
           <li>2022/02/25 - Add Spina Astera to search and 3rdguide bookmark, thanks Toast</li>
@@ -327,7 +328,7 @@ const valkToChinese = {
   "Carole Pepper": ["卡萝尔", "甜辣女孩"],
   "Celestial Hymn (CH)": ["神"],
   "Chariot (VC)": ["战"],
-  "Chrono Navi (CN, Ai-chan)":["爱衣", "爱"],
+  "Chrono Navi (CN, Ai-chan)": ["爱衣", "爱"],
   "Crimson Impulse (CI)": ["绯"],
   "Danzai Spectramancer (DS)": ["影", "断罪影舞"],
   "Herrscher of Reason (HoR, Tronya)": ["理", "律鸭"],
