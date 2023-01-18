@@ -105,6 +105,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2023/01/17 - Add Husk: Mysticism boss search term, thanks Gwent and Ryuu</li>
           <li>2023/01/10 - Bunch of new search terms and equipment, thanks Pootz and eyee</li>
           <li>2022/12/11 - Updated scoring for SSS bosses, thanks HauNguyenThe</li>
           <li>2022/11/25 - Add Opaque Shadow and Nocturnal Knight, thanks Cyxo</li>
@@ -125,8 +126,8 @@
           <li>2022/04/30 - Add Aponia and Eden search terms, thanks HauNguyenThe</li>
           <li>2022/04/30 - Add Felis search term, thanks Pootz</li>
           <li>2022/04/12 - Add Felis gear, thanks Pootz</li>
-          <li>2022/04/04 - Add Q-Manifold modifier, thanks Reinbex</li>
-          <!-- <li>2022/03/24 - Add Elysia to bosses</li>
+          <!-- <li>2022/04/04 - Add Q-Manifold modifier, thanks Reinbex</li>
+          <li>2022/03/24 - Add Elysia to bosses</li>
           <li>2022/03/13 - Add Otto to bosses and no Paganini modifier, thanks Pootz</li>
           <li>2022/03/13 - Add Spina Astera gear to calc, thanks Pootz</li>
           <li>2022/02/25 - Add PE gear to calc, thanks Pootz</li>
@@ -287,6 +288,7 @@ const bossToChinese = {
   "Herrscher of Sentience (HoS)": ["识之律者"],
   "HOMU King": ["吼姆"],
   Huodou: ["祸斗"],
+  "Husk: Mysticism": ["神秘主义", "牛牛"],
   "Jizo Mitama": ["地藏", "地藏御魂"],
   Kallen: ["卡莲"],
   Kalpas: ["千劫", "杰哥", "劫哥", "千师傅"],
