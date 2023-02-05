@@ -30,6 +30,26 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
         value: 12,
       }),
     ],
+    "Echo of Paradise: Time Ruins (EoPRI)": [
+      new Multiplier({
+        active: true,
+        name: "EoPRI: Active: boost team lightning DMG",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "EoPRI: Passive: boost team total DMG",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "EoPRI: Upon casting ultimate, all team members deal bonus total DMG",
+        type: Type.TdmDealt,
+        value: 10,
+      }),
+    ],
     "Positron Blasters": [
       new Multiplier({
         active: true,
@@ -370,6 +390,32 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         name: "EoP: Upon casting ultimate, fielded valks deal bonus total DMG",
         type: Type.TdmDealt,
         value: 12,
+      }),
+    ],
+    "Echo of Paradise: Time Ruins (EoPRI)": [
+      new Multiplier({
+        active: true,
+        name: "EoPRI: Active: boost team lightning DMG",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "EoPRI: Passive: boost team total DMG",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "EoPRI: Upon casting ultimate, all team members deal bonus total DMG",
+        type: Type.TdmDealt,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "EoPRI: Passive: boost lightning DMG",
+        type: Type.EleDealt,
+        value: 20,
       }),
     ],
     "Tranquil Arias": [
