@@ -62,6 +62,34 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
         value: 12,
       }),
     ],
+    "Key of Ascension (KoA)": [
+      new Multiplier({
+        active: false,
+        name: "KoA: Passive: increase Fire DMG received by all enemies for each Fire DMG dealer on the team (5% each)",
+        type: Type.EleTaken,
+        value: 10,
+      }),
+    ],
+    "Domain of Ascension (DoA)": [
+      new Multiplier({
+        active: false,
+        name: "DoA: Passive: increase Fire DMG received by all enemies for each Fire DMG dealer on the team (7% each)",
+        type: Type.EleTaken,
+        value: 14,
+      }),
+      new Multiplier({
+        active: false,
+        name: "DoA: Passive: increase team members Elemental DMG (unique)",
+        type: Type.EleDealt,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoA: Passive: increase team members Elemental DMG (unique); after ultimate, this bonus increases",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+    ],
     "Star Shatterer - Vikrant": [
       new Multiplier({
         active: true,
@@ -442,6 +470,20 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 40,
       }),
     ],
+    "Key of Ascension (KoA)": [
+      new Multiplier({
+        active: true,
+        name: "KoA: Passive: Ice DMG boost for each Ice DMG dealer on the team (8% each)",
+        type: Type.EleDealt,
+        value: 24,
+      }),
+      new Multiplier({
+        active: false,
+        name: "KoA: Passive: increase Fire DMG received by all enemies for each Fire DMG dealer on the team (5% each)",
+        type: Type.EleTaken,
+        value: 10,
+      }),
+    ],
     "Key of Reason (KoR)": [
       new Multiplier({
         active: true,
@@ -454,6 +496,38 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         name: "KoR: Active: After using active, gain TDM.",
         type: Type.TdmDealt,
         value: 35,
+      }),
+    ],
+    "Domain of Ascension (DoA)": [
+      new Multiplier({
+        active: true,
+        name: "DoA: Passive: Ice DMG boost for each Ice DMG dealer on the team (12% each)",
+        type: Type.EleDealt,
+        value: 36,
+      }),
+      new Multiplier({
+        active: false,
+        name: "DoA: Passive: increase Fire DMG received by all enemies for each Fire DMG dealer on the team (7% each)",
+        type: Type.EleTaken,
+        value: 14,
+      }),
+      new Multiplier({
+        active: false,
+        name: "DoA: Passive: increase team members Elemental DMG (unique)",
+        type: Type.EleDealt,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoA: Passive: increase team members Elemental DMG (unique); after ultimate, this bonus increases",
+        type: Type.EleDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoA: Active: Increase user Ice DMG",
+        type: Type.EleDealt,
+        value: 30,
       }),
     ],
     "Domain of Revelation (DoR)": [
