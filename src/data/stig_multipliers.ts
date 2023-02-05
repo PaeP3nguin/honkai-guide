@@ -135,6 +135,40 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  "Bronya Zaychik": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Zaychik T: When all team members are in Inceptive Authority, they deal more Total DMG",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Zaychik B: Inceptive Authority increases elemental DMG",
+        type: Type.EleDealt,
+        value: 34,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Zaychik 2 set: Combo ATKs in Herrscher form improves Inceptive Authority effect, making all enemies receive more total DMG",
+        type: Type.TdmTaken,
+        value: 18,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Zaychik 3 set: If a team member is in Inceptive Authority, all enemies receive more elemental DMG",
+        type: Type.EleTaken,
+        value: 16,
+      }),
+    ],
+  },
   Cezanne: {
     T: [
       new Multiplier({
@@ -1205,6 +1239,72 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "N-EX 3 set: Basic ATKs (including Combo/Charged) deal additional Ice DMG",
         type: Type.EleDealt,
         value: 25,
+      }),
+    ],
+  },
+  "Bronya Zaychik": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Zaychik T: In Herrscher form increase Ice DMG",
+        type: Type.EleDealt,
+        value: 50,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Zaychik T: When all team members are in Inceptive Authority, they deal more Total DMG",
+        type: Type.TdmDealt,
+        value: 20,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Zaychik M: All enemies receive more Total DMG from Bronya's ranged attacks",
+        type: Type.TdmTaken,
+        value: 30,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Zaychik B",
+        type: Type.TdmDealt,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Zaychik B: Inceptive Authority increases elemental DMG",
+        type: Type.EleDealt,
+        value: 34,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Zaychik 2 set: Bearer deals more total DMG w/ team members in Inceptive Authority",
+        type: Type.TdmDealt,
+        value: 12,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Zaychik 2 set: Combo ATKs in Herrscher form improves Inceptive Authority effect, making all enemies receive more total DMG",
+        type: Type.TdmTaken,
+        value: 18,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Zaychik 3 set: Combo ATK, Ultimate, and burst mode ATKs deal more Ice DMG",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Zaychik 3 set: If a team member is in Inceptive Authority, all enemies receive more elemental DMG",
+        type: Type.EleTaken,
+        value: 16,
       }),
     ],
   },
