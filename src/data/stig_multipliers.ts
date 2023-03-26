@@ -521,6 +521,38 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  "Raiden Mei": {
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Raiden Mei B: Triggering Time-Frozen Domain makes all enemies take more Total DMG (3 stacks)",
+        type: Type.TdmTaken,
+        value: 24,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Raiden Mei 2 set: Triggering Time-Frozen Domain makes all enemies take more Elemental DMG (independent) (3 stacks)",
+        type: Type.EleTakenHost,
+        value: 25.9712,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Raiden Mei 3 set: After any team member casts Joint Bursting in Herrscher Form, all enemies take more Total DMG.",
+        type: Type.TdmTaken,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Raiden Mei 3 set: Enemies in Listen Well state take more Total DMG after being hit by Combo ATK 5 times",
+        type: Type.TdmTaken,
+        value: 21,
+      }),
+    ],
+  },
   "Shattered Swords": {
     B: [
       new Multiplier({
@@ -2755,6 +2787,78 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Ragna 2 set: Rita equip bonus: Charged ATK deals bonus fire DMG",
         type: Type.EleDealt,
         value: 50,
+      }),
+    ],
+  },
+  "Raiden Mei": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Raiden Mei T",
+        type: Type.TdmDealt,
+        value: 16,
+      }),
+      new Multiplier({
+        active: false,
+        name: "Raiden Mei T: Increase Lightning DMG from Basic/Combo/Charged ATKs",
+        type: Type.EleDealt,
+        value: 50,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Raiden Mei M: In Herrscher Form, after Combo ATK hits, deal more Lightning DMG",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Raiden Mei B",
+        type: Type.TdmDealt,
+        value: 12,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Raiden Mei B: Triggering Time-Frozen Domain makes all enemies take more Total DMG (3 stacks)",
+        type: Type.TdmTaken,
+        value: 24,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Raiden Mei 2 set: In Herrscher form, Basic/Combo/Charged ATKs deal more Lightning DMG",
+        type: Type.EleDealt,
+        value: 35,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Raiden Mei 2 set: Triggering Time-Frozen Domain makes all enemies take more Elemental DMG (independent) (3 stacks)",
+        type: Type.EleTakenHost,
+        value: 25.9712,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Raiden Mei 3 set: All enemies take more Lightning DMG from character's Basic/Combo/Charged ATKs (independent)",
+        type: Type.EleTakenHost,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Raiden Mei 3 set: After any team member casts Joint Bursting in Herrscher Form, all enemies take more Total DMG.",
+        type: Type.TdmTaken,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Raiden Mei 3 set: Enemies in Listen Well state take more Total DMG after being hit by Combo ATK 5 times",
+        type: Type.TdmTaken,
+        value: 21,
       }),
     ],
   },
