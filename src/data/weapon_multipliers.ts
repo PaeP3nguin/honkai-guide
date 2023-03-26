@@ -938,6 +938,58 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         value: 25,
       }),
     ],
+    "Key of Limpidity": [
+      new Multiplier({
+        active: true,
+        name: "KoL: Active: A successful block increases Lightning DMG",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "KoL: Passive: Deal more Lightning DMG",
+        type: Type.EleDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "KoL: Passive: Triggering Time-Frozen Domain increases Total DMG from Basic/Combo/Charged ATKs (3 stacks)",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+    ],
+    "Domain of Unity (DoU)": [
+      new Multiplier({
+        active: true,
+        name: "DoU: Active: A successful block increases Lightning DMG",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoU: Passive: Deal more Lightning DMG",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoU: Passive: Triggering Time-Frozen Domain increases Total DMG from Basic/Combo/Charged ATKs (3 stacks)",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoU: Passive: Basic/Combo/Charged ATKs deal more Lightning DMG",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoU: HoO bonus: Enemies hit by her Combo ATK take more Elemental DMG",
+        type: Type.EleTaken,
+        value: 15,
+      }),
+    ],
   },
   Greatswords: {
     "Godslayer - Surtr": [
