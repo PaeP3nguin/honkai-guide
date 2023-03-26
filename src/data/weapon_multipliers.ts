@@ -338,6 +338,46 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
 
 const DPS_WEAPON_MULTIPLIERS = Object.freeze({
   Pistols: {
+    "Key of Anonymity": [
+      new Multiplier({
+        active: true,
+        name: "KoAn: Passive: Deal more Total DMG to Withered enemies",
+        type: Type.TdmDealt,
+        value: 12,
+      }),
+      new Multiplier({
+        active: true,
+        name: "KoAn: Passive: HoFi bonus: Combo ATK deals more Fire DMG",
+        type: Type.EleDealt,
+        value: 18,
+      }),
+    ],
+    "Domain of Genesis (DoG)": [
+      new Multiplier({
+        active: true,
+        name: "DoG: Passive: Deal more Total DMG to Withered enemies",
+        type: Type.TdmDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoG: Passive: HoFi bonus: Combo ATK deals more Fire DMG",
+        type: Type.EleDealt,
+        value: 40,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoG: Passive: Deal more Fire DMG",
+        type: Type.EleDealt,
+        value: 45,
+      }),
+      new Multiplier({
+        active: true,
+        name: "DoG: Passive: HoFi bonus: During Absolute Time Fracture, withered enemies take more Total DMG",
+        type: Type.TdmTaken,
+        value: 15,
+      }),
+    ],
     "Key of Radiance": [
       new Multiplier({
         active: true,
