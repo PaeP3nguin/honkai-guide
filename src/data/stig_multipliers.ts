@@ -2202,6 +2202,90 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  "Kiana Kaslana": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Kiana T: Increase Fire DMG",
+        type: Type.EleDealt,
+        value: 30,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Kiana T: Casting weapon active boosts Total DMG",
+        type: Type.TdmDealt,
+        value: 16,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Kiana T: Casting weapon active boosts Total DMG in Herrscher Form",
+        type: Type.TdmDealt,
+        value: 16,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Kiana M: After QTE or weapon active hits, all enemies take more Fire DMG from character (independent)",
+        type: Type.EleTakenHost,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Kiana M: After Joint Burst entry, all enemies take more Fire DMG from character (independent)",
+        type: Type.EleTakenHost,
+        value: 3,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Kiana B: In Herrscher Form, weapon active and Combo ATK deal more Fire DMG",
+        type: Type.EleDealt,
+        value: 40,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Kiana B: In Absolute Time Fracture, deal more Fire DMG",
+        type: Type.EleDealt,
+        value: 50,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Kiana 2 set: Combo ATK deals more Total DMG temporarily upon consuming Trace of Moon and Dust of Time",
+        type: Type.TdmDealt,
+        value: 45,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Kiana 2 set: Character deals more Total DMG temporarily upon consuming Trace of Moon and Dust of Time",
+        type: Type.TdmDealt,
+        value: 45,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Kiana 3 set: In Herrscher Form, weapon active and Ultimate deals more Fire DMG",
+        type: Type.EleDealt,
+        value: 55,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Kiana 3 set: After casting weapon active all enemies take more Total DMG from the character",
+        type: Type.TdmTakenHost,
+        value: 18,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Kiana 3 set: Deal more Total DMG during Absolute Time Fracture",
+        type: Type.TdmDealt,
+        value: 40,
+      }),
+    ],
+  },
   Leeuwenhoek: {
     T: [
       new Multiplier({
