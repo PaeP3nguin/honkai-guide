@@ -105,6 +105,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2023/04/01 - Add Hoo and Hofi gear, thanks Pootz</li>
           <li>2023/03/10 - Add Kevin and Husk: Existentialism bosses, thanks fragile and Pootz</li>
           <li>2023/02/10 - Add HoO and HoFi, Echo PRI, HoTR gear, thanks Pootz</li>
           <li>2023/01/17 - Add Husk: Mysticism boss search term, thanks Gwent and Ryuu</li>
@@ -125,8 +126,8 @@
             2022/05/26 - Add Aponia weapons, Handel and Zeno stigs, Echo of Paradise, thanks Pootz
           </li>
           <li>2022/05/17 - Add Sushang and Husk search terms, thanks HauNguyenThe</li>
-          <li>2022/04/30 - Add Aponia and Eden search terms, thanks HauNguyenThe</li>
-          <!-- <li>2022/04/30 - Add Felis search term, thanks Pootz</li>
+          <!-- <li>2022/04/30 - Add Aponia and Eden search terms, thanks HauNguyenThe</li>
+          <li>2022/04/30 - Add Felis search term, thanks Pootz</li>
           <li>2022/04/12 - Add Felis gear, thanks Pootz</li>
           <li>2022/04/04 - Add Q-Manifold modifier, thanks Reinbex</li>
           <li>2022/03/24 - Add Elysia to bosses</li>
