@@ -309,6 +309,7 @@ const bossToChinese = {
   "Otto Apocalypse": ["伪神奥托", "奥托"],
   Padrino: ["教父"],
   Parvati: ["冰猪", "帕凡提"],
+  "Pishacha (Slime, Blob)": ["毕舍遮"],
   Rimestar: ["冰律", "陨冰之律者"],
   RPC: ["飞机", "RPC - 6626"],
   "Shadow Knight (SK)": ["月轮"],
@@ -395,6 +396,7 @@ const valkToChinese = {
   "Triumph (VT)": ["凯"],
   "Umbral Rose (UR)": ["黯"],
   "Valkyrie Gloria (VG)": ["荣光", "女武神·荣光"],
+  "Valkyrie Quicksand (VQ, Susan)": ["苏", "苏珊娜", "苏莎娜", "热砂", "女武神・热砂"],
   "Vermillion Knight (VK)": ["真"],
   "Void Drifter (VD)": ["游"], // 苍穹游侠
   "Vill-V": ["维尔薇", "V2V"],
