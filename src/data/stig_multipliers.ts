@@ -41,6 +41,32 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
+  "Aladdin": {
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Aladdin M: team deals more Physical DMG to bleeding enemies",
+        type: Type.PhysDealt,
+        value: 20,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Aladdin B: enemies take more Bleed DMG",
+        type: Type.PhysDealt,
+        value: 20,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Aladdin 2 set: team deals more Bleed DMG",
+        type: Type.PhysDealt,
+        value: 20,
+      }),
+    ],
+  },
   Aslaug: {
     T: [
       new Multiplier({
@@ -793,6 +819,72 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
         name: "Ai 3 set: Chrono Navi equip: igniting enemies make them receive more ignite DMG",
         type: Type.EleTaken,
         value: 20,
+      }),
+    ],
+  },
+  "Aladdin": {
+    T: [
+      new Multiplier({
+        active: true,
+        name: "Aladdin T: Ultimate deals more Physical DMG",
+        type: Type.PhysDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Aladdin T: When Ultimate deals Bleed DMG, it deals more Total DMG",
+        type: Type.TdmDealt,
+        value: 60,
+      }),
+    ],
+    M: [
+      new Multiplier({
+        active: true,
+        name: "Aladdin M: team deals more Physical DMG to bleeding enemies",
+        type: Type.PhysDealt,
+        value: 20,
+      }),
+    ],
+    B: [
+      new Multiplier({
+        active: true,
+        name: "Aladdin B",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Aladdin B: enemies take more Bleed DMG",
+        type: Type.PhysDealt,
+        value: 20,
+      }),
+    ],
+    "2 set": [
+      new Multiplier({
+        active: true,
+        name: "Aladdin 2 set: team deals more Bleed DMG",
+        type: Type.PhysDealt,
+        value: 20,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Aladdin 2 set: Valkyrie Quicksand: weapon active and Ultimate deal more Total DMG",
+        type: Type.TdmDealt,
+        value: 80,
+      }),
+    ],
+    "3 set": [
+      new Multiplier({
+        active: true,
+        name: "Aladdin 3 set: increases Physical DMG",
+        type: Type.PhysDealt,
+        value: 18,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Aladdin 3 set: increase Combo ATK Total DMG",
+        type: Type.TdmDealt,
+        value: 30,
       }),
     ],
   },
