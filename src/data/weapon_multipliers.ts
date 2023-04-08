@@ -176,6 +176,22 @@ const SUPPORT_WEAPON_MULTIPLIERS = Object.freeze({
         value: 15,
       }),
     ],
+    "Twirling Gaze": [
+      new Multiplier({
+        active: true,
+        name: "Twirling Gaze: Active: Valkyrie Quicksand: In Rhythm state, all enemies take more Bleed DMG",
+        type: Type.PhysTaken,
+        value: 8,
+      }),
+    ],
+    "Twirling Gaze: Lustrous Bloom": [
+      new Multiplier({
+        active: true,
+        name: "Twirling Gaze PRI: Active: Valkyrie Quicksand: In Rhythm state, all enemies take more Bleed DMG",
+        type: Type.PhysTaken,
+        value: 10,
+      }),
+    ],
   },
   Katanas: {
     "MAG-Typhoon": [
@@ -878,6 +894,70 @@ const DPS_WEAPON_MULTIPLIERS = Object.freeze({
         name: "Rudder PRI: Passive: enemies hit by pulse receive more fire DMG (ignited)",
         type: Type.EleTaken,
         value: 15,
+      }),
+    ],
+    "Twirling Gaze": [
+      new Multiplier({
+        active: true,
+        name: "Twirling Gaze: Passive: increase Bleed DMG",
+        type: Type.PhysDealt,
+        value: 12,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Twirling Gaze: Active: Valkyrie Quicksand: In Rhythm state, all enemies take more Bleed DMG",
+        type: Type.PhysTaken,
+        value: 8,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Twirling Gaze: Passive",
+        type: Type.TdmDealt,
+        value: 12,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Twirling Gaze: Passive: Valkyrie Quicksand: Perfect Ultimates increases its Total DMG (5 stacks)",
+        type: Type.TdmDealt,
+        value: 80,
+      }),
+    ],
+    "Twirling Gaze: Lustrous Bloom": [
+      new Multiplier({
+        active: true,
+        name: "Twirling Gaze PRI: Passive: increase Bleed DMG",
+        type: Type.PhysDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Twirling Gaze PRI: Active: Valkyrie Quicksand: In Rhythm state, all enemies take more Bleed DMG",
+        type: Type.PhysTaken,
+        value: 10,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Twirling Gaze PRI: Passive",
+        type: Type.TdmDealt,
+        value: 15,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Twirling Gaze PRI: Passive: Valkyrie Quicksand: Perfect Ultimates increases its Total DMG (5 stacks)",
+        type: Type.TdmDealt,
+        value: 100,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Twirling Gaze PRI: Passive: increase Total DMG when in Rhythm state",
+        type: Type.TdmDealt,
+        value: 8,
+      }),
+      new Multiplier({
+        active: true,
+        name: "Twirling Gaze PRI: Passive: increase Physical DMG when in Rhythm state",
+        type: Type.TdmDealt,
+        value: 10,
       }),
     ],
   },
