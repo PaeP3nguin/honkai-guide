@@ -105,6 +105,8 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2023/05/22 - 6.6 and 6.7 valk and boss names added, thanks Darius</li>
+          <li>2023/05/05 - Small valk name fixes, thanks Pootz</li>
           <li>
             2023/04/13 - Add VQ gear and search, add slime boss search, thanks Pootz, fragile, and
             Joshie
@@ -125,11 +127,11 @@
           <li>2022/07/23 - Updated 3rdguide bookmarklet URL and search terms w/ new valks</li>
           <li>2022/07/21 - Add Seven Thunders PRI to calc, thanks Pootz</li>
           <li>2022/07/04 - Add Vill-V boss and Griseo valk 😭, thanks TencentDimepiece</li>
-          <li>2022/06/29 - Add option to use Google to search bilibili, thanks TencentDimepiece</li>
+          <!-- <li>2022/06/29 - Add option to use Google to search bilibili, thanks TencentDimepiece</li>
           <li>
             2022/05/26 - Add Aponia weapons, Handel and Zeno stigs, Echo of Paradise, thanks Pootz
           </li>
-          <!-- <li>2022/05/17 - Add Sushang and Husk search terms, thanks HauNguyenThe</li>
+          <li>2022/05/17 - Add Sushang and Husk search terms, thanks HauNguyenThe</li>
           <li>2022/04/30 - Add Aponia and Eden search terms, thanks HauNguyenThe</li>
           <li>2022/04/30 - Add Felis search term, thanks Pootz</li>
           <li>2022/04/12 - Add Felis gear, thanks Pootz</li>
@@ -324,8 +326,8 @@ const bossToChinese = {
   "Vill-V": ["维尔薇", "V2V"],
   "Opaque Shadow (quantum whale)": ["蔽光之影"],
   "Nocturnal Knight (blood thorn)": ["煌夜骑士"],
-  "Aponia": ["阿波尼亚", "阿波"],
-  "6.7 boss": ["塔之钳梏"]
+  Aponia: ["阿波尼亚", "阿波"],
+  "6.7 boss": ["塔之钳梏"],
 };
 
 const valkToChinese = {
@@ -412,7 +414,7 @@ const valkToChinese = {
   "Yamabuki Armor/Drive Kometa (YA)(DK)": ["山"],
   "Dreamweaver (DW, Misteln Schariac, Hare)": ["羽", "羽兔"],
   "Terminal Aide 0017 (TA, Prometheus)": ["普"],
-  "Shigure Kira": ["时"]
+  "Shigure Kira": ["时"],
 };
 
 const modifiersToChinese = {
