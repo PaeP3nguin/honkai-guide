@@ -324,6 +324,8 @@ const bossToChinese = {
   "Vill-V": ["维尔薇", "V2V"],
   "Opaque Shadow (quantum whale)": ["蔽光之影"],
   "Nocturnal Knight (blood thorn)": ["煌夜骑士"],
+  "Aponia": ["阿波尼亚", "阿波"],
+  "6.7 boss": ["塔之钳梏"]
 };
 
 const valkToChinese = {
@@ -347,14 +349,14 @@ const valkToChinese = {
   "Herrscher of Reason (HoR, Tronya)": ["理", "律鸭"],
   "Darkbolt Jonin (DJ)": ["夜隐重霞", "雷八"],
   "Dea Anchora (DA)": ["不灭星锚", "星", "锚"],
-  "Dimension Break (DB)": ["次"],
+  "Dimension Breaker (DB)": ["次"],
   "Divine Prayer (DP)": ["圣"],
-  "Golden Diva (Eden, GD)": ["伊", "伊甸"],
   "Elysia (Miss Pink Elf, MPE)": ["爱莉希雅", "爱莉", "爱"],
   "Fallen Rosemary (FR)": ["迷", "失落迷迭"],
   "Fervent Tempo Delta (FTD)": ["狂热蓝调", "粉"],
   "Fischl (PV)": ["皇", "小艾咪", "皇女"],
   "Flame Sakitama (FS)": ["炎"],
+  "Golden Diva (Eden, GD)": ["伊", "伊甸"],
   "Hawk of the Fog (HF)": ["迅", "迅雷", "雾都迅羽"],
   "Haxxor Bunny (HB)": ["骇兔", "迷城骇兔"],
   "Herrscher of Flamescion (HoFS, KFC)": ["薪", "炎", "萤火虫", "薪炎之律者"],
@@ -408,6 +410,9 @@ const valkToChinese = {
   "White Comet (WC)": ["白"],
   "Wolf Dawn (WD)": ["银"],
   "Yamabuki Armor/Drive Kometa (YA)(DK)": ["山"],
+  "Dreamweaver (DW, Misteln Schariac, Hare)": ["羽", "羽兔"],
+  "Terminal Aide 0017 (TA, Prometheus)": ["普"],
+  "Shigure Kira": ["时"]
 };
 
 const modifiersToChinese = {
