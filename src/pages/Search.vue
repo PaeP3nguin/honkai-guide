@@ -414,7 +414,7 @@ const valkToChinese = {
   "Yamabuki Armor/Drive Kometa (YA)(DK)": ["山"],
   "Dreamweaver (DW, Misteln Schariac, Hare)": ["羽", "羽兔"],
   "Terminal Aide 0017 (TA, Prometheus)": ["普"],
-  "Shigure Kira": ["时"],
+  "Sugary Starburst (Shigure Kira)": ["时", "糖露星霜"],
 };
 
 const modifiersToChinese = {
