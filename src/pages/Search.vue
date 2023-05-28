@@ -328,7 +328,7 @@ const bossToChinese = {
   "Opaque Shadow (quantum whale)": ["蔽光之影"],
   "Nocturnal Knight (blood thorn)": ["煌夜骑士"],
   Aponia: ["阿波尼亚", "阿波"],
-  "6.7 boss": ["塔之钳梏"],
+  "6.7 boss": ["塔之钳梏"]
 };
 
 const valkToChinese = {
@@ -415,7 +415,7 @@ const valkToChinese = {
   "Yamabuki Armor/Drive Kometa (YA)(DK)": ["山"],
   "Dreamweaver (DW, Misteln Schariac, Hare)": ["羽", "羽兔"],
   "Terminal Aide 0017 (TA, Prometheus)": ["普"],
-  "Sugary Starburst (Shigure Kira)": ["时", "糖露星霜"],
+  "Sugary Starburst (Shigure Kira)": ["时", "糖露星霜"]
 };
 
 const modifiersToChinese = {
@@ -442,6 +442,7 @@ const modifiersToChinese = {
   "Sim battle": ["模拟作战室"],
   "Elysian Realm": ["往世乐土", "往事乐土"],
   "Honkai Impact 3": ["崩坏3"],
+  "Beta Test": ["测试服"]
 };
 
 const modifiers = Object.keys(modifiersToChinese).map((m) => ({
