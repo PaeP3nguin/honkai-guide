@@ -312,7 +312,7 @@ const bossToChinese = {
   "MHT-3B Nirvana (new tank)": ["MHT-3B", "天堂使者"],
   "MR-06X Hephaestus": ["赫菲斯托斯", "灭火器"],
   "Husk: Nihilius (clock)": ["虚树神骸", "lzx"],
-  "Otto Apocalypse (shield Otto)": ["盾奥托", "奥托"]
+  "Otto Apocalypse (shield Otto)": ["盾奥托", "奥托"],
   "False God Otto Apocalypse (FGO)": ["伪神", "伪神奥托", "奥托"],
   Padrino: ["教父"],
   Parvati: ["冰猪", "帕凡提"],
