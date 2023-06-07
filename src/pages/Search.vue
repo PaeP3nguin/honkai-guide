@@ -328,7 +328,7 @@ const bossToChinese = {
   "Opaque Shadow (quantum whale)": ["蔽光之影"],
   "Nocturnal Knight (blood thorn)": ["煌夜骑士"],
   Aponia: ["阿波尼亚", "阿波"],
-  "6.7 boss": ["塔之钳梏"]
+  "6.7 boss": ["塔之钳梏", "黑白双煞"]
 };
 
 const valkToChinese = {
