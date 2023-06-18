@@ -105,6 +105,10 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2023/06/18 - Update 6.7 boss name, add Beta Test modifier, thanks Darius</li>
+          <li>
+            2023/06/18 - Remove future MA/Abyss lineups pages, as they're not updated anymore :(
+          </li>
           <li>2023/05/22 - 6.6 and 6.7 valk and boss names added, thanks Darius</li>
           <li>2023/05/05 - Small valk name fixes, thanks Pootz</li>
           <li>
@@ -126,8 +130,8 @@
           </li>
           <li>2022/07/23 - Updated 3rdguide bookmarklet URL and search terms w/ new valks</li>
           <li>2022/07/21 - Add Seven Thunders PRI to calc, thanks Pootz</li>
-          <li>2022/07/04 - Add Vill-V boss and Griseo valk 😭, thanks TencentDimepiece</li>
-          <!-- <li>2022/06/29 - Add option to use Google to search bilibili, thanks TencentDimepiece</li>
+          <!-- <li>2022/07/04 - Add Vill-V boss and Griseo valk 😭, thanks TencentDimepiece</li>
+          <li>2022/06/29 - Add option to use Google to search bilibili, thanks TencentDimepiece</li>
           <li>
             2022/05/26 - Add Aponia weapons, Handel and Zeno stigs, Echo of Paradise, thanks Pootz
           </li>
@@ -328,7 +332,7 @@ const bossToChinese = {
   "Opaque Shadow (quantum whale)": ["蔽光之影"],
   "Nocturnal Knight (blood thorn)": ["煌夜骑士"],
   Aponia: ["阿波尼亚", "阿波"],
-  "Wardens of Tower (Black Wine of Theramenes, White Sword of Damocles)": ["塔之钳锆", "黑白双煞"]
+  "Wardens of Tower (Black Wine of Theramenes, White Sword of Damocles)": ["塔之钳锆", "黑白双煞"],
 };
 
 const valkToChinese = {
@@ -415,7 +419,7 @@ const valkToChinese = {
   "Yamabuki Armor/Drive Kometa (YA)(DK)": ["山"],
   "Dreamweaver (DW, Misteln Schariac, Hare)": ["羽", "羽兔"],
   "Terminal Aide 0017 (TA, Prometheus)": ["普"],
-  "Sugary Starburst (Shigure Kira)": ["时", "糖露星霜"]
+  "Sugary Starburst (Shigure Kira)": ["时", "糖露星霜"],
 };
 
 const modifiersToChinese = {
@@ -442,7 +446,7 @@ const modifiersToChinese = {
   "Sim battle": ["模拟作战室"],
   "Elysian Realm": ["往世乐土", "往事乐土"],
   "Honkai Impact 3": ["崩坏3"],
-  "Beta Test": ["测试服"]
+  "Beta Test": ["测试服"],
 };
 
 const modifiers = Object.keys(modifiersToChinese).map((m) => ({
