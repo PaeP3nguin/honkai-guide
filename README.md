@@ -8,6 +8,8 @@ To install dependencies, run:
 npm install
 ```
 
+You may need to use `--force` as the project uses fairly old dependencies.
+
 ### Setting up Cloud Firestore
 
 The site uses Cloud Firestore to save gear comparisons to allow users to share via URL. To set up Firestore for local development, perform the following steps:
@@ -34,6 +36,9 @@ export default firebaseConfig;
 ```
 
 ## Building and running
+
+If you get `ERR_OSSL_EVP_UNSUPPORTED` errors, check out solutions here:
+https://stackoverflow.com/questions/70582072/npm-run-fails-with-err-ossl-evp-unsupported
 
 ### Compiles and hot-reloads for development
 
