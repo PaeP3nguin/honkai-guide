@@ -49,7 +49,8 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item link to="/memorial_lineups">
+        <!-- Disabling as these aren't updated. -->
+        <!-- <v-list-item link to="/memorial_lineups">
           <v-list-item-action>
             <v-img max-width="24" left :src="require('@/assets/icon_enemy.png')"></v-img>
           </v-list-item-action>
@@ -65,7 +66,7 @@
           <v-list-item-content>
             <v-list-item-title>Future Abyss lineups</v-list-item-title>
           </v-list-item-content>
-        </v-list-item>
+        </v-list-item> -->
 
         <v-list-item link to="/pgr_search">
           <v-list-item-action>
