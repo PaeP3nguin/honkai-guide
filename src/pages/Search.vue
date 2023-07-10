@@ -105,6 +105,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2023/??/?? - Added beta 6.8 boss and Herrscher of Rebirth; english name for boss will be updated when GLB beta starts, thanks Darius</li>
           <li>2023/06/18 - Update 6.7 boss name, add Beta Test modifier, thanks Darius</li>
           <li>
             2023/06/18 - Remove future MA/Abyss lineups pages, as they're not updated anymore :(
@@ -333,6 +334,7 @@ const bossToChinese = {
   "Nocturnal Knight (blood thorn)": ["煌夜骑士"],
   Aponia: ["阿波尼亚", "阿波"],
   "Wardens of Tower (Black Wine of Theramenes, White Sword of Damocles)": ["塔之钳锆", "黑白双煞"],
+  "beta 6.8 boss": ["巡航审判团"]
 };
 
 const valkToChinese = {
@@ -419,7 +421,8 @@ const valkToChinese = {
   "Yamabuki Armor/Drive Kometa (YA)(DK)": ["山"],
   "Dreamweaver (DW, Misteln Schariac, Hare)": ["羽", "羽兔"],
   "Terminal Aide 0017 (TA, Prometheus)": ["普"],
-  "Sugary Starburst (Shigure Kira)": ["时", "糖露星霜"],
+  "Sugary Starburst (SSt, Shigure Kira)": ["时", "糖露星霜"],
+  "Herrscher of Rebirth (HRB)": ["希"]
 };
 
 const modifiersToChinese = {
