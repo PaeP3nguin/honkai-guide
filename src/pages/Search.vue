@@ -422,7 +422,7 @@ const valkToChinese = {
   "Dreamweaver (DW, Misteln Schariac, Hare)": ["羽", "羽兔"],
   "Terminal Aide 0017 (TA, Prometheus)": ["普"],
   "Sugary Starburst (SSt, Shigure Kira)": ["时", "糖露星霜"],
-  "Herrscher of Rebirth (HRB)": ["希"]
+  "Herrscher of Rebirth (HRB)": ["希", "死生之律者"]
 };
 
 const modifiersToChinese = {
