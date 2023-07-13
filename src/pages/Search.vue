@@ -105,7 +105,10 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
-          <li>2023/??/?? - Added beta 6.8 boss and Herrscher of Rebirth; english name for boss will be updated when GLB beta starts, thanks Darius</li>
+          <li>
+            2023/07/12 - Added beta 6.8 boss and Herrscher of Rebirth; english name for boss will be
+            updated when GLB beta starts, thanks Darius
+          </li>
           <li>2023/06/18 - Update 6.7 boss name, add Beta Test modifier, thanks Darius</li>
           <li>
             2023/06/18 - Remove future MA/Abyss lineups pages, as they're not updated anymore :(
@@ -130,8 +133,8 @@
             3rdguide bookmarklet
           </li>
           <li>2022/07/23 - Updated 3rdguide bookmarklet URL and search terms w/ new valks</li>
-          <li>2022/07/21 - Add Seven Thunders PRI to calc, thanks Pootz</li>
-          <!-- <li>2022/07/04 - Add Vill-V boss and Griseo valk 😭, thanks TencentDimepiece</li>
+          <!-- <li>2022/07/21 - Add Seven Thunders PRI to calc, thanks Pootz</li>
+          <li>2022/07/04 - Add Vill-V boss and Griseo valk 😭, thanks TencentDimepiece</li>
           <li>2022/06/29 - Add option to use Google to search bilibili, thanks TencentDimepiece</li>
           <li>
             2022/05/26 - Add Aponia weapons, Handel and Zeno stigs, Echo of Paradise, thanks Pootz
@@ -334,7 +337,7 @@ const bossToChinese = {
   "Nocturnal Knight (blood thorn)": ["煌夜骑士"],
   Aponia: ["阿波尼亚", "阿波"],
   "Wardens of Tower (Black Wine of Theramenes, White Sword of Damocles)": ["塔之钳锆", "黑白双煞"],
-  "beta 6.8 boss": ["巡航审判团"]
+  "beta 6.8 boss": ["巡航审判团"],
 };
 
 const valkToChinese = {
@@ -422,7 +425,7 @@ const valkToChinese = {
   "Dreamweaver (DW, Misteln Schariac, Hare)": ["羽", "羽兔"],
   "Terminal Aide 0017 (TA, Prometheus)": ["普"],
   "Sugary Starburst (SSt, Shigure Kira)": ["时", "糖露星霜"],
-  "Herrscher of Rebirth (HRB)": ["希", "死生之律者"]
+  "Herrscher of Rebirth (HRB)": ["希", "死生之律者"],
 };
 
 const modifiersToChinese = {
