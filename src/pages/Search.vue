@@ -337,7 +337,7 @@ const bossToChinese = {
   "Nocturnal Knight (blood thorn)": ["煌夜骑士"],
   Aponia: ["阿波尼亚", "阿波"],
   "Wardens of Tower (Black Wine of Theramenes, White Sword of Damocles)": ["塔之钳锆", "黑白双煞"],
-  "beta 6.8 boss": ["巡航审判团"],
+  "Cruising Tribunal": ["巡航审判团"],
 };
 
 const valkToChinese = {
