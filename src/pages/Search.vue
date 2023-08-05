@@ -105,6 +105,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2023/08/05 - Update 6.8 boss name, thanks Darius</li>
           <li>
             2023/07/12 - Added beta 6.8 boss and Herrscher of Rebirth; english name for boss will be
             updated when GLB beta starts, thanks Darius
@@ -132,8 +133,8 @@
             2022/08/17 - Add Kosma boss, thanks Neal/Gwent, include Vill-V in valkyries, updated
             3rdguide bookmarklet
           </li>
-          <li>2022/07/23 - Updated 3rdguide bookmarklet URL and search terms w/ new valks</li>
-          <!-- <li>2022/07/21 - Add Seven Thunders PRI to calc, thanks Pootz</li>
+          <!-- <li>2022/07/23 - Updated 3rdguide bookmarklet URL and search terms w/ new valks</li>
+          <li>2022/07/21 - Add Seven Thunders PRI to calc, thanks Pootz</li>
           <li>2022/07/04 - Add Vill-V boss and Griseo valk 😭, thanks TencentDimepiece</li>
           <li>2022/06/29 - Add option to use Google to search bilibili, thanks TencentDimepiece</li>
           <li>
