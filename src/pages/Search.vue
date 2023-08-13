@@ -427,6 +427,7 @@ const valkToChinese = {
   "Terminal Aide 0017 (TA, Prometheus)": ["普"],
   "Sugary Starburst (SSt, Shigure Kira)": ["时", "糖露星霜"],
   "Herrscher of Rebirth (HRB)": ["希", "死生之律者"],
+  "Miracle Magical Girl (Sirin, MMG)": ["西", "西琳"],
 };
 
 const modifiersToChinese = {
