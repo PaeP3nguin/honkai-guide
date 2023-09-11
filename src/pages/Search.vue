@@ -312,6 +312,7 @@ const bossToChinese = {
   "Wardens of Tower (Black Wine of Theramenes, White Sword of Damocles)": ["塔之钳锆", "黑白双煞"],
   "Cruising Tribunal": ["巡航审判团"],
   "Herrscher of Corruption (HoC, Elysia)": ["侵蚀"],
+  "Herrscher of Ice (HoI)": ["冰律"],
 };
 
 const valkToChinese = {
