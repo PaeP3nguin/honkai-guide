@@ -75,6 +75,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2023/10/09 - Add Lunar Vow Crimson Love, thanks Darius</li>
           <li>2023/09/19 - Add Herrscher of Ice boss, thanks Darius</li>
           <li>2023/09/04 - Add Herrscher of Corruption Elysia, thanks Darius</li>
           <li>2023/08/26 - Add Miracle Magical Girl (Sirin), thanks Darius</li>
@@ -99,8 +100,8 @@
           <li>2023/01/17 - Add Husk: Mysticism boss search term, thanks Gwent and Ryuu</li>
           <li>2023/01/10 - Bunch of new search terms and equipment, thanks Pootz and eyee</li>
           <li>2022/12/11 - Updated scoring for SSS bosses, thanks HauNguyenThe</li>
-          <li>2022/11/25 - Add Opaque Shadow and Nocturnal Knight, thanks Cyxo</li>
-          <!-- <li>2022/11/06 - Sus search term, gear, Willows stig, SoE key, thanks Pootz</li>
+          <!-- <li>2022/11/25 - Add Opaque Shadow and Nocturnal Knight, thanks Cyxo</li>
+          <li>2022/11/06 - Sus search term, gear, Willows stig, SoE key, thanks Pootz</li>
           <li>2022/10/03 - Add Vill-V, HoH equips, thanks Pootz</li>
           <li>
             2022/08/17 - Add Kosma boss, thanks Neal/Gwent, include Vill-V in valkyries, updated
