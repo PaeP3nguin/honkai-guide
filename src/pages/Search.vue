@@ -276,7 +276,7 @@ const bossToChinese = {
   Elysia: ["爱莉希雅", "爱莉", "爱"],
   "Emperor (Abyss only)": ["帝王"],
   "Herrscher of the Void (God Kiana, GK, HoV)": ["空之律者", "女王"],
-  Heimdall: ["海姆达尔", "海胖"],
+  Heimdall: ["海姆达尔", "海胖", "胖大海"],
   Hellmaru: ["狐狸", "绯狱丸"],
   "Herrscher of Dominance (HoD)": ["千律", "乌合之众"],
   "Herrscher of Sentience (HoS)": ["识之律者"],
