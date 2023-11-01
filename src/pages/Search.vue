@@ -406,7 +406,7 @@ const valkToChinese = {
   "Herrscher of Rebirth (HRB)": ["希", "死生之律者"],
   "Miracle Magical Girl (MMG, Sirin)": ["西", "西琳"],
   "Lunar Vow Crimson Love (LV, Theresa)": ["月", "月下"],
-  "Skywalker Impression (Griseo)": [""],
+  "Skywalker Impression (Griseo)": ["格"],
 };
 
 const modifiersToChinese = {
