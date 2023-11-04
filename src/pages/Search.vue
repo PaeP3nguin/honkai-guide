@@ -316,7 +316,7 @@ const bossToChinese = {
   "Herrscher of Corruption (HoC, Elysia)": ["侵蚀"],
   "Herrscher of Ice (HoI)": ["冰律"],
   "Flying Fish: Patrol Force": ["飞鱼", "游弋集群", "泥鳅"],
-  "v7.1 boss": ["异星肃卫"],
+  "v7.1 alien boss": ["异星肃卫"],
 };
 
 const valkToChinese = {
@@ -407,7 +407,7 @@ const valkToChinese = {
   "Herrscher of Rebirth (HRB)": ["希", "死生之律者"],
   "Miracle Magical Girl (MMG, Sirin)": ["西", "西琳"],
   "Lunar Vow Crimson Love (LV, Theresa)": ["月", "月下"],
-  "Skywalker Impression (Griseo)": ["格"],
+  "Cosmic Expression (Griseo)": ["格"],
 };
 
 const modifiersToChinese = {
