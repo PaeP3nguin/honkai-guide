@@ -315,6 +315,7 @@ const bossToChinese = {
   "Cruising Tribunal": ["巡航审判团"],
   "Herrscher of Corruption (HoC, Elysia)": ["侵蚀"],
   "Herrscher of Ice (HoI)": ["冰律"],
+  "Flying Fish: Patrol Force": ["飞鱼", "游弋集群", "泥鳅"],
   "v7.1 boss": ["异星肃卫"],
 };
 
