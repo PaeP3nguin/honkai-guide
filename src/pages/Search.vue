@@ -75,7 +75,8 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
-          <li>2023/??/?? - Added abyss Flying Fish, v7.1 Cosmic Expression, v7.1 alien boss (EN name will be added later), updated SSS Heimdall CN search terms
+          <li>2023/11/07 - Added abyss Flying Fish, v7.1 Cosmic Expression, v7.1 alien boss (EN name will be added later),
+            updated SSS Heimdall CN search terms</li>
           <li>2023/10/09 - Add Lunar Vow Crimson Love, thanks Darius</li>
           <li>2023/09/19 - Add Herrscher of Ice boss, thanks Darius</li>
           <li>2023/09/04 - Add Herrscher of Corruption Elysia, thanks Darius</li>
