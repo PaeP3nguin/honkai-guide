@@ -75,8 +75,9 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>??? - Added 7.1 boss EN name, Alien Guard - Supplement, thanks Darius</li>
           <li>2023/11/07 - Added abyss Flying Fish, v7.1 Cosmic Expression, v7.1 alien boss (EN name will be added later),
-            updated SSS Heimdall CN search terms</li>
+            updated SSS Heimdall CN search terms, thanks Darius</li>
           <li>2023/10/09 - Add Lunar Vow Crimson Love, thanks Darius</li>
           <li>2023/09/19 - Add Herrscher of Ice boss, thanks Darius</li>
           <li>2023/09/04 - Add Herrscher of Corruption Elysia, thanks Darius</li>
@@ -318,7 +319,7 @@ const bossToChinese = {
   "Herrscher of Corruption (HoC, Elysia)": ["侵蚀"],
   "Herrscher of Ice (HoI)": ["冰律"],
   "Flying Fish: Patrol Force": ["飞鱼", "游弋集群", "泥鳅"],
-  "v7.1 alien boss": ["异星肃卫"],
+  "Alien Guard - Supplement": ["异星肃卫"],
 };
 
 const valkToChinese = {
@@ -409,7 +410,7 @@ const valkToChinese = {
   "Herrscher of Rebirth (HRB)": ["希", "死生之律者"],
   "Miracle Magical Girl (MMG, Sirin)": ["西", "西琳"],
   "Lunar Vow Crimson Love (LV, Theresa)": ["月", "月下"],
-  "Cosmic Expression (Griseo)": ["格"],
+  "Cosmic Expression (CE, Griseo)": ["格"],
 };
 
 const modifiersToChinese = {
