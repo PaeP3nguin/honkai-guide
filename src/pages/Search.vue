@@ -75,7 +75,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
-          <li>??? - Added 7.1 boss EN name, Alien Guard - Supplement, thanks Darius</li>
+          <li>2023/11/26 - Added 7.1 boss EN name, Alien Guard - Supplement, thanks Darius</li>
           <li>2023/11/07 - Added abyss Flying Fish, v7.1 Cosmic Expression, v7.1 alien boss (EN name will be added later),
             updated SSS Heimdall CN search terms, thanks Darius</li>
           <li>2023/10/09 - Add Lunar Vow Crimson Love, thanks Darius</li>
