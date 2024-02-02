@@ -321,6 +321,9 @@ const bossToChinese = {
   "Herrscher of Ice (HoI)": ["冰律"],
   "Flying Fish: Patrol Force": ["飞鱼", "游弋集群", "泥鳅"],
   "Alien Guard - Supplement": ["异星肃卫"],
+  "7.3 boss Meteor Guaymas": ["???"],
+  "7.3 boss eye monster and scorpion": ["???"],
+  "7.3 boss eye monster alien guard and ninja zombie": ["???"],
 };
 
 const valkToChinese = {
@@ -413,6 +416,9 @@ const valkToChinese = {
   "Lunar Vow Crimson Love (LV, Theresa)": ["月", "月下"],
   "Cosmic Expression (CE, Griseo)": ["格"],
   "Fenghuang of Vicissitude (FV, FoV)": ["符", "符华", "崩落符华"],
+  "Deepspace Anchor First Light (Senadina)": ["希娜", "希娜迪雅"],
+  "Valkyrie Boltstorm (Helia)": ["赫丽娅"],
+  "Valkyrie Blastmetal (Coralie)": ["科拉莉"],
 };
 
 const modifiersToChinese = {
