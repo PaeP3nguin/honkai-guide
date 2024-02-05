@@ -75,6 +75,11 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>
+            2024/02/05 - BIG UPDATE! Added Herrscher Trio, Senadina Trio, Senadina standalone,
+            ELFs (Blade Durandal and newer only), and Collaborators. Also added Alien Guard's alternate name.
+            v7.3 new bosses will come later once the translated names are finalized. Thanks Darius
+          </li>
           <li>2024/01/15 - Added Fenghuang of Vicissitude, thanks Darius</li>
           <li>2023/11/26 - Added 7.1 boss EN name, Alien Guard - Supplement, thanks Darius</li>
           <li>2023/11/07 - Added abyss Flying Fish, v7.1 Cosmic Expression, v7.1 alien boss (EN name will be added later),
