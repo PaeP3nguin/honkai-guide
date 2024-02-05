@@ -78,7 +78,8 @@
           <li>
             2024/02/05 - BIG UPDATE! Added Herrscher Trio, Senadina Trio, Senadina standalone,
             ELFs (Blade Durandal and newer only), and Collaborators.  Helia and Coralie do not have standalone
-            entries yet. Also added Alien Guard's alternate name. V7.3 new bosses coming soon. Thanks Darius
+            entries yet (not sure if they will). Also added Alien Guard's alternate name.
+            V7.3 new bosses coming soon. Thanks Darius
           </li>
           <li>2024/01/15 - Added Fenghuang of Vicissitude, thanks Darius</li>
           <li>2023/11/26 - Added 7.1 boss EN name, Alien Guard - Supplement, thanks Darius</li>
