@@ -77,8 +77,8 @@
         <ul>
           <li>
             2024/02/05 - BIG UPDATE! Added Herrscher Trio, Senadina Trio, Senadina standalone,
-            ELFs (Blade Durandal and newer only), and Collaborators. Also added Alien Guard's alternate name.
-            v7.3 new bosses will come later once the translated names are finalized. Thanks Darius
+            ELFs (Blade Durandal and newer only), and Collaborators.  Helia and Coralie do not have standalone
+            entries yet. Also added Alien Guard's alternate name. V7.3 new bosses coming soon. Thanks Darius
           </li>
           <li>2024/01/15 - Added Fenghuang of Vicissitude, thanks Darius</li>
           <li>2023/11/26 - Added 7.1 boss EN name, Alien Guard - Supplement, thanks Darius</li>
@@ -109,7 +109,8 @@
           <li>2023/01/17 - Add Husk: Mysticism boss search term, thanks Gwent and Ryuu</li>
           <li>2023/01/10 - Bunch of new search terms and equipment, thanks Pootz and eyee</li>
           <li>2022/12/11 - Updated scoring for SSS bosses, thanks HauNguyenThe</li>
-          <!-- <li>2022/11/25 - Add Opaque Shadow and Nocturnal Knight, thanks Cyxo</li>
+          <!--
+          <li>2022/11/25 - Add Opaque Shadow and Nocturnal Knight, thanks Cyxo</li>
           <li>2022/11/06 - Sus search term, gear, Willows stig, SoE key, thanks Pootz</li>
           <li>2022/10/03 - Add Vill-V, HoH equips, thanks Pootz</li>
           <li>
@@ -326,9 +327,11 @@ const bossToChinese = {
   "Herrscher of Ice (HoI)": ["冰律"],
   "Flying Fish: Patrol Force": ["飞鱼", "游弋集群", "泥鳅"],
   "Alien Guard - Supplement": ["星尘戍卫, 异星肃卫"],
-  "7.3 boss Meteor Guaymas": ["???"],
-  "7.3 boss eye monster and scorpion": ["???"],
-  "7.3 boss eye monster alien guard and ninja zombie": ["???"],
+  <!--
+    "7.3 boss Meteor Guaymas": ["???"],
+    "7.3 boss eye monster and scorpion": ["???"],
+    "7.3 boss eye monster alien guard and ninja zombie": ["???"],
+  -->
 };
 
 const valkToChinese = {
