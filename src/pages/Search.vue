@@ -77,7 +77,7 @@
         <ul>
           <li>
             2024/02/05 - BIG UPDATE! Added Herrscher Trio, Senadina Trio, Senadina standalone,
-            ELFs (Blade Durandal and newer only), and Collaborators.  Helia and Coralie do not have standalone
+            ELFs (Blade Durandal and newer only), and Collaborators. Helia and Coralie do not have standalone
             entries yet (not sure if they will). Also added Alien Guard's alternate name.
             V7.3 new bosses coming soon. Thanks Darius
           </li>
@@ -328,11 +328,9 @@ const bossToChinese = {
   "Herrscher of Ice (HoI)": ["冰律"],
   "Flying Fish: Patrol Force": ["飞鱼", "游弋集群", "泥鳅"],
   "Alien Guard - Supplement": ["星尘戍卫, 异星肃卫"],
-  <!--
-    "7.3 boss Meteor Guaymas": ["???"],
-    "7.3 boss eye monster and scorpion": ["???"],
-    "7.3 boss eye monster alien guard and ninja zombie": ["???"],
-  -->
+  // "7.3 boss Meteor Guaymas": ["???"],
+  // "7.3 boss eye monster and scorpion": ["???"],
+  // "7.3 boss eye monster alien guard and ninja zombie": ["???"],
 };
 
 const valkToChinese = {
@@ -428,7 +426,7 @@ const valkToChinese = {
   "Fenghuang of Vicissitude (FV, FoV)": ["符", "符华", "崩落符华"],
   "Deepspace Anchor First Light (DAFL)": ["希娜", "希娜迪雅"],
   "Senadina Trio (Deepspace Anchor First Light, Valkyrie Boltstorm, Valkyrie Blastmetal)": ["星三家"],
-  <!-- ELFs & Collaborators -->
+  // ELFs & Collaborators
   "Blade Durandal ELF (BD, Dudu)": ["星幽"],
   "Elf Elysia": ["星爱"],
   "Kiana Kaslana ELF": ["星琪"],
