@@ -330,7 +330,7 @@ const bossToChinese = {
   "Alien Guard - Supplement": ["星尘戍卫, 异星肃卫"],
   // "7.3 boss Meteor Guaymas": ["???"],
   // "7.3 boss eye monster and scorpion": ["???"],
-  // "7.3 boss eye monster alien guard and ninja zombie": ["???"],
+  // "7.3 boss eye monster alien guard and ninja zombie (stardust symphony)": ["星尘交响"],
 };
 
 const valkToChinese = {
