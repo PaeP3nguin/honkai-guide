@@ -329,8 +329,8 @@ const bossToChinese = {
   "Flying Fish: Patrol Force": ["飞鱼", "游弋集群", "泥鳅"],
   "Alien Guard - Supplement": ["星尘戍卫, 异星肃卫"],
   // "7.3 boss Meteor Guaymas": ["???"],
-  // "7.3 boss eye monster and scorpion": ["???"],
-  // "7.3 boss eye monster alien guard and ninja zombie (stardust symphony)": ["星尘交响"],
+  // "7.3 boss eye monster alien guard and ninja zombie (Astral Ring weather)": ["星环", "星环群聚"],
+  // "7.3 boss eye monster and scorpion (Symphony weather)": ["交响", "交响群聚"],
 };
 
 const valkToChinese = {
@@ -424,7 +424,7 @@ const valkToChinese = {
   "Lunar Vow Crimson Love (LV)": ["月", "月下"],
   "Cosmic Expression (CE)": ["格"],
   "Fenghuang of Vicissitude (FV, FoV)": ["符", "符华", "崩落符华"],
-  "Deepspace Anchor First Light (DAFL)": ["希娜", "希娜迪雅"],
+  "Deepspace Anchor First Light (DAFL)": ["希", "希娜", "希娜迪雅"],
   "Valkyrie Boltstorm": ["赫"],
   "Valkyrie Blastmetal": ["科"],
   "Senadina/Mars Trio (Deepspace Anchor First Light, Valkyrie Boltstorm, Valkyrie Blastmetal)": ["星三家"],
