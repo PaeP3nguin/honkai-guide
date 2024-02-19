@@ -425,7 +425,9 @@ const valkToChinese = {
   "Cosmic Expression (CE)": ["格"],
   "Fenghuang of Vicissitude (FV, FoV)": ["符", "符华", "崩落符华"],
   "Deepspace Anchor First Light (DAFL)": ["希娜", "希娜迪雅"],
-  "Senadina Trio (Deepspace Anchor First Light, Valkyrie Boltstorm, Valkyrie Blastmetal)": ["星三家"],
+  "Valkyrie Boltstorm": ["赫"],
+  "Valkyrie Blastmetal": ["科"],
+  "Senadina/Mars Trio (Deepspace Anchor First Light, Valkyrie Boltstorm, Valkyrie Blastmetal)": ["星三家"],
   // ELFs & Collaborators
   "Blade Durandal ELF (BD, Dudu)": ["星幽"],
   "Elf Elysia": ["星爱"],
