@@ -396,7 +396,7 @@ const valkToChinese = {
   "Snowy Sniper (SS)": ["雪"],
   "Shadow Dash (SD)": ["影"],
   "Shadow Knight (SK)": ["轮"],
-  "Silverwing: N-EX": ["翼", "大鸭鸭", "次生银翼"],
+  "Silverwing: N-EX": ["大鸭", "次", "翼"],
   "Sixth Serenade (6S)": ["六"],
   "Spina Astera (SpA)": ["星", "星棘", "缭乱星棘"],
   "Starchasm Nyx": ["魇夜星渊", "冰希"],
