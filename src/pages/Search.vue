@@ -327,7 +327,7 @@ const bossToChinese = {
   "Herrscher of Corruption (HoC, Elysia)": ["侵蚀"],
   "Herrscher of Ice (HoI)": ["冰律"],
   "Flying Fish: Patrol Force": ["飞鱼", "游弋集群", "泥鳅"],
-  "Alien Guard - Supplement": ["星尘戍卫, 异星肃卫"],
+  "Alien Guard - Supplement": ["星尘戍卫", "异星肃卫"],
   // "7.3 boss Meteor Guaymas": ["???"],
   // "7.3 boss eye monster alien guard and ninja zombie (Astral Ring weather)": ["星环", "星环群聚"],
   // "7.3 boss eye monster and scorpion (Symphony weather)": ["交响", "交响群聚"],
