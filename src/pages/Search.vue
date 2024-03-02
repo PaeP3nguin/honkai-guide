@@ -76,9 +76,9 @@
         <h2 class="section-head">Changelog</h2>
         <ul>
           <li>
-            2024/03/01 - Added search terms for the Stardust weather SD mobs, Symphony weather SD mobs,
-            Astral Ring weather SD mobs.  Added Helia and Coralie individual valks.  4.4 and after valkyries will now
-            have battlesuit name, abbreviation, and character name, to make it easier for some players to find them.
+            2024/03/01 - Added new search term for Flower boss, and added search terms for the Stardust weather SD mobs,
+            Symphony weather SD mobs, and Astral Ring weather SD mobs.  Added Helia and Coralie individual valks.
+            4.4 and after valkyries will now have battlesuit name, abbreviation, and character name, to make it easier for some players to find them.
             Example: Deepspace Anchor: First Light (DAFL, Senadina)
             4.3 and below valkyries will also be updated to the same format, but in a future update. - Darius
           </li>
@@ -404,7 +404,7 @@ const valkToChinese = {
   "Haxxor Bunny (HB, Bronya)": ["骇兔", "迷城骇兔"],
   "Starchasm Nyx (Nyx, Seele)": ["魇夜星渊", "冰希"],
   "Prinzessin der Verurteilung! (PV, Fischl)": ["皇", "小艾咪", "皇女"],
-  "Herrscher of Flamescion (HoFs, HFs)": ["薪", "炎", "萤火虫", "薪炎之律者"],
+  "Herrscher of Flamescion (HoFs, HFs, Kiana)": ["薪", "炎", "萤火虫", "薪炎之律者"],
   "Miss Pink Elf (MPE, Elysia)": ["爱莉希雅", "爱莉", "爱"],
   "Infinite Ouroboros (IO, Mobius)": ["无限·噬界之蛇", "噬界", "蛇主"],
   "Midnight Absinthe (MA, Raven)": ["午夜苦艾", "渡鸦"],
@@ -428,9 +428,9 @@ const valkToChinese = {
   "Dreamweaver (DW, Misteln, Hare)": ["羽", "羽兔"],
   "Terminal Aide 0017 (TA, Prometheus)": ["普"],
   "Sugary Starburst (SSt, Kira)": ["时", "糖露星霜"],
-  "Herrscher of Rebirth (HRB, Seele)": ["希", "死生之律者"],
+  "Herrscher of Rebirth (HoRb, HRb, Seele)": ["希", "死生之律者"],
   "Miracle Magic Girl (MMG, Sirin)": ["西", "西琳"],
-  "Lunar Vow Crimson Love (LV, Luna)": ["月", "月下"],
+  "Lunar Vow Crimson Love (LV, Luna, Theresa)": ["月", "月下"],
   "Cosmic Expression (CE, Griseo)": ["格"],
   "Fenghuang of Vicissitude (FV, FoV, Fu Hua)": ["符", "符华", "崩落符华"],
   "Deepspace Anchor First Light (DAFL, Senadina)": ["希", "希娜", "希娜迪雅"],
