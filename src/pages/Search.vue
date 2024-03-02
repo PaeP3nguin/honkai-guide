@@ -76,8 +76,8 @@
         <h2 class="section-head">Changelog</h2>
         <ul>
           <li>
-            2024/03/01 - Added new search term for Flower boss, and added search terms for the Stardust weather SD mobs,
-            Symphony weather SD mobs, and Astral Ring weather SD mobs.  Added Helia and Coralie individual valks.
+            2024/03/01 - Added new search term for Flower boss, and added search terms for the Astral Ring weather SD mobs,
+            Symphony weather SD mobs, and Stardust weather SD mobs.  Added Helia and Coralie individual valks.
             4.4 and after valkyries will now have battlesuit name, abbreviation, and character name, to make it easier for some players to find them.
             Example: Deepspace Anchor: First Light (DAFL, Senadina)
             4.3 and below valkyries will also be updated to the same format, but in a future update. - Darius
@@ -336,9 +336,9 @@ const bossToChinese = {
   "Flying Fish: Patrol Force": ["飞鱼", "游弋集群", "泥鳅"],
   "Alien Guard - Supplement": ["星尘戍卫", "异星肃卫"],
   "Meteoroid: Guaymas": ["瓜伊马斯"],
-  "Eclipse: Suspended Eye & Ignis Stella: Greedy Crystalline (Stardust weather)": ["星尘", "星尘群聚"],
   "Eclipse: Suspended Eye & Alien Guard - Purification (Astral Ring weather)": ["星环", "星环群聚"],
   "Alien Guard - Amendment & Ignis Stella: Greedy Crystalline (Symphony weather)": ["交响", "交响群聚"],
+  "Eclipse: Suspended Eye & Ignis Stella: Greedy Crystalline (Stardust weather)": ["星尘", "星尘群聚"],
 };
 
 const valkToChinese = {
