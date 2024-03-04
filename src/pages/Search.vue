@@ -79,7 +79,7 @@
             2024/03/01 - Added new search term for Flower boss, and added search terms for the Astral Ring weather SD mobs,
             Symphony weather SD mobs, and Stardust weather SD mobs.  Added Helia and Coralie individual valks.
             4.4 and after valkyries will now have battlesuit name, abbreviation, and character name, to make it easier for some players to find them.
-            Example: Deepspace Anchor: First Light (DAFL, Senadina)
+            Example: Deepspace Anchor: First Light (FL, Senadina)
             4.3 and below valkyries will also be updated to the same format, but in a future update. - Darius
           </li>
           <li>
@@ -433,10 +433,10 @@ const valkToChinese = {
   "Lunar Vow Crimson Love (LV, Luna, Theresa)": ["月", "月下"],
   "Cosmic Expression (CE, Griseo)": ["格"],
   "Fenghuang of Vicissitude (FV, FoV, Fu Hua)": ["符", "符华", "崩落符华"],
-  "Deepspace Anchor First Light (DAFL, Senadina)": ["希", "希娜", "希娜迪雅"],
+  "Deepspace Anchor First Light (FL, Senadina)": ["希", "希娜", "希娜迪雅"],
   "Valkyrie Boltstorm (VBs, Helia)": ["赫"],
   "Valkyrie Blastmetal (VBm, Coralie)": ["科"],
-  "Senadina Trio/Mars Trio (DAFL Senadina, VBs Helia, VBm Coralie)": ["星三家"],
+  "Senadina Trio/Mars Trio (FL Senadina, VBs Helia, VBm Coralie)": ["星三家"],
   // ELFs & Collaborators
   "Blade Durandal ELF (BD, Dudu)": ["星幽"],
   "Elf Elysia": ["星爱"],
