@@ -339,7 +339,7 @@ const bossToChinese = {
   "Eclipse: Suspended Eye & Alien Guard - Purification (Astral Ring weather)": ["星环", "星环群聚"],
   "Alien Guard - Amendment & Ignis Stella: Greedy Crystalline (Symphony weather)": ["交响", "交响群聚"],
   "Eclipse: Suspended Eye & Ignis Stella: Greedy Crystalline (Stardust weather)": ["星尘", "星尘群聚"],
-  "Duonigue": ["?"],
+  "Beast of Sacrifice (Duonigue)": ["?"],
 };
 
 const valkToChinese = {
