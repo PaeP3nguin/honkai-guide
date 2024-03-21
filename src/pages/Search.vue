@@ -75,6 +75,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2024/03/21 - Added Beast of Sacrifice (Duonigue) and Raven bosses, added Thelema valkyrie. - Darius</li>
           <li>
             2024/03/01 - Added new search term for Flower boss, and added search terms for the Astral Ring weather SD mobs,
             Symphony weather SD mobs, and Stardust weather SD mobs.  Added Helia and Coralie individual valks.
