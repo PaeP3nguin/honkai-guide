@@ -77,9 +77,11 @@
         <ul>
           <li>2024/03/21 - Added Beast of Sacrifice (Duonigue) and Raven bosses, added Thelema valkyrie. - Darius</li>
           <li>
-            2024/03/01 - Added new search term for Flower boss, and added search terms for the Astral Ring weather SD mobs,
-            Symphony weather SD mobs, and Stardust weather SD mobs.  Added Helia and Coralie individual valks.
-            4.4 and after valkyries will now have battlesuit name, abbreviation, and character name, to make it easier for some players to find them.
+            2024/03/01 - Added new search term for Flower boss, and added search terms for the Astral Ring weather SD
+            mobs,
+            Symphony weather SD mobs, and Stardust weather SD mobs. Added Helia and Coralie individual valks.
+            4.4 and after valkyries will now have battlesuit name, abbreviation, and character name, to make it easier
+            for some players to find them.
             Example: Deepspace Anchor: First Light (FL, Senadina)
             4.3 and below valkyries will also be updated to the same format, but in a future update. - Darius
           </li>
@@ -91,7 +93,8 @@
           </li>
           <li>2024/01/15 - Added Fenghuang of Vicissitude, thanks Darius</li>
           <li>2023/11/26 - Added 7.1 boss EN name, Alien Guard - Supplement, thanks Darius</li>
-          <li>2023/11/07 - Added abyss Flying Fish, v7.1 Cosmic Expression, v7.1 alien boss (EN name will be added later),
+          <li>2023/11/07 - Added abyss Flying Fish, v7.1 Cosmic Expression, v7.1 alien boss (EN name will be added
+            later),
             updated SSS Heimdall CN search terms, thanks Darius</li>
           <li>2023/10/09 - Add Lunar Vow Crimson Love, thanks Darius</li>
           <li>2023/09/19 - Add Herrscher of Ice boss, thanks Darius</li>
@@ -112,13 +115,12 @@
             2023/04/13 - Add VQ gear and search, add slime boss search, thanks Pootz, fragile, and
             Joshie
           </li>
-          <li>2023/04/01 - Add Hoo and Hofi gear, thanks Pootz</li>
+          <!--<li>2023/04/01 - Add Hoo and Hofi gear, thanks Pootz</li>
           <li>2023/03/10 - Add Kevin and Husk: Existentialism bosses, thanks fragile and Pootz</li>
           <li>2023/02/10 - Add HoO and HoFi, Echo PRI, HoTR gear, thanks Pootz</li>
           <li>2023/01/17 - Add Husk: Mysticism boss search term, thanks Gwent and Ryuu</li>
           <li>2023/01/10 - Bunch of new search terms and equipment, thanks Pootz and eyee</li>
           <li>2022/12/11 - Updated scoring for SSS bosses, thanks HauNguyenThe</li>
-          <!--
           <li>2022/11/25 - Add Opaque Shadow and Nocturnal Knight, thanks Cyxo</li>
           <li>2022/11/06 - Sus search term, gear, Willows stig, SoE key, thanks Pootz</li>
           <li>2022/10/03 - Add Vill-V, HoH equips, thanks Pootz</li>
@@ -353,7 +355,7 @@ const valkToChinese = {
   "Yamabuki Armor (YA, Bronya)": ["山"],
   "Divine Prayer (DP, Kiana)": ["圣"],
   "Shadow Dash (SD, Mei)": ["影"],
-  "Snowy Sniper (SS, Bronya)": ["雪"], 
+  "Snowy Sniper (SS, Bronya)": ["雪"],
   "Knight Moonbeam (KMB, Kiana)": ["月"],
   "Lightning Empress (LE, Mei)": ["鬼"],
   "Dimension Breaker (DB, Bronya)": ["次"],
