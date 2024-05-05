@@ -343,7 +343,8 @@ const bossToChinese = {
   "Alien Guard - Amendment & Ignis Stella: Greedy Crystalline (Symphony weather)": ["交响", "交响群聚"],
   "Eclipse: Suspended Eye & Ignis Stella: Greedy Crystalline (Stardust weather)": ["星尘", "星尘群聚"],
   "Beast of Sacrifice (Duonigue)": ["殉死之兽"],
-  "Raven": ["渡鸦"]
+  "Raven": ["渡鸦"],
+  "Mobius": ["梅比乌斯"],
 };
 
 const valkToChinese = {
@@ -445,6 +446,7 @@ const valkToChinese = {
   "Valkyrie Blastmetal (VBm, Coralie)": ["科"],
   "Senadina Trio/Mars Trio (FL Senadina, VBs Helia, VBm Coralie)": ["星三家"],
   "Mad Pleasure: Shadowbringer (MP, MPS, Thelema)": ["瑟"],
+  "Lone Destruction: Shadowchaser (LD, LDS, Lantern)": ["灯"],
   // ELFs & Collaborators
   "Blade Durandal ELF (BD, Dudu)": ["星幽"],
   "Elf Elysia": ["星爱"],
