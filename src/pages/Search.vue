@@ -75,6 +75,10 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>
+            2024/06/21 - To make finding mob boss stages easier, a few weathers have been added: Stellar (Astral Ring), Stardust, Symphony, and Bloodlust. These are all Senadina mob boss stages.
+            Added Songque, Serapeum, and Meteoroid Fusion: Epernay. I wonder if they will ever fix the incorrect spelling in game: "Meteroid"? - Darius
+          </li>
           <li>2024/05/05 - Added Mobius boss and Lantern. - Darius</li>
           <li>2024/03/21 - Added Beast of Sacrifice (Duonigue) and Raven bosses, added Thelema valkyrie. - Darius</li>
           <li>
@@ -340,12 +344,15 @@ const bossToChinese = {
   "Flying Fish: Patrol Force": ["飞鱼", "游弋集群", "泥鳅"],
   "Alien Guard - Supplement": ["星尘戍卫", "异星肃卫"],
   "Meteoroid: Guaymas": ["瓜伊马斯"],
-  "Eclipse: Suspended Eye & Alien Guard - Purification (Astral Ring weather)": ["星环", "星环群聚"],
-  "Alien Guard - Amendment & Ignis Stella: Greedy Crystalline (Symphony weather)": ["交响", "交响群聚"],
-  "Eclipse: Suspended Eye & Ignis Stella: Greedy Crystalline (Stardust weather)": ["星尘", "星尘群聚"],
   "Beast of Sacrifice (Duonigue)": ["殉死之兽"],
   "Raven": ["渡鸦"],
   "Mobius": ["梅比乌斯"],
+  "Meteoroid Fusion: Epernay": ["奈埃尔"],
+  // Weathers
+  "Stellar (Astral Ring) weather": ["星环", "星环群聚"],
+  "Symphony weather": ["交响", "交响群聚"],
+  "Stardust weather": ["星尘", "星尘群聚"],
+  "Bloodlust weather": ["嗜战天"],
 };
 
 const valkToChinese = {
@@ -448,6 +455,7 @@ const valkToChinese = {
   "Senadina Trio/Mars Trio (FL Senadina, VBs Helia, VBm Coralie)": ["星三家"],
   "Mad Pleasure: Shadowbringer (MP, MPS, Thelema)": ["瑟"],
   "Lone Destruction: Shadowchaser (LD, LDS, Lantern)": ["灯"],
+  "Jovial Deception: Shadowdimmer (JD, JDS, Songque)": ["松"],
   // ELFs & Collaborators
   "Blade Durandal ELF (BD, Dudu)": ["星幽"],
   "Elf Elysia": ["星爱"],
@@ -455,6 +463,7 @@ const valkToChinese = {
   "Project Bunny ELF (PB)": ["星兔"],
   "Dreamseeker": ["寻梦者"],
   "Songque": ["松雀"],
+  "Serapeum": ["瑟拉"],
 };
 
 const modifiersToChinese = {
