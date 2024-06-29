@@ -461,9 +461,9 @@ const valkToChinese = {
   "Elf Elysia": ["星爱"],
   "Kiana Kaslana ELF": ["星琪"],
   "Project Bunny ELF (PB)": ["星兔"],
-  "Dreamseeker": ["寻梦者"],
-  "Songque": ["松雀"],
-  "Serapeum": ["瑟拉"],
+  "Dreamseeker (Astral Op)": ["寻梦者"],
+  "Songque (Astral Op)": ["松雀"],
+  "Serapeum (Astral Op)": ["瑟拉"],
 };
 
 const modifiersToChinese = {
