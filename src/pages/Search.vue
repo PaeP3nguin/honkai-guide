@@ -75,6 +75,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2024/08/05 - Added Schicksal's Imperative Theresa and Varaha boss - Darius</li>
           <li>
             2024/06/21 - To make finding mob boss stages easier, a few weathers have been added: Stellar (Astral Ring), Stardust, Symphony, and Bloodlust. These are all Senadina mob boss stages.
             Added Songque, Serapeum, and Meteoroid Fusion: Epernay. I wonder if they will ever fix the incorrect spelling in game: "Meteroid"? - Darius
@@ -116,11 +117,12 @@
           </li>
           <li>2023/05/22 - 6.6 and 6.7 valk and boss names added, thanks Darius</li>
           <li>2023/05/05 - Small valk name fixes, thanks Pootz</li>
+          <!-- older changelog
           <li>
             2023/04/13 - Add VQ gear and search, add slime boss search, thanks Pootz, fragile, and
             Joshie
           </li>
-          <!--<li>2023/04/01 - Add Hoo and Hofi gear, thanks Pootz</li>
+          <li>2023/04/01 - Add Hoo and Hofi gear, thanks Pootz</li>
           <li>2023/03/10 - Add Kevin and Husk: Existentialism bosses, thanks fragile and Pootz</li>
           <li>2023/02/10 - Add HoO and HoFi, Echo PRI, HoTR gear, thanks Pootz</li>
           <li>2023/01/17 - Add Husk: Mysticism boss search term, thanks Gwent and Ryuu</li>
@@ -348,6 +350,7 @@ const bossToChinese = {
   "Raven": ["渡鸦"],
   "Mobius": ["梅比乌斯"],
   "Meteoroid Fusion: Epernay": ["奈埃尔"],
+  "Varaha (Quantum Pig)": ["量子猪", "瓦拉哈"],
   // Weathers
   "Stellar (Astral Ring) weather": ["星环", "星环群聚"],
   "Symphony weather": ["交响", "交响群聚"],
@@ -456,6 +459,7 @@ const valkToChinese = {
   "Mad Pleasure: Shadowbringer (MP, MPS, Thelema)": ["瑟"],
   "Lone Destruction: Shadowchaser (LD, LDS, Lantern)": ["灯"],
   "Jovial Deception: Shadowdimmer (JD, JDS, Songque)": ["松"],
+  "Schicksal's Imperative (SI, SIm, Theresa)": ["德"],
   // ELFs & Collaborators
   "Blade Durandal ELF (BD, Dudu)": ["星幽"],
   "Elf Elysia": ["星爱"],
