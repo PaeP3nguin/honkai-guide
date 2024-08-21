@@ -78,7 +78,7 @@
           <li>
             2024/08/12 - Removed some really old and no longer useful modifiers.  Abyss weathers have been moved to the modifiers section.  These will be useful for bosses with multiple weathers.  More will be added later as needed.  Added search term for "mobs", please use this if the Perilous stage is a mob stage.  Added MHT-3C, the newest version of tank. - Darius
           </li>
-          <li>2024/08/05 - Added Schicksal's Imperative Theresa and Varaha boss - Darius</li>
+          <li>2024/08/05 - Added Schicksal's Imperative Theresa and Valrahal boss - Darius</li>
           <li>
             2024/06/21 - To make finding mob boss stages easier, a few weathers have been added: Stellar (Astral Ring), Stardust, Symphony, and Bloodlust. These are all Senadina mob boss stages.
             Added Songque, Serapeum, and Meteoroid Fusion: Epernay. I wonder if they will ever fix the incorrect spelling in game: "Meteroid"? - Darius
@@ -355,7 +355,7 @@ const bossToChinese = {
   "Raven": ["渡鸦"],
   "Mobius": ["梅比乌斯"],
   "Meteoroid Fusion: Epernay": ["奈埃尔"],
-  "Varaha (Quantum Pig)": ["量子猪", "瓦拉哈"],
+  "Valrahal (Quantum Pig)": ["量子猪", "瓦拉哈"],
 };
 
 const valkToChinese = {
