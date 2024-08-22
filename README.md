@@ -2,6 +2,10 @@
 
 ## Project setup
 
+Note: This project may not build on a Windows environment.  Prior to August 2024 it was working; it doesn't work now and I'm not going to waste time trying to fix it.
+
+Install Node.js v20.17.0.
+
 To install dependencies, run:
 
 ```
