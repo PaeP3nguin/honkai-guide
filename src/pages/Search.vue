@@ -76,6 +76,9 @@
         <h2 class="section-head">Changelog</h2>
         <ul>
           <li>
+            2024/09/05 - Added Lone Planetfarer/Vita. - Darius
+          </li>
+          <li>
             2024/08/12 - Removed some really old and no longer useful modifiers.  Abyss weathers have been moved to the modifiers section.  These will be useful for bosses with multiple weathers.  More will be added later as needed.  Added search term for "mobs", please use this if the Perilous stage is a mob stage.  Added MHT-3C, the newest version of tank. - Darius
           </li>
           <li>2024/08/05 - Added Schicksal's Imperative Theresa and Valrahal boss - Darius</li>
@@ -460,6 +463,7 @@ const valkToChinese = {
   "Lone Destruction: Shadowchaser (LD, LDS, Lantern)": ["灯"],
   "Jovial Deception: Shadowdimmer (JD, JDS, Songque)": ["松"],
   "Schicksal's Imperative (SI, SIm, Theresa)": ["德"],
+  "Lone Planetfarer (LP, Vita)": ["薇"],
   // ELFs & Collaborators
   "Blade Durandal ELF (BD, Dudu)": ["星幽"],
   "Elf Elysia": ["星爱"],
