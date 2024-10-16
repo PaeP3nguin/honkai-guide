@@ -75,9 +75,8 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
-          <li>
-            2024/09/05 - Added Lone Planetfarer/Vita. - Darius
-          </li>
+          <li>2024/10/16 - Sorry for the delay, Sprout of Wishing has now been added.  This completes the updates for v7.8. - Darius</li>
+          <li>2024/09/05 - Added Lone Planetfarer/Vita. - Darius</li>
           <li>
             2024/08/12 - Removed some really old and no longer useful modifiers.  Abyss weathers have been moved to the modifiers section.  These will be useful for bosses with multiple weathers.  More will be added later as needed.  Added search term for "mobs", please use this if the Perilous stage is a mob stage.  Added MHT-3C, the newest version of tank. - Darius
           </li>
@@ -118,12 +117,12 @@
             updated when GLB beta starts, thanks Darius
           </li>
           <li>2023/06/18 - Update 6.7 boss name, add Beta Test modifier, thanks Darius</li>
+          <!-- older changelog
           <li>
             2023/06/18 - Remove future MA/Abyss lineups pages, as they're not updated anymore :(
           </li>
           <li>2023/05/22 - 6.6 and 6.7 valk and boss names added, thanks Darius</li>
           <li>2023/05/05 - Small valk name fixes, thanks Pootz</li>
-          <!-- older changelog
           <li>
             2023/04/13 - Add VQ gear and search, add slime boss search, thanks Pootz, fragile, and
             Joshie
@@ -359,6 +358,7 @@ const bossToChinese = {
   "Mobius": ["梅比乌斯"],
   "Meteoroid Fusion: Epernay": ["奈埃尔"],
   "Valrahal (Quantum Pig)": ["量子猪", "瓦拉哈"],
+  "Sprout of Wishing": ["愿之芽"],
 };
 
 const valkToChinese = {
