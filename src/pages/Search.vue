@@ -359,6 +359,7 @@ const bossToChinese = {
   "Meteoroid Fusion: Epernay": ["奈埃尔"],
   "Valrahal (Quantum Pig)": ["量子猪", "瓦拉哈"],
   "Sprout of Wishing": ["愿之芽"],
+  "Vita: Sea's Depths": ["薇塔"],
 };
 
 const valkToChinese = {
@@ -464,6 +465,7 @@ const valkToChinese = {
   "Jovial Deception: Shadowdimmer (JD, JDS, Songque)": ["松"],
   "Schicksal's Imperative (SI, SIm, Theresa)": ["德"],
   "Lone Planetfarer (LP, Vita)": ["薇"],
+  "?? (??, Sparkle)": ["花"],
   // ELFs & Collaborators
   "Blade Durandal ELF (BD, Dudu)": ["星幽"],
   "Elf Elysia": ["星爱"],
