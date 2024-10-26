@@ -75,6 +75,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2024/10/26 - Added Vita boss and Sparkle valkyrie. - Darius</li>
           <li>2024/10/16 - Sorry for the delay, Sprout of Wishing has now been added.  This completes the updates for v7.8. - Darius</li>
           <li>2024/09/05 - Added Lone Planetfarer/Vita. - Darius</li>
           <li>
@@ -465,7 +466,7 @@ const valkToChinese = {
   "Jovial Deception: Shadowdimmer (JD, JDS, Songque)": ["松"],
   "Schicksal's Imperative (SI, SIm, Theresa)": ["德"],
   "Lone Planetfarer (LP, Vita)": ["薇"],
-  "?? (??, Sparkle)": ["花"],
+  "Thousand-Faced Maestro: Cameo (TFM, Sparkle)": ["花"],
   // ELFs & Collaborators
   "Blade Durandal ELF (BD, Dudu)": ["星幽"],
   "Elf Elysia": ["星爱"],
