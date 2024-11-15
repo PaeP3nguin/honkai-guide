@@ -75,6 +75,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2024/11/15 - Added modifiers Stellar Crown and Starless. Added some boss nickanmes: bull, flower, and wolf. - Darius</li>
           <li>2024/10/26 - Added Vita boss and Sparkle valkyrie. - Darius</li>
           <li>2024/10/16 - Sorry for the delay, Sprout of Wishing has now been added.  This completes the updates for v7.8. - Darius</li>
           <li>2024/09/05 - Added Lone Planetfarer/Vita. - Darius</li>
@@ -295,7 +296,7 @@ import { Boss } from "@/models/boss";
 import BossLineupList from "@/components/BossLineupList.vue";
 
 const bossToChinese = {
-  "Dominator of Wolves (Andrius)": ["奔狼的领主", "奔狼", "北风狼"],
+  "Dominator of Wolves (Andrius, wolf)": ["奔狼的领主", "奔狼", "北风狼"],
   "Assaka": ["阿湿波", "asb"],
   "Argent Knight: Artemis (AKA)": ["月魂"],
   "Benares": ["贝纳勒斯", "贝贝龙", "龙"],
@@ -317,8 +318,8 @@ const bossToChinese = {
   "Herrscher of Sentience (HoS)": ["识之律者"],
   "HOMU King": ["吼姆"],
   "Huodou": ["祸斗"],
-  "Husk: Existentialism": ["虚数花", "虚树摊骸-存在主义"],
-  "Husk: Mysticism": ["牛牛", "神秘主义"],
+  "Husk: Existentialism (flower)": ["虚数花", "虚树摊骸-存在主义"],
+  "Husk: Mysticism (bull)": ["牛牛", "神秘主义"],
   "Husk: Nihilius (clock)": ["虚树神骸", "lzx"],
   "Jizo Mitama": ["地藏", "地藏御魂"],
   "Kallen": ["卡莲"],
@@ -360,7 +361,7 @@ const bossToChinese = {
   "Meteoroid Fusion: Epernay": ["奈埃尔"],
   "Valrahal (Quantum Pig)": ["量子猪", "瓦拉哈"],
   "Sprout of Wishing": ["愿之芽"],
-  "Vita: Sea's Depths": ["薇塔"],
+  "Vita: Sea's Depths": ["薇塔", "量子薇塔"],
 };
 
 const valkToChinese = {
@@ -466,7 +467,7 @@ const valkToChinese = {
   "Jovial Deception: Shadowdimmer (JD, JDS, Songque)": ["松"],
   "Schicksal's Imperative (SI, SIm, Theresa)": ["德"],
   "Lone Planetfarer (LP, Vita)": ["薇"],
-  "Thousand-Faced Maestro: Cameo (TFM, Sparkle)": ["花"],
+  "Thousand-Faced Maestro: Cameo! (TFM, Sparkle)": ["花"],
   // ELFs & Collaborators
   "Blade Durandal ELF (BD, Dudu)": ["星幽"],
   "Elf Elysia": ["星爱"],
@@ -502,13 +503,16 @@ const modifiersToChinese = {
   "Red Lotus": ["红莲"],
   "Nirvana": ["寂灭"],
   "Myriad": ["无限"],
+  "1st Place": ["榜一"],
   "Bloodlust": ["嗜战天"],
   "Counter": ["克制"],
   "Lightning": ["雷伤"],
   "Physical": ["物理"],
   "Star Shadow": ["影星"],
   "Stardust": ["星尘"],
+  "Starless": ["掩星"],
   "Stellar": ["星环"],
+  "Stellar Crown": ["星冕"],
   "Symphonic": ["交响"],
 };
 
