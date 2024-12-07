@@ -75,6 +75,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2024/12/07 - Added ignited modifier.  Added DAFL for Senadina.  Added Regin Solaris valkyrie and SSS/Abyss Kevin (will add Kevin's localized name later). - Darius</li>
           <li>2024/11/15 - Added modifiers Stellar Crown and Starless. Added some boss nickanmes: bull, flower, and wolf. - Darius</li>
           <li>2024/10/26 - Added Vita boss and Sparkle valkyrie. - Darius</li>
           <li>2024/10/16 - Sorry for the delay, Sprout of Wishing has now been added.  This completes the updates for v7.8. - Darius</li>
@@ -362,6 +363,7 @@ const bossToChinese = {
   "Valrahal (Quantum Pig)": ["量子猪", "瓦拉哈"],
   "Sprout of Wishing": ["愿之芽"],
   "Vita: Sea's Depths": ["薇塔", "量子薇塔"],
+  "SSS Kevin": ["戒世遗光"],
 };
 
 const valkToChinese = {
@@ -458,7 +460,7 @@ const valkToChinese = {
   "Lunar Vow: Crimson Love (LV, Luna, Theresa)": ["月", "月下"],
   "Cosmic Expression (CE, Griseo)": ["格"],
   "Fenghuang of Vicissitude (FV, FoV, Fu Hua)": ["符", "符华", "崩落符华"],
-  "Deepspace Anchor: First Light (FL, Senadina)": ["希", "希娜", "希娜迪雅"],
+  "Deepspace Anchor: First Light (FL, DAFL, Senadina)": ["希", "希娜", "希娜迪雅"],
   "Valkyrie Boltstorm (VBs, Helia)": ["赫"],
   "Valkyrie Blastmetal (VBm, Coralie)": ["科"],
   "Senadina Trio/Mars Trio (FL Senadina, VBs Helia, VBm Coralie)": ["星三家"],
@@ -468,6 +470,7 @@ const valkToChinese = {
   "Schicksal's Imperative (SI, SIm, Theresa)": ["德"],
   "Lone Planetfarer (LP, Vita)": ["薇"],
   "Thousand-Faced Maestro: Cameo! (TFM, Sparkle)": ["花"],
+  "Reign Solaris (RS, Durandal)": ["鹅", "天"],
   // ELFs & Collaborators
   "Blade Durandal ELF (BD, Dudu)": ["星幽"],
   "Elf Elysia": ["星爱"],
@@ -506,6 +509,7 @@ const modifiersToChinese = {
   "1st Place": ["榜一"],
   "Bloodlust": ["嗜战天"],
   "Counter": ["克制"],
+  "Ignited": ["点燃"],
   "Lightning": ["雷伤"],
   "Physical": ["物理"],
   "Star Shadow": ["影星"],
