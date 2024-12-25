@@ -75,8 +75,9 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2024/12/25 - Updated name of new boss from New Kevin to Bygone Deliverance - Darius</li>
           <li>
-            2024/12/07 - Added ignited modifier.  Added DAFL for Senadina.  Added Regin Solaris valkyrie and SSS/Abyss Kevin (will add Kevin's localized name later).
+            2024/12/07 - Added ignited modifier.  Added DAFL for Senadina.  Added Reign Solaris valkyrie and SSS/Abyss Kevin (will add Kevin's localized name later).
             Some acronyms return a lot of results, so all acronyms now have a * suffix, use this to quickly filter it down (e.g. RS* instead of RS) - Darius
           </li>
           <li>2024/11/15 - Added modifiers Stellar Crown and Starless. Added some boss nickanmes: bull, flower, and wolf. - Darius</li>
@@ -366,7 +367,7 @@ const bossToChinese = {
   "Valrahal (Quantum Pig)": ["量子猪", "瓦拉哈"],
   "Sprout of Wishing": ["愿之芽"],
   "Vita: Sea's Depths": ["薇塔", "量子薇塔"],
-  "New Kevin": ["戒世遗光"],
+  "Bygone Deliverance (Kevin)": ["戒世遗光"],
 };
 
 const valkToChinese = {
@@ -473,7 +474,7 @@ const valkToChinese = {
   "Schicksal's Imperative (SI*, SIm*, Theresa)": ["德"],
   "Lone Planetfarer (LP*, Vita)": ["薇"],
   "Thousand-Faced Maestro: Cameo! (TFM*, Sparkle)": ["花"],
-  "Reign Solaris (RS*, Durandal)": ["鹅", "天"],
+  "Reign Solaris (RS*, Durandal)": ["鹅"],
   // ELFs & Collaborators
   "Blade Durandal ELF (BD*, Dudu)": ["星幽"],
   "Elf Elysia": ["星爱"],
