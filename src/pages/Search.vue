@@ -75,6 +75,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2024/01/19 - Added SSS Sa boss, added Fiery Wishing Star (FWS), added Theresa Astral Op - Darius</li>
           <li>2024/12/25 - Updated name of new boss from New Kevin to Bygone Deliverance - Darius</li>
           <li>
             2024/12/07 - Added ignited modifier.  Added DAFL for Senadina.  Added Reign Solaris valkyrie and SSS/Abyss Kevin (will add Kevin's localized name later).
@@ -368,6 +369,7 @@ const bossToChinese = {
   "Sprout of Wishing": ["愿之芽"],
   "Vita: Sea's Depths": ["薇塔", "量子薇塔"],
   "Bygone Deliverance (Kevin)": ["戒世遗光"],
+  "Sa: Tribulations of Life": ["娑"],
 };
 
 const valkToChinese = {
@@ -475,6 +477,7 @@ const valkToChinese = {
   "Lone Planetfarer (LP*, Vita)": ["薇"],
   "Thousand-Faced Maestro: Cameo! (TFM*, Sparkle)": ["花"],
   "Reign Solaris (RS*, Durandal)": ["鹅"],
+  "Ba-Dum! Fiery Wishing Star (FWS*, Kiana)": ["琪"],
   // ELFs & Collaborators
   "Blade Durandal ELF (BD*, Dudu)": ["星幽"],
   "Elf Elysia": ["星爱"],
@@ -483,6 +486,7 @@ const valkToChinese = {
   "Dreamseeker (Astral Op)": ["寻梦者"],
   "Songque (Astral Op)": ["松雀"],
   "Serapeum (Astral Op)": ["瑟拉"],
+  "Theresa (Astral Op)": ["德"],
 };
 
 const modifiersToChinese = {
