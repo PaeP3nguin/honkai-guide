@@ -75,7 +75,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
-          <li>2024/01/19 - Added SSS Sa boss, added Fiery Wishing Star (FWS), added Theresa Astral Op - Darius</li>
+          <li>2025/01/19 - Added SSS Sa boss, added Fiery Wishing Star (FWS), added Theresa Astral Op - Darius</li>
           <li>2024/12/25 - Updated name of new boss from New Kevin to Bygone Deliverance - Darius</li>
           <li>
             2024/12/07 - Added ignited modifier.  Added DAFL for Senadina.  Added Reign Solaris valkyrie and SSS/Abyss Kevin (will add Kevin's localized name later).
