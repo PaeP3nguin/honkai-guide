@@ -515,7 +515,7 @@ const modifiersToChinese = {
   "Nirvana": ["寂灭"],
   "Myriad": ["无限"],
   "1st Place": ["榜一"],
-  "Bloodlust": ["嗜战天"],
+  "Bloodlust": ["嗜战"],
   "Counter": ["克制"],
   "Ignited": ["点燃"],
   "Lightning": ["雷伤"],
