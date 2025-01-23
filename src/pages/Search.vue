@@ -360,7 +360,7 @@ const bossToChinese = {
   "Herrscher of Ice (HoI)": ["冰律"],
   "Flying Fish: Patrol Force": ["飞鱼", "游弋集群", "泥鳅"],
   "Alien Guard - Supplement": ["星尘戍卫", "异星肃卫"],
-  "Meteoroid: Guaymas": ["瓜伊马斯"],
+  "Meteoroid: Guaymas": ["瓜伊马斯", "星尘龙虾"],
   "Beast of Sacrifice (Duonigue)": ["殉死之兽"],
   "Raven": ["渡鸦"],
   "Mobius": ["梅比乌斯"],
