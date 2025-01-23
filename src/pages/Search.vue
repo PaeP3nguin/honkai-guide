@@ -368,7 +368,7 @@ const bossToChinese = {
   "Valrahal (Quantum Pig)": ["量子猪", "瓦拉哈"],
   "Sprout of Wishing": ["愿之芽"],
   "Vita: Sea's Depths": ["薇塔", "量子薇塔"],
-  "Bygone Deliverance (Kevin)": ["戒世遗光"],
+  "Bygone Deliverance (Kevin)": ["戒世遗光", "凯文"],
   "Sa: Tribulations of Life": ["娑"],
 };
 
