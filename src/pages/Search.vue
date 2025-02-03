@@ -44,7 +44,8 @@
           <v-checkbox v-model="sssBoss" label="SSS Boss?"></v-checkbox>
 
           <h3 class="section-head">Valkyries</h3>
-          <p>Order matters! Choose the lead valk first. Some acronyms return a lot of results; add suffix with * to filter it down (for example, RS*).</p>
+          <p>Order matters! Choose the lead valk first. Some acronyms return a lot of results; add suffix with * to
+            filter it down (for example, RS*).</p>
           <v-autocomplete v-model="selectedValks" hint="Start typing to autocomplete." multiple auto-select-first
             clearable persistent-hint @change="valkInput = ''" :search-input.sync="valkInput"
             :items="valks"></v-autocomplete>
@@ -75,23 +76,33 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2025/02/03 - Add a bunch of translations - ThatOneAmyFan</li>
           <li>2025/01/19 - Added SSS Sa boss, added Fiery Wishing Star (FWS), added Theresa Astral Op - Darius</li>
           <li>2024/12/25 - Updated name of new boss from New Kevin to Bygone Deliverance - Darius</li>
           <li>
-            2024/12/07 - Added ignited modifier.  Added DAFL for Senadina.  Added Reign Solaris valkyrie and SSS/Abyss Kevin (will add Kevin's localized name later).
-            Some acronyms return a lot of results, so all acronyms now have a * suffix, use this to quickly filter it down (e.g. RS* instead of RS) - Darius
+            2024/12/07 - Added ignited modifier. Added DAFL for Senadina. Added Reign Solaris valkyrie and SSS/Abyss
+            Kevin (will add Kevin's localized name later).
+            Some acronyms return a lot of results, so all acronyms now have a * suffix, use this to quickly filter it
+            down (e.g. RS* instead of RS) - Darius
           </li>
-          <li>2024/11/15 - Added modifiers Stellar Crown and Starless. Added some boss nickanmes: bull, flower, and wolf. - Darius</li>
+          <li>2024/11/15 - Added modifiers Stellar Crown and Starless. Added some boss nickanmes: bull, flower, and
+            wolf. - Darius</li>
           <li>2024/10/26 - Added Vita boss and Sparkle valkyrie. - Darius</li>
-          <li>2024/10/16 - Sorry for the delay, Sprout of Wishing has now been added.  This completes the updates for v7.8. - Darius</li>
+          <li>2024/10/16 - Sorry for the delay, Sprout of Wishing has now been added. This completes the updates for
+            v7.8. - Darius</li>
           <li>2024/09/05 - Added Lone Planetfarer/Vita. - Darius</li>
           <li>
-            2024/08/12 - Removed some really old and no longer useful modifiers.  Abyss weathers have been moved to the modifiers section.  These will be useful for bosses with multiple weathers.  More will be added later as needed.  Added search term for "mobs", please use this if the Perilous stage is a mob stage.  Added MHT-3C, the newest version of tank. - Darius
+            2024/08/12 - Removed some really old and no longer useful modifiers. Abyss weathers have been moved to the
+            modifiers section. These will be useful for bosses with multiple weathers. More will be added later as
+            needed. Added search term for "mobs", please use this if the Perilous stage is a mob stage. Added MHT-3C,
+            the newest version of tank. - Darius
           </li>
           <li>2024/08/05 - Added Schicksal's Imperative Theresa and Valrahal boss - Darius</li>
           <li>
-            2024/06/21 - To make finding mob boss stages easier, a few weathers have been added: Stellar (Astral Ring), Stardust, Symphony, and Bloodlust. These are all Senadina mob boss stages.
-            Added Songque, Serapeum, and Meteoroid Fusion: Epernay. I wonder if they will ever fix the incorrect spelling in game: "Meteroid"? - Darius
+            2024/06/21 - To make finding mob boss stages easier, a few weathers have been added: Stellar (Astral Ring),
+            Stardust, Symphony, and Bloodlust. These are all Senadina mob boss stages.
+            Added Songque, Serapeum, and Meteoroid Fusion: Epernay. I wonder if they will ever fix the incorrect
+            spelling in game: "Meteroid"? - Darius
           </li>
           <li>2024/05/05 - Added Mobius boss and Lantern. - Darius</li>
           <li>2024/03/21 - Added Beast of Sacrifice (Duonigue) and Raven bosses, added Thelema valkyrie. - Darius</li>
@@ -124,8 +135,8 @@
             2023/07/12 - Added beta 6.8 boss and Herrscher of Rebirth; english name for boss will be
             updated when GLB beta starts, thanks Darius
           </li>
-          <li>2023/06/18 - Update 6.7 boss name, add Beta Test modifier, thanks Darius</li>
           <!-- older changelog
+          <li>2023/06/18 - Update 6.7 boss name, add Beta Test modifier, thanks Darius</li>
           <li>
             2023/06/18 - Remove future MA/Abyss lineups pages, as they're not updated anymore :(
           </li>
