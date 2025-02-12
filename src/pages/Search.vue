@@ -380,7 +380,7 @@ const bossToChinese = {
   "Sprout of Wishing": ["愿之芽"],
   "Vita: Sea's Depths": ["薇塔", "量子薇塔"],
   "Bygone Deliverance (Kevin)": ["戒世遗光", "凯文"],
-  "Sa: Tribulations of Life": ["娑"],
+  "Sa: Wheel of Transcendence": ["娑"],
 };
 
 const valkToChinese = {
