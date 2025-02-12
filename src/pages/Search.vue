@@ -7,7 +7,9 @@
           Some of the Chinese translations courtsey of
           <a href="https://youtu.be/0RR5VR99fvk">The Keebster</a>
           and their excellent
-          <a href="https://docs.google.com/document/d/1PPZJ4s91tmEBh0Q6J26wbnFapCMioxShS0JhXPtZ4ec/edit">
+          <a
+            href="https://docs.google.com/document/d/1PPZJ4s91tmEBh0Q6J26wbnFapCMioxShS0JhXPtZ4ec/edit"
+          >
             Chinese Memorial Glossary
           </a>
           .
@@ -19,14 +21,17 @@
           ? Want to open team comps in a new tab? Drag this (
           <!-- Minified with https://jscompress.com/ -->
           <a
-            href="javascript:(function(){'use strict';$('#ct_det tbody').off().on('click','tr',function(){const a=$(this).find('.tgcol0').data('url');a!=null&&window.open(a,'_blank')});const a={记忆战场:'Memorial Arena','战区:':'Bracket',SSS难度:'SSS difficulty',终极战区:'Exalted',高级战区:'Masters','强敌:':'Bosses','女武神:':'Valkyries',阵容:'Line-up',得分:'Score',造价:'Cost',操作难度:'Difficulty',好评数:'Likes',创建时间:'Date',超弦空间:'Superstring',扰动幅度:'Disturbance','托纳提乌·噬日之影':'Tonatiuh','托纳提乌-噬日之影':'Tonatiuh',奔狼的领主:'Andrius',祸斗:'Huodou',吼姆王:'Homu King',绯狱丸:'Hellmaru',海姆达尔:'Heimdall',湮灭沉灵:'Doom',教父军团:'Padrino Legion',特里波卡:'Mexicatl',贝纳勒斯:'Benares','姬麟·黑':'DXY','MHT-3和平使者':'MHT-3 Pax','MHT-3 和平使者':'MHT-3 Pax','MHT-3B 天堂使者':'MHT-3B Nirvana',阿湿波:'Assaka',地藏御魂:'Jizo Mitama',赫菲斯托斯:'Hephaestus ',帕凡提:'Parvati',被诅咒的英魂:'Cursed Soul','科亚特尔-复生之影':'Couatl',八重霞:'Kasumi',陨冰之律者:'Rimestar','虚树神骸-虚无主义':'Nihilus Husk','支配之律者-乌合之众':'Herrscher of Dominance','伪神·奥托':'False God Otto','逐火十三英桀·科斯魔':'Kosma','段位:':'Rank',原罪:'Sinful',禁忌:'Forbidden',苦痛:'Agony',红莲:'Red lotus',寂灭:'Nirvana','天气:':'Weather',恐雷:'Lightning',怯火:'Fire',惧冰:'Ice',量子:'Quantum',畏血:'Physical',狙击:'Ranged',天敌:'Type counter',燃素:'Ignite',战意:'Bloodlust',虚数:'Imaginary',坚阵:'Fortified',雷劫:'Paralyze','区域:':'Stage',边缘区:'Fringe (first)',密集区:'Intensive (second)',高危区:'Perilous (boss)',特异区:'Singular (side)',吼姆魔术师:'Homu Magician','虚树神骸-虚无主义II':'Nihilus Husk (hit count)','神机-海姆达尔':'Heimdall','娑婆 阿湿波':'Saha Assaka',群怪:'Mobs','逐火十三英桀 爱莉希雅':'Flame Chaser Elysia',符华:'Fu Hua',识之律者:'Herrscher of Sentience',云墨丹心:'Azure Empyrea',雾都迅羽:'Hawk of the Fog',白夜执事:'Night Squire',炽翎:'Phoenix','影骑士·月轮':'Shadow Knight','女武神·迅羽':'Valkyrie Accipiter',明日香:'Asuka',八重樱:'Yae',夜隐重霞:'Darkbolt Jonin',真炎幸魂:'Flame Sakitama',逆神巫女:'Gyakushinn Miko','御神装·勿忘':'Goushinnso Memento','希儿·芙乐艾':'Seele',魇夜星渊:'Starchasm Nyx',彼岸双生:'Stygian Nymph',幻海梦蝶:'Swallowtail Phantasm',幽兰黛尔:'Durandal','女武神·荣光':'Valkyrie Gloria','辉骑士·月魄':'Bright Knight: Excelsis',不灭星锚:'Dea Anchora',天元骑英:'Palatinus Equinox',德丽莎:'Theresa','暮光骑士·月煌':'Twilight Paladin',月下初拥:'Luna Kindred',神恩颂歌:'Celestial Hymn','处刑装·紫苑':'Violet Executer',樱火轮舞:'Sakura Rondo','女武神·誓约':'Valkyrie Pledge',朔夜观星:'Starlit Astrologos',琪亚娜:'Kiana',薪炎之律者:'Herrscher of Flamescion',天穹游侠:'Void Ranger',空之律者:'Herrscher of the Void',圣女祈祷:'Divine Prayer','女武神·游侠':'Valkyrie Ranger','白骑士·月光':'Knight Moonbeam','领域装·白练':'White Comet',布洛妮娅:'Bronya',迷城骇兔:'Haxxor Bunny',理之律者:'Herrscher of Reason',彗星驱动:'Drive Kometa',异度黑核侵蚀:'Black Nucleus',银狼的黎明:'Wolfs Dawn',次元边界突破:'Dimension Breaker','女武神·战车':'Valkyrie Chariot','驱动装·山吹':'Yamabuki Armor',雪地狙击:'Snowy Sniper',次生银翼:'Silverwing: N-EX',阿琳姐妹:'Twins',狂热蓝调Δ:'Fervent Tempo Delta',樱桃炸弹:'Molotov Cherry',蓝莓特攻:'Blueberry Blitz',芽衣:'Mei',断罪影舞:'Danzai Spectramancer',雷之律者:'Herrscher of Thunder',破晓强袭:'Striker Fulminata',雷电女王的鬼铠:'Lightning Empress','脉冲装·绯红':'Crimson Impulse','女武神·强袭':'Valkyrie Bladestrike',影舞冲击:'Shadow Dash',丽塔:'Rita',失落迷迭:'Fallen Rosemary','苍骑士·月魂':'Argent Knight: Artemis','猎袭装·影铁':'Phantom Iron',黯蔷薇:'Umbral Rose',缭乱星棘:'Spina Astera',姬子:'Himeko','真红骑士·月蚀':'Vermilion Knight: Eclipse',极地战刃:'Arctic Kriegsmesser','融核装·深红':'Scarlet Fusion',战场疾风:'Battle Storm','女武神·凯旋':'Valkyrie Triumph',血色玫瑰:'Blood Rose',卡莲:'Kallen',原罪猎人:'S\xFCndenj\xE4ger',第六夜想曲:'Sixth Serenade','圣仪装·今样':'Imayoh Ritual',菲谢尔:'Fischl','断罪皇女！！':'Prinzessin der Verurteilung',爱莉希雅:'Elysia','粉色妖精小姐♪':'Miss Pink Elf','娜塔莎·希奥拉':'Raven',午夜苦艾:'Midnight Absinthe',梅比乌斯:'Mobisus','无限·噬界之蛇':'Infinite Ouroboros','卡萝尔·佩珀':'Carole Pepper',甜辣女孩:'Sweet n Spicy',帕朵菲莉丝:'Pardofelis','空梦·掠集之兽':'Reverist Calico',阿波尼亚:'Aponia','戒律·深罪之槛':'Disciplinary Perdition',伊甸:'Eden','黄金·璀耀之歌':'Golden Diva',格蕾修:'Griseo','繁星·绘世之卷':'Starry Impression',维尔薇:'Vill-V'},b=function(a,b){b&&a[b.innerText]&&(b.innerHTML=b.innerHTML.replace(b.innerText,a[b.innerText]))},c=function(){const c=$('.filter-text > input').val();$('.filter-text > input').val('\u8D85\u5F26\u7A7A\u95F4'===c?'Abyss':'MA'),$('th, span, .table-search, .label, .title').each(function(){b(a,this)}),$('.table-team-box .table-search').height(600),$('.table-search .goodwar .content').height(500)};$('.table-search').on('click','.select-item',()=>setTimeout(c,200)),$('.el-select-dropdown__item').on('click',()=>setTimeout(c,200)),c()})();">
+            href="javascript:(function(){'use strict';$('#ct_det tbody').off().on('click','tr',function(){const a=$(this).find('.tgcol0').data('url');a!=null&&window.open(a,'_blank')});const a={记忆战场:'Memorial Arena','战区:':'Bracket',SSS难度:'SSS difficulty',终极战区:'Exalted',高级战区:'Masters','强敌:':'Bosses','女武神:':'Valkyries',阵容:'Line-up',得分:'Score',造价:'Cost',操作难度:'Difficulty',好评数:'Likes',创建时间:'Date',超弦空间:'Superstring',扰动幅度:'Disturbance','托纳提乌·噬日之影':'Tonatiuh','托纳提乌-噬日之影':'Tonatiuh',奔狼的领主:'Andrius',祸斗:'Huodou',吼姆王:'Homu King',绯狱丸:'Hellmaru',海姆达尔:'Heimdall',湮灭沉灵:'Doom',教父军团:'Padrino Legion',特里波卡:'Mexicatl',贝纳勒斯:'Benares','姬麟·黑':'DXY','MHT-3和平使者':'MHT-3 Pax','MHT-3 和平使者':'MHT-3 Pax','MHT-3B 天堂使者':'MHT-3B Nirvana',阿湿波:'Assaka',地藏御魂:'Jizo Mitama',赫菲斯托斯:'Hephaestus ',帕凡提:'Parvati',被诅咒的英魂:'Cursed Soul','科亚特尔-复生之影':'Couatl',八重霞:'Kasumi',陨冰之律者:'Rimestar','虚树神骸-虚无主义':'Nihilus Husk','支配之律者-乌合之众':'Herrscher of Dominance','伪神·奥托':'False God Otto','逐火十三英桀·科斯魔':'Kosma','段位:':'Rank',原罪:'Sinful',禁忌:'Forbidden',苦痛:'Agony',红莲:'Red lotus',寂灭:'Nirvana','天气:':'Weather',恐雷:'Lightning',怯火:'Fire',惧冰:'Ice',量子:'Quantum',畏血:'Physical',狙击:'Ranged',天敌:'Type counter',燃素:'Ignite',战意:'Bloodlust',虚数:'Imaginary',坚阵:'Fortified',雷劫:'Paralyze','区域:':'Stage',边缘区:'Fringe (first)',密集区:'Intensive (second)',高危区:'Perilous (boss)',特异区:'Singular (side)',吼姆魔术师:'Homu Magician','虚树神骸-虚无主义II':'Nihilus Husk (hit count)','神机-海姆达尔':'Heimdall','娑婆 阿湿波':'Saha Assaka',群怪:'Mobs','逐火十三英桀 爱莉希雅':'Flame Chaser Elysia',符华:'Fu Hua',识之律者:'Herrscher of Sentience',云墨丹心:'Azure Empyrea',雾都迅羽:'Hawk of the Fog',白夜执事:'Night Squire',炽翎:'Phoenix','影骑士·月轮':'Shadow Knight','女武神·迅羽':'Valkyrie Accipiter',明日香:'Asuka',八重樱:'Yae',夜隐重霞:'Darkbolt Jonin',真炎幸魂:'Flame Sakitama',逆神巫女:'Gyakushinn Miko','御神装·勿忘':'Goushinnso Memento','希儿·芙乐艾':'Seele',魇夜星渊:'Starchasm Nyx',彼岸双生:'Stygian Nymph',幻海梦蝶:'Swallowtail Phantasm',幽兰黛尔:'Durandal','女武神·荣光':'Valkyrie Gloria','辉骑士·月魄':'Bright Knight: Excelsis',不灭星锚:'Dea Anchora',天元骑英:'Palatinus Equinox',德丽莎:'Theresa','暮光骑士·月煌':'Twilight Paladin',月下初拥:'Luna Kindred',神恩颂歌:'Celestial Hymn','处刑装·紫苑':'Violet Executer',樱火轮舞:'Sakura Rondo','女武神·誓约':'Valkyrie Pledge',朔夜观星:'Starlit Astrologos',琪亚娜:'Kiana',薪炎之律者:'Herrscher of Flamescion',天穹游侠:'Void Ranger',空之律者:'Herrscher of the Void',圣女祈祷:'Divine Prayer','女武神·游侠':'Valkyrie Ranger','白骑士·月光':'Knight Moonbeam','领域装·白练':'White Comet',布洛妮娅:'Bronya',迷城骇兔:'Haxxor Bunny',理之律者:'Herrscher of Reason',彗星驱动:'Drive Kometa',异度黑核侵蚀:'Black Nucleus',银狼的黎明:'Wolfs Dawn',次元边界突破:'Dimension Breaker','女武神·战车':'Valkyrie Chariot','驱动装·山吹':'Yamabuki Armor',雪地狙击:'Snowy Sniper',次生银翼:'Silverwing: N-EX',阿琳姐妹:'Twins',狂热蓝调Δ:'Fervent Tempo Delta',樱桃炸弹:'Molotov Cherry',蓝莓特攻:'Blueberry Blitz',芽衣:'Mei',断罪影舞:'Danzai Spectramancer',雷之律者:'Herrscher of Thunder',破晓强袭:'Striker Fulminata',雷电女王的鬼铠:'Lightning Empress','脉冲装·绯红':'Crimson Impulse','女武神·强袭':'Valkyrie Bladestrike',影舞冲击:'Shadow Dash',丽塔:'Rita',失落迷迭:'Fallen Rosemary','苍骑士·月魂':'Argent Knight: Artemis','猎袭装·影铁':'Phantom Iron',黯蔷薇:'Umbral Rose',缭乱星棘:'Spina Astera',姬子:'Himeko','真红骑士·月蚀':'Vermilion Knight: Eclipse',极地战刃:'Arctic Kriegsmesser','融核装·深红':'Scarlet Fusion',战场疾风:'Battle Storm','女武神·凯旋':'Valkyrie Triumph',血色玫瑰:'Blood Rose',卡莲:'Kallen',原罪猎人:'S\xFCndenj\xE4ger',第六夜想曲:'Sixth Serenade','圣仪装·今样':'Imayoh Ritual',菲谢尔:'Fischl','断罪皇女！！':'Prinzessin der Verurteilung',爱莉希雅:'Elysia','粉色妖精小姐♪':'Miss Pink Elf','娜塔莎·希奥拉':'Raven',午夜苦艾:'Midnight Absinthe',梅比乌斯:'Mobisus','无限·噬界之蛇':'Infinite Ouroboros','卡萝尔·佩珀':'Carole Pepper',甜辣女孩:'Sweet n Spicy',帕朵菲莉丝:'Pardofelis','空梦·掠集之兽':'Reverist Calico',阿波尼亚:'Aponia','戒律·深罪之槛':'Disciplinary Perdition',伊甸:'Eden','黄金·璀耀之歌':'Golden Diva',格蕾修:'Griseo','繁星·绘世之卷':'Starry Impression',维尔薇:'Vill-V'},b=function(a,b){b&&a[b.innerText]&&(b.innerHTML=b.innerHTML.replace(b.innerText,a[b.innerText]))},c=function(){const c=$('.filter-text > input').val();$('.filter-text > input').val('\u8D85\u5F26\u7A7A\u95F4'===c?'Abyss':'MA'),$('th, span, .table-search, .label, .title').each(function(){b(a,this)}),$('.table-team-box .table-search').height(600),$('.table-search .goodwar .content').height(500)};$('.table-search').on('click','.select-item',()=>setTimeout(c,200)),$('.el-select-dropdown__item').on('click',()=>setTimeout(c,200)),c()})();"
+          >
             Fix 3rd guide
           </a>
           ) link to your bookmark bar and click it when you're on the site! The script also
           translates all the bosses and valks (turn off Chrome auto-translation first). Many thanks
           for zkwp of Lumina for the script. For the latest version or if you use TamperMonkey, find
           the script at
-          <a href="https://github.com/PaeP3nguin/honkai-guide/blob/master/src/assets/3rdguide.user.js">
+          <a
+            href="https://github.com/PaeP3nguin/honkai-guide/blob/master/src/assets/3rdguide.user.js"
+          >
             Github
           </a>
           .
@@ -39,16 +44,33 @@
 
         <v-form>
           <h3 class="section-head">Boss</h3>
-          <v-autocomplete v-model="selectedBoss" hint="Start typing to autocomplete." autofocus auto-select-first
-            clearable persistent-hint :items="bosses"></v-autocomplete>
+          <v-autocomplete
+            v-model="selectedBoss"
+            hint="Start typing to autocomplete."
+            autofocus
+            auto-select-first
+            clearable
+            persistent-hint
+            :items="bosses"
+          ></v-autocomplete>
           <v-checkbox v-model="sssBoss" label="SSS Boss?"></v-checkbox>
 
           <h3 class="section-head">Valkyries</h3>
-          <p>Order matters! Choose the lead valk first. Some acronyms return a lot of results; add suffix with * to
-            filter it down (for example, RS*).</p>
-          <v-autocomplete v-model="selectedValks" hint="Start typing to autocomplete." multiple auto-select-first
-            clearable persistent-hint @change="valkInput = ''" :search-input.sync="valkInput"
-            :items="valks"></v-autocomplete>
+          <p>
+            Order matters! Choose the lead valk first. Some acronyms return a lot of results; add
+            suffix with * to filter it down (for example, RS*).
+          </p>
+          <v-autocomplete
+            v-model="selectedValks"
+            hint="Start typing to autocomplete."
+            multiple
+            auto-select-first
+            clearable
+            persistent-hint
+            @change="valkInput = ''"
+            :search-input.sync="valkInput"
+            :items="valks"
+          ></v-autocomplete>
 
           <h3 class="section-head">Modifiers</h3>
           <v-layout wrap>
@@ -58,8 +80,14 @@
           </v-layout>
 
           <h3 class="section-head">Score</h3>
-          <v-combobox v-model="score" hint="All input accepted, or choose from the list." auto-select-first clearable
-            persistent-hint :items="scores"></v-combobox>
+          <v-combobox
+            v-model="score"
+            hint="All input accepted, or choose from the list."
+            auto-select-first
+            clearable
+            persistent-hint
+            :items="scores"
+          ></v-combobox>
         </v-form>
 
         <h2 class="section-head">Generated links</h2>
@@ -69,7 +97,11 @@
         </v-layout>
         <p>Some bosses/valks go by multiple names, so try all links!</p>
         <v-checkbox v-model="googleToggle" label="Swap to Google"></v-checkbox>
-        <v-checkbox v-if="googleToggle" v-model="googleToggleBili" label="Bili² from Google"></v-checkbox>
+        <v-checkbox
+          v-if="googleToggle"
+          v-model="googleToggleBili"
+          label="Bili² from Google"
+        ></v-checkbox>
         <p v-for="link in biliLinks" v-bind:key="link">
           <a target="_blank" class="bili-link" :href="`${link}`">{{ link }}</a>
         </p>
@@ -77,55 +109,68 @@
         <h2 class="section-head">Changelog</h2>
         <ul>
           <li>2025/02/03 - Add a bunch of translations - ThatOneAmyFan</li>
-          <li>2025/01/19 - Added SSS Sa boss, added Fiery Wishing Star (FWS), added Theresa Astral Op - Darius</li>
-          <li>2024/12/25 - Updated name of new boss from New Kevin to Bygone Deliverance - Darius</li>
           <li>
-            2024/12/07 - Added ignited modifier. Added DAFL for Senadina. Added Reign Solaris valkyrie and SSS/Abyss
-            Kevin (will add Kevin's localized name later).
-            Some acronyms return a lot of results, so all acronyms now have a * suffix, use this to quickly filter it
-            down (e.g. RS* instead of RS) - Darius
+            2025/01/19 - Added SSS Sa boss, added Fiery Wishing Star (FWS), added Theresa Astral Op
+            - Darius
           </li>
-          <li>2024/11/15 - Added modifiers Stellar Crown and Starless. Added some boss nickanmes: bull, flower, and
-            wolf. - Darius</li>
+          <li>
+            2024/12/25 - Updated name of new boss from New Kevin to Bygone Deliverance - Darius
+          </li>
+          <li>
+            2024/12/07 - Added ignited modifier. Added DAFL for Senadina. Added Reign Solaris
+            valkyrie and SSS/Abyss Kevin (will add Kevin's localized name later). Some acronyms
+            return a lot of results, so all acronyms now have a * suffix, use this to quickly filter
+            it down (e.g. RS* instead of RS) - Darius
+          </li>
+          <li>
+            2024/11/15 - Added modifiers Stellar Crown and Starless. Added some boss nickanmes:
+            bull, flower, and wolf. - Darius
+          </li>
           <li>2024/10/26 - Added Vita boss and Sparkle valkyrie. - Darius</li>
-          <li>2024/10/16 - Sorry for the delay, Sprout of Wishing has now been added. This completes the updates for
-            v7.8. - Darius</li>
+          <li>
+            2024/10/16 - Sorry for the delay, Sprout of Wishing has now been added. This completes
+            the updates for v7.8. - Darius
+          </li>
           <li>2024/09/05 - Added Lone Planetfarer/Vita. - Darius</li>
           <li>
-            2024/08/12 - Removed some really old and no longer useful modifiers. Abyss weathers have been moved to the
-            modifiers section. These will be useful for bosses with multiple weathers. More will be added later as
-            needed. Added search term for "mobs", please use this if the Perilous stage is a mob stage. Added MHT-3C,
-            the newest version of tank. - Darius
+            2024/08/12 - Removed some really old and no longer useful modifiers. Abyss weathers have
+            been moved to the modifiers section. These will be useful for bosses with multiple
+            weathers. More will be added later as needed. Added search term for "mobs", please use
+            this if the Perilous stage is a mob stage. Added MHT-3C, the newest version of tank. -
+            Darius
           </li>
           <li>2024/08/05 - Added Schicksal's Imperative Theresa and Valrahal boss - Darius</li>
           <li>
-            2024/06/21 - To make finding mob boss stages easier, a few weathers have been added: Stellar (Astral Ring),
-            Stardust, Symphony, and Bloodlust. These are all Senadina mob boss stages.
-            Added Songque, Serapeum, and Meteoroid Fusion: Epernay. I wonder if they will ever fix the incorrect
-            spelling in game: "Meteroid"? - Darius
+            2024/06/21 - To make finding mob boss stages easier, a few weathers have been added:
+            Stellar (Astral Ring), Stardust, Symphony, and Bloodlust. These are all Senadina mob
+            boss stages. Added Songque, Serapeum, and Meteoroid Fusion: Epernay. I wonder if they
+            will ever fix the incorrect spelling in game: "Meteroid"? - Darius
           </li>
           <li>2024/05/05 - Added Mobius boss and Lantern. - Darius</li>
-          <li>2024/03/21 - Added Beast of Sacrifice (Duonigue) and Raven bosses, added Thelema valkyrie. - Darius</li>
           <li>
-            2024/03/01 - Added new search term for Flower boss, and added search terms for the Astral Ring weather SD
-            mobs,
-            Symphony weather SD mobs, and Stardust weather SD mobs. Added Helia and Coralie individual valks.
-            4.4 and after valkyries will now have battlesuit name, abbreviation, and character name, to make it easier
-            for some players to find them.
-            Example: Deepspace Anchor: First Light (FL, Senadina)
-            4.3 and below valkyries will also be updated to the same format, but in a future update. - Darius
+            2024/03/21 - Added Beast of Sacrifice (Duonigue) and Raven bosses, added Thelema
+            valkyrie. - Darius
           </li>
           <li>
-            2024/02/05 - BIG UPDATE! Added Herrscher Trio, Senadina Trio, Senadina standalone,
-            ELFs (Blade Durandal and newer only), and Collaborators. Helia and Coralie do not have standalone
-            entries yet (not sure if they will). Also added Alien Guard's alternate name.
+            2024/03/01 - Added new search term for Flower boss, and added search terms for the
+            Astral Ring weather SD mobs, Symphony weather SD mobs, and Stardust weather SD mobs.
+            Added Helia and Coralie individual valks. 4.4 and after valkyries will now have
+            battlesuit name, abbreviation, and character name, to make it easier for some players to
+            find them. Example: Deepspace Anchor: First Light (FL, Senadina) 4.3 and below valkyries
+            will also be updated to the same format, but in a future update. - Darius
+          </li>
+          <li>
+            2024/02/05 - BIG UPDATE! Added Herrscher Trio, Senadina Trio, Senadina standalone, ELFs
+            (Blade Durandal and newer only), and Collaborators. Helia and Coralie do not have
+            standalone entries yet (not sure if they will). Also added Alien Guard's alternate name.
             V7.3 new bosses coming soon. Thanks Darius
           </li>
           <li>2024/01/15 - Added Fenghuang of Vicissitude, thanks Darius</li>
           <li>2023/11/26 - Added 7.1 boss EN name, Alien Guard - Supplement, thanks Darius</li>
-          <li>2023/11/07 - Added abyss Flying Fish, v7.1 Cosmic Expression, v7.1 alien boss (EN name will be added
-            later),
-            updated SSS Heimdall CN search terms, thanks Darius</li>
+          <li>
+            2023/11/07 - Added abyss Flying Fish, v7.1 Cosmic Expression, v7.1 alien boss (EN name
+            will be added later), updated SSS Heimdall CN search terms, thanks Darius
+          </li>
           <li>2023/10/09 - Add Lunar Vow Crimson Love, thanks Darius</li>
           <li>2023/09/19 - Add Herrscher of Ice boss, thanks Darius</li>
           <li>2023/09/04 - Add Herrscher of Corruption Elysia, thanks Darius</li>
@@ -314,47 +359,47 @@ import BossLineupList from "@/components/BossLineupList.vue";
 
 const bossToChinese = {
   "Dominator of Wolves (Andrius, wolf)": ["奔狼的领主", "奔狼", "北风狼"],
-  "Assaka": ["阿湿波", "asb"],
+  Assaka: ["阿湿波", "asb"],
   "Argent Knight: Artemis (AKA)": ["月魂"],
-  "Benares": ["贝纳勒斯", "贝贝龙", "龙"],
+  Benares: ["贝纳勒斯", "贝贝龙", "龙"],
   "Bright Knight - Excelsis (BKE)": ["月魄", "幽兰戴尔"],
   "Couatl: Revenant": ["量子帝王", "泥鳅"],
   "Cursed Soul": ["姬子", "被诅咒的英魂"],
   "Dark Jixuanyuan (DXY, DJXY)": ["皮皮马", "马"], // "姬麟·黑"],
   "Death Web + Gigant (Abyss only)": ["蜘蛛泰坦"],
   "Diabolic Kevin": ["凯文", "凯文 - 卡斯兰娜"],
-  "Doom": ["沉灵", "湮灭沉灵"],
+  Doom: ["沉灵", "湮灭沉灵"],
   "Double Wendy (all the way) (Abyss only)": ["双温蒂"],
-  "Elysia": ["爱莉希雅", "爱莉", "爱"],
+  Elysia: ["爱莉希雅", "爱莉", "爱"],
   "Emperor (Abyss only)": ["帝王"],
   "False God Otto Apocalypse (FGO)": ["伪神", "伪神奥托", "奥托"],
   "Herrscher of the Void (God Kiana, GK, HoV)": ["空之律者", "女王"],
-  "Heimdall": ["海姆达尔", "海胖", "胖大海"],
-  "Hellmaru": ["狐狸", "绯狱丸"],
+  Heimdall: ["海姆达尔", "海胖", "胖大海"],
+  Hellmaru: ["狐狸", "绯狱丸"],
   "Herrscher of Dominance (HoD)": ["千律", "乌合之众"],
   "Herrscher of Sentience (HoS)": ["识之律者"],
   "HOMU King": ["吼姆"],
-  "Huodou": ["祸斗"],
+  Huodou: ["祸斗"],
   "Husk: Existentialism (flower)": ["虚数花", "虚树摊骸-存在主义"],
   "Husk: Mysticism (bull)": ["牛牛", "神秘主义"],
   "Husk: Nihilius (clock)": ["虚树神骸", "lzx"],
   "Jizo Mitama": ["地藏", "地藏御魂"],
-  "Kallen": ["卡莲"],
-  "Kalpas": ["千劫", "杰哥", "劫哥", "千师傅"],
-  "Kasumi": ["八重霞"],
-  "Kosma": ["科斯魔"],
+  Kallen: ["卡莲"],
+  Kalpas: ["千劫", "杰哥", "劫哥", "千师傅"],
+  Kasumi: ["八重霞"],
+  Kosma: ["科斯魔"],
   "Li Sushang": ["李素裳"],
   "Mexicatl: Umbreist (quantum ball)": ["球", "量子军团"],
   "MHT-3 Pax (tank)": ["MHT", "和平使者", "坦克"],
   "MHT-3B Nirvana (new tank, also SSS tank)": ["MHT-3B", "天堂使者", "坦克"],
   "MHT-3C Retaliator (no transition abyss tank)": ["MHT-3C", "惩戒使者", "坦克"],
-  "Mobs": ["群聚"],
+  Mobs: ["群聚"],
   "MR-06X Hephaestus": ["赫菲斯托斯", "灭火器"],
   "Otto Apocalypse (shield Otto)": ["盾奥托", "奥托"],
-  "Padrino": ["教父"],
-  "Parvati": ["冰猪", "帕凡提"],
+  Padrino: ["教父"],
+  Parvati: ["冰猪", "帕凡提"],
   "Pishacha (Slime, Blob)": ["毕舍遮"],
-  "Rimestar": ["冰律", "陨冰之律者"],
+  Rimestar: ["冰律", "陨冰之律者"],
   "RPC-6626": ["飞机", "RPC - 6626"],
   "Shadow Knight (SK)": ["月轮"],
   "Son of Darkness (Abyss only)": ["黑夜之子"],
@@ -364,7 +409,7 @@ const bossToChinese = {
   "Vill-V": ["维尔薇", "V2V"],
   "Opaque Shadow (quantum whale)": ["蔽光之影"],
   "Nocturnal Knight (blood thorn)": ["煌夜骑士"],
-  "Aponia": ["阿波尼亚", "阿波"],
+  Aponia: ["阿波尼亚", "阿波"],
   "Wardens of Tower (Black Wine of Theramenes, White Sword of Damocles)": ["塔之钳锆", "黑白双煞"],
   "Cruising Tribunal": ["巡航审判团"],
   "Herrscher of Corruption (HoC, Elysia)": ["侵蚀"],
@@ -373,8 +418,8 @@ const bossToChinese = {
   "Alien Guard - Supplement": ["星尘戍卫", "异星肃卫"],
   "Meteoroid: Guaymas": ["瓜伊马斯", "星尘龙虾"],
   "Beast of Sacrifice (Duonigue)": ["殉死之兽"],
-  "Raven": ["渡鸦"],
-  "Mobius": ["梅比乌斯"],
+  Raven: ["渡鸦"],
+  Mobius: ["梅比乌斯"],
   "Meteoroid Fusion: Epernay": ["奈埃尔"],
   "Valrahal (Quantum Pig)": ["量子猪", "瓦拉哈"],
   "Sprout of Wishing": ["愿之芽"],
@@ -523,20 +568,20 @@ const modifiersToChinese = {
   "Q-Manifold": ["量子流形"],
   "Exalted Abyss": ["超弦空间"],
   "Red Lotus": ["红莲"],
-  "Nirvana": ["寂灭"],
-  "Myriad": ["无限"],
+  Nirvana: ["寂灭"],
+  Myriad: ["无限"],
   "1st Place": ["榜一"],
-  "Bloodlust": ["嗜战"],
-  "Counter": ["克制"],
-  "Ignited": ["点燃"],
-  "Lightning": ["雷伤"],
-  "Physical": ["物理"],
+  Bloodlust: ["嗜战"],
+  Counter: ["克制"],
+  Ignited: ["点燃"],
+  Lightning: ["雷伤"],
+  Physical: ["物理"],
   "Star Shadow": ["影星"],
-  "Stardust": ["星尘"],
-  "Starless": ["掩星"],
-  "Stellar": ["星环"],
+  Stardust: ["星尘"],
+  Starless: ["掩星"],
+  Stellar: ["星环"],
   "Stellar Crown": ["星冕"],
-  "Symphonic": ["交响"],
+  Symphonic: ["交响"],
 };
 
 const modifiers = Object.keys(modifiersToChinese).map((m) => ({
@@ -621,18 +666,18 @@ export default Vue.extend({
         // logic out.
         return [
           "https://www.google.com/search?q=" +
-          [
-            this.selectedBoss ? `(${this.bossNames.join("|")})` : "",
-            this.valkCombosGoogle.join(" "),
-            modifierParams.length
-              ? `(${modifierParams.map((params) => params.join("|")).join(" ")})`
-              : "",
-            this.score,
-            this.googleToggleBili ? "site:https://www.bilibili.com" : "",
-          ]
-            // Remove empty strings and nulls to avoid extra spaces and weirdness in the output.
-            .filter((n) => n)
-            .join(" "),
+            [
+              this.selectedBoss ? `(${this.bossNames.join("|")})` : "",
+              this.valkCombosGoogle.join(" "),
+              modifierParams.length
+                ? `(${modifierParams.map((params) => params.join("|")).join(" ")})`
+                : "",
+              this.score,
+              this.googleToggleBili ? "site:https://www.bilibili.com" : "",
+            ]
+              // Remove empty strings and nulls to avoid extra spaces and weirdness in the output.
+              .filter((n) => n)
+              .join(" "),
         ];
       }
 

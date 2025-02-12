@@ -1,4 +1,4 @@
-function toPercent(percent: number) {
+function toPercent(percent: number): string {
   return `${(percent * 100).toFixed(2)}%`;
 }
 

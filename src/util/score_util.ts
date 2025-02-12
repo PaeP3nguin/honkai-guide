@@ -1,8 +1,15 @@
 const pointsPerSecondSS = 53 + 1 / 3;
-const pointsPerSecondBase = 13 + 1/3;
+const pointsPerSecondBase = 13 + 1 / 3;
 //const pointsPerSecondUp = 16;
 
-function generateScores(seconds: number) {
+class ScoresByTime {
+  ssScore: number;
+  base: number;
+  up: number;
+  elapsedSec: number;
+}
+
+function generateScores(seconds: number): ScoresByTime[] {
   const scoresByTime = [];
   for (let i = 0; i < seconds; i += 1) {
     const ssScoreRaw = 32000 - pointsPerSecondSS * (i + 1);
@@ -22,7 +29,7 @@ function generateScores(seconds: number) {
   return scoresByTime;
 }
 
-function countdownSecondsFilter(elapsedSecStr: string) {
+function countdownSecondsFilter(elapsedSecStr: string): string {
   const elapsedSec = 300 - parseInt(elapsedSecStr);
   const minutes = Math.floor(elapsedSec / 60);
   const seconds = (elapsedSec - minutes * 60) % 60;

@@ -1,7 +1,7 @@
 import { Type, Multiplier } from "@/models/multiplier";
 
 const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
-  "Ai": {
+  Ai: {
     T: [
       new Multiplier({
         active: true,
@@ -41,7 +41,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
-  "Aladdin": {
+  Aladdin: {
     M: [
       new Multiplier({
         active: true,
@@ -750,7 +750,7 @@ const SUPPORT_STIG_MULTIPLIERS = Object.freeze({
 });
 
 const DPS_STIG_MULTIPLIERS = Object.freeze({
-  "Ai": {
+  Ai: {
     T: [
       new Multiplier({
         active: true,
@@ -822,7 +822,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
-  "Aladdin": {
+  Aladdin: {
     T: [
       new Multiplier({
         active: true,
@@ -3696,7 +3696,7 @@ const DPS_STIG_MULTIPLIERS = Object.freeze({
       }),
     ],
   },
-  "Willows": {
+  Willows: {
     T: [
       new Multiplier({
         active: true,

@@ -16,6 +16,13 @@ enum Type {
   ShieldDmgDealt = "Shield damage dealt",
 }
 
+interface MultiplierInterface {
+  name: string;
+  type: Type;
+  value: number;
+  active: boolean;
+}
+
 class Multiplier {
   id: number;
   name: string;
@@ -49,7 +56,7 @@ class Multiplier {
     this.active = active;
   }
 
-  static fromObject(object: any): Multiplier {
+  static fromObject(object: MultiplierInterface): Multiplier {
     return new Multiplier({
       name: object.name,
       type: object.type,

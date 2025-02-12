@@ -134,6 +134,10 @@ export default Vue.extend({
 
     const auth = getAuth(firebaseApp);
 
+    onAuthStateChanged(auth, function () {
+      // this is for suppressing 'onAuthStateChanged' is defined but never used lint error
+    });
+
     await signInAnonymously(auth);
   },
 });
