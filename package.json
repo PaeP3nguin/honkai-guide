@@ -57,7 +57,8 @@
     "parserOptions": {
       "parser": "@typescript-eslint/parser",
       "ecmaVersion": 2020
-    }
+    },
+    "ignorePatterns": ["/src/assets/3rdguide.user.js"]
   },
   "browserslist": [
     "> 1%",
