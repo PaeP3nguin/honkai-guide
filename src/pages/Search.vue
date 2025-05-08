@@ -54,7 +54,7 @@
             persistent-hint
             :items="bosses"
           ></v-autocomplete>
-          <v-checkbox v-model="sssBoss" label="SSS Boss?"></v-checkbox>
+          <v-checkbox v-model="sssBoss" label="SSS Boss? (Tip: Some MA videos will only show up when this is unchecked, so try both!)"></v-checkbox>
 
           <h3 class="section-head">Valkyries</h3>
           <p>
@@ -500,7 +500,7 @@ const valkToChinese = {
   "Prinzessin der Verurteilung! (*PV, Fischl)": ["皇", "小艾咪", "皇女"],
   "Herrscher of Flamescion (*HoFs, *HFs, Kiana)": ["薪", "炎", "萤火虫", "薪炎之律者"],
   "Miss Pink Elf (*MPE, Elysia)": ["爱莉希雅", "爱莉", "爱"],
-  "Infinite Ouroboros (*IO, Mobius)": ["无限·噬界之蛇", "噬界", "蛇主"],
+  "Infinite Ouroboros (*IO, Mobius, Kyoshiro's wife)": ["无限·噬界之蛇", "噬界", "蛇主"],
   "Midnight Absinthe (*MA, Raven)": ["午夜苦艾", "渡鸦"],
   "Sweet 'n' Spicy (*SnS, Carole)": ["卡", "卡萝尔", "甜辣女孩"],
   "Silverwing: N-EX (*SW, Bronya)": ["大鸭", "次", "翼"],
