@@ -109,18 +109,17 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2025/05/08 - Added Planar Armament: Warped Spacetime Helia - Darius</li>
           <li>
             2025/03/22 - Added Blood Thorn Patch and Flux, added Lantern boss, added Peregrine Sword.
             Updated search terms prefixes (* and **) - Darius
           </li>
-          <li>2025/02/03 - Add a bunch of translations - ThatOneAmyFan</li>
+          <li>2025/02/03 - Add a bunch of translations for the 3rd guide website - ThatOneAmyFan</li>
           <li>
             2025/01/19 - Added SSS Sa boss, added Fiery Wishing Star (FWS), added Theresa Astral Op
             - Darius
           </li>
-          <li>
-            2024/12/25 - Updated name of new boss from New Kevin to Bygone Deliverance - Darius
-          </li>
+          <li>2024/12/25 - Updated name of new boss from New Kevin to Bygone Deliverance - Darius</li>
           <li>
             2024/12/07 - Added ignited modifier. Added DAFL for Senadina. Added Reign Solaris
             valkyrie and SSS/Abyss Kevin (will add Kevin's localized name later). Some acronyms
@@ -180,8 +179,8 @@
           <li>2023/09/19 - Add Herrscher of Ice boss, thanks Darius</li>
           <li>2023/09/04 - Add Herrscher of Corruption Elysia, thanks Darius</li>
           <li>2023/08/26 - Add Miracle Magical Girl (Sirin), thanks Darius</li>
-          <li>2023/08/05 - Update 6.8 boss name, thanks Darius</li>
           <!-- older changelog
+          <li>2023/08/05 - Update 6.8 boss name, thanks Darius</li>
           <li>
             2023/07/12 - Added beta 6.8 boss and Herrscher of Rebirth; english name for boss will be
             updated when GLB beta starts, thanks Darius
