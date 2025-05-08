@@ -541,15 +541,16 @@ const valkToChinese = {
   "Reign Solaris (*RS, Durandal)": ["鹅"],
   "Ba-Dum! Fiery Wishing Star (*FWS, Kiana)": ["琪"],
   "Peregrine Sword (*PS, Li Sushang)": ["李"],
+  "Planar Armament: Warped Spacetime (*PA, Helia)": ["赫"],
   // ELFs & Collaborators
-  "Blade Durandal (**BD, **Dudu)": ["星幽"],
-  "Elf Elysia (**Ely)": ["星爱"],
-  "Kiana Kaslana (**Kiana)": ["星琪"],
-  "Project Bunny (**PB)": ["星兔"],
-  "Dreamseeker (**DS)": ["寻梦者"],
-  "Songque (**Song)": ["松雀"],
-  "Serapeum (**Sera)": ["瑟拉"],
-  "Theresa Apocalypse (**Teri)": ["德"],
+  "Blade Durandal (**BD, **Dudu, ELF)": ["星幽"],
+  "Elf Elysia (**Ely, ELF)": ["星爱"],
+  "Kiana Kaslana (**Kiana, ELF)": ["星琪"],
+  "Project Bunny (**PB, ELF)": ["星兔"],
+  "Dreamseeker (**DS, Astral Op)": ["寻梦者"],
+  "Songque (**Song, Astral Op)": ["松雀"],
+  "Serapeum (**Sera, Astral Op)": ["瑟拉"],
+  "Theresa Apocalypse (**Teri, Astral Op)": ["德"],
 };
 
 const modifiersToChinese = {
