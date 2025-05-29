@@ -109,6 +109,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2025/05/29 - Added Sampo - Darius</li>
           <li>2025/05/08 - Added Planar Armament: Warped Spacetime Helia - Darius</li>
           <li>
             2025/03/22 - Added Blood Thorn Patch and Flux, added Lantern boss, added Peregrine Sword.
@@ -431,6 +432,7 @@ const bossToChinese = {
   "Bygone Deliverance (Kevin)": ["戒世遗光", "凯文"],
   "Sa: Wheel of Transcendence": ["娑"],
   Lantern: ["灯"],
+  "Masked Fool Sampo": ["桑博"],
 };
 
 const valkToChinese = {
