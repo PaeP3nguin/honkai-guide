@@ -415,7 +415,7 @@ const bossToChinese = {
   "Opaque Shadow (quantum whale)": ["蔽光之影"],
   "Nocturnal Knight (blood thorn)": ["煌夜骑士"],
   Aponia: ["阿波尼亚", "阿波"],
-  "Wardens of Tower (Black Wine of Theramenes, White Sword of Damocles)": ["塔之钳锆", "黑白双煞"],
+  "Wardens of Tower (Black Wine of Theramenes, White Sword of Damocles)": ["塔之钳梏", "黑白双煞"],
   "Cruising Tribunal": ["巡航审判团"],
   "Herrscher of Corruption (HoC, Elysia)": ["侵蚀"],
   "Herrscher of Ice (HoI)": ["冰律"],
