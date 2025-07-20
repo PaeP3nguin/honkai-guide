@@ -548,7 +548,7 @@ const valkToChinese = {
   "Ba-Dum! Fiery Wishing Star (*FWS, Kiana)": ["琪"],
   "Peregrine Sword (*PS, Li Sushang)": ["李"],
   "Planar Armament: Warped Spacetime (*PA, *PAWS, *WS, Helia)": ["赫"],
-  "Dragon Coralie": ["科"],
+  "Behold! Fate-Defying Dragon (*FDD, Coralie)": ["科"],
   // ELFs & Collaborators
   "Blade Durandal (**BD, **Dudu, ELF)": ["星幽"],
   "Elf Elysia (**Ely, ELF)": ["星爱"],
