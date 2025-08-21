@@ -109,6 +109,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2025/08/21 - Added Litost EN name - Darius</li>
           <li>
             2025/07/17 - Added Coralie, Chenxue, Litost valk/op/boss (full EN names coming later),
             added Echoing and Extreme abyss weathers - Darius
@@ -437,7 +438,7 @@ const bossToChinese = {
   "Sa: Wheel of Transcendence": ["娑"],
   Lantern: ["灯"],
   "Masked Fool Sampo": ["桑博"],
-  Litost: ["利托斯特"],
+  "Litost • Cinders of the Night": ["利托斯特"],
 };
 
 const valkToChinese = {
