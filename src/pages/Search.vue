@@ -109,6 +109,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2025/09/17 - Added all S0+1 to modifiers, added another alias for Mysticism (bull) - Darius</li>
           <li>2025/08/21 - Added Litost EN name - Darius</li>
           <li>
             2025/07/17 - Added Coralie, Chenxue, Litost valk/op/boss (full EN names coming later),
@@ -182,8 +183,10 @@
             will be added later), updated SSS Heimdall CN search terms, thanks Darius
           </li>
           <li>2023/10/09 - Add Lunar Vow Crimson Love, thanks Darius</li>
-          <li>2023/09/19 - Add Herrscher of Ice boss, thanks Darius</li>
+
+
           <!-- older changelog
+            <li>2023/09/19 - Add Herrscher of Ice boss, thanks Darius</li>
             <li>2023/09/04 - Add Herrscher of Corruption Elysia, thanks Darius</li>
             <li>2023/08/26 - Add Miracle Magical Girl (Sirin), thanks Darius</li>
             <li>2023/08/05 - Update 6.8 boss name, thanks Darius</li>
@@ -391,7 +394,7 @@ const bossToChinese = {
   "HOMU (King, Emperor, Magician, Performer)": ["吼姆"],
   Huodou: ["祸斗"],
   "Husk: Existentialism (flower)": ["虚数花", "虚树摊骸-存在主义"],
-  "Husk: Mysticism (bull)": ["牛牛", "神秘主义"],
+  "Husk: Mysticism (bull)": ["虚数牛", "牛牛", "神秘主义"],
   "Husk: Nihilius (clock)": ["虚树神骸", "lzx"],
   "Jizo Mitama": ["地藏", "地藏御魂"],
   Kallen: ["卡莲"],
@@ -589,6 +592,7 @@ const modifiersToChinese = {
   Nirvana: ["寂灭"],
   Myriad: ["无限"],
   "1st Place": ["榜一"],
+  "All S0+1": ["全S0+1"],
   "Blood Thorn Patch": ["流血"],
   Bloodlust: ["嗜战"],
   Counter: ["克制"],
