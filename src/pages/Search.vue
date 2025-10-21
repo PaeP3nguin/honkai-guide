@@ -109,7 +109,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
-          <li>2025/10/21 - Added HLE Elysia, Meteoroid: Paros</li>
+          <li>2025/10/21 - Added HLE Elysia, Meteoroid: Paros, added another alias for Extreme Conditions (GoI weather)</li>
           <li>2025/09/17 - Added all S0+1 to modifiers, added another alias for Mysticism (bull) - Darius</li>
           <li>2025/08/21 - Added Litost EN name - Darius</li>
           <li>
@@ -600,7 +600,7 @@ const modifiersToChinese = {
   Bloodlust: ["嗜战"],
   Counter: ["克制"],
   Echoing: ["共鸣"],
-  "Extreme Conditions": ["天衍"],
+  "Extreme Conditions": ["天衍", "极源"],
   Flux: ["流变"],
   Ignited: ["点燃"],
   Lightning: ["雷伤"],
