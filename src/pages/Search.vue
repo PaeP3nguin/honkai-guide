@@ -109,6 +109,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2025/10/21 - Added HLE Elysia, Meteoroid: Paros</li>
           <li>2025/09/17 - Added all S0+1 to modifiers, added another alias for Mysticism (bull) - Darius</li>
           <li>2025/08/21 - Added Litost EN name - Darius</li>
           <li>
@@ -442,6 +443,7 @@ const bossToChinese = {
   Lantern: ["灯"],
   "Masked Fool Sampo": ["桑博"],
   "Litost • Cinders of the Night": ["利托斯特"],
+  "Meteoroid: Paros": ["帕罗斯"],
 };
 
 const valkToChinese = {
@@ -553,6 +555,7 @@ const valkToChinese = {
   "Peregrine Sword (*PS, Li Sushang)": ["李"],
   "Planar Armament: Warped Spacetime (*PA, *PAWS, *WS, Helia)": ["赫"],
   "Behold! Fate-Defying Dragon (*FDD, Coralie)": ["科"],
+  "Hi! Love Elf (*HLE, Hi Love Elf, Elysia)": ["爱愿妖精", "爱琪"],
   // ELFs & Collaborators
   "Blade Durandal (**BD, **Dudu, ELF)": ["星幽"],
   "Elf Elysia (**Ely, ELF)": ["星爱"],
