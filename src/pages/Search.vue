@@ -555,7 +555,7 @@ const valkToChinese = {
   "Peregrine Sword (*PS, Li Sushang)": ["李"],
   "Planar Armament: Warped Spacetime (*PA, *PAWS, *WS, Helia)": ["赫"],
   "Behold! Fate-Defying Dragon (*FDD, Coralie)": ["科"],
-  "Hi! Love Elf (*HLE, Hi Love Elf, Elysia)": ["爱愿妖精", "爱琪"],
+  "Hi! Love Elf (*HLE, Hi Love Elf, Elysia)": ["爱愿妖精", "爱"],
   // ELFs & Collaborators
   "Blade Durandal (**BD, **Dudu, ELF)": ["星幽"],
   "Elf Elysia (**Ely, ELF)": ["星爱"],
