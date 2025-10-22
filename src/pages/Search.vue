@@ -611,6 +611,7 @@ const modifiersToChinese = {
   Stellar: ["星环"],
   "Stellar Crown": ["星冕"],
   Symphonic: ["交响"],
+  Dominance: ["统御"],
 };
 
 const modifiers = Object.keys(modifiersToChinese).map((m) => ({
