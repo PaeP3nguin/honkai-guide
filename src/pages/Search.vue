@@ -109,7 +109,8 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
-          <li>2025/10/21 - Added HLE Elysia, Meteoroid: Paros, added another alias for Extreme Conditions (GoI weather)</li>
+          <li>2025/10/22 - Added Hi! Love Elf and Meteoroid: Paros - Darius</li>
+          <li>2025/10/21 - Added another alias for Extreme Conditions (GoI weather)</li>
           <li>2025/09/17 - Added all S0+1 to modifiers, added another alias for Mysticism (bull) - Darius</li>
           <li>2025/08/21 - Added Litost EN name - Darius</li>
           <li>
@@ -524,7 +525,7 @@ const valkToChinese = {
   "Golden Diva (*GD, Eden)": ["伊", "伊甸"],
   "Starry Impression (*SI, Griseo)": ["格", "格蕾修"],
   "Helical Contraption (*HC, Vill-V)": ["维尔薇", "V2V"],
-  "Herrscher of Human: Ego (*HH, *HoH, *HoHE, Elysia)": ["人", "爱猫兔", "爱律"],
+  "Herrscher of Human: Ego (*HH, *HoH, *HoHE, Elysia)": ["人", "爱", "爱猫兔", "爱律"],
   "Jade Knight (*JK, Li Sushang)": ["李", "李素裳", "玉骑士月痕"],
   "Chrono Navi (*CN, Ai Hyperion)": ["爱", "爱衣"],
   "Herrscher of Truth (*HoTr, *HTr, Bronya)": ["真理", "真"],
