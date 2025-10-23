@@ -109,6 +109,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2025/10/22 - Added Hi! Love Elf and Meteoroid: Paros - Darius</li>
           <li>2025/09/17 - Added all S0+1 to modifiers, added another alias for Mysticism (bull) - Darius</li>
           <li>2025/08/21 - Added Litost EN name - Darius</li>
           <li>
@@ -442,6 +443,7 @@ const bossToChinese = {
   Lantern: ["灯"],
   "Masked Fool Sampo": ["桑博"],
   "Litost • Cinders of the Night": ["利托斯特"],
+  "Meteoroid: Paros": ["帕罗斯"],
 };
 
 const valkToChinese = {
@@ -522,7 +524,7 @@ const valkToChinese = {
   "Golden Diva (*GD, Eden)": ["伊", "伊甸"],
   "Starry Impression (*SI, Griseo)": ["格", "格蕾修"],
   "Helical Contraption (*HC, Vill-V)": ["维尔薇", "V2V"],
-  "Herrscher of Human: Ego (*HH, *HoH, *HoHE, Elysia)": ["人", "爱猫兔", "爱律"],
+  "Herrscher of Human: Ego (*HH, *HoH, *HoHE, Elysia)": ["人", "爱", "爱猫兔", "爱律"],
   "Jade Knight (*JK, Li Sushang)": ["李", "李素裳", "玉骑士月痕"],
   "Chrono Navi (*CN, Ai Hyperion)": ["爱", "爱衣"],
   "Herrscher of Truth (*HoTr, *HTr, Bronya)": ["真理", "真"],
@@ -553,6 +555,7 @@ const valkToChinese = {
   "Peregrine Sword (*PS, Li Sushang)": ["李"],
   "Planar Armament: Warped Spacetime (*PA, *PAWS, *WS, Helia)": ["赫"],
   "Behold! Fate-Defying Dragon (*FDD, Coralie)": ["科"],
+  "Hi! Love Elf (*HLE, Elysia)": ["爱"],
   // ELFs & Collaborators
   "Blade Durandal (**BD, **Dudu, ELF)": ["星幽"],
   "Elf Elysia (**Ely, ELF)": ["星爱"],
