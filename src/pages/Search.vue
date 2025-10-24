@@ -110,6 +110,7 @@
         <h2 class="section-head">Changelog</h2>
         <ul>
           <li>2025/10/22 - Added Hi! Love Elf and Meteoroid: Paros - Darius</li>
+          <li>2025/10/21 - Added another alias for Extreme Conditions (GoI weather)</li>
           <li>2025/09/17 - Added all S0+1 to modifiers, added another alias for Mysticism (bull) - Darius</li>
           <li>2025/08/21 - Added Litost EN name - Darius</li>
           <li>
@@ -555,7 +556,7 @@ const valkToChinese = {
   "Peregrine Sword (*PS, Li Sushang)": ["李"],
   "Planar Armament: Warped Spacetime (*PA, *PAWS, *WS, Helia)": ["赫"],
   "Behold! Fate-Defying Dragon (*FDD, Coralie)": ["科"],
-  "Hi! Love Elf (*HLE, Elysia)": ["爱"],
+  "Hi! Love Elf (*HLE, Hi Love Elf, Elysia)": ["爱愿妖精", "爱"],
   // ELFs & Collaborators
   "Blade Durandal (**BD, **Dudu, ELF)": ["星幽"],
   "Elf Elysia (**Ely, ELF)": ["星爱"],
@@ -600,7 +601,7 @@ const modifiersToChinese = {
   Bloodlust: ["嗜战"],
   Counter: ["克制"],
   Echoing: ["共鸣"],
-  "Extreme Conditions": ["天衍"],
+  "Extreme Conditions": ["天衍", "极源"],
   Flux: ["流变"],
   Ignited: ["点燃"],
   Lightning: ["雷伤"],
@@ -611,6 +612,7 @@ const modifiersToChinese = {
   Stellar: ["星环"],
   "Stellar Crown": ["星冕"],
   Symphonic: ["交响"],
+  Dominance: ["统御"],
 };
 
 const modifiers = Object.keys(modifiersToChinese).map((m) => ({
