@@ -109,8 +109,8 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2025/10/24 - Added another alias for Extreme Conditions, added Dominance environment - Thanks Cyxo</li>
           <li>2025/10/22 - Added Hi! Love Elf and Meteoroid: Paros - Darius</li>
-          <li>2025/10/21 - Added another alias for Extreme Conditions (GoI weather)</li>
           <li>2025/09/17 - Added all S0+1 to modifiers, added another alias for Mysticism (bull) - Darius</li>
           <li>2025/08/21 - Added Litost EN name - Darius</li>
           <li>
@@ -180,14 +180,13 @@
           </li>
           <li>2024/01/15 - Added Fenghuang of Vicissitude, thanks Darius</li>
           <li>2023/11/26 - Added 7.1 boss EN name, Alien Guard - Supplement, thanks Darius</li>
-          <li>
-            2023/11/07 - Added abyss Flying Fish, v7.1 Cosmic Expression, v7.1 alien boss (EN name
-            will be added later), updated SSS Heimdall CN search terms, thanks Darius
-          </li>
-          <li>2023/10/09 - Add Lunar Vow Crimson Love, thanks Darius</li>
-
 
           <!-- older changelog
+            <li>
+              2023/11/07 - Added abyss Flying Fish, v7.1 Cosmic Expression, v7.1 alien boss (EN name
+              will be added later), updated SSS Heimdall CN search terms, thanks Darius
+            </li>
+            <li>2023/10/09 - Add Lunar Vow Crimson Love, thanks Darius</li>
             <li>2023/09/19 - Add Herrscher of Ice boss, thanks Darius</li>
             <li>2023/09/04 - Add Herrscher of Corruption Elysia, thanks Darius</li>
             <li>2023/08/26 - Add Miracle Magical Girl (Sirin), thanks Darius</li>
@@ -600,6 +599,7 @@ const modifiersToChinese = {
   "Blood Thorn Patch": ["流血"],
   Bloodlust: ["嗜战"],
   Counter: ["克制"],
+  Dominance: ["统御"],
   Echoing: ["共鸣"],
   "Extreme Conditions": ["天衍", "极源"],
   Flux: ["流变"],
@@ -612,7 +612,6 @@ const modifiersToChinese = {
   Stellar: ["星环"],
   "Stellar Crown": ["星冕"],
   Symphonic: ["交响"],
-  Dominance: ["统御"],
 };
 
 const modifiers = Object.keys(modifiersToChinese).map((m) => ({
