@@ -109,6 +109,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2026/01/05 - Added Marut and Miss Espionage - Darius</li>
           <li>2025/10/24 - Added another alias for Extreme Conditions, added Dominance environment - Thanks Cyxo</li>
           <li>2025/10/22 - Added Hi! Love Elf and Meteoroid: Paros - Darius</li>
           <li>2025/09/17 - Added all S0+1 to modifiers, added another alias for Mysticism (bull) - Darius</li>
@@ -179,9 +180,8 @@
             V7.3 new bosses coming soon. Thanks Darius
           </li>
           <li>2024/01/15 - Added Fenghuang of Vicissitude, thanks Darius</li>
-          <li>2023/11/26 - Added 7.1 boss EN name, Alien Guard - Supplement, thanks Darius</li>
-
           <!-- older changelog
+            <li>2023/11/26 - Added 7.1 boss EN name, Alien Guard - Supplement, thanks Darius</li>
             <li>
               2023/11/07 - Added abyss Flying Fish, v7.1 Cosmic Expression, v7.1 alien boss (EN name
               will be added later), updated SSS Heimdall CN search terms, thanks Darius
@@ -444,6 +444,7 @@ const bossToChinese = {
   "Masked Fool Sampo": ["桑博"],
   "Litost • Cinders of the Night": ["利托斯特"],
   "Meteoroid: Paros": ["帕罗斯"],
+  "Marut (IMG Pig)": ["虚数猪", "摩录多"],
 };
 
 const valkToChinese = {
@@ -556,6 +557,7 @@ const valkToChinese = {
   "Planar Armament: Warped Spacetime (*PA, *PAWS, *WS, Helia)": ["赫"],
   "Behold! Fate-Defying Dragon (*FDD, Coralie)": ["科"],
   "Hi! Love Elf (*HLE, Hi Love Elf, Elysia)": ["爱愿妖精", "爱"],
+  "Miss Espionage (*ME, Rita)": ["丽"],
   // ELFs & Collaborators
   "Blade Durandal (**BD, **Dudu, ELF)": ["星幽"],
   "Elf Elysia (**Ely, ELF)": ["星爱"],
