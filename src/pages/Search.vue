@@ -719,7 +719,7 @@ export default Vue.extend({
       // Must have at least one element in each array passed to combine to generate anything.
       modifierParams = modifierParams.length ? modifierParams : [[""]];
       const modifierCombos = Array.from(combine(modifierParams)).map((c: string[]) =>
-        c.join(" ").trim()
+        c.join("+").trim()
       );
 
       const baseUrl = isMobile()
@@ -729,8 +729,15 @@ export default Vue.extend({
       const combinations: string[][] = Array.from(
         combine([this.bossNames, this.valkCombos, modifierCombos])
       );
+
+      combinations.forEach(function(element, index, array) {
+        array[index] = element.filter((x) => x !== '');
+      });
+
+      // bilibili changes spaces to + in their url query params
+      // handle special case for 全S0+1, encode the + to %2B
       return combinations
-        .map((c: string[]) => `${baseUrl}${c.join(" ").trim()}`)
+        .map((c: string[]) => `${baseUrl}${c.join("+").replace("全S0+1", "全S0%2B1").trim()}`)
         .sort(function (a, b) {
           return a.length - b.length || a.localeCompare(b);
         });
