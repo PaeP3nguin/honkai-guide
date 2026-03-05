@@ -45,6 +45,7 @@
 
         <v-form>
           <h3 class="section-head">Boss</h3>
+          <p>For mobs, use "Mobs"</p>
           <v-autocomplete
             v-model="selectedBoss"
             hint="Start typing to autocomplete."
@@ -54,12 +55,16 @@
             persistent-hint
             :items="bosses"
           ></v-autocomplete>
-          <v-checkbox v-model="sssBoss" label="SSS Boss? (Tip: Some MA videos will only show up when this is unchecked, so try both!)"></v-checkbox>
+          <v-checkbox
+            v-model="sssBoss"
+            label="SSS Boss? (Tip: Some MA videos will only show up when this is unchecked, so try both!)"
+          ></v-checkbox>
 
           <h3 class="section-head">Valkyries</h3>
           <p>
             Order matters! Choose the lead valk first. Some acronyms return a lot of results; add
-            prefix * to filter for only acronyms (for example: *RS).  Add prefix with two ** for ELF or Astral Ops.
+            prefix * to filter for only acronyms (for example: *RS). Add prefix with two ** for ELF
+            or Astral Ops.
           </p>
           <v-autocomplete
             v-model="selectedValks"
@@ -109,6 +114,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2026/03/04 - Added Rice Cake and Dawnbearing Crescent - Darius</li>
           <li>2026/01/05 - Added Marut and Miss Espionage - Darius</li>
           <li>2025/10/24 - Added another alias for Extreme Conditions, added Dominance environment - Thanks Cyxo</li>
           <li>2025/10/22 - Added Hi! Love Elf and Meteoroid: Paros - Darius</li>
@@ -179,8 +185,8 @@
             standalone entries yet (not sure if they will). Also added Alien Guard's alternate name.
             V7.3 new bosses coming soon. Thanks Darius
           </li>
-          <li>2024/01/15 - Added Fenghuang of Vicissitude, thanks Darius</li>
           <!-- older changelog
+            <li>2024/01/15 - Added Fenghuang of Vicissitude, thanks Darius</li>
             <li>2023/11/26 - Added 7.1 boss EN name, Alien Guard - Supplement, thanks Darius</li>
             <li>
               2023/11/07 - Added abyss Flying Fish, v7.1 Cosmic Expression, v7.1 alien boss (EN name
@@ -445,6 +451,7 @@ const bossToChinese = {
   "Litost • Cinders of the Night": ["利托斯特"],
   "Meteoroid: Paros": ["帕罗斯"],
   "Marut (IMG Pig)": ["虚数猪", "摩录多"],
+  "Invincible Auspicious Drum: Rice Cake": ["年糕"],
 };
 
 const valkToChinese = {
@@ -550,14 +557,15 @@ const valkToChinese = {
   "Jovial Deception: Shadowdimmer (*JD, *JDS, Songque)": ["松"],
   "Schicksal's Imperative (*SI, *SIm, Theresa)": ["德"],
   "Lone Planetfarer (*LP, Vita)": ["薇"],
-  "Thousand-Faced Maestro: Cameo! (*TFM, Sparkle)": ["花"],
+  "Thousand-Faced Maestro: Cameo (*TFM, Sparkle)": ["花"],
   "Reign Solaris (*RS, Durandal)": ["鹅"],
-  "Ba-Dum! Fiery Wishing Star (*FWS, Kiana)": ["琪"],
+  "Ba-Dum Fiery Wishing Star (*FWS, Kiana)": ["琪"],
   "Peregrine Sword (*PS, Li Sushang)": ["李"],
   "Planar Armament: Warped Spacetime (*PA, *PAWS, *WS, Helia)": ["赫"],
-  "Behold! Fate-Defying Dragon (*FDD, Coralie)": ["科"],
-  "Hi! Love Elf (*HLE, Hi Love Elf, Elysia)": ["爱愿妖精", "爱"],
+  "Behold Fate-Defying Dragon (*FDD, Coralie)": ["科"],
+  "Hi Love Elf (*HLE, Hi Love Elf, Elysia)": ["爱愿妖精", "爱"],
   "Miss Espionage (*ME, Rita)": ["丽"],
+  "Xentinel Dawnbearing Crescent (*XDC, *DC, Mei)": ["芽"],
   // ELFs & Collaborators
   "Blade Durandal (**BD, **Dudu, ELF)": ["星幽"],
   "Elf Elysia (**Ely, ELF)": ["星爱"],
