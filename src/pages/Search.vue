@@ -114,6 +114,7 @@
 
         <h2 class="section-head">Changelog</h2>
         <ul>
+          <li>2026/03/21 - Added Frost weather in modifiers - Darius</li>
           <li>2026/03/04 - Added Rice Cake and Dawnbearing Crescent - Darius</li>
           <li>2026/01/05 - Added Marut and Miss Espionage - Darius</li>
           <li>2025/10/24 - Added another alias for Extreme Conditions, added Dominance environment - Thanks Cyxo</li>
@@ -179,13 +180,13 @@
             find them. Example: Deepspace Anchor: First Light (FL, Senadina) 4.3 and below valkyries
             will also be updated to the same format, but in a future update. - Darius
           </li>
-          <li>
-            2024/02/05 - BIG UPDATE! Added Herrscher Trio, Senadina Trio, Senadina standalone, ELFs
-            (Blade Durandal and newer only), and Collaborators. Helia and Coralie do not have
-            standalone entries yet (not sure if they will). Also added Alien Guard's alternate name.
-            V7.3 new bosses coming soon. Thanks Darius
-          </li>
           <!-- older changelog
+            <li>
+              2024/02/05 - BIG UPDATE! Added Herrscher Trio, Senadina Trio, Senadina standalone, ELFs
+              (Blade Durandal and newer only), and Collaborators. Helia and Coralie do not have
+              standalone entries yet (not sure if they will). Also added Alien Guard's alternate name.
+              V7.3 new bosses coming soon. Thanks Darius
+            </li>
             <li>2024/01/15 - Added Fenghuang of Vicissitude, thanks Darius</li>
             <li>2023/11/26 - Added 7.1 boss EN name, Alien Guard - Supplement, thanks Darius</li>
             <li>
@@ -613,6 +614,7 @@ const modifiersToChinese = {
   Echoing: ["共鸣"],
   "Extreme Conditions": ["天衍", "极源"],
   Flux: ["流变"],
+  Frost: ["冰伤"],
   Ignited: ["点燃"],
   Lightning: ["雷伤"],
   Physical: ["物理"],
